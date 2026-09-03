@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Automatismes 3e - Mon Site de Maths
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+</head>
+
+<body>
+  <!-- Barre de navigation -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_6.html"
+          class="nav-link"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_3.html"
+          class="nav-link"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_dnb.html"
+          class="nav-link active"
+        >
+          Automatismes DNB
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="exercise_selection.html"
+          class="nav-link"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="outils.html"
+          class="nav-link"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    <section class="buttons-section">
+      <div class="button-row">
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=sujet_0_num_1_decembre_2025_gen'"
+          data-exercise="sujet_0_num_1_decembre_2025_gen"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=sujet_0_num_2_decembre_2025_gen'"
+          data-exercise="sujet_0_num_2_decembre_2025_gen"
+        ></button>
+      </div>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="./core/exerciseButtons.js"
+  ></script>
+</body>
+</html>

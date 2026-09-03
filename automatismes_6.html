@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Automatismes 6e - Mon Site de Maths
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+</head>
+
+<body>
+  <!-- Barre de navigation -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_6.html"
+          class="nav-link active"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_3.html"
+          class="nav-link"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_dnb.html"
+          class="nav-link"
+        >
+          Automatismes DNB
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="exercise_selection.html"
+          class="nav-link"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="outils.html"
+          class="nav-link"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    <section class="buttons-section">
+      <div class="button-row">
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=fractions_decimales'"
+          data-exercise="fractions_decimales"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=ecritures_decimales'"
+          data-exercise="ecritures_decimales"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=decomposition_decimale'"
+          data-exercise="decomposition_decimale"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=multiplication_puissances_dix'"
+          data-exercise="multiplication_puissances_dix"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=division_puissances_dix'"
+          data-exercise="division_puissances_dix"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=operations_puissances_dix'"
+          data-exercise="operations_puissances_dix"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=arrondis_nombres_decimaux'"
+          data-exercise="arrondis_nombres_decimaux"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=fractions_figures'"
+          data-exercise="fractions_figures"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=operations_fractions_simples'"
+          data-exercise="operations_fractions_simples"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=fractions_usuelles_decimales'"
+          data-exercise="fractions_usuelles_decimales"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=fraction_quantite'"
+          data-exercise="fraction_quantite"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=tables_diviseurs_multiples'"
+          data-exercise="tables_diviseurs_multiples"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=chiffres_et_rangs_decimaux'"
+          data-exercise="chiffres_et_rangs_decimaux"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=perimetres_et_longueurs'"
+          data-exercise="perimetres_et_longueurs"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=perimetres_et_disques'"
+          data-exercise="perimetres_et_disques"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=conversions_longueurs'"
+          data-exercise="conversions_longueurs"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=aires_et_unites'"
+          data-exercise="aires_et_unites"
+        ></button>
+      </div>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="./core/exerciseButtons.js"
+  ></script>
+</body>
+</html>

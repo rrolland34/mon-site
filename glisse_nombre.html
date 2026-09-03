@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Glisse-nombre
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-list">
+
+      <li class="nav-item">
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_6.html"
+          class="nav-link"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_3.html"
+          class="nav-link"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="exercise_selection.html"
+          class="nav-link"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="outils.html"
+          class="nav-link active"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <main class="container glisse-number-page">
+
+    <h1>
+      Glisse-nombre
+    </h1>
+
+
+    <div class="glisse-number-controls">
+
+      <label>
+        Nombre
+
+        <div class="number-input-wrapper">
+
+          <input
+            id="value-input"
+            type="text"
+          >
+
+          <button
+            id="clear-value-button"
+            type="button"
+            class="clear-value-button"
+            aria-label="Effacer le nombre"
+            title="Effacer"
+          >
+            ×
+          </button>
+
+        </div>
+      </label>
+
+
+      <label>
+        Opération
+
+        <select id="operation-select">
+
+          <option value="multiply">
+            ×
+          </option>
+
+          <option
+            value="divide"
+            selected
+          >
+            ÷
+          </option>
+
+        </select>
+      </label>
+
+
+      <label>
+        Facteur
+
+        <select id="factor-select">
+
+          <option value="10">
+            10
+          </option>
+
+          <option
+            value="100"
+            selected
+          >
+            100
+          </option>
+
+          <option value="1000">
+            1&nbsp;000
+          </option>
+
+        </select>
+      </label>
+
+    </div>
+
+
+    <div class="glisse-number-generate">
+
+      <button
+        id="generate-button"
+        type="button"
+        class="category-btn"
+      >
+        Afficher
+      </button>
+
+    </div>
+
+
+    <div
+      id="operation-display"
+      class="operation-display"
+    ></div>
+
+
+    <div
+      id="place-value-container"
+    ></div>
+
+
+    <div class="glisse-number-actions">
+
+      <button
+        id="slide-button"
+        type="button"
+        class="category-btn"
+      >
+        Glisser
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <script type="module">
+
+    import {
+      createPlaceValueTable,
+      animatePlaceValueTable
+    } from "./exercices/figures/placeValueTable.js";
+
+    import {
+      formatAnswer
+    } from "./core/answerFormatting.js";
+
+
+    const valueInput =
+      document.getElementById(
+        "value-input"
+      );
+
+    const operationSelect =
+      document.getElementById(
+        "operation-select"
+      );
+
+    const factorSelect =
+      document.getElementById(
+        "factor-select"
+      );
+
+    const generateButton =
+      document.getElementById(
+        "generate-button"
+      );
+
+    const slideButton =
+      document.getElementById(
+        "slide-button"
+      );
+
+    const operationDisplay =
+      document.getElementById(
+        "operation-display"
+      );
+
+    const placeValueContainer =
+      document.getElementById(
+        "place-value-container"
+      );
+
+    const clearValueButton =
+      document.getElementById(
+        "clear-value-button"
+      );
+
+
+    function generateTable() {
+      const value =
+        valueInput.value.trim();
+
+      const operation =
+        operationSelect.value;
+
+      const factor =
+        Number(
+          factorSelect.value
+        );
+
+      /*
+       * Champ vide :
+       * on conserve le tableau vide,
+       * sans afficher d'opération.
+       */
+
+      if (value === "") {
+        operationDisplay.textContent =
+          "";
+
+        operationDisplay.dataset.result =
+          "";
+
+        placeValueContainer.innerHTML =
+          createPlaceValueTable({
+            value: "",
+            operation,
+            factor
+          });
+
+        slideButton.disabled =
+          true;
+
+        return;
+      }
+
+
+      const numericValue =
+        Number(
+          value.replace(
+            ",",
+            "."
+          )
+        );
+
+      /*
+       * Sécurité en cas de saisie
+       * non numérique.
+       */
+
+      if (
+        !Number.isFinite(
+          numericValue
+        )
+      ) {
+        operationDisplay.textContent =
+          "Nombre invalide.";
+
+        operationDisplay.dataset.result =
+          "";
+
+        slideButton.disabled =
+          true;
+
+        return;
+      }
+
+
+      const operationSymbol =
+        operation === "multiply"
+          ? "×"
+          : "÷";
+
+      const result =
+        operation === "multiply"
+          ? numericValue * factor
+          : numericValue / factor;
+
+      const formattedValue =
+        formatAnswer(
+          numericValue
+        );
+
+      const formattedFactor =
+        formatAnswer(
+          factor
+        );
+
+      const formattedResult =
+        formatAnswer(
+          result
+        );
+
+
+      operationDisplay.textContent =
+        `${formattedValue} ` +
+        `${operationSymbol} ` +
+        `${formattedFactor}`;
+
+      operationDisplay.dataset.result =
+        formattedResult;
+
+
+      placeValueContainer.innerHTML =
+        createPlaceValueTable({
+          value,
+          operation,
+          factor
+        });
+
+      slideButton.disabled =
+        false;
+    }
+
+
+    generateButton.addEventListener(
+      "click",
+      generateTable
+    );
+
+
+    clearValueButton.addEventListener(
+      "click",
+      () => {
+        valueInput.value =
+          "";
+
+        valueInput.focus();
+
+        generateTable();
+      }
+    );
+
+
+    slideButton.addEventListener(
+      "click",
+      () => {
+        animatePlaceValueTable(
+          placeValueContainer
+        );
+
+        slideButton.disabled =
+          true;
+
+        setTimeout(
+          () => {
+            const result =
+              operationDisplay
+                .dataset
+                .result;
+
+            if (!result) {
+              return;
+            }
+
+            operationDisplay.textContent +=
+              ` = ${result}`;
+          },
+          1400
+        );
+      }
+    );
+
+
+    /*
+     * Affiche le tableau vide
+     * au chargement de la page.
+     */
+
+    generateTable();
+
+  </script>
+
+</body>
+
+</html>

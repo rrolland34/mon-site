@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Exercices - Mon Site de Maths
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <style>
+    .exercise-statement {
+      font-size: 2.4em;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    #exercise-figure,
+    .step-correction-figure {
+      width: 520px;
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    #exercise-figure svg,
+    .step-correction-figure svg {
+      width: 100%;
+      max-width: 520px;
+      max-height: 360px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .proof-choice {
+      width: 600px;
+      max-width: 90%;
+      margin: 20px auto;
+    }
+
+    .proof-choice-button,
+    .proof-option {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 6px;
+      font-size: 18px;
+    }
+
+    .proof-choice-options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .proof-choice.correct {
+      outline: 2px solid green;
+    }
+
+    .proof-choice.incorrect {
+      outline: 2px solid red;
+    }
+
+    .proof-choice.unanswered {
+      outline: 2px solid orange;
+    }
+
+    .step-correction-layout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .step-correction-side {
+      width: 420px;
+      flex-shrink: 0;
+      font-size: 2.2em;
+      font-weight: 600;
+      text-align: left;
+    }
+
+    .proof-box {
+      display: inline-block;
+      border: 3px solid red;
+      padding: 4px 10px;
+    }
+
+    #submit-answer {
+      margin: 20px auto;
+    }
+
+    #user-answer {
+      display: inline-block;
+      padding: 10px 14px;
+      font-size: 1.2em;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      text-align: center;
+    }
+
+    #user-answer:focus {
+      border-color: #555;
+    }
+
+    .proof-display {
+      color: red;
+      font-size: 1.8em;
+    }
+
+    .proof-choice-input {
+      width: 600px;
+      max-width: 90%;
+      margin: 20px auto;
+
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .proof-choice-input-label {
+      width: 180px;
+      flex-shrink: 0;
+      font-size: 18px;
+    }
+
+    .proof-choice-input .proof-choice {
+      width: 220px;
+      flex: none;
+      margin: 0;
+    }
+
+    .proof-choice-input .proof-input-field {
+      width: 120px;
+      padding: 10px 14px;
+
+      font-size: 1.2em;
+      text-align: center;
+
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .proof-choice-input .proof-input-field:focus {
+      border-color: #555;
+    }
+  </style>
+
+  <script
+    id="MathJax-script"
+    defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_6.html"
+          class="nav-link"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_3.html"
+          class="nav-link"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_dnb.html"
+          class="nav-link"
+        >
+          Automatismes DNB
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="exercise_selection.html"
+          class="nav-link active"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="outils.html"
+          class="nav-link"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="top-controls">
+
+    <button
+      id="start"
+      class="btn large"
+      type="button"
+    >
+      Commencer
+    </button>
+
+    <button
+      id="restart"
+      class="btn large"
+      type="button"
+      style="display:none;"
+    >
+      Recommencer
+    </button>
+
+    <div
+      id="time-control"
+      class="control-group"
+    >
+      <label
+        for="time-slider"
+        style="
+          color:white;
+          font-weight:600;
+        "
+      >
+        Temps :
+      </label>
+
+      <input
+        id="time-slider"
+        type="range"
+        min="10"
+        max="300"
+        value="30"
+        step="5"
+      >
+
+      <span
+        id="time-value"
+        style="
+          min-width:40px;
+          text-align:center;
+          color:white;
+          font-weight:700;
+        "
+      >
+        30
+      </span>
+
+      <span
+        style="
+          color:#ddd;
+          font-size:0.85em;
+        "
+      >
+        s
+      </span>
+    </div>
+
+    <div
+      id="presentation-control"
+      style="
+        display:flex;
+        align-items:center;
+        gap:12px;
+        margin-left:20px;
+      "
+    >
+      <span
+        style="
+          color:white;
+          font-weight:600;
+        "
+      >
+        Mode :
+      </span>
+
+      <div
+        style="
+          display:flex;
+          gap:8px;
+        "
+      >
+        <button
+          id="mode-response"
+          class="presentation-btn active"
+          type="button"
+          style="
+            padding:6px 12px;
+            background:#4CAF50;
+            color:white;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            font-weight:600;
+          "
+        >
+          Réponse
+        </button>
+
+        <button
+          id="mode-slideshow"
+          class="presentation-btn"
+          type="button"
+          style="
+            padding:6px 12px;
+            background:#666;
+            color:white;
+            border:none;
+            border-radius:4px;
+            cursor:pointer;
+            font-weight:600;
+          "
+        >
+          Diaporama
+        </button>
+      </div>
+    </div>
+
+    <button
+      id="pause-timer"
+      type="button"
+      style="
+        display:none;
+        padding:6px 14px;
+        cursor:pointer;
+      "
+    >
+      Pause
+    </button>
+
+  </div>
+
+  <main class="main-content">
+    <section class="question-container">
+
+      <h1
+        id="exercise-title"
+        class="question-title"
+      >
+        Exercice
+      </h1>
+
+      <div
+        id="exercise-content"
+      ></div>
+
+      <div
+        id="timer"
+        class="timer"
+      >
+        30
+      </div>
+
+      <div
+        id="correction-overlay"
+        class="correction-overlay"
+        style="display:none;"
+      >
+        <div class="overlay-content">
+          <div class="question-title overlay-title">
+            Correction
+          </div>
+
+          <p class="overlay-subtext">
+            Appuyez sur Entrée pour commencer
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script type="module">
+
+    import {
+      displayPresentationMode,
+      setModeButtonsDisabled
+    } from "./core/modes.js";
+
+    import {
+      showTimer,
+      hideTimer,
+      hideTimerImmediately,
+      resetTimer,
+      stopTimer,
+      pauseTimer,
+      resumeTimer,
+      getIsPaused
+    } from "./core/timer.js";
+
+    import {
+      generatePythagorasExercise
+    } from "./exercices/generators/pythagorasGenerator.js";
+
+    import {
+      createRightTriangleSVG
+    } from "./exercices/figures/rightTriangle.js";
+
+    import {
+      formatAnswer
+    } from "./core/answerFormatting.js";
+
+    import {
+      createPythagorasProof
+    } from "./exercices/pythagore/pythagorasProof.js";
+
+    import {
+      createPythagorasStudentProof
+    } from "./exercices/pythagore/pythagorasStudentProof.js";
+
+    import {
+      createProofChoiceMenu
+    } from "./core/proofChoice.js";
+
+    import {
+      evaluateCurrentAnswer
+    } from "./core/answerEvaluation.js";
+
+    import {
+      displayAnswerFeedback
+    } from "./core/answerFeedback.js";
+
+    import {
+      validateProofChoices
+    } from "./core/proofValidation.js";
+
+    import {
+      initializeKeyboardShortcuts
+    } from "./core/keyboardShortcuts.js";
+
+    import {
+      showCorrectionOverlay,
+      hideCorrectionOverlay
+    } from "./core/correctionOverlay.js";
+
+    import {
+      createStepCorrection
+    } from "./core/stepCorrection.js";
+
+    import {
+      renderStepCorrection
+    } from "./core/stepCorrectionRenderer.js";
+
+    import {
+      createPythagorasCorrectionScenes
+    } from "./exercices/pythagore/pythagorasCorrectionScenes.js";
+
+    import {
+      deepMerge
+    } from "./core/deepMerge.js";
+
+    import {
+      generatePythagorasConverseExercise
+    } from "./exercices/generators/pythagorasConverseGenerator.js";
+
+    import {
+      createPythagorasConverseProof
+    } from "./exercices/pythagore/pythagorasConverseProof.js";
+
+    import {
+      createStudentProof
+    } from "./core/studentProof.js";
+
+    import {
+      createStudentProofElement
+    } from "./core/studentProofRenderer.js";
+
+    import {
+      validateStudentProof
+    } from "./core/proofValidation.js";
+
+    import {
+      createPythagorasConverseCorrectionScenes
+    } from "./exercices/pythagore/pythagorasConverseCorrectionScenes.js";
+
+    import {
+      exerciseConfigs
+    } from "./core/exerciseRegistry.js";
+
+    let currentExercise =
+      null;
+
+    function generateCurrentExercise() {
+      if (!exerciseConfig) {
+        return null;
+      }
+
+      const {
+        type,
+        family
+      } = exerciseConfig;
+
+      if (
+        family ===
+        "pythagorasConverse"
+      ) {
+        return generatePythagorasConverseExercise(
+          type
+        );
+      }
+
+      if (
+        family ===
+        "pythagoras"
+      ) {
+        return generatePythagorasExercise(
+          type
+        );
+      }
+
+      return null;
+    }
+
+    const exerciseContent =
+      document.getElementById(
+        "exercise-content"
+      );
+
+    let validateCurrentResponse = null;
+
+    function displayExercise(
+      generatedExercise
+    ) {
+      if (!generatedExercise) {
+        exerciseContent.textContent =
+          "Impossible de générer l'exercice.";
+
+        return;
+      }
+
+      const sideLabels = {
+        leg1:
+          generatedExercise.unknownSide ===
+          "leg1"
+            ? "?"
+            : `${formatAnswer(
+                generatedExercise.lengths.leg1
+              )} ${generatedExercise.unit}`,
+
+        leg2:
+          generatedExercise.unknownSide ===
+          "leg2"
+            ? "?"
+            : `${formatAnswer(
+                generatedExercise.lengths.leg2
+              )} ${generatedExercise.unit}`,
+
+        hypotenuse:
+          generatedExercise.unknownSide ===
+          "hypotenuse"
+            ? "?"
+            : `${formatAnswer(
+                generatedExercise.lengths.hypotenuse
+              )} ${generatedExercise.unit}`
+      };
+
+      let question =
+        null;
+
+      if (
+        exerciseConfig.family ===
+        "pythagoras"
+      ) {
+        const expectedAnswer =
+          generatedExercise.lengths[
+            generatedExercise.unknownSide
+          ];
+
+        question = {
+          answers: [
+            `${formatAnswer(
+              expectedAnswer
+            )} ${generatedExercise.unit}`
+          ],
+
+          answerRule: {
+            type: "length",
+            unit:
+              generatedExercise.unit
+          }
+        };
+      }
+
+      exerciseContent.innerHTML = `
+        <div class="exercise-statement">
+          ${generatedExercise.statement}
+        </div>
+
+        <div id="exercise-figure"></div>
+      `;
+
+      const figureContainer =
+        document.getElementById(
+          "exercise-figure"
+        );
+
+      figureContainer.innerHTML =
+        createRightTriangleSVG({
+          vertices:
+            generatedExercise.vertices,
+
+          rotation:
+            generatedExercise
+              .figureOptions
+              .rotation,
+
+          dimensions:
+            generatedExercise
+              .figureOptions
+              .dimensions,
+
+          rightAngle: {
+            visible:
+              exerciseConfig.family ===
+              "pythagoras",
+
+            size: 40
+          },
+
+          sides: {
+            leg1: {
+              label: sideLabels.leg1,
+              color: "currentColor",
+              strokeWidth: 3,
+              fontSize: 22,
+              labelColor: "currentColor",
+              labelOffset: 24,
+
+              annotation: {
+                text: "",
+                fontSize: 18,
+                color: "currentColor",
+                offset: 22
+              }
+            },
+
+            leg2: {
+              label: sideLabels.leg2,
+              color: "currentColor",
+              strokeWidth: 3,
+              fontSize: 22,
+              labelColor: "currentColor",
+              labelOffset: 24,
+
+              annotation: {
+                text: "",
+                fontSize: 18,
+                color: "currentColor",
+                offset: 22
+              }
+            },
+
+            hypotenuse: {
+              label: sideLabels.hypotenuse,
+              color: "currentColor",
+              strokeWidth: 3,
+              fontSize: 22,
+              labelColor: "currentColor",
+              labelOffset: 24,
+
+              annotation: {
+                text: "",
+                fontSize: 18,
+                color: "currentColor",
+                offset: 22
+              }
+            }
+          }
+        });
+
+      if (
+        presentationMode ===
+        "response"
+      ) {
+        let proof;
+        let studentProof;
+
+        if (
+          exerciseConfig.family ===
+          "pythagorasConverse"
+        ) {
+          proof =
+            createPythagorasConverseProof(
+              generatedExercise
+            );
+
+          studentProof =
+            createStudentProof(
+              proof
+            );
+        } else {
+          proof =
+            createPythagorasProof(
+              generatedExercise
+            );
+
+          studentProof =
+            createPythagorasStudentProof(
+              proof
+            );
+        }
+
+        const proofContainer =
+          document.createElement(
+            "div"
+          );
+
+        proofContainer.id =
+          "student-proof";
+
+        studentProof.forEach(
+          step => {
+            const element =
+              exerciseConfig.family ===
+              "pythagorasConverse"
+                ? createStudentProofElement(
+                    step
+                  )
+                : createProofChoiceMenu(
+                    step
+                  );
+
+            if (element) {
+              proofContainer.appendChild(
+                element
+              );
+            }
+          }
+        );
+
+        exerciseContent.appendChild(
+          proofContainer
+        );
+
+        const answerContainer =
+          document.createElement(
+            "div"
+          );
+
+        answerContainer.id =
+          "exercise-answer";
+
+        if (
+          exerciseConfig.family ===
+          "pythagorasConverse"
+        ) {
+          answerContainer.innerHTML = `
+            <button
+              id="submit-answer"
+              type="button"
+            >
+              Valider
+            </button>
+
+            <div
+              id="proof-feedback"
+              class="feedback"
+            ></div>
+          `;
+        } else {
+          answerContainer.innerHTML = `
+            <input
+              type="text"
+              id="user-answer"
+              placeholder="Votre réponse"
+            >
+
+            <button
+              id="submit-answer"
+              type="button"
+            >
+              Valider
+            </button>
+
+            <div
+              id="feedback"
+              class="feedback"
+            ></div>
+
+            <div
+              id="proof-feedback"
+              class="feedback"
+            ></div>
+          `;
+        }
+
+        exerciseContent.appendChild(
+          answerContainer
+        );
+
+        const userAnswerInput =
+          document.getElementById(
+            "user-answer"
+          );
+
+        const submitAnswerButton =
+          document.getElementById(
+            "submit-answer"
+          );
+
+        const answerFeedback =
+          document.getElementById(
+            "answer-feedback"
+          );
+
+        validateCurrentResponse = function() {
+          stopTimer();
+
+          const proofResults =
+            exerciseConfig.family ===
+            "pythagorasConverse"
+              ? validateStudentProof(
+                  proofContainer
+                )
+              : validateProofChoices(
+                  proofContainer
+                );
+
+          function isProofResultAnswered(
+            result
+          ) {
+            if (
+              "isAnswered" in result
+            ) {
+              return result.isAnswered;
+            }
+
+            if (
+              "isChoiceAnswered" in result &&
+              "isInputAnswered" in result
+            ) {
+              return (
+                result.isChoiceAnswered &&
+                result.isInputAnswered
+              );
+            }
+
+            return false;
+          }
+
+          const proofFeedback =
+            document.getElementById(
+              "proof-feedback"
+            );
+
+          const correctProofCount =
+            proofResults.filter(
+              result =>
+                result.isCorrect
+            ).length;
+
+          const unansweredProofCount =
+            proofResults.filter(
+              result =>
+                !isProofResultAnswered(
+                  result
+                )
+            ).length;
+
+          const incorrectProofCount =
+            proofResults.filter(
+              result =>
+                isProofResultAnswered(
+                  result
+                ) &&
+                !result.isCorrect
+            ).length;
+
+          if (
+            correctProofCount ===
+            proofResults.length
+          ) {
+            proofFeedback.textContent =
+              "Démonstration correcte !";
+
+            proofFeedback.style.color =
+              "green";
+          } else {
+            proofFeedback.textContent =
+              `${correctProofCount} correcte(s), ` +
+              `${incorrectProofCount} incorrecte(s), ` +
+              `${unansweredProofCount} non répondue(s).`;
+
+            proofFeedback.style.color =
+              "red";
+          }
+
+          if (
+            exerciseConfig.family ===
+            "pythagoras"
+          ) {
+            const evaluation =
+              evaluateCurrentAnswer({
+                question,
+                answerMode: "direct",
+                selectedQCMAnswer: null
+              });
+
+            const isNotAnswered =
+              evaluation.userAnswer === "";
+
+            displayAnswerFeedback({
+              isCorrect:
+                evaluation.isCorrect,
+
+              isNotAnswered,
+
+              correctAnswer:
+                evaluation.correctAnswer,
+
+              incorrectFeedback:
+                evaluation.result.feedback,
+
+              answerMode:
+                "direct",
+
+              userAnswer:
+                evaluation.userAnswer,
+
+              showCorrectAnswer:
+                evaluation.result
+                  .showCorrectAnswer ??
+                true
+            });
+          }
+
+          restartButton.style.display =
+            "inline-block";
+
+          setModeButtonsDisabled(
+            false
+          );
+
+          timeSlider.disabled =
+            false;
+        },
+
+        submitAnswerButton.addEventListener(
+          "click",
+          validateCurrentResponse
+        );
+
+        if (userAnswerInput) {
+          userAnswerInput.addEventListener(
+            "keydown",
+            (event) => {
+              if (event.key !== "Enter") {
+                return;
+              }
+
+              event.preventDefault();
+
+              submitAnswerButton.click();
+            }
+          );
+        }
+
+        if (window.MathJax) {
+          MathJax.typesetPromise([
+            proofContainer
+          ]);
+        }
+      }
+    }
+
+    const params =
+      new URLSearchParams(
+        window.location.search
+      );
+
+    const exercise =
+      params.get("exercise");
+
+    const exerciseConfig =
+      exerciseConfigs[exercise];
+
+    const exerciseTitle =
+      document.getElementById(
+        "exercise-title"
+      );
+
+    exerciseTitle.textContent =
+      exerciseConfig?.title ??
+      "Exercice inconnu";
+
+    const responseModeButton =
+      document.getElementById(
+        "mode-response"
+      );
+
+    const slideshowModeButton =
+      document.getElementById(
+        "mode-slideshow"
+      );
+
+    let presentationMode =
+      "response";
+
+    let waitingForCorrection =
+      false;
+
+    let correctionSteps =
+      [];
+
+    let stepCorrection =
+      null;
+
+    // Initialisation de l'affichage
+    displayPresentationMode(
+      presentationMode
+    );
+
+    responseModeButton.addEventListener(
+      "click",
+      function() {
+        presentationMode =
+          "response";
+
+        displayPresentationMode(
+          presentationMode
+        );
+      }
+    );
+
+    slideshowModeButton.addEventListener(
+      "click",
+      function() {
+        presentationMode =
+          "slideshow";
+
+        displayPresentationMode(
+          presentationMode
+        );
+      }
+    );
+
+    const startButton =
+      document.getElementById(
+        "start"
+      );
+
+    const restartButton =
+      document.getElementById(
+        "restart"
+      );
+
+    const pauseButton =
+      document.getElementById(
+        "pause-timer"
+      );
+
+    const timeSlider =
+      document.getElementById(
+        "time-slider"
+      );
+
+    const timeValue =
+      document.getElementById(
+        "time-value"
+      );
+
+    let selectedTime =
+      Number(
+        timeSlider.value
+      );
+
+    timeValue.textContent =
+      selectedTime;
+
+    hideTimerImmediately();
+
+    timeSlider.addEventListener(
+      "input",
+      function() {
+        selectedTime =
+          Number(
+            timeSlider.value
+          );
+
+        timeValue.textContent =
+          selectedTime;
+      }
+    );
+
+    function handleTimeUp() {
+      if (
+        presentationMode ===
+        "response"
+      ) {
+        validateCurrentResponse();
+      }
+
+      if (
+        presentationMode ===
+        "slideshow"
+      ) {
+        waitingForCorrection =
+          true;
+
+        showCorrectionOverlay();
+      }
+    }
+
+    function renderExerciseFigure(
+      figureOptions
+    ) {
+      const baseOptions = {
+        vertices:
+          currentExercise.vertices,
+
+        rotation:
+          currentExercise
+            .figureOptions
+            .rotation,
+
+        dimensions:
+          currentExercise
+            .figureOptions
+            .dimensions,
+
+        rightAngle: {
+          visible: true,
+          size: 40
+        },
+
+        sides: {
+          leg1: {
+            label:
+              currentExercise.unknownSide ===
+              "leg1"
+                ? "?"
+                : `${formatAnswer(
+                    currentExercise.lengths.leg1
+                  )} ${currentExercise.unit}`,
+
+            color: "currentColor",
+            strokeWidth: 3,
+            fontSize: 22,
+            labelColor: "currentColor",
+            labelOffset: 24,
+
+            annotation: {
+              text: "",
+              fontSize: 18,
+              color: "currentColor",
+              offset: 22
+            }
+          },
+
+          leg2: {
+            label:
+              currentExercise.unknownSide ===
+              "leg2"
+                ? "?"
+                : `${formatAnswer(
+                    currentExercise.lengths.leg2
+                  )} ${currentExercise.unit}`,
+
+            color: "currentColor",
+            strokeWidth: 3,
+            fontSize: 22,
+            labelColor: "currentColor",
+            labelOffset: 24,
+
+            annotation: {
+              text: "",
+              fontSize: 18,
+              color: "currentColor",
+              offset: 22
+            }
+          },
+
+          hypotenuse: {
+            label:
+              currentExercise.unknownSide ===
+              "hypotenuse"
+                ? "?"
+                : `${formatAnswer(
+                    currentExercise.lengths
+                      .hypotenuse
+                  )} ${currentExercise.unit}`,
+
+            color: "currentColor",
+            strokeWidth: 3,
+            fontSize: 22,
+            labelColor: "currentColor",
+            labelOffset: 24,
+
+            annotation: {
+              text: "",
+              fontSize: 18,
+              color: "currentColor",
+              offset: 22
+            }
+          }
+        },
+
+        arrow: {
+          visible: false,
+
+          fromVertex:
+            "A",
+
+          targetSide:
+            "hypotenuse",
+
+          color:
+            "green",
+
+          strokeWidth:
+            6,
+
+          startDistance:
+            55,
+
+          endOffset:
+            18
+        }
+      };
+
+      const mergedOptions =
+        deepMerge(
+          baseOptions,
+          figureOptions
+        );
+
+      return createRightTriangleSVG(
+        mergedOptions
+      );
+    }
+
+    function startStepCorrection() {
+      waitingForCorrection =
+        false;
+
+      hideCorrectionOverlay();
+
+      hideTimer();
+
+      if (
+        exerciseConfig.family ===
+        "pythagorasConverse"
+      ) {
+        correctionSteps =
+          createPythagorasConverseCorrectionScenes(
+            currentExercise
+          );
+      } else {
+        correctionSteps =
+          createPythagorasCorrectionScenes(
+            currentExercise
+          );
+      }
+
+      stepCorrection =
+        createStepCorrection({
+          stepCount:
+            correctionSteps.length
+        });
+
+      stepCorrection.start();
+
+      const currentStepIndex =
+        stepCorrection
+          .getCurrentStepIndex();
+
+      renderStepCorrection({
+        container:
+          exerciseContent,
+
+        scene:
+          correctionSteps[
+            currentStepIndex
+          ],
+
+        renderFigure:
+          renderExerciseFigure
+      });
+    }
+
+    function advanceStepCorrection() {
+      if (
+        !stepCorrection ||
+        !stepCorrection.getIsActive()
+      ) {
+        return;
+      }
+
+      if (
+        stepCorrection.getIsLastStep()
+      ) {
+        restartButton.style.display =
+          "inline-block";
+
+        timeSlider.disabled =
+          false;
+
+        return;
+      }
+
+      stepCorrection.next();
+
+      const currentStepIndex =
+        stepCorrection
+          .getCurrentStepIndex();
+
+      renderStepCorrection({
+        container:
+          exerciseContent,
+
+        scene:
+          correctionSteps[
+            currentStepIndex
+          ],
+
+        renderFigure:
+          renderExerciseFigure
+      });
+    }
+
+    function previousStepCorrection() {
+      if (
+        !stepCorrection ||
+        !stepCorrection.getIsActive()
+      ) {
+        return;
+      }
+
+      restartButton.style.display =
+        "none";
+
+      timeSlider.disabled =
+        true;
+
+      stepCorrection.previous();
+
+      const currentStepIndex =
+        stepCorrection
+          .getCurrentStepIndex();
+
+      renderStepCorrection({
+        container:
+          exerciseContent,
+
+        scene:
+          correctionSteps[
+            currentStepIndex
+          ],
+
+        renderFigure:
+          renderExerciseFigure
+      });
+    }
+
+    startButton.addEventListener(
+      "click",
+      function() {
+        setModeButtonsDisabled(
+          true
+        );
+
+        timeSlider.disabled =
+          true;
+
+        pauseButton.textContent =
+          "Pause";
+
+        currentExercise =
+          generateCurrentExercise();
+
+        displayExercise(
+          currentExercise
+        );
+
+        showTimer();
+
+        resetTimer(
+          selectedTime,
+          handleTimeUp
+        );
+
+        startButton.style.display =
+          "none";
+      }
+    );
+
+    restartButton.addEventListener(
+      "click",
+      function() {
+        setModeButtonsDisabled(
+          true
+        );
+
+        timeSlider.disabled =
+          true;
+
+        pauseButton.textContent =
+          "Pause";
+
+        currentExercise =
+          generateCurrentExercise();
+
+        displayExercise(
+          currentExercise
+        );
+
+        restartButton.style.display =
+          "none";
+
+        showTimer();
+
+        resetTimer(
+          selectedTime,
+          handleTimeUp
+        );
+      }
+    );
+
+    pauseButton.addEventListener(
+      "click",
+      function() {
+        if (
+          presentationMode !==
+          "slideshow"
+        ) {
+          return;
+        }
+
+        if (getIsPaused()) {
+          resumeTimer();
+
+          pauseButton.textContent =
+            "Pause";
+        } else {
+          pauseTimer();
+
+          pauseButton.textContent =
+            "Reprendre";
+        }
+      }
+    );
+
+    initializeKeyboardShortcuts({
+      isWaitingForCorrection() {
+        return waitingForCorrection;
+      },
+
+      isInCorrectionMode() {
+        return (
+          stepCorrection !== null &&
+          stepCorrection.getIsActive()
+        );
+      },
+
+      isAwaitingNextQuestion() {
+        return false;
+      },
+
+      getPresentationMode() {
+        return presentationMode;
+      },
+
+      getCorrectionStep() {
+        return null;
+      },
+
+      onStartCorrections:
+        startStepCorrection,
+
+      onAdvanceCorrection:
+        advanceStepCorrection,
+
+      onPreviousCorrection:
+        previousStepCorrection,
+
+      onNextQuestion() {
+      },
+
+      clearAwaitingNextQuestion() {
+      }
+    });
+  </script>
+</body>
+</html>

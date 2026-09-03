@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Choix d'un exercice
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_6.html"
+          class="nav-link"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_3.html"
+          class="nav-link"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_dnb.html"
+          class="nav-link"
+        >
+          Automatismes DNB
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="exercise_selection.html"
+          class="nav-link active"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="outils.html"
+          class="nav-link"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    <section class="buttons-section">
+
+      <div
+        id="exercise-buttons"
+        class="button-row"
+      >
+      </div>
+
+    </section>
+
+  </main>
+
+  <script type="module">
+    import {
+      exerciseConfigs
+    } from "./core/exerciseRegistry.js";
+
+    const exerciseButtons =
+      document.getElementById(
+        "exercise-buttons"
+      );
+
+    Object.entries(
+      exerciseConfigs
+    ).forEach(
+      ([exerciseId, config]) => {
+
+        const link =
+          document.createElement(
+            "a"
+          );
+
+        link.href =
+          `exercise_player.html?exercise=${exerciseId}`;
+
+        const button =
+          document.createElement(
+            "button"
+          );
+
+        button.type =
+          "button";
+
+        button.className =
+          "category-btn";
+
+        button.textContent =
+          config.title;
+
+        link.appendChild(
+          button
+        );
+
+        exerciseButtons.appendChild(
+          link
+        );
+      }
+    );
+  </script>
+
+</body>
+</html>

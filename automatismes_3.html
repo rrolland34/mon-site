@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Automatismes 3e - Mon Site de Maths
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+</head>
+
+<body>
+  <!-- Barre de navigation -->
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a
+          href="index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_6.html"
+          class="nav-link"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_3.html"
+          class="nav-link active"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="automatismes_dnb.html"
+          class="nav-link"
+        >
+          Automatismes DNB
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="exercise_selection.html"
+          class="nav-link"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="outils.html"
+          class="nav-link"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main class="container">
+    <section class="buttons-section">
+      <div class="button-row">
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=vitesse_moyenne'"
+          data-exercise="vitesse_moyenne"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=reperage_repere_orthonorme'"
+          data-exercise="reperage_repere_orthonorme"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=puissances_niveau_1'"
+          data-exercise="puissances_niveau_1"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=puissances_niveau_2'"
+          data-exercise="puissances_niveau_2"
+        ></button>
+
+        <button
+          type="button"
+          class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=ecriture_scientifique'"
+          data-exercise="ecriture_scientifique"
+        ></button>
+      </div>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="./core/exerciseButtons.js"
+  ></script>
+</body>
+</html>
