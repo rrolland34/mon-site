@@ -2,7 +2,7 @@
 
 export default {
   title:
-    "Fractions décimales égales à 1",
+    "Fractions décimales",
 
   questions: [
     {
