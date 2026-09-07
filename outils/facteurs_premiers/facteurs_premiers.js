@@ -1,3 +1,8 @@
+import {
+  formatAnswer
+} from "../../core/answerFormatting.js";
+
+
 const oneNumberButton =
   document.getElementById(
     "one-number-button"
@@ -606,29 +611,7 @@ function renderComparisonStep() {
     comparisonStep === 0
   ) {
 
-    firstFactorizationResult.innerHTML =
-      createFactorizationResult(
-        firstNumber,
-        buildFactorizationSteps(
-          firstNumber
-        )[
-          buildFactorizationSteps(
-            firstNumber
-          ).length - 1
-        ].rows
-      );
-
-    factorizationResult.innerHTML =
-      createFactorizationResult(
-        currentSecondNumber,
-        buildFactorizationSteps(
-          currentSecondNumber
-        )[
-          buildFactorizationSteps(
-            currentSecondNumber
-          ).length - 1
-        ].rows
-      );
+    resetFactorizationColors();
 
     if (
       window.MathJax &&
@@ -639,6 +622,358 @@ function renderComparisonStep() {
         [
           firstFactorizationResult,
           factorizationResult
+        ]
+      );
+    }
+
+    return;
+  }
+
+
+  if (
+    comparisonStep === 6
+  ) {
+
+    resetFactorizationColors();
+
+    if (
+      window.MathJax &&
+      window.MathJax.typesetPromise
+    ) {
+
+      MathJax.typesetPromise(
+        [
+          firstFactorizationResult,
+          factorizationResult
+        ]
+      );
+    }
+
+    return;
+  }
+
+
+  if (
+    comparisonStep === 7
+  ) {
+
+    const firstFactorizationText =
+      colorAllPrimeFactors(
+        createPrimeFactorization(
+          firstNumber
+        )
+      );
+
+    const secondFactorizationText =
+      colorAllPrimeFactors(
+        createPrimeFactorization(
+          currentSecondNumber
+        )
+      );
+
+    firstFactorizationResult.innerHTML =
+      `\\(${firstNumber}=${firstFactorizationText}\\)`;
+
+    factorizationResult.innerHTML =
+      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+
+    if (
+      window.MathJax &&
+      window.MathJax.typesetPromise
+    ) {
+
+      MathJax.typesetPromise(
+        [
+          firstFactorizationResult,
+          factorizationResult
+        ]
+      );
+    }
+
+    return;
+  }
+
+
+  if (
+    comparisonStep === 8
+  ) {
+
+    const firstFactorizationText =
+      colorAllPrimeFactors(
+        createPrimeFactorization(
+          firstNumber
+        )
+      );
+
+    const secondFactorizationText =
+      colorAllPrimeFactors(
+        createPrimeFactorization(
+          currentSecondNumber
+        )
+      );
+
+    firstFactorizationResult.innerHTML =
+      `\\(${firstNumber}=${firstFactorizationText}\\)`;
+
+    factorizationResult.innerHTML =
+      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+
+    const allPrimeFactors =
+      getAllPrimeFactors(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const factorsText =
+      allPrimeFactors
+        .map(
+          factor =>
+            `\\(${factor}\\)`
+        )
+        .join(
+          " ; "
+        );
+
+    comparisonResult.innerHTML =
+      `<div>` +
+        `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
+        factorsText +
+      `</div>`;
+
+    if (
+      window.MathJax &&
+      window.MathJax.typesetPromise
+    ) {
+
+      MathJax.typesetPromise(
+        [
+          firstFactorizationResult,
+          factorizationResult,
+          comparisonResult
+        ]
+      );
+    }
+
+    return;
+  }
+
+
+  if (
+    comparisonStep === 9
+  ) {
+
+    const firstFactorizationText =
+      colorSelectedLcmExponents(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const secondFactorizationText =
+      colorSelectedLcmExponents(
+        currentSecondNumber,
+        firstNumber
+      );
+
+    firstFactorizationResult.innerHTML =
+      `\\(${firstNumber}=${firstFactorizationText}\\)`;
+
+    factorizationResult.innerHTML =
+      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+
+    const allPrimeFactors =
+      getAllPrimeFactors(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const factorsText =
+      allPrimeFactors
+        .map(
+          factor =>
+            `\\(${factor}\\)`
+        )
+        .join(
+          " ; "
+        );
+
+    comparisonResult.innerHTML =
+      `<div>` +
+        `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
+        factorsText +
+      `</div>`;
+
+    if (
+      window.MathJax &&
+      window.MathJax.typesetPromise
+    ) {
+
+      MathJax.typesetPromise(
+        [
+          firstFactorizationResult,
+          factorizationResult,
+          comparisonResult
+        ]
+      );
+    }
+
+    return;
+  }
+
+
+  if (
+    comparisonStep === 10
+  ) {
+
+    const firstFactorizationText =
+      colorSelectedLcmExponents(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const secondFactorizationText =
+      colorSelectedLcmExponents(
+        currentSecondNumber,
+        firstNumber
+      );
+
+    firstFactorizationResult.innerHTML =
+      `\\(${firstNumber}=${firstFactorizationText}\\)`;
+
+    factorizationResult.innerHTML =
+      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+
+    const allPrimeFactors =
+      getAllPrimeFactors(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const factorsText =
+      allPrimeFactors
+        .map(
+          factor =>
+            `\\(${factor}\\)`
+        )
+        .join(
+          " ; "
+        );
+
+    const lcmFactorization =
+      createLcmFactorization(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    comparisonResult.innerHTML =
+      `<div>` +
+        `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
+        factorsText +
+      `</div>` +
+
+      `<div>` +
+        `Pour le plus petit multiple commun, ` +
+        `on garde tous les facteurs premiers présents ` +
+        `avec le plus grand exposant : ` +
+        `\\(${lcmFactorization}\\)` +
+      `</div>`;
+
+    if (
+      window.MathJax &&
+      window.MathJax.typesetPromise
+    ) {
+
+      MathJax.typesetPromise(
+        [
+          firstFactorizationResult,
+          factorizationResult,
+          comparisonResult
+        ]
+      );
+    }
+
+    return;
+  }
+
+
+  if (
+    comparisonStep === 11
+  ) {
+
+    const firstFactorizationText =
+      colorSelectedLcmExponents(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const secondFactorizationText =
+      colorSelectedLcmExponents(
+        currentSecondNumber,
+        firstNumber
+      );
+
+    firstFactorizationResult.innerHTML =
+      `\\(${firstNumber}=${firstFactorizationText}\\)`;
+
+    factorizationResult.innerHTML =
+      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+
+    const allPrimeFactors =
+      getAllPrimeFactors(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const factorsText =
+      allPrimeFactors
+        .map(
+          factor =>
+            `\\(${factor}\\)`
+        )
+        .join(
+          " ; "
+        );
+
+    const lcmFactorization =
+      createLcmFactorization(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    const lcm =
+      getLcmFromPrimeFactors(
+        firstNumber,
+        currentSecondNumber
+      );
+
+    comparisonResult.innerHTML =
+      `<div>` +
+        `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
+        factorsText +
+      `</div>` +
+
+      `<div>` +
+        `Pour le plus petit multiple commun, ` +
+        `on garde tous les facteurs premiers présents ` +
+        `avec le plus grand exposant : ` +
+        `\\(${lcmFactorization}\\)` +
+      `</div>` +
+
+      `<div>` +
+        `Le plus petit multiple commun de ` +
+        `${firstNumber} et ${currentSecondNumber} est ` +
+        `\\(${lcmFactorization}=${formatAnswer(lcm, "math")}\\).` +
+      `</div>`;
+
+    if (
+      window.MathJax &&
+      window.MathJax.typesetPromise
+    ) {
+
+      MathJax.typesetPromise(
+        [
+          firstFactorizationResult,
+          factorizationResult,
+          comparisonResult
         ]
       );
     }
@@ -780,7 +1115,7 @@ function renderComparisonStep() {
       `<div>` +
         `Le plus grand diviseur commun de ` +
         `${firstNumber} et ${currentSecondNumber} est ` +
-        `\\(${gcdFactorization}=${gcd}\\).` +
+        `\\(${gcdFactorization}=${formatAnswer(gcd, "math")}\\).` +
       `</div>`;
   }
 
@@ -911,6 +1246,90 @@ function nextStep() {
 
     comparisonStep =
       5;
+
+    renderComparisonStep();
+
+    return;
+  }
+
+  else if (
+    numberMode === 2 &&
+    currentNumberPosition === 2 &&
+    comparisonStep === 5
+  ) {
+
+    comparisonStep =
+      6;
+
+    renderComparisonStep();
+
+    return;
+  }
+
+  else if (
+    numberMode === 2 &&
+    currentNumberPosition === 2 &&
+    comparisonStep === 6
+  ) {
+
+    comparisonStep =
+      7;
+
+    renderComparisonStep();
+
+    return;
+  }
+
+  else if (
+    numberMode === 2 &&
+    currentNumberPosition === 2 &&
+    comparisonStep === 7
+  ) {
+
+    comparisonStep =
+      8;
+
+    renderComparisonStep();
+
+    return;
+  }
+
+  else if (
+    numberMode === 2 &&
+    currentNumberPosition === 2 &&
+    comparisonStep === 8
+  ) {
+
+    comparisonStep =
+      9;
+
+    renderComparisonStep();
+
+    return;
+  }
+
+  else if (
+    numberMode === 2 &&
+    currentNumberPosition === 2 &&
+    comparisonStep === 9
+  ) {
+
+    comparisonStep =
+      10;
+
+    renderComparisonStep();
+
+    return;
+  }
+
+  else if (
+    numberMode === 2 &&
+    currentNumberPosition === 2 &&
+    comparisonStep === 10
+  ) {
+
+    comparisonStep =
+      11;
 
     renderComparisonStep();
 
@@ -1263,6 +1682,82 @@ function colorSelectedGcdExponents(
 }
 
 
+function colorSelectedLcmExponents(
+  number,
+  otherNumber
+) {
+
+  const counts =
+    getPrimeFactorCounts(
+      number
+    );
+
+  const otherCounts =
+    getPrimeFactorCounts(
+      otherNumber
+    );
+
+  return Object.entries(
+    counts
+  )
+    .map(
+      (
+        [
+          prime,
+          exponent
+        ]
+      ) => {
+
+        const primeNumber =
+          Number(
+            prime
+          );
+
+        const otherExponent =
+          otherCounts[
+            primeNumber
+          ] || 0;
+
+        const selectedExponent =
+          Math.max(
+            exponent,
+            otherExponent
+          );
+
+        const coloredPrime =
+          `{\\color{green}{${prime}}}`;
+
+        if (
+          exponent === 1
+        ) {
+          return coloredPrime;
+        }
+
+        if (
+          exponent ===
+          selectedExponent
+        ) {
+
+          return (
+            `${coloredPrime}` +
+            `^{` +
+              `{\\color{orange}{${exponent}}}` +
+            `}`
+          );
+        }
+
+        return (
+          `${coloredPrime}` +
+          `^{${exponent}}`
+        );
+      }
+    )
+    .join(
+      "\\times"
+    );
+}
+
+
 function getPrimeFactorCounts(
   number
 ) {
@@ -1454,6 +1949,207 @@ function getGcdFromPrimeFactors(
   );
 
   return gcd;
+}
+
+
+function resetFactorizationColors() {
+
+  firstFactorizationResult.innerHTML =
+    createFactorizationResult(
+      firstNumber,
+      buildFactorizationSteps(
+        firstNumber
+      )[
+        buildFactorizationSteps(
+          firstNumber
+        ).length - 1
+      ].rows
+    );
+
+  factorizationResult.innerHTML =
+    createFactorizationResult(
+      currentSecondNumber,
+      buildFactorizationSteps(
+        currentSecondNumber
+      )[
+        buildFactorizationSteps(
+          currentSecondNumber
+        ).length - 1
+      ].rows
+    );
+}
+
+
+function colorAllPrimeFactors(
+  factorization
+) {
+
+  return factorization.replace(
+    /(^|\\times)(\d+)(?=\^|\\times|$)/g,
+    (
+      match,
+      separator,
+      factor
+    ) => {
+
+      return (
+        `${separator}` +
+        `{\\color{green}{${factor}}}`
+      );
+    }
+  );
+}
+
+
+function getAllPrimeFactors(
+  firstNumber,
+  secondNumber
+) {
+
+  const firstFactors =
+    getPrimeFactors(
+      firstNumber
+    );
+
+  const secondFactors =
+    getPrimeFactors(
+      secondNumber
+    );
+
+  return Array.from(
+    new Set(
+      [
+        ...firstFactors,
+        ...secondFactors
+      ]
+    )
+  )
+    .sort(
+      (
+        a,
+        b
+      ) =>
+        a - b
+    );
+}
+
+
+function createLcmFactorization(
+  firstNumber,
+  secondNumber
+) {
+
+  const firstCounts =
+    getPrimeFactorCounts(
+      firstNumber
+    );
+
+  const secondCounts =
+    getPrimeFactorCounts(
+      secondNumber
+    );
+
+  const allPrimes =
+    Array.from(
+      new Set(
+        [
+          ...Object.keys(
+            firstCounts
+          ),
+          ...Object.keys(
+            secondCounts
+          )
+        ]
+      )
+    )
+      .map(
+        Number
+      )
+      .sort(
+        (
+          a,
+          b
+        ) =>
+          a - b
+      );
+
+  return allPrimes
+    .map(
+      prime => {
+
+        const exponent =
+          Math.max(
+            firstCounts[prime] || 0,
+            secondCounts[prime] || 0
+          );
+
+        if (
+          exponent === 1
+        ) {
+          return `${prime}`;
+        }
+
+        return (
+          `${prime}^{${exponent}}`
+        );
+      }
+    )
+    .join(
+      "\\times"
+    );
+}
+
+
+function getLcmFromPrimeFactors(
+  firstNumber,
+  secondNumber
+) {
+
+  const firstCounts =
+    getPrimeFactorCounts(
+      firstNumber
+    );
+
+  const secondCounts =
+    getPrimeFactorCounts(
+      secondNumber
+    );
+
+  const allPrimes =
+    Array.from(
+      new Set(
+        [
+          ...Object.keys(
+            firstCounts
+          ),
+          ...Object.keys(
+            secondCounts
+          )
+        ]
+      )
+    )
+      .map(
+        Number
+      );
+
+  let lcm =
+    1;
+
+  allPrimes.forEach(
+    prime => {
+
+      const exponent =
+        Math.max(
+          firstCounts[prime] || 0,
+          secondCounts[prime] || 0
+        );
+
+      lcm *=
+        prime ** exponent;
+    }
+  );
+
+  return lcm;
 }
 
 
