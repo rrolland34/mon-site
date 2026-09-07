@@ -210,6 +210,10 @@ button {
   width: 100%;
 }
 
+#top-controls button {
+  font-size: 0.85em;
+}
+
 .control-group {
   display: flex;
   align-items: center;
@@ -230,14 +234,16 @@ button {
 /* Boutons start/restart */
 #start,
 #restart,
-#pause-timer {
+#pause-timer,
+#export-evaluation {
   background: linear-gradient(135deg, #27ae60, #2ecc71);
   font-size: 1.2em;
 }
 
 #start:hover,
 #restart:hover,
-#pause-timer:hover {
+#pause-timer:hover,
+#export-evaluation:hover {
   background: linear-gradient(135deg, #229954, #27ae60);
 }
 

@@ -1,0 +1,207 @@
+.prime-page {
+  text-align: center;
+}
+
+
+.prime-mode {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+
+.prime-input-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+
+.number-zone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.prime-input-zone input {
+  width: 140px;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+
+.input-message {
+  min-height: 24px;
+  margin: 8px auto 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+.prime-panel {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+
+.factorization-table {
+  min-height: 120px;
+  margin: 30px auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.factorization-result {
+  min-height: 40px;
+  margin: 20px auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.calculator-screen {
+  width: 500px;
+  max-width: 90%;
+  min-height: 70px;
+  margin: 25px auto;
+  padding: 20px 25px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background: #202722;
+  color: #d8f5c2;
+
+  border: 5px solid #555;
+  border-radius: 12px;
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+
+.prime-actions {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+
+.factorization-table table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+
+.factorization-table td {
+  min-width: 60px;
+  padding: 4px 12px;
+  text-align: right;
+}
+
+
+.factorization-table td + td {
+  border-left: 2px solid currentColor;
+  text-align: left;
+}
+
+
+/* Zone contenant les deux décompositions */
+
+.factorizations-zone {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  grid-template-rows:
+    auto auto;
+
+  column-gap: 60px;
+
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+
+/*
+  Chaque colonne utilise les mêmes
+  deux lignes que la grille principale :
+
+  ligne 1 : tableau
+  ligne 2 : résultat
+*/
+
+.factorization-column {
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-rows:
+    subgrid;
+
+  grid-row:
+    span 2;
+}
+
+
+.factorizations-zone
+.factorization-table {
+  margin: 30px auto 15px;
+}
+
+
+.factorizations-zone
+.factorization-result {
+  margin: 15px auto 20px;
+}
+
+
+.comparison-result {
+  min-height: 40px;
+  margin: 15px auto 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.comparison-result div + div {
+  margin-top: 12px;
+}
+
+
+@media (
+  max-width: 700px
+) {
+
+  .factorizations-zone {
+    column-gap: 20px;
+  }
+
+  .factorization-table {
+    font-size: 1.3rem;
+  }
+
+  .factorization-result {
+    font-size: 1.3rem;
+  }
+
+}

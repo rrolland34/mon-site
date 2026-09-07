@@ -41,6 +41,16 @@ export function completeCorrectionSession({
 
   onPrepareFinalScreen();
 
+  const exportButton =
+    document.getElementById(
+      "export-evaluation"
+    );
+
+  if (exportButton) {
+    exportButton.style.display =
+      "inline-block";
+  }
+
   /*
    * Dans l'ancienne fonction, ces boutons étaient réactivés
    * après la séquence de correction.

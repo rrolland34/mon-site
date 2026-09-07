@@ -115,6 +115,10 @@ import {
   highlightCartesianQCMPoints
 } from "./core/cartesianPointSelection.js";
 
+import {
+  formatAnswer
+} from "./core/answerFormatting.js";
+
 const urlParams = new URLSearchParams(window.location.search);
 const currentExercise = urlParams.get("table") || "questions_1";
 const exercice = loadExercise(currentExercise);
@@ -1068,6 +1072,681 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   initializeMathKeyboard();
+
+  const exportEvaluationButton =
+    document.getElementById(
+      "export-evaluation"
+    );
+
+  if (exportEvaluationButton) {
+    exportEvaluationButton.addEventListener(
+      "click",
+      () => {
+        const archiveWindow =
+          window.open(
+            "",
+            "_blank"
+          );
+
+        if (!archiveWindow) {
+          return;
+        }
+
+        const currentDate =
+          new Intl.DateTimeFormat(
+            "fr-FR",
+            {
+              day:
+                "2-digit",
+
+              month:
+                "2-digit",
+
+              year:
+                "numeric"
+            }
+          ).format(
+            new Date()
+          );
+
+        const evaluationContent =
+          userAnswers
+            .map(
+              (
+                correction,
+                index
+              ) => {
+                const questionText =
+                  typeof correction.question ===
+                  "string"
+
+                    ? correction.question
+
+                    : (
+                        correction.question?.[
+                          correction.answerMode
+                        ] ??
+                        correction.question?.direct ??
+                        correction.question?.qcm ??
+                        correction.question?.point ??
+                        ""
+                      );
+
+                const rawAnswer =
+                  correction.displayAnswer ??
+                  correction.correctAnswer ??
+                  "";
+
+                const normalizedAnswer =
+                  String(
+                    rawAnswer
+                  ).trim();
+
+                const isPower =
+                  /^\(?-?\d+\)?\^-?\d+$/.test(
+                    normalizedAnswer
+                  );
+
+                const isProduct =
+                  /^(?:\(-?\d+\)|-?\d+)(?:\*(?:\(-?\d+\)|-?\d+))+$/.test(
+                    normalizedAnswer.replace(
+                      /\s+/g,
+                      ""
+                    )
+                  );
+
+                const isScientificNotation =
+                  /^-?\d+(?:\.\d+)?\*10\^-?\d+$/.test(
+                    normalizedAnswer.replace(
+                      /\s+/g,
+                      ""
+                    )
+                  );
+
+                const isNumericAnswer =
+                  normalizedAnswer !== "" &&
+                  !Number.isNaN(
+                    Number(
+                      normalizedAnswer
+                    )
+                  );
+
+                const coordinateMatch =
+                  normalizedAnswer.match(
+                    /^([A-Za-z])\(\s*(-?\d+(?:[.,]\d+)?)\s*;\s*(-?\d+(?:[.,]\d+)?)\s*\)$/
+                  );
+
+                const isCoordinates =
+                  coordinateMatch !== null;
+
+                let answerText;
+
+                if (
+                  correction.answerMode === "point" ||
+                  (
+                    correction.answerMode === "qcm" &&
+                    Array.isArray(
+                      correction.qcmPoints
+                    )
+                  )
+                ) {
+                  answerText = "";
+                } else if (
+                  isCoordinates
+                ) {
+                  const pointName =
+                    coordinateMatch[1];
+
+                  const x =
+                    coordinateMatch[2];
+
+                  const y =
+                    coordinateMatch[3];
+
+                  answerText =
+                    `\\(\\mathrm{${pointName}}(` +
+                    `${formatAnswer(
+                      x,
+                      "math"
+                    )}` +
+                    `\\,;\\,` +
+                    `${formatAnswer(
+                      y,
+                      "math"
+                    )}` +
+                    `)\\)`;
+                } else if (
+                  isPower ||
+                  isProduct ||
+                  isScientificNotation ||
+                  isNumericAnswer
+                ) {
+                  answerText =
+                    `\\(${formatAnswer(
+                      normalizedAnswer,
+                      "math"
+                    )}\\)`;
+                } else {
+                  answerText =
+                    normalizedAnswer;
+                }
+
+                const qcmAnswers =
+                  correction.answerMode === "qcm" &&
+                  Array.isArray(
+                    correction.qcmAnswersOrder
+                  )
+
+                    ? correction.qcmAnswersOrder
+
+                    : null;
+
+                const qcmContent =
+                  qcmAnswers
+
+                    ? `
+                        <div class="archive-qcm">
+                          ${qcmAnswers
+                            .map(
+                              (
+                                answer,
+                                answerIndex
+                              ) => {
+                                const normalizedQCMAnswer =
+                                  String(
+                                    answer
+                                  ).trim();
+
+                                const isPowerQCM =
+                                  /^\(?-?\d+\)?\^-?\d+$/.test(
+                                    normalizedQCMAnswer
+                                  );
+
+                                const isProductQCM =
+                                  /^(?:\(-?\d+\)|-?\d+)(?:\*(?:\(-?\d+\)|-?\d+))+$/.test(
+                                    normalizedQCMAnswer.replace(
+                                      /\s+/g,
+                                      ""
+                                    )
+                                  );
+
+                                const isScientificNotationQCM =
+                                  /^-?\d+(?:\.\d+)?\*10\^-?\d+$/.test(
+                                    normalizedQCMAnswer.replace(
+                                      /\s+/g,
+                                      ""
+                                    )
+                                  );
+
+                                const isNumericQCM =
+                                  normalizedQCMAnswer !== "" &&
+                                  !Number.isNaN(
+                                    Number(
+                                      normalizedQCMAnswer
+                                    )
+                                  );
+
+                                const coordinateQCMMatch =
+                                  normalizedQCMAnswer.match(
+                                    /^([A-Za-z])\(\s*(-?\d+(?:[.,]\d+)?)\s*;\s*(-?\d+(?:[.,]\d+)?)\s*\)$/
+                                  );
+
+                                const isCoordinatesQCM =
+                                  coordinateQCMMatch !== null;
+
+                                let displayedQCMAnswer;
+
+                                if (
+                                  isCoordinatesQCM
+                                ) {
+                                  const pointName =
+                                    coordinateQCMMatch[1];
+
+                                  const x =
+                                    coordinateQCMMatch[2];
+
+                                  const y =
+                                    coordinateQCMMatch[3];
+
+                                  displayedQCMAnswer =
+                                    `\\(\\mathrm{${pointName}}(` +
+                                    `${formatAnswer(
+                                      x,
+                                      "math"
+                                    )}` +
+                                    `\\,;\\,` +
+                                    `${formatAnswer(
+                                      y,
+                                      "math"
+                                    )}` +
+                                    `)\\)`;
+                                } else if (
+                                  isPowerQCM ||
+                                  isProductQCM ||
+                                  isScientificNotationQCM ||
+                                  isNumericQCM
+                                ) {
+                                  displayedQCMAnswer =
+                                    `\\(${formatAnswer(
+                                      normalizedQCMAnswer,
+                                      "math"
+                                    )}\\)`;
+                                } else {
+                                  displayedQCMAnswer =
+                                    normalizedQCMAnswer;
+                                }
+
+                                return `
+                                  <div>
+                                    ${String.fromCharCode(
+                                      65 + answerIndex
+                                    )}.
+                                    ${displayedQCMAnswer}
+                                  </div>
+                                `;
+                              }
+                            )
+                            .join("")}
+                        </div>
+                      `
+
+                    : "";
+
+                return `
+              <section class="evaluation-question">
+                    <h2>
+                      Question ${index + 1}
+                    </h2>
+
+                    <div
+                      class="archive-question-content"
+                      data-question-index="${index}"
+                    >
+                      ${questionText}
+                    </div>
+
+                    ${qcmContent}
+
+                    ${answerText
+                      ? `
+                          <p class="evaluation-answer">
+                            Réponse :
+                            ${answerText}
+                          </p>
+                        `
+                      : ""
+                    }
+                  </section>
+                `;
+              }
+            )
+            .join("");
+
+        archiveWindow.document.documentElement.innerHTML = `
+          <head>
+            <meta charset="UTF-8">
+
+            <title>
+              Évaluation
+            </title>
+
+            <style>
+              @page {
+                size: A4;
+                margin: 18mm;
+              }
+
+              body {
+                font-family:
+                  Arial,
+                  sans-serif;
+
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 0 20px;
+                color: #111;
+                line-height: 1.4;
+              }
+
+              .evaluation-header {
+                margin-bottom: 35px;
+                padding-bottom: 15px;
+                border-bottom: 2px solid #333;
+                text-align: center;
+              }
+
+              .evaluation-header h1 {
+                margin: 0 0 8px;
+              }
+
+              .evaluation-date {
+                margin: 0;
+                color: #555;
+              }
+
+              .evaluation-question {
+                margin-bottom: 40px;
+                page-break-inside: avoid;
+                break-inside: avoid;
+              }
+
+              .evaluation-answer {
+                margin-top: 16px;
+                font-weight: 700;
+              }
+
+              .archive-qcm {
+                margin-top: 18px;
+                margin-left: 20px;
+              }
+
+              .archive-qcm > div {
+                margin: 8px 0;
+              }
+
+              .dnb-right-triangle svg {
+                width: 320px;
+                max-width: 90%;
+                height: auto;
+                display: block;
+                margin: 15px auto;
+              }
+
+              .dnb-thales svg {
+                width: 320px;
+                max-width: 90%;
+                height: auto;
+                display: block;
+                margin: 15px auto;
+              }
+
+              .thales-figure .thales-lines {
+                stroke: #111;
+                stroke-width: 2;
+                fill: none;
+              }
+
+              .thales-figure .thales-length-arrows {
+                stroke: #111;
+                stroke-width: 1.5;
+                fill: none;
+              }
+
+              .thales-figure .thales-point-labels,
+              .thales-figure .thales-length-labels,
+              .thales-figure .thales-angle-labels {
+                fill: #111;
+              }
+
+              @media print {
+                body {
+                  max-width: none;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                #print-evaluation {
+                  display: none;
+                }
+              }
+            </style>
+          </head>
+
+          <body>
+            <header class="evaluation-header">
+              <h1>
+                ${exercice.title}
+              </h1>
+
+              <p class="evaluation-date">
+                ${currentDate}
+              </p>
+            </header>
+
+            <button
+              id="print-evaluation"
+              type="button"
+              style="
+                margin-bottom:30px;
+                padding:10px 18px;
+                font-size:1rem;
+                cursor:pointer;
+              "
+            >
+              Imprimer / Enregistrer en PDF
+            </button>
+
+            ${evaluationContent}
+          </body>
+        `;
+
+        const printButton =
+          archiveWindow.document.getElementById(
+            "print-evaluation"
+          );
+
+        if (printButton) {
+          printButton.addEventListener(
+            "click",
+            () => {
+              archiveWindow.print();
+            }
+          );
+        }
+
+        const mathJaxScript =
+          archiveWindow.document.createElement(
+            "script"
+          );
+
+        mathJaxScript.src =
+          "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+
+        mathJaxScript.async = true;
+
+        archiveWindow.document.head.appendChild(
+          mathJaxScript
+        );
+
+        const scratchBlocksUrl =
+          new URL(
+            "./scratchblocks.min.js",
+            window.location.href
+          ).href;
+
+        const scratchTranslationsUrl =
+          new URL(
+            "./translations-all.js",
+            window.location.href
+          ).href;
+
+        const scratchBlocksScript =
+          archiveWindow.document.createElement(
+            "script"
+          );
+
+        scratchBlocksScript.src =
+          scratchBlocksUrl;
+
+        archiveWindow.document.head.appendChild(
+          scratchBlocksScript
+        );
+
+        scratchBlocksScript.onload =
+          () => {
+            const scratchTranslationsScript =
+              archiveWindow.document.createElement(
+                "script"
+              );
+
+            scratchTranslationsScript.src =
+              scratchTranslationsUrl;
+
+            scratchTranslationsScript.onload =
+              () => {
+                archiveWindow.scratchblocks.renderMatching(
+                  "pre.blocks",
+                  {
+                    style:
+                      "scratch3",
+                    languages: [
+                      "fr"
+                    ]
+                  }
+                );
+              };
+
+            archiveWindow.document.head.appendChild(
+              scratchTranslationsScript
+            );
+          };
+
+        userAnswers.forEach(
+          (
+            correction,
+            index
+          ) => {
+            if (
+              !correction.figureConfig
+            ) {
+              return;
+            }
+
+            const questionContainer =
+              archiveWindow.document.querySelector(
+                `[data-question-index="${index}"]`
+              );
+
+            const svg =
+              questionContainer?.querySelector(
+                ".cartesian-plane"
+              );
+
+            if (!svg) {
+              return;
+            }
+
+            /*
+            * Lecture de coordonnées :
+            * le point donné apparaît
+            * dans le repère.
+            */
+
+            if (
+              correction.givenPoint
+            ) {
+              displayCartesianPoint({
+                svg,
+
+                point:
+                  correction.givenPoint,
+
+                width:
+                  correction.figureConfig.width,
+
+                height:
+                  correction.figureConfig.height,
+
+                range:
+                  correction.figureConfig.range,
+
+                padding:
+                  correction.figureConfig.padding,
+
+                name:
+                  correction.givenPoint.name,
+
+                color:
+                  "currentColor"
+              });
+
+              return;
+            }
+
+            /*
+            * Placement d'un point :
+            * la solution apparaît
+            * en rouge.
+            */
+
+            if (
+              correction.answerMode === "point" &&
+              correction.correctAnswer
+            ) {
+              displayCartesianPoint({
+                svg,
+
+                point:
+                  correction.correctAnswer,
+
+                width:
+                  correction.figureConfig.width,
+
+                height:
+                  correction.figureConfig.height,
+
+                range:
+                  correction.figureConfig.range,
+
+                padding:
+                  correction.figureConfig.padding,
+
+                name:
+                  correction.correctAnswer.name,
+
+                color:
+                  "red"
+              });
+
+              return;
+            }
+
+            /*
+            * QCM graphique :
+            * les quatre points apparaissent
+            * et la bonne réponse est verte.
+            */
+
+            if (
+              correction.answerMode === "qcm" &&
+              Array.isArray(
+                correction.qcmPoints
+              )
+            ) {
+              displayCartesianPoints({
+                svg,
+
+                points:
+                  correction.qcmPoints,
+
+                width:
+                  correction.figureConfig.width,
+
+                height:
+                  correction.figureConfig.height,
+
+                range:
+                  correction.figureConfig.range,
+
+                padding:
+                  correction.figureConfig.padding
+              });
+
+              highlightCartesianQCMPoints({
+                svg,
+
+                selectedPoint:
+                  null,
+
+                correctPoint:
+                  correction.correctAnswer
+              });
+            }
+          }
+        );
+      }
+    );
+  }
 
   const pauseButton =
     document.getElementById(

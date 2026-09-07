@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Diviseurs
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="../../style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="diviseurs.css"
+  >
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-list">
+
+      <li class="nav-item">
+        <a
+          href="../../index.html"
+          class="nav-link"
+        >
+          Accueil
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="../../automatismes_6.html"
+          class="nav-link"
+        >
+          Automatismes 6e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="../../automatismes_3.html"
+          class="nav-link"
+        >
+          Automatismes 3e
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="../../exercise_selection.html"
+          class="nav-link"
+        >
+          Exercices
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="../../outils.html"
+          class="nav-link active"
+        >
+          Outils
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="../../videos.html"
+          class="nav-link"
+        >
+          Vidéos
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <main class="container divisor-page">
+
+    <h1>
+      Diviseurs
+    </h1>
+
+
+    <div class="divisor-mode">
+
+      <button
+        id="one-number-button"
+        type="button"
+        class="category-btn"
+      >
+        1 nombre
+      </button>
+
+      <button
+        id="two-numbers-button"
+        type="button"
+        class="category-btn"
+      >
+        2 nombres
+      </button>
+
+    </div>
+
+
+    <div class="divisor-input-zone">
+
+      <div
+        id="first-number-zone"
+        class="number-zone"
+      >
+
+        <label for="number-input">
+          Nombre
+        </label>
+
+        <input
+          id="number-input"
+          type="number"
+          min="1"
+          step="1"
+        >
+
+      </div>
+
+
+      <div
+        id="second-number-zone"
+        class="number-zone"
+        style="display:none;"
+      >
+
+        <label for="second-number-input">
+          Nombre 2
+        </label>
+
+        <input
+          id="second-number-input"
+          type="number"
+          min="1"
+          step="1"
+        >
+
+      </div>
+
+    </div>
+
+    <div
+      id="input-message"
+      class="input-message"
+    ></div>
+
+    <div
+      id="first-final-list"
+      class="final-divisor-list"
+      style="display:none;"
+    ></div>
+
+    <div class="divisor-panel">
+      <div
+        id="divisor-list"
+        class="divisor-list"
+      >
+
+        <span
+          id="left-divisors"
+          class="divisor-group"
+        ></span>
+
+        <span
+          id="divisor-gap"
+          class="divisor-gap"
+        ></span>
+
+        <span
+          id="right-divisors"
+          class="divisor-group"
+        ></span>
+
+      </div>
+
+      <div
+        id="comparison-result"
+        class="comparison-result"
+      ></div>
+
+      <div
+        id="calculator-screen"
+        class="calculator-screen"
+      >
+      </div>
+
+      <div
+        id="search-bound"
+        class="search-bound"
+      >
+      </div>
+
+      <div
+        id="divisor-message"
+        class="divisor-message"
+      >
+      </div>
+    </div>
+
+    <div class="divisor-actions">
+
+      <button
+        id="next-step-button"
+        type="button"
+        class="category-btn"
+      >
+        Étape suivante
+      </button>
+
+      <button
+        id="restart-button"
+        type="button"
+        class="category-btn"
+      >
+        Recommencer
+      </button>
+
+    </div>
+
+  </main>
+
+
+  <script
+    type="module"
+    src="diviseurs.js"
+  ></script>
+
+</body>
+
+</html>

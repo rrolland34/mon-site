@@ -407,23 +407,50 @@ export function displayCorrectionAnswer(correction) {
       )
     );
 
-  const displayedAnswer =
+  const coordinateMatch =
+    normalizedCorrectAnswer.match(
+      /^([A-Za-z])\(\s*(-?\d+(?:[.,]\d+)?)\s*;\s*(-?\d+(?:[.,]\d+)?)\s*\)$/
+    );
+
+  const isCoordinates =
+    coordinateMatch !== null;
+
+  let displayedAnswer;
+
+  if (isCoordinates) {
+    const pointName =
+      coordinateMatch[1];
+
+    const x =
+      coordinateMatch[2];
+
+    const y =
+      coordinateMatch[3];
+
+    displayedAnswer =
+      `\\(\\mathrm{${pointName}}(` +
+      `${formatAnswer(x, "math")}` +
+      `\\,;\\,` +
+      `${formatAnswer(y, "math")}` +
+      `)\\)`;
+  } else if (
     isPower ||
     isProduct ||
     isScientificNotation ||
     isNumericAnswer
-
-      ? `\\(${formatAnswer(
-          normalizedCorrectAnswer,
-          "math"
-        )}\\)`
-
-      : (
-          correction.displayAnswer ??
-          formatAnswer(
-            correction.correctAnswer
-          )
-        );
+  ) {
+    displayedAnswer =
+      `\\(${formatAnswer(
+        normalizedCorrectAnswer,
+        "math"
+      )}\\)`;
+  } else {
+    displayedAnswer =
+      correction.displayAnswer ??
+      formatAnswer(
+        correction.correctAnswer
+      );
+  }
 
   feedbackElement.innerHTML =
     `Solution : ${displayedAnswer}`;
