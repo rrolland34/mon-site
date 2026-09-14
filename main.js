@@ -573,7 +573,7 @@ function processAnswer(
       currentQuestion.answerFields.length > 0
     ) {
       incorrectFeedback =
-        "Une ou plusieurs réponses sont incorrectes.";
+        "";
 
       showCorrectAnswer = true;
 
@@ -1061,7 +1061,12 @@ document.addEventListener("DOMContentLoaded", function() {
   initializePage({
     title: exercice.title,
     onStart: startExercises,
-    onRestart: startExercises,
+    onRestart: () => {
+      if (typeof exercice.generateQuestions === "function") {
+        exercice.questions = exercice.generateQuestions();
+      }
+      startExercises();
+    },
     onSubmit: checkAnswer,
     onNext: nextQuestion,
     onHideTimer: hideTimerImmediately
@@ -1476,6 +1481,130 @@ document.addEventListener("DOMContentLoaded", function() {
               .thales-figure .thales-length-labels,
               .thales-figure .thales-angle-labels {
                 fill: #111;
+              }
+
+              .proportionality-table {
+                border-collapse:
+                  collapse;
+
+                table-layout:
+                  fixed;
+
+                width:
+                  440px;
+
+                max-width:
+                  100%;
+
+                margin:
+                  15px
+                  auto;
+              }
+
+              .proportionality-table td {
+                width:
+                  110px;
+
+                height:
+                  45px;
+
+                padding:
+                  0
+                  6px;
+
+                box-sizing:
+                  border-box;
+
+                border:
+                  1px solid
+                  #111;
+
+                text-align:
+                  center;
+
+                vertical-align:
+                  middle;
+
+                white-space:
+                  nowrap;
+
+                font-size:
+                  1.1em;
+              }
+
+              .proportionality-graph {
+                width:
+                  340px;
+
+                max-width:
+                  90%;
+
+                height:
+                  auto;
+
+                display:
+                  block;
+
+                margin:
+                  12px
+                  auto;
+              }
+
+              .proportionality-graph-grid {
+                stroke:
+                  #111;
+
+                stroke-width:
+                  0.5;
+
+                opacity:
+                  0.25;
+              }
+
+              .proportionality-graph-axis {
+                stroke:
+                  #111;
+
+                stroke-width:
+                  1.5;
+              }
+
+              .proportionality-graph-arrow {
+                fill:
+                  #111;
+              }
+
+              .proportionality-graph-line {
+                stroke:
+                  #111;
+
+                stroke-width:
+                  3;
+
+                stroke-linecap:
+                  round;
+
+                stroke-linejoin:
+                  round;
+
+                fill:
+                  none;
+              }
+
+              .proportionality-graph-label {
+                fill:
+                  #111;
+
+                font-size:
+                  14px;
+              }
+
+              .proportionality-graph-title {
+                fill:
+                  #111;
+
+                font-size:
+                  15px;
               }
 
               @media print {

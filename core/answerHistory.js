@@ -22,6 +22,13 @@ export function storeAnswerForCorrections({
         userAnswer ||
         "Pas de réponse",
 
+      answerFields:
+        Array.isArray(
+          currentQuestion.answerFields
+        )
+          ? currentQuestion.answerFields
+          : null,
+
       correctAnswer,
 
       displayAnswer:

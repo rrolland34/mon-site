@@ -97,6 +97,10 @@ import {
   validateScientificNotation
 } from "./validators/scientificNotationValidator.js";
 
+import {
+  validateRatioComparison
+} from "./validators/ratioComparisonValidator.js";
+
 /**
  * Compare la réponse de l'utilisateur
  * aux réponses acceptées.
@@ -592,6 +596,41 @@ export function checkAnswerSmart({
         validation.valid
           ? "Bonne réponse !"
           : "Égalité de rapports incorrecte.",
+
+      showCorrectAnswer:
+        true,
+
+      errorCode:
+        validation.errorCode
+    };
+  }
+
+  if (
+    answerRule?.type ===
+    "ratioComparison"
+  ) {
+    const validation =
+      validateRatioComparison({
+        userInput,
+
+        expectedRelation:
+          answerRule.expectedRelation,
+
+        firstRow:
+          answerRule.firstRow,
+
+        secondRow:
+          answerRule.secondRow
+      });
+
+    return {
+      correct:
+        validation.valid,
+
+      feedback:
+        validation.valid
+          ? "Bonne réponse !"
+          : "Comparaison de rapports incorrecte.",
 
       showCorrectAnswer:
         true,

@@ -47,6 +47,18 @@ export function configureQuestionControls({
       "multi-answer-container"
     );
 
+  multiAnswerContainer.classList.remove(
+    "proportionality-answer-fields"
+  );
+
+  if (
+    question.answerFieldsClass
+  ) {
+    multiAnswerContainer.classList.add(
+      question.answerFieldsClass
+    );
+  }
+
   const qcmOptions =
     document.getElementById("qcm-options");
 
@@ -62,17 +74,57 @@ export function configureQuestionControls({
           (
             field,
             index
-          ) => `
-            <label>
-              ${field.label}
+          ) => {
 
-              <input
-                type="text"
-                class="multi-answer-input"
-                data-index="${index}"
-              >
-            </label>
-          `
+            if (
+              field.type ===
+              "select"
+            ) {
+              return `
+                <label>
+                  ${field.label}
+
+                  <select
+                    class="multi-answer-input"
+                    data-index="${index}"
+                  >
+                    <option
+                      value=""
+                      selected
+                    >
+                      Choisir...
+                    </option>
+
+                    ${
+                      field.options
+                        .map(
+                          option => `
+                            <option
+                              value="${option.value}"
+                            >
+                              ${option.label}
+                            </option>
+                          `
+                        )
+                        .join("")
+                    }
+                  </select>
+                </label>
+              `;
+            }
+
+            return `
+              <label>
+                ${field.label}
+
+                <input
+                  type="text"
+                  class="multi-answer-input"
+                  data-index="${index}"
+                >
+              </label>
+            `;
+          }
         )
         .join("");
 

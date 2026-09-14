@@ -11,11 +11,9 @@ import {
   createDecimalDivisionQuestion
 } from "./generators/powerOfTenDivision.js";
 
-export default {
-  title:
-    "Multiplier ou diviser par 10, 100 ou 1 000",
 
-  questions: [
+function generateQuestions() {
+  return [
     createIntegerMultiplicationQuestion(),
     createIntegerDivisionQuestion(),
 
@@ -24,5 +22,16 @@ export default {
 
     createDecimalToDecimalMultiplicationQuestion(),
     createDecimalDivisionQuestion(1)
-  ]
+  ];
+}
+
+
+export default {
+  title:
+    "Multiplier ou diviser par 10, 100 ou 1 000",
+
+  generateQuestions,
+
+  questions:
+    generateQuestions()
 };

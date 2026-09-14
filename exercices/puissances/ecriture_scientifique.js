@@ -4,6 +4,7 @@ import {
   formatAnswer
 } from "../../core/answerFormatting.js";
 
+
 function randint(
   min,
   max
@@ -17,6 +18,7 @@ function randint(
   );
 }
 
+
 function randomSign() {
   return (
     Math.random() < 0.5
@@ -24,6 +26,7 @@ function randomSign() {
       : 1
   );
 }
+
 
 function shuffleArray(
   array
@@ -38,6 +41,7 @@ function shuffleArray(
     i > 0;
     i--
   ) {
+
     const j =
       Math.floor(
         Math.random() *
@@ -56,6 +60,7 @@ function shuffleArray(
   return copy;
 }
 
+
 function cleanNumber(
   value
 ) {
@@ -65,6 +70,7 @@ function cleanNumber(
     )
   );
 }
+
 
 function createCoefficient() {
   const hundredths =
@@ -79,6 +85,7 @@ function createCoefficient() {
   );
 }
 
+
 function scientificText(
   coefficient,
   exponent
@@ -89,6 +96,7 @@ function scientificText(
     )}*10^${exponent}`
   );
 }
+
 
 function scientificLatex(
   coefficient,
@@ -103,6 +111,7 @@ function scientificLatex(
   );
 }
 
+
 function isAllowedScientificExponent(
   exponent
 ) {
@@ -111,6 +120,7 @@ function isAllowedScientificExponent(
     exponent !== 1
   );
 }
+
 
 function createDistinctAnswers(
   correctAnswer,
@@ -126,6 +136,7 @@ function createDistinctAnswers(
     const distractor
     of distractors
   ) {
+
     const value =
       String(
         distractor
@@ -153,16 +164,19 @@ function createDistinctAnswers(
   );
 }
 
+
 function createScientificDistractors(
   coefficient,
   exponent
 ) {
-  const candidates = [];
+  const candidates =
+    [];
 
   const addCandidate = (
     candidateCoefficient,
     candidateExponent
   ) => {
+
     if (
       !isAllowedScientificExponent(
         candidateExponent
@@ -187,6 +201,7 @@ function createScientificDistractors(
       );
     }
   };
+
 
   addCandidate(
     coefficient,
@@ -241,8 +256,10 @@ function createScientificDistractors(
     exponent
   );
 
+
   return candidates;
 }
+
 
 function createScientificQuestion({
   id,
@@ -250,11 +267,13 @@ function createScientificQuestion({
   coefficient,
   exponent
 }) {
+
   const value =
     cleanNumber(
       coefficient *
       10 ** exponent
     );
+
 
   const answer =
     scientificText(
@@ -262,17 +281,20 @@ function createScientificQuestion({
       exponent
     );
 
+
   const distractors =
     createScientificDistractors(
       coefficient,
       exponent
     );
 
+
   const possibleAnswers =
     createDistinctAnswers(
       answer,
       distractors
     );
+
 
   return {
     id,
@@ -342,22 +364,26 @@ function createScientificQuestion({
   };
 }
 
+
 function createDecimalQuestion({
   id,
   subtitle,
   coefficient,
   exponent
 }) {
+
   const value =
     cleanNumber(
       coefficient *
       10 ** exponent
     );
 
+
   const answer =
     String(
       value
     );
+
 
   const possibleAnswers =
     createDistinctAnswers(
@@ -400,6 +426,7 @@ function createDecimalQuestion({
         )
       ]
     );
+
 
   return {
     id,
@@ -467,240 +494,263 @@ function createDecimalQuestion({
   };
 }
 
-// --------------------------------------------------
-// Question 1
-// Nombre décimal > 1 -> écriture scientifique
-// --------------------------------------------------
 
-const coefficient1 =
-  randomSign() *
-  createCoefficient();
+function generateQuestions() {
 
-const exponent1 =
-  randint(
-    2,
-    5
-  );
+  // --------------------------------------------------
+  // Question 1
+  // Nombre décimal > 1 -> écriture scientifique
+  // --------------------------------------------------
 
-const question1 =
-  createScientificQuestion({
-    id:
-      "q1",
+  const coefficient1 =
+    randomSign() *
+    createCoefficient();
 
-    subtitle:
-      "Passer d'un nombre décimal à l'écriture scientifique",
+  const exponent1 =
+    randint(
+      2,
+      5
+    );
 
-    coefficient:
-      coefficient1,
-
-    exponent:
-      exponent1
-  });
-
-// --------------------------------------------------
-// Question 2
-// Nombre décimal < 1 -> écriture scientifique
-// --------------------------------------------------
-
-const coefficient2 =
-  randomSign() *
-  createCoefficient();
-
-const exponent2 =
-  -randint(
-    1,
-    5
-  );
-
-const question2 =
-  createScientificQuestion({
-    id:
-      "q2",
-
-    subtitle:
-      "Passer d'un nombre décimal à l'écriture scientifique",
-
-    coefficient:
-      coefficient2,
-
-    exponent:
-      exponent2
-  });
-
-// --------------------------------------------------
-// Question 3
-// Écriture scientifique -> nombre décimal > 1
-// --------------------------------------------------
-
-const coefficient3 =
-  randomSign() *
-  createCoefficient();
-
-const exponent3 =
-  randint(
-    2,
-    5
-  );
-
-const question3 =
-  createDecimalQuestion({
-    id:
-      "q3",
-
-    subtitle:
-      "Passer de l'écriture scientifique à un nombre décimal",
-
-    coefficient:
-      coefficient3,
-
-    exponent:
-      exponent3
-  });
-
-// --------------------------------------------------
-// Question 4
-// Écriture scientifique -> nombre décimal < 1
-// --------------------------------------------------
-
-const coefficient4 =
-  randomSign() *
-  createCoefficient();
-
-const exponent4 =
-  -randint(
-    1,
-    5
-  );
-
-const question4 =
-  createDecimalQuestion({
-    id:
-      "q4",
-
-    subtitle:
-      "Passer de l'écriture scientifique à un nombre décimal",
-
-    coefficient:
-      coefficient4,
-
-    exponent:
-      exponent4
-  });
-
-// --------------------------------------------------
-// Question 5
-// Synthèse aléatoire
-// --------------------------------------------------
-
-const synthesisType =
-  randint(
-    1,
-    4
-  );
-
-let question5;
-
-if (
-  synthesisType === 1
-) {
-  question5 =
+  const question1 =
     createScientificQuestion({
       id:
-        "q5",
+        "q1",
 
       subtitle:
-        "Écriture scientifique – synthèse",
+        "Passer d'un nombre décimal à l'écriture scientifique",
 
       coefficient:
-        randomSign() *
-        createCoefficient(),
+        coefficient1,
 
       exponent:
-        randint(
-          2,
-          5
-        )
+        exponent1
     });
-}
 
-if (
-  synthesisType === 2
-) {
-  question5 =
+
+  // --------------------------------------------------
+  // Question 2
+  // Nombre décimal < 1 -> écriture scientifique
+  // --------------------------------------------------
+
+  const coefficient2 =
+    randomSign() *
+    createCoefficient();
+
+  const exponent2 =
+    -randint(
+      1,
+      5
+    );
+
+  const question2 =
     createScientificQuestion({
       id:
-        "q5",
+        "q2",
 
       subtitle:
-        "Écriture scientifique – synthèse",
+        "Passer d'un nombre décimal à l'écriture scientifique",
 
       coefficient:
-        randomSign() *
-        createCoefficient(),
+        coefficient2,
 
       exponent:
-        -randint(
-          1,
-          5
-        )
+        exponent2
     });
-}
 
-if (
-  synthesisType === 3
-) {
-  question5 =
+
+  // --------------------------------------------------
+  // Question 3
+  // Écriture scientifique -> nombre décimal > 1
+  // --------------------------------------------------
+
+  const coefficient3 =
+    randomSign() *
+    createCoefficient();
+
+  const exponent3 =
+    randint(
+      2,
+      5
+    );
+
+  const question3 =
     createDecimalQuestion({
       id:
-        "q5",
+        "q3",
 
       subtitle:
-        "Écriture scientifique – synthèse",
+        "Passer de l'écriture scientifique à un nombre décimal",
 
       coefficient:
-        randomSign() *
-        createCoefficient(),
+        coefficient3,
 
       exponent:
-        randint(
-          2,
-          5
-        )
+        exponent3
     });
-}
 
-if (
-  synthesisType === 4
-) {
-  question5 =
+
+  // --------------------------------------------------
+  // Question 4
+  // Écriture scientifique -> nombre décimal < 1
+  // --------------------------------------------------
+
+  const coefficient4 =
+    randomSign() *
+    createCoefficient();
+
+  const exponent4 =
+    -randint(
+      1,
+      5
+    );
+
+  const question4 =
     createDecimalQuestion({
       id:
-        "q5",
+        "q4",
 
       subtitle:
-        "Écriture scientifique – synthèse",
+        "Passer de l'écriture scientifique à un nombre décimal",
 
       coefficient:
-        randomSign() *
-        createCoefficient(),
+        coefficient4,
 
       exponent:
-        -randint(
-          1,
-          5
-        )
+        exponent4
     });
-}
 
-export default {
-  title:
-    "Écriture scientifique",
 
-  questions: [
+  // --------------------------------------------------
+  // Question 5
+  // Synthèse aléatoire
+  // --------------------------------------------------
+
+  const synthesisType =
+    randint(
+      1,
+      4
+    );
+
+  let question5;
+
+
+  if (
+    synthesisType === 1
+  ) {
+
+    question5 =
+      createScientificQuestion({
+        id:
+          "q5",
+
+        subtitle:
+          "Écriture scientifique – synthèse",
+
+        coefficient:
+          randomSign() *
+          createCoefficient(),
+
+        exponent:
+          randint(
+            2,
+            5
+          )
+      });
+  }
+
+
+  if (
+    synthesisType === 2
+  ) {
+
+    question5 =
+      createScientificQuestion({
+        id:
+          "q5",
+
+        subtitle:
+          "Écriture scientifique – synthèse",
+
+        coefficient:
+          randomSign() *
+          createCoefficient(),
+
+        exponent:
+          -randint(
+            1,
+            5
+          )
+      });
+  }
+
+
+  if (
+    synthesisType === 3
+  ) {
+
+    question5 =
+      createDecimalQuestion({
+        id:
+          "q5",
+
+        subtitle:
+          "Écriture scientifique – synthèse",
+
+        coefficient:
+          randomSign() *
+          createCoefficient(),
+
+        exponent:
+          randint(
+            2,
+            5
+          )
+      });
+  }
+
+
+  if (
+    synthesisType === 4
+  ) {
+
+    question5 =
+      createDecimalQuestion({
+        id:
+          "q5",
+
+        subtitle:
+          "Écriture scientifique – synthèse",
+
+        coefficient:
+          randomSign() *
+          createCoefficient(),
+
+        exponent:
+          -randint(
+            1,
+            5
+          )
+      });
+  }
+
+
+  return [
     question1,
     question2,
     question3,
     question4,
     question5
-  ]
+  ];
+}
+
+
+export default {
+  title:
+    "Écriture scientifique",
+
+  generateQuestions,
+
+  questions:
+    generateQuestions()
 };

@@ -1231,11 +1231,8 @@ function createExpandedDecompositionFromDecimalFractionQuestion() {
   };
 }
 
-export default {
-  title:
-    "Décomposer un nombre décimal",
-
-  questions: [
+function generateQuestions() {
+  return [
     createDecimalWritingQuestion(),
 
     createIntegerPlusFractionQuestion(),
@@ -1255,5 +1252,16 @@ export default {
     createIntegerPlusFractionFromDecimalFractionQuestion(),
 
     createExpandedDecompositionFromDecimalFractionQuestion()
-  ]
+  ];
+}
+
+
+export default {
+  title:
+    "Décomposer un nombre décimal",
+
+  generateQuestions,
+
+  questions:
+    generateQuestions()
 };

@@ -72,6 +72,9 @@ import puissancesNiveau2
 import ecritureScientifique
   from "../exercices/puissances/ecriture_scientifique.js";
 
+import proportionnalite
+  from "../exercices/proportionnalite.js";
+
 const exercises = {
   fractions_decimales: fractionsDecimales,
   ecritures_decimales: ecrituresDecimales,
@@ -96,7 +99,8 @@ const exercises = {
   reperage_repere_orthonorme: reperageRepereOrthonorme,
   puissances_niveau_1: puissancesNiveau1,
   puissances_niveau_2: puissancesNiveau2,
-  ecriture_scientifique: ecritureScientifique
+  ecriture_scientifique: ecritureScientifique,
+  proportionnalite:proportionnalite
 };
 
 export function loadExercise(exerciseName) {

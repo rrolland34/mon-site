@@ -6,14 +6,28 @@ import {
   createDecimalToDecimalMultiplicationQuestion
 } from "./generators/powerOfTenMultiplication.js";
 
-export default {
-  title: "Multiplier par 10, 100 ou 1 000",
 
-  questions: [
+function generateQuestions() {
+  return [
     createIntegerMultiplicationQuestion(),
+
     createIntegerMultiplicationQuestion(),
+
     createDecimalToIntegerMultiplicationQuestion(),
+
     createDecimalToIntegerMultiplicationQuestion(),
+
     createDecimalToDecimalMultiplicationQuestion()
-  ]
+  ];
+}
+
+
+export default {
+  title:
+    "Multiplier par 10, 100 ou 1 000",
+
+  generateQuestions,
+
+  questions:
+    generateQuestions()
 };

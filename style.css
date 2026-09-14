@@ -586,3 +586,197 @@ button {
   display: block;
   margin: 20px auto;
 }
+
+.proportionality-table {
+  border-collapse:
+    collapse;
+
+  table-layout:
+    fixed;
+
+  width:
+    440px;
+
+  margin:
+    20px
+    auto;
+}
+
+.proportionality-table td {
+  width:
+    110px;
+
+  height:
+    45px;
+
+  padding:
+    0
+    6px;
+
+  box-sizing:
+    border-box;
+
+  text-align:
+    center;
+
+  vertical-align:
+    middle;
+
+  border:
+    1px solid
+    currentColor;
+
+  font-size:
+    1.1em;
+
+  white-space:
+    nowrap;
+}
+
+.qcm-proportionality-answer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  white-space: nowrap;
+}
+
+.qcm-proportionality-math {
+  font-size: 0.82em;
+}
+
+.proportionality-graph {
+  width: 430px;
+  max-width: 95%;
+  height: auto;
+
+  display: block;
+
+  margin:
+    15px
+    auto;
+}
+
+.proportionality-graph-grid {
+  stroke:
+    currentColor;
+
+  stroke-width:
+    0.5;
+
+  opacity:
+    0.25;
+}
+
+.proportionality-graph-axis {
+  stroke:
+    currentColor;
+
+  stroke-width:
+    1.5;
+}
+
+.proportionality-graph-arrow {
+  fill:
+    currentColor;
+}
+
+.proportionality-graph-line {
+  stroke:
+    currentColor;
+
+  stroke-width:
+    3;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+.proportionality-graph-label {
+  fill:
+    currentColor;
+
+  font-size:
+    14px;
+}
+
+.proportionality-graph-title {
+  fill:
+    currentColor;
+
+  font-size:
+    15px;
+}
+
+.proportionality-graph-qcm {
+  display: flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  width:
+    100%;
+
+  margin:
+    15px
+    auto;
+}
+
+.proportionality-graph-qcm
+.qcm-button {
+  width:
+    min(
+      750px,
+      90%
+    );
+
+  margin:
+    0;
+
+  padding:
+    10px
+    15px;
+
+  font-size:
+    0.8em;
+
+  text-align:
+    center;
+}
+
+.proportionality-answer-fields {
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  gap:
+    25px;
+
+  width:
+    100%;
+
+  margin:
+    18px
+    auto;
+}
+
+.proportionality-answer-fields label {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+}

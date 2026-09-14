@@ -275,1148 +275,1145 @@ function createEquivalentSafePowerQCM({
   });
 }
 
+function generateQuestions() {
 
-// --------------------------------------------------
-// Question 1
-// Produit répété -> puissance
-// --------------------------------------------------
+  // --------------------------------------------------
+  // Question 1
+  // Produit répété -> puissance
+  // --------------------------------------------------
 
-const base1 =
-  randomSignedBase();
+  const base1 =
+    randomSignedBase();
 
-const exponent1 =
-  randint(
-    3,
-    6
-  );
+  const exponent1 =
+    randint(
+      3,
+      6
+    );
 
-const product1 =
-  repeatedProductLatex(
-    base1,
-    exponent1
-  );
-
-const answer1 =
-  powerText(
-    base1,
-    exponent1
-  );
-
-const possibleAnswers1 =
-  createEquivalentSafePowerQCM({
-    correctBase:
+  const product1 =
+    repeatedProductLatex(
       base1,
+      exponent1
+    );
 
-    correctExponent:
-      exponent1,
+  const answer1 =
+    powerText(
+      base1,
+      exponent1
+    );
 
-    distractors: [
-      powerText(
-        -base1,
-        exponent1
-      ),
-
-      powerText(
+  const possibleAnswers1 =
+    createEquivalentSafePowerQCM({
+      correctBase:
         base1,
-        exponent1 - 1
-      ),
 
-      powerText(
-        base1,
-        exponent1 + 1
-      ),
+      correctExponent:
+        exponent1,
 
-      powerText(
-        base1,
-        exponent1 + 2
-      ),
-
-      powerText(
-        base1 + (
-          base1 > 0
-            ? 1
-            : -1
+      distractors: [
+        powerText(
+          -base1,
+          exponent1
         ),
-        exponent1
-      )
-    ]
-  });
 
+        powerText(
+          base1,
+          exponent1 - 1
+        ),
 
-const question1 = {
-  id:
-    "q1",
+        powerText(
+          base1,
+          exponent1 + 1
+        ),
 
-  title:
-    "Puissances",
+        powerText(
+          base1,
+          exponent1 + 2
+        ),
 
-  subtitle:
-    "Écrire un produit de nombres relatifs sous la forme d'une puissance",
-
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${product1}
-          \\]
-        </p>
-      </div>
-    `,
-
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${product1}
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers: [
-    answer1
-  ],
-
-  possible_answers:
-    possibleAnswers1,
-
-  answerRule: {
-    type:
-      "power",
-
-    expectedValue:
-      base1 ** exponent1
-  },
-
-  inputTools: [
-    "power"
-  ]
-};
-
-
-// --------------------------------------------------
-// Question 2
-// Puissance -> produit
-// --------------------------------------------------
-
-const base2 =
-  randomSignedBase();
-
-const exponent2 =
-  randint(
-    3,
-    6
-  );
-
-const answer2 =
-  repeatedProductText(
-    base2,
-    exponent2
-  );
-
-const possibleAnswers2 =
-  shuffleArray([
-    answer2,
-
-    repeatedProductText(
-      base2,
-      exponent2 - 1
-    ),
-
-    repeatedProductText(
-      base2,
-      exponent2 + 1
-    ),
-
-    `${baseText(base2)}*${exponent2}`
-  ]);
-
-
-const question2 = {
-  id:
-    "q2",
-
-  title:
-    "Puissances",
-
-  subtitle:
-    "Développer une puissance de nombre relatif",
-
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire la puissance suivante
-          sous la forme d'un produit :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${powerLatex(
-              base2,
-              exponent2
-            )}
-          \\]
-        </p>
-      </div>
-    `,
-
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer le produit égal à :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${powerLatex(
-              base2,
-              exponent2
-            )}
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers: [
-    answer2
-  ],
-
-  possible_answers:
-    possibleAnswers2,
-
-  answerRule: {
-    type:
-      "repeatedProduct",
-
-    base:
-      base2,
-
-    exponent:
-      exponent2
-  }
-};
-
-
-// --------------------------------------------------
-// Question 3
-// a^m × a^n
-// --------------------------------------------------
-
-const base3 =
-  randomSignedBase();
-
-const exponent3a =
-  randint(
-    2,
-    10
-  );
-
-const exponent3b =
-  randint(
-    2,
-    10
-  );
-
-const exponent3 =
-  exponent3a +
-  exponent3b;
-
-const answer3 =
-  powerText(
-    base3,
-    exponent3
-  );
-
-const possibleAnswers3 =
-  createEquivalentSafePowerQCM({
-    correctBase:
-      base3,
-
-    correctExponent:
-      exponent3,
-
-    distractors: [
-      powerText(
-        base3,
-        exponent3a *
-          exponent3b
-      ),
-
-      powerText(
-        base3,
-        Math.abs(
-          exponent3a -
-          exponent3b
+        powerText(
+          base1 + (
+            base1 > 0
+              ? 1
+              : -1
+          ),
+          exponent1
         )
-      ),
-
-      powerText(
-        -base3,
-        exponent3
-      ),
-
-      powerText(
-        base3,
-        exponent3 + 1
-      ),
-
-      powerText(
-        base3,
-        exponent3 - 1
-      )
-    ]
-  });
-
-
-const question3 = {
-  id:
-    "q3",
-
-  title:
-    "Puissances",
-
-  subtitle:
-    "Produit de puissances de même base",
-
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${powerLatex(
-              base3,
-              exponent3a
-            )}
-            \\times
-            ${powerLatex(
-              base3,
-              exponent3b
-            )}
-          \\]
-        </p>
-      </div>
-    `,
-
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${powerLatex(
-              base3,
-              exponent3a
-            )}
-            \\times
-            ${powerLatex(
-              base3,
-              exponent3b
-            )}
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers: [
-    answer3
-  ],
-
-  possible_answers:
-    possibleAnswers3,
-
-  answerRule: {
-    type:
-      "power",
-
-    expectedValue:
-      base3 ** exponent3
-  },
-
-  inputTools: [
-    "power"
-  ]
-};
-
-
-// --------------------------------------------------
-// Question 4
-// a^m / a^n
-// Le résultat peut avoir un exposant négatif.
-// --------------------------------------------------
-
-const base4 =
-  randomSignedBase();
-
-const exponent4a =
-  randint(
-    2,
-    10
-  );
-
-const exponent4b =
-  randint(
-    2,
-    10
-  );
-
-const exponent4 =
-  exponent4a -
-  exponent4b;
-
-const answer4 =
-  powerText(
-    base4,
-    exponent4
-  );
-
-const answers4 =
-  exponent4 === 0
-    ? [
-        answer4,
-        "1"
       ]
-    : [
-        answer4
-      ];
+    });
 
-const possibleAnswers4 =
-  createEquivalentSafePowerQCM({
-    correctBase:
-      base4,
 
-    correctExponent:
-      exponent4,
+  const question1 = {
+    id:
+      "q1",
 
-    distractors: [
-      powerText(
-        base4,
-        exponent4a +
-          exponent4b
-      ),
+    title:
+      "Puissances",
 
-      powerText(
-        base4,
-        exponent4b -
-          exponent4a
-      ),
+    subtitle:
+      "Écrire un produit de nombres relatifs sous la forme d'une puissance",
 
-      powerText(
-        -base4,
-        exponent4
-      ),
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
 
-      powerText(
-        base4,
-        exponent4 + 1
-      ),
+          <p class="question-expression">
+            \\[
+              ${product1}
+            \\]
+          </p>
+        </div>
+      `,
 
-      powerText(
-        base4,
-        exponent4 - 1
-      ),
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
 
-      powerText(
-        base4,
-        exponent4 + 2
-      )
+          <p class="question-expression">
+            \\[
+              ${product1}
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer1
+    ],
+
+    possible_answers:
+      possibleAnswers1,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base1 ** exponent1
+    },
+
+    inputTools: [
+      "power"
     ]
-  });
+  };
 
 
-const question4 = {
-  id:
-    "q4",
+  // --------------------------------------------------
+  // Question 2
+  // Puissance -> produit
+  // --------------------------------------------------
 
-  title:
-    "Puissances",
+  const base2 =
+    randomSignedBase();
 
-  subtitle:
-    "Quotient de puissances de même base",
+  const exponent2 =
+    randint(
+      3,
+      6
+    );
 
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
+  const answer2 =
+    repeatedProductText(
+      base2,
+      exponent2
+    );
 
-        <p class="question-expression">
-          \\[
-            \\dfrac{
-              ${powerLatex(
-                base4,
-                exponent4a
-              )}
-            }{
-              ${powerLatex(
-                base4,
-                exponent4b
-              )}
-            }
-          \\]
-        </p>
-      </div>
-    `,
+  const possibleAnswers2 =
+    shuffleArray([
+      answer2,
 
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            \\dfrac{
-              ${powerLatex(
-                base4,
-                exponent4a
-              )}
-            }{
-              ${powerLatex(
-                base4,
-                exponent4b
-              )}
-            }
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers:
-    answers4,
-
-  possible_answers:
-    possibleAnswers4,
-
-  answerRule: {
-    type:
-      "power",
-
-    expectedValue:
-      base4 ** exponent4,
-
-    allowOneForZeroExponent:
-      true
-  },
-
-  inputTools: [
-    "power"
-  ]
-};
-
-
-// --------------------------------------------------
-// Question 5
-// (a^m)^n
-// --------------------------------------------------
-
-const base5 =
-  randomSignedBase();
-
-const exponent5a =
-  randint(
-    2,
-    6
-  );
-
-const exponent5b =
-  randint(
-    2,
-    6
-  );
-
-const exponent5 =
-  exponent5a *
-  exponent5b;
-
-const answer5 =
-  powerText(
-    base5,
-    exponent5
-  );
-
-const possibleAnswers5 =
-  createEquivalentSafePowerQCM({
-    correctBase:
-      base5,
-
-    correctExponent:
-      exponent5,
-
-    distractors: [
-      powerText(
-        base5,
-        exponent5a +
-          exponent5b
+      repeatedProductText(
+        base2,
+        exponent2 - 1
       ),
 
-      powerText(
-        base5,
-        Math.abs(
-          exponent5a -
-          exponent5b
+      repeatedProductText(
+        base2,
+        exponent2 + 1
+      ),
+
+      `${baseText(base2)}*${exponent2}`
+    ]);
+
+
+  const question2 = {
+    id:
+      "q2",
+
+    title:
+      "Puissances",
+
+    subtitle:
+      "Développer une puissance de nombre relatif",
+
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire la puissance suivante
+            sous la forme d'un produit :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              ${powerLatex(
+                base2,
+                exponent2
+              )}
+            \\]
+          </p>
+        </div>
+      `,
+
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer le produit égal à :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              ${powerLatex(
+                base2,
+                exponent2
+              )}
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer2
+    ],
+
+    possible_answers:
+      possibleAnswers2,
+
+    answerRule: {
+      type:
+        "repeatedProduct",
+
+      base:
+        base2,
+
+      exponent:
+        exponent2
+    }
+  };
+
+
+  // --------------------------------------------------
+  // Question 3
+  // a^m × a^n
+  // --------------------------------------------------
+
+  const base3 =
+    randomSignedBase();
+
+  const exponent3a =
+    randint(
+      2,
+      10
+    );
+
+  const exponent3b =
+    randint(
+      2,
+      10
+    );
+
+  const exponent3 =
+    exponent3a +
+    exponent3b;
+
+  const answer3 =
+    powerText(
+      base3,
+      exponent3
+    );
+
+  const possibleAnswers3 =
+    createEquivalentSafePowerQCM({
+      correctBase:
+        base3,
+
+      correctExponent:
+        exponent3,
+
+      distractors: [
+        powerText(
+          base3,
+          exponent3a *
+            exponent3b
+        ),
+
+        powerText(
+          base3,
+          Math.abs(
+            exponent3a -
+            exponent3b
+          )
+        ),
+
+        powerText(
+          -base3,
+          exponent3
+        ),
+
+        powerText(
+          base3,
+          exponent3 + 1
+        ),
+
+        powerText(
+          base3,
+          exponent3 - 1
         )
-      ),
+      ]
+    });
 
-      powerText(
-        -base5,
-        exponent5
-      ),
 
-      powerText(
-        base5,
-        exponent5 + 1
-      ),
+  const question3 = {
+    id:
+      "q3",
 
-      powerText(
-        base5,
-        exponent5 - 1
-      )
+    title:
+      "Puissances",
+
+    subtitle:
+      "Produit de puissances de même base",
+
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              ${powerLatex(
+                base3,
+                exponent3a
+              )}
+              \\times
+              ${powerLatex(
+                base3,
+                exponent3b
+              )}
+            \\]
+          </p>
+        </div>
+      `,
+
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              ${powerLatex(
+                base3,
+                exponent3a
+              )}
+              \\times
+              ${powerLatex(
+                base3,
+                exponent3b
+              )}
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer3
+    ],
+
+    possible_answers:
+      possibleAnswers3,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base3 ** exponent3
+    },
+
+    inputTools: [
+      "power"
     ]
-  });
+  };
 
 
-const question5 = {
-  id:
-    "q5",
+  // --------------------------------------------------
+  // Question 4
+  // a^m / a^n
+  // Le résultat peut avoir un exposant négatif.
+  // --------------------------------------------------
 
-  title:
-    "Puissances",
+  const base4 =
+    randomSignedBase();
 
-  subtitle:
-    "Puissance d'une puissance",
+  const exponent4a =
+    randint(
+      2,
+      10
+    );
 
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
+  const exponent4b =
+    randint(
+      2,
+      10
+    );
 
-        <p class="question-expression">
-          \\[
-            \\left(
-              ${powerLatex(
-                base5,
-                exponent5a
-              )}
-            \\right)^{
-              ${exponent5b}
-            }
-          \\]
-        </p>
-      </div>
-    `,
+  const exponent4 =
+    exponent4a -
+    exponent4b;
 
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
+  const answer4 =
+    powerText(
+      base4,
+      exponent4
+    );
 
-        <p class="question-expression">
-          \\[
-            \\left(
-              ${powerLatex(
-                base5,
-                exponent5a
-              )}
-            \\right)^{
-              ${exponent5b}
-            }
-          \\]
-        </p>
-      </div>
-    `
-  },
+  const answers4 =
+    exponent4 === 0
+      ? [
+          answer4,
+          "1"
+        ]
+      : [
+          answer4
+        ];
 
-  answers: [
-    answer5
-  ],
+  const possibleAnswers4 =
+    createEquivalentSafePowerQCM({
+      correctBase:
+        base4,
 
-  possible_answers:
-    possibleAnswers5,
+      correctExponent:
+        exponent4,
 
-  answerRule: {
-    type:
-      "power",
+      distractors: [
+        powerText(
+          base4,
+          exponent4a +
+            exponent4b
+        ),
 
-    expectedValue:
-      base5 ** exponent5
-  },
+        powerText(
+          base4,
+          exponent4b -
+            exponent4a
+        ),
 
-  inputTools: [
-    "power"
-  ]
-};
+        powerText(
+          -base4,
+          exponent4
+        ),
+
+        powerText(
+          base4,
+          exponent4 + 1
+        ),
+
+        powerText(
+          base4,
+          exponent4 - 1
+        ),
+
+        powerText(
+          base4,
+          exponent4 + 2
+        )
+      ]
+    });
 
 
-// --------------------------------------------------
-// Question 6
-// a^n × b^n
-// --------------------------------------------------
+  const question4 = {
+    id:
+      "q4",
 
-const [
-  base6a,
-  base6b
-] =
-  createDistinctSignedBases(
-    2
-  );
+    title:
+      "Puissances",
 
-const exponent6 =
-  randint(
-    2,
-    8
-  );
+    subtitle:
+      "Quotient de puissances de même base",
 
-const base6 =
-  base6a *
-  base6b;
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
 
-const answer6 =
-  powerText(
-    base6,
-    exponent6
-  );
+          <p class="question-expression">
+            \\[
+              \\dfrac{
+                ${powerLatex(
+                  base4,
+                  exponent4a
+                )}
+              }{
+                ${powerLatex(
+                  base4,
+                  exponent4b
+                )}
+              }
+            \\]
+          </p>
+        </div>
+      `,
 
-const possibleAnswers6 =
-  createEquivalentSafePowerQCM({
-    correctBase:
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\dfrac{
+                ${powerLatex(
+                  base4,
+                  exponent4a
+                )}
+              }{
+                ${powerLatex(
+                  base4,
+                  exponent4b
+                )}
+              }
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers:
+      answers4,
+
+    possible_answers:
+      possibleAnswers4,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base4 ** exponent4,
+
+      allowOneForZeroExponent:
+        true
+    },
+
+    inputTools: [
+      "power"
+    ]
+  };
+
+
+  // --------------------------------------------------
+  // Question 5
+  // (a^m)^n
+  // --------------------------------------------------
+
+  const base5 =
+    randomSignedBase();
+
+  const exponent5a =
+    randint(
+      2,
+      6
+    );
+
+  const exponent5b =
+    randint(
+      2,
+      6
+    );
+
+  const exponent5 =
+    exponent5a *
+    exponent5b;
+
+  const answer5 =
+    powerText(
+      base5,
+      exponent5
+    );
+
+  const possibleAnswers5 =
+    createEquivalentSafePowerQCM({
+      correctBase:
+        base5,
+
+      correctExponent:
+        exponent5,
+
+      distractors: [
+        powerText(
+          base5,
+          exponent5a +
+            exponent5b
+        ),
+
+        powerText(
+          base5,
+          Math.abs(
+            exponent5a -
+            exponent5b
+          )
+        ),
+
+        powerText(
+          -base5,
+          exponent5
+        ),
+
+        powerText(
+          base5,
+          exponent5 + 1
+        ),
+
+        powerText(
+          base5,
+          exponent5 - 1
+        )
+      ]
+    });
+
+
+  const question5 = {
+    id:
+      "q5",
+
+    title:
+      "Puissances",
+
+    subtitle:
+      "Puissance d'une puissance",
+
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\left(
+                ${powerLatex(
+                  base5,
+                  exponent5a
+                )}
+              \\right)^{
+                ${exponent5b}
+              }
+            \\]
+          </p>
+        </div>
+      `,
+
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\left(
+                ${powerLatex(
+                  base5,
+                  exponent5a
+                )}
+              \\right)^{
+                ${exponent5b}
+              }
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer5
+    ],
+
+    possible_answers:
+      possibleAnswers5,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base5 ** exponent5
+    },
+
+    inputTools: [
+      "power"
+    ]
+  };
+
+
+  // --------------------------------------------------
+  // Question 6
+  // a^n × b^n
+  // --------------------------------------------------
+
+  const [
+    base6a,
+    base6b
+  ] =
+    createDistinctSignedBases(
+      2
+    );
+
+  const exponent6 =
+    randint(
+      2,
+      8
+    );
+
+  const base6 =
+    base6a *
+    base6b;
+
+  const answer6 =
+    powerText(
       base6,
+      exponent6
+    );
 
-    correctExponent:
-      exponent6,
-
-    distractors: [
-      powerText(
-        base6a +
-          base6b,
-        exponent6
-      ),
-
-      powerText(
-        -base6,
-        exponent6
-      ),
-
-      powerText(
+  const possibleAnswers6 =
+    createEquivalentSafePowerQCM({
+      correctBase:
         base6,
-        exponent6 * 2
-      ),
 
-      powerText(
-        base6,
-        exponent6 + 1
-      ),
+      correctExponent:
+        exponent6,
 
-      powerText(
-        base6,
-        exponent6 - 1
-      )
+      distractors: [
+        powerText(
+          base6a +
+            base6b,
+          exponent6
+        ),
+
+        powerText(
+          -base6,
+          exponent6
+        ),
+
+        powerText(
+          base6,
+          exponent6 * 2
+        ),
+
+        powerText(
+          base6,
+          exponent6 + 1
+        ),
+
+        powerText(
+          base6,
+          exponent6 - 1
+        )
+      ]
+    });
+
+
+  const question6 = {
+    id:
+      "q6",
+
+    title:
+      "Puissances",
+
+    subtitle:
+      "Produit de puissances de même exposant",
+
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              ${powerLatex(
+                base6a,
+                exponent6
+              )}
+              \\times
+              ${powerLatex(
+                base6b,
+                exponent6
+              )}
+            \\]
+          </p>
+        </div>
+      `,
+
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              ${powerLatex(
+                base6a,
+                exponent6
+              )}
+              \\times
+              ${powerLatex(
+                base6b,
+                exponent6
+              )}
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer6
+    ],
+
+    possible_answers:
+      possibleAnswers6,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base6 ** exponent6
+    },
+
+    inputTools: [
+      "power"
     ]
-  });
+  };
 
 
-const question6 = {
-  id:
-    "q6",
+  // --------------------------------------------------
+  // Question 7
+  // (ab)^n / b^n
+  // --------------------------------------------------
 
-  title:
-    "Puissances",
-
-  subtitle:
-    "Produit de puissances de même exposant",
-
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${powerLatex(
-              base6a,
-              exponent6
-            )}
-            \\times
-            ${powerLatex(
-              base6b,
-              exponent6
-            )}
-          \\]
-        </p>
-      </div>
-    `,
-
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            ${powerLatex(
-              base6a,
-              exponent6
-            )}
-            \\times
-            ${powerLatex(
-              base6b,
-              exponent6
-            )}
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers: [
-    answer6
-  ],
-
-  possible_answers:
-    possibleAnswers6,
-
-  answerRule: {
-    type:
-      "power",
-
-    expectedValue:
-      base6 ** exponent6
-  },
-
-  inputTools: [
-    "power"
-  ]
-};
-
-
-// --------------------------------------------------
-// Question 7
-// (ab)^n / b^n
-// --------------------------------------------------
-
-const [
-  base7a,
-  base7b
-] =
-  createDistinctSignedBases(
-    2
-  );
-
-const exponent7 =
-  randint(
-    2,
-    8
-  );
-
-const numeratorBase7 =
-  base7a *
-  base7b;
-
-const answer7 =
-  powerText(
+  const [
     base7a,
-    exponent7
-  );
+    base7b
+  ] =
+    createDistinctSignedBases(
+      2
+    );
 
-const possibleAnswers7 =
-  createEquivalentSafePowerQCM({
-    correctBase:
+  const exponent7 =
+    randint(
+      2,
+      8
+    );
+
+  const numeratorBase7 =
+    base7a *
+    base7b;
+
+  const answer7 =
+    powerText(
       base7a,
+      exponent7
+    );
 
-    correctExponent:
-      exponent7,
-
-    distractors: [
-      powerText(
-        base7b,
-        exponent7
-      ),
-
-      powerText(
-        numeratorBase7,
-        exponent7
-      ),
-
-      powerText(
-        -base7a,
-        exponent7
-      ),
-
-      powerText(
+  const possibleAnswers7 =
+    createEquivalentSafePowerQCM({
+      correctBase:
         base7a,
-        exponent7 * 2
-      ),
 
-      powerText(
-        base7a,
-        exponent7 + 1
-      )
+      correctExponent:
+        exponent7,
+
+      distractors: [
+        powerText(
+          base7b,
+          exponent7
+        ),
+
+        powerText(
+          numeratorBase7,
+          exponent7
+        ),
+
+        powerText(
+          -base7a,
+          exponent7
+        ),
+
+        powerText(
+          base7a,
+          exponent7 * 2
+        ),
+
+        powerText(
+          base7a,
+          exponent7 + 1
+        )
+      ]
+    });
+
+
+  const question7 = {
+    id:
+      "q7",
+
+    title:
+      "Puissances",
+
+    subtitle:
+      "Quotient de puissances de même exposant",
+
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\dfrac{
+                ${powerLatex(
+                  numeratorBase7,
+                  exponent7
+                )}
+              }{
+                ${powerLatex(
+                  base7b,
+                  exponent7
+                )}
+              }
+            \\]
+          </p>
+        </div>
+      `,
+
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\dfrac{
+                ${powerLatex(
+                  numeratorBase7,
+                  exponent7
+                )}
+              }{
+                ${powerLatex(
+                  base7b,
+                  exponent7
+                )}
+              }
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer7
+    ],
+
+    possible_answers:
+      possibleAnswers7,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base7a ** exponent7
+    },
+
+    inputTools: [
+      "power"
     ]
-  });
+  };
 
 
-const question7 = {
-  id:
-    "q7",
+  // --------------------------------------------------
+  // Question 8
+  // 1 / a^n -> a^-n
+  // --------------------------------------------------
 
-  title:
-    "Puissances",
+  const base8 =
+    randomSignedBase();
 
-  subtitle:
-    "Quotient de puissances de même exposant",
+  const exponent8 =
+    randint(
+      2,
+      8
+    );
 
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            \\dfrac{
-              ${powerLatex(
-                numeratorBase7,
-                exponent7
-              )}
-            }{
-              ${powerLatex(
-                base7b,
-                exponent7
-              )}
-            }
-          \\]
-        </p>
-      </div>
-    `,
-
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            \\dfrac{
-              ${powerLatex(
-                numeratorBase7,
-                exponent7
-              )}
-            }{
-              ${powerLatex(
-                base7b,
-                exponent7
-              )}
-            }
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers: [
-    answer7
-  ],
-
-  possible_answers:
-    possibleAnswers7,
-
-  answerRule: {
-    type:
-      "power",
-
-    expectedValue:
-      base7a ** exponent7
-  },
-
-  inputTools: [
-    "power"
-  ]
-};
-
-
-// --------------------------------------------------
-// Question 8
-// 1 / a^n -> a^-n
-// --------------------------------------------------
-
-const base8 =
-  randomSignedBase();
-
-const exponent8 =
-  randint(
-    2,
-    8
-  );
-
-const answer8 =
-  powerText(
-    base8,
-    -exponent8
-  );
-
-const possibleAnswers8 =
-  createEquivalentSafePowerQCM({
-    correctBase:
+  const answer8 =
+    powerText(
       base8,
+      -exponent8
+    );
 
-    correctExponent:
-      -exponent8,
-
-    distractors: [
-      powerText(
+  const possibleAnswers8 =
+    createEquivalentSafePowerQCM({
+      correctBase:
         base8,
-        exponent8
-      ),
 
-      powerText(
-        -base8,
-        -exponent8
-      ),
+      correctExponent:
+        -exponent8,
 
-      powerText(
-        base8,
-        -exponent8 - 1
-      ),
+      distractors: [
+        powerText(
+          base8,
+          exponent8
+        ),
 
-      powerText(
-        base8,
-        -exponent8 + 1
-      ),
+        powerText(
+          -base8,
+          -exponent8
+        ),
 
-      powerText(
-        -base8,
-        exponent8
-      )
+        powerText(
+          base8,
+          -exponent8 - 1
+        ),
+
+        powerText(
+          base8,
+          -exponent8 + 1
+        ),
+
+        powerText(
+          -base8,
+          exponent8
+        )
+      ]
+    });
+
+
+  const question8 = {
+    id:
+      "q8",
+
+    title:
+      "Puissances",
+
+    subtitle:
+      "Puissance d'exposant négatif",
+
+    question: {
+      direct: `
+        <div>
+          <p>
+            Écrire l'expression suivante
+            sous la forme \\(a^n\\) :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\dfrac{1}{
+                ${powerLatex(
+                  base8,
+                  exponent8
+                )}
+              }
+            \\]
+          </p>
+        </div>
+      `,
+
+      qcm: `
+        <div>
+          <p>
+            Parmi les quatre propositions,
+            déterminer l'écriture sous la forme
+            \\(a^n\\) de :
+          </p>
+
+          <p class="question-expression">
+            \\[
+              \\dfrac{1}{
+                ${powerLatex(
+                  base8,
+                  exponent8
+                )}
+              }
+            \\]
+          </p>
+        </div>
+      `
+    },
+
+    answers: [
+      answer8
+    ],
+
+    possible_answers:
+      possibleAnswers8,
+
+    answerRule: {
+      type:
+        "power",
+
+      expectedValue:
+        base8 ** (-exponent8)
+    },
+
+    inputTools: [
+      "power"
     ]
-  });
+  };
 
 
-const question8 = {
-  id:
-    "q8",
-
-  title:
-    "Puissances",
-
-  subtitle:
-    "Puissance d'exposant négatif",
-
-  question: {
-    direct: `
-      <div>
-        <p>
-          Écrire l'expression suivante
-          sous la forme \\(a^n\\) :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            \\dfrac{1}{
-              ${powerLatex(
-                base8,
-                exponent8
-              )}
-            }
-          \\]
-        </p>
-      </div>
-    `,
-
-    qcm: `
-      <div>
-        <p>
-          Parmi les quatre propositions,
-          déterminer l'écriture sous la forme
-          \\(a^n\\) de :
-        </p>
-
-        <p class="question-expression">
-          \\[
-            \\dfrac{1}{
-              ${powerLatex(
-                base8,
-                exponent8
-              )}
-            }
-          \\]
-        </p>
-      </div>
-    `
-  },
-
-  answers: [
-    answer8
-  ],
-
-  possible_answers:
-    possibleAnswers8,
-
-  answerRule: {
-    type:
-      "power",
-
-    expectedValue:
-      base8 ** (-exponent8)
-  },
-
-  inputTools: [
-    "power"
-  ]
-};
-
-
-export default {
-  title:
-    "Puissances – niveau 2",
-
-  questions: [
+  return [
     question1,
     question2,
     question3,
@@ -1425,5 +1422,16 @@ export default {
     question6,
     question7,
     question8
-  ]
+  ];
+}
+
+
+export default {
+  title:
+    "Puissances – niveau 2",
+
+  generateQuestions,
+
+  questions:
+    generateQuestions()
 };

@@ -157,6 +157,7 @@ export function evaluateCurrentAnswer({
     "symbolicExact",
     "valueWithUnit",
     "thalesRelation",
+    "ratioComparison",
     "coordinates",
     "power",
     "repeatedProduct",
@@ -212,12 +213,11 @@ export function evaluateCurrentAnswer({
       validAnswers,
 
       result: {
-        correct: isCorrect,
+        correct:
+          isCorrect,
 
         feedback:
-          isCorrect
-            ? ""
-            : "Une ou plusieurs réponses sont incorrectes.",
+          "",
 
         fieldResults
       },

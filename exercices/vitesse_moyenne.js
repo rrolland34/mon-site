@@ -4,21 +4,35 @@ import {
   formatAnswer
 } from "../core/answerFormatting.js";
 
-function randomInteger(min, max) {
-  return Math.floor(
-    Math.random() *
-    (max - min + 1)
-  ) + min;
+
+function randomInteger(
+  min,
+  max
+) {
+  return (
+    Math.floor(
+      Math.random() *
+      (max - min + 1)
+    ) +
+    min
+  );
 }
 
-function shuffleArray(array) {
-  const shuffled = [...array];
+
+function shuffleArray(
+  array
+) {
+  const shuffled = [
+    ...array
+  ];
 
   for (
-    let index = shuffled.length - 1;
+    let index =
+      shuffled.length - 1;
     index > 0;
     index--
   ) {
+
     const randomIndex =
       Math.floor(
         Math.random() *
@@ -37,25 +51,36 @@ function shuffleArray(array) {
   return shuffled;
 }
 
+
 /**
  * Limite les imprécisions liées
  * aux nombres flottants.
  */
-function roundValue(value) {
+function roundValue(
+  value
+) {
   return Number(
-    value.toFixed(10)
+    value.toFixed(
+      10
+    )
   );
 }
+
 
 /**
  * Arrondit une valeur destinée
  * à être affichée dans un QCM.
  */
-function roundQCMValue(value) {
+function roundQCMValue(
+  value
+) {
   return Number(
-    value.toFixed(2)
+    value.toFixed(
+      2
+    )
   );
 }
+
 
 /**
  * Génère une durée comprise entre
@@ -63,9 +88,14 @@ function roundQCMValue(value) {
  */
 function createDecimalHours() {
   return (
-    randomInteger(10, 100) / 10
+    randomInteger(
+      10,
+      100
+    ) /
+    10
   );
 }
+
 
 /**
  * Convertit une durée décimale
@@ -77,18 +107,22 @@ function createDecimalHours() {
 function convertDecimalHoursToDuration(
   decimalHours
 ) {
+
   const totalMinutes =
     Math.round(
-      decimalHours * 60
+      decimalHours *
+      60
     );
 
   const hours =
     Math.floor(
-      totalMinutes / 60
+      totalMinutes /
+      60
     );
 
   const minutes =
-    totalMinutes % 60;
+    totalMinutes %
+    60;
 
   return {
     hours,
@@ -96,6 +130,7 @@ function convertDecimalHoursToDuration(
     totalMinutes
   };
 }
+
 
 /**
  * Forme technique utilisée
@@ -105,10 +140,12 @@ function createRawDuration({
   hours,
   minutes
 }) {
+
   return (
     `${hours} h ${minutes} min`
   );
 }
+
 
 /**
  * Forme visible d’une durée
@@ -118,7 +155,10 @@ function formatDurationForMath({
   hours,
   minutes
 }) {
-  if (minutes === 0) {
+
+  if (
+    minutes === 0
+  ) {
     return (
       `${hours}\\ \\text{h}`
     );
@@ -130,6 +170,7 @@ function formatDurationForMath({
   );
 }
 
+
 /**
  * Forme visible d’une durée
  * dans la correction.
@@ -137,12 +178,14 @@ function formatDurationForMath({
 function createDurationDisplayAnswer(
   duration
 ) {
+
   return (
     `\\(${formatDurationForMath(
       duration
     )}\\)`
   );
 }
+
 
 /**
  * Forme technique d’une vitesse.
@@ -151,10 +194,16 @@ function createRawSpeed(
   value,
   unit
 ) {
+
   return (
-    `${String(roundValue(value))} ${unit}`
+    `${String(
+      roundValue(
+        value
+      )
+    )} ${unit}`
   );
 }
+
 
 /**
  * Forme technique d’une longueur.
@@ -163,10 +212,16 @@ function createRawLength(
   value,
   unit
 ) {
+
   return (
-    `${String(roundValue(value))} ${unit}`
+    `${String(
+      roundValue(
+        value
+      )
+    )} ${unit}`
   );
 }
+
 
 /**
  * Affichage MathJax d’un nombre
@@ -176,13 +231,17 @@ function formatMeasureForMath(
   value,
   unit
 ) {
+
   return (
     `${formatAnswer(
-      roundValue(value),
+      roundValue(
+        value
+      ),
       "math"
     )}\\ \\text{${unit}}`
   );
 }
+
 
 /**
  * Affichage MathJax d’une réponse.
@@ -191,6 +250,7 @@ function createMeasureDisplayAnswer(
   value,
   unit
 ) {
+
   return (
     `\\(${formatMeasureForMath(
       value,
@@ -198,6 +258,7 @@ function createMeasureDisplayAnswer(
     )}\\)`
   );
 }
+
 
 /**
  * Construit quatre réponses numériques
@@ -213,17 +274,20 @@ function createNumericPossibleAnswers({
   minValue = 0,
   maxValue = Infinity
 }) {
+
   const roundedCorrectValue =
     roundQCMValue(
       correctValue
     );
 
-  const distractors = [];
+  const distractors =
+    [];
 
   for (
     const candidate
     of distractorCandidates
   ) {
+
     const roundedCandidate =
       roundQCMValue(
         candidate
@@ -243,16 +307,21 @@ function createNumericPossibleAnswers({
         roundedCandidate
       );
 
-    if (isUsable) {
+    if (
+      isUsable
+    ) {
       distractors.push(
         roundedCandidate
       );
     }
 
-    if (distractors.length === 3) {
+    if (
+      distractors.length === 3
+    ) {
       break;
     }
   }
+
 
   /*
    * Valeurs de secours proches de
@@ -260,11 +329,13 @@ function createNumericPossibleAnswers({
    * distracteurs sont identiques
    * ou hors de l’intervalle imposé.
    */
-  let offset = 1;
+  let offset =
+    1;
 
   while (
     distractors.length < 3
   ) {
+
     const directions = [
       1,
       -1
@@ -274,10 +345,12 @@ function createNumericPossibleAnswers({
       const direction
       of directions
     ) {
+
       const fallbackValue =
         roundQCMValue(
           roundedCorrectValue +
-          direction * offset
+          direction *
+          offset
         );
 
       const isUsable =
@@ -291,19 +364,24 @@ function createNumericPossibleAnswers({
           fallbackValue
         );
 
-      if (isUsable) {
+      if (
+        isUsable
+      ) {
         distractors.push(
           fallbackValue
         );
       }
 
-      if (distractors.length === 3) {
+      if (
+        distractors.length === 3
+      ) {
         break;
       }
     }
 
     offset++;
   }
+
 
   return [
     `${formatAnswer(
@@ -312,10 +390,13 @@ function createNumericPossibleAnswers({
 
     ...distractors.map(
       value =>
-        `${formatAnswer(value)} ${unit}`
+        `${formatAnswer(
+          value
+        )} ${unit}`
     )
   ];
 }
+
 
 /**
  * Construit quatre durées distinctes.
@@ -324,17 +405,20 @@ function createDurationPossibleAnswers({
   correctDuration,
   distractorDurations
 }) {
+
   const correctAnswer =
     createRawDuration(
       correctDuration
     );
 
-  const distractors = [];
+  const distractors =
+    [];
 
   for (
     const duration
     of distractorDurations
   ) {
+
     if (
       duration.minutes < 0 ||
       duration.minutes >= 60
@@ -348,7 +432,8 @@ function createDurationPossibleAnswers({
       );
 
     if (
-      candidate !== correctAnswer &&
+      candidate !==
+        correctAnswer &&
       !distractors.includes(
         candidate
       )
@@ -358,20 +443,26 @@ function createDurationPossibleAnswers({
       );
     }
 
-    if (distractors.length === 3) {
+    if (
+      distractors.length === 3
+    ) {
       break;
     }
   }
 
+
   let fallbackMinutes =
-    correctDuration.totalMinutes + 6;
+    correctDuration.totalMinutes +
+    6;
 
   while (
     distractors.length < 3
   ) {
+
     const fallbackDuration =
       convertDecimalHoursToDuration(
-        fallbackMinutes / 60
+        fallbackMinutes /
+        60
       );
 
     const candidate =
@@ -380,7 +471,8 @@ function createDurationPossibleAnswers({
       );
 
     if (
-      candidate !== correctAnswer &&
+      candidate !==
+        correctAnswer &&
       !distractors.includes(
         candidate
       )
@@ -390,8 +482,10 @@ function createDurationPossibleAnswers({
       );
     }
 
-    fallbackMinutes += 6;
+    fallbackMinutes +=
+      6;
   }
+
 
   return [
     correctAnswer,
@@ -399,49 +493,15 @@ function createDurationPossibleAnswers({
   ];
 }
 
-/*
- * Vitesses entières comprises
- * entre 50 et 90 km/h.
- */
-const speeds =
-  shuffleArray(
-    Array.from(
-      { length: 41 },
-      (_, index) =>
-        50 + index
-    )
-  );
-
-/*
- * Trois durées décimales distinctes.
- */
-const decimalHours = [];
-
-while (decimalHours.length < 3) {
-  const candidate =
-    createDecimalHours();
-
-  if (
-    !decimalHours.includes(
-      candidate
-    )
-  ) {
-    decimalHours.push(
-      candidate
-    );
-  }
-}
 
 /**
  * 1. Calculer une vitesse moyenne
  * connaissant la distance et le temps.
  */
-function createAverageSpeedQuestion() {
-  const speed =
-    speeds[0];
-
-  const durationInHours =
-    decimalHours[0];
+function createAverageSpeedQuestion(
+  speed,
+  durationInHours
+) {
 
   const duration =
     convertDecimalHoursToDuration(
@@ -450,7 +510,8 @@ function createAverageSpeedQuestion() {
 
   const distance =
     roundValue(
-      speed * durationInHours
+      speed *
+      durationInHours
     );
 
   const possibleAnswers =
@@ -461,33 +522,24 @@ function createAverageSpeedQuestion() {
       unit:
         "km/h",
 
-      /*
-       * Valeurs plausibles pour
-       * la vitesse d’un automobiliste.
-       */
       distractorCandidates: [
         speed + 10,
         speed - 10,
         speed + 20,
         speed - 20,
 
-        /*
-         * L’élève reprend la distance
-         * comme vitesse si elle reste
-         * dans une plage réaliste.
-         */
         distance,
 
-        /*
-         * Estimation trop élevée
-         * mais encore plausible.
-         */
         speed * 1.5
       ],
 
-      minValue: 20,
-      maxValue: 150
+      minValue:
+        20,
+
+      maxValue:
+        150
     });
+
 
   return {
     question: `
@@ -528,22 +580,24 @@ function createAverageSpeedQuestion() {
       possibleAnswers,
 
     answerRule: {
-      type: "speed",
-      requiredUnit: "km/h"
+      type:
+        "speed",
+
+      requiredUnit:
+        "km/h"
     }
   };
 }
+
 
 /**
  * 2. Calculer une distance
  * connaissant la vitesse et le temps.
  */
-function createDistanceQuestion() {
-  const speed =
-    speeds[1];
-
-  const durationInHours =
-    decimalHours[1];
+function createDistanceQuestion(
+  speed,
+  durationInHours
+) {
 
   const duration =
     convertDecimalHoursToDuration(
@@ -552,7 +606,8 @@ function createDistanceQuestion() {
 
   const distance =
     roundValue(
-      speed * durationInHours
+      speed *
+      durationInHours
     );
 
   const possibleAnswers =
@@ -564,44 +619,33 @@ function createDistanceQuestion() {
         "km",
 
       distractorCandidates: [
-        /*
-         * Division à la place
-         * de la multiplication.
-         */
         speed /
           durationInHours,
 
-        /*
-         * La vitesse est recopiée
-         * comme distance.
-         */
         speed,
 
-        /*
-         * Distance sous-estimée
-         * ou surestimée.
-         */
-        distance / 2,
-        distance * 2,
+        distance /
+          2,
 
-        /*
-         * L’élève ajoute ou retire
-         * la vitesse à la distance.
-         */
-        distance + speed,
+        distance *
+          2,
+
+        distance +
+          speed,
+
         Math.abs(
-          distance - speed
+          distance -
+          speed
         )
       ],
 
-      minValue: 1,
+      minValue:
+        1,
 
-      /*
-       * Une distance de trajet
-       * automobile raisonnable.
-       */
-      maxValue: 1500
+      maxValue:
+        1500
     });
+
 
   return {
     question: `
@@ -646,22 +690,24 @@ function createDistanceQuestion() {
       possibleAnswers,
 
     answerRule: {
-      type: "length",
-      requiredUnit: "km"
+      type:
+        "length",
+
+      requiredUnit:
+        "km"
     }
   };
 }
+
 
 /**
  * 3. Calculer une durée
  * connaissant la distance et la vitesse.
  */
-function createDurationQuestion() {
-  const speed =
-    speeds[2];
-
-  const durationInHours =
-    decimalHours[2];
+function createDurationQuestion(
+  speed,
+  durationInHours
+) {
 
   const correctDuration =
     convertDecimalHoursToDuration(
@@ -670,7 +716,8 @@ function createDurationQuestion() {
 
   const distance =
     roundValue(
-      speed * durationInHours
+      speed *
+      durationInHours
     );
 
   const integerHours =
@@ -683,8 +730,10 @@ function createDurationQuestion() {
       (
         durationInHours -
         integerHours
-      ) * 10
+      ) *
+      10
     );
+
 
   /*
    * Erreur fréquente :
@@ -698,9 +747,11 @@ function createDurationQuestion() {
       decimalTenths,
 
     totalMinutes:
-      integerHours * 60 +
+      integerHours *
+      60 +
       decimalTenths
   };
+
 
   /*
    * Erreur fréquente :
@@ -711,12 +762,16 @@ function createDurationQuestion() {
       integerHours,
 
     minutes:
-      decimalTenths * 10,
+      decimalTenths *
+      10,
 
     totalMinutes:
-      integerHours * 60 +
-      decimalTenths * 10
+      integerHours *
+      60 +
+      decimalTenths *
+      10
   };
+
 
   /*
    * Durée décalée de 6 minutes,
@@ -727,7 +782,8 @@ function createDurationQuestion() {
       (
         correctDuration.totalMinutes +
         6
-      ) / 60
+      ) /
+      60
     );
 
   const sixMinutesTooLittle =
@@ -736,8 +792,10 @@ function createDurationQuestion() {
         0,
         correctDuration.totalMinutes -
         6
-      ) / 60
+      ) /
+      60
     );
+
 
   const possibleAnswers =
     createDurationPossibleAnswers({
@@ -750,6 +808,7 @@ function createDurationQuestion() {
         sixMinutesTooLittle
       ]
     });
+
 
   return {
     question: `
@@ -790,25 +849,36 @@ function createDurationQuestion() {
       possibleAnswers,
 
     answerRule: {
-      type: "duration"
+      type:
+        "duration"
     }
   };
 }
+
 
 /**
  * 4. Convertir une vitesse
  * de m/s vers km/h ou inversement.
  */
 function createSpeedConversionQuestion() {
+
   const conversionDirection =
-    randomInteger(0, 1);
+    randomInteger(
+      0,
+      1
+    );
 
   const metersPerSecond =
-    randomInteger(6, 50) / 2;
+    randomInteger(
+      6,
+      50
+    ) /
+    2;
 
   const kilometersPerHour =
     roundValue(
-      metersPerSecond * 3.6
+      metersPerSecond *
+      3.6
     );
 
   const sourceValue =
@@ -831,14 +901,13 @@ function createSpeedConversionQuestion() {
       ? "km/h"
       : "m/s";
 
-  /*
-   * Erreur : opération effectuée
-   * dans le mauvais sens.
-   */
+
   const wrongDirectionValue =
     conversionDirection === 0
-      ? metersPerSecond / 3.6
-      : kilometersPerHour * 3.6;
+      ? metersPerSecond /
+        3.6
+      : kilometersPerHour *
+        3.6;
 
   const minValue =
     targetUnit === "km/h"
@@ -850,6 +919,7 @@ function createSpeedConversionQuestion() {
       ? 160
       : 50;
 
+
   const possibleAnswers =
     createNumericPossibleAnswers({
       correctValue:
@@ -859,40 +929,26 @@ function createSpeedConversionQuestion() {
         targetUnit,
 
       distractorCandidates: [
-        /*
-         * Multiplication ou division
-         * par 3,6 dans le mauvais sens.
-         */
         wrongDirectionValue,
-
-        /*
-         * La valeur numérique initiale
-         * est conservée malgré le
-         * changement d’unité.
-         */
         sourceValue,
-
-        /*
-         * Confusion autour du facteur
-         * de conversion.
-         */
         targetValue + 3.6,
 
         Math.abs(
-          targetValue - 3.6
+          targetValue -
+          3.6
         ),
 
-        /*
-         * Erreurs raisonnables proches
-         * de la bonne réponse.
-         */
-        targetValue * 1.2,
-        targetValue * 0.8
+        targetValue *
+          1.2,
+
+        targetValue *
+          0.8
       ],
 
       minValue,
       maxValue
     });
+
 
   return {
     question:
@@ -922,32 +978,46 @@ function createSpeedConversionQuestion() {
       possibleAnswers,
 
     answerRule: {
-      type: "speed",
+      type:
+        "speed",
+
       requiredUnit:
         targetUnit
     }
   };
 }
 
+
 /**
  * 5. Calculer une vitesse moyenne
  * avec une durée donnée en minutes.
  */
 function createCyclistSpeedQuestion() {
+
   const speed =
-    randomInteger(20, 40);
+    randomInteger(
+      20,
+      40
+    );
 
   const durationMinutes =
     30 +
-    3 * randomInteger(0, 9);
+    3 *
+    randomInteger(
+      0,
+      9
+    );
 
   const durationInHours =
-    durationMinutes / 60;
+    durationMinutes /
+    60;
 
   const distance =
     roundValue(
-      speed * durationInHours
+      speed *
+      durationInHours
     );
+
 
   const possibleAnswers =
     createNumericPossibleAnswers({
@@ -957,10 +1027,6 @@ function createCyclistSpeedQuestion() {
       unit:
         "km/h",
 
-      /*
-       * Vitesses proches et réalistes
-       * pour une personne à vélo.
-       */
       distractorCandidates: [
         speed + 5,
         speed - 5,
@@ -970,9 +1036,13 @@ function createCyclistSpeedQuestion() {
         speed * 0.75
       ],
 
-      minValue: 5,
-      maxValue: 60
+      minValue:
+        5,
+
+      maxValue:
+        60
     });
+
 
   return {
     question: `
@@ -1014,21 +1084,98 @@ function createCyclistSpeedQuestion() {
       possibleAnswers,
 
     answerRule: {
-      type: "speed",
-      requiredUnit: "km/h"
+      type:
+        "speed",
+
+      requiredUnit:
+        "km/h"
     }
   };
 }
+
+
+/**
+ * Génère une nouvelle série complète
+ * de questions aléatoires.
+ */
+function generateQuestions() {
+
+  /*
+   * Trois vitesses entières distinctes
+   * comprises entre 50 et 90 km/h.
+   */
+  const speeds =
+    shuffleArray(
+      Array.from(
+        {
+          length:
+            41
+        },
+
+        (
+          _,
+          index
+        ) =>
+          50 +
+          index
+      )
+    );
+
+
+  /*
+   * Trois durées décimales distinctes.
+   */
+  const decimalHours =
+    [];
+
+  while (
+    decimalHours.length < 3
+  ) {
+
+    const candidate =
+      createDecimalHours();
+
+    if (
+      !decimalHours.includes(
+        candidate
+      )
+    ) {
+      decimalHours.push(
+        candidate
+      );
+    }
+  }
+
+
+  return [
+    createAverageSpeedQuestion(
+      speeds[0],
+      decimalHours[0]
+    ),
+
+    createDistanceQuestion(
+      speeds[1],
+      decimalHours[1]
+    ),
+
+    createDurationQuestion(
+      speeds[2],
+      decimalHours[2]
+    ),
+
+    createSpeedConversionQuestion(),
+
+    createCyclistSpeedQuestion()
+  ];
+}
+
 
 export default {
   title:
     "Vitesse moyenne",
 
-  questions: [
-    createAverageSpeedQuestion(),
-    createDistanceQuestion(),
-    createDurationQuestion(),
-    createSpeedConversionQuestion(),
-    createCyclistSpeedQuestion()
-  ]
+  generateQuestions,
+
+  questions:
+    generateQuestions()
 };

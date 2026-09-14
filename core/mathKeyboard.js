@@ -35,10 +35,37 @@ function insertAtCursor(
 }
 
 export function initializeMathKeyboard() {
-  const answerInput =
+
+  let lastAnswerInput =
     document.getElementById(
       "user-answer"
     );
+
+  document.addEventListener(
+    "focusin",
+    event => {
+
+      const target =
+        event.target;
+
+      if (
+        target.id ===
+        "user-answer" ||
+        (
+          target.classList?.contains(
+            "multi-answer-input"
+          ) &&
+          (
+            target.tagName === "INPUT" ||
+            target.tagName === "TEXTAREA"
+          )
+        )
+      ) {
+        lastAnswerInput =
+          target;
+      }
+    }
+  );
 
   const piButton =
     document.getElementById(
@@ -50,10 +77,15 @@ export function initializeMathKeyboard() {
       "math-key-power"
     );
 
+  const notEqualButton =
+    document.getElementById(
+      "math-key-not-equal"
+    );
+
   if (
-    !answerInput ||
     !piButton ||
-    !powerButton
+    !powerButton ||
+    !notEqualButton
   ) {
     return;
   }
@@ -61,20 +93,45 @@ export function initializeMathKeyboard() {
   piButton.addEventListener(
     "click",
     () => {
-      insertAtCursor(
-        answerInput,
-        "π"
-      );
+
+      if (
+        lastAnswerInput
+      ) {
+        insertAtCursor(
+          lastAnswerInput,
+          "π"
+        );
+      }
     }
   );
 
   powerButton.addEventListener(
     "click",
     () => {
-      insertAtCursor(
-        answerInput,
-        "^"
-      );
+
+      if (
+        lastAnswerInput
+      ) {
+        insertAtCursor(
+          lastAnswerInput,
+          "^"
+        );
+      }
+    }
+  );
+
+  notEqualButton.addEventListener(
+    "click",
+    () => {
+
+      if (
+        lastAnswerInput
+      ) {
+        insertAtCursor(
+          lastAnswerInput,
+          "≠"
+        );
+      }
     }
   );
 }
@@ -99,10 +156,16 @@ export function updateMathKeyboard(
       "math-key-power"
     );
 
+  const notEqualButton =
+    document.getElementById(
+      "math-key-not-equal"
+    );
+
   if (
     !mathKeyboard ||
     !piButton ||
-    !powerButton
+    !powerButton ||
+    !notEqualButton
   ) {
     return;
   }
@@ -120,6 +183,13 @@ export function updateMathKeyboard(
     presentationMode === "response" &&
     inputTools.includes("power");
 
+  const showNotEqualButton =
+    answerMode === "direct" &&
+    presentationMode === "response" &&
+    inputTools.includes(
+      "notEqual"
+    );
+
   piButton.style.display =
     showPiButton
       ? "inline-block"
@@ -130,9 +200,17 @@ export function updateMathKeyboard(
       ? "inline-block"
       : "none";
 
+  notEqualButton.style.display =
+    showNotEqualButton
+      ? "inline-block"
+      : "none";
+
   mathKeyboard.style.display =
+
     showPiButton ||
-    showPowerButton
+    showPowerButton ||
+    showNotEqualButton
+
       ? "flex"
       : "none";
 }

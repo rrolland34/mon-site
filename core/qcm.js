@@ -42,6 +42,53 @@ function formatQCMAnswer(
   const normalizedAnswer =
     String(answer);
 
+  const proportionalityMatch =
+    normalizedAnswer.match(
+      /^(Oui|Non), car (.+)\.$/
+    );
+
+  if (
+    proportionalityMatch
+  ) {
+    const responseText =
+      proportionalityMatch[1];
+
+    const explanation =
+      proportionalityMatch[2];
+
+    const containsMath =
+      explanation.includes(
+        "\\dfrac"
+      ) ||
+      explanation.includes(
+        "\\neq"
+      ) ||
+      explanation.includes(
+        "="
+      );
+
+    if (
+      containsMath
+    ) {
+      return (
+        `<span class="qcm-proportionality-answer">` +
+          `<span class="qcm-proportionality-text">` +
+            `${responseText}, car ` +
+          `</span>` +
+          `<span class="qcm-proportionality-math">` +
+            `\\(${explanation}\\)` +
+          `</span>` +
+        `</span>`
+      );
+    }
+
+    return (
+      `<span class="qcm-proportionality-answer">` +
+        `${responseText}, car ${explanation}.` +
+      `</span>`
+    );
+  }
+
   const scientificMatch =
     normalizedAnswer.match(
       /^(-?\d+(?:\.\d+)?)\*10\^(-?\d+)$/
@@ -269,6 +316,18 @@ export function displayQCMOptions(
 ) {
   const qcmButtonsContainer =
     document.getElementById("qcm-buttons");
+
+  qcmButtonsContainer.classList.remove(
+    "proportionality-graph-qcm"
+  );
+
+  if (
+    question.qcmClass
+  ) {
+    qcmButtonsContainer.classList.add(
+      question.qcmClass
+    );
+  }
 
   const qcmOptionsElement =
     document.getElementById("qcm-options");
