@@ -780,3 +780,69 @@ button {
   gap:
     8px;
 }
+
+.export-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(
+      0,
+      0,
+      0,
+      0.55
+    );
+}
+
+.export-dialog {
+  width: min(
+    420px,
+    90%
+  );
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background:
+    white;
+
+  color:
+    #111;
+
+  box-shadow:
+    0 10px 30px
+    rgba(
+      0,
+      0,
+      0,
+      0.3
+    );
+}
+
+.export-dialog h2 {
+  margin-top: 0;
+}
+
+.export-dialog label {
+  display: block;
+  margin: 12px 0;
+}
+
+.export-evaluation-options {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.export-dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 25px;
+}

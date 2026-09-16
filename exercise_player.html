@@ -251,6 +251,15 @@
       Recommencer
     </button>
 
+    <button
+      id="export-exercise"
+      class="btn large"
+      type="button"
+      style="display:none;"
+    >
+      Exporter
+    </button>
+
     <div
       id="time-control"
       class="control-group"
@@ -516,6 +525,14 @@
     import {
       exerciseConfigs
     } from "./core/exerciseRegistry.js";
+
+    import {
+      exportGeneratedExercise
+    } from "./core/export/exportGeneratedExercise.js";
+
+    import {
+      openExportDialog
+    } from "./core/export/exportDialog.js";
 
     let currentExercise =
       null;
@@ -1084,6 +1101,11 @@
         "restart"
       );
 
+    const exportExerciseButton =
+      document.getElementById(
+        "export-exercise"
+      );
+
     const pauseButton =
       document.getElementById(
         "pause-timer"
@@ -1392,6 +1414,55 @@
       });
     }
 
+    exportExerciseButton.addEventListener(
+      "click",
+      function() {
+        if (
+          !currentExercise
+        ) {
+          return;
+        }
+
+        openExportDialog({
+          showArchive:
+            false,
+
+          onExport({
+            exportType,
+            includeCorrection
+          }) {
+            if (
+              exportType !==
+              "evaluation"
+            ) {
+              return;
+            }
+
+            exportGeneratedExercise({
+              title:
+                exerciseConfig.title,
+
+              exercise:
+                currentExercise,
+
+              renderFigure(
+                figureOptions
+              ) {
+                return renderExerciseFigure(
+                  figureOptions
+                );
+              },
+
+              createCorrection:
+                createPythagorasCorrectionScenes,
+
+              includeCorrection
+            });
+          }
+        });
+      }
+    );
+
     startButton.addEventListener(
       "click",
       function() {
@@ -1411,6 +1482,9 @@
         displayExercise(
           currentExercise
         );
+
+        exportExerciseButton.style.display =
+          "inline-block";
 
         showTimer();
 

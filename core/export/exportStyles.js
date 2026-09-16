@@ -1,0 +1,96 @@
+// core/export/exportStyles.js
+
+import {
+  getExportFigureStyles
+} from "./exportFigureStyles.js";
+
+export function getExportStyles() {
+  return `
+    @page {
+      size: A4;
+      margin: 18mm;
+    }
+
+    body {
+      font-family:
+        Arial,
+        sans-serif;
+
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #111;
+      line-height: 1.4;
+    }
+
+    .evaluation-header {
+      margin-bottom: 35px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #333;
+      text-align: center;
+    }
+
+    .evaluation-header h1 {
+      margin: 0 0 8px;
+    }
+
+    .evaluation-date {
+      margin: 0;
+      color: #555;
+    }
+
+    .evaluation-question {
+      margin-bottom: 40px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .evaluation-answer {
+      margin-top: 16px;
+      font-weight: 700;
+    }
+
+    .archive-qcm {
+      margin-top: 18px;
+      margin-left: 20px;
+    }
+
+    .archive-qcm > div {
+      margin: 8px 0;
+    }
+
+    .proportionality-table {
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: 440px;
+      max-width: 100%;
+      margin: 15px auto;
+    }
+
+    .proportionality-table td {
+      width: 110px;
+      height: 45px;
+      padding: 0 6px;
+      box-sizing: border-box;
+      border: 1px solid #111;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+      font-size: 1.1em;
+    }
+
+    ${getExportFigureStyles()}
+
+    @media print {
+      body {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #print-evaluation {
+        display: none;
+      }
+    }
+  `;
+}
