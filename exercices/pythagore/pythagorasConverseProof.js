@@ -10,6 +10,12 @@ function cleanNumber(value) {
   );
 }
 
+function formatLengthName(
+  name
+) {
+  return `\\mathrm{${name}}`;
+}
+
 export function createPythagorasConverseProof(
   exercise
 ) {
@@ -27,13 +33,19 @@ export function createPythagorasConverseProof(
     vertices[0];
 
   const hypotenuse =
-    sideNames.hypotenuse;
+    formatLengthName(
+      sideNames.hypotenuse
+    );
 
   const leg1 =
-    sideNames.leg1;
+    formatLengthName(
+      sideNames.leg1
+    );
 
   const leg2 =
-    sideNames.leg2;
+    formatLengthName(
+      sideNames.leg2
+    );
 
   const hypotenuseSquare =
     cleanNumber(

@@ -182,7 +182,8 @@ function createSvgLine({
 
 function createPointLabel({
   point,
-  label
+  label,
+  color = null
 }) {
   return `
     <text
@@ -191,6 +192,11 @@ function createPointLabel({
       class="thales-point-label"
       text-anchor="middle"
       dominant-baseline="middle"
+      style="${
+        color
+          ? `fill: ${color};`
+          : ""
+      }"
     >
       ${label}
     </text>
@@ -393,12 +399,75 @@ function getButterflyCenterLabelPosition({
   };
 }
 
+function mirrorPointAcrossLine(
+  point,
+  linePoint1,
+  linePoint2
+) {
+  const dx =
+    linePoint2.x -
+    linePoint1.x;
+
+  const dy =
+    linePoint2.y -
+    linePoint1.y;
+
+  const lengthSquared =
+    dx * dx +
+    dy * dy;
+
+  if (
+    lengthSquared === 0
+  ) {
+    return {
+      ...point
+    };
+  }
+
+  const t =
+    (
+      (
+        point.x -
+        linePoint1.x
+      ) * dx +
+      (
+        point.y -
+        linePoint1.y
+      ) * dy
+    ) /
+    lengthSquared;
+
+  const projection = {
+    x:
+      linePoint1.x +
+      t * dx,
+
+    y:
+      linePoint1.y +
+      t * dy
+  };
+
+  return {
+    x:
+      2 * projection.x -
+      point.x,
+
+    y:
+      2 * projection.y -
+      point.y
+  };
+}
+
 export function createThalesFigure({
   rotation = 0,
 
   rotationCenter = "center",
 
+  mirror = false,
+
   positionRatio = 0.5,
+
+  orthogonalGeometry = false,
 
   angleBAC = null,
   angleABC = null,
@@ -419,16 +488,28 @@ export function createThalesFigure({
 
   angles = {},
 
-  lengths = {}
+  lengths = {},
+
+  highlight = {}
 } = {}) {
 
   /*
    * Triangle extérieur.
    */
 
+  const resolvedAngleBAC =
+    orthogonalGeometry
+      ? 45
+      : angleBAC;
+
+  const resolvedAngleABC =
+    orthogonalGeometry
+      ? 90
+      : angleABC;
+
   const hasAngleGeometry =
-    angleBAC !== null &&
-    angleABC !== null;
+    resolvedAngleBAC !== null &&
+    resolvedAngleABC !== null;
 
   const basePoints =
     hasAngleGeometry
@@ -447,11 +528,11 @@ export function createThalesFigure({
             D.x - A.x;
 
           const alpha =
-            angleBAC *
+            resolvedAngleBAC *
             Math.PI / 180;
 
           const beta =
-            angleABC *
+            resolvedAngleABC *
             Math.PI / 180;
 
           const gamma =
@@ -499,6 +580,15 @@ export function createThalesFigure({
             y: 380
           }
         };
+
+  if (mirror) {
+    basePoints.E =
+      mirrorPointAcrossLine(
+        basePoints.E,
+        basePoints.A,
+        basePoints.D
+      );
+  }
 
   /*
   * B appartient à la droite (AD)
@@ -575,6 +665,44 @@ const resolvedRotationCenter =
         );
     }
   );
+
+  /*
+   * Mises en évidence pédagogiques.
+   */
+
+  const smallTriangleHighlight =
+    highlight.smallTriangle?.visible
+      ? `
+        <polygon
+          points="
+            ${points.A.x},${points.A.y}
+            ${points.B.x},${points.B.y}
+            ${points.C.x},${points.C.y}
+          "
+          fill="none"
+          stroke="${highlight.smallTriangle.color ?? "green"}"
+          stroke-width="${highlight.smallTriangle.strokeWidth ?? 4}"
+          stroke-linejoin="round"
+        />
+      `
+      : "";
+
+  const largeTriangleHighlight =
+    highlight.largeTriangle?.visible
+      ? `
+        <polygon
+          points="
+            ${points.A.x},${points.A.y}
+            ${points.D.x},${points.D.y}
+            ${points.E.x},${points.E.y}
+          "
+          fill="none"
+          stroke="${highlight.largeTriangle.color ?? "blue"}"
+          stroke-width="${highlight.largeTriangle.strokeWidth ?? 4}"
+          stroke-linejoin="round"
+        />
+      `
+      : "";
 
   /*
   * Centre du triangle ADE.
@@ -1059,7 +1187,7 @@ const resolvedRotationCenter =
   };
 
   const rightAngleAtB =
-    angleABC === 90 &&
+    resolvedAngleABC === 90 &&
     resolvedRightAngles.atB
       ? createRightAngleMark({
           vertex:
@@ -1077,7 +1205,7 @@ const resolvedRotationCenter =
       : "";
 
   const rightAngleAtD =
-    angleABC === 90 &&
+    resolvedAngleABC === 90 &&
     resolvedRightAngles.atD
       ? createRightAngleMark({
           vertex:
@@ -1152,7 +1280,11 @@ const resolvedRotationCenter =
   const pointLabels = [
     createPointLabel({
       point: labelA,
-      label: nameA
+      label: nameA,
+      color:
+        highlight.commonVertex?.visible
+          ? highlight.commonVertex.color ?? "red"
+          : null
     }),
 
     createPointLabel({
@@ -1399,6 +1531,11 @@ const resolvedRotationCenter =
 
       <g class="thales-lines">
         ${lines}
+      </g>
+
+      <g class="thales-highlights">
+        ${smallTriangleHighlight}
+        ${largeTriangleHighlight}
       </g>
 
       ${rightAngleAtB}

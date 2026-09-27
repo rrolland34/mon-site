@@ -596,13 +596,13 @@ export function createRightTriangleSVG({
           id="triangle-arrow-head"
           markerWidth="10"
           markerHeight="10"
-          refX="9"
+          refX="8.5"
           refY="3"
           orient="auto"
           markerUnits="strokeWidth"
         >
           <path
-            d="M0,0 L0,6 L9,3 z"
+            d="M4,1.5 L4,4.5 L9,3 z"
             fill="${arrow.color}"
           />
         </marker>

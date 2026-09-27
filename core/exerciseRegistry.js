@@ -1,6 +1,66 @@
 // core/exerciseRegistry.js
 
 export const exerciseConfigs = {
+  "thales-nested": {
+    title:
+      "Théorème de Thalès : triangles emboîtés",
+
+    type:
+      "nested",
+
+    family:
+      "thales"
+  },
+
+  "thales-butterfly": {
+    title:
+      "Théorème de Thalès : configuration papillon",
+
+    type:
+      "butterfly",
+
+    family:
+      "thales"
+  },
+
+  "thales-random": {
+    title:
+      "Théorème de Thalès : configuration aléatoire",
+
+    type:
+      "random",
+
+    family:
+      "thales"
+  },
+
+  "thales-perpendicular-nested": {
+    title:
+      "Théorème de Thalès : perpendiculaires - triangles emboîtés",
+    type:
+      "perpendicular-nested",
+    family:
+      "thales"
+  },
+
+  "thales-perpendicular-butterfly": {
+    title:
+      "Théorème de Thalès : perpendiculaires - configuration papillon",
+    type:
+      "perpendicular-butterfly",
+    family:
+      "thales"
+  },
+
+  "thales-perpendicular-random": {
+    title:
+      "Théorème de Thalès : perpendiculaires - configuration aléatoire",
+    type:
+      "perpendicular-random",
+    family:
+      "thales"
+  },
+
   "pythagoras-hypotenuse": {
     title:
       "Théorème de Pythagore : calcul de l'hypoténuse",

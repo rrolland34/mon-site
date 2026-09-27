@@ -12,18 +12,43 @@ export function validateScientificNotation({
         /\s+/g,
         ""
       )
+
+      // Délimiteurs MathJax.
+      .replace(
+        /\\\(|\\\)|\\\[|\\\]/g,
+        ""
+      )
+
+      // Virgule décimale LaTeX.
+      .replace(
+        /\{,\}/g,
+        "."
+      )
+
+      // Virgule décimale classique.
       .replace(
         ",",
         "."
       )
+
+      // Multiplication LaTeX.
+      .replace(
+        /\\times/g,
+        "*"
+      )
+
+      // Symbole multiplication.
       .replace(
         /×/g,
         "*"
       )
+
+      // Exposant LaTeX.
       .replace(
         /\^\{(-?\d+)\}/g,
         "^$1"
       )
+
       .replace(
         /\^\((-?\d+)\)/g,
         "^$1"

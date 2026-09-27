@@ -125,6 +125,12 @@ body {
   height: auto;
 }
 
+.dnb-triangle svg {
+  width: 340px;
+  max-width: 90%;
+  height: auto;
+}
+
 .dnb-cartesian-plane {
   width: 500px;
   max-width: 100%;
@@ -135,6 +141,10 @@ body {
   width: 320px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.dnb-polynesie-q9 {
+  width: 350px;
 }
 
 /* ===== TIMER ===== */
@@ -235,7 +245,8 @@ button {
 #start,
 #restart,
 #pause-timer,
-#export-evaluation {
+#export-evaluation,
+#export-exercise {
   background: linear-gradient(135deg, #27ae60, #2ecc71);
   font-size: 1.2em;
 }
@@ -845,4 +856,47 @@ button {
   gap: 10px;
 
   margin-top: 25px;
+}
+
+#qcm-buttons {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    16px;
+}
+
+#qcm-buttons.qcm-two-columns {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap:
+    10px;
+}
+
+.qcm-two-columns
+button {
+  width:
+    100%;
+}
+
+.dnb-pie-chart {
+  width: 400px;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.dnb-pie-chart svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }

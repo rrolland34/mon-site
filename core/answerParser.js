@@ -18,6 +18,7 @@ export function normalizeAnswer(value) {
     .toLowerCase()
     .trim()
     .replace(/\s+/g, "")
+    .replace(/\{,\}/g, ".")
     .replace(",", ".")
     .replace(/^0+(\d)/, "$1")
     .replace(/\\\(|\\\)|\\\[|\\\]/g, "")
@@ -35,7 +36,7 @@ export function parseAnswer(value) {
   const normalizedValue = normalizeAnswer(value);
 
   const match = normalizedValue.match(
-    /^(.+?)([a-z]*)$/
+    /^(.+?)([a-z]*|%)$/
   );
 
   if (!match) {
@@ -158,6 +159,10 @@ export function parseAnswer(value) {
       value: null,
       unit
     };
+  }
+
+  if (unit === "%") {
+    numericValue /= 100;
   }
 
   return {

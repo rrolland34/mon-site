@@ -206,7 +206,10 @@ export function displayCorrectionQuestion({
           correction.qcmAnswersOrder,
 
         qcmNumberFormat:
-          correction.qcmNumberFormat
+          correction.qcmNumberFormat,
+
+        qcmClass:
+          correction.qcmClass
       },
       true
     );

@@ -10,6 +10,14 @@ export function getExportFigureStyles() {
       margin: 15px auto;
     }
 
+    .dnb-triangle svg {
+      width: 240px;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+    }
+
     .dnb-thales svg {
       width: 320px;
       max-width: 90%;
@@ -38,6 +46,14 @@ export function getExportFigureStyles() {
 
     .dnb-quadrilateral svg {
       width: 260px;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 15px auto;
+    }
+
+    .dnb-cartesian-plane svg {
+      width: 360px;
       max-width: 90%;
       height: auto;
       display: block;
@@ -92,6 +108,17 @@ export function getExportFigureStyles() {
     .proportionality-graph-title {
       fill: #111;
       font-size: 15px;
+    }
+
+    .evaluation-figure {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .evaluation-figure svg {
+      width: 320px;
+      max-width: 100%;
+      height: auto;
     }
   `;
 }

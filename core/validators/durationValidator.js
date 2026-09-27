@@ -120,6 +120,76 @@ function parseDuration(
 
 
   // -------------------------
+  // Secondes seules
+  // Exemple : 360s
+  // -------------------------
+
+  const secondsMatch =
+    normalizedInput.match(
+      /^(\d+(?:[.,]\d+)?)s$/
+    );
+
+  if (secondsMatch) {
+    const seconds =
+      Number(
+        secondsMatch[1]
+          .replace(",", ".")
+      );
+
+    return {
+      valid: true,
+
+      totalMinutes:
+        seconds / 60,
+
+      errorCode: null
+    };
+  }
+
+
+  // -------------------------
+  // Fraction d'heure
+  // Exemple : 3/4h
+  // -------------------------
+
+  const fractionalHoursMatch =
+    normalizedInput.match(
+      /^(\d+)\/(\d+)h$/
+    );
+
+  if (fractionalHoursMatch) {
+    const numerator =
+      Number(
+        fractionalHoursMatch[1]
+      );
+
+    const denominator =
+      Number(
+        fractionalHoursMatch[2]
+      );
+
+    if (denominator === 0) {
+      return {
+        valid: false,
+        errorCode:
+          "INVALID_DURATION_STRUCTURE"
+      };
+    }
+
+    return {
+      valid: true,
+
+      totalMinutes:
+        numerator /
+        denominator *
+        60,
+
+      errorCode: null
+    };
+  }
+
+
+  // -------------------------
   // Heures seules
   // Exemple : 0,5h
   // -------------------------

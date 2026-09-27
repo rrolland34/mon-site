@@ -36,11 +36,20 @@ function getQCMAnswers(question) {
   return question.qcmAnswersOrder;
 }
 
-function formatQCMAnswer(
+export function formatQCMAnswer(
   answer,
   question) {
   const normalizedAnswer =
     String(answer);
+
+  // Réponse contenant déjà du MathJax.
+  // Exemple : \(A=4\) et \(B=90\)
+  if (
+    normalizedAnswer.includes("\\(") ||
+    normalizedAnswer.includes("\\[")
+  ) {
+    return normalizedAnswer;
+  }
 
   const proportionalityMatch =
     normalizedAnswer.match(
@@ -257,6 +266,26 @@ function formatQCMAnswer(
     );
   }
 
+  // Rapport de longueurs.
+  // Exemple : AB/BC
+  const segmentRatioMatch =
+    normalizedAnswer.match(
+      /^([A-Za-z]{2})\/([A-Za-z]{2})$/
+    );
+
+  if (segmentRatioMatch) {
+    const numerator =
+      segmentRatioMatch[1];
+
+    const denominator =
+      segmentRatioMatch[2];
+
+    return (
+      `\\(\\dfrac{\\mathrm{${numerator}}}` +
+      `{\\mathrm{${denominator}}}\\)`
+    );
+  }
+
   const terms =
     normalizedAnswer.split("+");
 
@@ -318,7 +347,8 @@ export function displayQCMOptions(
     document.getElementById("qcm-buttons");
 
   qcmButtonsContainer.classList.remove(
-    "proportionality-graph-qcm"
+    "proportionality-graph-qcm",
+    "qcm-two-columns"
   );
 
   if (

@@ -4,6 +4,10 @@ import {
   formatAnswer
 } from "../answerFormatting.js";
 
+import {
+  formatQCMAnswer
+} from "../qcm.js";
+
 export function createEvaluationContent({
   userAnswers
 }) {
@@ -140,7 +144,6 @@ export function createEvaluationContent({
 
         const qcmContent =
           qcmAnswers
-
             ? `
                 <div class="archive-qcm">
                   ${qcmAnswers
@@ -149,89 +152,11 @@ export function createEvaluationContent({
                         answer,
                         answerIndex
                       ) => {
-                        const normalizedQCMAnswer =
-                          String(
-                            answer
-                          ).trim();
-
-                        const isPowerQCM =
-                          /^\(?-?\d+\)?\^-?\d+$/.test(
-                            normalizedQCMAnswer
+                        const displayedQCMAnswer =
+                          formatQCMAnswer(
+                            answer,
+                            correction
                           );
-
-                        const isProductQCM =
-                          /^(?:\(-?\d+\)|-?\d+)(?:\*(?:\(-?\d+\)|-?\d+))+$/.test(
-                            normalizedQCMAnswer.replace(
-                              /\s+/g,
-                              ""
-                            )
-                          );
-
-                        const isScientificNotationQCM =
-                          /^-?\d+(?:\.\d+)?\*10\^-?\d+$/.test(
-                            normalizedQCMAnswer.replace(
-                              /\s+/g,
-                              ""
-                            )
-                          );
-
-                        const isNumericQCM =
-                          normalizedQCMAnswer !== "" &&
-                          !Number.isNaN(
-                            Number(
-                              normalizedQCMAnswer
-                            )
-                          );
-
-                        const coordinateQCMMatch =
-                          normalizedQCMAnswer.match(
-                            /^([A-Za-z])\(\s*(-?\d+(?:[.,]\d+)?)\s*;\s*(-?\d+(?:[.,]\d+)?)\s*\)$/
-                          );
-
-                        const isCoordinatesQCM =
-                          coordinateQCMMatch !== null;
-
-                        let displayedQCMAnswer;
-
-                        if (
-                          isCoordinatesQCM
-                        ) {
-                          const pointName =
-                            coordinateQCMMatch[1];
-
-                          const x =
-                            coordinateQCMMatch[2];
-
-                          const y =
-                            coordinateQCMMatch[3];
-
-                          displayedQCMAnswer =
-                            `\\(\\mathrm{${pointName}}(` +
-                            `${formatAnswer(
-                              x,
-                              "math"
-                            )}` +
-                            `\\,;\\,` +
-                            `${formatAnswer(
-                              y,
-                              "math"
-                            )}` +
-                            `)\\)`;
-                        } else if (
-                          isPowerQCM ||
-                          isProductQCM ||
-                          isScientificNotationQCM ||
-                          isNumericQCM
-                        ) {
-                          displayedQCMAnswer =
-                            `\\(${formatAnswer(
-                              normalizedQCMAnswer,
-                              "math"
-                            )}\\)`;
-                        } else {
-                          displayedQCMAnswer =
-                            normalizedQCMAnswer;
-                        }
 
                         return `
                           <div>
@@ -246,7 +171,6 @@ export function createEvaluationContent({
                     .join("")}
                 </div>
               `
-
             : "";
 
         return `

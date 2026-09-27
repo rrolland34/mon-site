@@ -39,10 +39,59 @@ export function getExportStyles() {
       color: #555;
     }
 
+    .evaluation-student-identity {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 30px;
+    }
+
+    .evaluation-identity-item {
+      display: flex;
+      align-items: baseline;
+      flex: 1;
+      gap: 8px;
+    }
+
+    .evaluation-identity-line {
+      flex: 1;
+      border-bottom: 2px dotted #111;
+    }
+
+    .evaluation-response-space {
+      margin-top: 18px;
+    }
+
+    .evaluation-response-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .evaluation-response-row:first-child {
+      margin-top: 0;
+    }
+
+    .evaluation-response-label-spacer {
+      width: 70px;
+      flex-shrink: 0;
+    }
+
+    .evaluation-response-line {
+      flex: 1;
+      border-bottom: 2px dotted #111;
+    }
+
     .evaluation-question {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       page-break-inside: avoid;
       break-inside: avoid;
+    }
+
+    .evaluation-question h2 {
+      font-size: 1em;
+      margin-top: 0;
+      margin-bottom: 10px;
     }
 
     .evaluation-answer {
@@ -91,6 +140,18 @@ export function getExportStyles() {
       #print-evaluation {
         display: none;
       }
+    }
+
+    .proof-box {
+      display: inline-block;
+      border: 2px solid red;
+      padding: 4px 10px;
+    }
+
+    .proof-display {
+      color: red;
+      font-size: 1.1em;
+      line-height: 1.5;
     }
   `;
 }

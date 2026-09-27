@@ -14,6 +14,7 @@ export function storeAnswerForCorrections({
   givenPoint
 }) {
   if (presentationMode === "slideshow") {
+
     userAnswers.push({
       question:
         currentQuestion.question,
@@ -44,6 +45,14 @@ export function storeAnswerForCorrections({
       answerMode,
       figureConfig,
       givenPoint,
+
+      qcmNumberFormat:
+        currentQuestion.qcmNumberFormat ??
+        null,
+      
+      qcmClass:
+        currentQuestion.qcmClass ??
+        null,
 
       qcmAnswersOrder:
         currentQuestion.qcmAnswersOrder

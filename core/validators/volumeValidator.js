@@ -1,4 +1,4 @@
-// core/validators/lengthValidator.js
+// core/validators/volumeValidator.js
 
 import {
   parseAnswer
@@ -8,21 +8,17 @@ import {
   validatePiMultiple
 } from "./piMultipleValidator.js";
 
-import {
-  validateCanonicalDecimalFormat
-} from "./canonicalDecimalValidator.js";
-
-const LENGTH_UNIT_FACTORS = {
-  km: 1000,
-  hm: 100,
-  dam: 10,
-  m: 1,
-  dm: 0.1,
-  cm: 0.01,
-  mm: 0.001
+const VOLUME_UNIT_FACTORS = {
+  km3: 1_000_000_000_000_000_000,
+  hm3: 1_000_000_000_000_000,
+  dam3: 1_000_000_000_000,
+  m3: 1_000_000_000,
+  dm3: 1_000_000,
+  cm3: 1_000,
+  mm3: 1
 };
 
-function normalizeLengthInput(
+function normalizeVolumeInput(
   userInput
 ) {
   return String(userInput)
@@ -32,15 +28,9 @@ function normalizeLengthInput(
     .replace(/^\\\(/, "")
     .replace(/\\\)$/, "")
 
-    // Transforme \text{cm} en cm.
+    // Transforme \text{cm^3} en cm^3.
     .replace(
       /\\text\{([^{}]+)\}/g,
-      "$1"
-    )
-
-    // Transforme \mathrm{cm} en cm.
-    .replace(
-      /\\mathrm\{([^{}]+)\}/g,
       "$1"
     )
 
@@ -59,36 +49,18 @@ function normalizeLengthInput(
     .trim();
 }
 
-function normalizeUnit(unit) {
+function normalizeUnit(
+  unit
+) {
   return String(unit)
     .trim()
     .toLowerCase()
     .replace(/\s+/g, "")
-    .replace(/²/g, "2")
     .replace(/³/g, "3")
-    .replace(/\^2/g, "2")
     .replace(/\^3/g, "3");
 }
 
-/**
- * Sépare une réponse en deux parties :
- *
- * - une partie numérique ;
- * - une unité.
- *
- * Exemples acceptés :
- * "20cm"
- * "20 cm"
- * "1 250 mm"
- * "0,2 m"
- *
- * Exemples refusés :
- * "cm 20"
- * "c 20 m"
- * "20"
- * "20 cm mm"
- */
-function parseLengthAnswer(
+function parseVolumeAnswer(
   userInput,
   valueRule = null
 ) {
@@ -99,54 +71,34 @@ function parseLengthAnswer(
     return {
       valid: false,
       errorCode:
-        "INVALID_LENGTH_STRUCTURE"
+        "INVALID_VOLUME_STRUCTURE"
     };
   }
 
   const trimmedInput =
-    normalizeLengthInput(
+    normalizeVolumeInput(
       userInput
     );
 
-  /*
-   * On cherche d’abord une unité de longueur
-   * connue à la fin de la réponse.
-   *
-   * Cela permet de découper correctement :
-   * "13.8pimm"
-   *
-   * en :
-   * numericPart = "13.8pi"
-   * unit = "mm"
-   */
-  const knownLengthUnitMatch =
+  const knownVolumeUnitMatch =
     trimmedInput.match(
-      /^(.+?)\s*((?:km|hm|dam|dm|cm|mm|m)(?:\^?[23]|[²³])?)$/i
+      /^(.+?)\s*((?:km|hm|dam|dm|cm|mm|m)(?:\^?3|³))$/i
     );
 
-  /*
-   * Si aucune unité de longueur connue
-   * n’est trouvée, on tente tout de même
-   * d’extraire une unité textuelle.
-   *
-   * Cela permet de produire le feedback
-   * « Une unité de longueur est attendue »
-   * pour "20 kg" ou "20 mol".
-   */
   const genericUnitMatch =
     trimmedInput.match(
-      /^(.+?)\s*([a-zA-Z]+(?:\^?[23]|[²³])?)$/
+      /^(.+?)\s*([a-zA-Z]+(?:\^?3|³)?)$/
     );
 
   const match =
-    knownLengthUnitMatch ??
+    knownVolumeUnitMatch ??
     genericUnitMatch;
 
   if (!match) {
     return {
       valid: false,
       errorCode:
-        "INVALID_LENGTH_STRUCTURE"
+        "INVALID_VOLUME_STRUCTURE"
     };
   }
 
@@ -195,26 +147,8 @@ function parseLengthAnswer(
       return {
         valid: false,
         errorCode:
-          "INVALID_LENGTH_NUMBER"
+          "INVALID_VOLUME_NUMBER"
       };
-    }
-
-    if (
-      valueRule?.type ===
-      "canonicalDecimal"
-    ) {
-      const formatValidation =
-        validateCanonicalDecimalFormat(
-          numericPart
-        );
-
-      if (!formatValidation.valid) {
-        return {
-          valid: false,
-          errorCode:
-            formatValidation.errorCode
-        };
-      }
     }
 
     parsedValue = {
@@ -226,14 +160,14 @@ function parseLengthAnswer(
 
   if (
     !Object.hasOwn(
-      LENGTH_UNIT_FACTORS,
+      VOLUME_UNIT_FACTORS,
       unit
     )
   ) {
     return {
       valid: false,
       errorCode:
-        "EXPECTED_LENGTH_UNIT"
+        "EXPECTED_VOLUME_UNIT"
     };
   }
 
@@ -247,22 +181,17 @@ function parseLengthAnswer(
   };
 }
 
-function convertLengthToMeters(
+function convertVolumeToCubicMillimeters(
   value,
   unit
 ) {
   return (
     value *
-    LENGTH_UNIT_FACTORS[unit]
+    VOLUME_UNIT_FACTORS[unit]
   );
 }
 
-/**
- * Vérifie qu'une réponse représente
- * la même longueur que l'une des
- * réponses configurées.
- */
-export function validateLengthAnswer({
+export function validateVolumeAnswer({
   userInput,
   validAnswers,
   requiredUnit = null,
@@ -270,7 +199,7 @@ export function validateLengthAnswer({
   tolerance = 1e-9
 }) {
   const parsedUserAnswer =
-    parseLengthAnswer(
+    parseVolumeAnswer(
       userInput,
       valueRule
     );
@@ -286,12 +215,13 @@ export function validateLengthAnswer({
   ) {
     return {
       valid: false,
-      errorCode: "WRONG_LENGTH_UNIT"
+      errorCode:
+        "WRONG_VOLUME_UNIT"
     };
   }
 
-  const userValueInMeters =
-    convertLengthToMeters(
+  const userValueInCubicMillimeters =
+    convertVolumeToCubicMillimeters(
       parsedUserAnswer.value,
       parsedUserAnswer.unit
     );
@@ -301,7 +231,7 @@ export function validateLengthAnswer({
     of validAnswers
   ) {
     const parsedValidAnswer =
-      parseLengthAnswer(
+      parseVolumeAnswer(
         validAnswer,
         valueRule
       );
@@ -310,19 +240,19 @@ export function validateLengthAnswer({
       continue;
     }
 
-    const validValueInMeters =
-      convertLengthToMeters(
+    const validValueInCubicMillimeters =
+      convertVolumeToCubicMillimeters(
         parsedValidAnswer.value,
         parsedValidAnswer.unit
       );
 
-    const sameLength =
+    const sameVolume =
       Math.abs(
-        userValueInMeters -
-        validValueInMeters
+        userValueInCubicMillimeters -
+        validValueInCubicMillimeters
       ) < tolerance;
 
-    if (sameLength) {
+    if (sameVolume) {
       return {
         valid: true,
         value:
@@ -331,8 +261,8 @@ export function validateLengthAnswer({
           parsedUserAnswer.numericPart,
         unit:
           parsedUserAnswer.unit,
-        valueInMeters:
-          userValueInMeters,
+        valueInCubicMillimeters:
+          userValueInCubicMillimeters,
         errorCode: null
       };
     }
@@ -340,6 +270,7 @@ export function validateLengthAnswer({
 
   return {
     valid: false,
-    errorCode: "WRONG_LENGTH_VALUE"
+    errorCode:
+      "WRONG_VOLUME_VALUE"
   };
 }

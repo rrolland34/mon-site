@@ -22,7 +22,7 @@
       font-size: 2.4em;
       font-weight: 500;
       line-height: 1.4;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
       text-align: center;
     }
 
@@ -41,6 +41,20 @@
       height: auto;
       display: block;
       margin: 0 auto;
+    }
+
+    #exercise-figure:has(.thales-figure),
+    .step-correction-figure:has(.thales-figure) {
+      width: 450px;
+      max-width: 90%;
+    }
+
+    #exercise-figure .thales-figure,
+    .step-correction-figure .thales-figure {
+      width: 100%;
+      max-width: 450px;
+      max-height: none;
+      height: auto;
     }
 
     .proof-choice {
@@ -154,6 +168,83 @@
 
     .proof-choice-input .proof-input-field:focus {
       border-color: #555;
+    }
+
+    /* Correction progressive de Thalès */
+    .thales-correspondence-equality {
+      display: inline-block;
+    }
+
+    .thales-correspondence-overlay {
+      position: absolute;
+      inset: 0;
+      overflow: visible;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .thales-ratio-equality {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      white-space: nowrap;
+    }
+
+    .thales-ratio-fraction {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      min-width: 58px;
+      vertical-align: middle;
+    }
+
+    .thales-ratio-numerator,
+    .thales-ratio-denominator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 1.45em;
+      padding: 0 7px;
+    }
+
+    .thales-ratio-numerator {
+      color: green;
+      border-bottom: 2px solid black;
+      padding-bottom: 2px;
+    }
+
+    .thales-ratio-denominator {
+      color: blue;
+      padding-top: 2px;
+    }
+
+    .thales-ratio-placeholder {
+      display: inline-block;
+      min-width: 2.2em;
+    }
+
+    .thales-ratio-equals {
+      color: black;
+    }
+
+    .thales-proof-inline {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .thales-proof-transition {
+      display: inline-block;
+      margin: 0 0.35em;
+    }
+
+    .proof-display {
+      line-height: 1.55;
+    }
+
+    .proof-choice[data-step-id^="parallel-"] {
+      width: 900px;
+      max-width: 95%;
     }
   </style>
 
@@ -499,6 +590,34 @@
     } from "./core/deepMerge.js";
 
     import {
+      createThalesFigure
+    } from "./exercices/figures/thalesFigure.js";
+
+    import {
+      generateThalesExercise
+    } from "./exercices/generators/thalesGenerator.js";
+
+    import {
+      createThalesCorrectionScenes
+    } from "./exercices/thales/thalesCorrectionScenes.js";
+
+    import {
+      createThalesProof
+    } from "./exercices/thales/thalesProof.js";
+
+    import {
+      createThalesStudentProof
+    } from "./exercices/thales/thalesStudentProof.js";
+
+    import {
+      drawThalesCorrespondenceArrow
+    } from "./exercices/thales/thalesCorrectionArrow.js";
+
+    import {
+      createThalesParallelProof
+    } from "./exercices/thales/thalesParallelProof.js";
+
+    import {
       generatePythagorasConverseExercise
     } from "./exercices/generators/pythagorasConverseGenerator.js";
 
@@ -549,6 +668,15 @@
 
       if (
         family ===
+        "thales"
+      ) {
+        return generateThalesExercise(
+          type
+        );
+      }
+
+      if (
+        family ===
         "pythagorasConverse"
       ) {
         return generatePythagorasConverseExercise(
@@ -585,31 +713,35 @@
         return;
       }
 
-      const sideLabels = {
-        leg1:
-          generatedExercise.unknownSide ===
-          "leg1"
-            ? "?"
-            : `${formatAnswer(
-                generatedExercise.lengths.leg1
-              )} ${generatedExercise.unit}`,
+      const sideLabels =
+        exerciseConfig.family ===
+        "thales"
+          ? null
+          : {
+              leg1:
+                generatedExercise.unknownSide ===
+                "leg1"
+                  ? "?"
+                  : `${formatAnswer(
+                      generatedExercise.lengths.leg1
+                    )} ${generatedExercise.unit}`,
 
-        leg2:
-          generatedExercise.unknownSide ===
-          "leg2"
-            ? "?"
-            : `${formatAnswer(
-                generatedExercise.lengths.leg2
-              )} ${generatedExercise.unit}`,
+              leg2:
+                generatedExercise.unknownSide ===
+                "leg2"
+                  ? "?"
+                  : `${formatAnswer(
+                      generatedExercise.lengths.leg2
+                    )} ${generatedExercise.unit}`,
 
-        hypotenuse:
-          generatedExercise.unknownSide ===
-          "hypotenuse"
-            ? "?"
-            : `${formatAnswer(
-                generatedExercise.lengths.hypotenuse
-              )} ${generatedExercise.unit}`
-      };
+              hypotenuse:
+                generatedExercise.unknownSide ===
+                "hypotenuse"
+                  ? "?"
+                  : `${formatAnswer(
+                      generatedExercise.lengths.hypotenuse
+                    )} ${generatedExercise.unit}`
+            };
 
       let question =
         null;
@@ -621,6 +753,30 @@
         const expectedAnswer =
           generatedExercise.lengths[
             generatedExercise.unknownSide
+          ];
+
+        question = {
+          answers: [
+            `${formatAnswer(
+              expectedAnswer
+            )} ${generatedExercise.unit}`
+          ],
+
+          answerRule: {
+            type: "length",
+            unit:
+              generatedExercise.unit
+          }
+        };
+      }
+
+      if (
+        exerciseConfig.family ===
+        "thales"
+      ) {
+        const expectedAnswer =
+          generatedExercise.lengths[
+            generatedExercise.unknownSegment
           ];
 
         question = {
@@ -651,8 +807,27 @@
           "exercise-figure"
         );
 
-      figureContainer.innerHTML =
-        createRightTriangleSVG({
+      if (
+        exerciseConfig.family ===
+        "thales"
+      ) {
+        figureContainer.innerHTML =
+          createThalesFigure(
+            generatedExercise.figureOptions
+          );
+
+        if (
+          window.MathJax &&
+          typeof MathJax.typesetPromise ===
+            "function"
+        ) {
+          MathJax.typesetPromise([
+            exerciseContent
+          ]);
+        }
+      } else {
+        figureContainer.innerHTML =
+          createRightTriangleSVG({
           vertices:
             generatedExercise.vertices,
 
@@ -671,7 +846,7 @@
               exerciseConfig.family ===
               "pythagoras",
 
-            size: 40
+            size: 20
           },
 
           sides: {
@@ -724,6 +899,7 @@
             }
           }
         });
+      }
 
       if (
         presentationMode ===
@@ -743,6 +919,39 @@
 
           studentProof =
             createStudentProof(
+              proof
+            );
+        } else if (
+          exerciseConfig.family ===
+          "thales"
+        ) {
+          const thalesProof =
+            createThalesProof(
+              generatedExercise
+            );
+
+          if (
+            generatedExercise
+              .requiresParallelProof
+          ) {
+            proof = [
+              ...createThalesParallelProof(
+                generatedExercise
+              ),
+
+              ...thalesProof.filter(
+                step =>
+                  step.id !==
+                  "parallelStatement"
+              )
+            ];
+          } else {
+            proof =
+              thalesProof;
+          }
+
+          studentProof =
+            createThalesStudentProof(
               proof
             );
         } else {
@@ -767,9 +976,14 @@
 
         studentProof.forEach(
           step => {
-            const element =
+            const usesStudentProofRenderer =
               exerciseConfig.family ===
-              "pythagorasConverse"
+                "pythagorasConverse" ||
+              exerciseConfig.family ===
+                "thales";
+
+            const element =
+              usesStudentProofRenderer
                 ? createStudentProofElement(
                     step
                   )
@@ -863,9 +1077,14 @@
         validateCurrentResponse = function() {
           stopTimer();
 
-          const proofResults =
+          const usesStudentProofValidation =
             exerciseConfig.family ===
-            "pythagorasConverse"
+              "pythagorasConverse" ||
+            exerciseConfig.family ===
+              "thales";
+
+          const proofResults =
+            usesStudentProofValidation
               ? validateStudentProof(
                   proofContainer
                 )
@@ -944,7 +1163,9 @@
 
           if (
             exerciseConfig.family ===
-            "pythagoras"
+              "pythagoras" ||
+            exerciseConfig.family ===
+              "thales"
           ) {
             const evaluation =
               evaluateCurrentAnswer({
@@ -982,6 +1203,9 @@
           }
 
           restartButton.style.display =
+            "inline-block";
+
+          exportExerciseButton.style.display =
             "inline-block";
 
           setModeButtonsDisabled(
@@ -1166,6 +1390,18 @@
     function renderExerciseFigure(
       figureOptions
     ) {
+      if (
+        exerciseConfig.family ===
+        "thales"
+      ) {
+        return createThalesFigure(
+          deepMerge(
+            currentExercise.figureOptions,
+            figureOptions ?? {}
+          )
+        );
+      }
+
       const baseOptions = {
         vertices:
           currentExercise.vertices,
@@ -1182,7 +1418,7 @@
 
         rightAngle: {
           visible: true,
-          size: 40
+          size: 20
         },
 
         sides: {
@@ -1270,7 +1506,7 @@
             "green",
 
           strokeWidth:
-            6,
+            3,
 
           startDistance:
             55,
@@ -1291,6 +1527,38 @@
       );
     }
 
+    function drawCurrentThalesArrow(
+      scene
+    ) {
+      if (
+        exerciseConfig.family !==
+          "thales" ||
+        scene?.id !==
+          "correspondenceArrow"
+      ) {
+        return;
+      }
+
+      const drawArrow = () =>
+        drawThalesCorrespondenceArrow(
+          exerciseContent
+        );
+
+      if (
+        window.MathJax &&
+        typeof MathJax.typesetPromise ===
+          "function"
+      ) {
+        MathJax.typesetPromise([
+          exerciseContent
+        ]).then(drawArrow);
+      } else {
+        requestAnimationFrame(
+          drawArrow
+        );
+      }
+    }
+
     function startStepCorrection() {
       waitingForCorrection =
         false;
@@ -1300,6 +1568,14 @@
       hideTimer();
 
       if (
+        exerciseConfig.family ===
+        "thales"
+      ) {
+        correctionSteps =
+          createThalesCorrectionScenes(
+            currentExercise
+          );
+      } else if (
         exerciseConfig.family ===
         "pythagorasConverse"
       ) {
@@ -1338,6 +1614,12 @@
         renderFigure:
           renderExerciseFigure
       });
+
+      drawCurrentThalesArrow(
+        correctionSteps[
+          currentStepIndex
+        ]
+      );
     }
 
     function advanceStepCorrection() {
@@ -1352,6 +1634,9 @@
         stepCorrection.getIsLastStep()
       ) {
         restartButton.style.display =
+          "inline-block";
+
+        exportExerciseButton.style.display =
           "inline-block";
 
         timeSlider.disabled =
@@ -1378,6 +1663,12 @@
         renderFigure:
           renderExerciseFigure
       });
+
+      drawCurrentThalesArrow(
+        correctionSteps[
+          currentStepIndex
+        ]
+      );
     }
 
     function previousStepCorrection() {
@@ -1412,6 +1703,36 @@
         renderFigure:
           renderExerciseFigure
       });
+
+      drawCurrentThalesArrow(
+        correctionSteps[
+          currentStepIndex
+        ]
+      );
+    }
+
+    function getCorrectionFactory() {
+      switch (
+        exerciseConfig.family
+      ) {
+        case "pythagoras":
+          return (
+            createPythagorasCorrectionScenes
+          );
+
+        case "pythagorasConverse":
+          return (
+            createPythagorasConverseCorrectionScenes
+          );
+
+        case "thales":
+          return (
+            createThalesCorrectionScenes
+          );
+
+        default:
+          return null;
+      }
     }
 
     exportExerciseButton.addEventListener(
@@ -1454,7 +1775,7 @@
               },
 
               createCorrection:
-                createPythagorasCorrectionScenes,
+                getCorrectionFactory(),
 
               includeCorrection
             });
@@ -1482,9 +1803,6 @@
         displayExercise(
           currentExercise
         );
-
-        exportExerciseButton.style.display =
-          "inline-block";
 
         showTimer();
 
@@ -1519,6 +1837,9 @@
         );
 
         restartButton.style.display =
+          "none";
+
+        exportExerciseButton.style.display =
           "none";
 
         showTimer();

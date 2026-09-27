@@ -101,6 +101,26 @@ import {
   validateRatioComparison
 } from "./validators/ratioComparisonValidator.js";
 
+import {
+  validateVolumeUnit
+} from "./validators/volumeUnitValidator.js";
+
+import {
+  validateVolumeAnswer
+} from "./validators/volumeValidator.js";
+
+import {
+  validateAlgebra
+} from "./validators/algebraValidator.js";
+
+import {
+  validatePercentage
+} from "./validators/percentageValidator.js";
+
+import {
+  validateSum
+} from "./validators/sumValidator.js";
+
 /**
  * Compare la réponse de l'utilisateur
  * aux réponses acceptées.
@@ -358,6 +378,249 @@ export function checkAnswerSmart({
   }
 
   if (
+    answerRule?.type ===
+    "volume"
+  ) {
+    const validation =
+      validateVolumeAnswer({
+        userInput,
+        validAnswers,
+
+        requiredUnit:
+          answerRule.requiredUnit ??
+          null,
+
+        valueRule:
+          answerRule.valueRule ??
+          null,
+
+        tolerance
+      });
+
+    let feedback = "";
+
+    switch (validation.errorCode) {
+      case "INVALID_VOLUME_STRUCTURE":
+        feedback =
+          "Un volume avec son unité est attendu.";
+        break;
+
+      case "INVALID_VOLUME_NUMBER":
+        feedback =
+          "La valeur numérique du volume est invalide.";
+        break;
+
+      case "EXPECTED_VOLUME_UNIT":
+        feedback =
+          "Une unité de volume est attendue.";
+        break;
+
+      case "WRONG_VOLUME_UNIT":
+        feedback =
+          "Bonne valeur mais mauvaise unité de volume.";
+        break;
+
+      case "WRONG_VOLUME_VALUE":
+        feedback = "";
+        break;
+    }
+
+    return {
+      correct:
+        validation.valid,
+
+      feedback,
+
+      showCorrectAnswer:
+        true,
+
+      errorCode:
+        validation.errorCode
+    };
+  }
+
+  if (
+    answerRule?.type ===
+    "volumeUnit"
+  ) {
+    const validation =
+      validateVolumeUnit({
+        userInput,
+        validAnswers
+      });
+
+    let feedback = "";
+
+    switch (validation.errorCode) {
+      case "EXPECTED_UNIT_ONLY":
+        feedback =
+          "Seule l’unité est attendue.";
+        break;
+
+      case "WRONG_VOLUME_UNIT":
+        feedback = "";
+        break;
+    }
+
+    return {
+      correct:
+        validation.valid,
+
+      feedback,
+
+      showCorrectAnswer:
+        true,
+
+      errorCode:
+        validation.errorCode
+    };
+  }
+
+  if (
+    answerRule?.type ===
+    "algebra"
+  ) {
+    const validation =
+      validateAlgebra({
+        userInput,
+        validAnswers,
+
+        form:
+          answerRule.form ??
+          "equivalent",
+
+        tolerance
+      });
+
+
+    let feedback = "";
+
+
+    switch (
+      validation.errorCode
+    ) {
+      case "INVALID_ALGEBRA_EXPRESSION":
+        feedback =
+          "L’expression saisie n’est pas valide.";
+        break;
+
+
+      case "WRONG_ALGEBRA_VALUE":
+        feedback = "";
+        break;
+
+
+      case "NOT_DEVELOPED":
+        feedback =
+          "L’expression est correcte, mais elle n’est pas développée.";
+        break;
+
+
+      case "NOT_REDUCED":
+        feedback =
+          "L’expression est correcte, mais elle n’est pas réduite.";
+        break;
+
+
+      case "NOT_FACTORIZED":
+        feedback =
+          "L’expression est correcte, mais elle n’est pas factorisée.";
+        break;
+
+
+      case "NOT_FULLY_FACTORIZED":
+        feedback =
+          "L’expression est correcte, mais la factorisation n’est pas complète.";
+        break;
+
+
+      case "UNKNOWN_ALGEBRA_FORM":
+        feedback =
+          "La forme algébrique demandée n’est pas reconnue.";
+        break;
+    }
+
+
+    return {
+      correct:
+        validation.valid,
+
+      feedback,
+
+      showCorrectAnswer:
+        true,
+
+      errorCode:
+        validation.errorCode
+    };
+  }
+
+  if (
+    answerRule?.type ===
+    "percentage"
+  ) {
+    const expectedAnswer =
+      parseAnswer(
+        validAnswers[0]
+      );
+
+    if (!expectedAnswer.valid) {
+      return {
+        correct: false,
+        feedback:
+          "La réponse correcte configurée est invalide.",
+        showCorrectAnswer: false
+      };
+    }
+
+    const validation =
+      validatePercentage({
+        userInput,
+
+        expectedValue:
+          expectedAnswer.value,
+
+        tolerance
+      });
+
+    let feedback = "";
+
+    switch (
+      validation.errorCode
+    ) {
+      case "INVALID_PERCENTAGE":
+        feedback =
+          "Le pourcentage saisi n’est pas valide.";
+        break;
+
+      case "NOT_PERCENTAGE":
+        feedback =
+          "Une écriture en pourcentage est attendue.";
+        break;
+
+      case "WRONG_PERCENTAGE_VALUE":
+        feedback = "";
+        break;
+    }
+
+    return {
+      correct:
+        validation.valid,
+
+      feedback:
+        validation.valid
+          ? "Bonne réponse !"
+          : feedback,
+
+      showCorrectAnswer:
+        true,
+
+      errorCode:
+        validation.errorCode
+    };
+  }
+
+  if (
     answerRule?.type === "speed"
   ) {
     const validation =
@@ -544,6 +807,59 @@ export function checkAnswerSmart({
         showCorrectAnswer: true
       };
     }
+  }
+
+  if (
+    answerRule?.type ===
+    "sum"
+  ) {
+    const validation =
+      validateSum(
+        userInput,
+        answerRule.terms
+      );
+
+    let feedback = "";
+
+    if (
+      validation.errorCode ===
+      "EXPECTED_SUM"
+    ) {
+      feedback =
+        "Une somme contenant les termes attendus est demandée.";
+    }
+
+    if (
+      validation.errorCode ===
+      "INCORRECT_SUM"
+    ) {
+      feedback =
+        "Les termes de la somme sont incorrects.";
+    }
+
+    if (
+      validation.errorCode ===
+      "INVALID_SUM_TERMS"
+    ) {
+      feedback =
+        "La somme attendue est mal configurée.";
+    }
+
+    return {
+      correct:
+        validation.valid,
+
+      feedback:
+        validation.valid
+          ? "Bonne réponse !"
+          : feedback,
+
+      showCorrectAnswer:
+        true,
+
+      errorCode:
+        validation.errorCode
+    };
   }
 
   if (
@@ -934,7 +1250,19 @@ export function checkAnswerSmart({
 
     const sameUnit =
       userAnswer.unit ===
-      parsedValidAnswer.unit;
+        parsedValidAnswer.unit ||
+      (
+        userAnswer.unit ===
+          "%" &&
+        parsedValidAnswer.unit ===
+          ""
+      ) ||
+      (
+        userAnswer.unit ===
+          "" &&
+        parsedValidAnswer.unit ===
+          "%"
+      );
 
     if (sameValue && sameUnit) {
       matchingAnswerFound = true;

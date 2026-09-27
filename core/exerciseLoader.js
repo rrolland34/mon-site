@@ -60,6 +60,27 @@ import sujet0Num1Decembre2025Gen
 import sujet0Num2Decembre2025Gen
   from "../exercices/dnb/sujet_0_num_2_decembre_2025_gen.js";
 
+import ameriqueDuNordJuin2026Gen
+  from "../exercices/dnb/amerique_du_nord_juin_2026_gen.js";
+
+import asieJuin2026Gen
+  from "../exercices/dnb/asie_juin_2026_gen.js";
+
+import centresEtrangersJuin2026Gen
+  from "../exercices/dnb/centres_etrangers_juin_2026_gen.js";
+
+import polynesieJuin2026Gen
+  from "../exercices/dnb/polynesie_juin_2026_gen.js";
+
+import antillesGuyaneJuin2026Gen
+  from "../exercices/dnb/antilles_guyane_juin_2026_gen.js";
+
+import metropoleJuin2026Gen
+  from "../exercices/dnb/metropole_juin_2026_gen.js";
+
+import polynesieSeptembre2026Gen
+  from "../exercices/dnb/polynesie_septembre_2026_gen.js";
+
 import reperageRepereOrthonorme
   from "../exercices/reperage/reperage_repere_orthonorme.js";
 
@@ -74,6 +95,10 @@ import ecritureScientifique
 
 import proportionnalite
   from "../exercices/proportionnalite.js";
+
+import testQcmLatex
+  from "../exercices/tests/test_qcm_latex.js";
+import test_qcm_latex from "../exercices/tests/test_qcm_latex.js";
 
 const exercises = {
   fractions_decimales: fractionsDecimales,
@@ -96,11 +121,19 @@ const exercises = {
   aires_et_unites: airesEtUnites,
   sujet_0_num_1_decembre_2025_gen: sujet0Num1Decembre2025Gen,
   sujet_0_num_2_decembre_2025_gen: sujet0Num2Decembre2025Gen,
+  amerique_du_nord_juin_2026_gen: ameriqueDuNordJuin2026Gen,
+  asie_juin_2026_gen: asieJuin2026Gen,
+  centres_etrangers_juin_2026_gen: centresEtrangersJuin2026Gen,
+  polynesie_juin_2026_gen: polynesieJuin2026Gen,
+  antilles_guyane_juin_2026_gen: antillesGuyaneJuin2026Gen,
+  metropole_juin_2026_gen: metropoleJuin2026Gen,
+  polynesie_septembre_2026_gen: polynesieSeptembre2026Gen,
   reperage_repere_orthonorme: reperageRepereOrthonorme,
   puissances_niveau_1: puissancesNiveau1,
   puissances_niveau_2: puissancesNiveau2,
   ecriture_scientifique: ecritureScientifique,
-  proportionnalite:proportionnalite
+  proportionnalite:proportionnalite,
+  test_qcm_latex: testQcmLatex
 };
 
 export function loadExercise(exerciseName) {

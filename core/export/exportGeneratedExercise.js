@@ -4,6 +4,15 @@ import {
   exportDocument
 } from "./exportDocument.js";
 
+function prepareCorrectionForExport(
+  html
+) {
+  return html.replace(
+    /\\textcolor\{[^}]+\}\{([^{}]+)\}/g,
+    "$1"
+  );
+}
+
 /**
  * Exporte un exercice généré.
  *
@@ -61,8 +70,10 @@ const figureHTML =
   }
 
   const correctionHTML =
-    correctionScene?.html ??
-    "";
+    prepareCorrectionForExport(
+      correctionScene?.html ??
+      ""
+    );
 
   const correctionFigureHTML =
     correctionScene &&

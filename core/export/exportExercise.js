@@ -28,7 +28,10 @@ export function exportExercise({
     "archive",
 
   includeCorrection =
-    false
+    false,
+
+  answerMode =
+    "direct"
 }) {
   if (
     exportType ===
@@ -73,12 +76,16 @@ export function exportExercise({
 
         ? createEvaluationWithCorrection({
             exercice:
-              evaluationExercise
+              evaluationExercise,
+
+            answerMode
           })
 
         : createEvaluationStatement({
             exercice:
-              evaluationExercise
+              evaluationExercise,
+
+            answerMode
           });
 
     exportDocument({

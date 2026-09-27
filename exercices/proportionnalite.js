@@ -485,6 +485,9 @@ function createProportionalityTableQuestion() {
         "symbolicExact"
     },
 
+    exportAnswerLines:
+      5,
+
     display_answer:
       isProportional
         ? `Oui, car \\(${justification}\\).`
@@ -1232,6 +1235,9 @@ function createGraphQuestion() {
       type:
         "symbolicExact"
     },
+
+    exportAnswerLines:
+      2,
 
     display_answer:
       correctAnswer,

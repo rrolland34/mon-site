@@ -419,19 +419,10 @@ function saveUnansweredQuestion() {
     !Array.isArray(
       currentQuestion.qcmPoints
     )
-      ? (
-          currentQuestion.qcmAnswersOrder?.find(
-            answer =>
-              checkAnswerSmart({
-                userInput: answer,
-                validAnswers:
-                  currentQuestion.answers,
-                answerRule:
-                  currentQuestion.answerRule
-              }).correct
-          ) ??
-          currentQuestion.answers[0]
-        )
+      ? getCorrectQCMAnswer({
+          question:
+            currentQuestion
+        })
       : correctAnswer;
 
   userAnswers.push({
@@ -454,6 +445,10 @@ function saveUnansweredQuestion() {
 
     qcmNumberFormat:
       currentQuestion.qcmNumberFormat,
+
+    qcmClass:
+      currentQuestion.qcmClass ??
+      null,
 
     figureConfig:
       currentQuestion.figureConfig,
@@ -1111,7 +1106,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 ),
 
               exportType,
-              includeCorrection
+              includeCorrection,
+              answerMode
             });
           }
         });

@@ -10,9 +10,15 @@ export function createStudentProofElement(
   if (
     step.kind === "choice"
   ) {
-    return createProofChoiceMenu(
-      step
-    );
+    const menu =
+      createProofChoiceMenu(
+        step
+      );
+
+    menu.dataset.stepId =
+      step.id;
+
+    return menu;
   }
 
   if (

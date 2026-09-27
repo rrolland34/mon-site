@@ -41,7 +41,7 @@ function createPythagorasEquality(
   return {
     html:
       `<span style="color:green;">` +
-      `\\(${exercise.sideNames.hypotenuse}^2\\)` +
+      `\\(\\mathrm{${exercise.sideNames.hypotenuse}}^2\\)` +
       `</span>` +
 
       `<span style="color:red; margin:0 12px;">` +
@@ -49,8 +49,8 @@ function createPythagorasEquality(
       `</span>` +
 
       `<span style="color:blue;">` +
-      `\\(${exercise.sideNames.leg1}^2 + ` +
-      `${exercise.sideNames.leg2}^2\\)` +
+      `\\(\\mathrm{${exercise.sideNames.leg1}}^2 + ` +
+      `\\mathrm{${exercise.sideNames.leg2}}^2\\)` +
       `</span>`
   };
 }
@@ -122,7 +122,7 @@ export function createPythagorasCorrectionScenes(
 
       sideContent: {
         html:
-          `\\(${exercise.sideNames.hypotenuse}^2\\)`,
+         `\\(\\mathrm{${exercise.sideNames.hypotenuse}}^2\\)`,
 
         color:
           "green"
@@ -137,7 +137,7 @@ export function createPythagorasCorrectionScenes(
 
       sideContent: {
         html:
-          `\\(${exercise.sideNames.hypotenuse}^2\\)`,
+         `\\(\\mathrm{${exercise.sideNames.hypotenuse}}^2\\)`,
 
         color:
           "green"

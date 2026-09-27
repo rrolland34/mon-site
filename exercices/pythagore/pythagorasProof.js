@@ -4,6 +4,12 @@ import {
   formatAnswer
 } from "../../core/answerFormatting.js";
 
+function formatLengthName(
+  name
+) {
+  return `\\mathrm{${name}}`;
+}
+
 function createHypotenuseCalculationSteps(
   exercise
 ) {
@@ -14,7 +20,9 @@ function createHypotenuseCalculationSteps(
   } = exercise;
 
   const hypotenuse =
-    sideNames.hypotenuse;
+    formatLengthName(
+      sideNames.hypotenuse
+    );
 
   const leg1Square =
     lengths.leg1 ** 2;
@@ -93,7 +101,9 @@ function createLegCalculationSteps(
     lengths.hypotenuse ** 2;
 
   const unknownSideName =
-    sideNames[unknownSide];
+    formatLengthName(
+      sideNames[unknownSide]
+    );
 
   const knownLeg =
     unknownSide === "leg1"
@@ -193,13 +203,19 @@ export function createPythagorasProof(
     vertices.join("");
 
   const hypotenuse =
-    sideNames.hypotenuse;
+    formatLengthName(
+      sideNames.hypotenuse
+    );
 
   const leg1 =
-    sideNames.leg1;
+    formatLengthName(
+      sideNames.leg1
+    );
 
   const leg2 =
-    sideNames.leg2;
+    formatLengthName(
+      sideNames.leg2
+    );
 
   /*
    * Les sept propositions communes

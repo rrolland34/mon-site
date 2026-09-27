@@ -4,6 +4,10 @@ import {
   checkAnswerSmart
 } from "./correcteur.js";
 
+import {
+  normalizeQCMLatex
+} from "./validators/qcmLatexNormalizer.js";
+
 export function evaluateCurrentAnswer({
   question,
   answerMode,
@@ -81,7 +85,9 @@ export function evaluateCurrentAnswer({
     }
   } else {
     userAnswer =
-      selectedQCMAnswer;
+      normalizeQCMLatex(
+        selectedQCMAnswer
+      );
   }
 
   if (
@@ -150,6 +156,8 @@ export function evaluateCurrentAnswer({
     "lengthUnit",
     "area",
     "areaUnit",
+    "volume",
+    "volumeUnit",
     "speed",
     "duration",
     "multipleOf",
@@ -161,7 +169,18 @@ export function evaluateCurrentAnswer({
     "coordinates",
     "power",
     "repeatedProduct",
-    "scientificNotation"
+    "scientificNotation",
+    "algebra",
+    "canonicalDecimal",
+    "canonicalDecimalFraction",
+    "simplifiedValue",
+    "integer",
+    "decimal",
+    "fraction",
+    "decimalFraction",
+    "percentage",
+    "integerPlusDecimalFraction",
+    "expandedDecimalFraction"
   ];
 
   const resolvedAnswerRule =
@@ -275,7 +294,9 @@ export function getCorrectQCMAnswer({
     const result =
       checkAnswerSmart({
         userInput:
-          possibleAnswer,
+          normalizeQCMLatex(
+            possibleAnswer
+          ),
 
         validAnswers,
 
