@@ -159,12 +159,16 @@ function createFinalFigure(exercise) {
 function formatProofContent(
   proof,
   index,
-  boxedIndex = null
+  boxedIndexes = []
 ) {
   let content =
     proof[index].correct;
 
-  if (index === boxedIndex) {
+  if (
+    boxedIndexes.includes(
+      index
+    )
+  ) {
     content =
       displayProofStep(
         proof,
@@ -179,7 +183,7 @@ function formatProofContent(
 function proofLines(
   proof,
   endIndex,
-  boxedIndex = null,
+  boxedIndexes = [],
   showCalculation = true
 ) {
   const contents = [];
@@ -189,7 +193,7 @@ function proofLines(
       formatProofContent(
         proof,
         index,
-        boxedIndex
+        boxedIndexes
       )
     );
   }
@@ -488,19 +492,31 @@ export function createThalesCorrectionScenes(exercise) {
     {
       id: "boxedLiteralEquality",
       figure: finalFigure,
-      html: proofLines(proof, 3, 3)
+      html: proofLines(
+        proof,
+        3,
+        [3]
+      )
     },
 
     {
       id: "numericalEquality",
       figure: finalFigure,
-      html: proofLines(proof, 4)
+      html: proofLines(
+        proof,
+        4,
+        [3]
+      )
     },
 
     {
       id: "usefulEquality",
       figure: finalFigure,
-      html: proofLines(proof, 5)
+      html: proofLines(
+        proof,
+        5,
+        [3]
+      )
     },
 
     {
@@ -509,7 +525,7 @@ export function createThalesCorrectionScenes(exercise) {
       html: proofLines(
         proof,
         6,
-        null,
+        [3],
         false
       )
     },
@@ -519,7 +535,8 @@ export function createThalesCorrectionScenes(exercise) {
       figure: finalFigure,
       html: proofLines(
         proof,
-        6
+        6,
+        [3]
       )
     },
 
@@ -529,7 +546,7 @@ export function createThalesCorrectionScenes(exercise) {
       html: proofLines(
         proof,
         7,
-        7
+        [3, 7]
       )
     }
   ];
