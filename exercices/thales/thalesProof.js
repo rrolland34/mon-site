@@ -106,10 +106,13 @@ function getNumericTerm(
   exercise,
   segment
 ) {
-  if (
-    segment ===
-    exercise.unknownSegment
-  ) {
+  const isKnown =
+    exercise.visibleSegments
+      ?.includes(segment) &&
+    segment !==
+      exercise.unknownSegment;
+
+  if (!isKnown) {
     return mathSegment(
       exercise,
       segment
@@ -164,13 +167,10 @@ function getUsefulCorrespondences(
           unknownPair &&
         pair.every(
           segment =>
+            exercise.visibleSegments
+              ?.includes(segment) &&
             segment !==
-              exercise.unknownSegment &&
-            Number.isFinite(
-              exercise.lengths[
-                segment
-              ]
-            )
+              exercise.unknownSegment
         )
     );
 

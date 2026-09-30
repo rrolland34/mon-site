@@ -651,6 +651,7 @@ export function generateThalesExercise(
     unit,
     unknownSegment,
     lengths,
+    visibleSegments,
 
     thalesConfiguration:
       configuration.id,
