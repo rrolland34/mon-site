@@ -8,6 +8,10 @@ import {
   getCorrectQCMAnswer
 } from "../answerEvaluation.js";
 
+import {
+  formatExportAnswer
+} from "./exportAnswerFormatting.js";
+
 export function createEvaluationStatement({
   exercice,
   answerMode = "direct"
@@ -211,8 +215,9 @@ export function createEvaluationWithCorrection({
               `
             : "";
 
+        const scratchCorrection = question.progressiveCorrection?.kind === "scratch" && typeof question.display_answer === "string";
         const rawAnswer =
-          answerMode === "qcm"
+          scratchCorrection ? question.display_answer : answerMode === "qcm"
             ? (
                 getCorrectQCMAnswer({
                   question
@@ -226,12 +231,16 @@ export function createEvaluationWithCorrection({
               );
 
         const displayedAnswer =
-          answerMode === "qcm"
+          scratchCorrection ? formatExportAnswer(rawAnswer) : answerMode === "qcm"
             ? formatQCMAnswer(
                 rawAnswer,
                 question
               )
-            : rawAnswer;
+            : answerMode === "point"
+              ? ""
+              : formatExportAnswer(
+                  rawAnswer
+                );
 
         return `
           <section class="evaluation-question">

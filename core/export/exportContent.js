@@ -1,8 +1,8 @@
 // core/export/exportContent.js
 
 import {
-  formatAnswer
-} from "../answerFormatting.js";
+  formatExportAnswer
+} from "./exportAnswerFormatting.js";
 
 import {
   formatQCMAnswer
@@ -38,51 +38,7 @@ export function createEvaluationContent({
           correction.correctAnswer ??
           "";
 
-        const normalizedAnswer =
-          String(
-            rawAnswer
-          ).trim();
-
-        const isPower =
-          /^\(?-?\d+\)?\^-?\d+$/.test(
-            normalizedAnswer
-          );
-
-        const isProduct =
-          /^(?:\(-?\d+\)|-?\d+)(?:\*(?:\(-?\d+\)|-?\d+))+$/.test(
-            normalizedAnswer.replace(
-              /\s+/g,
-              ""
-            )
-          );
-
-        const isScientificNotation =
-          /^-?\d+(?:\.\d+)?\*10\^-?\d+$/.test(
-            normalizedAnswer.replace(
-              /\s+/g,
-              ""
-            )
-          );
-
-        const isNumericAnswer =
-          normalizedAnswer !== "" &&
-          !Number.isNaN(
-            Number(
-              normalizedAnswer
-            )
-          );
-
-        const coordinateMatch =
-          normalizedAnswer.match(
-            /^([A-Za-z])\(\s*(-?\d+(?:[.,]\d+)?)\s*;\s*(-?\d+(?:[.,]\d+)?)\s*\)$/
-          );
-
-        const isCoordinates =
-          coordinateMatch !== null;
-
-        let answerText;
-
-        if (
+        const answerText =
           correction.answerMode === "point" ||
           (
             correction.answerMode === "qcm" &&
@@ -90,47 +46,10 @@ export function createEvaluationContent({
               correction.qcmPoints
             )
           )
-        ) {
-          answerText = "";
-        } else if (
-          isCoordinates
-        ) {
-          const pointName =
-            coordinateMatch[1];
-
-          const x =
-            coordinateMatch[2];
-
-          const y =
-            coordinateMatch[3];
-
-          answerText =
-            `\\(\\mathrm{${pointName}}(` +
-            `${formatAnswer(
-              x,
-              "math"
-            )}` +
-            `\\,;\\,` +
-            `${formatAnswer(
-              y,
-              "math"
-            )}` +
-            `)\\)`;
-        } else if (
-          isPower ||
-          isProduct ||
-          isScientificNotation ||
-          isNumericAnswer
-        ) {
-          answerText =
-            `\\(${formatAnswer(
-              normalizedAnswer,
-              "math"
-            )}\\)`;
-        } else {
-          answerText =
-            normalizedAnswer;
-        }
+            ? ""
+            : formatExportAnswer(
+                rawAnswer
+              );
 
         const qcmAnswers =
           correction.answerMode === "qcm" &&

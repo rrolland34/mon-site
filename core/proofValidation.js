@@ -1,84 +1,104 @@
-// core/proofValidation.js
 
 import {
   parseAnswer
 } from "./answerParser.js";
 
-export function validateProofChoices(
-  container
+/*
+ * Applique un état visuel à un élément.
+ */
+function setValidationState(
+  element,
+  isAnswered,
+  isCorrect
 ) {
-  const proofChoices =
-    Array.from(
-      container.querySelectorAll(
-        ".proof-choice"
-      )
-    ).filter(
-      proofChoice =>
-        !proofChoice.closest(
-          ".proof-choice-input"
-        )
-    );
+  if (!element) {
+    return;
+  }
 
-  return proofChoices.map(
-    proofChoice => {
+  element.classList.remove(
+    "correct",
+    "incorrect",
+    "unanswered"
+  );
 
-      const selectedChoice =
-        proofChoice.dataset.selectedChoice;
-
-      const isAnswered =
-        selectedChoice !== "";
-
-      const isCorrect =
-        isAnswered &&
-        selectedChoice ===
-          proofChoice.dataset.correctChoice;
-
-      proofChoice.classList.remove(
-        "correct",
-        "incorrect",
-        "unanswered"
-      );
-
-      if (!isAnswered) {
-        proofChoice.classList.add(
-          "unanswered"
-        );
-      } else {
-        proofChoice.classList.add(
-          isCorrect
-            ? "correct"
-            : "incorrect"
-        );
-      }
-
-      return {
-        stepId:
-          proofChoice.dataset.stepId,
-
-        selectedChoice:
-          proofChoice.dataset.selectedChoice,
-
-        correctChoice:
-          proofChoice.dataset.correctChoice,
-
-        isAnswered,
-        isCorrect
-      };
-    }
+  element.classList.add(
+    !isAnswered
+      ? "unanswered"
+      : isCorrect
+        ? "correct"
+        : "incorrect"
   );
 }
 
-export function validateProofInputs(
-  container
-) {
+/*
+ * Compare deux valeurs numériques.
+ */
+function sameNumber(a, b) {
+  return (
+    Number.isFinite(a) &&
+    Number.isFinite(b) &&
+    Math.abs(a - b) < 1e-9
+  );
+}
+
+/*
+ * Menus déroulants simples.
+ */
+export function validateProofChoices(container) {
+  const proofChoices = Array.from(
+    container.querySelectorAll(
+      ".proof-choice"
+    )
+  ).filter(
+    proofChoice =>
+      !proofChoice.closest(
+        ".proof-choice-input"
+      ) &&
+      !proofChoice.closest(
+        ".proof-ratio-input"
+      )
+  );
+
+  return proofChoices.map(proofChoice => {
+    const selectedChoice =
+      proofChoice.dataset.selectedChoice ?? "";
+
+    const correctChoice =
+      proofChoice.dataset.correctChoice;
+
+    const isAnswered =
+      selectedChoice !== "";
+
+    const isCorrect =
+      isAnswered &&
+      selectedChoice === correctChoice;
+
+    setValidationState(
+      proofChoice,
+      isAnswered,
+      isCorrect
+    );
+
+    return {
+      stepId: proofChoice.dataset.stepId,
+      selectedChoice,
+      correctChoice,
+      isAnswered,
+      isCorrect
+    };
+  });
+}
+
+/*
+ * Champs numériques simples.
+ */
+export function validateProofInputs(container) {
   const proofInputs =
     container.querySelectorAll(
       ".proof-input"
     );
 
-  return Array.from(
-    proofInputs
-  ).map(
+  return Array.from(proofInputs).map(
     proofInput => {
       const input =
         proofInput.querySelector(
@@ -88,55 +108,34 @@ export function validateProofInputs(
       const userValue =
         input?.value.trim() ?? "";
 
-      const expectedValue =
-        Number(
-          proofInput.dataset.correctAnswer
-        );
+      const expectedValue = Number(
+        proofInput.dataset.correctAnswer
+      );
 
-      const parsedValue =
-        Number(
-          userValue.replace(",", ".")
-        );
+      const parsedValue = Number(
+        userValue.replace(",", ".")
+      );
 
       const isAnswered =
         userValue !== "";
 
       const isCorrect =
         isAnswered &&
-        Number.isFinite(
-          parsedValue
-        ) &&
-        Math.abs(
-          parsedValue -
+        sameNumber(
+          parsedValue,
           expectedValue
-        ) < 1e-9;
+        );
 
-      proofInput.classList.remove(
-        "correct",
-        "incorrect",
-        "unanswered"
+      setValidationState(
+        proofInput,
+        isAnswered,
+        isCorrect
       );
 
-      if (!isAnswered) {
-        proofInput.classList.add(
-          "unanswered"
-        );
-      } else {
-        proofInput.classList.add(
-          isCorrect
-            ? "correct"
-            : "incorrect"
-        );
-      }
-
       return {
-        stepId:
-          proofInput.dataset.stepId,
-
+        stepId: proofInput.dataset.stepId,
         userValue,
-
         expectedValue,
-
         isAnswered,
         isCorrect
       };
@@ -144,6 +143,10 @@ export function validateProofInputs(
   );
 }
 
+/*
+ * Étapes comportant un choix
+ * et une valeur numérique.
+ */
 export function validateProofChoiceInputs(
   container
 ) {
@@ -154,129 +157,373 @@ export function validateProofChoiceInputs(
 
   return Array.from(
     proofChoiceInputs
-  ).map(
-    proofChoiceInput => {
+  ).map(proofChoiceInput => {
+    const proofChoice =
+      proofChoiceInput.querySelector(
+        ".proof-choice"
+      );
+
+    const input =
+      proofChoiceInput.querySelector(
+        ".proof-input-field"
+      );
+
+    const selectedChoice =
+      proofChoice?.dataset.selectedChoice ?? "";
+
+    const correctChoice =
+      proofChoiceInput.dataset.correctChoice;
+
+    const userValue =
+      input?.value.trim() ?? "";
+
+    const expectedValue = Number(
+      proofChoiceInput.dataset.correctAnswer
+    );
+
+    const parsedAnswer =
+      parseAnswer(userValue);
+
+    const parsedValue =
+      parsedAnswer.valid
+        ? parsedAnswer.value
+        : NaN;
+
+    const isChoiceAnswered =
+      selectedChoice !== "";
+
+    const isInputAnswered =
+      userValue !== "";
+
+    const isChoiceCorrect =
+      isChoiceAnswered &&
+      selectedChoice === correctChoice;
+
+    const isInputCorrect =
+      isInputAnswered &&
+      sameNumber(
+        parsedValue,
+        expectedValue
+      );
+
+    const isAnswered =
+      isChoiceAnswered &&
+      isInputAnswered;
+
+    const isCorrect =
+      isChoiceCorrect &&
+      isInputCorrect;
+
+    return {
+      stepId:
+        proofChoiceInput.dataset.stepId,
+      selectedChoice,
+      correctChoice,
+      userValue,
+      expectedValue,
+      isChoiceAnswered,
+      isInputAnswered,
+      isChoiceCorrect,
+      isInputCorrect,
+      isAnswered,
+      isCorrect
+    };
+  });
+}
+
+/*
+ * Rapports de la réciproque de Thalès.
+ *
+ * Chaque rapport constitue une étape,
+ * mais ses trois éléments reçoivent
+ * un feedback visuel indépendant.
+ */
+export function validateProofRatioInputs(
+  container
+) {
+  const ratioInputs =
+    container.querySelectorAll(
+      ".proof-ratio-input"
+    );
+
+  return Array.from(ratioInputs).map(
+    ratioInput => {
       const proofChoice =
-        proofChoiceInput.querySelector(
+        ratioInput.querySelector(
           ".proof-choice"
         );
 
-      const input =
-        proofChoiceInput.querySelector(
-          ".proof-input-field"
+      const numeratorInput =
+        ratioInput.querySelector(
+          ".proof-ratio-numerator"
+        );
+
+      const denominatorInput =
+        ratioInput.querySelector(
+          ".proof-ratio-denominator"
         );
 
       const selectedChoice =
-        proofChoice?.dataset
-          .selectedChoice ?? "";
+        proofChoice?.dataset.selectedChoice ?? "";
 
       const correctChoice =
-        proofChoiceInput.dataset
-          .correctChoice;
+        ratioInput.dataset.correctChoice;
 
-      const userValue =
-        input?.value.trim() ?? "";
+      const numeratorValue =
+        numeratorInput?.value.trim() ?? "";
 
-      const expectedValue =
-        Number(
-          proofChoiceInput.dataset
-            .correctAnswer
-        );
+      const denominatorValue =
+        denominatorInput?.value.trim() ?? "";
 
-      const parsedAnswer =
+      const expectedNumerator =
         parseAnswer(
-          userValue
+          ratioInput.dataset.correctNumerator
         );
 
-      const parsedValue =
-        parsedAnswer.valid
-          ? parsedAnswer.value
-          : NaN;
+      const expectedDenominator =
+        parseAnswer(
+          ratioInput.dataset.correctDenominator
+        );
+
+      const parsedNumerator =
+        parseAnswer(numeratorValue);
+
+      const parsedDenominator =
+        parseAnswer(denominatorValue);
 
       const isChoiceAnswered =
         selectedChoice !== "";
 
-      const isInputAnswered =
-        userValue !== "";
+      const isNumeratorAnswered =
+        numeratorValue !== "";
+
+      const isDenominatorAnswered =
+        denominatorValue !== "";
 
       const isChoiceCorrect =
         isChoiceAnswered &&
-        selectedChoice ===
-          correctChoice;
+        selectedChoice === correctChoice;
 
-      const isInputCorrect =
-        isInputAnswered &&
-        Number.isFinite(
-          parsedValue
-        ) &&
-        Math.abs(
-          parsedValue -
-          expectedValue
-        ) < 1e-9;
+      const isNumeratorCorrect =
+        isNumeratorAnswered &&
+        parsedNumerator.valid &&
+        expectedNumerator.valid &&
+        sameNumber(
+          parsedNumerator.value,
+          expectedNumerator.value
+        );
+
+      const isDenominatorCorrect =
+        isDenominatorAnswered &&
+        parsedDenominator.valid &&
+        expectedDenominator.valid &&
+        sameNumber(
+          parsedDenominator.value,
+          expectedDenominator.value
+        );
+
+      const isAnswered =
+        isChoiceAnswered &&
+        isNumeratorAnswered &&
+        isDenominatorAnswered;
 
       const isCorrect =
         isChoiceCorrect &&
-        isInputCorrect;
+        isNumeratorCorrect &&
+        isDenominatorCorrect;
+
+      /*
+       * Feedback général du rapport.
+       */
+      setValidationState(
+        ratioInput,
+        isAnswered,
+        isCorrect
+      );
+
+      /*
+       * Feedback détaillé.
+       */
+      setValidationState(
+        proofChoice,
+        isChoiceAnswered,
+        isChoiceCorrect
+      );
+
+      setValidationState(
+        numeratorInput,
+        isNumeratorAnswered,
+        isNumeratorCorrect
+      );
+
+      setValidationState(
+        denominatorInput,
+        isDenominatorAnswered,
+        isDenominatorCorrect
+      );
 
       return {
-        stepId:
-          proofChoiceInput.dataset
-            .stepId,
-
+        stepId: ratioInput.dataset.stepId,
         selectedChoice,
         correctChoice,
-
-        userValue,
-        expectedValue,
-
+        numeratorValue,
+        denominatorValue,
+        expectedNumerator:
+          expectedNumerator.valid
+            ? expectedNumerator.value
+            : NaN,
+        expectedDenominator:
+          expectedDenominator.valid
+            ? expectedDenominator.value
+            : NaN,
         isChoiceAnswered,
-        isInputAnswered,
-
+        isNumeratorAnswered,
+        isDenominatorAnswered,
         isChoiceCorrect,
-        isInputCorrect,
-
+        isNumeratorCorrect,
+        isDenominatorCorrect,
+        isAnswered,
         isCorrect
       };
     }
   );
 }
 
-export function validateStudentProof(
+/*
+ * Produits en croix.
+ *
+ * On vérifie le calcul effectué
+ * avec les facteurs effectivement
+ * saisis par l'élève.
+ */
+export function validateProofCrossProductInputs(
   container
 ) {
-  const choiceResults =
-    validateProofChoices(
-      container
+  const crossProductInputs =
+    container.querySelectorAll(
+      ".proof-cross-product-input"
     );
+
+  return Array.from(
+    crossProductInputs
+  ).map(crossProductInput => {
+    const factors =
+      crossProductInput.querySelectorAll(
+        ".proof-cross-product-factor"
+      );
+
+    const input =
+      crossProductInput.querySelector(
+        ".proof-cross-product-result"
+      );
+
+    const leftValue =
+      factors[0]?.textContent.trim() ?? "";
+
+    const rightValue =
+      factors[1]?.textContent.trim() ?? "";
+
+    const userValue =
+      input?.value.trim() ?? "";
+
+    const parsedLeft =
+      parseAnswer(leftValue);
+
+    const parsedRight =
+      parseAnswer(rightValue);
+
+    const parsedAnswer =
+      parseAnswer(userValue);
+
+    const factorsAreValid =
+      parsedLeft.valid &&
+      parsedRight.valid;
+
+    const expectedValue =
+      factorsAreValid
+        ? parsedLeft.value *
+          parsedRight.value
+        : NaN;
+
+    const isAnswered =
+      userValue !== "";
+
+    const isCorrect =
+      isAnswered &&
+      factorsAreValid &&
+      parsedAnswer.valid &&
+      sameNumber(
+        parsedAnswer.value,
+        expectedValue
+      );
+
+    setValidationState(
+      crossProductInput,
+      isAnswered,
+      isCorrect
+    );
+
+    setValidationState(
+      input,
+      isAnswered,
+      isCorrect
+    );
+
+    return {
+      stepId:
+        crossProductInput.dataset.stepId,
+      leftValue,
+      rightValue,
+      userValue,
+      expectedValue,
+      isAnswered,
+      isCorrect
+    };
+  });
+}
+
+/*
+ * Validation complète.
+ *
+ * On conserve l'ordre des étapes
+ * et on évite les doublons dus
+ * aux éléments imbriqués.
+ */
+export function validateStudentProof(container) {
+  const choiceResults =
+    validateProofChoices(container);
 
   const inputResults =
-    validateProofInputs(
-      container
-    );
+    validateProofInputs(container);
 
   const choiceInputResults =
-    validateProofChoiceInputs(
-      container
-    );
+    validateProofChoiceInputs(container);
+
+  const ratioInputResults =
+    validateProofRatioInputs(container);
+
+  const crossProductInputResults =
+    validateProofCrossProductInputs(container);
 
   const allResults = [
     ...choiceResults,
     ...inputResults,
-    ...choiceInputResults
+    ...choiceInputResults,
+    ...ratioInputResults,
+    ...crossProductInputResults
   ];
 
-  const resultsByStepId =
-    new Map(
-      allResults.map(
-        result => [
-          result.stepId,
-          result
-        ]
-      )
-    );
+  const resultsByStepId = new Map(
+    allResults.map(result => [
+      result.stepId,
+      result
+    ])
+  );
 
   return Array.from(
-    container.children
+    container.querySelectorAll(
+      "[data-step-id]"
+    )
   )
     .map(
       element =>
@@ -285,7 +532,8 @@ export function validateStudentProof(
         )
     )
     .filter(
-      result =>
-        result !== undefined
+      (result, index, results) =>
+        result !== undefined &&
+        results.indexOf(result) === index
     );
 }

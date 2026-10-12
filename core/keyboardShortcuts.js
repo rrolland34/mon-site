@@ -10,11 +10,21 @@ export function initializeKeyboardShortcuts({
   onAdvanceCorrection,
   onPreviousCorrection,
   onNextQuestion,
-  clearAwaitingNextQuestion
+  clearAwaitingNextQuestion,
+  isProgressiveCorrectionContext = () => false
 }) {
   document.addEventListener(
     "keydown",
     function(event) {
+      // Protection limitée aux séries optant pour les étapes progressives.
+      // Les champs conservent leur gestionnaire local (stopPropagation).
+      if (isProgressiveCorrectionContext()) {
+        if (event.defaultPrevented || event.isComposing) return;
+        if (event.repeat && ["Enter", "ArrowDown", "ArrowUp"].includes(event.key)) {
+          event.preventDefault();
+          return;
+        }
+      }
       if (
         event.key === "ArrowUp" &&
         getPresentationMode() ===

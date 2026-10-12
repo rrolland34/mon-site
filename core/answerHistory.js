@@ -19,6 +19,10 @@ export function storeAnswerForCorrections({
       question:
         currentQuestion.question,
 
+      ...(currentQuestion.progressiveCorrection !== undefined
+        ? { progressiveCorrection: currentQuestion.progressiveCorrection }
+        : {}),
+
       userAnswer:
         userAnswer ||
         "Pas de réponse",

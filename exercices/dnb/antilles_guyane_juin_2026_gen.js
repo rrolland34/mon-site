@@ -633,7 +633,7 @@ const question6 = {
     "Grandeurs et mesures",
 
   subtitle:
-    "Durées",
+    "Durée",
 
   question: String.raw`
     <div>

@@ -18,11 +18,10 @@ export function loadExportMathJax({
       try {
 
         if (
-          archiveWindow.MathJax &&
-          archiveWindow.MathJax.typesetPromise
+          archiveWindow.MathJax?.startup?.promise
         ) {
 
-          await archiveWindow.MathJax.typesetPromise();
+          await archiveWindow.MathJax.startup.promise;
         }
 
       } catch (

@@ -1,0 +1,22 @@
+/* Scoped to Scratch content: no changes to other series or prototypes. */
+.scratch-statement{width:100%;font-size:.58em;line-height:1.4}
+.scratch-statement pre.blocks{white-space:pre-wrap;margin:10px auto}
+.scratch-statement svg{max-width:100%;height:auto}
+.scratch-correction{color:#f0f5ff;font-size:16px;text-align:left}
+.scratch-correction-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.scratch-correction-program,.scratch-correction-geometry{min-width:0;padding:12px;background:#101b2c;border-radius:10px}
+.scratch-correction-blocks svg{max-width:100%;height:auto}
+.scratch-correction-counter{color:#fff18a;font-size:14px;min-height:2em}
+.scratch-correction-commands{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:12px}
+.scratch-correction-commands button,.scratch-correction-commands select{font:inherit;background:#263d5e;color:#fff;border:1px solid #8098b8;border-radius:5px;padding:8px;cursor:pointer}
+.scratch-correction-commands button:disabled{opacity:.45;cursor:default}
+.scratch-correction-commands label{display:inline-flex;align-items:center;gap:5px}
+.scratch-correction-commands :focus-visible{outline:3px solid #fff18a}
+.scratch-correction-conclusion{font-size:20px;text-align:center;margin-top:16px}
+.scratch-correction-conclusion[hidden]{display:none}
+.scratch-correction-hint{font-size:14px;text-align:center;color:#c1d2e7}
+.scratch-static-correction{font-size:20px;color:red;margin-top:12px}
+@media(max-width:760px){.scratch-correction-layout{grid-template-columns:1fr}.scratch-correction-geometry{max-width:500px;width:100%;box-sizing:border-box}}
+.scratch-static-correction svg {
+  margin-top: 10px;
+}

@@ -246,6 +246,174 @@
       width: 900px;
       max-width: 95%;
     }
+
+    .proof-choice[data-step-id="secantStatement"],
+    .proof-choice[data-step-id="ratioEquality"],
+    .proof-choice[data-step-id="sameOrder"],
+    .proof-choice[data-step-id="thalesConverseStatement"],
+    .proof-choice[data-step-id="parallelConclusion"] {
+      width: 1000px;
+      max-width: 95%;
+    }
+
+    /* Mode réponse — réciproque de Thalès :
+       deux rapports sur une même ligne */
+
+    .proof-ratio-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    .proof-ratio-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: auto;
+      margin: 0;
+    }
+
+    .proof-ratio-input-label {
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-size: 18px;
+    }
+
+    .proof-ratio-input .proof-choice {
+      width: 110px;
+      max-width: none;
+      flex: none;
+      margin: 0;
+    }
+
+    .proof-ratio-equal {
+      flex-shrink: 0;
+      font-size: 1.4em;
+    }
+
+    .proof-ratio-fraction {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100px;
+    }
+
+    .proof-ratio-fraction .proof-input-field {
+      box-sizing: border-box;
+      width: 100px;
+      height: 38px;
+      margin: 0;
+      padding: 6px 10px;
+
+      font-size: 1.2em;
+      text-align: center;
+
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .proof-ratio-fraction .proof-input-field:focus {
+      border-color: #555;
+    }
+
+    .proof-ratio-bar {
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin: 3px 0;
+      background: white;
+    }
+
+    /* Produits en croix — réciproque de Thalès */
+
+    .proof-cross-product-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+      width: 100%;
+      margin: 20px auto;
+    }
+
+    .proof-cross-product-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      white-space: nowrap;
+      font-size: 18px;
+    }
+
+    .proof-cross-product-factor {
+      min-width: 30px;
+      text-align: center;
+    }
+
+    .proof-cross-product-result {
+      box-sizing: border-box;
+      width: 110px;
+      padding: 8px 10px;
+
+      font-size: 1.1em;
+      text-align: center;
+
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    .proof-cross-product-result:focus {
+      border-color: #555;
+    }
+
+    /* ==========================================
+      FEEDBACK — RÉCIPROQUE DE THALÈS
+      ========================================== */
+
+    /* Rapport : numérateur et dénominateur */
+
+    .proof-ratio-fraction
+    .proof-input-field.correct {
+      border-color: #22c55e;
+      outline: 2px solid #22c55e;
+    }
+
+    .proof-ratio-fraction
+    .proof-input-field.incorrect {
+      border-color: #ef4444;
+      outline: 2px solid #ef4444;
+    }
+
+    .proof-ratio-fraction
+    .proof-input-field.unanswered {
+      border-color: #f59e0b;
+      outline: 2px solid #f59e0b;
+    }
+
+    /* Produit en croix : résultat individuel */
+
+    .proof-cross-product-input
+    .proof-cross-product-result.correct {
+      border-color: #22c55e;
+      outline: 2px solid #22c55e;
+    }
+
+    .proof-cross-product-input
+    .proof-cross-product-result.incorrect {
+      border-color: #ef4444;
+      outline: 2px solid #ef4444;
+    }
+
+    .proof-cross-product-input
+    .proof-cross-product-result.unanswered {
+      border-color: #f59e0b;
+      outline: 2px solid #f59e0b;
+    }
   </style>
 
   <script
@@ -602,12 +770,28 @@
     } from "./exercices/thales/thalesCorrectionScenes.js";
 
     import {
+      generateThalesConverseExercise
+    } from "./exercices/generators/thalesConverseGenerator.js";
+
+    import {
+      createThalesConverseCorrectionScenes
+    } from "./exercices/thales/thalesConverseCorrectionScenes.js";
+
+    import {
       createThalesProof
     } from "./exercices/thales/thalesProof.js";
 
     import {
       createThalesStudentProof
     } from "./exercices/thales/thalesStudentProof.js";
+
+    import {
+      createThalesConverseProof
+    } from "./exercices/thales/thalesConverseProof.js";
+
+    import {
+      createThalesConverseStudentProof
+    } from "./exercices/thales/thalesConverseStudentProof.js";
 
     import {
       drawThalesCorrespondenceArrow
@@ -677,6 +861,15 @@
 
       if (
         family ===
+        "thalesConverse"
+      ) {
+        return generateThalesConverseExercise(
+          type
+        );
+      }
+
+      if (
+        family ===
         "pythagorasConverse"
       ) {
         return generatePythagorasConverseExercise(
@@ -714,8 +907,10 @@
       }
 
       const sideLabels =
+        (exerciseConfig.family ===
+          "thales" ||
         exerciseConfig.family ===
-        "thales"
+          "thalesConverse")
           ? null
           : {
               leg1:
@@ -809,7 +1004,9 @@
 
       if (
         exerciseConfig.family ===
-        "thales"
+          "thales" ||
+        exerciseConfig.family ===
+          "thalesConverse"
       ) {
         figureContainer.innerHTML =
           createThalesFigure(
@@ -954,6 +1151,20 @@
             createThalesStudentProof(
               proof
             );
+        } else if (
+          exerciseConfig.family ===
+          "thalesConverse"
+        ) {
+          proof =
+            createThalesConverseProof(
+              generatedExercise
+            );
+
+          studentProof =
+            createThalesConverseStudentProof(
+              proof,
+              generatedExercise
+            );
         } else {
           proof =
             createPythagorasProof(
@@ -974,13 +1185,18 @@
         proofContainer.id =
           "student-proof";
 
+        let ratioRow = null;
+        let crossProductRow = null;
+
         studentProof.forEach(
           step => {
             const usesStudentProofRenderer =
               exerciseConfig.family ===
                 "pythagorasConverse" ||
               exerciseConfig.family ===
-                "thales";
+                "thales" ||
+              exerciseConfig.family ===
+                "thalesConverse";
 
             const element =
               usesStudentProofRenderer
@@ -991,11 +1207,67 @@
                     step
                   );
 
-            if (element) {
-              proofContainer.appendChild(
+            if (!element) {
+              return;
+            }
+
+            if (
+              exerciseConfig.family ===
+                "thalesConverse" &&
+              step.kind ===
+                "ratioInput"
+            ) {
+              if (!ratioRow) {
+                ratioRow =
+                  document.createElement(
+                    "div"
+                  );
+
+                ratioRow.className =
+                  "proof-ratio-row";
+
+                proofContainer.appendChild(
+                  ratioRow
+                );
+              }
+
+              ratioRow.appendChild(
                 element
               );
+
+              return;
             }
+
+            if (
+              exerciseConfig.family ===
+                "thalesConverse" &&
+              step.kind ===
+                "crossProductInput"
+            ) {
+              if (!crossProductRow) {
+                crossProductRow =
+                  document.createElement(
+                    "div"
+                  );
+
+                crossProductRow.className =
+                  "proof-cross-product-row";
+
+                proofContainer.appendChild(
+                  crossProductRow
+                );
+              }
+
+              crossProductRow.appendChild(
+                element
+              );
+
+              return;
+            }
+
+            proofContainer.appendChild(
+              element
+            );
           }
         );
 
@@ -1013,7 +1285,9 @@
 
         if (
           exerciseConfig.family ===
-          "pythagorasConverse"
+            "pythagorasConverse" ||
+          exerciseConfig.family ===
+            "thalesConverse"
         ) {
           answerContainer.innerHTML = `
             <button
@@ -1077,11 +1351,13 @@
         validateCurrentResponse = function() {
           stopTimer();
 
-          const usesStudentProofValidation =
-            exerciseConfig.family ===
-              "pythagorasConverse" ||
-            exerciseConfig.family ===
-              "thales";
+        const usesStudentProofValidation =
+          exerciseConfig.family ===
+            "pythagorasConverse" ||
+          exerciseConfig.family ===
+            "thales" ||
+          exerciseConfig.family ===
+            "thalesConverse";
 
           const proofResults =
             usesStudentProofValidation
@@ -1392,7 +1668,9 @@
     ) {
       if (
         exerciseConfig.family ===
-        "thales"
+          "thales" ||
+        exerciseConfig.family ===
+          "thalesConverse"
       ) {
         return createThalesFigure(
           deepMerge(
@@ -1577,6 +1855,14 @@
           );
       } else if (
         exerciseConfig.family ===
+        "thalesConverse"
+      ) {
+        correctionSteps =
+          createThalesConverseCorrectionScenes(
+            currentExercise
+          );
+      } else if (
+        exerciseConfig.family ===
         "pythagorasConverse"
       ) {
         correctionSteps =
@@ -1728,6 +2014,11 @@
         case "thales":
           return (
             createThalesCorrectionScenes
+          );
+
+        case "thalesConverse":
+          return (
+            createThalesConverseCorrectionScenes
           );
 
         default:

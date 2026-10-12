@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prototype — Surlignage Scratch</title>
+<style>
+body{font:16px system-ui;margin:28px auto;padding:0 20px;max-width:1100px;color:#172334;background:#f4f6fa}h1{font-size:26px}main{display:grid;grid-template-columns:minmax(350px,1fr) 1fr;gap:24px}section{background:white;padding:22px;border-radius:12px}button,select{font:inherit;padding:8px;margin:4px;border:1px solid #aab5c5;border-radius:6px;background:white;cursor:pointer}button:hover{background:#e6efff}#program{overflow:auto;padding:12px}.instruction-active{stroke:#d50062!important;stroke-width:4!important;paint-order:stroke fill;filter:drop-shadow(0 0 3px #ff93c5)}#status{min-height:48px;color:#9b004a}pre{white-space:pre-wrap;font-size:13px}li{margin:8px 0}.pass{color:#17683c}.fail{color:#b00020}@media(max-width:760px){main{grid-template-columns:1fr}}
+</style>
+<h1>Scratch : une instruction, un identifiant</h1>
+<p>Prototype isolé · scratchblocks local · aucune exécution géométrique ni animation.</p>
+<main><section><h2>Programme du carré</h2><div id="program"></div><p id="status" role="status"></p></section>
+<section><h2>Commandes de surlignage</h2><label for="instruction">Instruction</label><select id="instruction"></select>
+<div><button id="previous">Précédente</button><button id="next">Suivante</button><button id="clear">Retirer</button></div>
+<div><button id="render">Reconstruire le rendu</button><button id="repeat">Occurrence suivante de « avancer »</button></div>
+<p>La répétition réutilise le même bloc et son identifiant. Le compteur est une simulation de sélection, pas un interpréteur.</p>
+<button id="test">Lancer les vérifications</button><p id="summary" role="status"></p><ol id="tests"></ol>
+<details><summary>Données structurées</summary><pre id="data"></pre></details></section></main>
+<script src="../../scratchblocks.min.js"></script><script src="../../translations-all.js"></script><script src="prototype.js"></script>
+</html>

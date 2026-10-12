@@ -1,4 +1,5 @@
 // core/exerciseLoader.js
+import scratchFigures from "../exercices/scratch/reconnaitre_figures.js";
 
 import fractionsDecimales
   from "../exercices/fractions_decimales.js";
@@ -57,8 +58,14 @@ import airesEtUnites
 import sujet0Num1Decembre2025Gen
   from "../exercices/dnb/sujet_0_num_1_decembre_2025_gen.js";
 
+import sujet0Num1Decembre2025Pro
+  from "../exercices/dnb/sujet_0_num_1_decembre_2025_pro.js";
+
 import sujet0Num2Decembre2025Gen
   from "../exercices/dnb/sujet_0_num_2_decembre_2025_gen.js";
+
+import sujet0Num2Decembre2025Pro
+  from "../exercices/dnb/sujet_0_num_2_decembre_2025_pro.js";
 
 import ameriqueDuNordJuin2026Gen
   from "../exercices/dnb/amerique_du_nord_juin_2026_gen.js";
@@ -101,6 +108,7 @@ import testQcmLatex
 import test_qcm_latex from "../exercices/tests/test_qcm_latex.js";
 
 const exercises = {
+  scratch_reconnaitre_figures: scratchFigures,
   fractions_decimales: fractionsDecimales,
   ecritures_decimales: ecrituresDecimales,
   decomposition_decimale: decompositionDecimale,
@@ -120,7 +128,9 @@ const exercises = {
   vitesse_moyenne: vitesseMoyenne,
   aires_et_unites: airesEtUnites,
   sujet_0_num_1_decembre_2025_gen: sujet0Num1Decembre2025Gen,
+  sujet_0_num_1_decembre_2025_pro: sujet0Num1Decembre2025Pro,
   sujet_0_num_2_decembre_2025_gen: sujet0Num2Decembre2025Gen,
+  sujet_0_num_2_decembre_2025_pro: sujet0Num2Decembre2025Pro,
   amerique_du_nord_juin_2026_gen: ameriqueDuNordJuin2026Gen,
   asie_juin_2026_gen: asieJuin2026Gen,
   centres_etrangers_juin_2026_gen: centresEtrangersJuin2026Gen,
@@ -147,4 +157,11 @@ export function getExerciseTitle(
     exercises[exerciseName]?.title
     ?? "Exercice"
   );
+}
+
+// Le catalogue existant reste la seule source des séries proposées.
+export function getDnbSources() {
+  return Object.entries(exercises)
+    .filter(([, exercise]) => ["Générale", "Professionnelle"].includes(exercise.series))
+    .map(([sourceId, exercise]) => ({ sourceId, exercise }));
 }

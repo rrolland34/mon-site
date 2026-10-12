@@ -1,3 +1,11 @@
+import { initializeDnbGenerator } from "./core/dnbGeneratorUI.js";
+import { createScratchProgressiveAdapter, getScratchCorrection } from "./core/scratch/scratchProgressiveAdapter.js";
+import { displayQCMOptions, highlightCorrectQCMButton } from "./core/qcm.js";
+import {
+  createProgressiveCorrectionPlayer,
+  getProgressiveCorrectionSteps
+} from "./core/progressiveCorrectionPlayer.js";
+import { setModeButtonsDisabled } from "./core/modes.js";
 import { loadExercise }
   from "./core/exerciseLoader.js";
 
@@ -21,7 +29,7 @@ import {
 
 import {
   displayFinalScore,
-  prepareFinalScreen
+  prepareFinalScreen as prepareStandardFinalScreen
 } from "./core/finalScore.js";
 
 import {
@@ -129,7 +137,24 @@ import {
 
 const urlParams = new URLSearchParams(window.location.search);
 const currentExercise = urlParams.get("table") || "questions_1";
-const exercice = loadExercise(currentExercise);
+const isCustomDnb = currentExercise === "dnb_personnalisee";
+let exercice = isCustomDnb
+  ? { title: "Automatismes DNB — Série personnalisée", questions: [], shuffle: false }
+  : loadExercise(currentExercise);
+let dnbGenerator;
+let customActions;
+
+function prepareFinalScreen() {
+  prepareStandardFinalScreen();
+  if (customActions) customActions.hidden = false;
+}
+
+function showDnbPlayer(visible) {
+  document.getElementById("top-controls").hidden = !visible;
+  document.querySelector(".main-content").hidden = !visible;
+  document.getElementById("slideshow-status").style.display = visible ? "flex" : "none";
+}
+
 
 // État de la session
 let tableauSelectionne = [];
@@ -157,6 +182,12 @@ let inCorrectionMode = false;
 let correctionStep = "question";
 let awaitingNextQuestion = false;
 let showCorrectAnswer = true;
+let progressiveCorrectionPlayer = null;
+
+function disposeProgressiveCorrection() {
+  progressiveCorrectionPlayer?.dispose();
+  progressiveCorrectionPlayer = null;
+}
 
 // Handlers
 function handleQCMSelection(answer) {
@@ -185,6 +216,7 @@ function closeCorrectionOverlay() {
 
 // Gestion des questions
 function displayQuestion() {
+  disposeProgressiveCorrection();
   if (!tableauSelectionne || tableauSelectionne.length === 0) {
     alert("Aucun tableau sélectionné ou tableau vide !");
     return;
@@ -428,6 +460,10 @@ function saveUnansweredQuestion() {
   userAnswers.push({
     question:
       currentQuestion.question,
+
+    ...(currentQuestion.progressiveCorrection !== undefined
+      ? { progressiveCorrection: currentQuestion.progressiveCorrection }
+      : {}),
 
     userAnswer:
       "Pas de réponse",
@@ -674,6 +710,14 @@ function processAnswer(
     showCorrectAnswer
   });
 
+  // This opt-in series keeps a complete static explanation in response mode,
+  // including correct answers and QCM (whose usual feedback is only a status).
+  if (presentationMode === "response" && currentQuestion.progressiveCorrection?.kind === "scratch") {
+    const feedback = document.getElementById("feedback");
+    const status = isCorrect ? "Bonne réponse !" : isNotAnswered ? "Réponse non saisie." : "Réponse incorrecte !";
+    feedback.innerHTML = `${status}<div class="scratch-static-correction">${displayAnswer}</div>`;
+  }
+
   if (
     currentQuestionAnswerMode === "qcm" &&
     Array.isArray(
@@ -886,6 +930,7 @@ function startCorrectionsMode() {
 }
 
 function displayCorrectionQuestion() {
+  disposeProgressiveCorrection();
   if (currentCorrectionIndex >= userAnswers.length) {
     showFinalScore();
     return;
@@ -903,7 +948,8 @@ function displayCorrectionQuestion() {
   correctionStep = "question";
 }
 
-function displayCorrectionAnswer() {
+function displayCorrectionAnswer({ atEnd = false } = {}) {
+  disposeProgressiveCorrection();
   const correction =
     userAnswers[currentCorrectionIndex];
 
@@ -912,12 +958,54 @@ function displayCorrectionAnswer() {
     return;
   }
 
-  renderCorrectionAnswer(correction);
+  const steps = getProgressiveCorrectionSteps({
+    correctionMode: exercice.correctionMode,
+    presentationMode,
+    correction
+  });
+  const container = document.getElementById("feedback");
+  const scratch = correction.progressiveCorrection?.kind === "scratch"
+    ? getScratchCorrection({ correctionMode: exercice.correctionMode, presentationMode, correction }) : null;
+  if (scratch && container) {
+    progressiveCorrectionPlayer = createScratchProgressiveAdapter({
+      container,
+      descriptor: scratch,
+      questionElement: document.getElementById("question"),
+      onConclusion(visible) {
+        if (correction.answerMode !== "qcm") return;
+        displayQCMOptions({ possible_answers: correction.qcmAnswersOrder, qcmAnswersOrder: correction.qcmAnswersOrder, qcmClass: correction.qcmClass }, true);
+        if (visible) highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer);
+      }
+    });
+    progressiveCorrectionPlayer.start({ atEnd });
+  } else if (steps && container) {
+    progressiveCorrectionPlayer = createProgressiveCorrectionPlayer({
+      container,
+      steps,
+      beforeRender({ isLastStep }) {
+        // Reconstruire le QCM retire le vert lors d'un retour en arrière.
+        // La bonne proposition n'est révélée qu'à la conclusion.
+        if (correction.answerMode === "qcm") {
+          renderCorrectionQuestion({
+            correction,
+            index: currentCorrectionIndex,
+            total: userAnswers.length
+          });
+          if (isLastStep) renderCorrectionAnswer(correction);
+        }
+      }
+    });
+    progressiveCorrectionPlayer.start({ atEnd });
+  } else {
+    renderCorrectionAnswer(correction);
+  }
 
   correctionStep = "answer";
 }
 
 function advanceCorrectionStep() {
+  if (!inCorrectionMode) return;
+  if (progressiveCorrectionPlayer?.next()) return;
   advanceCorrectionProgress({
     inCorrectionMode,
     correctionStep,
@@ -943,6 +1031,7 @@ function advanceCorrectionStep() {
 }
 
 function previousCorrectionStep() {
+  if (inCorrectionMode && progressiveCorrectionPlayer?.previous()) return;
   if (
     correctionStep === "final"
   ) {
@@ -963,7 +1052,7 @@ function previousCorrectionStep() {
     });
 
     displayCorrectionQuestion();
-    displayCorrectionAnswer();
+    displayCorrectionAnswer({ atEnd: true });
 
     return;
   }
@@ -980,7 +1069,7 @@ function previousCorrectionStep() {
       },
 
     onDisplayCorrectionAnswer:
-      displayCorrectionAnswer,
+      () => displayCorrectionAnswer({ atEnd: true }),
 
     onDisplayCorrectionQuestion:
       displayCorrectionQuestion
@@ -988,6 +1077,7 @@ function previousCorrectionStep() {
 }
 
 function showFinalScore() {
+  disposeProgressiveCorrection();
   correctionStep = "final";
 
   completeCorrectionSession({
@@ -1016,6 +1106,18 @@ function showFinalScore() {
 
 // Initialisation
 function startExercises() {
+  disposeProgressiveCorrection();
+  if (isCustomDnb && !exercice.questions.length) return;
+  if (customActions) customActions.hidden = true;
+  inCorrectionMode = false;
+  awaitingNextQuestion = false;
+  correctionStep = "question";
+  currentCorrectionIndex = 0;
+  if (isCustomDnb) {
+    selectedQuestionCount = exercice.questions.length;
+    document.querySelector(".controls").hidden = false;
+    document.getElementById("slideshow-status").style.display = "flex";
+  }
   currentQuestionIndex = 0;
   score = 0;
   answeredCount = 0;
@@ -1048,6 +1150,7 @@ function startExercises() {
 
   startExerciseSession({
     exercice,
+    isolateQuestions: isCustomDnb,
     selectedTime,
 
     onCloseCorrectionOverlay:
@@ -1061,6 +1164,7 @@ function startExercises() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("pagehide", disposeProgressiveCorrection);
   initializePage({
     title: exercice.title,
     onStart: startExercises,
@@ -1139,6 +1243,11 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   initializeKeyboardShortcuts({
+    isProgressiveCorrectionContext() {
+      return exercice.correctionMode === "progressive" &&
+        presentationMode === "slideshow" &&
+        (waitingForCorrectionStart || inCorrectionMode || correctionStep === "final");
+    },
     isWaitingForCorrection() {
       return waitingForCorrectionStart;
     },
@@ -1208,9 +1317,14 @@ document.addEventListener("DOMContentLoaded", function() {
       mode,
       shouldRedisplayQuestion
     ) {
+      disposeProgressiveCorrection();
       presentationMode = mode;
 
       displayPresentationMode(presentationMode);
+
+      if (isCustomDnb && !tableauSelectionne.length) {
+        document.getElementById("pause-timer").style.display = "none";
+      }
 
       if (
         shouldRedisplayQuestion &&
@@ -1221,4 +1335,87 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   });
+  if (isCustomDnb) {
+    document.getElementById("start").style.display = "none";
+    document.getElementById("question-count-control").style.display = "none";
+    showDnbPlayer(false);
+    customActions = document.createElement("div");
+    customActions.className = "dnb-actions";
+    customActions.hidden = true;
+    const redraw = document.createElement("button");
+    redraw.type = "button";
+    redraw.className = "btn large primary-action";
+    redraw.textContent = "Nouvelle série";
+    const modify = document.createElement("button");
+    modify.type = "button";
+    modify.className = "btn large";
+    modify.textContent = "Modifier la sélection";
+    customActions.append(redraw, modify);
+    document.getElementById("top-controls").append(customActions);
+    dnbGenerator = initializeDnbGenerator({
+      onCountChange(count) {
+        const countSlider = document.getElementById("question-count-slider");
+        countSlider.min = "0";
+        countSlider.max = String(count);
+        countSlider.value = String(count);
+        countSlider.dispatchEvent(new Event("input"));
+      },
+      onGenerate(series) {
+        disposeProgressiveCorrection();
+        exercice = series;
+        selectedQuestionCount = series.questions.length;
+        const countSlider = document.getElementById("question-count-slider");
+        countSlider.min = "1";
+        countSlider.max = String(selectedQuestionCount);
+        countSlider.value = String(selectedQuestionCount);
+        countSlider.dispatchEvent(new Event("input"));
+        document.getElementById("dnb-generator").hidden = true;
+        // Le tirage est fixé, mais seul « Commencer » lance la session.
+        // Vider la session précédente empêche les réglages de réafficher
+        // une ancienne question et de relancer son chronomètre.
+        stopTimer();
+        hideTimerImmediately();
+        closeCorrectionOverlay();
+        tableauSelectionne = [];
+        userAnswers = [];
+        inCorrectionMode = false;
+        awaitingNextQuestion = false;
+        correctionStep = "question";
+        customActions.hidden = true;
+        for (const id of ["restart", "export-evaluation", "pause-timer"]) {
+          document.getElementById(id).style.display = "none";
+        }
+        for (const id of ["question", "feedback", "result", "multi-answer-container", "qcm-buttons"]) {
+          document.getElementById(id).replaceChildren();
+        }
+        document.querySelector(".controls").hidden = true;
+        document.getElementById("time-slider").disabled = false;
+        setModeButtonsDisabled(false);
+        showDnbPlayer(true);
+        document.getElementById("slideshow-status").style.display = "none";
+        const start = document.getElementById("start");
+        start.style.display = "inline-block";
+        start.focus();
+      }
+    });
+    redraw.addEventListener("click", () => dnbGenerator.draw());
+    modify.addEventListener("click", () => {
+      disposeProgressiveCorrection();
+      stopTimer();
+      closeCorrectionOverlay();
+      inCorrectionMode = false;
+      awaitingNextQuestion = false;
+      correctionStep = "question";
+      tableauSelectionne = [];
+      customActions.hidden = true;
+      document.getElementById("restart").style.display = "none";
+      document.getElementById("export-evaluation").style.display = "none";
+      document.getElementById("pause-timer").style.display = "none";
+      document.getElementById("time-slider").disabled = false;
+      setModeButtonsDisabled(false);
+      showDnbPlayer(false);
+      dnbGenerator.show();
+    });
+  }
+
 });

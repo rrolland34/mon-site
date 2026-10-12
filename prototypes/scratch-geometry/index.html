@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scratch — Géométrie animée</title><link rel="stylesheet" href="prototype.css"></head>
+<body><h1>Scratch — Géométrie animée</h1>
+<p>Prototype autonome · Les angles indiqués sont les rotations du lutin.</p>
+<label>Programme <select id="program-choice"></select></label>
+<main><section><h2>Instructions</h2><div id="blocks"></div><p id="occurrence" role="status"></p></section>
+<section><h2>Construction</h2><div id="geometry"></div><p id="state"></p></section></main>
+<nav aria-label="Commandes de lecture">
+<button id="previous">Étape précédente</button><button id="next">Étape suivante</button>
+<button id="play">Lecture automatique</button><button id="pause">Pause / reprise</button>
+<button id="restart">Recommencer</button><button id="stop">Arrêter</button>
+<label>Vitesse <select id="speed"><option value="0.5">0,5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label>
+<label><input type="checkbox" id="annotations" checked> Annotations de rotation</label>
+<label><input type="checkbox" id="axes"> Afficher le repère</label>
+<label><input type="checkbox" id="grid"> Afficher le quadrillage</label>
+</nav><p id="status" role="status"></p>
+<p>Une étape joue une instruction. Le retour arrière restaure immédiatement l’état précédent. Le bouton d’annotations permet de masquer les arcs, y compris après une rotation.</p>
+<details><summary>Vérifications de l’adaptateur</summary><button id="test">Tester les correspondances</button><p id="test-result"></p></details>
+<script src="../../scratchblocks.min.js"></script><script src="../../translations-all.js"></script><script type="module" src="prototype.js"></script>
+</body></html>

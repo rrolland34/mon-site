@@ -752,6 +752,16 @@ const resolvedRotationCenter =
       points.E
     ],
 
+    BD: [
+      points.B,
+      points.D
+    ],
+
+    CE: [
+      points.C,
+      points.E
+    ],
+
     BC: [
       points.B,
       points.C
@@ -763,11 +773,63 @@ const resolvedRotationCenter =
     ]
   };
 
+  /*
+   * Mise en évidence individuelle
+   * des segments.
+   *
+   * L'ordre des propriétés de
+   * highlight.segments est conservé.
+   * Cela permet, dans une configuration
+   * emboîtée, de tracer d'abord le grand
+   * segment puis le petit par-dessus.
+   */
+  const segmentHighlights =
+    Object.entries(
+      highlight.segments ?? {}
+    )
+      .map(
+        ([
+          segmentName,
+          settings
+        ]) => {
+          if (!settings.visible) {
+            return "";
+          }
+
+          const segment =
+            segments[segmentName];
+
+          if (!segment) {
+            return "";
+          }
+
+          const [
+            startPoint,
+            endPoint
+          ] = segment;
+
+          return `
+            <line
+              x1="${startPoint.x}"
+              y1="${startPoint.y}"
+              x2="${endPoint.x}"
+              y2="${endPoint.y}"
+              stroke="${settings.color ?? "red"}"
+              stroke-width="${settings.strokeWidth ?? 4}"
+              stroke-linecap="round"
+            />
+          `;
+        }
+      )
+      .join("");
+
   const segmentInteriorPoints = {
     AB: points.C,
     AC: points.B,
     AD: points.E,
     AE: points.D,
+    BD: points.C,
+    CE: points.B,
     BC: points.A,
     DE: points.A
   };
@@ -1536,6 +1598,7 @@ const resolvedRotationCenter =
       <g class="thales-highlights">
         ${smallTriangleHighlight}
         ${largeTriangleHighlight}
+        ${segmentHighlights}
       </g>
 
       ${rightAngleAtB}

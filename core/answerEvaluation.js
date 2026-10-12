@@ -251,7 +251,9 @@ export function evaluateCurrentAnswer({
   const result =
     checkAnswerSmart({
       userInput: userAnswer,
-      validAnswers,
+      validAnswers: answerMode === "qcm" && resolvedAnswerRule?.type === "symbolicExact"
+        ? validAnswers.map(normalizeQCMLatex)
+        : validAnswers,
 
       answerRule:
         shouldUseAnswerRule
@@ -298,7 +300,9 @@ export function getCorrectQCMAnswer({
             possibleAnswer
           ),
 
-        validAnswers,
+        validAnswers: answerRule?.type === "symbolicExact"
+          ? validAnswers.map(normalizeQCMLatex)
+          : validAnswers,
 
         answerRule
       });

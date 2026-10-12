@@ -8,6 +8,10 @@ export function createPieChartSVG({
   stroke = "currentColor",
   strokeWidth = 2,
 
+  fill = "none",
+  labelRadius = 0.58,
+  pointer = null,
+
   showCenter = false,
   rightAngle = null
 } = {}) {
@@ -30,7 +34,7 @@ export function createPieChartSVG({
       cx="${cx}"
       cy="${cy}"
       r="${r}"
-      fill="none"
+      fill="${fill}"
       stroke="${stroke}"
       stroke-width="${strokeWidth}"
     />
@@ -55,7 +59,7 @@ export function createPieChartSVG({
     const middle =
       (sector.start + sector.end) / 2;
 
-    const p = polar(middle, r * 0.58);
+    const p = polar(middle, r * labelRadius);
 
     return `
       <text
@@ -72,6 +76,16 @@ export function createPieChartSVG({
   }).join("");
 
   let rightAngleSvg = "";
+
+  // Angle en degrés depuis le haut, longueur relative au rayon du disque.
+  const pointerLength = r * (pointer?.length ?? 0.65);
+  const pointerSvg = pointer ? `
+    <g class="pie-chart-pointer" transform="translate(${cx} ${cy}) rotate(${pointer.angle ?? 0})">
+      <path d="M 0 0 L 0 ${-pointerLength} M -5 ${-pointerLength + 9} L 0 ${-pointerLength} L 5 ${-pointerLength + 9}"
+        fill="none" stroke="${stroke}" stroke-width="${strokeWidth + 1}"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  ` : "";
 
   if (rightAngle) {
     const s = rightAngle.size ?? 18;
@@ -103,6 +117,7 @@ export function createPieChartSVG({
       ${radii}
       ${rightAngleSvg}
       ${labels}
+      ${pointerSvg}
       ${showCenter ? `
         <circle
           cx="${cx}"

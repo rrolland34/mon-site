@@ -15,7 +15,8 @@ export function startExerciseSession({
   exercice,
   selectedTime,
   onCloseCorrectionOverlay,
-  onQuestionsReady
+  onQuestionsReady,
+  isolateQuestions = false
 }) {
   const questionCounter =
     document.getElementById("question-counter");
@@ -51,7 +52,7 @@ export function startExerciseSession({
   // Désactiver les boutons de mode
   setModeButtonsDisabled(true);
 
-  const tableauSelectionne =
+  let tableauSelectionne =
 
     exercice.shuffle === false
 
@@ -60,6 +61,9 @@ export function startExerciseSession({
       : melangerTableau(
           exercice.questions
         );
+
+  // Les propriétés complètes sont conservées ; seuls les états du lecteur sont isolés.
+  if (isolateQuestions) tableauSelectionne = tableauSelectionne.map(q => ({ ...q }));
 
   // Appliquer la durée sélectionnée
   // par l'utilisateur à chaque question

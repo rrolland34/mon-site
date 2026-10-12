@@ -83,7 +83,7 @@ export function getExportStyles() {
     }
 
     .evaluation-question {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       page-break-inside: avoid;
       break-inside: avoid;
     }

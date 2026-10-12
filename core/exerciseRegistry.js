@@ -1,6 +1,50 @@
 // core/exerciseRegistry.js
 
 export const exerciseConfigs = {
+  "thales-converse-nested": {
+    title:
+      "Réciproque du théorème de Thalès : triangles emboîtés",
+
+    type:
+      "series-1",
+
+    family:
+      "thalesConverse"
+  },
+
+  "thales-converse-nested-parts": {
+    title:
+      "Réciproque du théorème de Thalès : longueurs partielles",
+
+    type:
+      "series-2",
+
+    family:
+      "thalesConverse"
+  },
+
+  "thales-converse-butterfly": {
+    title:
+      "Réciproque du théorème de Thalès : configuration papillon",
+
+    type:
+      "series-3",
+
+    family:
+      "thalesConverse"
+  },
+
+  "thales-converse-random": {
+    title:
+      "Réciproque du théorème de Thalès : configuration aléatoire",
+
+    type:
+      "random",
+
+    family:
+      "thalesConverse"
+  },
+
   "thales-nested": {
     title:
       "Théorème de Thalès : triangles emboîtés",

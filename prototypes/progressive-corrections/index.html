@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Banc d’essai des corrections progressives</title>
+<style>body{font:16px system-ui;margin:16px;background:#f3f5fa;color:#182536}h1{font-size:22px}iframe{width:100%;height:850px;border:1px solid #acb8c8;background:white}a{margin-right:20px}</style>
+<h1>Banc d’essai isolé — véritable lecteur des Automatismes</h1>
+<p>Choisir Diaporama puis Commencer. Les cinq questions durent chacune deux secondes dans ce banc d’essai. Après l’annonce des corrections, utiliser Entrée, Flèche bas et Flèche haut dans le cadre.</p>
+<p><a href="./">Série activée</a><a href="?classic">Même série sans activation</a><a href="README.md">Protocole et limites</a></p>
+<p id="status">Chargement du lecteur…</p>
+<iframe title="Lecteur de validation"></iframe>
+<script type="module">
+  // Le HTML et main.js de production sont exécutés sans copie persistante.
+  // Seul le catalogue est remplacé, dans ce document de test, par import map.
+  const root = new URL("../../", location.href);
+  try {
+    const response = await fetch(new URL("questions_flash.html", root));
+    if (!response.ok) throw Error(`HTTP ${response.status}`);
+    let html = await response.text();
+    const imports = { [new URL("core/exerciseLoader.js", root).href]: new URL("fixtureLoader.js", location.href).href };
+    html = html.replace("<head>", `<head><base href="${root.href}"><script type="importmap">${JSON.stringify({imports})}<\/script>`);
+    // Réglage accéléré uniquement pour le prototype.
+    html = html.replace(/(id="time-slider"[\s\S]*?)(>)/, (_, attributes, end) =>
+      attributes.replace(/min="[^"]*"/, 'min="2"').replace(/value="[^"]*"/, 'value="2"') + end);
+    document.querySelector("iframe").srcdoc = html;
+    document.getElementById("status").textContent = "Catalogue isolé chargé. Aucun lien ajouté au site.";
+  } catch(error) {
+    document.getElementById("status").textContent = `Chargement impossible : ${error.message}`;
+  }
+</script>
+</html>

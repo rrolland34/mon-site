@@ -24,6 +24,7 @@
   ></script>
 
   <script src="./scratchblocks.min.js"></script>
+  <link rel="stylesheet" href="./core/scratch/scratchCorrections.css">
 
   <script src="./translations-all.js"></script>
 </head>
@@ -96,6 +97,30 @@
     </ul>
   </nav>
 
+  <section id="dnb-generator" class="question-container dnb-generator" hidden aria-labelledby="dnb-generator-title">
+    <h1 id="dnb-generator-title">Série personnalisée DNB</h1>
+    <fieldset><legend>Séries sources</legend>
+      <label><input type="checkbox" name="dnb-source" value="Générale" checked> Générale</label>
+      <label><input type="checkbox" name="dnb-source" value="Professionnelle"> Professionnelle</label>
+    </fieldset>
+    <h2>Domaines et sous-domaines</h2>
+    <p>Sans sous-domaine coché, toutes les questions du domaine sont admissibles.</p>
+    <div class="dnb-actions">
+      <button type="button" class="btn dnb-select-all">Tout sélectionner</button>
+      <button type="button" class="btn dnb-select-none">Tout désélectionner</button>
+    </div>
+    <p class="dnb-empty" hidden>Aucune question disponible pour ces séries sources.</p>
+    <div class="dnb-domains"></div>
+    <p class="dnb-total" aria-live="polite"></p>
+    <div class="control-group">
+      <label for="dnb-count">Nombre de questions :</label>
+      <input id="dnb-count" type="range" min="0" max="0" value="0" step="1" disabled>
+      <output id="dnb-count-value" for="dnb-count">0</output>
+    </div>
+    <p>Générez votre série, puis réglez le temps et les modes avant de commencer.</p>
+    <button type="button" class="btn large primary-action dnb-generate" disabled>Générer la série</button>
+    <p class="dnb-error" role="alert"></p>
+  </section>
   <div id="top-controls">
     <button
       id="start"

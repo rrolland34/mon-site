@@ -192,6 +192,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q1",
+    title: "Nombres",
+    subtitle: "Écriture fractionnaire",
     question:
       String.raw`
         \(\text{Donner une écriture du nombre }
@@ -225,6 +228,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q2",
+    title: "Calcul numérique",
+    subtitle: "Somme de nombres relatifs",
     question:
       String.raw`
         \(\text{Calculer la somme }
@@ -252,6 +258,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q3",
+    title: "Proportionnalité",
+    subtitle: "Tableau de proportionnalité",
     question:
       String.raw`
         <div class="two-line-question">
@@ -299,6 +308,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q4",
+    title: "Probabilités",
+    subtitle: "Calcul d'une probabilité",
     question:
       String.raw`
         Un sac contient 10 boules rouges,
@@ -334,6 +346,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q5",
+    title: "Calcul littéral",
+    subtitle: "Résolution d'une équation",
     question: {
       direct:
         String.raw`
@@ -376,6 +391,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q6",
+    title: "Nombres",
+    subtitle: "Notation scientifique",
     question: {
       direct:
         String.raw`
@@ -428,6 +446,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q7",
+    title: "Organisation et gestion de données",
+    subtitle: "Lecture de diagramme circulaire",
     question:
       String.raw`
         <div class="two-line-question">
@@ -468,6 +489,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q8",
+    title: "Grandeurs et mesures",
+    subtitle: "Périmètre d'un rectangle",
     question: {
       direct:
         String.raw`
@@ -530,6 +554,9 @@ const questions = [
   // ==================================================
 
   {
+    id: "q9",
+    title: "Trigonométrie",
+    subtitle: "Cosinus dans un triangle rectangle",
     question: {
       direct:
         String.raw`

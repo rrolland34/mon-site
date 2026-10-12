@@ -69,7 +69,7 @@ export default {
   series: "Générale",
   questions: [
     {
-      id: "q1", title: "Nombres", subtitle: "Écriture scientifique",
+      id: "q1", title: "Nombres", subtitle: "Notation scientifique",
       question: {
         direct: String.raw`\(\text{Donner l'écriture scientifique du nombre }45\,310.\)`,
         qcm: String.raw`\(\text{L'écriture scientifique du nombre }45\,310\text{ est :}\)`
