@@ -33,7 +33,6 @@ const q5Figure = createPieChartSVG({
 export default {
   title: "Sujet 0 n°1 — décembre 2025",
   series: "Professionnelle",
-  shuffle: false,
   questions: [
     {
       id: "q1", title: "Repérage", subtitle: "Repérage dans le plan",

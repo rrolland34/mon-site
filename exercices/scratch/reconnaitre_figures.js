@@ -38,7 +38,6 @@ const definitions = [
 
 export default {
   title: 'Scratch — Reconnaître une figure géométrique',
-  shuffle: false,
   correctionMode: 'progressive',
   questions: definitions.map(([answer,program,reason,distractors],index) => {
     const variants = [answer];

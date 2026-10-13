@@ -30,7 +30,6 @@ dire (regrouper [Le résultat est] et (résultat))`;
 export default {
   title: "Sujet 0 n°2 — décembre 2025",
   series: "Professionnelle",
-  shuffle: false,
   questions: [
     {
       id: "q1", title: "Calcul numérique", subtitle: "Fraction d'une quantité",

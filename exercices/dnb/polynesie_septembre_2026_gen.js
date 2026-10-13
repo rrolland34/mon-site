@@ -51,7 +51,6 @@ const q7Choices = [
 export default {
   title: "Polynésie — remplacement — 7 septembre 2026",
   series: "Générale",
-  shuffle: false,
   questions: [
     {
       id: "q1", title: "Calcul littéral", subtitle: "Réduction",

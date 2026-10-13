@@ -80,7 +80,6 @@ const q8Calculation = String.raw`80-\dfrac{10}{100}\times80`;
 export default {
   title: "Centres étrangers — juin 2026",
   series: "Générale",
-  shuffle: false,
   questions: [
     {
       id: "q1", title: "Statistiques", subtitle: "Médiane",
