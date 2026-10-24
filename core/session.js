@@ -63,13 +63,17 @@ export function startExerciseSession({
         );
 
   // Les propriétés complètes sont conservées ; seuls les états du lecteur sont isolés.
-  if (isolateQuestions) tableauSelectionne = tableauSelectionne.map(q => ({ ...q }));
+  tableauSelectionne = tableauSelectionne.map(q => {
+    const question = { ...q };
+    delete question.qcmAnswersOrder;
+    return question;
+  });
 
-  // Appliquer la durée sélectionnée
-  // par l'utilisateur à chaque question
+  // Donner priorité à la durée propre à la question,
+  // sinon utiliser la durée sélectionnée par l'utilisateur.
   if (Array.isArray(tableauSelectionne)) {
     tableauSelectionne.forEach(q => {
-      q.time = selectedTime;
+      q.time = q.duration ?? selectedTime;
     });
   }
 

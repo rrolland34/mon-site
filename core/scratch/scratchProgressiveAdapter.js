@@ -11,7 +11,7 @@ export function getScratchCorrection({ correctionMode, presentationMode, correct
   } catch { return null; }
 }
 
-// Contract shared with the static progressive player: start/next/previous/dispose.
+// Contract shared with the static progressive player: start/next/previous/showAll/dispose.
 // Only the parent player may change the current question.
 export function createScratchProgressiveAdapter({ container, descriptor, questionElement = null, onConclusion = () => {}, createScene = createScratchCorrectionScene }) {
   const doc = container.ownerDocument;
@@ -39,6 +39,9 @@ export function createScratchProgressiveAdapter({ container, descriptor, questio
   function reveal(value) {
     if (disposed) return;
     conclusion.hidden = !value;
+    if (value && !revealed && typeof globalThis.MathJax?.typesetPromise === 'function') {
+      globalThis.MathJax.typesetPromise([conclusion]).catch(error => console.error('Erreur MathJax dans la conclusion Scratch :', error));
+    }
     nextButton.disabled = value;
     if (revealed !== value) { revealed = value; onConclusion(value); }
   }
@@ -61,6 +64,13 @@ export function createScratchProgressiveAdapter({ container, descriptor, questio
     const state = scene.getState();
     if (state.index === 0 && state.progress === 0 && !state.running) return false;
     scene.previous(); return true;
+  }
+  function showAll() {
+    if (disposed || !scene || revealed) return false;
+    autoRequested = false;
+    scene.seek(scene.execution.trace.length);
+    reveal(true);
+    return true;
   }
   const button = (text, action) => {
     const el = make('button', '', text); el.type = 'button';
@@ -108,15 +118,17 @@ export function createScratchProgressiveAdapter({ container, descriptor, questio
       }
     });
     scene.setAxes(Boolean(descriptor.showAxes));
-    if (atEnd) { scene.seek(scene.execution.trace.length); reveal(true); }
+    if (atEnd) showAll();
   }
   return {
     start,
     next,
     previous,
+    showAll,
     dispose() {
       if (disposed) return;
       disposed = true; scene?.dispose(); scene = null; root.remove();
+      globalThis.MathJax?.typesetClear?.([conclusion]);
       if (questionElement) questionElement.style.display = previousDisplay;
     }
   };

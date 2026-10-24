@@ -183,8 +183,11 @@ let correctionStep = "question";
 let awaitingNextQuestion = false;
 let showCorrectAnswer = true;
 let progressiveCorrectionPlayer = null;
+let disposeQuestionInteraction = null;
 
 function disposeProgressiveCorrection() {
+  disposeQuestionInteraction?.();
+  disposeQuestionInteraction = null;
   progressiveCorrectionPlayer?.dispose();
   progressiveCorrectionPlayer = null;
 }
@@ -383,8 +386,12 @@ function displayQuestion() {
     onQCMSelection: handleQCMSelection
   });
 
-  // Utiliser la durée choisie par l'utilisateur via le curseur
-  resetTimer(selectedTime, handleTimeUp);
+  if (presentationMode === "response" && currentQuestionAnswerMode === "direct") {
+    disposeQuestionInteraction = q.initializeResponse?.({ document });
+  }
+
+  // Utiliser la durée attribuée à cette question par la session.
+  resetTimer(q.time, handleTimeUp);
 
   if (window.MathJax) {
     MathJax.typeset();
@@ -485,6 +492,7 @@ function saveUnansweredQuestion() {
     qcmClass:
       currentQuestion.qcmClass ??
       null,
+    ...(currentQuestion.qcmRenderAnswer ? { qcmRenderAnswer: currentQuestion.qcmRenderAnswer } : {}),
 
     figureConfig:
       currentQuestion.figureConfig,
@@ -514,6 +522,8 @@ function checkAnswer() {
   }
 
   stopTimer();
+  disposeQuestionInteraction?.();
+  disposeQuestionInteraction = null;
   const currentQuestion =
     tableauSelectionne[currentQuestionIndex];
 
@@ -709,6 +719,13 @@ function processAnswer(
     userAnswer,
     showCorrectAnswer
   });
+
+  if ((isCorrect || currentQuestion.qcmClass === 'time-clock-qcm') && currentQuestion.showCorrectionOnSuccess) {
+    const correction = document.createElement('div');
+    correction.style.color = 'red';
+    correction.innerHTML = displayAnswer;
+    document.getElementById('feedback').appendChild(correction);
+  }
 
   // This opt-in series keeps a complete static explanation in response mode,
   // including correct answers and QCM (whose usual feedback is only a status).
@@ -1003,6 +1020,12 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
   correctionStep = "answer";
 }
 
+function showCompleteCorrection() {
+  if (inCorrectionMode && presentationMode === "slideshow" && correctionStep === "answer") {
+    progressiveCorrectionPlayer?.showAll();
+  }
+}
+
 function advanceCorrectionStep() {
   if (!inCorrectionMode) return;
   if (progressiveCorrectionPlayer?.next()) return;
@@ -1268,6 +1291,12 @@ document.addEventListener("DOMContentLoaded", function() {
     onAdvanceCorrection: advanceCorrectionStep,
     onPreviousCorrection: previousCorrectionStep,
     onNextQuestion: nextQuestion,
+    onShowCompleteCorrection: showCompleteCorrection,
+    onSkipSlideshowQuestion() {
+      if (!tableauSelectionne.length || answeredCount >= selectedQuestionCount) return;
+      stopTimer();
+      handleTimeUp();
+    },
 
     clearAwaitingNextQuestion() {
       awaitingNextQuestion = false;

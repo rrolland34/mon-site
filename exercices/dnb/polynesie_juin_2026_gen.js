@@ -576,6 +576,8 @@ export default {
   series:
     "Générale",
 
+  shuffle: false,
+
   questions: [
     question1,
     question2,

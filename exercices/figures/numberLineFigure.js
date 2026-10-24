@@ -133,6 +133,7 @@ function createAnnotationArrow({
   axisY,
   direction = "up",
   length = 35,
+  tipGap = 3,
   strokeWidth = 2,
   color = "currentColor",
 
@@ -149,8 +150,8 @@ function createAnnotationArrow({
 
   const endY =
     direction === "up"
-      ? axisY + 3
-      : axisY - 3;
+      ? axisY + tipGap
+      : axisY - tipGap;
 
   const labelY =
     direction === "up"
@@ -381,6 +382,8 @@ function createBackgroundGrid({
 
 
 export function createNumberLineFigure({
+  viewportPaddingX = 0,
+  viewportPaddingTop = 0,
   support = {
     arrowStart: false,
     arrowEnd: false,
@@ -541,6 +544,8 @@ export function createNumberLineFigure({
 
 
     const resolvedDivisions = {
+      // Origine des rangs de graduation, indépendante du bord visible.
+      origin: divisions.origin ?? minValue,
       mainStep:
         divisions.mainStep ??
         1,
@@ -694,14 +699,14 @@ export function createNumberLineFigure({
     const mainIndex =
       (
         value -
-        minValue
+        resolvedDivisions.origin
       ) /
       mainStep;
 
     const subIndex =
       (
         value -
-        minValue
+        resolvedDivisions.origin
       ) /
       subdivisionStep;
 
@@ -930,6 +935,9 @@ export function createNumberLineFigure({
             length:
               arrow.length,
 
+            tipGap:
+              arrow.tipGap,
+
             strokeWidth:
               arrow.strokeWidth,
 
@@ -967,10 +975,10 @@ export function createNumberLineFigure({
     <svg
       class="number-line-figure"
       viewBox="
-        0
-        0
-        ${width}
-        ${height}
+        ${-viewportPaddingX}
+        ${-viewportPaddingTop}
+        ${width + 2 * viewportPaddingX}
+        ${height + viewportPaddingTop}
       "
       xmlns="http://www.w3.org/2000/svg"
       role="img"

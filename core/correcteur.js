@@ -1,4 +1,7 @@
 // core/correcteur.js
+import { validateProbability } from "./validators/probabilityValidator.js";
+import { validateIntegerSet } from "./validators/integerSetValidator.js";
+import { validateCalculationExpression } from "./validators/calculationExpressionValidator.js";
 
 import {
   validateSymbolicExact
@@ -143,6 +146,59 @@ export function checkAnswerSmart({
       feedback:
         "Aucune réponse correcte n'est configurée",
       showCorrectAnswer: false
+    };
+  }
+
+  if (answerRule?.type === "integerSet") {
+    const validation = validateIntegerSet({ userInput, expectedValues: answerRule.expectedValues });
+    return {
+      correct: validation.valid,
+      feedback: validation.valid ? "Bonne réponse !" : "Un ensemble d'entiers distincts est attendu.",
+      showCorrectAnswer: validation.errorCode !== 'INVALID_INTEGER_SET_CONFIGURATION',
+      errorCode: validation.errorCode
+    };
+  }
+
+  // Une question peut fournir une règle locale sans ajouter de validateur global.
+  if (answerRule?.type === "custom" && typeof answerRule.validate === "function") {
+    const validation = answerRule.validate({ userInput, validAnswers });
+    return {
+      correct: validation.valid === true,
+      feedback: validation.valid ? "Bonne réponse !" : (validation.feedback ?? ""),
+      showCorrectAnswer: true
+    };
+  }
+
+  if (answerRule?.type === "calculationExpression") {
+    const validation = validateCalculationExpression({
+      userInput,
+      patterns: answerRule.patterns,
+      equivalences: answerRule.equivalences,
+      allowNumberOnly: answerRule.allowNumberOnly
+    });
+    const messages = {
+      INVALID_CALCULATION_CONFIGURATION: "Aucun modèle de calcul valide n'est configuré.",
+      INVALID_CALCULATION_EXPRESSION: "L’expression saisie n’est pas valide.",
+      EXPECTED_CALCULATION: "Un calcul est attendu, pas seulement son résultat.",
+      WRONG_CALCULATION_STRUCTURE: "Le calcul ne correspond pas à la méthode demandée."
+    };
+    return {
+      correct: validation.valid,
+      feedback: validation.valid ? "Bonne réponse !" : messages[validation.errorCode],
+      showCorrectAnswer: validation.errorCode !== "INVALID_CALCULATION_CONFIGURATION",
+      errorCode: validation.errorCode
+    };
+  }
+
+  if (answerRule?.type === "probability") {
+    const validation = validateProbability({ userInput, validAnswers });
+    return {
+      correct: validation.valid,
+      feedback: validation.valid ? "Bonne réponse !" : validation.errorCode === "INVALID_PROBABILITY"
+        ? "Une probabilité entre 0 et 1, sous forme de fraction, de nombre décimal ou de pourcentage, est attendue."
+        : "",
+      showCorrectAnswer: true,
+      errorCode: validation.errorCode
     };
   }
 
@@ -688,7 +744,8 @@ export function checkAnswerSmart({
     const validation =
       validateDurationAnswer({
         userInput,
-        validAnswers
+        validAnswers,
+        requiredFormat: answerRule.requiredFormat ?? null
       });
 
     let feedback = "";
@@ -1021,6 +1078,8 @@ export function checkAnswerSmart({
     const validation =
       validatePower({
         userInput,
+
+        expectedBase: answerRule.expectedBase,
 
         expectedValue:
           answerRule.expectedValue,
@@ -1392,7 +1451,8 @@ export function checkAnswerSmart({
     ) {
       const validation =
         validateFractionFormat(
-          userInput
+          userInput,
+          { irreducible: answerRule.irreducible === true }
         );
 
       if (!validation.valid) {
@@ -1405,6 +1465,10 @@ export function checkAnswerSmart({
         ) {
           feedback =
             "Une fraction est attendue.";
+        }
+
+        if (validation.errorCode === "EXPECTED_IRREDUCIBLE_FRACTION") {
+          feedback = "Une fraction irréductible est attendue.";
         }
 
         return {

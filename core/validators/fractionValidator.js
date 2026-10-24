@@ -3,6 +3,7 @@
 import {
   normalizeAnswer
 } from "../answerParser.js";
+import { validateSimplifiedValueFormat } from "./simplifiedValueValidator.js";
 
 /**
  * Vérifie que la réponse est une fraction
@@ -10,7 +11,8 @@ import {
  * sont des nombres entiers.
  */
 export function validateFractionFormat(
-  userInput
+  userInput,
+  { irreducible = false } = {}
 ) {
   const normalizedAnswer =
     normalizeAnswer(userInput);
@@ -46,6 +48,10 @@ export function validateFractionFormat(
       valid: false,
       errorCode: "EXPECTED_FRACTION"
     };
+  }
+
+  if (irreducible && !validateSimplifiedValueFormat(userInput).valid) {
+    return { valid: false, errorCode: "EXPECTED_IRREDUCIBLE_FRACTION" };
   }
 
   return {

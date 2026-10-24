@@ -209,7 +209,8 @@ export function displayCorrectionQuestion({
           correction.qcmNumberFormat,
 
         qcmClass:
-          correction.qcmClass
+          correction.qcmClass,
+        qcmRenderAnswer: correction.qcmRenderAnswer
       },
       true
     );

@@ -495,6 +495,8 @@ export default {
   series:
     "Générale",
 
+  shuffle: false,
+
   questions: [
     {
       id:

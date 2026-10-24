@@ -2,96 +2,66 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>
-    Vidéos - Mon Site de Maths
-  </title>
-
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidéos - Mon Site de Maths</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="videos.css">
+  <script type="module" src="videos.js"></script>
 </head>
-
 <body>
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navigation principale">
     <ul class="nav-list">
-      <li class="nav-item">
-        <a
-          href="index.html"
-          class="nav-link"
-        >
-          Accueil
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a
-          href="automatismes_6.html"
-          class="nav-link"
-        >
-          Automatismes 6e
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a
-          href="automatismes_3.html"
-          class="nav-link"
-        >
-          Automatismes 3e
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a
-          href="automatismes_dnb.html"
-          class="nav-link"
-        >
-          Automatismes DNB
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a
-          href="exercise_selection.html"
-          class="nav-link"
-        >
-          Exercices
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a
-          href="outils.html"
-          class="nav-link"
-        >
-          Outils
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a
-          href="videos.html"
-          class="nav-link active"
-        >
-          Vidéos
-        </a>
-      </li>
+      <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+      <li class="nav-item"><a href="automatismes_6.html" class="nav-link">Automatismes 6e</a></li>
+      <li class="nav-item"><a href="automatismes_3.html" class="nav-link">Automatismes 3e</a></li>
+      <li class="nav-item"><a href="automatismes_dnb.html" class="nav-link">Automatismes DNB</a></li>
+      <li class="nav-item"><a href="exercise_selection.html" class="nav-link">Exercices</a></li>
+      <li class="nav-item"><a href="outils.html" class="nav-link">Outils</a></li>
+      <li class="nav-item"><a href="videos.html" class="nav-link active" aria-current="page">Vidéos</a></li>
     </ul>
   </nav>
-
-  <main class="container">
-    <h1>Vidéos</h1>
-
-    <p>
-      Cette rubrique est en cours de construction.
-    </p>
+  <main class="video-page">
+    <header class="video-header">
+      <h1>Vidéothèque de mathématiques</h1>
+      <p>Retrouve les vidéos d'automatismes et d'exercices.</p>
+    </header>
+    <section class="video-filters" aria-label="Recherche et filtres">
+      <label for="video-search">Rechercher une vidéo</label>
+      <input id="video-search" type="search" placeholder="Équations, géométrie, fractions…">
+      <div class="video-filter-grid">
+        <div>
+          <label for="video-level">Niveau</label>
+          <select id="video-level">
+            <option value="all">Tous les niveaux</option>
+            <option value="6e">6e</option>
+            <option value="3e">3e</option>
+            <option value="unclassified">Non classées</option>
+          </select>
+        </div>
+        <div>
+          <label for="video-type">Type</label>
+          <select id="video-type">
+            <option value="all">Tous les types</option>
+            <option value="automatismes">Automatismes</option>
+            <option value="exercices">Exercices</option>
+            <option value="cours">Cours</option>
+            <option value="unclassified">Non classées</option>
+          </select>
+        </div>
+      </div>
+      <p id="video-status" role="status" aria-live="polite">Chargement des vidéos…</p>
+    </section>
+    <section id="video-grid" class="video-grid" aria-label="Catalogue des vidéos"></section>
   </main>
+  <div id="video-dialog" class="video-dialog" hidden>
+    <div class="video-dialog-backdrop" data-close></div>
+    <section class="video-dialog-panel" role="dialog" aria-modal="true" aria-labelledby="video-dialog-title">
+      <div class="video-dialog-heading">
+        <h2 id="video-dialog-title"></h2>
+        <button type="button" id="video-close" aria-label="Fermer la vidéo">✕ Fermer</button>
+      </div>
+      <div id="video-player" class="video-player"></div>
+    </section>
+  </div>
 </body>
 </html>

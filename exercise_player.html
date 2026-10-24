@@ -746,7 +746,8 @@
     } from "./core/stepCorrection.js";
 
     import {
-      renderStepCorrection
+      renderStepCorrection,
+      createCompleteCorrectionScene
     } from "./core/stepCorrectionRenderer.js";
 
     import {
@@ -1957,6 +1958,15 @@
       );
     }
 
+    function showCompleteStepCorrection() {
+      if (!stepCorrection?.showAll()) return;
+      renderStepCorrection({
+        container: exerciseContent,
+        scene: createCompleteCorrectionScene(correctionSteps, { cumulative: true }),
+        renderFigure: renderExerciseFigure
+      });
+    }
+
     function previousStepCorrection() {
       if (
         !stepCorrection ||
@@ -2110,6 +2120,10 @@
     restartButton.addEventListener(
       "click",
       function() {
+        stepCorrection?.stop();
+        stepCorrection = null;
+        waitingForCorrection = false;
+
         setModeButtonsDisabled(
           true
         );
@@ -2195,6 +2209,15 @@
 
       onAdvanceCorrection:
         advanceStepCorrection,
+
+      onShowCompleteCorrection:
+        showCompleteStepCorrection,
+
+      onSkipSlideshowQuestion() {
+        if (!currentExercise) return;
+        stopTimer();
+        handleTimeUp();
+      },
 
       onPreviousCorrection:
         previousStepCorrection,

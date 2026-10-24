@@ -152,6 +152,10 @@ export function evaluateCurrentAnswer({
         );
 
   const qcmCompatibleRules = [
+    "custom",
+    "integerSet",
+    "calculationExpression",
+    "probability",
     "length",
     "lengthUnit",
     "area",
@@ -222,10 +226,19 @@ export function evaluateCurrentAnswer({
           })
       );
 
+    // Certaines réponses doivent aussi être vérifiées ensemble (paire de rotations).
+    const groupResult = question.answerFieldsRule
+      ? checkAnswerSmart({
+          userInput: userAnswer,
+          validAnswers,
+          answerRule: question.answerFieldsRule
+        })
+      : null;
+
     const isCorrect =
       fieldResults.every(
         result => result.correct
-      );
+      ) && (groupResult?.correct ?? true);
 
     return {
       userAnswer,
@@ -236,7 +249,7 @@ export function evaluateCurrentAnswer({
           isCorrect,
 
         feedback:
-          "",
+          groupResult?.feedback ?? "",
 
         fieldResults
       },

@@ -397,7 +397,7 @@ const questions = [
     question: {
       direct:
         String.raw`
-        \(\text{Quelles est la notation scientifique du nombre }0{,}00458\text{ ?}\)
+        \(\text{Quelles est la notation scientifique du nombre }0{,}004~58\text{ ?}\)
       `,
 
     qcm:
@@ -407,7 +407,7 @@ const questions = [
             \(\text{Parmi les propositions suivantes, laquelle}\)
           </div>
           <div>
-            \(\text{est la notation scientifique du nombre }0{,}00458\text{ ?}\)
+            \(\text{est la notation scientifique du nombre }0{,}004~58\text{ ?}\)
           </div>
         </div>
       `
@@ -620,6 +620,8 @@ export default {
     "Métropole - 30 juin 2026",
 
   series: "Générale",
+
+  shuffle: false,
 
   questions
 };

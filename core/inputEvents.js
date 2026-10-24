@@ -13,6 +13,7 @@ export function initializeAnswerInput({
         if (event.key === "Enter") {
           event.preventDefault();
           event.stopPropagation();
+          if (event.shiftKey) return;
           onSubmit();
         }
       }

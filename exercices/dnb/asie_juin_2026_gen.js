@@ -67,6 +67,7 @@ const q9Answer = "a. 27 ; b. 11";
 export default {
   title: "Asie — juin 2026",
   series: "Générale",
+  shuffle: false,
   questions: [
     {
       id: "q1", title: "Nombres", subtitle: "Notation scientifique",

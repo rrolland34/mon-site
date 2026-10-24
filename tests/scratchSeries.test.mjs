@@ -9,11 +9,35 @@ import { storeAnswerForCorrections } from '../core/answerHistory.js';
 import { createEvaluationContent } from '../core/export/exportContent.js';
 import { createEvaluationStatement, createEvaluationWithCorrection } from '../core/export/exportEvaluationContent.js';
 import { getScratchCorrection } from '../core/scratch/scratchProgressiveAdapter.js';
+import { startExerciseSession } from '../core/session.js';
 const expected=['triangle équilatéral','triangle rectangle','triangle rectangle isocèle','parallélogramme','rectangle','losange','carré','triangle isocèle'];
 
-test('série enregistrée : huit questions dans l’ordre et une représentation unique',()=>{
-  assert.equal(loadExercise('scratch_reconnaitre_figures'),series);assert.equal(series.shuffle,false);assert.equal(series.questions.length,8);
+test('série enregistrée : huit questions conservées, mélange autorisé et représentation unique',()=>{
+  assert.equal(loadExercise('scratch_reconnaitre_figures'),series);assert.equal(series.questions.length,8);
   series.questions.forEach((q,i)=>{assert.equal(q.answers[0],expected[i]);assert.equal(q.progressiveCorrection.program[0].op,'whenGreenFlagClicked');assert.equal(q.question,scratchStatement(q.progressiveCorrection.program));assert.equal(q.question.includes('<svg'),false);});
+  const before = JSON.stringify(series), sourceIds = series.questions.map(q => q.id);
+  const previousDocument = globalThis.document, previousRandom = Math.random;
+  try {
+    globalThis.document = { getElementById: () => null, querySelector: () => ({ textContent: '' }) };
+    // Un tirage déterministe garantit un ordre différent, sans test aléatoire fragile.
+    Math.random = () => 0;
+    startExerciseSession({ exercice: series, selectedTime: 30, onCloseCorrectionOverlay() {}, onQuestionsReady(questions) {
+      const ids = questions.map(q => q.id);
+      assert.equal(questions.length, 8);
+      assert.equal(new Set(ids).size, 8);
+      assert.deepEqual([...ids].sort(), [...sourceIds].sort());
+      assert.notDeepEqual(ids, sourceIds);
+      for (const question of questions) {
+        const source = series.questions.find(q => q.id === question.id);
+        assert.notEqual(question, source);
+        assert.deepEqual(question, source);
+      }
+    } });
+    assert.equal(JSON.stringify(series), before);
+  } finally {
+    globalThis.document = previousDocument;
+    Math.random = previousRandom;
+  }
 });
 for(const [i,q] of series.questions.entries()) test(`Scratch Q${i+1} : validation, précision, QCM et historique sérialisable`,()=>{
   let input='';globalThis.document={getElementById:()=>({value:input})};

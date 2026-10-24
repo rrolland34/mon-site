@@ -1,4 +1,12 @@
+import remediationSerie6 from '../exercices/remediation_evaluations_nationales_6e_serie_6.js';
+import remediationSerie5 from '../exercices/remediation_evaluations_nationales_6e_serie_5.js';
+import remediationSerie4 from '../exercices/remediation_evaluations_nationales_6e_serie_4.js';
+import remediationSerie3 from '../exercices/remediation_evaluations_nationales_6e_serie_3.js';
+import remediationSerie2 from '../exercices/remediation_evaluations_nationales_6e_serie_2.js';
+import remediationSerie1 from '../exercices/remediation_evaluations_nationales_6e_serie_1.js';
 // core/exerciseLoader.js
+import statistiques from '../exercices/statistiques.js';
+import reperageTempsDurees from '../exercices/reperage_temps_durees.js';
 import scratchFigures from "../exercices/scratch/reconnaitre_figures.js";
 
 import fractionsDecimales
@@ -78,15 +86,25 @@ import centresEtrangersJuin2026Gen
 
 import polynesieJuin2026Gen
   from "../exercices/dnb/polynesie_juin_2026_gen.js";
+import polynesieJuin2026Pro
+  from "../exercices/dnb/polynesie_juin_2026_pro.js";
 
 import antillesGuyaneJuin2026Gen
   from "../exercices/dnb/antilles_guyane_juin_2026_gen.js";
+import antillesGuyaneJuin2026Pro
+  from "../exercices/dnb/antilles_guyane_juin_2026_pro.js";
 
 import metropoleJuin2026Gen
   from "../exercices/dnb/metropole_juin_2026_gen.js";
+import metropoleJuin2026Pro
+  from "../exercices/dnb/metropole_juin_2026_pro.js";
 
 import polynesieSeptembre2026Gen
   from "../exercices/dnb/polynesie_septembre_2026_gen.js";
+import sujetDeReferenceNum1Septembre2026Gen
+  from "../exercices/dnb/sujet_de_reference_num_1_septembre_2026_gen.js";
+import sujetDeReferenceNum2Septembre2026Gen
+  from "../exercices/dnb/sujet_de_reference_num_2_septembre_2026_gen.js";
 
 import reperageRepereOrthonorme
   from "../exercices/reperage/reperage_repere_orthonorme.js";
@@ -108,7 +126,17 @@ import testQcmLatex
 import test_qcm_latex from "../exercices/tests/test_qcm_latex.js";
 
 const exercises = {
+  sujet_de_reference_num_2_septembre_2026_gen: sujetDeReferenceNum2Septembre2026Gen,
+  sujet_de_reference_num_1_septembre_2026_gen: sujetDeReferenceNum1Septembre2026Gen,
   scratch_reconnaitre_figures: scratchFigures,
+  remediation_evaluations_nationales_6e_serie_6: remediationSerie6,
+  remediation_evaluations_nationales_6e_serie_5: remediationSerie5,
+  remediation_evaluations_nationales_6e_serie_4: remediationSerie4,
+  remediation_evaluations_nationales_6e_serie_3: remediationSerie3,
+  remediation_evaluations_nationales_6e_serie_2: remediationSerie2,
+  remediation_evaluations_nationales_6e_serie_1: remediationSerie1,
+  statistiques,
+  reperage_temps_durees: reperageTempsDurees,
   fractions_decimales: fractionsDecimales,
   ecritures_decimales: ecrituresDecimales,
   decomposition_decimale: decompositionDecimale,
@@ -135,8 +163,11 @@ const exercises = {
   asie_juin_2026_gen: asieJuin2026Gen,
   centres_etrangers_juin_2026_gen: centresEtrangersJuin2026Gen,
   polynesie_juin_2026_gen: polynesieJuin2026Gen,
+  polynesie_juin_2026_pro: polynesieJuin2026Pro,
+  antilles_guyane_juin_2026_pro: antillesGuyaneJuin2026Pro,
   antilles_guyane_juin_2026_gen: antillesGuyaneJuin2026Gen,
   metropole_juin_2026_gen: metropoleJuin2026Gen,
+  metropole_juin_2026_pro: metropoleJuin2026Pro,
   polynesie_septembre_2026_gen: polynesieSeptembre2026Gen,
   reperage_repere_orthonorme: reperageRepereOrthonorme,
   puissances_niveau_1: puissancesNiveau1,

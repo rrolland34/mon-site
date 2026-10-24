@@ -97,6 +97,14 @@ export function getExportStyles() {
     .evaluation-answer {
       margin-top: 16px;
       font-weight: 700;
+      color: red;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Conserver currentColor des figures, sans recolorer les formules MathJax. */
+    .evaluation-answer svg:not(mjx-container svg) {
+      color: #111;
     }
 
     .archive-qcm {

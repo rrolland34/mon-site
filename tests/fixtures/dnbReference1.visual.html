@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contrôle visuel — DNB référence 1</title>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <nav id="qa-controls">
+    <label>Document <select id="document-mode">
+      <option value="direct-correction">Évaluation directe corrigée</option>
+      <option value="direct-statement">Évaluation directe sans corrigé</option>
+      <option value="qcm-correction">Évaluation QCM corrigée</option>
+      <option value="qcm-statement">Évaluation QCM sans corrigé</option>
+      <option value="direct-archive">Archive directe</option>
+      <option value="qcm-archive">Archive QCM</option>
+    </select></label>
+    <button id="print-evaluation" type="button">Imprimer / Enregistrer en PDF</button>
+    <output id="qa-status" aria-live="polite"></output>
+  </nav>
+  <main id="qa-content"></main>
+  <script type="module">
+    import series from '../../exercices/dnb/sujet_de_reference_num_1_septembre_2026_gen.js';
+    import { createEvaluationStatement, createEvaluationWithCorrection } from '../../core/export/exportEvaluationContent.js';
+    import { createEvaluationContent } from '../../core/export/exportContent.js';
+    import { getExportStyles } from '../../core/export/exportStyles.js';
+    import { getCorrectQCMAnswer } from '../../core/answerEvaluation.js';
+    const style = document.createElement('style');
+    style.textContent = getExportStyles() + '@media print { #qa-controls { display:none } }';
+    document.head.append(style);
+    const select = document.getElementById('document-mode');
+    const content = document.getElementById('qa-content');
+    const status = document.getElementById('qa-status');
+    async function render() {
+      status.value = 'Composition…';
+      if (window.MathJax?.startup) await MathJax.startup.promise;
+      window.MathJax?.typesetClear?.([content]);
+      const [answerMode, kind] = select.value.split('-');
+      const userAnswers = series.questions.map(q => ({
+        question: q.question, displayAnswer: q.display_answer,
+        correctAnswer: q.answers[0], answerMode, qcmAnswersOrder: q.possible_answers,
+        correctQCMAnswer: getCorrectQCMAnswer({ question: q })
+      }));
+      const html = kind === 'archive' ? createEvaluationContent({ userAnswers })
+        : kind === 'correction' ? createEvaluationWithCorrection({ exercice: series, answerMode })
+        : createEvaluationStatement({ exercice: series, answerMode });
+      content.innerHTML = `<header class="evaluation-header"><h1>${series.title}</h1></header>${html}`;
+      if (window.MathJax?.startup) await MathJax.startup.promise;
+      await window.MathJax?.typesetPromise?.([content]);
+      const errors = content.querySelectorAll('mjx-merror,[data-mjx-error]').length;
+      status.value = `${content.querySelectorAll('.evaluation-question').length} questions ; ${errors} erreur MathJax`;
+    }
+    select.addEventListener('change', render);
+    document.getElementById('print-evaluation').addEventListener('click', () => window.print());
+    render();
+  </script>
+</body>
+</html>

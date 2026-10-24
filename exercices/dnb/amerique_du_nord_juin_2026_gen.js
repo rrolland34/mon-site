@@ -92,6 +92,7 @@ const q7Answer = String.raw`5\times\cos(60)`;
 export default {
   title: "Amérique du Nord — juin 2026",
   series: "Générale",
+  shuffle: false,
 
   questions: [
     {

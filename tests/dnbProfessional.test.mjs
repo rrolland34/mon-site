@@ -84,7 +84,7 @@ test("figures : repère existant et dix secteurs équiprobables avec aiguille",(
  assert.match(oldStyle,/fill="none"/);
 });
 const bank=createDnbBank(getDnbSources());
-for(const [names,size] of [[['Professionnelle'],19],[['Générale'],80],[['Générale','Professionnelle'],99]]) {
+for(const [names,size] of [[['Professionnelle'],46],[['Générale'],98],[['Générale','Professionnelle'],144]]) {
  test(`banque réelle ${names.join(' + ')} : ${size} questions, sans mutation ni doublon`,()=>{
   const sources=new Set(names);
   const domains=getDnbDomains(bank,sources);

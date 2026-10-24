@@ -57,6 +57,7 @@ export function storeAnswerForCorrections({
       qcmClass:
         currentQuestion.qcmClass ??
         null,
+      ...(currentQuestion.qcmRenderAnswer ? { qcmRenderAnswer: currentQuestion.qcmRenderAnswer } : {}),
 
       qcmAnswersOrder:
         currentQuestion.qcmAnswersOrder

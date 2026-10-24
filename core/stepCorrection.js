@@ -5,10 +5,12 @@ export function createStepCorrection({
 }) {
   let currentStepIndex = 0;
   let isActive = false;
+  let isComplete = false;
 
   function start() {
     currentStepIndex = 0;
     isActive = true;
+    isComplete = false;
 
     return currentStepIndex;
   }
@@ -42,12 +44,20 @@ export function createStepCorrection({
     }
 
     currentStepIndex -= 1;
+    isComplete = false;
 
     return currentStepIndex;
   }
 
   function stop() {
     isActive = false;
+  }
+
+  function showAll() {
+    if (!isActive || isComplete) return false;
+    currentStepIndex = stepCount - 1;
+    isComplete = true;
+    return true;
   }
 
   function getCurrentStepIndex() {
@@ -69,6 +79,7 @@ export function createStepCorrection({
     start,
     next,
     previous,
+    showAll,
     stop,
     getCurrentStepIndex,
     getIsActive,

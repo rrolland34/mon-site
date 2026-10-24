@@ -9,7 +9,7 @@ import { executeProgram } from "../core/scratch/scratchGeometry.js";
 import { createAnimationPlayback } from "../core/animationPlayback.js";
 import { createProgressiveCorrectionPlayer, getProgressiveCorrectionSteps } from "../core/progressiveCorrectionPlayer.js";
 import { createStepCorrection } from "../core/stepCorrection.js";
-import { renderStepCorrection } from "../core/stepCorrectionRenderer.js";
+import { renderStepCorrection, createCompleteCorrectionScene } from "../core/stepCorrectionRenderer.js";
 import { storeAnswerForCorrections } from "../core/answerHistory.js";
 import { initializeKeyboardShortcuts } from "../core/keyboardShortcuts.js";
 import { initializeAnswerInput } from "../core/inputEvents.js";
@@ -22,9 +22,16 @@ import { generateThalesExercise } from "../exercices/generators/thalesGenerator.
 import { generateThalesConverseExercise } from "../exercices/generators/thalesConverseGenerator.js";
 import { createThalesCorrectionScenes } from "../exercices/thales/thalesCorrectionScenes.js";
 import { createThalesConverseCorrectionScenes } from "../exercices/thales/thalesConverseCorrectionScenes.js";
+import { generatePythagorasExercise } from "../exercices/generators/pythagorasGenerator.js";
+import { generatePythagorasConverseExercise } from "../exercices/generators/pythagorasConverseGenerator.js";
+import { createPythagorasCorrectionScenes } from "../exercices/pythagore/pythagorasCorrectionScenes.js";
+import { createPythagorasConverseCorrectionScenes } from "../exercices/pythagore/pythagorasConverseCorrectionScenes.js";
 
 const main = (await readFile(new URL("../main.js", import.meta.url), "utf8"))
   .replace(/^import\s[\s\S]*?from\s*["'][^"']+["'];/gm, "");
+const exercisePlayer = await readFile(new URL("../exercise_player.html", import.meta.url), "utf8");
+const timerSource = (await readFile(new URL("../core/timer.js", import.meta.url), "utf8"))
+  .replace(/^export /gm, "");
 
 function fakeDocument() {
   const elements = new Map();
@@ -113,6 +120,7 @@ function setup({ mode = "slideshow", answerMode = "direct", enabled = true, scra
     getCorrectionStep: () => run("correctionStep"),
     onStartCorrections: () => run("startCorrectionsMode()"),
     onAdvanceCorrection: () => run("advanceCorrectionStep()"),
+    onShowCompleteCorrection: () => run("showCompleteCorrection()"),
     onPreviousCorrection: () => run("previousCorrectionStep()"),
     onNextQuestion() {}, clearAwaitingNextQuestion() {},
     isProgressiveCorrectionContext: () => run('exercice.correctionMode === "progressive" && presentationMode === "slideshow" && (inCorrectionMode || correctionStep === "final")')
@@ -315,3 +323,244 @@ test("scènes réelles de Thalès et de sa réciproque : rendu et clavier exista
     assert.equal(JSON.stringify(scenes),original);
   }
 });
+
+for (const answerMode of ["direct", "qcm", "mixed"]) {
+  test(`Maj + Entrée réunit toutes les étapes textuelles et reste local : ${answerMode}`, () => {
+    const app = setup({ answerMode });
+    app.key("Enter", { shiftKey: true });
+    assert.equal(app.draws.length, 0); // La correction n'a pas commencé.
+    app.key();
+    app.key("Enter", { shiftKey: true, repeat: true });
+    assert.equal(app.draws.length, 1);
+    app.key("Enter", { shiftKey: true });
+    const complete = app.draws.at(-1);
+    for (const step of app.fixture.questions[0].progressiveCorrection.steps) {
+      assert.ok(complete.includes(step.html));
+    }
+    assert.equal(app.run("currentCorrectionIndex"), 0);
+    assert.equal(app.highlighted, answerMode !== "direct");
+    const slot = app.doc.getElementById("feedback").children[0];
+    app.key("Enter", { shiftKey: true });
+    assert.equal(app.doc.getElementById("feedback").children[0], slot);
+    assert.equal(app.draws.length, 2);
+    app.key("ArrowUp");
+    assert.equal(app.draws.at(-1), app.fixture.questions[0].progressiveCorrection.steps[1].html);
+    app.key("Enter", { shiftKey: true });
+    assert.equal(app.draws.at(-1), complete);
+    app.key(); // Entrée seule passe normalement à la correction suivante.
+    assert.equal(app.run("currentCorrectionIndex"), 1);
+    const classicCount = app.classic.length;
+    app.key("Enter", { shiftKey: true });
+    assert.equal(app.classic.length, classicCount);
+  });
+}
+
+for (const answerMode of ["direct", "qcm"]) {
+  test(`Scratch : Maj + Entrée termine une animation, révèle la conclusion et annule les trames : ${answerMode}`, () => {
+    const app = setup({ scratch: true, answerMode });
+    app.key();
+    const scene = app.scratchScenes[0];
+    const root = app.doc.getElementById("feedback").children[0];
+    const commands = root.children[1], conclusion = root.children[2];
+    commands.children.find(el => el.textContent === "Lecture automatique").handlers.click();
+    scene.tick(); scene.tick(50);
+    assert.equal(scene.getState().running, true);
+    assert.equal(conclusion.hidden, true);
+    app.key("Enter", { shiftKey: true });
+    assert.equal(scene.getState().ended, true);
+    assert.equal(scene.getState().running, false);
+    assert.equal(scene.getState().progress, 0);
+    assert.equal(scene.getState().index, scene.execution.trace.length);
+    assert.deepEqual(scene.execution.trace.at(-1).after, scene.execution.final);
+    assert.equal(scene.callbacks.size, 0);
+    assert.equal(conclusion.hidden, false);
+    assert.equal(conclusion.innerHTML, app.fixture.questions[0].progressiveCorrection.conclusion);
+    assert.equal(app.highlighted, answerMode === "qcm");
+    const state = scene.getState();
+    app.key("Enter", { shiftKey: true }); scene.tick(1000);
+    assert.deepEqual(scene.getState(), state);
+    assert.equal(app.run("currentCorrectionIndex"), 0);
+    app.key("ArrowUp");
+    assert.equal(conclusion.hidden, true);
+    app.key("Enter", { shiftKey: true });
+    assert.equal(conclusion.hidden, false);
+    app.key();
+    assert.equal(app.run("currentCorrectionIndex"), 1);
+    assert.equal(scene.disposed, true);
+  });
+}
+
+test("Maj + Entrée reste inactif sur la garde, en mode réponse et en correction classique", () => {
+  for (const options of [{}, { mode: "response" }, { enabled: false }, { scratch: true, mode: "response" }]) {
+    const app = setup(options);
+    app.run("waitingForCorrectionStart = true; inCorrectionMode = false;");
+    app.key("Enter", { shiftKey: true });
+    assert.equal(app.run("waitingForCorrectionStart"), true);
+    assert.equal(app.run("inCorrectionMode"), false);
+    app.run("waitingForCorrectionStart = false; inCorrectionMode = true;");
+    if (Object.keys(options).length === 0) continue;
+    app.key();
+    const classicCount = app.classic.length;
+    app.key("Enter", { shiftKey: true });
+    assert.equal(app.classic.length, classicCount);
+    assert.equal(app.draws.length, 0);
+    assert.equal(app.scratchScenes.length, 0);
+    assert.equal(app.run("currentCorrectionIndex"), 0);
+  }
+});
+
+test("tout afficher depuis la dernière étape conserve les étapes précédentes et le nettoyage MathJax", () => {
+  const { doc } = fakeDocument(); globalThis.document = doc; globalThis.window = {};
+  const cleared = [];
+  globalThis.MathJax = { typesetClear(nodes) { cleared.push(nodes); } };
+  const container = doc.createElement("div"), scenes = [];
+  const steps = series.questions[0].progressiveCorrection.steps;
+  const player = createProgressiveCorrectionPlayer({ container, steps, render({ scene }) { scenes.push(scene); } });
+  assert.equal(player.showAll(), false);
+  player.start({ atEnd: true });
+  assert.equal(player.showAll(), true);
+  assert.equal(scenes.length, 2);
+  steps.forEach(step => assert.ok(scenes.at(-1).html.includes(step.html)));
+  assert.equal(player.showAll(), false);
+  assert.equal(player.next(), false);
+  assert.equal(cleared.length, 1);
+  player.dispose();
+  assert.equal(player.showAll(), false);
+  assert.equal(cleared.length, 2);
+  delete globalThis.MathJax;
+});
+
+function setupClassicExercise({ family, exercise, mode = "slideshow" }) {
+  const { doc, listeners } = fakeDocument(); globalThis.document = doc; globalThis.window = {};
+  const figures = [], intervals = new Map();
+  let intervalId = 0, overlays = 0, validated = 0;
+  const container = doc.createElement("div");
+  const context = vm.createContext({
+    document: doc,
+    exerciseConfig: { family: family === "thalesParallel" ? "thales" : family === "pythagorasContrapositive" ? "pythagorasConverse" : family },
+    currentExercise: null, exerciseContent: container,
+    createThalesCorrectionScenes, createThalesConverseCorrectionScenes,
+    createPythagorasCorrectionScenes, createPythagorasConverseCorrectionScenes,
+    createStepCorrection, createCompleteCorrectionScene, renderStepCorrection,
+    renderExerciseFigure(figure) { figures.push(figure); return '<svg aria-label="figure finale" />'; },
+    drawCurrentThalesArrow() {}, hideCorrectionOverlay() {},
+    showCorrectionOverlay() { overlays++; }, validateCurrentResponse() { validated++; },
+    initializeKeyboardShortcuts,
+    startButton: doc.getElementById("start"), restartButton: doc.getElementById("restart"),
+    exportExerciseButton: doc.getElementById("export-exercise"),
+    timeSlider: doc.getElementById("time-slider"), pauseButton: doc.getElementById("pause-timer"),
+    selectedTime: 60, presentationMode: mode, waitingForCorrection: false,
+    generateCurrentExercise: () => exercise, displayExercise() {}, setModeButtonsDisabled() {},
+    requestAnimationFrame: fn => fn(),
+    setInterval(fn) { intervals.set(++intervalId, fn); return intervalId; },
+    clearInterval(id) { intervals.delete(id); }
+  });
+  const run = code => vm.runInContext(code, context);
+  run('let stepCorrection = null; let correctionSteps = [];');
+  run(timerSource);
+  // Vrais callbacks de démarrage/redémarrage, expiration et navigation ; rendu
+  // initial et horloge simulés, rendu des corrections et chronomètre réels.
+  run(exercisePlayer.slice(exercisePlayer.indexOf("    function handleTimeUp()"), exercisePlayer.indexOf("    function renderExerciseFigure(")));
+  run(exercisePlayer.slice(exercisePlayer.indexOf("    function startStepCorrection()"), exercisePlayer.indexOf("    function getCorrectionFactory()")));
+  run(exercisePlayer.slice(exercisePlayer.indexOf("    startButton.addEventListener("), exercisePlayer.lastIndexOf("  </script>")));
+  const press = (key = "Enter", shiftKey = false, props = {}) => {
+    const event = { key, shiftKey, ...props, preventDefault() {} };
+    listeners.forEach(fn => fn(event));
+  };
+  return { run, press, figures, container, doc,
+    start: () => doc.getElementById("start").handlers.click(),
+    restart: () => doc.getElementById("restart").handlers.click(),
+    tick() { assert.equal(intervals.size, 1); [...intervals.values()][0](); },
+    get activeTimers() { return intervals.size; },
+    get overlays() { return overlays; }, get validated() { return validated; }
+  };
+}
+
+for (const [family, generate, scenesFor] of [
+  ["pythagoras", generatePythagorasExercise, createPythagorasCorrectionScenes],
+  ["pythagorasConverse", () => generatePythagorasConverseExercise("converse"), createPythagorasConverseCorrectionScenes],
+  ["pythagorasContrapositive", () => generatePythagorasConverseExercise("contrapositive"), createPythagorasConverseCorrectionScenes],
+  ["thales", generateThalesExercise, createThalesCorrectionScenes],
+  ["thalesParallel", generateThalesExercise, createThalesCorrectionScenes],
+  ["thalesConverse", generateThalesConverseExercise, createThalesConverseCorrectionScenes]
+]) {
+  test(`exercise_player réel : question, correction complète, figure finale et redémarrage de ${family}`, () => {
+    const exercise = generate();
+    if (family.startsWith("thales") && family !== "thalesConverse") exercise.requiresParallelProof = family === "thalesParallel";
+    const scenes = scenesFor(exercise), original = JSON.stringify(exercise);
+    const app = setupClassicExercise({ family, exercise });
+    const { run, press, figures, container } = app;
+    press("Enter", true); // Avant Commencer, aucun exercice actif.
+    assert.equal(app.overlays, 0);
+    assert.equal(app.activeTimers, 0);
+    app.start();
+    assert.equal(app.activeTimers, 1);
+    press(); // Entrée seule ne passe pas la question.
+    press("ArrowDown");
+    press("Enter", true, { repeat: true });
+    press("Enter", true, { target: { closest: () => ({ tag: "button" }) } });
+    assert.equal(app.overlays, 0);
+    assert.equal(app.activeTimers, 1);
+    run("pauseTimer()");
+    press("Enter", true); // Même si le chronomètre était en pause.
+    assert.equal(run("getIsPaused()"), false);
+    assert.equal(app.activeTimers, 0);
+    assert.equal(app.overlays, 1);
+    assert.equal(run("waitingForCorrection"), true);
+    press("Enter", true);
+    assert.equal(app.overlays, 1);
+    assert.equal(run("stepCorrection"), null);
+    press();
+    press("Enter", true);
+    assert.equal(run("stepCorrection.getIsLastStep()"), true);
+    assert.deepEqual(figures.at(-1), scenes.at(-1).figure);
+    const complete = createCompleteCorrectionScene(scenes, { cumulative: true });
+    assert.ok(complete.html.includes(scenes.at(-1).html));
+    if (family === "thalesParallel") assert.ok(complete.html.includes(scenes.find(scene => scene.id === "parallelConclusion").html));
+    const rendered = container.children.at(-1).innerHTML;
+    assert.equal(rendered, complete.html);
+    assert.equal(figures.length, 2); // Une seule figure finale, sans les états intermédiaires.
+    press("Enter", true);
+    assert.equal(figures.length, 2);
+    press();
+    assert.equal(run("restartButton.style.display"), "inline-block");
+    press("ArrowUp");
+    assert.equal(run("stepCorrection.getCurrentStepIndex()"), scenes.length - 2);
+    press("Enter", true);
+    assert.equal(container.children.at(-1).innerHTML, complete.html);
+    run('presentationMode = "response"; stepCorrection.start();');
+    const count = figures.length;
+    press("Enter", true);
+    assert.equal(figures.length, count);
+    assert.equal(JSON.stringify(exercise), original);
+    run('presentationMode = "slideshow";');
+    const oldCorrection = run("stepCorrection");
+    app.restart();
+    assert.equal(oldCorrection.getIsActive(), false);
+    assert.equal(run("stepCorrection"), null);
+    assert.equal(run("waitingForCorrection"), false);
+    assert.equal(app.activeTimers, 1);
+    press("Enter", true);
+    assert.equal(app.activeTimers, 0);
+    assert.equal(app.overlays, 2);
+    press();
+    assert.notEqual(run("stepCorrection"), oldCorrection);
+  });
+
+  test(`exercise_player en mode réponse : Maj + Entrée inactif pour ${family}`, () => {
+    const app = setupClassicExercise({ family, exercise: generate(), mode: "response" });
+    app.start();
+    app.press("Enter", true);
+    app.press("Enter", true, { repeat: true });
+    app.press();
+    assert.equal(app.run("stepCorrection"), null);
+    assert.equal(app.activeTimers, 1);
+    assert.equal(app.run("getTimeLeft()"), 60);
+    assert.equal(app.validated, 0);
+    for (let i = 0; i < 60; i++) app.tick();
+    assert.equal(app.activeTimers, 0);
+    assert.equal(app.validated, 1);
+    assert.equal(app.overlays, 0);
+    assert.equal(app.run("waitingForCorrection"), false);
+  });
+}

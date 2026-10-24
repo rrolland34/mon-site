@@ -1,0 +1,316 @@
+{
+  "98418f86-746f-423e-b32e-3af5ede3cfc9": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Calcul numérique"
+    ]
+  },
+  "b6d406b1-04ed-4f0c-b131-a735df3242de": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Géométrie"
+    ]
+  },
+  "166aec0f-5e31-4e14-bab8-676d96932d71": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Statistiques"
+    ]
+  },
+  "1ae95472-7143-41b6-b162-493a88448547": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Équations"
+    ]
+  },
+  "db3284cf-ae7b-4f2c-8273-b968f1d7b6ad": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Équations"
+    ]
+  },
+  "9b6f647e-37e8-4c39-aedb-c9f7fba466c1": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "cours",
+    "themes": [
+      "Équations"
+    ]
+  },
+  "b05c10fe-3e3a-4208-9c0c-475359bb2cfa": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Équations"
+    ]
+  },
+  "95f477ce-d90b-428d-ba3f-bf655bd4d20d": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Équations"
+    ]
+  },
+  "1d05e984-00c1-44f8-99c7-0e2c0e55b17d": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Calcul numérique"
+    ]
+  },
+  "43f4f328-7034-4724-9113-50229ae41752": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": [
+      "Calcul numérique"
+    ]
+  },
+  "f72a6382-97e9-4449-822f-b9a15c0c3917": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "00708c99-294d-4dd9-9558-86eb706f9ad7": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "f29ccd9c-5760-4513-a41f-e6402ecc95d7": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "d5656c08-bec9-487e-8446-bf01fb481a3c": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "cbba3cfa-c921-4afe-85d2-561000ae2413": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "7b116dbf-66c6-4833-b167-dd50aea2a90a": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "13630c6b-00d0-4c70-8a35-bf6c09a21864": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "e5c30ffb-e36c-4b06-a219-0908e2e62d3c": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "a3da82c7-4773-4239-accf-01060e65bffd": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "3e59b0b9-10ea-45d0-8aa2-e3dedded768f": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "549032be-f6fd-42ef-ad65-e3f0eacb8d39": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "2177be99-b128-4e84-9234-0c25a2703388": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "45acecdd-1e54-42c5-999a-54e20d8b1cb3": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "1ee5bb6e-8aa4-4ba6-8a3f-827c02f62279": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "87422c9a-a825-4ae6-b681-aa849d37ba71": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "05e6269b-00ce-48fb-aaac-816493090ca2": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "501f5b45-b50b-464d-82df-cf87afc018d0": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "1cfd9992-a2f6-4879-9d1f-8bb4e4097e89": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "64e401d7-04b0-4b17-9ff0-63acf232ad48": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "5e29f13a-8b41-48f1-bc92-85d94bf81f8a": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "26e2ba88-a978-4bbb-bb0a-3905cdae8bc1": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "a7b4760b-63a8-46e4-a1fb-fbacbd09fd69": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "f473f325-b251-4d48-acf5-e9e63fc8d8b3": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "0ce6a577-3d46-4ea1-878f-15dd4ddb1597": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "exercices",
+    "themes": []
+  },
+  "f2268391-099a-450f-88ea-0f719c188ddb": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "87e19d33-07e4-4df5-abc2-81e4637ec17e": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "66d32ec5-2e26-4591-be64-6542036c49f0": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "93ffa01e-7187-4e7c-bd46-c3434120e8f7": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "f7b79eae-4c66-4c8f-a576-ed014f72de9f": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "5740a59a-61d8-443d-acad-ebe630fd8972": {
+    "niveaux": [
+      "6e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "997dbc2c-e0ec-40b4-bf59-dafe0c38333e": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  },
+  "be3b2d0b-5bc6-4571-bc58-4fa9a6169739": {
+    "niveaux": [
+      "3e"
+    ],
+    "type": "automatismes",
+    "themes": []
+  }
+}

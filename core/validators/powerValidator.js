@@ -3,6 +3,7 @@
 export function validatePower({
   userInput,
   expectedValue,
+  expectedBase = null,
   allowOneForZeroExponent = true
 }) {
 
@@ -69,6 +70,10 @@ export function validatePower({
     Number(
       match[3]
     );
+
+  if (expectedBase !== null && base !== expectedBase) {
+    return { valid: false, errorCode: "INVALID_POWER_FORMAT" };
+  }
 
 
   if (

@@ -142,6 +142,7 @@ export function configureQuestionControls({
 
             event.preventDefault();
             event.stopPropagation();
+            if (event.shiftKey) return;
 
             const submitBtn =
               document.getElementById(

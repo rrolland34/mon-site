@@ -22,9 +22,75 @@
     async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
   ></script>
+  <style>
+    .sixieme-page .sixieme-layout {
+      width: calc(100% - 32px);
+      max-width: 1200px;
+      margin: 28px auto;
+    }
+    .sixieme-page .sixieme-domain {
+      display: block;
+      width: 100%;
+      max-width: none;
+      margin: 0 0 24px;
+      padding: clamp(16px, 2.5vw, 28px);
+      background: rgba(255, 255, 255, 0.065);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+    }
+    .sixieme-page .domain-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+      line-height: 1.3;
+      margin: 0 0 22px;
+    }
+    .sixieme-page .domain-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(109, 213, 250, 0.14);
+      color: #6dd5fa;
+    }
+    .sixieme-page .series-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 14px;
+      width: 100%;
+    }
+    .sixieme-page .series-grid .category-btn {
+      width: 100%;
+      min-width: 0;
+      min-height: 76px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      line-height: 1.4;
+    }
+    @media (min-width: 500px) {
+      .sixieme-page .series-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (min-width: 800px) {
+      .sixieme-page .series-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+    @media (min-width: 1200px) {
+      .sixieme-page .series-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+    @media (max-width: 1199px) {
+      .sixieme-page .nav-list { flex-wrap: wrap; gap: 12px; }
+    }
+  </style>
 </head>
 
-<body>
+<body class="sixieme-page">
   <!-- Barre de navigation -->
   <nav class="navbar">
     <ul class="nav-list">
@@ -94,9 +160,10 @@
   </nav>
 
   <!-- Contenu principal -->
-  <main class="container">
-    <section class="buttons-section">
-      <div class="button-row">
+  <main class="container sixieme-layout">
+    <section class="buttons-section sixieme-domain" aria-labelledby="sixieme-domain-1">
+      <h2 id="sixieme-domain-1" class="domain-header"><span class="domain-number">1</span><span>Nombres, calcul et résolution de problèmes</span></h2>
+      <div class="button-row series-grid">
         <button
           type="button"
           class="category-btn"
@@ -187,7 +254,12 @@
           onclick="window.location.href='questions_flash.html?table=chiffres_et_rangs_decimaux'"
           data-exercise="chiffres_et_rangs_decimaux"
         ></button>
+      </div>
+    </section>
 
+    <section class="buttons-section sixieme-domain" aria-labelledby="sixieme-domain-2">
+      <h2 id="sixieme-domain-2" class="domain-header"><span class="domain-number">2</span><span>Grandeurs et mesures</span></h2>
+      <div class="button-row series-grid">
         <button
           type="button"
           class="category-btn"
@@ -209,12 +281,39 @@
           data-exercise="conversions_longueurs"
         ></button>
 
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=reperage_temps_durees'"
+          data-exercise="reperage_temps_durees"></button>
+
         <button
           type="button"
           class="category-btn"
           onclick="window.location.href='questions_flash.html?table=aires_et_unites'"
           data-exercise="aires_et_unites"
         ></button>
+      </div>
+    </section>
+    <section class="buttons-section sixieme-domain" aria-labelledby="remediation-evaluations-nationales-title">
+      <h2 id="remediation-evaluations-nationales-title" class="domain-header">Remédiation des évaluations nationales</h2>
+      <div class="button-row series-grid">
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=remediation_evaluations_nationales_6e_serie_1'"
+          data-exercise="remediation_evaluations_nationales_6e_serie_1"></button>
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=remediation_evaluations_nationales_6e_serie_2'"
+          data-exercise="remediation_evaluations_nationales_6e_serie_2"></button>
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=remediation_evaluations_nationales_6e_serie_3'"
+          data-exercise="remediation_evaluations_nationales_6e_serie_3"></button>
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=remediation_evaluations_nationales_6e_serie_4'"
+          data-exercise="remediation_evaluations_nationales_6e_serie_4"></button>
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=remediation_evaluations_nationales_6e_serie_5'"
+          data-exercise="remediation_evaluations_nationales_6e_serie_5"></button>
+        <button type="button" class="category-btn"
+          onclick="window.location.href='questions_flash.html?table=remediation_evaluations_nationales_6e_serie_6'"
+          data-exercise="remediation_evaluations_nationales_6e_serie_6"></button>
       </div>
     </section>
   </main>

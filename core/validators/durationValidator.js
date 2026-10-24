@@ -230,8 +230,13 @@ function parseDuration(
  */
 export function validateDurationAnswer({
   userInput,
-  validAnswers
+  validAnswers,
+  requiredFormat = null
 }) {
+  if (requiredFormat === 'hoursMinutes' &&
+      !/^\d+h\d{1,2}min$/.test(normalizeDurationInput(userInput))) {
+    return { valid: false, errorCode: 'INVALID_DURATION_STRUCTURE' };
+  }
   const parsedUserAnswer =
     parseDuration(
       userInput

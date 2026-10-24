@@ -74,9 +74,9 @@ test('domaines, restrictions, limites et sélection vide',()=>{
 test('audit de tous les fichiers et métadonnées DNB',async()=>{
   const files=await readdir(new URL('../exercices/dnb/',import.meta.url));
   assert.equal(sources.length,files.filter(f=>f.endsWith('.js')).length);
-  assert.equal(realBank.length,99);
+  assert.equal(realBank.length,144);
   for(const {sourceId,exercise} of sources) assert.equal(loadExercise(sourceId),exercise);
-  assert.equal(new Set(realBank.map(e=>e.generatorId)).size,99);
+  assert.equal(new Set(realBank.map(e=>e.generatorId)).size,144);
   assert.throws(()=>createDnbBank([{sourceId:'x',exercise:{series:'Générale',questions:[{}]}}]));
 });
 test('80 objets originaux et toutes leurs propriétés conservées, sans mutation',()=>{
@@ -100,7 +100,7 @@ test('session existante : même ordre au restart et banque intacte',()=>{
   const before=JSON.stringify(sources);let first;
   for(let i=0;i<2;i++) startExerciseSession({exercice:s,selectedTime:25,isolateQuestions:true,onCloseCorrectionOverlay(){},onQuestionsReady(questions){
     assert.deepEqual(questions.map(q=>q.question),s.questions.map(q=>q.question));
-    assert.ok(questions.every((q,j)=>q!==s.questions[j]&&q.time===25));
+    assert.ok(questions.every((q,j)=>q!==s.questions[j]&&q.time===(q.duration??25)));
     if(first) assert.deepEqual(questions,first);first=questions;
   }});
   assert.equal(JSON.stringify(sources),before);

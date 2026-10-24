@@ -227,13 +227,15 @@ export function createDiskFigure({
 
 export function createStripFigure({
   parts,
-  coloredParts
+  coloredParts,
+  partWidth: requestedPartWidth,
+  rectangleHeight = 40,
+  fillColor = "rgba(255, 215, 0, 0.5)"
 }) {
   const margin = 20;
 
-  const rectangleWidth = 280;
+  const rectangleWidth = requestedPartWidth === undefined ? 280 : parts * requestedPartWidth;
 
-  const rectangleHeight = 40;
 
   const partWidth =
     rectangleWidth / parts;
@@ -250,7 +252,7 @@ export function createStripFigure({
         y="${margin + 30}"
         width="${partWidth}"
         height="${rectangleHeight}"
-        fill="rgba(255, 215, 0, 0.5)"
+        fill="${fillColor}"
       />
     `;
   }
@@ -275,9 +277,9 @@ export function createStripFigure({
 
   return `
     <svg
-      viewBox="0 0 ${rectangleWidth + 2 * margin} 120"
+      viewBox="0 0 ${rectangleWidth + 2 * margin} ${rectangleHeight + 80}"
       width="${rectangleWidth + 2 * margin}"
-      height="120"
+      height="${rectangleHeight + 80}"
       role="img"
       aria-label="Bande partagée en parts égales"
     >

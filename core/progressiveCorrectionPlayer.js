@@ -1,5 +1,5 @@
 import { createStepCorrection } from "./stepCorrection.js";
-import { renderStepCorrection } from "./stepCorrectionRenderer.js";
+import { renderStepCorrection, createCompleteCorrectionScene } from "./stepCorrectionRenderer.js";
 
 // Données éditoriales de confiance, comme question et display_answer.
 // Les kinds inconnus restent des corrections classiques.
@@ -44,7 +44,7 @@ export function createProgressiveCorrectionPlayer({
     }
   }
 
-  function display() {
+  function display({ complete = false } = {}) {
     clearView();
     beforeRender({ isLastStep: progression.getIsLastStep() });
     // Une cible distincte par rendu : un ancien travail MathJax ne peut pas
@@ -54,11 +54,13 @@ export function createProgressiveCorrectionPlayer({
     slot.setAttribute("aria-live", "polite");
     const label = container.ownerDocument.createElement("p");
     label.className = "progressive-correction-counter";
-    label.textContent = `Étape ${progression.getCurrentStepIndex() + 1}/${steps.length}`;
+    label.textContent = complete ? "Correction complète" : `Étape ${progression.getCurrentStepIndex() + 1}/${steps.length}`;
     const content = container.ownerDocument.createElement("div");
     slot.append(label, content);
     container.replaceChildren(slot);
-    render({ container: content, scene: steps[progression.getCurrentStepIndex()] });
+    render({ container: content, scene: complete
+      ? createCompleteCorrectionScene(steps)
+      : steps[progression.getCurrentStepIndex()] });
   }
 
   return {
@@ -80,6 +82,11 @@ export function createProgressiveCorrectionPlayer({
       if (disposed || !progression.getIsActive() || progression.getCurrentStepIndex() === 0) return false;
       progression.previous();
       display();
+      return true;
+    },
+    showAll() {
+      if (disposed || !progression.showAll()) return false;
+      display({ complete: true });
       return true;
     },
     dispose() {

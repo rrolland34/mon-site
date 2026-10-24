@@ -1,5 +1,24 @@
 // core/stepCorrectionRenderer.js
 
+// Les scènes cumulatives contiennent déjà toute la démonstration courante.
+// Une scène sans texte sépare deux démonstrations (par exemple le parallélisme
+// puis Thalès) : conserver la version complète de chacune, sans répétitions.
+export function createCompleteCorrectionScene(scenes, { cumulative = false } = {}) {
+  const contents = [];
+  let pending = "";
+  for (const scene of scenes) {
+    if (cumulative) {
+      if (scene.html) pending = scene.html;
+      else if (pending) { contents.push(pending); pending = ""; }
+    } else if (scene.html) contents.push(scene.html);
+  }
+  if (pending) contents.push(pending);
+  return {
+    ...scenes[scenes.length - 1],
+    html: contents.map(html => `<div>${html}</div>`).join("")
+  };
+}
+
 export function renderStepCorrection({
   container,
   scene,

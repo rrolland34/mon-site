@@ -4,31 +4,42 @@ export function createGridAreaFigure({
   polygonPoints,
   gridWidth = 9,
   gridHeight = 6,
-  cellSize = 50
+  cellSize = 50,
+  gridBounds = null,
+  gridColor = "currentColor",
+  gridStrokeWidth = 1,
+  gridOpacity = 0.35,
+  stroke = "currentColor",
+  strokeWidth = 3,
+  fill = "gold",
+  fillOpacity = 0.5,
+  showUnitCell = true,
+  showLegend = true
 }) {
+  const { xMin = 0, yMin = 0, xMax = gridWidth, yMax = gridHeight } = gridBounds ?? {};
   const width =
-    gridWidth * cellSize;
+    (xMax - xMin) * cellSize;
 
   const height =
-    gridHeight * cellSize;
+    (yMax - yMin) * cellSize;
 
   const points =
     polygonPoints
       .map(
         ([x, y]) =>
-          `${x * cellSize},${height - y * cellSize}`
+          `${(x - xMin) * cellSize},${(yMax - y) * cellSize}`
       )
       .join(" ");
 
   let gridLines = "";
 
   for (
-    let x = 0;
-    x <= gridWidth;
+    let x = Math.ceil(xMin);
+    x <= xMax;
     x += 1
   ) {
     const px =
-      x * cellSize;
+      (x - xMin) * cellSize;
 
     gridLines += `
       <line
@@ -36,20 +47,20 @@ export function createGridAreaFigure({
         y1="0"
         x2="${px}"
         y2="${height}"
-        stroke="currentColor"
-        stroke-width="1"
-        opacity="0.35"
+        stroke="${gridColor}"
+        stroke-width="${gridStrokeWidth}"
+        opacity="${gridOpacity}"
       />
     `;
   }
 
   for (
-    let y = 0;
-    y <= gridHeight;
+    let y = Math.ceil(yMin);
+    y <= yMax;
     y += 1
   ) {
     const py =
-      y * cellSize;
+      gridBounds ? (yMax - y) * cellSize : y * cellSize;
 
     gridLines += `
       <line
@@ -57,16 +68,16 @@ export function createGridAreaFigure({
         y1="${py}"
         x2="${width}"
         y2="${py}"
-        stroke="currentColor"
-        stroke-width="1"
-        opacity="0.35"
+        stroke="${gridColor}"
+        stroke-width="${gridStrokeWidth}"
+        opacity="${gridOpacity}"
       />
     `;
   }
 
   return `
     <svg
-      viewBox="0 0 ${width} ${height + 35}"
+      viewBox="0 0 ${width} ${height + (showLegend ? 35 : 0)}"
       width="100%"
       style="max-width:${width}px;"
       xmlns="http://www.w3.org/2000/svg"
@@ -76,14 +87,14 @@ export function createGridAreaFigure({
 
       <polygon
         points="${points}"
-        fill="gold"
-        fill-opacity="0.5"
-        stroke="currentColor"
-        stroke-width="3"
+        fill="${fill}"
+        fill-opacity="${fillOpacity}"
+        stroke="${stroke}"
+        stroke-width="${strokeWidth}"
         stroke-linejoin="round"
       />
 
-      <rect
+      ${showUnitCell ? `<rect
         x="0"
         y="${height - cellSize}"
         width="${cellSize}"
@@ -92,16 +103,16 @@ export function createGridAreaFigure({
         fill-opacity="0.5"
         stroke="currentColor"
         stroke-width="3"
-      />
+      />` : ''}
 
-      <text
+      ${showLegend ? `<text
         x="0"
         y="${height + 28}"
         font-size="20"
         fill="currentColor"
       >
         1 cm
-      </text>
+      </text>` : ''}
     </svg>
   `;
 }

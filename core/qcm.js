@@ -39,6 +39,7 @@ function getQCMAnswers(question) {
 export function formatQCMAnswer(
   answer,
   question) {
+  if (typeof question?.qcmRenderAnswer === 'function') return question.qcmRenderAnswer(answer);
   const normalizedAnswer =
     String(answer);
 
@@ -348,7 +349,8 @@ export function displayQCMOptions(
 
   qcmButtonsContainer.classList.remove(
     "proportionality-graph-qcm",
-    "qcm-two-columns"
+    "qcm-two-columns",
+    "time-clock-qcm"
   );
 
   if (
@@ -400,6 +402,11 @@ export function displayQCMOptions(
         question
       );
     btn.dataset.answer = String(answer);
+    if (question.qcmClass === 'time-clock-qcm') {
+      const label = document.createElement('span');
+      label.textContent = String.fromCharCode(65 + qcmButtonsContainer.children.length);
+      btn.appendChild(label);
+    }
 
     if (disable) {
       btn.disabled = true;
