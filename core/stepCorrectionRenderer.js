@@ -1,3 +1,4 @@
+import { renderMath, clearMath } from "./mathRendering.js";
 // core/stepCorrectionRenderer.js
 
 // Les scènes cumulatives contiennent déjà toute la démonstration courante.
@@ -22,12 +23,14 @@ export function createCompleteCorrectionScene(scenes, { cumulative = false } = {
 export function renderStepCorrection({
   container,
   scene,
-  renderFigure
+  renderFigure,
+  onReady
 }) {
   if (!container || !scene) {
     return;
   }
 
+  clearMath(container);
   container.innerHTML = "";
 
   const sceneLayout =
@@ -103,13 +106,12 @@ export function renderStepCorrection({
     );
   }
 
-  if (
-    window.MathJax &&
-    typeof MathJax.typesetPromise ===
-      "function"
-  ) {
-    MathJax.typesetPromise([
-      container
-    ]);
-  }
+  // Snapshot targets: late MathJax work only sees the old, detached scene.
+  const targets = Array.from(container.children);
+  const isCurrent = () => container.isConnected !== false &&
+    targets.every(target => Array.from(container.children).includes(target));
+  return renderMath(container, { targets }).then(rendered => {
+    if (isCurrent()) onReady?.({ rendered, isCurrent });
+    return rendered;
+  });
 }

@@ -1818,26 +1818,8 @@
         return;
       }
 
-      const drawArrow = () =>
-        drawThalesCorrespondenceArrow(
-          exerciseContent
-        );
-
-      if (
-        window.MathJax &&
-        typeof MathJax.typesetPromise ===
-          "function"
-      ) {
-        MathJax.typesetPromise([
-          exerciseContent
-        ]).then(drawArrow);
-      } else {
-        requestAnimationFrame(
-          drawArrow
-        );
-      }
+      drawThalesCorrespondenceArrow(exerciseContent);
     }
-
     function startStepCorrection() {
       waitingForCorrection =
         false;
@@ -1889,7 +1871,13 @@
         stepCorrection
           .getCurrentStepIndex();
 
+      const activeCorrection = stepCorrection;
       renderStepCorrection({
+        onReady: () => {
+          if (stepCorrection === activeCorrection && activeCorrection.getIsActive()) {
+            drawCurrentThalesArrow(correctionSteps[currentStepIndex]);
+          }
+        },
         container:
           exerciseContent,
 
@@ -1902,11 +1890,6 @@
           renderExerciseFigure
       });
 
-      drawCurrentThalesArrow(
-        correctionSteps[
-          currentStepIndex
-        ]
-      );
     }
 
     function advanceStepCorrection() {
@@ -1938,7 +1921,13 @@
         stepCorrection
           .getCurrentStepIndex();
 
+      const activeCorrection = stepCorrection;
       renderStepCorrection({
+        onReady: () => {
+          if (stepCorrection === activeCorrection && activeCorrection.getIsActive()) {
+            drawCurrentThalesArrow(correctionSteps[currentStepIndex]);
+          }
+        },
         container:
           exerciseContent,
 
@@ -1951,11 +1940,6 @@
           renderExerciseFigure
       });
 
-      drawCurrentThalesArrow(
-        correctionSteps[
-          currentStepIndex
-        ]
-      );
     }
 
     function showCompleteStepCorrection() {
@@ -1987,7 +1971,13 @@
         stepCorrection
           .getCurrentStepIndex();
 
+      const activeCorrection = stepCorrection;
       renderStepCorrection({
+        onReady: () => {
+          if (stepCorrection === activeCorrection && activeCorrection.getIsActive()) {
+            drawCurrentThalesArrow(correctionSteps[currentStepIndex]);
+          }
+        },
         container:
           exerciseContent,
 
@@ -2000,11 +1990,6 @@
           renderExerciseFigure
       });
 
-      drawCurrentThalesArrow(
-        correctionSteps[
-          currentStepIndex
-        ]
-      );
     }
 
     function getCorrectionFactory() {
