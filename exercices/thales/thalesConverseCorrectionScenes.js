@@ -8,129 +8,9 @@ import {
   createProofHtml
 } from "../../core/proofDisplay.js";
 
-function proofLines(
-  proof,
-  endIndex
-) {
-  const lines = [];
-
-  /*
-   * Ligne 1 :
-   * les droites sécantes.
-   */
-  if (endIndex >= 0) {
-    lines.push(
-      proof[0].correct
-    );
-  }
-
-  /*
-   * Ligne 2 :
-   * les deux rapports.
-   * "d'autre part" vient compléter
-   * la ligne au clic suivant.
-   */
-  if (endIndex >= 1) {
-    let ratios =
-      proof[1].correct;
-
-    if (endIndex >= 2) {
-      ratios +=
-        ` ${proof[2].correct}`;
-    }
-
-    lines.push(
-      ratios
-    );
-  }
-
-  /*
-   * Ligne 3 :
-   * vérification par les produits en croix.
-   * Le deuxième calcul vient compléter
-   * la ligne au clic suivant.
-   */
-  if (endIndex >= 3) {
-    let crossProducts =
-      proof[3].correct;
-
-    if (endIndex >= 4) {
-      crossProducts +=
-        ` ${proof[4].correct}`;
-    }
-
-    lines.push(
-      crossProducts
-    );
-  }
-
-  /*
-   * Ligne 4 :
-   * égalité des rapports.
-   */
-  if (endIndex >= 5) {
-    lines.push(
-      proof[5].correct
-    );
-  }
-
-  /*
-   * Ligne 5 :
-   * première partie de la phrase
-   * sur l'ordre des points.
-   *
-   * Exemple :
-   * Comme, de plus, les points J, P, S,
-   * d'une part, et J, N, A,
-   * d'autre part, sont
-   */
-  if (endIndex >= 6) {
-    lines.push(
-      proof[6].correctionParts[0]
-    );
-  }
-
-  /*
-   * Ligne 6 :
-   * seconde partie de la phrase
-   * sur l'ordre des points.
-   *
-   * Au clic suivant, la réciproque
-   * du théorème de Thalès vient
-   * compléter cette même ligne.
-   */
-  if (endIndex >= 6) {
-    let sameOrder =
-      proof[6].correctionParts[1];
-
-    if (endIndex >= 7) {
-      sameOrder +=
-        ` ${proof[7].correct}`;
-    }
-
-    lines.push(
-      sameOrder
-    );
-  }
-
-  /*
-   * Ligne 7 :
-   * conclusion complète.
-   *
-   * Exemple :
-   * on déduit que les droites
-   * (PN) et (SA) sont parallèles.
-   */
-  if (endIndex >= 8) {
-    lines.push(
-      `${proof[8].correct} ${proof[9].correct}`
-    );
-  }
-
-  return createProofHtml(
-    lines.join("<br>")
-  );
-}
+import {
+  createCorrectionPresentation
+} from "../../core/correctionPresentation.js";
 
 function createFigure(
   exercise,
@@ -327,179 +207,132 @@ export function createThalesConverseCorrectionScenes(
       exercise
     );
 
-  return [
-    /*
-     * 1. La figure seule apparaît
-     * après l'écran Correction.
-     */
-    {
-      id: "statementFigure",
-      figure: neutralFigure
-    },
+  const { scenes } = createCorrectionPresentation({
+    blocks: [
+      {
+        id: "secantStatement",
+        html: proof[0].correct,
+        from: "secantStatement"
+      },
+      {
+        id: "firstRatio",
+        html: proof[1].correct,
+        from: "firstRatio"
+      },
+      {
+        id: "secondRatio",
+        html: proof[2].correct,
+        from: "secondRatio",
+        before: " "
+      },
+      {
+        id: "firstCrossProduct",
+        html: proof[3].correct,
+        from: "firstCrossProduct"
+      },
+      {
+        id: "secondCrossProduct",
+        html: proof[4].correct,
+        from: "secondCrossProduct",
+        before: " "
+      },
+      {
+        id: "ratioEquality",
+        html: proof[5].correct,
+        from: "ratioEquality"
+      },
+      {
+        id: "pointOrderIntroduction",
+        html: proof[6].correctionParts[0],
+        from: "sameOrder"
+      },
+      {
+        id: "sameOrder",
+        html: proof[6].correctionParts[1],
+        from: "sameOrder"
+      },
+      {
+        id: "thalesConverseStatement",
+        html: proof[7].correct,
+        from: "thalesConverseStatement",
+        before: " "
+      },
+      {
+        id: "parallelConclusion",
+        html: `${proof[8].correct} ${proof[9].correct}`,
+        from: "parallelConclusion"
+      }
+    ],
+    stages: [
+      {
+        id: "statementFigure",
+        figure: neutralFigure
+      },
+      {
+        id: "intersectionPoint",
+        figure: intersectionFigure
+      },
+      {
+        id: "secantStatement",
+        figure: intersectionFigure
+      },
+      {
+        id: "firstSmallSegment",
+        figure: firstSmallSegmentFigure
+      },
+      {
+        id: "firstRatioSegments",
+        figure: firstRatioFigure
+      },
+      {
+        id: "firstRatio",
+        figure: firstRatioFigure
+      },
+      {
+        id: "secondSmallSegment",
+        figure: secondSmallSegmentFigure
+      },
+      {
+        id: "secondRatioSegments",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "secondRatio",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "firstCrossProduct",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "secondCrossProduct",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "ratioEquality",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "sameOrder",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "thalesConverseStatement",
+        figure: bothRatiosFigure
+      },
+      {
+        id: "parallelConclusion",
+        figure: bothRatiosFigure
+      }
+    ],
+    separator: "<br>",
+    wrap: createProofHtml
+  });
 
-    /*
-     * 2. P apparaît en rouge.
-     */
-    {
-      id: "intersectionPoint",
-      figure: intersectionFigure
-    },
-
-    /*
-     * 3. Première phrase de la démonstration.
-     */
-    {
-      id: "secantStatement",
-      figure: intersectionFigure,
-      html: proofLines(
-        proof,
-        0
-      )
-    },
-
-    /*
-     * 4. PQ seul en vert.
-     */
-    {
-      id: "firstSmallSegment",
-      figure: firstSmallSegmentFigure,
-      html: proofLines(
-        proof,
-        0
-      )
-    },
-
-    /*
-     * 5. PR bleu, puis PQ vert redessiné par-dessus.
-     */
-    {
-      id: "firstRatioSegments",
-      figure: firstRatioFigure,
-      html: proofLines(
-        proof,
-        0
-      )
-    },
-
-    /*
-     * 6. Premier quotient.
-     */
-    {
-      id: "firstRatio",
-      figure: firstRatioFigure,
-      html: proofLines(
-        proof,
-        1
-      )
-    },
-
-    /*
-     * 7. PS seul en vert.
-     * Les colorations précédentes restent visibles.
-     */
-    {
-      id: "secondSmallSegment",
-      figure: secondSmallSegmentFigure,
-      html: proofLines(
-        proof,
-        1
-      )
-    },
-
-    /*
-     * 8. PT bleu, puis PS vert redessiné par-dessus.
-     */
-    {
-      id: "secondRatioSegments",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        1
-      )
-    },
-
-    /*
-     * 9. Second quotient.
-     */
-    {
-      id: "secondRatio",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        2
-      )
-    },
-
-    /*
-     * 10. Premier produit en croix.
-     */
-    {
-      id: "firstCrossProduct",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        3
-      )
-    },
-
-    /*
-     * 11. Second produit en croix.
-     */
-    {
-      id: "secondCrossProduct",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        4
-      )
-    },
-
-    /*
-     * 12. Égalité des rapports.
-     */
-    {
-      id: "ratioEquality",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        5
-      )
-    },
-
-    /*
-     * 13. Ordre des points.
-     */
-    {
-      id: "sameOrder",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        6
-      )
-    },
-
-    /*
-     * 14. Réciproque du théorème de Thalès.
-     */
-    {
-      id: "thalesConverseStatement",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        7
-      )
-    },
-
-    /*
-     * 15. Conclusion.
-     */
-    {
-      id: "parallelConclusion",
-      figure: bothRatiosFigure,
-      html: proofLines(
-        proof,
-        8
-      )
-    }
-  ];
+  // Conserver l'absence de html sur les deux scènes de figure seule.
+  return scenes.map(scene => {
+    if (scene.html !== "") return scene;
+    const { html, ...figureScene } = scene;
+    return figureScene;
+  });
 }
