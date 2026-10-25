@@ -1,7 +1,7 @@
 // exercices/thales/thalesConverseCorrectionScenes.js
 
 import {
-  createThalesConverseProof
+  createThalesParallelismProof, createThalesConverseProof
 } from "./thalesConverseProof.js";
 
 import {
@@ -169,13 +169,18 @@ function createBothRatiosFigure(
   );
 }
 
-export function createThalesConverseCorrectionScenes(
-  exercise
+function buildCorrectionScenes(
+  exercise, historical = false
 ) {
   const proof =
-    createThalesConverseProof(
+    (historical ? createThalesConverseProof : createThalesParallelismProof)(
       exercise
     );
+
+  const order = proof.find(step => step.id === "sameOrder");
+  const theorem = proof.find(step => ["thalesConverseStatement", "thalesContrapositiveStatement"].includes(step.id));
+  const introduction = proof.find(step => step.id === "conclusionIntroduction");
+  const conclusion = proof.at(-1);
 
   const neutralFigure =
     createFigure(
@@ -237,30 +242,30 @@ export function createThalesConverseCorrectionScenes(
         before: " "
       },
       {
-        id: "ratioEquality",
+        id: proof[5].id,
         html: proof[5].correct,
-        from: "ratioEquality"
+        from: proof[5].id
       },
-      {
+      ...(order?.correctionParts ? [{
         id: "pointOrderIntroduction",
-        html: proof[6].correctionParts[0],
-        from: "sameOrder"
+        html: order.correctionParts[0],
+        from: order.id
       },
       {
-        id: "sameOrder",
-        html: proof[6].correctionParts[1],
-        from: "sameOrder"
+        id: order.id,
+        html: order.correctionParts[1],
+        from: order.id
+      }] : order ? [{ id: order.id, html: order.correct, from: order.id }] : []),
+      {
+        id: theorem.id,
+        html: theorem.correct,
+        from: theorem.id,
+        before: historical && order ? " " : "<br>"
       },
       {
-        id: "thalesConverseStatement",
-        html: proof[7].correct,
-        from: "thalesConverseStatement",
-        before: " "
-      },
-      {
-        id: "parallelConclusion",
-        html: `${proof[8].correct} ${proof[9].correct}`,
-        from: "parallelConclusion"
+        id: conclusion.id,
+        html: `${introduction.correct} ${conclusion.correct}`,
+        from: conclusion.id
       }
     ],
     stages: [
@@ -309,19 +314,19 @@ export function createThalesConverseCorrectionScenes(
         figure: bothRatiosFigure
       },
       {
-        id: "ratioEquality",
+        id: proof[5].id,
+        figure: bothRatiosFigure
+      },
+      ...(order ? [{
+        id: order.id,
+        figure: bothRatiosFigure
+      }] : []),
+      {
+        id: theorem.id,
         figure: bothRatiosFigure
       },
       {
-        id: "sameOrder",
-        figure: bothRatiosFigure
-      },
-      {
-        id: "thalesConverseStatement",
-        figure: bothRatiosFigure
-      },
-      {
-        id: "parallelConclusion",
+        id: conclusion.id,
         figure: bothRatiosFigure
       }
     ],
@@ -335,4 +340,12 @@ export function createThalesConverseCorrectionScenes(
     const { html, ...figureScene } = scene;
     return figureScene;
   });
+}
+
+export function createThalesConverseCorrectionScenes(exercise) {
+  return buildCorrectionScenes(exercise, true);
+}
+
+export function createThalesParallelismCorrectionScenes(exercise) {
+  return buildCorrectionScenes(exercise);
 }

@@ -21,7 +21,7 @@ import { createEvaluationStatement, createEvaluationWithCorrection } from "../co
 import { generateThalesExercise } from "../exercices/generators/thalesGenerator.js";
 import { generateThalesConverseExercise } from "../exercices/generators/thalesConverseGenerator.js";
 import { createThalesCorrectionScenes } from "../exercices/thales/thalesCorrectionScenes.js";
-import { createThalesConverseCorrectionScenes } from "../exercices/thales/thalesConverseCorrectionScenes.js";
+import { createThalesConverseCorrectionScenes, createThalesParallelismCorrectionScenes } from "../exercices/thales/thalesConverseCorrectionScenes.js";
 import { generatePythagorasExercise } from "../exercices/generators/pythagorasGenerator.js";
 import { generatePythagorasConverseExercise } from "../exercices/generators/pythagorasConverseGenerator.js";
 import { createPythagorasCorrectionScenes } from "../exercices/pythagore/pythagorasCorrectionScenes.js";
@@ -439,7 +439,7 @@ function setupClassicExercise({ family, exercise, mode = "slideshow" }) {
     document: doc,
     exerciseConfig: { family: family === "thalesParallel" ? "thales" : family === "pythagorasContrapositive" ? "pythagorasConverse" : family },
     currentExercise: null, exerciseContent: container,
-    createThalesCorrectionScenes, createThalesConverseCorrectionScenes,
+    createThalesCorrectionScenes, createThalesConverseCorrectionScenes, createThalesParallelismCorrectionScenes,
     createPythagorasCorrectionScenes, createPythagorasConverseCorrectionScenes,
     createStepCorrection, createCompleteCorrectionScene, renderStepCorrection,
     renderExerciseFigure(figure) { figures.push(figure); return '<svg aria-label="figure finale" />'; },
@@ -482,7 +482,7 @@ for (const [family, generate, scenesFor] of [
   ["pythagorasContrapositive", () => generatePythagorasConverseExercise("contrapositive"), createPythagorasConverseCorrectionScenes],
   ["thales", generateThalesExercise, createThalesCorrectionScenes],
   ["thalesParallel", generateThalesExercise, createThalesCorrectionScenes],
-  ["thalesConverse", generateThalesConverseExercise, createThalesConverseCorrectionScenes]
+  ["thalesConverse", generateThalesConverseExercise, createThalesParallelismCorrectionScenes]
 ]) {
   test(`exercise_player réel : question, correction complète, figure finale et redémarrage de ${family}`, () => {
     const exercise = generate();

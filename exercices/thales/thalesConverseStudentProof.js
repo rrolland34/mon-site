@@ -2,6 +2,7 @@
 import {
   melangerTableau
 } from "../../core/tableaux.js";
+import { getThalesParallelismComparison } from "./thalesConverseProof.js";
 
 function formatNumber(value) {
   return String(
@@ -35,10 +36,13 @@ function fraction(numerator, denominator) {
   );
 }
 
-export function createThalesConverseStudentProof(
+function buildThalesParallelismStudentProof(
   proof,
-  exercise
+  exercise,
+  historical
 ) {
+  const comparison = getThalesParallelismComparison(exercise);
+  const legacy = historical && comparison.isParallel;
   const [A, B, C, D, E] = exercise.pointNames;
 
   const AB = `${A}${B}`;
@@ -104,21 +108,23 @@ export function createThalesConverseStudentProof(
     numerator1,
     denominator1,
     numerator2,
-    denominator2
+    denominator2,
+    operator = "=",
+    prefix = equalityPrefix
   ) {
     return (
-      equalityPrefix +
+      prefix +
       `\\(\\boxed{` +
       `\\dfrac{\\mathrm{${numerator1}}}` +
       `{\\mathrm{${denominator1}}}` +
-      `=` +
+      operator +
       `\\dfrac{\\mathrm{${numerator2}}}` +
       `{\\mathrm{${denominator2}}}` +
       `}\\)`
     );
   }
 
-  const equalityStep = {
+  let equalityStep = {
     id: proof[5].id,
 
     correct: createEquality(
@@ -145,11 +151,42 @@ export function createThalesConverseStudentProof(
     ]
   };
 
+  let geometry = proof[0], comparisonStep = equalityStep, relationStep = proof[6];
+  let theorem = proof[7], conclusion = proof[9];
+  if (!legacy) {
+    const equal = createEquality(AB, AD, AC, AE, "=", "Donc ");
+    const different = createEquality(AB, AD, AC, AE, "\\ne", "Donc ");
+    equalityStep = {
+      id: "ratioComparison",
+      correct: comparison.isParallel ? equal : different,
+      distractors: [comparison.isParallel ? different : equal,
+        "\\(\\text{On ne peut pas comparer les deux rapports.}\\)"]
+    };
+    geometry = { ...proof[0], correct: proof[0].correct.split("<br>")[0] };
+    comparisonStep = equalityStep;
+    relationStep = comparison.isParallel ? proof.find(step => step.id === "sameOrder") : null;
+    const invoke = name => `\\(\\text{D'après }\\mathbf{\\text{${name}}}\\text{,}\\)`;
+    const reciprocal = invoke("la réciproque du théorème de Thalès");
+    const contrapositive = invoke("la contraposée du théorème de Thalès");
+    theorem = {
+      id: "parallelismTheorem",
+      correct: comparison.isParallel ? reciprocal : contrapositive,
+      distractors: [comparison.isParallel ? contrapositive : reciprocal, invoke("le théorème de Pythagore")]
+    };
+    const conclude = text => `\\(\\text{les droites }(\\mathrm{${B}${C}})\\text{ et }(\\mathrm{${D}${E}})\\ \\mathbf{\\text{${text}}}.\\)`;
+    const parallel = conclude("sont parallèles"), nonParallel = conclude("ne sont pas parallèles");
+    conclusion = {
+      id: "parallelismConclusion",
+      correct: comparison.isParallel ? parallel : nonParallel,
+      distractors: [comparison.isParallel ? nonParallel : parallel, conclude("sont perpendiculaires")]
+    };
+  }
+
   return [
     /*
      * 1. Droites sécantes.
      */
-    createChoiceStep(proof[0]),
+    createChoiceStep(geometry),
 
     /*
      * 2. Premier rapport.
@@ -183,7 +220,7 @@ export function createThalesConverseStudentProof(
     {
       id: "firstCrossProduct",
       kind: "crossProductInput",
-      label: "Vérifions l'égalité :",
+      label: legacy ? "Vérifions l'égalité :" : "Calculons les produits en croix :",
       leftSource: {
         stepId: "firstRatio",
         field: "numerator"
@@ -192,7 +229,7 @@ export function createThalesConverseStudentProof(
         stepId: "secondRatio",
         field: "denominator"
       },
-      answer: proof[3].answer
+      answer: legacy ? proof[3].answer : comparison.first / comparison.scale
     },
 
     /*
@@ -210,27 +247,37 @@ export function createThalesConverseStudentProof(
         stepId: "secondRatio",
         field: "numerator"
       },
-      answer: proof[4].answer
+      answer: legacy ? proof[4].answer : comparison.second / comparison.scale
     },
 
     /*
      * 6. Égalité des rapports.
      */
-    createChoiceStep(equalityStep),
+    createChoiceStep(comparisonStep),
 
     /*
      * 7. Ordre des points.
      */
-    createChoiceStep(proof[6]),
+    ...(relationStep ? [createChoiceStep(relationStep)] : []),
 
     /*
      * 8. Réciproque de Thalès.
      */
-    createChoiceStep(proof[7]),
+    createChoiceStep(theorem),
 
     /*
      * 9. Conclusion.
      */
-    createChoiceStep(proof[9])
+    createChoiceStep(conclusion)
   ];
+}
+
+export function createThalesParallelismStudentProof(proof, exercise) {
+  return buildThalesParallelismStudentProof(proof, exercise, false);
+}
+
+// L'adaptateur conserve exactement les menus et le hasard historiques.
+// Les nouvelles données de contraposée empruntent la branche commune.
+export function createThalesConverseStudentProof(proof, exercise) {
+  return buildThalesParallelismStudentProof(proof, exercise, true);
 }

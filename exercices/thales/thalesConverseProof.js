@@ -161,7 +161,8 @@ function createSecondRatioLine(
 }
 
 function createFirstCrossProductLine(
-  exercise
+  exercise,
+  comparison
 ) {
   const {
     PQ,
@@ -169,15 +170,15 @@ function createFirstCrossProductLine(
   } = exercise.values;
 
   const product =
-    roundToTenth(
+    comparison.isParallel ? roundToTenth(
       PQ * PT
-    );
+    ) : comparison.first / comparison.scale;
 
-  return proofLine(
+  const line = proofLine(
     "firstCrossProduct",
     "calculation",
 
-    "\\(\\text{Vérifions l'égalité : }" +
+    (comparison.isParallel ? "\\(\\text{Vérifions l'égalité : }" : "\\(\\text{Calculons les produits en croix : }") +
     `${formatNumber(PQ)}` +
     "\\times" +
     `${formatNumber(PT)}` +
@@ -187,10 +188,13 @@ function createFirstCrossProductLine(
       "math"
     )}}\\)`
   );
+  if (!comparison.isParallel) line.answer = product;
+  return line;
 }
 
 function createSecondCrossProductLine(
-  exercise
+  exercise,
+  comparison
 ) {
   const {
     PR,
@@ -198,11 +202,11 @@ function createSecondCrossProductLine(
   } = exercise.values;
 
   const product =
-    roundToTenth(
+    comparison.isParallel ? roundToTenth(
       PR * PS
-    );
+    ) : comparison.second / comparison.scale;
 
-  return proofLine(
+  const line = proofLine(
     "secondCrossProduct",
     "calculation",
 
@@ -216,11 +220,14 @@ function createSecondCrossProductLine(
       "math"
     )}}.\\)`
   );
+  if (!comparison.isParallel) line.answer = product;
+  return line;
 }
 
-export function createThalesConverseProof(
+function createHistoricalProof(
   exercise
 ) {
+  const comparison = getThalesParallelismComparison(exercise);
   const {
     A,
     B,
@@ -239,7 +246,7 @@ export function createThalesConverseProof(
     exercise
   );
 
-  return [
+  const proof = [
     proofLine(
       "secantStatement",
       "reasoning",
@@ -276,11 +283,13 @@ export function createThalesConverseProof(
     ),
 
     createFirstCrossProductLine(
-      exercise
+      exercise,
+      comparison
     ),
 
     createSecondCrossProductLine(
-      exercise
+      exercise,
+      comparison
     ),
 
     proofLine(
@@ -398,4 +407,119 @@ export function createThalesConverseProof(
       ]
     )
   ];
+  if (!comparison.isParallel) {
+    const ratio = operator =>
+      `\\dfrac{\\mathrm{${AB}}}{\\mathrm{${AD}}}${operator}` +
+      `\\dfrac{\\mathrm{${AC}}}{\\mathrm{${AE}}}`;
+    proof[0].correct += `<br>${createThalesParallelismAlignment(exercise).correct}`;
+    proof[5] = proofLine("crossProductComparison", "reasoning",
+      "\\(\\text{Les produits en croix sont différents : }" +
+      `\\boxed{${formatAnswer(comparison.first / comparison.scale, "math")}\\ne` +
+      `${formatAnswer(comparison.second / comparison.scale, "math")}}.\\)`,
+      [
+        `\\(\\text{Les produits en croix sont égaux, donc }\\boxed{${ratio("=")}}.\\)`,
+        `\\(\\text{Les produits en croix sont différents, donc }\\boxed{${ratio("=")}}.\\)`
+      ]);
+    proof[6] = proofLine("ratioInequality", "reasoning",
+      `\\(\\text{On en déduit que }\\boxed{${ratio("\\ne")}}.\\)`,
+      [
+        `\\(\\text{On en déduit que }\\boxed{${ratio("=")}}.\\)`,
+        "\\(\\text{On ne peut pas comparer les deux rapports.}\\)"
+      ]);
+    proof[7] = proofLine("thalesContrapositiveStatement", "reasoning",
+      "\\(\\text{D'après }\\mathbf{\\text{la contraposée du théorème de Thalès}}\\text{,}\\)",
+      [
+        "\\(\\text{D'après }\\mathbf{\\text{la réciproque du théorème de Thalès}}\\text{,}\\)",
+        "\\(\\text{D'après }\\mathbf{\\text{le théorème de Pythagore}}\\text{,}\\)"
+      ]);
+    proof[9] = proofLine("nonParallelConclusion", "reasoning",
+      `\\((\\mathrm{${BC}})\\text{ et }(\\mathrm{${DE}})\\ ` +
+      "\\mathbf{\\text{ne sont pas parallèles}}.\\)",
+      [
+        `\\((\\mathrm{${BC}})\\text{ et }(\\mathrm{${DE}})\\ \\mathbf{\\text{sont parallèles}}.\\)`,
+        `\\((\\mathrm{${BC}})\\text{ et }(\\mathrm{${DE}})\\ \\mathbf{\\text{sont perpendiculaires}}.\\)`
+      ]);
+  }
+  return proof;
+}
+
+// Adaptateur public historique : la branche réciproque conserve tous ses objets.
+export function createThalesConverseProof(exercise) {
+  return getThalesParallelismComparison(exercise).isParallel
+    ? createHistoricalProof(exercise) : createThalesParallelismProof(exercise);
+}
+
+// La progression du lecteur évolue sans réécrire les références historiques.
+export function createThalesParallelismProof(exercise) {
+  const proof = createHistoricalProof(exercise);
+  const { isParallel } = getThalesParallelismComparison(exercise);
+  const { A, B, C, D, E, AB, AD, AC, AE } = getNames(exercise);
+  proof[0].correct = proof[0].correct.split("<br>")[0];
+  const relation = operator => `\\(\\text{Donc }\\boxed{` +
+    `\\dfrac{\\mathrm{${AB}}}{\\mathrm{${AD}}}${operator}` +
+    `\\dfrac{\\mathrm{${AC}}}{\\mathrm{${AE}}}}.\\)`;
+  proof[5] = proofLine(isParallel ? "ratioEquality" : "ratioInequality", "reasoning",
+    relation(isParallel ? "=" : "\\ne"), [
+      relation(isParallel ? "\\ne" : "="),
+      "\\(\\text{On ne peut pas comparer les deux rapports.}\\)"
+    ]);
+  if (isParallel) {
+    // En papillon A est entre B et D, et entre C et E. Les deux
+    // transversales ont le même ordre, même après rotation ou réflexion.
+    const butterfly = exercise.thalesLayout === "butterfly";
+    const first = butterfly ? [B, A, D] : [A, B, D];
+    const second = butterfly ? [C, A, E] : [A, C, E];
+    const names = points => points.map(p => `\\mathrm{${p}}`).join(",");
+    const order = (other, wording) => `\\(\\text{Les points }${names(first)}` +
+      `\\text{ et les points }${names(other)}\\text{ sont }` +
+      `\\mathbf{\\text{${wording}}}.\\)`;
+    proof[6] = proofLine("sameOrder", "reasoning", order(second, "dans le même ordre"), [
+      order(second, "dans l'ordre inverse"),
+      order([second[0], second[2], second[1]], "dans le même ordre")
+    ]);
+  } else {
+    // L'inégalité des rapports suffit : aucune condition d'ordre supplémentaire.
+    proof.splice(6, 1);
+  }
+  const theorem = proof.find(step => /Statement$/.test(step.id) && step.id !== "secantStatement");
+  theorem.correct = theorem.correct.replace("{d'après }", "{D'après }");
+  proof.find(step => step.id === "conclusionIntroduction").correct = "\\(\\text{les droites}\\)";
+  return proof;
+}
+
+/** Calcul exact partagé par les preuves et leurs menus, sans état ni hasard.
+ * Les produits fournis par le générateur sont utilisés après vérification de
+ * leur cohérence. Les exercices historiques sans métadonnées restent acceptés.
+ */
+export function getThalesParallelismComparison(exercise) {
+  const integers = ["PQ", "PR", "PS", "PT"].map(key => {
+    const value = exercise.values[key], integer = Math.round(value * 10);
+    if (!Number.isSafeInteger(integer) || integer <= 0 || integer / 10 !== value) {
+      throw new Error(`Longueur de Thalès invalide en dixièmes : ${key}`);
+    }
+    return integer;
+  });
+  const [ab, ad, ac, ae] = integers;
+  const first = ab * ae, second = ad * ac;
+  if (!Number.isSafeInteger(first) || !Number.isSafeInteger(second)) {
+    throw new Error("Produits de Thalès hors du domaine des entiers sûrs.");
+  }
+  const metadata = exercise.parallelism;
+  if (metadata && (metadata.lengthScale !== 10 || metadata.productScale !== 100 ||
+      metadata.products?.first !== first || metadata.products?.second !== second ||
+      metadata.isParallel !== (first === second))) {
+    throw new Error("Métadonnées de parallélisme incohérentes avec les longueurs.");
+  }
+  return { first: metadata?.products.first ?? first, second: metadata?.products.second ?? second,
+    scale: 100, isParallel: first === second };
+}
+
+export function createThalesParallelismAlignment(exercise) {
+  const { A, B, C, D, E } = getNames(exercise);
+  return proofLine("alignmentStatement", "reasoning",
+    `\\(\\text{Les points }\\mathrm{${A}},\\mathrm{${B}},\\mathrm{${D}}\\text{ sont alignés, }` +
+    `\\text{ainsi que les points }\\mathrm{${A}},\\mathrm{${C}},\\mathrm{${E}}.\\)`, [
+    `\\(\\text{Les points }\\mathrm{${A}},\\mathrm{${B}},\\mathrm{${C}}\\text{ sont alignés.}\\)`,
+    `\\(\\text{Les points }\\mathrm{${B}},\\mathrm{${C}},\\mathrm{${D}}\\text{ sont alignés.}\\)`
+  ]);
 }
