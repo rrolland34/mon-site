@@ -1,6 +1,7 @@
 // core/timer.js
 
 let timerInterval = null;
+let timerGeneration = 0;
 let timeLeft = 0;
 
 let timerCallback = null;
@@ -78,6 +79,7 @@ export function hideTimerImmediately() {
  * du compte à rebours.
  */
 function clearTimerInterval() {
+  timerGeneration++;
   if (timerInterval !== null) {
     clearInterval(timerInterval);
     timerInterval = null;
@@ -92,8 +94,10 @@ function clearTimerInterval() {
  */
 function startTimerInterval() {
   clearTimerInterval();
+  const generation = timerGeneration;
 
   timerInterval = setInterval(() => {
+    if (generation !== timerGeneration) return;
     timeLeft -= 1;
 
     updateTimerDisplay();

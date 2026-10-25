@@ -156,6 +156,8 @@ function showDnbPlayer(visible) {
 }
 
 
+import { setAnswerControlsLocked } from "./core/answerLock.js";
+
 // État de la session
 let tableauSelectionne = [];
 let currentQuestionIndex = 0;
@@ -181,6 +183,16 @@ let waitingForCorrectionStart = false;
 let inCorrectionMode = false;
 let correctionStep = "question";
 let awaitingNextQuestion = false;
+let responseLocked = true;
+
+function setResponseLocked(locked) {
+  responseLocked = locked;
+  setAnswerControlsLocked(locked, {
+    containers: ["user-answer", "multi-answer-container", "qcm-buttons", "math-keyboard"]
+      .map(id => document.getElementById(id)).concat(document.querySelector(".cartesian-plane")),
+    submitButton: document.getElementById("submit")
+  });
+}
 let showCorrectAnswer = true;
 let progressiveCorrectionPlayer = null;
 let disposeQuestionInteraction = null;
@@ -194,6 +206,7 @@ function disposeProgressiveCorrection() {
 
 // Handlers
 function handleQCMSelection(answer) {
+  if (responseLocked) return;
   selectedQCMAnswer = answer;
 }
 
@@ -226,6 +239,8 @@ function displayQuestion() {
   }
   const q = 
     tableauSelectionne[currentQuestionIndex];
+
+  setResponseLocked(false);
 
   currentQuestionAnswerMode =
 
@@ -323,6 +338,7 @@ function displayQuestion() {
 
         onSelect:
           point => {
+            if (responseLocked) return;
             selectedCartesianPoint =
               point;
           }
@@ -367,6 +383,7 @@ function displayQuestion() {
 
           onSelect:
             point => {
+              if (responseLocked) return;
               selectedQCMAnswer =
                 point;
             }
@@ -517,10 +534,12 @@ function saveUnansweredQuestion() {
 }
 
 function checkAnswer() {
-  if (awaitingNextQuestion) {
+  if (responseLocked || awaitingNextQuestion || !tableauSelectionne[currentQuestionIndex]) {
     return;
   }
 
+  // Acquérir le verrou avant toute évaluation ou mise à jour du score.
+  setResponseLocked(true);
   stopTimer();
   disposeQuestionInteraction?.();
   disposeQuestionInteraction = null;

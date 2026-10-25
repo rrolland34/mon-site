@@ -102,7 +102,8 @@ function setup({ mode = "slideshow", answerMode = "direct", enabled = true, scra
     getCorrectQCMAnswer: ({ question }) => question.answers[0],
     evaluateCurrentAnswer: () => ({ userAnswer: "18", correctAnswer: "18", isCorrect: true }),
     checkAnswerSmart: ({ userInput, validAnswers }) => ({ correct: validAnswers.includes(userInput) }),
-    updateAnswerUI() {}
+    updateAnswerUI() {},
+    setAnswerControlsLocked() {}
   });
   vm.runInContext(main, context);
   const run = code => vm.runInContext(code, context);
@@ -250,7 +251,7 @@ test("mode response et série non activée : même alternance classique",()=>{
 
 test("historique : vraie voie checkAnswer et voie saveUnansweredQuestion",()=>{
   const app=setup();
-  app.run('userAnswers = []; currentQuestionIndex = 0; currentQuestionAnswerMode = "direct"; processAnswer = () => {}; checkAnswer();');
+  app.run('userAnswers = []; responseLocked = false; currentQuestionIndex = 0; currentQuestionAnswerMode = "direct"; processAnswer = () => {}; checkAnswer();');
   assert.equal(app.run("userAnswers[0].progressiveCorrection"),app.fixture.questions[0].progressiveCorrection);
   assert.equal(app.run("userAnswers[0].userAnswer"),"18");
   app.run("saveUnansweredQuestion()");

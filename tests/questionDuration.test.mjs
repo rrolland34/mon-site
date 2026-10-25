@@ -69,6 +69,7 @@ function setup({ mode = "slideshow", shuffle = false, generated = false, beforeR
       options.onPresentationModeChange(mode, false);
     },
     initializeMathKeyboard() {},
+    setAnswerControlsLocked() {},
     displayQuestionContent() {}, configureQuestionControls() {}, updateMathKeyboard() {},
     hideCorrectionOverlay() {}, showCorrectionOverlay() {}, displayFinalScore() {},
     getDisplayAnswer: q => q.answers[0],

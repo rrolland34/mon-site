@@ -249,6 +249,10 @@
 
     .proof-choice[data-step-id="secantStatement"],
     .proof-choice[data-step-id="ratioEquality"],
+    .proof-choice[data-step-id="crossProductComparison"],
+    .proof-choice[data-step-id="ratioComparison"],
+    .proof-choice[data-step-id="parallelismTheorem"],
+    .proof-choice[data-step-id="parallelismConclusion"],
     .proof-choice[data-step-id="sameOrder"],
     .proof-choice[data-step-id="thalesConverseStatement"],
     .proof-choice[data-step-id="parallelConclusion"] {
@@ -680,6 +684,8 @@
 
   <script type="module">
 
+    import { setAnswerControlsLocked } from "./core/answerLock.js";
+
     import {
       displayPresentationMode,
       setModeButtonsDisabled
@@ -771,11 +777,11 @@
     } from "./exercices/thales/thalesCorrectionScenes.js";
 
     import {
-      generateThalesConverseExercise
-    } from "./exercices/generators/thalesConverseGenerator.js";
+      generateThalesParallelism
+    } from "./exercices/generators/thalesParallelismGenerator.js";
 
     import {
-      createThalesConverseCorrectionScenes
+      createThalesParallelismCorrectionScenes
     } from "./exercices/thales/thalesConverseCorrectionScenes.js";
 
     import {
@@ -787,11 +793,11 @@
     } from "./exercices/thales/thalesStudentProof.js";
 
     import {
-      createThalesConverseProof
+      createThalesParallelismProof
     } from "./exercices/thales/thalesConverseProof.js";
 
     import {
-      createThalesConverseStudentProof
+      createThalesParallelismStudentProof
     } from "./exercices/thales/thalesConverseStudentProof.js";
 
     import {
@@ -864,9 +870,10 @@
         family ===
         "thalesConverse"
       ) {
-        return generateThalesConverseExercise(
+        return generateThalesParallelism({
+          mode: exerciseConfig.mode ?? "reciproque",
           type
-        );
+        });
       }
 
       if (
@@ -1157,12 +1164,12 @@
           "thalesConverse"
         ) {
           proof =
-            createThalesConverseProof(
+            createThalesParallelismProof(
               generatedExercise
             );
 
           studentProof =
-            createThalesConverseStudentProof(
+            createThalesParallelismStudentProof(
               proof,
               generatedExercise
             );
@@ -1349,7 +1356,14 @@
             "answer-feedback"
           );
 
+        let responseLocked = false;
         validateCurrentResponse = function() {
+          if (responseLocked) return;
+          responseLocked = true;
+          setAnswerControlsLocked(true, {
+            containers: [proofContainer, userAnswerInput],
+            submitButton: submitAnswerButton
+          });
           stopTimer();
 
         const usesStudentProofValidation =
@@ -1491,12 +1505,22 @@
 
           timeSlider.disabled =
             false;
-        },
+        };
 
         submitAnswerButton.addEventListener(
           "click",
           validateCurrentResponse
         );
+
+        if (exerciseConfig.family === "thalesConverse") {
+          proofContainer.addEventListener("keydown", event => {
+            if (event.key !== "Enter" || event.shiftKey || event.ctrlKey || event.altKey ||
+                event.metaKey || event.isComposing || !event.target.matches("input")) return;
+            event.preventDefault();
+            event.stopPropagation();
+            submitAnswerButton.click();
+          });
+        }
 
         if (userAnswerInput) {
           userAnswerInput.addEventListener(
@@ -1841,7 +1865,7 @@
         "thalesConverse"
       ) {
         correctionSteps =
-          createThalesConverseCorrectionScenes(
+          createThalesParallelismCorrectionScenes(
             currentExercise
           );
       } else if (
@@ -2013,7 +2037,7 @@
 
         case "thalesConverse":
           return (
-            createThalesConverseCorrectionScenes
+            createThalesParallelismCorrectionScenes
           );
 
         default:

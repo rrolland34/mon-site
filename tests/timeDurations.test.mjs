@@ -80,7 +80,8 @@ test('Valider réel : réponse graphique, feedback, historique et score',()=>{
     if(['correct','incorrect'].includes(outcome))drag('minutes',0);
     if(outcome==='forged')element('user-answer').value='une valeur ne suffit pas';
     const response=qcm?selected:element('user-answer').value, history=[];
-    const ctx=vm.createContext({document:doc,window:{},awaitingNextQuestion:false,stopTimer(){},disposeQuestionInteraction:dispose,
+    const ctx=vm.createContext({document:doc,window:{},awaitingNextQuestion:false,responseLocked:false,
+      setResponseLocked(value){ctx.responseLocked=value;},stopTimer(){},disposeQuestionInteraction:dispose,
       tableauSelectionne:[q],currentQuestionIndex:0,currentQuestionAnswerMode:qcm?'qcm':'direct',selectedQCMAnswer:selected,selectedCartesianPoint:null,
       presentationMode:'response',userAnswers:history,score:0,answeredCount:0,selectedQuestionCount:5,showCorrectAnswer:true,
       evaluateCurrentAnswer,storeAnswerForCorrections,displayAnswerFeedback,updateAnswerUI,checkAnswerSmart,
@@ -99,7 +100,8 @@ test('Valider réel : réponse graphique, feedback, historique et score',()=>{
     } else assert.match(qcm?element('feedback').textContent:element('feedback').innerHTML,outcome==='missing'||outcome==='one-hand'?/Réponse non saisie/:/Réponse incorrecte/);
     assert.deepEqual(listeners,{});
     element('submit').handlers.click();assert.equal(ctx.answeredCount,1);
-    ctx.presentationMode='slideshow';ctx.awaitingNextQuestion=false;
+    // Cas indépendant en diaporama : simuler l'état d'une nouvelle question.
+    ctx.presentationMode='slideshow';ctx.awaitingNextQuestion=false;ctx.responseLocked=false;
     element('submit').handlers.click();
     assert.equal(history.length,1);assert.equal(history[0].isCorrect,expectedCorrect);
     assert.equal(history[0].userAnswer,response||'Pas de réponse');
