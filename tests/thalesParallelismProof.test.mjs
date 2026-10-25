@@ -21,7 +21,7 @@ function seeded(seed, build) {
 }
 const exercise = (mode, type = "series-1", seed = 20261024) => seeded(seed, () => generateThalesParallelism({ mode, type })).value;
 
-test("référence indépendante : 160 preuves et menus historiques, textes, choix et tirages identiques", () => {
+test("référence indépendante : 160 preuves et menus historiques, seuls les produits numériques sont corrigés", () => {
   const fixture = JSON.parse(readFileSync(new URL("./fixtures/thalesConverseGenerator.reference.json", import.meta.url), "utf8"));
   for (const { exercise: e } of fixture.cases) {
     const before = historicalProof(e), after = createThalesConverseProof(e);
@@ -84,12 +84,13 @@ for (const type of ["series-1", "series-2", "series-3"]) {
   });
 }
 
-test("produits exacts : 241,28 et 242,88, arrondis historiques conservés à 242,9", () => {
+test("produits exacts : 241,28 et 242,88, y compris dans l'adaptateur historique réciproque", () => {
   const unequal = exercise("contraposee"), equal = exercise("reciproque");
   const proof = createThalesParallelismProof(unequal);
   assert.equal(proof[3].answer, 241.28); assert.equal(proof[4].answer, 242.88);
   assert.ok(proof[5].correct.includes("\\ne"));
-  assert.ok(createThalesConverseProof(equal)[3].correct.includes("242{,}9"));
+  assert.ok(createThalesConverseProof(equal)[3].correct.includes("242{,}88"));
+  assert.equal(createThalesConverseProof(equal)[3].answer, 242.88);
 });
 
 function closeProducts() {

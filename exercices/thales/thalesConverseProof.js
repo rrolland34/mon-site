@@ -170,9 +170,7 @@ function createFirstCrossProductLine(
   } = exercise.values;
 
   const product =
-    comparison.isParallel ? roundToTenth(
-      PQ * PT
-    ) : comparison.first / comparison.scale;
+    comparison.first / comparison.scale;
 
   const line = proofLine(
     "firstCrossProduct",
@@ -188,7 +186,7 @@ function createFirstCrossProductLine(
       "math"
     )}}\\)`
   );
-  if (!comparison.isParallel) line.answer = product;
+  line.answer = product;
   return line;
 }
 
@@ -202,9 +200,7 @@ function createSecondCrossProductLine(
   } = exercise.values;
 
   const product =
-    comparison.isParallel ? roundToTenth(
-      PR * PS
-    ) : comparison.second / comparison.scale;
+    comparison.second / comparison.scale;
 
   const line = proofLine(
     "secondCrossProduct",
@@ -220,7 +216,7 @@ function createSecondCrossProductLine(
       "math"
     )}}.\\)`
   );
-  if (!comparison.isParallel) line.answer = product;
+  line.answer = product;
   return line;
 }
 
@@ -443,7 +439,7 @@ function createHistoricalProof(
   return proof;
 }
 
-// Adaptateur public historique : la branche réciproque conserve tous ses objets.
+// Adaptateur public historique : même progression, produits numériques exacts.
 export function createThalesConverseProof(exercise) {
   return getThalesParallelismComparison(exercise).isParallel
     ? createHistoricalProof(exercise) : createThalesParallelismProof(exercise);
