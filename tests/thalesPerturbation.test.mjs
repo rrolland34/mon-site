@@ -79,7 +79,10 @@ for (const type of types) {
         assert.deepEqual(newStyle, oldStyle);
         assert.equal(tenths(Number(newValue.replace(",", "."))), tenths(b.lengths[key]));
       }
-      if (b.lengthDisplayMode === "parts") assert.ok(["BD", "CE"].includes(p.perturbation.segment));
+      if (b.lengthDisplayMode === "parts") {
+        assert.ok(["BD", "CE"].includes(p.perturbation.segment));
+        assert.ok(bd >= 10 && ce >= 10);
+      }
       else assert.ok(["AD", "AE"].includes(p.perturbation.segment));
       if (b.thalesLayout === "butterfly") {
         assert.ok(b.figureOptions.positionRatio < 0);
@@ -95,19 +98,20 @@ for (const type of types) {
   });
 }
 
-test("limite : une partie de 1,1 refuse -1,5 et reste positive avec -1", () => {
+test("limite : une partie affichée de 1,1 refuse les diminutions sous le minimum de 1", () => {
   const { base, changed } = pair("series-2", 37, 0);
   assert.equal(base.exercise.lengths.BD, 1.1);
-  assert.deepEqual(changed.exercise.parallelism.perturbation, { segment: "BD", delta10: -10, before10: 11, after10: 1 });
-  assert.equal(changed.exercise.lengths.BD, 0.1);
-  assert.equal(tenths(changed.exercise.lengths.AD), tenths(changed.exercise.lengths.AB) + 1);
+  assert.deepEqual(changed.exercise.parallelism.perturbation, { segment: "BD", delta10: 5, before10: 11, after10: 16 });
+  assert.equal(changed.exercise.lengths.BD, 1.6);
+  assert.equal(tenths(changed.exercise.lengths.AD), tenths(changed.exercise.lengths.AB) + 16);
 });
 
 test("limites du tirage : premier et dernier candidats sûrs, signes et cibles distincts", () => {
   for (const type of ["series-1", "series-2", "series-3"]) {
     const first = pair(type, 37, 0).changed.exercise;
     const last = pair(type, 37, 1 - Number.EPSILON).changed.exercise;
-    assert.ok(first.parallelism.perturbation.delta10 < 0);
+    if (type === "series-2") assert.equal(first.parallelism.perturbation.delta10, 5);
+    else assert.ok(first.parallelism.perturbation.delta10 < 0);
     assert.equal(last.parallelism.perturbation.delta10, 15);
     assert.notEqual(first.parallelism.perturbation.segment, last.parallelism.perturbation.segment);
     assert.notEqual(first.parallelism.products.first, first.parallelism.products.second);
@@ -146,11 +150,11 @@ test("figures : tracés et paramètres SVG identiques malgré les nouveaux libel
   }
 });
 
-test("mixte et types inconnus : rejet explicite avant tout tirage", () => {
+test("modes et types inconnus : rejet explicite avant tout tirage", () => {
   const original = Math.random;
   Math.random = () => { throw new Error("unexpected draw"); };
   try {
-    assert.throws(() => generateThalesParallelism({ mode: "mixte", type: "series-1" }), /Mode de parallélisme de Thalès non pris en charge : mixte/);
+    assert.throws(() => generateThalesParallelism({ mode: "unknown", type: "series-1" }), /Mode de parallélisme de Thalès non pris en charge : unknown/);
     assert.throws(() => generateThalesParallelism({ mode: "contraposee", type: "unknown" }), /Type de réciproque de Thalès inconnu/);
   } finally { Math.random = original; }
 });

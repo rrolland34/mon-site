@@ -31,6 +31,18 @@ function expectedResult({ exercise, draws, nextRandomValue }) {
   return { exercise, draws, nextRandomValue };
 }
 
+// Évolution d'énoncé autorisée pour l'API commune et le lecteur uniquement.
+// Les fixtures et les assertions de l'adaptateur historique restent intactes.
+function expectedQuestionResult(item) {
+  const result = structuredClone(expectedResult(item));
+  for (const e of Array.isArray(result.exercise) ? result.exercise : [result.exercise]) {
+    e.statement = e.statement
+      .replace("\\text{Démontrer que les droites }", "\\text{Les droites }")
+      .replace("\\text{ sont parallèles}.\\)", "\\text{ sont-elles parallèles ?}\\)");
+  }
+  return result;
+}
+
 for (const type of types) {
   test(`générateur historique : ${type}, 32 sorties complètes et séquences aléatoires figées`, () => {
     const cases = reference.cases.filter(item => item.type === type);
@@ -127,20 +139,20 @@ test("ancien export : type inconnu rejeté explicitement sans consommer de hasar
 for (const type of types) {
   test(`API commune : mode réciproque et ${type} identiques à la référence historique`, () => {
     for (const item of reference.cases.filter(item => item.type === type)) {
-      assert.deepEqual(capture(item.seed, () => generateThalesParallelism({ mode: "reciproque", type })), expectedResult(item));
+      assert.deepEqual(capture(item.seed, () => generateThalesParallelism({ mode: "reciproque", type })), expectedQuestionResult(item));
     }
   });
 }
 
 test("API commune : séquence de 15 exercices, aucun tirage ajouté pour le choix du mode", () => {
   const item = reference.stream;
-  assert.deepEqual(capture(item.seed, () => item.types.map(type => generateThalesParallelism({ mode: "reciproque", type }))), expectedResult(item));
+  assert.deepEqual(capture(item.seed, () => item.types.map(type => generateThalesParallelism({ mode: "reciproque", type }))), expectedQuestionResult(item));
 });
 
-test("API commune : valeurs par défaut et adaptateur historique équivalents", () => {
+test("API commune : valeurs par défaut, seule la formulation de la question change", () => {
   const item = reference.cases.find(item => item.type === "random");
   for (const options of [undefined, {}, { mode: "reciproque" }, { type: "random" }, { mode: undefined, type: undefined }]) {
-    assert.deepEqual(capture(item.seed, () => generateThalesParallelism(options)), expectedResult(item));
+    assert.deepEqual(capture(item.seed, () => generateThalesParallelism(options)), expectedQuestionResult(item));
   }
 });
 
@@ -149,7 +161,7 @@ test("API commune : modes non implémentés et types inconnus rejetés avant tou
   const original = Math.random;
   Math.random = () => { calls++; throw new Error("unexpected random draw"); };
   try {
-    for (const mode of ["mixte", "converse", "unknown", "", null, false]) {
+    for (const mode of ["converse", "unknown", "", null, false]) {
       assert.throws(() => generateThalesParallelism({ mode }), /Mode de parallélisme de Thalès non pris en charge/);
     }
     assert.throws(() => generateThalesParallelism({ mode: "reciproque", type: "unknown" }), /Type de réciproque de Thalès inconnu/);
@@ -161,7 +173,7 @@ test("API commune : aucune mutation des options et aucun champ de mode dans l'an
   const options = Object.freeze({ mode: "reciproque", type: "series-2" });
   const item = reference.cases.find(item => item.type === options.type);
   const actual = capture(item.seed, () => generateThalesParallelism(options));
-  assert.deepEqual(actual, expectedResult(item));
+  assert.deepEqual(actual, expectedQuestionResult(item));
   assert.deepEqual(options, { mode: "reciproque", type: "series-2" });
   assert.equal("mode" in actual.exercise, false);
   assert.equal("isParallel" in actual.exercise, false);

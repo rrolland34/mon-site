@@ -2,8 +2,7 @@
 
 /*
  * Socle commun des exercices de parallélisme de Thalès.
- * Modes réciproque et contraposée ; ce dernier produit uniquement les données,
- * sans intégration aux preuves ni au lecteur. Le mode mixte reste indisponible.
+ * Modes réciproque, contraposée et mixte à choix indépendant du cas mathématique.
  *
  * Correspondance interne :
  *
@@ -301,7 +300,7 @@ function perturbLengths(values, configuration) {
       const newTotal10 = total10 + delta10;
       // On conserve aussi les différences historiques positives en papillon,
       // sans les interpréter comme des distances entre demi-droites opposées.
-      if (small10 > 0 && newTotal10 > small10) {
+      if (small10 > 0 && newTotal10 - small10 >= (partial ? 10 : 1)) {
         candidates.push({ target, delta10, total10, small10, newTotal10 });
       }
     }
@@ -563,7 +562,7 @@ function createStatement(
   values,
   pointNames,
   unit,
-  mode
+  historicalStatement
 ) {
   const [
     A,
@@ -603,7 +602,7 @@ function createStatement(
   const DE =
     `${D}${E}`;
 
-  const question = mode === "contraposee"
+  const question = !historicalStatement
     ? "\\(\\text{Les droites }" +
       `(\\mathrm{${BC}})` +
       "\\text{ et }" +
@@ -660,22 +659,22 @@ function createStatement(
 /**
  * Génère les données historiques sans ajouter de métadonnées à leur contrat.
  * type choisit la configuration : series-1, series-2, series-3, random ou
- * l'alias converse. mode est indépendant : "reciproque" ou "contraposee".
- * Les modes inconnus, dont "mixte", sont rejetés avant tout tirage.
+ * l'alias converse. mode est indépendant : reciproque, contraposee ou mixte.
+ * historicalStatement est réservé à l'adaptateur historique de réciproque.
  * L'ordre des tirages reste : configuration, longueurs, lettres, unité.
  * Les longueurs servent aux libellés ; les figures restent schématiques.
  * En contraposée, un tirage supplémentaire suit les lettres et l'unité.
- * Seules ces nouvelles sorties possèdent parallelism : produits entiers à
+ * Les sorties contraposée et mixte possèdent parallelism : produits entiers à
  * diviser par productScale, perturbation en dixièmes et résultat mathématique.
  * ratio y vaut null : il n'existe plus de rapport commun aux deux triangles.
  * Les coefficients a1/a2/a3/a4 décrivent alors la construction initiale.
- * Les preuves historiques ne sont pas encore adaptées à ces nouvelles données.
  */
 export function generateThalesParallelism({
   mode = "reciproque",
-  type = "random"
+  type = "random",
+  historicalStatement = false
 } = {}) {
-  if (mode !== "reciproque" && mode !== "contraposee") {
+  if (!["reciproque", "contraposee", "mixte"].includes(mode)) {
     throw new Error(`Mode de parallélisme de Thalès non pris en charge : ${mode}`);
   }
   const configuration =
@@ -694,19 +693,25 @@ export function generateThalesParallelism({
 
   // Aucun tirage supplémentaire en réciproque. Les paramètres graphiques et
   // les lettres sont déjà fixés avant de sélectionner la perturbation.
-  const perturbed = mode === "contraposee"
+  const mathematicalMode = mode === "mixte"
+    ? (Math.random() < 0.5 ? "reciproque" : "contraposee")
+    : mode;
+  const perturbed = mathematicalMode === "contraposee"
     ? perturbLengths(proportionalValues, configuration)
     : null;
   const values = completeDerivedValues(perturbed?.values ?? proportionalValues);
   let parallelism;
-  if (perturbed) {
+  if (perturbed || mode === "mixte") {
     const products = compareCrossProducts(values);
-    if (products.first === products.second) {
-      throw new Error("La perturbation conserve une égalité des produits en croix.");
+    const isParallel = products.first === products.second;
+    if (isParallel !== (mathematicalMode === "reciproque")) {
+      throw new Error("Le résultat des produits en croix ne correspond pas au cas demandé.");
     }
     parallelism = {
-      mode, isParallel: false, lengthScale: 10, productScale: 100,
-      products, perturbation: perturbed.perturbation
+      mode: mathematicalMode, isParallel, lengthScale: 10, productScale: 100,
+      products,
+      ...(mode === "mixte" ? { requestedMode: "mixte" } : {}),
+      ...(perturbed ? { perturbation: perturbed.perturbation } : {})
     };
   }
 
@@ -717,7 +722,7 @@ export function generateThalesParallelism({
         values,
         pointNames,
         unit,
-        mode
+        historicalStatement && mode === "reciproque"
       ),
 
     pointNames,

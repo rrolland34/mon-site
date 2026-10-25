@@ -45,6 +45,39 @@ export const exerciseConfigs = {
       "thalesConverse"
   },
 
+  "thales-contrapositive-nested": {
+    title: "Contraposée du théorème de Thalès : triangles emboîtés",
+    type: "series-1", family: "thalesConverse", mode: "contraposee"
+  },
+  "thales-contrapositive-nested-parts": {
+    title: "Contraposée du théorème de Thalès : longueurs partielles",
+    type: "series-2", family: "thalesConverse", mode: "contraposee"
+  },
+  "thales-contrapositive-butterfly": {
+    title: "Contraposée du théorème de Thalès : configuration papillon",
+    type: "series-3", family: "thalesConverse", mode: "contraposee"
+  },
+  "thales-contrapositive-random": {
+    title: "Contraposée du théorème de Thalès : configuration aléatoire",
+    type: "random", family: "thalesConverse", mode: "contraposee"
+  },
+  "thales-parallelism-nested": {
+    title: "Réciproque ou contraposée de Thalès : triangles emboîtés",
+    type: "series-1", family: "thalesConverse", mode: "mixte"
+  },
+  "thales-parallelism-nested-parts": {
+    title: "Réciproque ou contraposée de Thalès : longueurs partielles",
+    type: "series-2", family: "thalesConverse", mode: "mixte"
+  },
+  "thales-parallelism-butterfly": {
+    title: "Réciproque ou contraposée de Thalès : configuration papillon",
+    type: "series-3", family: "thalesConverse", mode: "mixte"
+  },
+  "thales-parallelism-random": {
+    title: "Réciproque ou contraposée de Thalès : configuration aléatoire",
+    type: "random", family: "thalesConverse", mode: "mixte"
+  },
+
   "thales-nested": {
     title:
       "Théorème de Thalès : triangles emboîtés",
