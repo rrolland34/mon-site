@@ -41,7 +41,7 @@ export function generateDnbSeries(bank, criteria, random = Math.random) {
   const count = criteria.count;
   const capacity = [...pools.values()].reduce((sum, pool) => sum + pool.length, 0);
   if (!criteria.sources.size || !pools.size || !Number.isInteger(count) ||
-      count < pools.size || count > capacity || [...pools.values()].some(pool => !pool.length)) {
+      count < 1 || count > capacity || [...pools.values()].some(pool => !pool.length)) {
     throw new Error("Sélectionnez des domaines disponibles et un nombre de questions valide.");
   }
   const quotas = new Map([...pools.keys()].map(title => [title, 0]));

@@ -18,7 +18,7 @@
   >
 </head>
 
-<body>
+<body class="catalog-page">
   <nav class="navbar">
     <ul class="nav-list">
       <li class="nav-item">
@@ -87,17 +87,19 @@
   </nav>
 
   <!-- Contenu principal -->
-  <main class="container">
-    <section class="buttons-section">
-
-      <div
-        id="exercise-buttons"
-        class="button-row"
-      >
-      </div>
-
+  <main id="exercise-buttons" class="container catalog-layout">
+    <section class="buttons-section catalog-card" aria-labelledby="pythagore-title">
+      <h2 id="pythagore-title" class="domain-header">Pythagore</h2>
+      <div id="pythagore-buttons" class="button-row series-grid"></div>
     </section>
-
+    <section class="buttons-section catalog-card" aria-labelledby="thales-title">
+      <h2 id="thales-title" class="domain-header">Thalès</h2>
+      <div id="thales-buttons" class="button-row series-grid"></div>
+    </section>
+    <section class="buttons-section catalog-card" aria-labelledby="trigonometrie-title">
+      <h2 id="trigonometrie-title" class="domain-header">Trigonométrie</h2>
+      <div id="trigonometrie-buttons" class="button-row series-grid"></div>
+    </section>
   </main>
 
   <script type="module">
@@ -141,9 +143,11 @@
           button
         );
 
-        exerciseButtons.appendChild(
-          link
-        );
+        // Répartition visuelle uniquement : titres et destinations restent issus du registre.
+        const groupId = config.family === "trigonometry" ? "trigonometrie-buttons"
+          : ["pythagoras", "pythagorasConverse"].includes(config.family) ? "pythagore-buttons"
+          : ["thales", "thalesConverse"].includes(config.family) ? "thales-buttons" : null;
+        (document.getElementById(groupId) ?? exerciseButtons).appendChild(link);
       }
     );
   </script>

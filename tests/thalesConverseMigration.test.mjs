@@ -1,3 +1,4 @@
+import { correctionHtml, CORRECTION_RED_CSS } from '../core/correctionColors.js';
 import test from "node:test";
 import assert from "node:assert/strict";
 import { generateThalesConverseExercise } from "../exercices/generators/thalesConverseGenerator.js";
@@ -133,14 +134,14 @@ test("clavier : première scène, aller/retour, bornes, dernière scène et corr
   press("ArrowUp"); press("ArrowUp"); assert.equal(controller.getCurrentStepIndex(), 0);
   for (let i = 1; i < 15; i++) {
     press("Enter");
-    assert.equal(app.container.children.at(-1).innerHTML, before[i].html ?? "");
-    assert.equal(app.container.children[0].children[0].innerHTML, createThalesFigure(before[i].figure));
+    assert.equal(app.container.children.at(-1).innerHTML, correctionHtml(before[i].html ?? ""));
+    assert.equal(app.container.children[0].children[0].innerHTML, correctionHtml(createThalesFigure(before[i].figure)));
   }
   assert.equal(controller.getIsLastStep(), true);
   press("Enter", true);
   assert.equal(app.container.children.at(-1).innerHTML, `<div>${before[14].html}</div>`);
   press("ArrowUp"); assert.equal(controller.getCurrentStepIndex(), 13);
-  assert.equal(app.container.children.at(-1).innerHTML, before[13].html);
+  assert.equal(app.container.children.at(-1).innerHTML, correctionHtml(before[13].html));
   app.pending.forEach(job => job.resolve()); await Promise.all(draws);
   assert.deepEqual(app.completed, ["thalesConverseStatement"]);
 });

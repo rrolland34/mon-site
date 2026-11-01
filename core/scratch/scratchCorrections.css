@@ -15,7 +15,7 @@
 .scratch-correction-conclusion{font-size:20px;text-align:center;margin-top:16px}
 .scratch-correction-conclusion[hidden]{display:none}
 .scratch-correction-hint{font-size:14px;text-align:center;color:#c1d2e7}
-.scratch-static-correction{font-size:20px;color:red;margin-top:12px}
+.scratch-static-correction{font-size:20px;color:var(--correction-red, #FF8A80);margin-top:12px}
 @media(max-width:760px){.scratch-correction-layout{grid-template-columns:1fr}.scratch-correction-geometry{max-width:500px;width:100%;box-sizing:border-box}}
 .scratch-static-correction svg {
   margin-top: 10px;

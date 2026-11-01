@@ -98,7 +98,7 @@ test('statistiques : 1000 tirages, distributions Python, calculs et contrats dir
 test('statistiques : catalogue, domaine 3, durées de session et exports',()=>{
   assert.equal(loadExercise('statistiques'),series);assert.equal(series.shuffle,false);
   const page=readFileSync(new URL('../automatismes_3.html',import.meta.url),'utf8');
-  assert.equal((page.match(/data-exercise=/g)||[]).length,8);
+  assert.equal((page.match(/data-exercise=/g)||[]).length,9);
   assert.match(page,/troisieme-domain-3/);assert.match(page,/data-exercise="statistiques"/);
   const elements=new Map();const el=id=>{if(!elements.has(id))elements.set(id,{style:{},classList:{add(){}}});return elements.get(id);};
   globalThis.document={getElementById:el,querySelector:el};globalThis.requestAnimationFrame=fn=>fn();

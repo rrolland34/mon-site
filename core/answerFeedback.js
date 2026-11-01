@@ -6,6 +6,7 @@ import {
 } from "./qcm.js";
 
 import { formatAnswer } from "./answerFormatting.js";
+import { correctionHtml, CORRECTION_RED_CSS } from './correctionColors.js';
 
 export function displayAnswerFeedback({
   isCorrect,
@@ -17,9 +18,10 @@ export function displayAnswerFeedback({
   userAnswer,
   showCorrectAnswer = true,
   correctQCMAnswer = null,
+  statusOnly = false,
+  highlightQCM = true,
+  feedbackElement = document.getElementById("feedback"),
 }) {
-  const feedbackElement =
-    document.getElementById("feedback");
 
   const rawCorrectAnswer =
     displayAnswer ??
@@ -82,14 +84,14 @@ export function displayAnswerFeedback({
           )
 
         : (
-            displayAnswer ??
+            (displayAnswer == null ? null : correctionHtml(displayAnswer)) ??
             formatAnswer(
               correctAnswer
             )
           );
 
   if (isCorrect) {
-    if (answerMode === "qcm") {
+    if (answerMode === "qcm" && highlightQCM) {
       highlightCorrectQCMButton(
         correctQCMAnswer ??
         correctAnswer
@@ -108,44 +110,43 @@ export function displayAnswerFeedback({
   if (isNotAnswered) {
     if (
       answerMode === "qcm" ||
-      answerMode === "point"
+      answerMode === "point" || statusOnly
     ) {
       feedbackElement.textContent =
         "Réponse non saisie.";
     } else {
       feedbackElement.innerHTML =
-        `Réponse non saisie. La réponse correcte était : ${formattedCorrectAnswer}`;
+        `<div class="answer-feedback-message">Réponse non saisie.</div>` +
+        `<div class="answer-feedback-expected">Réponse attendue : ${formattedCorrectAnswer}</div>`;
     }
   } else {
-    if (answerMode === "qcm") {
+    if (answerMode === "qcm" || statusOnly) {
       feedbackElement.textContent =
         "Réponse incorrecte !";
 
-      highlightIncorrectQCMButton(
-        userAnswer
-      );
+      if (answerMode === "qcm" && highlightQCM) highlightIncorrectQCMButton(userAnswer);
     } else {
       feedbackElement.innerHTML =
-        "Réponse incorrecte !";
+        '<div class="answer-feedback-message">Réponse incorrecte !</div>';
 
       if (incorrectFeedback) {
         feedbackElement.innerHTML +=
-          ` ${incorrectFeedback}`;
+          `<div class="answer-feedback-explanation">${correctionHtml(incorrectFeedback)}</div>`;
       }
 
       if (showCorrectAnswer) {
         feedbackElement.innerHTML +=
-          ` (Réponse : ${formattedCorrectAnswer})`;
+          `<div class="answer-feedback-expected">Réponse attendue : ${formattedCorrectAnswer}</div>`;
       }
     }
   }
 
-  if (answerMode === "qcm") {
+  if (answerMode === "qcm" && highlightQCM) {
     highlightCorrectQCMButton(
       correctQCMAnswer ??
       correctAnswer
     );
   }
 
-  feedbackElement.style.color = "red";
+  feedbackElement.style.color = CORRECTION_RED_CSS;
 }

@@ -19,7 +19,7 @@
   >
 </head>
 
-<body>
+<body class="catalog-page">
 
   <nav class="navbar">
     <ul class="nav-list">
@@ -82,13 +82,11 @@
   </nav>
 
 
-  <main class="container">
-
-    <section class="buttons-section">
-
-      <div class="button-row">
-
-        <a
+  <main class="container catalog-layout">
+    <section class="buttons-section catalog-card" aria-labelledby="outils-numeration">
+      <h2 id="outils-numeration" class="domain-header">Numération</h2>
+      <div class="button-row series-grid">
+<a
           href="glisse_nombre.html"
         >
           <button
@@ -98,8 +96,13 @@
             Glisse-nombre
           </button>
         </a>
+      </div>
+    </section>
 
-        <a
+    <section class="buttons-section catalog-card" aria-labelledby="outils-arithmetique">
+      <h2 id="outils-arithmetique" class="domain-header">Arithmétique</h2>
+      <div class="button-row series-grid">
+<a
           href="outils/diviseurs/diviseurs.html"
         >
           <button
@@ -109,8 +112,7 @@
             Diviseurs
           </button>
         </a>
-
-        <a
+<a
           href="outils/facteurs_premiers/facteurs_premiers.html"
         >
           <button
@@ -120,8 +122,7 @@
             Facteurs premiers
           </button>
         </a>
-
-        <a
+<a
           href="outils/multiples/multiples.html"
         >
           <button
@@ -131,11 +132,8 @@
             Multiples
           </button>
         </a>
-
       </div>
-
     </section>
-
   </main>
 
 </body>

@@ -18,9 +18,16 @@ export function storeAnswerForCorrections({
     userAnswers.push({
       question:
         currentQuestion.question,
+      ...(currentQuestion.showEvaluationFeedback ? { showEvaluationFeedback: true } : {}),
 
       ...(currentQuestion.progressiveCorrection !== undefined
-        ? { progressiveCorrection: currentQuestion.progressiveCorrection }
+        ? { progressiveCorrection: currentQuestion.qcmFeedback?.[userAnswer] && answerMode === "qcm" && currentQuestion.progressiveCorrection.kind === "steps"
+          ? { ...currentQuestion.progressiveCorrection, steps: [
+              ...currentQuestion.progressiveCorrection.steps.slice(0, currentQuestion.feedbackAfterStep ?? currentQuestion.progressiveCorrection.steps.length),
+              { html: currentQuestion.qcmFeedback[userAnswer] },
+              ...currentQuestion.progressiveCorrection.steps.slice(currentQuestion.feedbackAfterStep ?? currentQuestion.progressiveCorrection.steps.length)
+            ] }
+          : currentQuestion.progressiveCorrection }
         : {}),
 
       userAnswer:

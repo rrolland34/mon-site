@@ -6,6 +6,7 @@ import remediationSerie2 from '../exercices/remediation_evaluations_nationales_6
 import remediationSerie1 from '../exercices/remediation_evaluations_nationales_6e_serie_1.js';
 // core/exerciseLoader.js
 import statistiques from '../exercices/statistiques.js';
+import formulesTableur from '../exercices/formules_tableur.js';
 import reperageTempsDurees from '../exercices/reperage_temps_durees.js';
 import scratchFigures from "../exercices/scratch/reconnaitre_figures.js";
 
@@ -126,6 +127,7 @@ import testQcmLatex
 import test_qcm_latex from "../exercices/tests/test_qcm_latex.js";
 
 const exercises = {
+  formules_tableur: formulesTableur,
   sujet_de_reference_num_2_septembre_2026_gen: sujetDeReferenceNum2Septembre2026Gen,
   sujet_de_reference_num_1_septembre_2026_gen: sujetDeReferenceNum1Septembre2026Gen,
   scratch_reconnaitre_figures: scratchFigures,

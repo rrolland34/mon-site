@@ -51,7 +51,7 @@ test('série 5 : les 12 périmètres et 14 aires, collisions corrigées uniqueme
     for(const question of [p,q]){
       const svg=question.question.direct.match(/<svg[\s\S]*?<\/svg>/)[0];
       assert.equal((svg.match(/<line/g)||[]).length,19);assert.doesNotMatch(svg,/<rect|<text/);
-      assert.ok(question.display_answer.includes(svg));assert.ok(question.question.qcm.includes(svg));
+      assert.ok(!question.display_answer.includes(svg));assert.ok(question.question.qcm.includes(svg));
       const points=svg.match(/points="([^"]+)"/)[1].split(' ').map(s=>s.split(',').map(Number));
       assert.ok(Math.abs(points[1][0]-points[0][0]-a*30)<1e-8);assert.ok(Math.abs(points[1][1]-points[2][1]-b*30)<1e-8);
       const box=svg.match(/viewBox="([^"]+)"/)[1].split(' ').map(Number);
@@ -118,4 +118,14 @@ test('série 5 : catalogue, six boutons, durée et historique QCM natifs',()=>{
   }
   globalThis.document={getElementById:()=>node(),querySelector:()=>({})};globalThis.requestAnimationFrame=fn=>fn();
   for(const selectedTime of [30,45])startExerciseSession({exercice:series,selectedTime,onCloseCorrectionOverlay(){},onQuestionsReady(qs){assert.deepEqual(qs.map(q=>q.time),Array(5).fill(selectedTime));}});
+});
+
+
+test('série 5 : figures conservées dans les énoncés uniquement',()=>{
+ for(const q of generateQuestions()) for(const mode of ['direct','qcm']){
+  const correction=typeof q.display_answer==='string'?q.display_answer:q.display_answer[mode];
+  assert.doesNotMatch(correction,/<svg/);
+  assert.match(correction,/color:red/);
+  if(['q2','q5'].includes(q.id)) assert.match(q.question[mode],/<svg/);
+ }
 });

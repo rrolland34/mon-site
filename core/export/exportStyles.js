@@ -1,4 +1,5 @@
 // core/export/exportStyles.js
+import { exportCorrectionColorStyles, EXPORT_CORRECTION_RED_CSS } from '../correctionColors.js';
 
 import {
   getExportFigureStyles
@@ -6,6 +7,7 @@ import {
 
 export function getExportStyles() {
   return `
+    ${exportCorrectionColorStyles}
     @page {
       size: A4;
       margin: 18mm;
@@ -97,7 +99,7 @@ export function getExportStyles() {
     .evaluation-answer {
       margin-top: 16px;
       font-weight: 700;
-      color: red;
+      color: ${EXPORT_CORRECTION_RED_CSS};
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -148,16 +150,23 @@ export function getExportStyles() {
       #print-evaluation {
         display: none;
       }
+
+      /* La couche MathML reste accessible, mais sa boîte déjà découpée
+         ne doit pas déborder sur une page supplémentaire. */
+      mjx-assistive-mml {
+        max-height: 1px;
+        max-width: 1px;
+      }
     }
 
     .proof-box {
       display: inline-block;
-      border: 2px solid red;
+      border: 2px solid ${EXPORT_CORRECTION_RED_CSS};
       padding: 4px 10px;
     }
 
     .proof-display {
-      color: red;
+      color: ${EXPORT_CORRECTION_RED_CSS};
       font-size: 1.1em;
       line-height: 1.5;
     }

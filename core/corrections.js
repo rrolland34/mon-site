@@ -1,6 +1,7 @@
 // core/corrections.js
 
 import { formatAnswer } from "./answerFormatting.js";
+import { correctionHtml, CORRECTION_RED_CSS } from './correctionColors.js';
 
 import { displayQCMOptions } from "./qcm.js";
 
@@ -278,7 +279,7 @@ export function displayCorrectionAnswer(correction) {
           correction.correctAnswer.name,
 
         color:
-          "red"
+          CORRECTION_RED_CSS
       });
     }
 
@@ -457,10 +458,10 @@ export function displayCorrectionAnswer(correction) {
   }
 
   feedbackElement.innerHTML =
-    `Solution : ${displayedAnswer}`;
+    `Solution : ${correctionHtml(displayedAnswer)}`;
 
   feedbackElement.style.color =
-    "red";
+    CORRECTION_RED_CSS;
 
   typesetMath();
 }

@@ -1,4 +1,5 @@
 // core/export/exportAnswerFormatting.js
+import { correctionHtml } from '../correctionColors.js';
 
 import {
   formatAnswer
@@ -81,5 +82,5 @@ export function formatExportAnswer(
     );
   }
 
-  return normalizedAnswer;
+  return correctionHtml(normalizedAnswer, { target: 'export' });
 }

@@ -7,13 +7,13 @@ import vm from "node:vm";
 // Le moteur et les validateurs réels sont couverts par dnbGenerator.test.mjs.
 const main = (await readFile(new URL("../main.js", import.meta.url), "utf8"))
   .replace(/^import\s[\s\S]*?from\s*["'][^"']+["'];/gm, "");
-function setup(custom = true) {
+function setup(custom = true, availableCount = 1) {
   const elements = new Map();
   const sessions = [];
-  let ready, page, modes, generator;
+  let ready, page, modes, generator, sliders;
   let draws = 0;
   const question = Object.freeze({ id: "q1", title: "Géométrie", subtitle: "Thalès", question: "Figure", answers: ["14 cm"] });
-  const series = {title: "Personnalisée", shuffle: false, questions: [question]};
+  const series = {title: "Personnalisée", shuffle: false, questions: Array.from({length:availableCount},(_,i)=>Object.freeze({...question,id:`q${i+1}`}))};
   function element(id) {
     if (!elements.has(id)) elements.set(id, {
       style: {}, hidden: false, disabled: false, value: "0", children: [], handlers: {},
@@ -36,7 +36,7 @@ function setup(custom = true) {
     loadExercise: () => series,
     initializePage(options) { page = options; },
     initializeAnswerInput() {}, initializeMathKeyboard() {}, initializeKeyboardShortcuts() {},
-    initializeSliders(options) { options.onTimeChange(30); options.onQuestionCountChange(1); },
+    initializeSliders(options) { sliders=options; options.onTimeChange(30); options.onQuestionCountChange(1); },
     initializeModeControls(options) {
       modes = options;
       options.onAnswerModeChange("direct", false);
@@ -56,10 +56,35 @@ function setup(custom = true) {
   });
   vm.runInContext(main, context);
   ready();
-  return { element, context, sessions, series, page, modes, generator,
+  return { element, context, sessions, series, page, modes, generator, sliders,
     get draws() { return draws; },
     action(text) { return element("top-controls").children[0].children.find(el=>el.textContent===text).handlers.click(); }
   };
+}
+
+for (const mode of ["response", "slideshow"]) {
+  test(`compteur avant démarrage : changements 10, 15, 20 en mode ${mode}`, () => {
+    const app=setup(false,30);
+    app.modes.onPresentationModeChange(mode,false);
+    for(const count of [10,15,20,10]) {
+      app.sliders.onQuestionCountChange(count);
+      assert.equal(app.element("question-counter").textContent,`Question 1/${count}`);
+      assert.equal(vm.runInContext("selectedQuestionCount",app.context),count);
+      assert.equal(app.sessions.length,0);
+      assert.equal(vm.runInContext("selectedTime",app.context),30);
+    }
+    app.page.onStart();
+    assert.equal(vm.runInContext("selectedQuestionCount",app.context),10);
+  });
+  test(`compteur borné par les trois questions réellement disponibles en mode ${mode}`, () => {
+    const app=setup(false,3);
+    app.modes.onPresentationModeChange(mode,false);
+    app.sliders.onQuestionCountChange(20);
+    assert.equal(app.element("question-counter").textContent,"Question 1/3");
+    assert.equal(vm.runInContext("selectedQuestionCount",app.context),3);
+    app.page.onStart();
+    assert.equal(vm.runInContext("selectedQuestionCount",app.context),3);
+  });
 }
 
 test("générer puis régler ne démarre pas et conserve le tirage jusqu’à Commencer", () => {
@@ -118,4 +143,44 @@ test("le démarrage des séries ordinaires utilise toujours la session standard"
   assert.equal(app.sessions.length, 1);
   assert.equal(app.sessions[0].exercice, app.series);
   assert.equal(app.sessions[0].isolateQuestions, false);
+});
+
+
+test("export Mixte : ordre DNB, priorité point, réglages et régénération", () => {
+  for (const custom of [false, true]) {
+    const app = setup(custom, 5);
+    let exported;
+    app.context.openExportDialog = ({onExport}) => onExport({exportType:"evaluation",includeCorrection:false});
+    app.context.exportExercise = options => { exported = options; };
+    vm.runInContext("displayQuestion = () => {}", app.context);
+    const exportNow = () => app.element("export-evaluation").handlers.click();
+    if (custom) app.generator.onGenerate(app.series);
+    app.sliders.onQuestionCountChange(5);
+    app.modes.onAnswerModeChange("mixed", false);
+    for (const count of [0, 2, 5]) {
+      app.sliders.onMixedQCMCountChange(count);
+      app.page.onStart();
+      const selected = [...app.series.questions].reverse().map((q,i)=>({...q,...(i===0?{answerMode:"point"}:{})}));
+      app.sessions.at(-1).onQuestionsReady(selected);
+      exportNow();
+      assert.deepEqual(Array.from(exported.questions, q=>q.id), selected.map(q=>q.id));
+      assert.deepEqual(Array.from(exported.questionAnswerModes), selected.map((q,i)=>i===0?"point":i<count?"qcm":"direct"));
+      const snapshot = Array.from(exported.questionAnswerModes);
+      app.sliders.onMixedQCMCountChange(5-count);
+      exportNow();
+      assert.deepEqual(Array.from(exported.questionAnswerModes), snapshot, "le réglage ne retire pas les modes de la séance");
+    }
+    app.modes.onAnswerModeChange("qcm", false);
+    app.page.onStart(); app.sessions.at(-1).onQuestionsReady(app.series.questions);
+    exportNow(); assert.equal(exported.questionAnswerModes, undefined);
+    app.modes.onAnswerModeChange("mixed", false);
+    app.sliders.onMixedQCMCountChange(0);
+    if (custom) app.generator.onGenerate({...app.series,questions:app.series.questions.slice(1,4)});
+    else app.sliders.onQuestionCountChange(3);
+    app.page.onRestart();
+    app.sessions.at(-1).onQuestionsReady(app.sessions.at(-1).exercice.questions);
+    exportNow();
+    assert.equal(exported.questions.length,3);
+    assert.deepEqual(Array.from(exported.questionAnswerModes),Array(3).fill("direct"));
+  }
 });

@@ -1,4 +1,5 @@
 // core/export/exportGeneratedExercise.js
+import { correctionHtml } from '../correctionColors.js';
 
 import {
   exportDocument
@@ -7,10 +8,7 @@ import {
 function prepareCorrectionForExport(
   html
 ) {
-  return html.replace(
-    /\\textcolor\{[^}]+\}\{([^{}]+)\}/g,
-    "$1"
-  );
+  return correctionHtml(html, { target: 'export' });
 }
 
 /**
@@ -80,10 +78,10 @@ const figureHTML =
     typeof renderFigure ===
       "function"
 
-      ? renderFigure(
+      ? correctionHtml(renderFigure(
           correctionScene.figure ??
           {}
-        )
+        ), { target: 'export' })
 
       : "";
 

@@ -31,7 +31,9 @@ export function exportExercise({
     false,
 
   answerMode =
-    "direct"
+    "direct",
+
+  questionAnswerModes
 }) {
   if (
     exportType ===
@@ -78,14 +80,16 @@ export function exportExercise({
             exercice:
               evaluationExercise,
 
-            answerMode
+            answerMode,
+            questionAnswerModes
           })
 
         : createEvaluationStatement({
             exercice:
               evaluationExercise,
 
-            answerMode
+            answerMode,
+            questionAnswerModes
           });
 
     exportDocument({

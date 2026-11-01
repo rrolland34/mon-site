@@ -1,5 +1,8 @@
 // core/export/exportEvaluationContent.js
 
+import { getDisplayAnswer } from "../answerDisplay.js";
+import { correctionHtml } from '../correctionColors.js';
+
 import {
   formatQCMAnswer
 } from "../qcm.js";
@@ -12,9 +15,18 @@ import {
   formatExportAnswer
 } from "./exportAnswerFormatting.js";
 
+// Sans répartition exploitable, conserver le repli historique du générateur.
+function getQuestionAnswerMode(answerMode, questionAnswerModes, index) {
+  const mode = questionAnswerModes?.[index];
+  return answerMode === "mixed" && (mode === "direct" || mode === "qcm" || mode === "point")
+    ? mode
+    : answerMode;
+}
+
 export function createEvaluationStatement({
   exercice,
-  answerMode = "direct"
+  answerMode = "direct",
+  questionAnswerModes
 }) {
   const studentIdentity = `
     <div class="evaluation-student-identity">
@@ -39,6 +51,7 @@ export function createEvaluationStatement({
         question,
         index
       ) => {
+        const questionAnswerMode = getQuestionAnswerMode(answerMode, questionAnswerModes, index);
         const questionText =
           typeof question.question ===
           "string"
@@ -47,7 +60,7 @@ export function createEvaluationStatement({
 
             : (
                 question.question?.[
-                  answerMode
+                  questionAnswerMode
                 ] ??
                 question.question?.direct ??
                 question.question?.qcm ??
@@ -56,7 +69,7 @@ export function createEvaluationStatement({
               );
 
           const qcmContent =
-            answerMode === "qcm" &&
+            questionAnswerMode === "qcm" &&
             Array.isArray(
               question.possible_answers
             )
@@ -98,7 +111,7 @@ export function createEvaluationStatement({
                 : 1;
 
             const answerSpace =
-              answerMode === "direct"
+              questionAnswerMode === "direct"
                 ? `
                     <div class="evaluation-response-space">
 
@@ -157,7 +170,8 @@ export function createEvaluationStatement({
 
 export function createEvaluationWithCorrection({
   exercice,
-  answerMode = "direct"
+  answerMode = "direct",
+  questionAnswerModes
 }) {
   return exercice.questions
     .map(
@@ -165,6 +179,7 @@ export function createEvaluationWithCorrection({
         question,
         index
       ) => {
+        const questionAnswerMode = getQuestionAnswerMode(answerMode, questionAnswerModes, index);
         const questionText =
           typeof question.question ===
           "string"
@@ -173,7 +188,7 @@ export function createEvaluationWithCorrection({
 
             : (
                 question.question?.[
-                  answerMode
+                  questionAnswerMode
                 ] ??
                 question.question?.direct ??
                 question.question?.qcm ??
@@ -182,7 +197,7 @@ export function createEvaluationWithCorrection({
               );
 
         const qcmContent =
-          answerMode === "qcm" &&
+          questionAnswerMode === "qcm" &&
           Array.isArray(
             question.possible_answers
           )
@@ -215,9 +230,11 @@ export function createEvaluationWithCorrection({
               `
             : "";
 
+        const modeCorrection = question.display_answer && typeof question.display_answer === "object"
+          ? getDisplayAnswer(question, questionAnswerMode) : null;
         const scratchCorrection = question.progressiveCorrection?.kind === "scratch" && typeof question.display_answer === "string";
         const rawAnswer =
-          scratchCorrection ? question.display_answer : answerMode === "qcm"
+          modeCorrection ?? (scratchCorrection ? question.display_answer : questionAnswerMode === "qcm"
             ? (
                 getCorrectQCMAnswer({
                   question
@@ -228,15 +245,15 @@ export function createEvaluationWithCorrection({
                 question.display_answer ??
                 question.answers?.[0] ??
                 ""
-              );
+              ));
 
         const displayedAnswer =
-          scratchCorrection ? formatExportAnswer(rawAnswer) : answerMode === "qcm"
-            ? formatQCMAnswer(
+          (modeCorrection !== null || scratchCorrection) ? formatExportAnswer(rawAnswer) : questionAnswerMode === "qcm"
+            ? correctionHtml(formatQCMAnswer(
                 rawAnswer,
                 question
-              )
-            : answerMode === "point"
+              ), { target: 'export' })
+            : questionAnswerMode === "point"
               ? ""
               : formatExportAnswer(
                   rawAnswer

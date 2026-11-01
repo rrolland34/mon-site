@@ -20,7 +20,7 @@ function question(id, text, options, correction, sourceData, image = '', answerR
     possible_answers:options.map(option => option.id), qcmAnswer:options[0].id,
     qcmAnswerRule:{type:'symbolicExact'}, qcmOptions:options, sourceData,
     qcmRenderAnswer:answer => options.find(option => option.id === String(answer))?.text ?? presentation(answer),
-    display_answer:wrap(`<span style="color:red">${presentation(correction)}</span>${image}`)
+    display_answer:wrap(`<span style="color:red">${presentation(correction)}</span>`)
   };
 }
 

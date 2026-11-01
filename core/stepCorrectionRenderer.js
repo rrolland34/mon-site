@@ -1,4 +1,5 @@
 import { renderMath, clearMath } from "./mathRendering.js";
+import { correctionHtml, correctionColor } from './correctionColors.js';
 // core/stepCorrectionRenderer.js
 
 // Les scènes cumulatives contiennent déjà toute la démonstration courante.
@@ -54,9 +55,9 @@ export function renderStepCorrection({
       "step-correction-figure";
 
     figureContainer.innerHTML =
-      renderFigure(
+      correctionHtml(renderFigure(
         scene.figure
-      );
+      ));
 
     sceneLayout.appendChild(
       figureContainer
@@ -73,11 +74,11 @@ export function renderStepCorrection({
       "step-correction-side";
 
     sideContainer.innerHTML =
-      scene.sideContent.html ?? "";
+      correctionHtml(scene.sideContent.html ?? "");
 
     if (scene.sideContent.color) {
       sideContainer.style.color =
-        scene.sideContent.color;
+        correctionColor(scene.sideContent.color);
     }
 
     sceneLayout.appendChild(
@@ -99,7 +100,7 @@ export function renderStepCorrection({
       "step-correction-content";
 
     contentContainer.innerHTML =
-      scene.html;
+      correctionHtml(scene.html);
 
     container.appendChild(
       contentContainer

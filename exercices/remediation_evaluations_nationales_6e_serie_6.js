@@ -20,7 +20,7 @@ function question(id,text,options,correction,sourceData,image='',answerRule={typ
   const html=wrap(presentation(text)+image);
   return {id,question:{direct:html,qcm:html},answers:[options[0].id],answerRule,
     possible_answers:options.map(o=>o.id),qcmAnswer:options[0].id,qcmAnswerRule:{type:'symbolicExact'},qcmOptions:options,
-    qcmRenderAnswer:answer=>options.find(o=>o.id===String(answer))?.text??presentation(answer),sourceData,display_answer:red(correction)+image};
+    qcmRenderAnswer:answer=>options.find(o=>o.id===String(answer))?.text??presentation(answer),sourceData,display_answer:red(correction)};
 }
 const volumeText=`Le pavé droit ci-dessous est composé de petits cubes de ${math('1~\\mathrm{cm}^3')}.<br>Quel est le volume de ce pavé droit ?`;
 const cuboidFigure=dimensions=>`<div style="width:fit-content;max-width:100%;background:white;margin:16px auto">${createCuboidSVG(dimensions)}</div>`;

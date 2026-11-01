@@ -25,6 +25,22 @@ function distribution(series) {
   for (const q of series.questions) counts.set(q.title,(counts.get(q.title)??0)+1);
   return [...counts.values()].sort((a,b)=>b-a);
 }
+for (const available of [3,5,16,20,50]) {
+  test(`régression du minimum : ${available} questions disponibles, même avec plus de domaines que de places`,()=>{
+    const domainCount=Math.min(16,available);
+    const capacities=Array.from({length:domainCount},(_,i)=>Math.floor(available/domainCount)+(i<available%domainCount?1:0));
+    const bank=fixture(capacities);
+    for(const count of new Set([Math.min(5,available),available])) {
+      const series=generateDnbSeries(bank,criteria(bank,count),()=>.3);
+      assert.equal(series.questions.length,count);
+      assert.equal(new Set(series.questions).size,count);
+      const counts=capacities.map((_,i)=>series.questions.filter(q=>q.title===`D${i}`).length);
+      for(let i=0;i<counts.length;i++)if(counts[i]<capacities[i])assert.ok(counts.every(n=>n<=counts[i]+1));
+    }
+    assert.throws(()=>generateDnbSeries(bank,criteria(bank,available+1)));
+    assert.throws(()=>generateDnbSeries(bank,criteria(bank,0)));
+  });
+}
 for (const [n,expected] of [[10,[2,2,2,2,2]],[12,[3,3,2,2,2]],[5,[1,1,1,1,1]],[8,[2,2,2,1,1]]]) {
   test(`équilibre ${n}/5 sur 100 tirages`,()=>{
     const bank=fixture();

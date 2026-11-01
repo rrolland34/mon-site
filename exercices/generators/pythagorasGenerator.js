@@ -1,3 +1,4 @@
+import { createRightTriangleFigureOptions } from "../figures/rightTriangleConfigurations.js";
 // exercices/generators/pythagorasGenerator.js
 
 import {
@@ -189,64 +190,6 @@ function getStatement({
   );
 }
 
-function getRandomFigureOptions() {
-  const rotations = [
-    15,
-    45,
-    75,
-    105,
-    135,
-    165,
-    195,
-    225,
-    255,
-    285,
-    315,
-    345
-  ];
-
-  const dimensions = [
-    {
-      leg1: 300,
-      leg2: 150
-    },
-    {
-      leg1: 280,
-      leg2: 180
-    },
-    {
-      leg1: 250,
-      leg2: 210
-    },
-    {
-      leg1: 220,
-      leg2: 260
-    },
-    {
-      leg1: 170,
-      leg2: 290
-    }
-  ];
-
-  return {
-    rotation:
-      rotations[
-        Math.floor(
-          Math.random() *
-          rotations.length
-        )
-      ],
-
-    dimensions:
-      dimensions[
-        Math.floor(
-          Math.random() *
-          dimensions.length
-        )
-      ]
-  };
-}
-
 export function generatePythagorasExercise(
   type = "random"
 ) {
@@ -274,8 +217,8 @@ export function generatePythagorasExercise(
       sideNames
     });
 
-  const figureOptions =
-    getRandomFigureOptions();
+  const { rotation, dimensions } = createRightTriangleFigureOptions();
+  const figureOptions = { rotation, dimensions };
 
   return {
     vertices,

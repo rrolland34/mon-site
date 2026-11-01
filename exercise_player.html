@@ -18,6 +18,79 @@
   >
 
   <style>
+    /* Raccordement de la trigonométrie : espace pour les annotations et les
+       formules, sans changer la présentation des familles existantes. */
+    .trigonometry-exercise .main-content {
+      min-width: 0;
+      padding: clamp(8px, 2vw, 20px);
+    }
+    .trigonometry-exercise .question-container {
+      min-width: 0;
+      width: 100%;
+      padding: clamp(12px, 3vw, 45px);
+    }
+    .trigonometry-exercise .exercise-statement {
+      font-size: clamp(1.15rem, 2.6vw, 2.4rem);
+    }
+    .trigonometry-exercise #exercise-figure,
+    .trigonometry-exercise .step-correction-figure {
+      width: 680px;
+      max-width: 100%;
+    }
+    .trigonometry-exercise #exercise-figure svg,
+    .trigonometry-exercise .step-correction-figure svg {
+      max-width: 100%;
+      /* La largeur seule agrandissait excessivement les rotations verticales.
+         Le ratio SVG « meet » réduit tout le dessin, annotations comprises,
+         sans agrandir les configurations déjà sous ce plafond. Les marges
+         du viewBox partagé restent intégralement disponibles. */
+      max-height: clamp(300px, 40vw, 480px);
+    }
+    .trigonometry-exercise .proof-display {
+      font-size: clamp(1.05rem, 2.2vw, 1.8rem);
+    }
+    .trigonometry-exercise .proof-display > svg {
+      margin: 12px auto;
+    }
+    /* Rouge plus lumineux sur le fond sombre du lecteur pour la projection.
+       Les SVG et les contenus exportés conservent leurs couleurs d'origine. */
+    .trigonometry-exercise .proof-display,
+    .trigonometry-exercise .proof-display > span {
+      color: var(--correction-red, #FF8A80) !important;
+    }
+    .trigonometry-exercise #exercise-content [fill="red"] { fill: var(--correction-red, #FF8A80); }
+    .trigonometry-exercise #exercise-content [stroke="red"] { stroke: var(--correction-red, #FF8A80); }
+    .trigonometry-exercise #trigonometry-response-correction { margin-top: 24px; }
+    .trigonometry-exercise .proof-choice { max-width: 100%; }
+    .pythagoras-trigonometry-exercise .proof-display {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    @media (max-width: 600px) {
+      .pythagoras-trigonometry-exercise .proof-choice-input {
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 8px;
+      }
+      .pythagoras-trigonometry-exercise .proof-choice-input-label { width: 100%; }
+      .pythagoras-trigonometry-exercise .proof-choice-input .proof-choice {
+        width: auto;
+        min-width: 0;
+        flex: 1 1 160px;
+      }
+      .pythagoras-trigonometry-exercise .proof-choice-input .proof-input-field {
+        box-sizing: border-box;
+        flex: 0 0 100px;
+        max-width: 100%;
+      }
+      .trigonometry-exercise .exercise-statement { font-size: clamp(.8rem, 3.6vw, 1.15rem); }
+      .trigonometry-exercise .nav-list { flex-wrap: wrap; gap: 8px; }
+      .trigonometry-exercise .nav-link { padding: 6px 8px; }
+      .trigonometry-exercise #presentation-control { margin-left: 0 !important; }
+      .trigonometry-exercise .correction-overlay { font-size: 2.5rem; }
+      .trigonometry-exercise .correction-overlay .overlay-content { gap: 32px; }
+    }
+
     .exercise-statement {
       font-size: 2.4em;
       font-weight: 500;
@@ -105,7 +178,7 @@
 
     .proof-box {
       display: inline-block;
-      border: 3px solid red;
+      border: 3px solid var(--correction-red);
       padding: 4px 10px;
     }
 
@@ -128,7 +201,7 @@
     }
 
     .proof-display {
-      color: red;
+      color: var(--correction-red);
       font-size: 1.8em;
     }
 
@@ -844,6 +917,19 @@
       openExportDialog
     } from "./core/export/exportDialog.js";
 
+    import { generateTrigonometryExercise } from "./exercices/generators/trigonometryGenerator.js";
+    import { generateTrigonometryAngleExercise } from "./exercices/generators/trigonometryAngleGenerator.js";
+    import { createTrigonometryFigureSVG } from "./exercices/trigonometry/trigonometryFigure.js";
+    import { createTrigonometryCorrectionPresentation, createTrigonometryExportCorrectionScenes, createTrigonometryResponseCorrectionScene } from "./exercices/trigonometry/trigonometryCorrectionScenes.js";
+    import { createTrigonometryAngleCorrectionPresentation, createTrigonometryAngleExportCorrectionScenes, createTrigonometryAngleResponseCorrectionScene } from "./exercices/trigonometry/trigonometryAngleCorrectionScenes.js";
+    import { createTrigonometryStudentProof } from "./exercices/trigonometry/trigonometryStudentProof.js";
+    import { generatePythagorasTrigonometryExercise } from "./exercices/generators/pythagorasTrigonometryGenerator.js";
+    import { createPythagorasTrigonometryFigureSVG, createPythagorasTrigonometryCorrectionPresentation,
+      createPythagorasTrigonometryExportCorrectionScenes, createPythagorasTrigonometryStudentProof,
+      preparePythagorasTrigonometryResponse, createPythagorasTrigonometryResponseCorrectionScene } from "./exercices/pythagore/pythagorasTrigonometry.js";
+    import { correctionHtml } from './core/correctionColors.js';
+    import { renderMath, clearMath } from "./core/mathRendering.js";
+
     let currentExercise =
       null;
 
@@ -856,6 +942,11 @@
         type,
         family
       } = exerciseConfig;
+
+      if (family === "trigonometry") {
+        if (type === "pythagoras-angle") return generatePythagorasTrigonometryExercise();
+        return type === "angle" ? generateTrigonometryAngleExercise() : generateTrigonometryExercise();
+      }
 
       if (
         family ===
@@ -915,7 +1006,7 @@
       }
 
       const sideLabels =
-        (exerciseConfig.family ===
+        (exerciseConfig.family === "trigonometry" || exerciseConfig.family ===
           "thales" ||
         exerciseConfig.family ===
           "thalesConverse")
@@ -948,6 +1039,10 @@
 
       let question =
         null;
+
+      if (exerciseConfig.family === "trigonometry") {
+        question = generatedExercise.question;
+      }
 
       if (
         exerciseConfig.family ===
@@ -997,6 +1092,7 @@
         };
       }
 
+      if (exerciseConfig.family === "trigonometry") clearMath(exerciseContent);
       exerciseContent.innerHTML = `
         <div class="exercise-statement">
           ${generatedExercise.statement}
@@ -1010,7 +1106,12 @@
           "exercise-figure"
         );
 
-      if (
+      if (exerciseConfig.family === "trigonometry") {
+        figureContainer.innerHTML = exerciseConfig.type === "pythagoras-angle"
+          ? createPythagorasTrigonometryFigureSVG(generatedExercise)
+          : createTrigonometryFigureSVG(generatedExercise);
+        renderMath(exerciseContent);
+      } else if (
         exerciseConfig.family ===
           "thales" ||
         exerciseConfig.family ===
@@ -1113,7 +1214,12 @@
         let proof;
         let studentProof;
 
-        if (
+        if (exerciseConfig.family === "trigonometry") {
+          proof = [];
+          studentProof = exerciseConfig.type === "pythagoras-angle"
+            ? createPythagorasTrigonometryStudentProof(generatedExercise)
+            : createTrigonometryStudentProof(generatedExercise);
+        } else if (
           exerciseConfig.family ===
           "pythagorasConverse"
         ) {
@@ -1199,6 +1305,7 @@
         studentProof.forEach(
           step => {
             const usesStudentProofRenderer =
+              exerciseConfig.type === "pythagoras-angle" ||
               exerciseConfig.family ===
                 "pythagorasConverse" ||
               exerciseConfig.family ===
@@ -1346,6 +1453,13 @@
             "user-answer"
           );
 
+        if (exerciseConfig.family === "trigonometry") {
+          userAnswerInput.removeAttribute("placeholder");
+          userAnswerInput.setAttribute("aria-label", ["angle", "pythagoras-angle"].includes(exerciseConfig.type)
+            ? "Mesure de l’angle arrondie au degré, avec le symbole °"
+            : "Longueur arrondie au dixième, avec son unité");
+        }
+
         const submitAnswerButton =
           document.getElementById(
             "submit-answer"
@@ -1367,6 +1481,7 @@
           stopTimer();
 
         const usesStudentProofValidation =
+          exerciseConfig.type === "pythagoras-angle" ||
           exerciseConfig.family ===
             "pythagorasConverse" ||
           exerciseConfig.family ===
@@ -1374,6 +1489,7 @@
           exerciseConfig.family ===
             "thalesConverse";
 
+          if (exerciseConfig.type === "pythagoras-angle") preparePythagorasTrigonometryResponse(proofContainer, generatedExercise);
           const proofResults =
             usesStudentProofValidation
               ? validateStudentProof(
@@ -1452,11 +1568,16 @@
               "red";
           }
 
+          if (exerciseConfig.family === "trigonometry" && exerciseConfig.type === "angle" && correctProofCount !== proofResults.length) {
+            proofFeedback.textContent = `Étapes validées : ${correctProofCount}/${proofResults.length}. ` +
+              `Choix à revoir : ${incorrectProofCount}. Étapes non renseignées : ${unansweredProofCount}.`;
+          }
+
           if (
             exerciseConfig.family ===
               "pythagoras" ||
             exerciseConfig.family ===
-              "thales"
+              "thales" || exerciseConfig.family === "trigonometry"
           ) {
             const evaluation =
               evaluateCurrentAnswer({
@@ -1477,6 +1598,9 @@
               correctAnswer:
                 evaluation.correctAnswer,
 
+              displayAnswer: exerciseConfig.family === "trigonometry" && ["angle", "pythagoras-angle"].includes(exerciseConfig.type)
+                ? question.display_answer : undefined,
+
               incorrectFeedback:
                 evaluation.result.feedback,
 
@@ -1487,9 +1611,9 @@
                 evaluation.userAnswer,
 
               showCorrectAnswer:
-                evaluation.result
-                  .showCorrectAnswer ??
-                true
+                exerciseConfig.family === "trigonometry" && ["angle", "pythagoras-angle"].includes(exerciseConfig.type)
+                  ? true
+                  : evaluation.result.showCorrectAnswer ?? true
             });
           }
 
@@ -1505,6 +1629,22 @@
 
           timeSlider.disabled =
             false;
+          if (exerciseConfig.family === "trigonometry") {
+            const correction = document.createElement("div");
+            correction.id = "trigonometry-response-correction";
+            exerciseContent.appendChild(correction);
+            const scene = exerciseConfig.type === "pythagoras-angle"
+              ? createPythagorasTrigonometryResponseCorrectionScene(generatedExercise)
+              : exerciseConfig.type === "angle"
+              ? createTrigonometryAngleResponseCorrectionScene(generatedExercise)
+              : createTrigonometryResponseCorrectionScene(generatedExercise);
+            // Garder les menus verrouillés et leurs erreurs visibles, puis
+            // afficher toute la rédaction sous le retour de validation.
+            if (exerciseConfig.type === "pythagoras-angle") {
+              figureContainer.innerHTML = correctionHtml(createPythagorasTrigonometryFigureSVG(generatedExercise, scene.figure));
+            }
+            renderStepCorrection({ container: correction, scene: { html: scene.html } });
+          }
         };
 
         submitAnswerButton.addEventListener(
@@ -1512,7 +1652,7 @@
           validateCurrentResponse
         );
 
-        if (exerciseConfig.family === "thalesConverse") {
+        if (exerciseConfig.family === "thalesConverse" || exerciseConfig.type === "pythagoras-angle") {
           proofContainer.addEventListener("keydown", event => {
             if (event.key !== "Enter" || event.shiftKey || event.ctrlKey || event.altKey ||
                 event.metaKey || event.isComposing || !event.target.matches("input")) return;
@@ -1556,6 +1696,13 @@
     const exerciseConfig =
       exerciseConfigs[exercise];
 
+    if (exerciseConfig?.family === "trigonometry") {
+      document.body.classList.add("trigonometry-exercise");
+      if (exerciseConfig.type === "pythagoras-angle") document.body.classList.add("pythagoras-trigonometry-exercise");
+      const prompt = document.querySelector("#correction-overlay .overlay-subtext");
+      prompt.textContent = "Appuyer sur Entrée pour commencer";
+    }
+
     const exerciseTitle =
       document.getElementById(
         "exercise-title"
@@ -1583,6 +1730,7 @@
 
     let correctionSteps =
       [];
+    let trigonometryCompleteScene = null;
 
     let stepCorrection =
       null;
@@ -1691,6 +1839,10 @@
     function renderExerciseFigure(
       figureOptions
     ) {
+      if (exerciseConfig.family === "trigonometry") {
+        if (exerciseConfig.type === "pythagoras-angle") return createPythagorasTrigonometryFigureSVG(currentExercise, figureOptions ?? {});
+        return createTrigonometryFigureSVG(currentExercise, figureOptions ?? {});
+      }
       if (
         exerciseConfig.family ===
           "thales" ||
@@ -1852,7 +2004,15 @@
 
       hideTimer();
 
-      if (
+      if (exerciseConfig.family === "trigonometry") {
+        const presentation = exerciseConfig.type === "pythagoras-angle"
+          ? createPythagorasTrigonometryCorrectionPresentation(currentExercise)
+          : exerciseConfig.type === "angle"
+          ? createTrigonometryAngleCorrectionPresentation(currentExercise)
+          : createTrigonometryCorrectionPresentation(currentExercise);
+        correctionSteps = presentation.scenes;
+        trigonometryCompleteScene = presentation.completeScene;
+      } else if (
         exerciseConfig.family ===
         "thales"
       ) {
@@ -1970,9 +2130,16 @@
       if (!stepCorrection?.showAll()) return;
       renderStepCorrection({
         container: exerciseContent,
-        scene: createCompleteCorrectionScene(correctionSteps, { cumulative: true }),
+        scene: exerciseConfig.family === "trigonometry"
+          ? trigonometryCompleteScene
+          : createCompleteCorrectionScene(correctionSteps, { cumulative: true }),
         renderFigure: renderExerciseFigure
       });
+      if (exerciseConfig.family === "trigonometry") {
+        restartButton.style.display = "inline-block";
+        exportExerciseButton.style.display = "inline-block";
+        timeSlider.disabled = false;
+      }
     }
 
     function previousStepCorrection() {
@@ -2020,6 +2187,15 @@
       switch (
         exerciseConfig.family
       ) {
+        case "trigonometry":
+          if (exerciseConfig.type === "pythagoras-angle") return exercise => createPythagorasTrigonometryExportCorrectionScenes(exercise, { mode: presentationMode });
+          if (exerciseConfig.type === "angle") {
+            return exercise => createTrigonometryAngleExportCorrectionScenes(exercise, { mode: presentationMode });
+          }
+          return presentationMode === "response"
+            ? exercise => [createTrigonometryResponseCorrectionScene(exercise)]
+            : createTrigonometryExportCorrectionScenes;
+
         case "pythagoras":
           return (
             createPythagorasCorrectionScenes
@@ -2054,6 +2230,7 @@
           return;
         }
 
+        let exportStageSelect = null;
         openExportDialog({
           showArchive:
             false,
@@ -2085,12 +2262,43 @@
               },
 
               createCorrection:
-                getCorrectionFactory(),
+                exportStageSelect && exportStageSelect.value !== ""
+                  ? exercise => exerciseConfig.type === "pythagoras-angle"
+                    ? createPythagorasTrigonometryExportCorrectionScenes(exercise, { stageIndex: Number(exportStageSelect.value) })
+                    : createTrigonometryAngleExportCorrectionScenes(exercise, { stageIndex: Number(exportStageSelect.value) })
+                  : getCorrectionFactory(),
 
               includeCorrection
             });
           }
         });
+
+        if (exerciseConfig.family === "trigonometry" && ["angle", "pythagoras-angle"].includes(exerciseConfig.type) && presentationMode === "slideshow") {
+          const options = document.querySelector(".export-dialog-overlay .export-evaluation-options");
+          const label = document.createElement("label");
+          label.textContent = "Correction à exporter : ";
+          label.style.display = "none";
+          exportStageSelect = document.createElement("select");
+          exportStageSelect.id = "trigonometry-export-stage";
+          const complete = document.createElement("option");
+          complete.value = "";
+          complete.textContent = "Correction complète";
+          exportStageSelect.appendChild(complete);
+          const exportScenes = exerciseConfig.type === "pythagoras-angle"
+            ? createPythagorasTrigonometryCorrectionPresentation(currentExercise).scenes
+            : createTrigonometryAngleCorrectionPresentation(currentExercise).scenes;
+          exportScenes.forEach((scene, index) => {
+            const option = document.createElement("option");
+            option.value = String(index);
+            option.textContent = `Étape ${index + 1} sur ${exportScenes.length}`;
+            exportStageSelect.appendChild(option);
+          });
+          label.appendChild(exportStageSelect);
+          options.appendChild(label);
+          options.addEventListener("change", () => {
+            label.style.display = options.querySelector('input[name="evaluation-mode"]:checked')?.value === "correction" ? "block" : "none";
+          });
+        }
       }
     );
 
@@ -2132,6 +2340,9 @@
         stepCorrection?.stop();
         stepCorrection = null;
         waitingForCorrection = false;
+        if (exerciseConfig.family === "trigonometry") {
+          trigonometryCompleteScene = null;
+        }
 
         setModeButtonsDisabled(
           true

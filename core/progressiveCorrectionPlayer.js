@@ -30,7 +30,8 @@ export function createProgressiveCorrectionPlayer({
   container,
   steps,
   render = renderStepCorrection,
-  beforeRender = () => {}
+  beforeRender = () => {},
+  afterRender = () => {}
 }) {
   const progression = createStepCorrection({ stepCount: steps.length });
   let slot = null;
@@ -61,6 +62,7 @@ export function createProgressiveCorrectionPlayer({
     render({ container: content, scene: complete
       ? createCompleteCorrectionScene(steps)
       : steps[progression.getCurrentStepIndex()] });
+    afterRender();
   }
 
   return {

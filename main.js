@@ -484,6 +484,7 @@ function saveUnansweredQuestion() {
   userAnswers.push({
     question:
       currentQuestion.question,
+    ...(currentQuestion.showEvaluationFeedback ? { showEvaluationFeedback: true } : {}),
 
     ...(currentQuestion.progressiveCorrection !== undefined
       ? { progressiveCorrection: currentQuestion.progressiveCorrection }
@@ -571,7 +572,8 @@ function checkAnswer() {
     displayAnswer:
       getDisplayAnswer(
         currentQuestion,
-        currentQuestionAnswerMode
+        currentQuestionAnswerMode,
+        userAnswer
       ) ??
       correctAnswer,
 
@@ -691,7 +693,8 @@ function processAnswer(
   const displayAnswer =
     getDisplayAnswer(
       currentQuestion,
-      currentQuestionAnswerMode
+      currentQuestionAnswerMode,
+      userAnswer
     ) ??
     (
       Array.isArray(
@@ -736,12 +739,13 @@ function processAnswer(
       currentQuestionAnswerMode,
 
     userAnswer,
-    showCorrectAnswer
+    showCorrectAnswer,
+    statusOnly: Boolean(currentQuestion.renderResponseCorrection)
   });
 
   if ((isCorrect || currentQuestion.qcmClass === 'time-clock-qcm') && currentQuestion.showCorrectionOnSuccess) {
     const correction = document.createElement('div');
-    correction.style.color = 'red';
+    correction.style.color = 'var(--correction-red, #FF8A80)';
     correction.innerHTML = displayAnswer;
     document.getElementById('feedback').appendChild(correction);
   }
@@ -752,6 +756,17 @@ function processAnswer(
     const feedback = document.getElementById("feedback");
     const status = isCorrect ? "Bonne réponse !" : isNotAnswered ? "Réponse non saisie." : "Réponse incorrecte !";
     feedback.innerHTML = `${status}<div class="scratch-static-correction">${displayAnswer}</div>`;
+  }
+
+  if (presentationMode === "response" && currentQuestion.renderResponseCorrection) {
+    const correction = document.createElement("div");
+    correction.innerHTML = currentQuestion.renderResponseCorrection({
+      isCorrect, isNotAnswered, userAnswer, answerMode: currentQuestionAnswerMode
+    });
+    document.getElementById("feedback").appendChild(correction);
+  } else if (presentationMode === "response" && currentQuestion.qcmFeedback) {
+    const status = isCorrect ? "Bonne réponse !" : isNotAnswered ? "Réponse non saisie." : "Réponse incorrecte !";
+    document.getElementById("feedback").innerHTML = `${status}${!isCorrect && incorrectFeedback ? `<p>${incorrectFeedback}</p>` : ""}${displayAnswer}`;
   }
 
   if (
@@ -812,7 +827,7 @@ function processAnswer(
           currentQuestion.answerPoint.name,
 
         color:
-          "red"
+          "var(--correction-red, #FF8A80)"
       });
     }
   }
@@ -1018,6 +1033,22 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
     progressiveCorrectionPlayer = createProgressiveCorrectionPlayer({
       container,
       steps,
+      afterRender() {
+        if (!correction.showEvaluationFeedback) return;
+        const status = document.createElement("div");
+        container.prepend(status);
+        displayAnswerFeedback({
+          isCorrect: correction.isCorrect,
+          isNotAnswered: !correction.userAnswer || correction.userAnswer === "Pas de réponse",
+          answerMode: correction.answerMode,
+          userAnswer: correction.userAnswer,
+          correctAnswer: correction.correctAnswer,
+          correctQCMAnswer: correction.correctQCMAnswer,
+          statusOnly: true,
+          highlightQCM: false,
+          feedbackElement: status
+        });
+      },
       beforeRender({ isLastStep }) {
         // Reconstruire le QCM retire le vert lors d'un retour en arrière.
         // La bonne proposition n'est révélée qu'à la conclusion.
@@ -1253,7 +1284,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
               exportType,
               includeCorrection,
-              answerMode
+              answerMode,
+              questionAnswerModes: answerMode === "mixed"
+                ? tableauSelectionne.slice(0, selectedQuestionCount).map((question, index) =>
+                    question.answerMode === "point" ? "point" : mixedModeDistribution[index])
+                : undefined
             });
           }
         });
@@ -1335,7 +1370,11 @@ document.addEventListener("DOMContentLoaded", function() {
     },
 
     onQuestionCountChange(value) {
-      selectedQuestionCount = value;
+      selectedQuestionCount = Math.min(value, exercice.questions.length);
+      const counter = document.getElementById("question-counter");
+      if (counter) {
+        counter.textContent = `Question ${selectedQuestionCount > 0 ? 1 : 0}/${selectedQuestionCount}`;
+      }
     },
 
     onMixedQCMCountChange(value) {

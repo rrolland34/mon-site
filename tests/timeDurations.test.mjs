@@ -1,3 +1,4 @@
+import { correctionHtml, CORRECTION_RED_CSS } from '../core/correctionColors.js';
 import { displayQCMOptions, formatQCMAnswer } from '../core/qcm.js';
 
 test('Q3 QCM : quatre cadrans distincts, une bonne réponse et positions A à D',()=>{
@@ -95,7 +96,7 @@ test('Valider réel : réponse graphique, feedback, historique et score',()=>{
     assert.equal(history.length,0); // Le moteur archive uniquement en diaporama.
     if(expectedCorrect) {
       assert.equal(element('feedback').textContent,'Bonne réponse !');
-      assert.ok(element('feedback').children.some(child=>child.innerHTML===q.display_answer&&child.style.color==='red'));
+      assert.ok(element('feedback').children.some(child=>child.innerHTML===q.display_answer&&child.style.color===CORRECTION_RED_CSS));
       const recorded=qcm?{hoursMoved:true,minutesMoved:true}:JSON.parse(response);assert.equal(recorded.hoursMoved,true);assert.equal(recorded.minutesMoved,true);
     } else assert.match(qcm?element('feedback').textContent:element('feedback').innerHTML,outcome==='missing'||outcome==='one-hand'?/Réponse non saisie/:/Réponse incorrecte/);
     assert.deepEqual(listeners,{});
@@ -174,7 +175,7 @@ test('durées : cinq questions, groupes, mélange, régénération et absence de
     for(const [a,b] of [[4,7],[8,11],[12,17]])assert.equal(ids.filter(n=>n>=a&&n<=b).length,1);
     orders.add(ids.map(n=>n<8?0:n<12?1:2).join());
     for(const q of qs){seen.add(q.id);assert.equal(Object.hasOwn(q,'duration'),false);assert.doesNotMatch(JSON.stringify(q.question)+q.display_answer,/tikz|textcolor|\$/);}
-    assert.doesNotMatch(qs[1].question.direct,/data-hand=/);assert.equal((qs[1].display_answer.match(/stroke="red"/g)||[]).length,2);
+    assert.doesNotMatch(qs[1].question.direct,/data-hand=/);assert.equal((qs[1].display_answer.match(/stroke="var\(--correction-red, #FF8A80\)"/g)||[]).length,2);
     for(const q of qs.filter(q=>q.id!=='q3')) {
       globalThis.document={getElementById:()=>({value:q.answers[0]})};
       assert.equal(evaluateCurrentAnswer({question:q,answerMode:'direct'}).isCorrect,true);
@@ -202,7 +203,7 @@ test('initialisation réservée au mode réponse : consigne locale et horloge r�
   question.initializeResponse({document:doc});
   assert.equal(nodes[0].textContent,'Donner uniquement la valeur numérique, sans unité.');
   assert.doesNotMatch(qs[1].question.direct,/data-control=|data-hand=/);
-  assert.match(qs[1].display_answer,/stroke="red"/);
+  assert.match(qs[1].display_answer,/stroke="var\(--correction-red, #FF8A80\)"/);
   assert.equal(qs[1].possible_answers.length,4);
   assert.notEqual(qs[1].answerRule.validate,generateQuestions(()=>0)[1].answerRule.validate);
 });

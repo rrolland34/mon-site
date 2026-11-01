@@ -104,7 +104,7 @@ export function renderExportCartesianFigures({
             correction.correctAnswer.name,
 
           color:
-            "red"
+            "var(--correction-red, #FF0000)"
         });
 
         return;

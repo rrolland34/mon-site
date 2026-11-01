@@ -49,7 +49,7 @@ export function drawThalesCorrespondenceArrow(container) {
 
   const arrowHead = document.createElementNS(svgNS, "path");
   arrowHead.setAttribute("d", "M 0 0 L 10 5 L 0 10 z");
-  arrowHead.setAttribute("fill", "red");
+  arrowHead.setAttribute("fill", "var(--correction-red, #FF8A80)");
   marker.appendChild(arrowHead);
   defs.appendChild(marker);
   svg.appendChild(defs);
@@ -59,7 +59,7 @@ export function drawThalesCorrespondenceArrow(container) {
   line.setAttribute("y1", String(startY));
   line.setAttribute("x2", String(endX));
   line.setAttribute("y2", String(endY));
-  line.setAttribute("stroke", "red");
+  line.setAttribute("stroke", "var(--correction-red, #FF8A80)");
   line.setAttribute("stroke-width", "3");
   line.setAttribute("stroke-linecap", "round");
   line.setAttribute("marker-end", "url(#thales-correspondence-arrow-head)");

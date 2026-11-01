@@ -1,6 +1,21 @@
 // core/exerciseRegistry.js
 
 export const exerciseConfigs = {
+  "pythagoras-trigonometry": {
+    title: "Réciproque de Pythagore et trigonométrie",
+    type: "pythagoras-angle",
+    family: "trigonometry"
+  },
+  "trigonometry-length": {
+    title: "Trigonométrie — Calculer une longueur",
+    type: "length",
+    family: "trigonometry"
+  },
+  "trigonometry-angle": {
+    title: "Trigonométrie — Calculer un angle",
+    type: "angle",
+    family: "trigonometry"
+  },
   "thales-converse-nested": {
     title:
       "Réciproque du théorème de Thalès : triangles emboîtés",

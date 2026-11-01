@@ -11,14 +11,17 @@ export function initializeDnbGenerator({ onGenerate, onCountChange = () => {} })
   const generate = panel.querySelector(".dnb-generate");
   const error = panel.querySelector(".dnb-error");
   const criteria = { sources: new Set(["Générale"]), domains: new Map(), count: 10 };
+  // Conserver le choix de l'utilisateur même lorsqu'un filtre le borne
+  // temporairement, ou que la sélection devient vide.
+  let requestedCount = criteria.count;
   const expanded = new Set();
   let available;
 
   function updateCounts() {
     const pools = getDnbPools(bank, criteria);
     const maximum = [...pools.values()].reduce((sum, pool) => sum + pool.length, 0);
-    const minimum = criteria.domains.size;
-    criteria.count = maximum ? Math.max(minimum, Math.min(criteria.count, maximum)) : 0;
+    const minimum = Math.min(5, maximum);
+    criteria.count = maximum ? Math.max(minimum, Math.min(requestedCount, maximum)) : 0;
     slider.min = String(minimum);
     slider.max = String(maximum);
     slider.value = String(criteria.count);
@@ -118,7 +121,7 @@ export function initializeDnbGenerator({ onGenerate, onCountChange = () => {} })
     criteria.domains.clear();
     updateCounts();
   });
-  slider.addEventListener("input", () => { criteria.count = Number(slider.value); updateCounts(); });
+  slider.addEventListener("input", () => { requestedCount = Number(slider.value); updateCounts(); });
   function draw() {
     error.textContent = "";
     try { onGenerate(generateDnbSeries(bank, criteria)); }

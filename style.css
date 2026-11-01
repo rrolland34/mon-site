@@ -1,4 +1,13 @@
 /* ===== RESET & BASE ===== */
+:root {
+  --correction-red: #FF8A80;
+}
+
+.answer-feedback-expected,
+.answer-feedback-explanation {
+  color: var(--correction-red);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -277,6 +286,10 @@ button {
   margin-top: 15px;
   font-size: 1.8em;
   min-height: 30px;
+}
+
+#feedback .answer-feedback-expected {
+  margin-top: 0.5em;
 }
 
 /* ===== SLIDER ===== */
@@ -965,3 +978,68 @@ button {
 }
 .dnb-generator[hidden], .dnb-subdomains[hidden], .dnb-actions[hidden],
 .main-content[hidden], #top-controls[hidden], .controls[hidden] { display: none; }
+/* Catalogues : mêmes cartes et proportions que les automatismes 6e et 3e. */
+.catalog-page {
+  height: auto;
+  min-height: 100%;
+}
+.catalog-page .catalog-layout {
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  margin: 28px auto;
+}
+.catalog-page .catalog-card {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 24px;
+  padding: clamp(16px, 2.5vw, 28px);
+  background: rgba(255, 255, 255, 0.065);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+.catalog-page .domain-header {
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 1.3;
+  margin: 0 0 22px;
+}
+.catalog-page .series-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  width: 100%;
+  align-items: stretch;
+}
+.catalog-page .series-grid > a {
+  display: flex;
+  min-width: 0;
+  text-decoration: none;
+}
+.catalog-page .series-grid .category-btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 76px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+  font-size: 1.05em;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  .catalog-page .series-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 800px) {
+  .catalog-page .series-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .catalog-page .series-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 1199px) {
+  .catalog-page .nav-list { flex-wrap: wrap; gap: 12px; }
+}

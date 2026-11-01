@@ -129,3 +129,13 @@ test('série 6 : catalogue, six boutons et historique QCM du moteur',()=>{
     assert.equal(history[0].displayAnswer,getDisplayAnswer(q,'qcm'));
   }
 });
+
+
+test('série 6 : figures conservées dans les énoncés uniquement',()=>{
+ for(const q of generateQuestions()) for(const mode of ['direct','qcm']){
+  const correction=typeof q.display_answer==='string'?q.display_answer:q.display_answer[mode];
+  assert.doesNotMatch(correction,/<svg/);
+  assert.match(correction,/color:red/);
+  if(['q1','q2','q4','q5'].includes(q.id)) assert.match(q.question[mode],/<svg/);
+ }
+});
