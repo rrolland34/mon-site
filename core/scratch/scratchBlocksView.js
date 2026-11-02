@@ -2,8 +2,9 @@ import { validateProgram, instructionSource } from './scratchProgram.js';
 
 // Only this adapter depends on Scratchblocks 3.7.1 AST/view internals.
 // Wrappers belong to view instances, never to shared prototypes.
-export function createScratchBlocksView({ container, program, scratchblocks = globalThis.scratchblocks }) {
-  const { instructionCount } = validateProgram(program);
+export function createScratchBlocksView({ container, program, source, blockIds, scratchblocks = globalThis.scratchblocks }) {
+  const instructionCount = source === undefined ? validateProgram(program).instructionCount : blockIds?.length;
+  if (!Number.isInteger(instructionCount) || instructionCount < 1) throw Error('Identifiants Scratch requis');
   let active = null, disposed = false, mapping = new Map();
   function block(item) {
     const parsed = scratchblocks.parse(instructionSource(item), { languages: ['fr'] });
@@ -32,7 +33,19 @@ export function createScratchBlocksView({ container, program, scratchblocks = gl
   }
   function render() {
     if (disposed) return;
-    const model = new scratchblocks.Document([new scratchblocks.Script(program.map(block))]);
+    let model;
+    if (source === undefined) model = new scratchblocks.Document([new scratchblocks.Script(program.map(block))]);
+    else {
+      model = scratchblocks.parse(source, { languages: ['fr'] });
+      let index = 0;
+      const visit = script => script.blocks.forEach(node => {
+        if (!node.isBlock || !node.info.id) throw Error('Bloc Scratch non reconnu');
+        node.geometryInstructionId = blockIds[index++];
+        node.children.filter(child => child.isScript).forEach(visit);
+      });
+      model.scripts.forEach(visit);
+      if (index !== instructionCount || new Set(blockIds).size !== instructionCount) throw Error('Structure Scratch incompatible');
+    }
     const view = scratchblocks.newView(model, { style: 'scratch3', scale: 0.85 });
     const nextMapping = new Map();
     function bind(node) {
@@ -57,5 +70,19 @@ export function createScratchBlocksView({ container, program, scratchblocks = gl
     highlight(active);
   }
   render();
-  return { highlight, render, dispose() { disposed = true; mapping.clear(); container.replaceChildren(); } };
+  function setEmphasis({ active = [], muted = [] } = {}) {
+    if (disposed) return;
+    for (const id of [...active, ...muted]) if (!mapping.has(id)) throw Error(`Identifiant inconnu : ${id}`);
+    highlight(null);
+    for (const [id, entry] of mapping) {
+      entry.group.style.opacity = muted.includes(id) ? '.25' : '';
+      if (active.includes(id)) {
+        entry.shape.style.stroke = '#ffea52';
+        entry.shape.style.strokeWidth = '4px';
+        entry.shape.style.paintOrder = 'stroke fill';
+        entry.shape.classList.add('scratch-instruction-active');
+      }
+    }
+  }
+  return { highlight, setEmphasis, render, dispose() { disposed = true; mapping.clear(); container.replaceChildren(); } };
 }

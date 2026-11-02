@@ -20,7 +20,7 @@ test("les corrections exportées héritent du rouge, conservé à l'impression",
 });
 
 for (const answerMode of ["direct", "qcm"]) {
-  test(`la fenêtre commune applique les styles sans modifier les contenus DNB : ${answerMode}`, () => {
+  test(`la fenêtre commune applique les styles sans modifier les contenus DNB : ${answerMode}`, async () => {
     const before = JSON.stringify(series);
     const corrected = createEvaluationWithCorrection({ exercice: series, answerMode });
     const statement = createEvaluationStatement({ exercice: series, answerMode });
@@ -31,9 +31,17 @@ for (const answerMode of ["direct", "qcm"]) {
     assert.doesNotMatch(statement, /class="evaluation-answer"/);
     for (const content of [corrected, statement, archive]) {
       const archiveWindow = { document: { documentElement: {} } };
-      globalThis.window = { open: () => archiveWindow };
+      let receive;
+      globalThis.window = {
+        addEventListener(_name, callback) { receive = callback; },
+        removeEventListener() {},
+        open() {
+          queueMicrotask(() => receive({ source: archiveWindow, origin: "null", data: "math-export-shell-ready" }));
+          return archiveWindow;
+        }
+      };
       try {
-        assert.equal(createExportWindow({ title: series.title, currentDate: "22/10/2026", evaluationContent: content }), archiveWindow);
+        assert.equal(await createExportWindow({ title: series.title, currentDate: "22/10/2026", evaluationContent: content }), archiveWindow);
         const html = archiveWindow.document.documentElement.innerHTML;
         assert.ok(html.includes(content));
         assert.ok(html.includes(getExportStyles()));

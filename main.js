@@ -1,5 +1,7 @@
 import { initializeDnbGenerator } from "./core/dnbGeneratorUI.js";
 import { createScratchProgressiveAdapter, getScratchCorrection } from "./core/scratch/scratchProgressiveAdapter.js";
+import { createScratchReasoningAdapter } from './core/scratch/scratchReasoningAdapter.js';
+import { createSpreadsheetCorrectionAdapter } from './core/spreadsheetCorrectionAdapter.js';
 import { displayQCMOptions, highlightCorrectQCMButton } from "./core/qcm.js";
 import {
   createProgressiveCorrectionPlayer,
@@ -764,6 +766,7 @@ function processAnswer(
       isCorrect, isNotAnswered, userAnswer, answerMode: currentQuestionAnswerMode
     });
     document.getElementById("feedback").appendChild(correction);
+    if (window.scratchblocks) scratchblocks.renderMatching('#feedback pre.blocks', {style:'scratch3',languages:['fr']});
   } else if (presentationMode === "response" && currentQuestion.qcmFeedback) {
     const status = isCorrect ? "Bonne réponse !" : isNotAnswered ? "Réponse non saisie." : "Réponse incorrecte !";
     document.getElementById("feedback").innerHTML = `${status}${!isCorrect && incorrectFeedback ? `<p>${incorrectFeedback}</p>` : ""}${displayAnswer}`;
@@ -1017,7 +1020,19 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
   const container = document.getElementById("feedback");
   const scratch = correction.progressiveCorrection?.kind === "scratch"
     ? getScratchCorrection({ correctionMode: exercice.correctionMode, presentationMode, correction }) : null;
-  if (scratch && container) {
+  if (['scratch-reasoning','invoice'].includes(correction.progressiveCorrection?.kind) && container) {
+    const createAdapter = correction.progressiveCorrection.kind === 'invoice' ? createSpreadsheetCorrectionAdapter : createScratchReasoningAdapter;
+    progressiveCorrectionPlayer = createAdapter({
+      container, descriptor: correction.progressiveCorrection,
+      questionElement: document.getElementById('question'),
+      onConclusion(visible) {
+        if (correction.answerMode !== 'qcm') return;
+        displayQCMOptions({possible_answers:correction.qcmAnswersOrder,qcmAnswersOrder:correction.qcmAnswersOrder,qcmClass:correction.qcmClass,qcmRenderAnswer:correction.qcmRenderAnswer},true);
+        if (visible) highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer);
+      }
+    });
+    progressiveCorrectionPlayer.start({atEnd});
+  } else if (scratch && container) {
     progressiveCorrectionPlayer = createScratchProgressiveAdapter({
       container,
       descriptor: scratch,

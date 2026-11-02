@@ -47,7 +47,7 @@ export function createProgressiveCorrectionPlayer({
 
   function display({ complete = false } = {}) {
     clearView();
-    beforeRender({ isLastStep: progression.getIsLastStep() });
+    beforeRender({ isLastStep: progression.getIsLastStep(), index: progression.getCurrentStepIndex(), complete });
     // Une cible distincte par rendu : un ancien travail MathJax ne peut pas
     // remplacer le contenu de l'étape courante après une navigation rapide.
     slot = container.ownerDocument.createElement("section");
