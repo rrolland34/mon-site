@@ -1,7 +1,7 @@
 // core/proofChoice.js
 
 export function createProofChoiceMenu(
-  step
+  step, formatChoice = choice => choice
 ) {
   const proofChoice =
     document.createElement(
@@ -59,13 +59,13 @@ export function createProofChoiceMenu(
         "proof-option";
 
       optionButton.innerHTML =
-        choice;
+        formatChoice(choice);
 
       optionButton.addEventListener(
         "click",
         function() {
           choiceButton.innerHTML =
-            choice;
+            formatChoice(choice);
 
           proofChoice.dataset.selectedChoice =
             choice;

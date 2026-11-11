@@ -31,10 +31,12 @@ export function createPythagorasTrigonometryExercise(base, {
   const roundedAnswer = roundAngleToDegree(exactAnswer);
   const angle = { vertexIndex: angleVertexIndex, vertex: vertices[angleVertexIndex],
     name: vertices[0] + vertices[angleVertexIndex] + vertices[3 - angleVertexIndex], radians, degrees: exactAnswer };
-  const length = side => `\\mathrm{${sideNames[side]}}=${formatAnswer(lengths[side], "math")}~\\mathrm{${unit}}`;
-  const statement = `Le triangle \\(\\mathrm{${vertices.join("")}}\\) tel que \\(${length("leg1")},\\)<br>` +
-    `\\(${length("leg2")}\\text{ et }${length("hypotenuse")}\\) est-il rectangle ?<br>` +
-    `Si oui, calculer la mesure de l’angle \\(\\widehat{\\mathrm{${angle.name}}}\\) arrondie à l’unité.`;
+  const length = side => String.raw`\mathrm{${sideNames[side]}}=${formatAnswer(lengths[side], "math")}~\mathrm{${unit}}`;
+  const statement = [
+    String.raw`\(\text{Le triangle }\mathrm{${vertices.join("")}}\text{ tel que}\) \(${length("leg1")},\)`,
+    String.raw`\(${length("leg2")}\) \(\text{et }${length("hypotenuse")}\) \(\text{est-il rectangle ?}\)`,
+    String.raw`\(\text{Si oui, calculer}\) \(\text{la mesure de l’angle }\widehat{\mathrm{${angle.name}}}\) \(\text{arrondie à l’unité.}\)`
+  ].join("<br>");
   const answer = `${roundedAnswer}°`;
   return { ...exercise, task: "angle", rightAngleVertex: vertices[0], angle, sideRoles,
     figureOptions: { ...exercise.figureOptions, mirror: false }, knownSides: [numeratorSide, denominatorSide],

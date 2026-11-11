@@ -7,7 +7,7 @@ import {
 function formatLengthName(
   name
 ) {
-  return `\\mathrm{${name}}`;
+  return String.raw`\mathrm{${name}}`;
 }
 
 function createHypotenuseCalculationSteps(
@@ -77,12 +77,7 @@ function createHypotenuseCalculationSteps(
       id: "finalResult",
       kind: "calculation",
 
-      correct:
-        `\\(${hypotenuse} = ` +
-        `${formatAnswer(
-          lengths.hypotenuse,
-          "math"
-        )}\\ \\text{${unit}}\\)`
+      correct: String.raw`\(${hypotenuse} = ${formatAnswer(lengths.hypotenuse, "math")}\,\mathrm{${unit}}\)`
     }
   ];
 }
@@ -177,12 +172,7 @@ function createLegCalculationSteps(
       id: "finalResult",
       kind: "calculation",
 
-      correct:
-        `\\(${unknownSideName} = ` +
-        `${formatAnswer(
-          lengths[unknownSide],
-          "math"
-        )}\\ \\text{${unit}}\\)`
+      correct: String.raw`\(${unknownSideName} = ${formatAnswer(lengths[unknownSide], "math")}\,\mathrm{${unit}}\)`
     }
   ];
 }
@@ -223,17 +213,16 @@ export function createPythagorasProof(
    */
 
   const rectangleStatement =
-    `On sait que le triangle ${triangleName} ` +
-    `est rectangle en ${A}.`;
+    String.raw`\(\text{On sait que le triangle }\mathrm{${triangleName}}\) \(\text{est rectangle en }\mathrm{${A}}.\)`;
 
   const pythagorasStatement =
-    "D'après le théorème de Pythagore,";
+    String.raw`\(\text{D'après}\) \(\mathbf{\text{le théorème de Pythagore}}\text{,}\)`;
 
   const converseStatement =
-    "D'après la réciproque du théorème de Pythagore,";
+    String.raw`\(\text{D'après la réciproque du}\) \(\text{théorème de Pythagore,}\)`;
 
   const contrapositiveStatement =
-    "D'après la contraposée du théorème de Pythagore,";
+    String.raw`\(\text{D'après la contraposée du}\) \(\text{théorème de Pythagore,}\)`;
 
   const pythagorasEquality =
     `\\(${hypotenuse}^2 = ` +

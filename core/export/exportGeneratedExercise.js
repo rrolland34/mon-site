@@ -19,16 +19,18 @@ function prepareCorrectionForExport(
  * de Thalès, de trigonométrie, etc.
  *
  * @param {Object} options
- * @param {string} options.title
+ * @param {string} options.title Titre d'origine, utilisé pour réserver sa hauteur.
  * @param {Object} options.exercise
  * @param {Function} [options.createCorrection]
  * @param {boolean} [options.includeCorrection]
+ * @param {boolean} [options.singlePageStudentSheet] Mise en page A4 du sujet seul.
  */
 export function exportGeneratedExercise({
   title,
   exercise,
   renderFigure,
   createCorrection,
+  singlePageStudentSheet = false,
   includeCorrection =
     false
 }) {
@@ -117,8 +119,10 @@ const figureHTML =
     }
   `;
 
-  exportDocument({
+  return exportDocument({
     title,
-    content
+    content,
+    isEvaluation: true,
+    singlePageStudentSheet: !includeCorrection && singlePageStudentSheet
   });
 }

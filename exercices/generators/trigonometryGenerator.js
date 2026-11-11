@@ -31,10 +31,11 @@ function roundFinalLength(value) {
 }
 
 function createStatement({ vertices, angle, sideNames, knownSide, unknownSide, knownLength, unit }) {
-  return `\\(\\mathrm{${vertices.join("")}}\\text{ est un triangle rectangle en }\\mathrm{${vertices[0]}}\\text{ tel que}\\)` +
-    `<br>\\(\\widehat{\\mathrm{${angle.name}}}=${angle.degrees}^\\circ\\text{ et }` +
-    `\\mathrm{${sideNames[knownSide]}}=${formatAnswer(knownLength, "math")}~\\mathrm{${unit}}.\\)` +
-    `<br>\\(\\text{Calculer la longueur }\\mathrm{${sideNames[unknownSide]}}\\text{ arrondie au dixième.}\\)`;
+  return [
+    String.raw`\(\mathrm{${vertices.join("")}}\text{ est un triangle}\) \(\text{rectangle en }\mathrm{${vertices[0]}}\text{ tel que}\)`,
+    String.raw`\(\widehat{\mathrm{${angle.name}}}=${angle.degrees}^\circ\) \(\text{et }\mathrm{${sideNames[knownSide]}}=${formatAnswer(knownLength, "math")}~\mathrm{${unit}}.\)`,
+    String.raw`\(\text{Calculer la longueur }\mathrm{${sideNames[unknownSide]}}\) \(\text{arrondie au dixième.}\)`
+  ].join("<br>");
 }
 
 /**

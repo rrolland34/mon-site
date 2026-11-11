@@ -17,7 +17,7 @@ function formatLengthName(
 }
 
 export function createPythagorasConverseProof(
-  exercise
+  exercise, { mathjax = false } = {}
 ) {
   const {
     vertices,
@@ -68,50 +68,39 @@ export function createPythagorasConverseProof(
       leg2Square
     );
 
-  const theoremName =
-    caseType === "converse"
-      ? "la réciproque du théorème de Pythagore"
-      : "la contraposée du théorème de Pythagore";
-
   /*
    * Les trois propositions concernant
    * le côté le plus long.
    */
 
-  const largestSideHypotenuse =
-    `Le côté le plus long est ` +
-    `\\([${hypotenuse}]\\).`;
-
-  const largestSideLeg1 =
-    `Le côté le plus long est ` +
-    `\\([${leg1}]\\).`;
-
-  const largestSideLeg2 =
-    `Le côté le plus long est ` +
-    `\\([${leg2}]\\).`;
+  const largestSide = side => mathjax
+    ? String.raw`\(\text{Le côté le plus long}\) \(\text{est }[${side}].\)`
+    : String.raw`Le côté le plus long est \([${side}]\).`;
+  const [largestSideHypotenuse, largestSideLeg1, largestSideLeg2] =
+    [hypotenuse, leg1, leg2].map(largestSide);
 
   /*
    * Les trois propositions concernant
    * les théorèmes.
    */
 
-  const pythagorasStatement =
-    "D'après le théorème de Pythagore,";
-
-  const converseStatement =
-    "D'après la réciproque du théorème de Pythagore,";
-
-  const contrapositiveStatement =
-    "D'après la contraposée du théorème de Pythagore,";
+  const pythagorasStatement = mathjax
+    ? String.raw`\(\text{D'après le}\) \(\mathbf{\text{théorème de Pythagore}},\)`
+    : "D'après le théorème de Pythagore,";
+  const theoremStatement = theorem => mathjax
+    ? String.raw`\(\text{D'après}\) \(\mathbf{\text{la ${theorem}}}\) \(\mathbf{\text{du théorème de}}\) \(\mathbf{\text{Pythagore}},\)`
+    : `D'après la ${theorem} du théorème de Pythagore,`;
+  const converseStatement = theoremStatement("réciproque");
+  const contrapositiveStatement = theoremStatement("contraposée");
 
   /*
    * Proposition correspondant à
    * l'hypothèse du théorème de Pythagore.
    */
 
-  const rectangleStatement =
-    `On sait que le triangle ${triangleName} ` +
-    `est rectangle en ${rightAngleVertex}.`;
+  const rectangleStatement = mathjax
+    ? String.raw`\(\text{On sait que}\) \(\text{le triangle }\mathrm{${triangleName}}\) \(\text{est rectangle en }\mathrm{${rightAngleVertex}}.\)`
+    : `On sait que le triangle ${triangleName} est rectangle en ${rightAngleVertex}.`;
 
   /*
    * Banque commune de sept propositions
@@ -180,13 +169,12 @@ export function createPythagorasConverseProof(
    * Les deux conclusions possibles.
    */
 
-  const rectangleConclusion =
-    `le triangle ${triangleName} ` +
-    `est rectangle en ${rightAngleVertex}.`;
-
-  const notRectangleConclusion =
-    `le triangle ${triangleName} ` +
-    `n'est pas rectangle.`;
+  const rectangleConclusion = mathjax
+    ? String.raw`\(\text{le triangle }\mathrm{${triangleName}}\) \(\mathbf{\text{est rectangle}}\) \(\mathbf{\text{en }\mathrm{${rightAngleVertex}}}.\)`
+    : `le triangle ${triangleName} est rectangle en ${rightAngleVertex}.`;
+  const notRectangleConclusion = mathjax
+    ? String.raw`\(\text{le triangle }\mathrm{${triangleName}}\) \(\mathbf{\text{n'est pas}}\) \(\mathbf{\text{rectangle}}.\)`
+    : `le triangle ${triangleName} n'est pas rectangle.`;
 
   const correctConclusion =
     caseType === "converse"

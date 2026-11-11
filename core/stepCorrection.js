@@ -28,6 +28,7 @@ export function createStepCorrection({
     }
 
     currentStepIndex += 1;
+    isComplete = false;
 
     return currentStepIndex;
   }
@@ -53,9 +54,9 @@ export function createStepCorrection({
     isActive = false;
   }
 
-  function showAll() {
+  function showAll(lastIndex = stepCount - 1) {
     if (!isActive || isComplete) return false;
-    currentStepIndex = stepCount - 1;
+    currentStepIndex = lastIndex;
     isComplete = true;
     return true;
   }

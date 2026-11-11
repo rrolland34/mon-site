@@ -1,10 +1,39 @@
 // core/exerciseRegistry.js
 
 export const exerciseConfigs = {
+  // correctionMetadata décrit le parcours pédagogique ; le lecteur utilise family et type.
+  "thales-converse-theorem": {
+    title: "Réciproque et théorème de Thalès",
+    type: "converse-theorem", family: "thalesConverse",
+    correctionMetadata: {
+      type: "multi-phase",
+      phases: [
+        { goal: "Démontrer le parallélisme par la réciproque de Thalès", summaryScope: "current-phase" },
+        { goal: "Calculer une longueur avec le théorème de Thalès", summaryScope: "current-phase" }
+      ],
+      transition: {
+        clearPreviousPhase: true,
+        preserveFigure: true,
+        retainedProperty: "Le parallélisme des droites"
+      }
+    }
+  },
   "pythagoras-trigonometry": {
     title: "Réciproque de Pythagore et trigonométrie",
     type: "pythagoras-angle",
-    family: "trigonometry"
+    family: "trigonometry",
+    correctionMetadata: {
+      type: "multi-phase",
+      phases: [
+        { goal: "Démontrer que le triangle est rectangle par la réciproque de Pythagore", summaryScope: "complete-correction" },
+        { goal: "Calculer un angle par la trigonométrie", summaryScope: "current-phase" }
+      ],
+      transition: {
+        clearPreviousPhase: true,
+        preserveFigure: true,
+        retainedProperty: "Le triangle est rectangle"
+      }
+    }
   },
   "trigonometry-length": {
     title: "Trigonométrie — Calculer une longueur",

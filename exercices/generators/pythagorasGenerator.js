@@ -169,25 +169,15 @@ function getStatement({
         side !== unknownSide
     );
 
-  const firstKnownSide =
-    knownSides[0];
+  const length = side => String.raw`\mathrm{${sideNames[side]}}=${formatAnswer(lengths[side], "math")}\,\mathrm{${unit}}`;
+  const [first, second] = knownSides.map(length);
 
-  const secondKnownSide =
-    knownSides[1];
-
-  return (
-    `${vertices.join("")} est un triangle ` +
-    `rectangle en ${A} tel que ` +
-    `${sideNames[firstKnownSide]} = ` +
-    `${formatAnswer(
-      lengths[firstKnownSide]
-    )} ${unit} et ` +
-    `${sideNames[secondKnownSide]} = ` +
-    `${formatAnswer(
-      lengths[secondKnownSide]
-    )} ${unit}.<br>` +
-    `Calculer ${sideNames[unknownSide]}.`
-  );
+  // Les espaces entre blocs MathJax permettent le retour à la ligne sur mobile.
+  return [
+    String.raw`\(\mathrm{${vertices.join("")}}\text{ est un triangle}\) \(\text{rectangle en }\mathrm{${A}}\text{ tel que}\)`,
+    String.raw`\(${first}\) \(\text{et }${second}.\)`,
+    String.raw`\(\text{Calculer }\mathrm{${sideNames[unknownSide]}}.\)`
+  ].join("<br>");
 }
 
 export function generatePythagorasExercise(

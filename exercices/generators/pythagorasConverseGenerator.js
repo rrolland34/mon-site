@@ -213,26 +213,13 @@ function getStatement({
   unit,
   sideNames
 }) {
-  return (
-    `${vertices.join("")} est un triangle tel que ` +
-    `${sideNames.leg1} = ` +
-    `${formatAnswer(
-      lengths.leg1
-    )} ${unit}, ` +
-
-    `${sideNames.leg2} = ` +
-    `${formatAnswer(
-      lengths.leg2
-    )} ${unit} et ` +
-
-    `${sideNames.hypotenuse} = ` +
-    `${formatAnswer(
-      lengths.hypotenuse
-    )} ${unit}.<br>` +
-
-    `Le triangle ${vertices.join("")} ` +
-    `est-il rectangle ?`
-  );
+  const triangle = String.raw`\mathrm{${vertices.join("")}}`;
+  const length = side => String.raw`\mathrm{${sideNames[side]}}=${formatAnswer(lengths[side], "math")}\,\mathrm{${unit}}`;
+  return [
+    String.raw`\(${triangle}\text{ est un triangle tel que}\)`,
+    String.raw`\(${length("leg1")},\) \(${length("leg2")}\) \(\text{et }${length("hypotenuse")}.\)`,
+    String.raw`\(\text{Le triangle }${triangle}\) \(\text{est-il rectangle ?}\)`
+  ].join("<br>");
 }
 
 export function generatePythagorasConverseExercise(

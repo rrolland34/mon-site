@@ -9,7 +9,8 @@ import {
 } from "../qcm.js";
 
 export function createEvaluationContent({
-  userAnswers
+  userAnswers,
+  answerOnly = false
 }) {
   return userAnswers
     .map(
@@ -108,7 +109,9 @@ export function createEvaluationContent({
             ${qcmContent}
 
             ${answerText
-              ? `
+              ? answerOnly
+                ? `<div class="evaluation-answer">${answerText}</div>`
+                : `
                   <p class="evaluation-answer">
                     Réponse :
                     ${answerText}

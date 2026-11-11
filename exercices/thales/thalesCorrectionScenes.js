@@ -12,6 +12,45 @@ import {
   createProofHtml,
   displayProofStep
 } from "../../core/proofDisplay.js";
+import { createCorrectionPresentation } from "../../core/correctionPresentation.js";
+import { formatAnswer } from "../../core/answerFormatting.js";
+import { getThalesSegmentName } from "./thalesProof.js";
+
+/** Version courte après une réciproque : mêmes contours, égalités et cadres
+ * que le diaporama historique, sans répéter les hypothèses déjà établies. */
+export function createThalesCalculationScenes(exercise) {
+  const proof = createThalesProof(exercise);
+  const unknown = exercise.unknownSegment;
+  const smallUnknown = unknown === "BC";
+  // L'égalité littérale suit les triangles ; les calculs reprennent le nom
+  // du côté demandé dans l'énoncé (XS pour le côté littéral SX).
+  const unknownName = getThalesSegmentName(exercise, [...unknown].reverse().join(""));
+  for (const id of ["numericalEquality", "finalResult"]) {
+    const step = proof.find(step => step.id === id);
+    step.correct = step.correct.replace(`\\mathrm{${getThalesSegmentName(exercise, unknown)}}`, `\\mathrm{${unknownName}}`);
+  }
+  const number = key => formatAnswer(exercise.lengths[key], "math");
+  const calculation = proof.find(step => step.id === "calculation");
+  calculation.correct = `\\(\\mathrm{${unknownName}}=` +
+    `\\dfrac{${number(smallUnknown ? "AB" : "AD")}\\times ${number(smallUnknown ? "DE" : "BC")}}{${number(smallUnknown ? "AD" : "AB")}}\\)`;
+  const content = [
+    { id: "thalesStatement", html: String.raw`\(\text{D'après le }\mathbf{\text{théorème de Thalès}}\text{, on a :}\)` },
+    ...["literalEquality", "numericalEquality"].map(id => ({ id,
+      ...(id === "literalEquality" ? { before: " " } : {}),
+      html: `<span class="thales-proof-inline">${displayProofStep(proof, proof.findIndex(step => step.id === id), { boxed: id === "literalEquality" })}</span>` })),
+    { id: "crossProductStatement", html: String.raw`\(\text{D'après }\mathbf{\text{l'égalité des produits en croix}}\)` },
+    { id: "calculation", before: "", html: String.raw`\(\text{, d'où }\)<span class="thales-proof-inline">${calculation.correct}</span>` },
+    { id: "finalResult", before: "", html: String.raw`\(\text{, puis }\)<span class="thales-proof-inline">${displayProofStep(proof, proof.findIndex(step => step.id === "finalResult"), { boxed: true })}</span>\(\text{.}\)` }
+  ];
+  return createCorrectionPresentation({
+    stages: [
+      { id: "smallTriangle", figure: createBaseFigure(exercise, { small: true }) },
+      { id: "largeTriangle", figure: createBaseFigure(exercise, { small: true, large: true }) },
+      ...content.map(({ id }) => ({ id, figure: createFinalFigure(exercise) }))
+    ],
+    blocks: content.map(block => ({ ...block, from: block.id }))
+  }).scenes;
+}
 
 function getNames(exercise) {
   const [A, B, C, D, E] =
@@ -21,32 +60,12 @@ function getNames(exercise) {
   return { A, B, C, D, E };
 }
 
-function mathText(value) {
-  if (!value) {
-    return `<span class="thales-ratio-placeholder">&nbsp;</span>`;
-  }
-
-  return `\\(\\mathrm{${value}}\\)`;
-}
-
-function htmlFraction({
+function mathFraction({
   numerator = "",
   denominator = ""
 } = {}) {
-  return (
-    `<span class="thales-ratio-fraction">` +
-      `<span class="thales-ratio-numerator">` +
-        mathText(numerator) +
-      `</span>` +
-      `<span class="thales-ratio-denominator">` +
-        mathText(denominator) +
-      `</span>` +
-    `</span>`
-  );
-}
-
-function equalitySign() {
-  return `<span class="thales-ratio-equals">\\(=\\)</span>`;
+  const term = value => value ? String.raw`\mathrm{${value}}` : String.raw`\vphantom{\mathrm{A}}`;
+  return String.raw`<span class="thales-ratio-fraction">\(\dfrac{\textcolor{green}{${term(numerator)}}}{\textcolor{blue}{${term(denominator)}}}\)</span>`;
 }
 
 function createRatioEquality({
@@ -54,16 +73,11 @@ function createRatioEquality({
   second = {},
   third = {}
 } = {}) {
-  return {
-    html:
-      `<div class="thales-ratio-equality">` +
-        htmlFraction(first) +
-        equalitySign() +
-        htmlFraction(second) +
-        equalitySign() +
-        htmlFraction(third) +
-      `</div>`
-  };
+  const parts = [first, second, third].map((ratio, index) => {
+    const equal = index ? String.raw`<span class="thales-ratio-equals">\(=\)</span>` : "";
+    return `<span class="thales-ratio-part">${equal}${mathFraction(ratio)}</span>`;
+  });
+  return { html: `<div class="thales-ratio-equality">${parts.join("")}</div>` };
 }
 
 function createProgressiveEquality(exercise, stage) {
@@ -161,23 +175,16 @@ function formatProofContent(
   index,
   boxedIndexes = []
 ) {
-  let content =
-    proof[index].correct;
-
-  if (
-    boxedIndexes.includes(
-      index
-    )
-  ) {
-    content =
-      displayProofStep(
-        proof,
-        index,
-        { boxed: true }
-      );
+  const { id, correct } = proof[index];
+  const terminated = ["literalEquality", "usefulEquality", "finalResult"].includes(id);
+  let content = terminated ? correct.replace(/\\\)$/, String.raw`.\)`) : correct;
+  if (["literalEquality", "numericalEquality", "usefulEquality"].includes(id)) {
+    // Chaque rapport reste entier. Le signe = accompagne le rapport qui suit.
+    const [first, ...rest] = content.slice(2, -2).split("=");
+    content = [first, ...rest.map(ratio => "{}=" + ratio)]
+      .map(ratio => String.raw`\(${ratio}\)`).join("<wbr>");
   }
-
-  return content;
+  return boxedIndexes.includes(index) ? `<span class="proof-box">${content}</span>` : content;
 }
 
 function proofLines(
@@ -199,6 +206,7 @@ function proofLines(
   }
 
   const lines = [];
+  const then = String.raw` <span class="thales-proof-transition">\(\text{puis}\)</span> `;
 
   // Ligne 1 : droites sécantes.
   if (contents[0]) {
@@ -213,14 +221,10 @@ function proofLines(
   // Ligne 3 :
   // D'après le théorème de Thalès, on a : égalité littérale.
   if (contents[2]) {
-    let line =
-      `${contents[2]} :`;
+    let line = contents[2].replace(/\\\)$/, String.raw`\text{ :}\)`);
 
     if (contents[3]) {
-      line +=
-        ` <span class="thales-proof-inline">` +
-        `${contents[3]}` +
-        `.</span>`;
+      line += ` ${contents[3]}`;
     }
 
     lines.push(line);
@@ -229,18 +233,10 @@ function proofLines(
   // Ligne 4 :
   // D'où on a : égalité numérique puis égalité utile.
   if (contents[4]) {
-    let line =
-      `D'où on a : ` +
-      `<span class="thales-proof-inline">` +
-      `${contents[4]}` +
-      `</span>`;
+    let line = String.raw`\(\text{D'où on a :}\) ${contents[4]}`;
 
     if (contents[5]) {
-      line +=
-        ` <span class="thales-proof-transition">puis</span> ` +
-        `<span class="thales-proof-inline">` +
-        `${contents[5]}` +
-        `.</span>`;
+      line += then + contents[5];
     }
 
     lines.push(line);
@@ -252,23 +248,13 @@ function proofLines(
   // puis le calcul,
   // puis le résultat final.
   if (contents[6]) {
-    let line =
-      `\\(\\text{D'après }` +
-      `\\mathbf{\\text{l'égalité des produits en croix}}\\)`;
+    let line = String.raw`\(\text{D'après}\) \(\mathbf{\text{l'égalité des}}\) \(\mathbf{\text{produits}}\) \(\mathbf{\text{en croix}}\)`;
 
     if (showCalculation) {
-      line +=
-        ` \\(\\text{, on a :}\\) ` +
-        `<span class="thales-proof-inline">` +
-        `${contents[6]}` +
-        `</span>`;
+      line = line.replace(/\\\)$/, String.raw`\text{, on a :}\)`) + ` ${contents[6]}`;
 
       if (contents[7]) {
-        line +=
-          ` <span class="thales-proof-transition">puis</span> ` +
-          `<span class="thales-proof-inline">` +
-          `${contents[7]}` +
-          `.</span>`;
+      line += then + contents[7];
       }
     }
 
@@ -389,7 +375,7 @@ function createParallelProofScenes(
 }
 
 export function createThalesCorrectionScenes(exercise) {
-  const proof = createThalesProof(exercise);
+  const proof = createThalesProof(exercise, { wrap: true });
   const finalFigure = createFinalFigure(exercise);
   const literalEquality = createProgressiveEquality(exercise, 6);
 

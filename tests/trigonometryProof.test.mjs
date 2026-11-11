@@ -39,9 +39,9 @@ for (const [y, target, trig, numerator, denominator, operation, rounded] of case
       const numeric = str => name(str) === e.sideNames[e.knownSide] ? "4{,}2" : seg(str);
       assert.equal(proof.length, 7);
       assert.doesNotMatch(proof[4].correct, /<br\b|<div\b/);
-      assert.ok(proof[4].correct.includes("croix</strong>, on a"));
+      assert.ok(proof[4].correct.includes(String.raw`\text{produits en croix}}\text{, on a}`));
       assert.ok(proof[0].correct.includes(`\\mathrm{${e.vertices.join("")}}`));
-      assert.ok(proof[0].correct.includes(`en \\(\\mathrm{${e.vertices[0]}}\\)`));
+      assert.ok(proof[0].correct.includes(String.raw`\text{rectangle en }\mathrm{${e.vertices[0]}}`));
       assert.ok(proof[2].correct.includes(`\\boxed{\\${trig}\\left(\\widehat{\\mathrm{${name(y < 3 ? "ABC" : "ACB")}}}\\right)=\\dfrac{${seg(numerator)}}{${seg(denominator)}}}`));
       const numericTrig = `\\${trig}\\left(35^\\circ\\right)`;
       assert.ok(proof[3].correct.includes(`${numericTrig}=\\dfrac{${numeric(numerator)}}{${numeric(denominator)}}`));

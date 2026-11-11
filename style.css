@@ -328,6 +328,64 @@ button {
   visibility: visible;
 }
 
+@media (max-width: 1024px) {
+  .exercise-reader .nav-list {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .exercise-reader #time-control {
+    max-width: calc(100% - 16px);
+  }
+
+  .exercise-reader #time-control label {
+    white-space: nowrap;
+  }
+
+  .exercise-reader #time-slider {
+    min-width: 0;
+  }
+
+  .question-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question-header .question-title {
+    overflow-wrap: anywhere;
+  }
+
+  .question-header .timer {
+    position: static;
+    order: -1;
+    align-self: flex-end;
+    font-size: clamp(1.125rem, 3vw, 2.5rem);
+    padding: 2px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flash-reader .main-content .question-container {
+    padding-inline: clamp(12px, 5vw, 45px);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .question-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+
+  .question-header .timer {
+    grid-column: 2;
+    grid-row: 1;
+    order: 0;
+    align-self: start;
+    margin-inline-start: 12px;
+  }
+}
+
 /* ===== OVERLAY ===== */
 .correction-overlay {
   position: absolute;

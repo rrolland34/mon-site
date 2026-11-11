@@ -29,6 +29,11 @@ const ROTATIONS = [
   28
 ];
 
+const RATIOS = [[2, 5], [1, 2], [3, 5], [3, 4], [4, 5]];
+const RIGHT_TRIANGLES = [[3, 4, 5], [5, 12, 13], [8, 15, 17], [7, 24, 25], [12, 35, 37], [20, 21, 29]];
+const MIN_LARGE_TENTHS = 40;
+const MAX_LARGE_TENTHS = 150;
+
 function randomItem(values) {
   return values[
     Math.floor(
@@ -76,14 +81,6 @@ function randomInteger(
   );
 }
 
-function roundToTenth(value) {
-  return (
-    Math.round(
-      value * 10
-    ) / 10
-  );
-}
-
 function getPointMap(pointNames) {
   const [
     A,
@@ -118,78 +115,46 @@ function getDisplayedSegmentName(
     .join("");
 }
 
-function createLengths() {
-  /*
-   * On choisit un rapport simple compris
-   * entre 0,4 et 0,8.
-   *
-   * Les longueurs du petit triangle
-   * sont obtenues en multipliant celles
-   * du grand triangle par ce rapport.
-   */
-  const ratios = [
-    0.4,
-    0.5,
-    0.6,
-    0.75,
-    0.8
-  ];
+function hasDistinctLengths(sides, p, q) {
+  return new Set(sides.flatMap(side => [side * p, side * q])).size === 6;
+}
 
-  const ratio =
-    randomItem(ratios);
+function createTriangleBases(p, q) {
+  const min = Math.ceil(MIN_LARGE_TENTHS / q);
+  const max = Math.floor(MAX_LARGE_TENTHS / q);
+  while (true) {
+    const sides = [randomInteger(min, max), randomInteger(min, max), randomInteger(min, max)];
+    const perimeter = sides[0] + sides[1] + sides[2];
+    if (2 * Math.max(...sides) < perimeter && hasDistinctLengths(sides, p, q)) return sides;
+  }
+}
 
-  let AD;
-  let AE;
-  let DE;
-  let AB;
-  let AC;
-  let BC;
-
-  do {
-    AD = randomInteger(4, 15);
-    AE = randomInteger(4, 15);
-    DE = randomInteger(4, 15);
-
-    AB =
-      roundToTenth(
-        AD * ratio
-      );
-
-    AC =
-      roundToTenth(
-        AE * ratio
-      );
-
-    BC =
-      roundToTenth(
-        DE * ratio
-      );
-  } while (
-    AB <= 1 ||
-    AC <= 1 ||
-    BC <= 1 ||
-    new Set([
-      AB,
-      AD,
-      AC,
-      AE,
-      BC,
-      DE
-    ]).size !== 6
-  );
-
-  return {
-    ratio,
-
-    lengths: {
-      AB,
-      AD,
-      AC,
-      AE,
-      BC,
-      DE
+function createRightTriangleBases(p, q) {
+  const candidates = [];
+  for (const triple of RIGHT_TRIANGLES) {
+    const [leg, , hypotenuse] = triple;
+    if (!hasDistinctLengths(triple, p, q)) continue;
+    const min = Math.ceil(MIN_LARGE_TENTHS / (q * leg));
+    const max = Math.floor(MAX_LARGE_TENTHS / (q * hypotenuse));
+    for (let scale = min; scale <= max; scale++) {
+      candidates.push(triple.map(side => side * scale));
     }
-  };
+  }
+  const [firstLeg, secondLeg, hypotenuse] = randomItem(candidates);
+  // Les angles droits sont en B et D : AC et AE sont les hypoténuses.
+  return Math.random() < 0.5 ? [firstLeg, hypotenuse, secondLeg] : [secondLeg, hypotenuse, firstLeg];
+}
+
+function createLengths(perpendicular) {
+  // Pour chaque paire, p × base et q × base sont des dixièmes entiers.
+  // Le passage à la valeur affichée n'intervient qu'une fois les produits faits.
+  const [p, q] = randomItem(RATIOS);
+  const bases = perpendicular ? createRightTriangleBases(p, q) : createTriangleBases(p, q);
+  const lengths = Object.fromEntries(SEGMENT_PAIRS.flatMap(([small, large], index) => [
+    [small, (p * bases[index]) / 10],
+    [large, (q * bases[index]) / 10]
+  ]));
+  return { ratio: p / q, lengths };
 }
 
 function chooseCalculationData(
@@ -223,6 +188,8 @@ function chooseCalculationData(
   };
 }
 
+const math = tex => String.raw`\(${tex}\)`;
+
 function createGivenLengthsText({
   pointNames,
   lengths,
@@ -252,32 +219,16 @@ function createGivenLengthsText({
             "math"
           );
 
-        return (
-          `\\mathrm{${name}} = ` +
-          `${value}~\\mathrm{${unit}}`
-        );
+        return { segment: String.raw`\mathrm{${name}}`, length: String.raw`{}=${value}~\mathrm{${unit}}` };
       }
     );
 
-  if (parts.length === 1) {
-    return parts[0];
-  }
-
-  if (parts.length === 2) {
-    return (
-      `${parts[0]} ` +
-      `\\text{ et } ` +
-      `${parts[1]}`
-    );
-  }
-
-  return (
-    `${parts
-      .slice(0, -1)
-      .join("\\text{, }")} ` +
-    `\\text{ et } ` +
-    `${parts.at(-1)}`
-  );
+  return parts.map(({ segment, length }, index) => {
+    const last = index === parts.length - 1;
+    const prefix = last && index ? String.raw`\(\text{et}\) ` : "";
+    const punctuation = last ? "." : index < parts.length - 2 ? "," : "";
+    return `${prefix}<span class="thales-given-length">${math(segment)}<wbr>${math(length + punctuation)}</span>`;
+  }).join(" ");
 }
 
 function createStatement({
@@ -313,36 +264,11 @@ function createStatement({
       unknownSegment
     );
 
-  const parallelStatement =
-    requiresParallelProof
-      ? ""
-      : (
-          `<br>` +
+  const secant = String.raw`\(\text{Les droites}\) \((\mathrm{${D}${B}})\) \(\text{et }(\mathrm{${E}${C}})\) \(\text{sont}\) \(\text{sécantes en }\mathrm{${A}}.\)`;
+  const parallel = String.raw`\(\text{Les droites}\) \((\mathrm{${B}${C}})\) \(\text{et }(\mathrm{${D}${E}})\) \(\text{sont}\) \(\text{parallèles}.\)`;
+  const calculation = String.raw`\(\text{On a}\) ${givens} \(\text{Calculer }\mathrm{${unknownName}}.\)`;
 
-          `\\(\\text{Les droites }` +
-          `(\\mathrm{${B}${C}}) ` +
-          `\\text{ et } ` +
-          `(\\mathrm{${D}${E}}) ` +
-          `\\text{ sont parallèles}.\\)`
-        );
-
-  return (
-    `\\(\\text{Les droites }` +
-    `(\\mathrm{${D}${B}}) ` +
-    `\\text{ et } ` +
-    `(\\mathrm{${E}${C}}) ` +
-    `\\text{ sont sécantes en }` +
-    `\\mathrm{${A}}.\\)` +
-
-    parallelStatement +
-
-    `<br>` +
-
-    `\\(\\text{On a }` +
-    `${givens}. ` +
-    `\\text{Calculer }` +
-    `\\mathrm{${unknownName}}.\\)`
-  );
+  return (requiresParallelProof ? [secant, calculation] : [secant, parallel, calculation]).join("<br>");
 }
 
 function createFigureLengths({
@@ -596,7 +522,7 @@ export function generateThalesExercise(
   const {
     ratio,
     lengths
-  } = createLengths();
+  } = createLengths(["perpendicular-nested", "perpendicular-butterfly", "perpendicular-random"].includes(type));
 
   /*
    * Les six segments peuvent être

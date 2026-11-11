@@ -3,16 +3,18 @@
 import {
   createProofChoiceMenu
 } from "./proofChoice.js";
+import { renderMath, clearMath } from "./mathRendering.js";
+import { readProofRational } from "./proofRational.js";
 
 export function createStudentProofElement(
-  step
+  step, formatChoice
 ) {
   if (
     step.kind === "choice"
   ) {
     const menu =
       createProofChoiceMenu(
-        step
+        step, formatChoice
       );
 
     menu.dataset.stepId =
@@ -37,6 +39,7 @@ export function createStudentProofElement(
 
     container.dataset.correctAnswer =
       step.answer;
+    if (step.acceptExpression) container.dataset.acceptExpression = "true";
 
     container.innerHTML = `
       <span class="proof-input-label">
@@ -68,8 +71,7 @@ export function createStudentProofElement(
     label.className =
       "proof-choice-input-label";
 
-    label.textContent =
-      step.label;
+    label.textContent = step.mathjax ? String.raw`\(\text{${step.label}}\)` : step.label;
 
     container.className =
       "proof-choice-input";
@@ -96,7 +98,7 @@ export function createStudentProofElement(
 
     const menu =
       createProofChoiceMenu(
-        choiceStep
+        choiceStep, formatChoice
       );
 
     const input =
@@ -156,8 +158,7 @@ export function createStudentProofElement(
     label.className =
       "proof-ratio-input-label";
 
-    label.textContent =
-      step.label;
+    label.textContent = step.mathjax ? String.raw`\(\text{${step.label}}\)` : step.label;
 
     const choiceStep = {
       id:
@@ -172,7 +173,7 @@ export function createStudentProofElement(
 
     const menu =
       createProofChoiceMenu(
-        choiceStep
+        choiceStep, formatChoice
       );
 
     menu.classList.add(
@@ -189,6 +190,7 @@ export function createStudentProofElement(
 
     equal.textContent =
       "=";
+    if (step.mathjax) equal.innerHTML = String.raw`\(=\)`;
 
     const fraction =
       document.createElement(
@@ -250,17 +252,12 @@ export function createStudentProofElement(
       label
     );
 
-    container.appendChild(
-      menu
-    );
-
-    container.appendChild(
-      equal
-    );
-
-    container.appendChild(
-      fraction
-    );
+    const expression = document.createElement("span");
+    expression.className = "proof-ratio-expression";
+    expression.appendChild(menu);
+    expression.appendChild(equal);
+    expression.appendChild(fraction);
+    container.appendChild(expression);
 
     return container;
   }
@@ -290,8 +287,7 @@ export function createStudentProofElement(
     label.className =
       "proof-cross-product-label";
 
-    label.textContent =
-      step.label;
+    label.textContent = step.mathjax ? String.raw`\(\text{${step.label}}\)` : step.label;
 
     const leftFactor =
       document.createElement(
@@ -311,6 +307,7 @@ export function createStudentProofElement(
 
     multiplication.textContent =
       "×";
+    if (step.mathjax) multiplication.innerHTML = String.raw`\(\times\)`;
 
     const rightFactor =
       document.createElement(
@@ -330,6 +327,7 @@ export function createStudentProofElement(
 
     equal.textContent =
       "=";
+    if (step.mathjax) equal.innerHTML = String.raw`\(=\)`;
 
     const input =
       document.createElement(
@@ -380,9 +378,27 @@ export function createStudentProofElement(
           source
         );
 
-      factor.textContent =
-        sourceInput?.value.trim() ||
-        "…";
+      const rawValue = sourceInput?.value.trim() || "…";
+      if (!step.mathjax) {
+        factor.textContent = rawValue;
+        return;
+      }
+      // La validation conserve la saisie exacte, indépendante du DOM MathJax.
+      factor.dataset.rawValue = rawValue;
+      clearMath(factor);
+      factor.innerHTML = "";
+      const content = document.createElement("span");
+      // Composer l'écriture saisie sans la convertir en double ni arrondir
+      // les fractions. Le texte invalide reste du texte, jamais du HTML.
+      const tex = rawValue === "…" ? String.raw`\ldots`
+        : readProofRational(rawValue) && rawValue.toLowerCase()
+          .replace(/\s+|\\[()[\]]|\\,|~/g, "")
+          .replace(/\{,\}|[.,]/g, "{,}")
+          .replace(/10\^(-?\d+)/g, "10^{$1}");
+      const factorTex = tex && (/^-|\+/.test(tex) ? String.raw`\left(${tex}\right)` : tex);
+      content.textContent = factorTex ? String.raw`\(${factorTex}\)` : rawValue;
+      factor.appendChild(content);
+      if (factorTex) renderMath(factor, { targets: [content] });
     }
 
     function updateProduct() {
@@ -401,25 +417,21 @@ export function createStudentProofElement(
       label
     );
 
-    container.appendChild(
-      leftFactor
-    );
+    const product = document.createElement("span");
+    product.className = "proof-cross-product-expression";
+    product.appendChild(leftFactor);
+    const multiplier = document.createElement("span");
+    multiplier.className = "proof-cross-product-multiplier";
+    multiplier.appendChild(multiplication);
+    multiplier.appendChild(rightFactor);
+    product.appendChild(multiplier);
+    container.appendChild(product);
 
-    container.appendChild(
-      multiplication
-    );
-
-    container.appendChild(
-      rightFactor
-    );
-
-    container.appendChild(
-      equal
-    );
-
-    container.appendChild(
-      input
-    );
+    const result = document.createElement("span");
+    result.className = "proof-cross-product-answer";
+    result.appendChild(equal);
+    result.appendChild(input);
+    container.appendChild(result);
 
     /*
      * La démonstration complète est ajoutée

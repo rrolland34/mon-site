@@ -19,7 +19,7 @@ function rangeCells(start,end){
   const [a,b]=decode(start),[c,d]=decode(end);if((Math.abs(c-a)+1)*(Math.abs(d-b)+1)>100)throw Error();const refs=[];
   for(let row=Math.min(b,d);row<=Math.max(b,d);row++)for(let col=Math.min(a,c);col<=Math.max(a,c);col++){let n=col,s='';while(n){n--;s=String.fromCharCode(65+n%26)+s;n=Math.floor(n/26);}refs.push(s+row);}return refs;
 }
-function parseFormula(formula,reference,trail=[]){
+function parseFormula(formula,reference,trail=[],unaryBeforePower=false){
   const extended=typeof reference==='object',constant=c=>extended?sparseConstant(c):[c];
   const sumPolys=extended?sparseAdd:add,productPolys=extended?sparseMultiply:multiply;
   const scale=(p,c)=>productPolys(p,constant(c));
@@ -44,17 +44,39 @@ function parseFormula(formula,reference,trail=[]){
     }
     if(/^\d+(?:[.,]\d+)?$/.test(t??'')){const [a,b='']=t.replace(',','.').split('.');return constant(rational(BigInt(a+b),10n**BigInt(b.length)));}
     if(/^\$?[A-Z]+\$?[1-9]\d*$/.test(t??''))return cell(t);throw Error();}
-  // Convention de cette série : la puissance précède le signe unaire.
-  // -A2^4 = -(A2^4), alors que (-A2)^4 conserve une base négative.
-  function unary(){if(tokens[i]==='-'){i++;return scale(unary(),rational(-1n));}if(tokens[i]==='+'){i++;return unary();}return power();}
-  function power(){let p=atom();if(tokens[i]==='^'){i++;const n=tokens[i++];if(!/^[0-4]$/.test(n??''))throw Error();let result=constant(one());for(let k=0;k<Number(n);k++)result=productPolys(result,p);p=result;}if(extended&&tokens[i]==='%'){i++;p=scale(p,rational(1n,100n));}return p;}
-  function product(){let p=unary();while(['*','/'].includes(tokens[i])){const op=tokens[i++],q=unary();if(op==='*')p=productPolys(p,q);else {const c=extended?(q.size===1?q.get(''):null):(q.length===1?q[0]:null);if(!c?.n)throw Error();p=scale(p,rational(c.d,c.n));}}return p;}
+  function signed(operand){
+    const sign=tokens[i];
+    if(sign!=='+'&&sign!=='-')return operand();
+    i++;
+    const p=signed(operand);
+    return sign==='-'?scale(p,rational(-1n)):p;
+  }
+  function power(){
+    let p=unaryBeforePower?signed(atom):atom();
+    if(tokens[i]==='^'){
+      i++;
+      const n=tokens[i++];
+      if(!/^[0-4]$/.test(n??''))throw Error();
+      let result=constant(one());
+      for(let k=0;k<Number(n);k++)result=productPolys(result,p);
+      p=result;
+    }
+    if(extended&&tokens[i]==='%'){
+      i++;
+      p=scale(p,rational(1n,100n));
+    }
+    return p;
+  }
+  const factor=unaryBeforePower?power:()=>signed(power);
+  function product(){let p=factor();while(['*','/'].includes(tokens[i])){const op=tokens[i++],q=factor();if(op==='*')p=productPolys(p,q);else {const c=extended?(q.size===1?q.get(''):null):(q.length===1?q[0]:null);if(!c?.n)throw Error();p=scale(p,rational(c.d,c.n));}}return p;}
   function sum(){let p=product();while(['+','-'].includes(tokens[i])){const sign=tokens[i++]==='+'?1n:-1n;p=sumPolys(p,product(),sign);}return p;}
   try{const p=sum();return i===tokens.length?(extended?p:trim(p)):null;}catch{return null;}
 }
 export function spreadsheetFormulaSignature(formula,context){const p=parseFormula(formula,context);return p===null?null:JSON.stringify([...p].sort(([a],[b])=>a.localeCompare(b)).map(([key,c])=>[key,String(c.n),String(c.d)]));}
 export function equivalentSpreadsheetCalculation(candidate,correct,context){const a=spreadsheetFormulaSignature(candidate,context);return a!==null&&a===spreadsheetFormulaSignature(correct,context);}
-export function formulaPolynomial(formula,reference){return parseFormula(formula,reference)?.map(c=>Number(c.n)/Number(c.d))??null;}
+export function formulaPolynomial(formula,reference,{unaryBeforePower=false}={}){
+  return parseFormula(formula,reference,[],unaryBeforePower)?.map(c=>Number(c.n)/Number(c.d))??null;
+}
 export function translateFormula(formula,orientation,offset){
   return formula.replace(/(\$?)([A-Z]+)(\$?)(\d+)/gi,(_,fixedColumn,column,fixedRow,row)=>{
     column=column.toUpperCase();
@@ -62,12 +84,22 @@ export function translateFormula(formula,orientation,offset){
     return fixedColumn+column+fixedRow+(orientation==='vertical'&&!fixedRow?Number(row)+offset:row);
   });
 }
+function samePolynomial(a,b){
+  return a!==null&&b!==null&&a.length===b.length&&a.every((c,i)=>c.n===b[i].n&&c.d===b[i].d);
+}
+
+// Les réponses de « Formules de tableur » doivent donner le même résultat
+// avec la priorité mathématique et avec la négation prioritaire d'Excel et Calc.
 export function equivalentFormula(candidate,correct,orientation){
   const reference=orientation==='horizontal'?'B1':'A2';
   return [0,1,2].every(offset=>{
     const ref=translateFormula(reference,orientation,offset);
-    const a=parseFormula(translateFormula(candidate,orientation,offset),ref),b=parseFormula(translateFormula(correct,orientation,offset),ref);
-    return a!==null&&b!==null&&a.length===b.length&&a.every((c,i)=>c.n===b[i].n&&c.d===b[i].d);
+    const input=translateFormula(candidate,orientation,offset);
+    const expected=translateFormula(correct,orientation,offset);
+    const polynomial=parseFormula(expected,ref);
+    return samePolynomial(polynomial,parseFormula(input,ref))
+      &&samePolynomial(polynomial,parseFormula(input,ref,[],true))
+      &&samePolynomial(polynomial,parseFormula(expected,ref,[],true));
   });
 }
 

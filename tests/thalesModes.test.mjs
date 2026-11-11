@@ -20,7 +20,7 @@ function seeded(seed, build, forcedDraw) {
   };
   try { return { value: build(), draws: count }; } finally { Math.random = original; }
 }
-const families = Object.entries(exerciseConfigs).filter(([, config]) => config.family === "thalesConverse");
+const families = Object.entries(exerciseConfigs).filter(([, config]) => config.family === "thalesConverse" && config.type !== "converse-theorem");
 const player = readFileSync(new URL("../exercise_player.html", import.meta.url), "utf8");
 const generatorFunction = player.slice(player.indexOf("    function generateCurrentExercise()"), player.indexOf("    const exerciseContent ="));
 

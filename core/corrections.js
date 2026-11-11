@@ -230,7 +230,7 @@ export function displayCorrectionQuestion({
  *
  * @param {Object} correction
  */
-export function displayCorrectionAnswer(correction) {
+export function displayCorrectionAnswer(correction, { answerOnly = false } = {}) {
   if (!correction) {
     return;
   }
@@ -331,7 +331,11 @@ export function displayCorrectionAnswer(correction) {
 
   if (correction.answerMode === "qcm") {
     if (feedbackElement) {
-      feedbackElement.textContent = "";
+      if (answerOnly) {
+        feedbackElement.innerHTML = correctionHtml(correction.displayAnswer ?? correction.correctAnswer);
+      } else {
+        feedbackElement.textContent = "";
+      }
     }
 
     const buttons =
@@ -458,7 +462,7 @@ export function displayCorrectionAnswer(correction) {
   }
 
   feedbackElement.innerHTML =
-    `Solution : ${correctionHtml(displayedAnswer)}`;
+    (answerOnly ? "" : "Solution : ") + correctionHtml(displayedAnswer);
 
   feedbackElement.style.color =
     CORRECTION_RED_CSS;

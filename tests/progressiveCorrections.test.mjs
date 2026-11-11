@@ -479,8 +479,8 @@ function setupClassicExercise({ family, exercise, mode = "slideshow" }) {
 
 for (const [family, generate, scenesFor] of [
   ["pythagoras", generatePythagorasExercise, createPythagorasCorrectionScenes],
-  ["pythagorasConverse", () => generatePythagorasConverseExercise("converse"), createPythagorasConverseCorrectionScenes],
-  ["pythagorasContrapositive", () => generatePythagorasConverseExercise("contrapositive"), createPythagorasConverseCorrectionScenes],
+  ["pythagorasConverse", () => generatePythagorasConverseExercise("converse"), exercise => createPythagorasConverseCorrectionScenes(exercise, { mathjax: true })],
+  ["pythagorasContrapositive", () => generatePythagorasConverseExercise("contrapositive"), exercise => createPythagorasConverseCorrectionScenes(exercise, { mathjax: true })],
   ["thales", generateThalesExercise, createThalesCorrectionScenes],
   ["thalesParallel", generateThalesExercise, createThalesCorrectionScenes],
   ["thalesConverse", generateThalesConverseExercise, createThalesParallelismCorrectionScenes]

@@ -16,16 +16,18 @@ export function drawThalesCorrespondenceArrow(container) {
   const layoutRect = layout.getBoundingClientRect();
   const vertexRect = commonVertex.getBoundingClientRect();
   const targetRect = target.getBoundingClientRect();
+  const stacked = getComputedStyle(layout).flexDirection === "column";
 
-  // Départ : bord droit du nom du sommet commun.
-  const startX = vertexRect.right - layoutRect.left + 8;
+  // Sous la figure, contourner les libellés par le bord le plus proche du sommet.
+  const figureRect = layout.querySelector(".step-correction-figure").getBoundingClientRect();
+  const right = vertexRect.left + vertexRect.width / 2 >= figureRect.left + figureRect.width / 2;
+  const startX = (stacked && !right ? vertexRect.left - 6 : vertexRect.right + 8) - layoutRect.left;
   const startY = vertexRect.top + vertexRect.height / 2 - layoutRect.top;
+  const firstRatio = target.querySelector(".thales-ratio-fraction")?.getBoundingClientRect() ?? targetRect;
+  const endX = (stacked ? firstRatio.left + firstRatio.width / 2 : targetRect.left - 12) - layoutRect.left;
+  const endY = (stacked ? firstRatio.top + 2 : targetRect.top + targetRect.height / 2) - layoutRect.top;
 
-  // Arrivée : juste avant la première fraction.
-  const endX = targetRect.left - layoutRect.left - 12;
-  const endY = targetRect.top + targetRect.height / 2 - layoutRect.top;
-
-  if (endX <= startX) return;
+  if (stacked ? endY <= startY : endX <= startX) return;
 
   layout.style.position = "relative";
 
@@ -54,11 +56,19 @@ export function drawThalesCorrespondenceArrow(container) {
   defs.appendChild(marker);
   svg.appendChild(defs);
 
-  const line = document.createElementNS(svgNS, "line");
-  line.setAttribute("x1", String(startX));
-  line.setAttribute("y1", String(startY));
-  line.setAttribute("x2", String(endX));
-  line.setAttribute("y2", String(endY));
+  const line = document.createElementNS(svgNS, stacked ? "polyline" : "line");
+  if (stacked) {
+    const edgeX = (right ? figureRect.right + 4 : figureRect.left - 4) - layoutRect.left;
+    const turnY = figureRect.bottom + 10 - layoutRect.top;
+    line.setAttribute("points", `${startX},${startY} ${edgeX},${startY} ${edgeX},${turnY} ${endX},${endY}`);
+    line.setAttribute("fill", "none");
+    line.setAttribute("stroke-linejoin", "round");
+  } else {
+    line.setAttribute("x1", String(startX));
+    line.setAttribute("y1", String(startY));
+    line.setAttribute("x2", String(endX));
+    line.setAttribute("y2", String(endY));
+  }
   line.setAttribute("stroke", "var(--correction-red, #FF8A80)");
   line.setAttribute("stroke-width", "3");
   line.setAttribute("stroke-linecap", "round");

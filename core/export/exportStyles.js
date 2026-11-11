@@ -1,5 +1,6 @@
 // core/export/exportStyles.js
 import { exportCorrectionColorStyles, EXPORT_CORRECTION_RED_CSS } from '../correctionColors.js';
+import { getExportScratchStyles } from './exportScratchBlocks.js';
 
 import {
   getExportFigureStyles
@@ -139,6 +140,7 @@ export function getExportStyles() {
     }
 
     ${getExportFigureStyles()}
+    ${getExportScratchStyles()}
 
     @media print {
       body {
@@ -150,6 +152,20 @@ export function getExportStyles() {
       #print-evaluation {
         display: none;
       }
+
+      /* Garder la place pour la preuve de parallélisme en conservant les
+         dimensions du SVG, le corps du texte et les marges A4. */
+      body:has(.thales-perpendicular-correction) .evaluation-header { margin-bottom: 20px; }
+      body:has(.thales-perpendicular-correction) .evaluation-figure { margin-block: 10px; }
+      body:has(.thales-perpendicular-correction) .evaluation-answer { margin-top: 12px; }
+
+      /* Le calcul de longueur forme une étape complète sur une éventuelle
+         page supplémentaire. Les figures et le corps du texte sont conservés. */
+      .evaluation-question:has(.thales-combined-response-correction) > h2 { margin-bottom: 4px; }
+      .evaluation-question:has(.thales-combined-response-correction) > .evaluation-figure { margin-block: 4px; line-height: 0; }
+      .evaluation-answer:has(.thales-combined-response-correction) { margin-top: 6px; }
+      .thales-combined-response-correction .proof-display { line-height: 1.2; }
+      .thales-combined-length-proof { break-inside: avoid; }
 
       /* La couche MathML reste accessible, mais sa boîte déjà découpée
          ne doit pas déborder sur une page supplémentaire. */

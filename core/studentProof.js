@@ -40,6 +40,8 @@ export function createStudentProof(
           kind:
             "input",
 
+          ...(step.acceptExpression ? { acceptExpression: true } : {}),
+
           label:
             step.label,
 

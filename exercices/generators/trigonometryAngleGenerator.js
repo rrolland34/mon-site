@@ -31,10 +31,12 @@ function drawKnownTenths(draw) {
 }
 
 function createStatement({ vertices, angle, sideNames, knownSides, knownLengths, unit }) {
-  const length = side => `\\mathrm{${sideNames[side]}}=${formatAnswer(knownLengths[side], "math")}~\\mathrm{${unit}}`;
-  return `\\(\\mathrm{${vertices.join("")}}\\text{ est un triangle rectangle en }\\mathrm{${vertices[0]}}\\text{ tel que}\\)` +
-    `<br>\\(${length(knownSides[0])}\\text{ et }${length(knownSides[1])}.\\)` +
-    `<br>Calculer la mesure de l’angle \\(\\widehat{\\mathrm{${angle.name}}}\\), arrondie au degré.`;
+  const length = side => String.raw`\mathrm{${sideNames[side]}}=${formatAnswer(knownLengths[side], "math")}~\mathrm{${unit}}`;
+  return [
+    String.raw`\(\mathrm{${vertices.join("")}}\text{ est un triangle}\) \(\text{rectangle en }\mathrm{${vertices[0]}}\text{ tel que}\)`,
+    String.raw`\(${length(knownSides[0])}\) \(\text{et }${length(knownSides[1])}.\)`,
+    String.raw`\(\text{Calculer la mesure}\) \(\text{de l’angle }\widehat{\mathrm{${angle.name}}},\) \(\text{arrondie au degré.}\)`
+  ].join("<br>");
 }
 
 /**

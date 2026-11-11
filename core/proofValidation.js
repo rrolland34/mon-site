@@ -1,7 +1,10 @@
 
 import {
-  parseAnswer
-} from "./answerParser.js";
+  multiplyProofRationals,
+  proofRationalToNumber,
+  readProofRational,
+  sameProofRational
+} from "./proofRational.js";
 
 /*
  * Applique un état visuel à un élément.
@@ -27,17 +30,6 @@ function setValidationState(
       : isCorrect
         ? "correct"
         : "incorrect"
-  );
-}
-
-/*
- * Compare deux valeurs numériques.
- */
-function sameNumber(a, b) {
-  return (
-    Number.isFinite(a) &&
-    Number.isFinite(b) &&
-    Math.abs(a - b) < 1e-9
   );
 }
 
@@ -90,7 +82,7 @@ export function validateProofChoices(container) {
 }
 
 /*
- * Champs numériques simples.
+ * Totaux de longueurs dans l'unité de l'énoncé : coefficient seul.
  */
 export function validateProofInputs(container) {
   const proofInputs =
@@ -112,19 +104,16 @@ export function validateProofInputs(container) {
         proofInput.dataset.correctAnswer
       );
 
-      const parsedValue = Number(
-        userValue.replace(",", ".")
-      );
+      const actual = readProofRational(userValue, {
+        acceptExpression: proofInput.dataset.acceptExpression === "true"
+      });
+      const expected = readProofRational(String(proofInput.dataset.correctAnswer));
 
       const isAnswered =
         userValue !== "";
 
       const isCorrect =
-        isAnswered &&
-        sameNumber(
-          parsedValue,
-          expectedValue
-        );
+        sameProofRational(actual, expected);
 
       setValidationState(
         proofInput,
@@ -144,8 +133,8 @@ export function validateProofInputs(container) {
 }
 
 /*
- * Étapes comportant un choix
- * et une valeur numérique.
+ * Choix d'une expression et coefficient exact du carré ou de la somme
+ * de carrés, dans l'unité de longueur au carré implicite.
  */
 export function validateProofChoiceInputs(
   container
@@ -181,14 +170,6 @@ export function validateProofChoiceInputs(
       proofChoiceInput.dataset.correctAnswer
     );
 
-    const parsedAnswer =
-      parseAnswer(userValue);
-
-    const parsedValue =
-      parsedAnswer.valid
-        ? parsedAnswer.value
-        : NaN;
-
     const isChoiceAnswered =
       selectedChoice !== "";
 
@@ -200,10 +181,9 @@ export function validateProofChoiceInputs(
       selectedChoice === correctChoice;
 
     const isInputCorrect =
-      isInputAnswered &&
-      sameNumber(
-        parsedValue,
-        expectedValue
+      sameProofRational(
+        readProofRational(userValue),
+        readProofRational(String(proofChoiceInput.dataset.correctAnswer))
       );
 
     const isAnswered =
@@ -232,7 +212,8 @@ export function validateProofChoiceInputs(
 }
 
 /*
- * Rapports de la réciproque de Thalès.
+ * Rapports de Thalès. Numérateur et dénominateur sont chacun un
+ * coefficient sans unité, exprimé dans l'unité commune de l'énoncé.
  *
  * Chaque rapport constitue une étape,
  * mais ses trois éléments reçoivent
@@ -276,20 +257,14 @@ export function validateProofRatioInputs(
         denominatorInput?.value.trim() ?? "";
 
       const expectedNumerator =
-        parseAnswer(
+        readProofRational(
           ratioInput.dataset.correctNumerator
         );
 
       const expectedDenominator =
-        parseAnswer(
+        readProofRational(
           ratioInput.dataset.correctDenominator
         );
-
-      const parsedNumerator =
-        parseAnswer(numeratorValue);
-
-      const parsedDenominator =
-        parseAnswer(denominatorValue);
 
       const isChoiceAnswered =
         selectedChoice !== "";
@@ -305,21 +280,15 @@ export function validateProofRatioInputs(
         selectedChoice === correctChoice;
 
       const isNumeratorCorrect =
-        isNumeratorAnswered &&
-        parsedNumerator.valid &&
-        expectedNumerator.valid &&
-        sameNumber(
-          parsedNumerator.value,
-          expectedNumerator.value
+        sameProofRational(
+          readProofRational(numeratorValue),
+          expectedNumerator
         );
 
       const isDenominatorCorrect =
-        isDenominatorAnswered &&
-        parsedDenominator.valid &&
-        expectedDenominator.valid &&
-        sameNumber(
-          parsedDenominator.value,
-          expectedDenominator.value
+        sameProofRational(
+          readProofRational(denominatorValue),
+          expectedDenominator
         );
 
       const isAnswered =
@@ -369,13 +338,9 @@ export function validateProofRatioInputs(
         numeratorValue,
         denominatorValue,
         expectedNumerator:
-          expectedNumerator.valid
-            ? expectedNumerator.value
-            : NaN,
+          proofRationalToNumber(expectedNumerator),
         expectedDenominator:
-          expectedDenominator.valid
-            ? expectedDenominator.value
-            : NaN,
+          proofRationalToNumber(expectedDenominator),
         isChoiceAnswered,
         isNumeratorAnswered,
         isDenominatorAnswered,
@@ -390,7 +355,7 @@ export function validateProofRatioInputs(
 }
 
 /*
- * Produits en croix.
+ * Produits en croix des coefficients, sans unité dans la saisie.
  *
  * On vérifie le calcul effectué
  * avec les facteurs effectivement
@@ -418,44 +383,23 @@ export function validateProofCrossProductInputs(
       );
 
     const leftValue =
-      factors[0]?.textContent.trim() ?? "";
+      factors[0]?.dataset?.rawValue ?? factors[0]?.textContent.trim() ?? "";
 
     const rightValue =
-      factors[1]?.textContent.trim() ?? "";
+      factors[1]?.dataset?.rawValue ?? factors[1]?.textContent.trim() ?? "";
 
     const userValue =
       input?.value.trim() ?? "";
 
-    const parsedLeft =
-      parseAnswer(leftValue);
-
-    const parsedRight =
-      parseAnswer(rightValue);
-
-    const parsedAnswer =
-      parseAnswer(userValue);
-
-    const factorsAreValid =
-      parsedLeft.valid &&
-      parsedRight.valid;
-
-    const expectedValue =
-      factorsAreValid
-        ? parsedLeft.value *
-          parsedRight.value
-        : NaN;
+    const left = readProofRational(leftValue);
+    const right = readProofRational(rightValue);
+    const expected = left && right ? multiplyProofRationals(left, right) : null;
 
     const isAnswered =
       userValue !== "";
 
     const isCorrect =
-      isAnswered &&
-      factorsAreValid &&
-      parsedAnswer.valid &&
-      sameNumber(
-        parsedAnswer.value,
-        expectedValue
-      );
+      sameProofRational(readProofRational(userValue), expected);
 
     setValidationState(
       crossProductInput,
@@ -475,7 +419,7 @@ export function validateProofCrossProductInputs(
       leftValue,
       rightValue,
       userValue,
-      expectedValue,
+      expectedValue: proofRationalToNumber(expected),
       isAnswered,
       isCorrect
     };

@@ -2,7 +2,7 @@
 const preparations = new WeakMap();
 export const EXPORT_MATHJAX_URL = new URL("../../assets/vendor/mathjax-3.2.2/es5/tex-mml-chtml.js", import.meta.url).href;
 
-export function loadExportMathJax({ archiveWindow, printButton, onRetry, timeoutMs = 20000 }) {
+export function loadExportMathJax({ archiveWindow, printButton, onRetry, beforeReady, timeoutMs = 20000 }) {
   const document = archiveWindow.document;
   if (preparations.has(document)) return preparations.get(document);
   const promise = new Promise(resolve => {
@@ -26,7 +26,7 @@ export function loadExportMathJax({ archiveWindow, printButton, onRetry, timeout
       } else {
         if (status) {
           status.setAttribute("role", "alert");
-          status.textContent = "La préparation du document a échoué. Vérifiez que les ressources du site sont accessibles, puis réessayez. Aucune formule non composée ne sera imprimée.";
+          status.textContent = error?.code === 'STUDENT_SHEET_OVERFLOW' ? error.message : "La préparation du document a échoué. Vérifiez que les ressources du site sont accessibles, puis réessayez. Aucune formule non composée ne sera imprimée.";
         }
         if (onRetry) {
           const retry = document.createElement("button");
@@ -88,6 +88,7 @@ export function loadExportMathJax({ archiveWindow, printButton, onRetry, timeout
         await document.fonts.ready;
         if ([...document.fonts].some(font => font.status === "error")) throw new Error("Police indisponible.");
         await Promise.all([...document.images].map(image => image.decode()));
+        if (!settled && beforeReady) await beforeReady({ archiveWindow });
         if (!settled) finish(true);
       } catch (error) { finish(false, error); }
     };

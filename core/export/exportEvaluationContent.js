@@ -1,3 +1,4 @@
+import { createStudentIdentity, createResponseSpace } from "./exportStudentWriting.js";
 // core/export/exportEvaluationContent.js
 
 import { getDisplayAnswer } from "../answerDisplay.js";
@@ -28,21 +29,7 @@ export function createEvaluationStatement({
   answerMode = "direct",
   questionAnswerModes
 }) {
-  const studentIdentity = `
-    <div class="evaluation-student-identity">
-
-      <div class="evaluation-identity-item">
-        <span>Nom :</span>
-        <span class="evaluation-identity-line"></span>
-      </div>
-
-      <div class="evaluation-identity-item">
-        <span>Prénom :</span>
-        <span class="evaluation-identity-line"></span>
-      </div>
-
-    </div>
-  `;
+  const studentIdentity = createStudentIdentity();
 
   const questionsContent =
     exercice.questions
@@ -112,34 +99,7 @@ export function createEvaluationStatement({
 
             const answerSpace =
               questionAnswerMode === "direct"
-                ? `
-                    <div class="evaluation-response-space">
-
-                      ${Array.from(
-                        {
-                          length:
-                            answerLines
-                        },
-                        (
-                          _,
-                          lineIndex
-                        ) => `
-                          <div class="evaluation-response-row">
-
-                            ${
-                              lineIndex === 0
-                                ? "<span>Réponse :</span>"
-                                : '<span class="evaluation-response-label-spacer"></span>'
-                            }
-
-                            <span class="evaluation-response-line"></span>
-
-                          </div>
-                        `
-                      ).join("")}
-
-                    </div>
-                  `
+                ? createResponseSpace(answerLines)
                 : "";
 
         return `
@@ -272,7 +232,7 @@ export function createEvaluationWithCorrection({
             ${qcmContent}
 
             <div class="evaluation-answer">
-              Réponse :
+              ${exercice.correctionMode === "answer-only" ? "" : "Réponse :"}
               ${displayedAnswer}
             </div>
           </section>

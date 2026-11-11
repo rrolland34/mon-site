@@ -27,6 +27,12 @@ export function createThalesParallelProof(
    * (DE) ⟂ (AD)
    */
 
+  const text = (...parts) => parts.map(part => String.raw`\(\text{${part}}\)`).join(" ");
+  const line = name => String.raw`(\mathrm{${name}})`;
+  const relation = (first, second, third, property) =>
+    String.raw`\(\text{Les droites }${line(first)}\) \(\text{et }${line(second)}\) ` +
+    text("sont", property, "à la même droite") + String.raw` \(${line(third)}.\)`;
+
   return [
     {
       id:
@@ -35,22 +41,12 @@ export function createThalesParallelProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{On sait que si deux droites sont ` +
-        `perpendiculaires à une même droite, alors elles ` +
-        `sont parallèles.}\\)`,
+      correct: text("On sait que", "si deux droites sont", "perpendiculaires", "à une même droite,", "alors elles sont", "parallèles."),
 
       distractors: [
-        `\\(\\text{On sait que si deux droites sont ` +
-        `parallèles à une même droite, alors elles ` +
-        `sont perpendiculaires.}\\)`,
-
-        `\\(\\text{On sait que si deux droites sont ` +
-        `perpendiculaires, alors elles sont parallèles.}\\)`,
-
-        `\\(\\text{On sait que si deux droites sont ` +
-        `sécantes à une même droite, alors elles ` +
-        `sont parallèles.}\\)`
+        text("On sait que", "si deux droites sont", "parallèles", "à une même droite,", "alors elles sont", "perpendiculaires."),
+        text("On sait que", "si deux droites sont", "perpendiculaires,", "alors elles sont parallèles."),
+        text("On sait que", "si deux droites sont", "sécantes", "à une même droite,", "alors elles sont parallèles.")
       ]
     },
 
@@ -61,35 +57,12 @@ export function createThalesParallelProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{Les droites }` +
-        `(\\mathrm{${B}${C}}) ` +
-        `\\text{ et }` +
-        `(\\mathrm{${D}${E}}) ` +
-        `\\text{ sont perpendiculaires à la même droite }` +
-        `(\\mathrm{${A}${D}}).\\)`,
+      correct: relation(B + C, D + E, A + D, "perpendiculaires"),
 
       distractors: [
-        `\\(\\text{Les droites }` +
-        `(\\mathrm{${B}${C}}) ` +
-        `\\text{ et }` +
-        `(\\mathrm{${D}${E}}) ` +
-        `\\text{ sont parallèles à la même droite }` +
-        `(\\mathrm{${A}${D}}).\\)`,
-
-        `\\(\\text{Les droites }` +
-        `(\\mathrm{${B}${C}}) ` +
-        `\\text{ et }` +
-        `(\\mathrm{${A}${D}}) ` +
-        `\\text{ sont perpendiculaires à la même droite }` +
-        `(\\mathrm{${D}${E}}).\\)`,
-
-        `\\(\\text{Les droites }` +
-        `(\\mathrm{${D}${E}}) ` +
-        `\\text{ et }` +
-        `(\\mathrm{${A}${D}}) ` +
-        `\\text{ sont parallèles à la même droite }` +
-        `(\\mathrm{${B}${C}}).\\)`
+        relation(B + C, D + E, A + D, "parallèles"),
+        relation(B + C, A + D, D + E, "perpendiculaires"),
+        relation(D + E, A + D, B + C, "parallèles")
       ]
     },
 
@@ -100,17 +73,12 @@ export function createThalesParallelProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{Donc, d'après }` +
-        `\\mathbf{\\text{la propriété précédente}}` +
-        `\\text{,}\\)`,
+      correct: String.raw`\(\text{Donc, d'après}\) \(\mathbf{\text{la propriété}}\) \(\mathbf{\text{précédente}}\text{,}\)`,
 
       distractors: [
-        `\\(\\text{Donc, d'après le théorème de Thalès,}\\)`,
-
-        `\\(\\text{Donc, d'après le théorème de Pythagore,}\\)`,
-
-        `\\(\\text{Donc, d'après l'égalité des produits en croix,}\\)`
+        text("Donc, d'après", "le théorème de Thalès,"),
+        text("Donc, d'après", "le théorème de Pythagore,"),
+        text("Donc, d'après", "l'égalité des produits", "en croix,")
       ]
     },
 
@@ -121,15 +89,12 @@ export function createThalesParallelProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{on déduit qu'elles sont parallèles.}\\)`,
+      correct: text("on déduit qu'elles", "sont parallèles."),
 
       distractors: [
-        `\\(\\text{on déduit qu'elles sont perpendiculaires.}\\)`,
-
-        `\\(\\text{on déduit qu'elles sont sécantes.}\\)`,
-
-        `\\(\\text{on déduit qu'elles ont la même longueur.}\\)`
+        text("on déduit qu'elles", "sont perpendiculaires."),
+        text("on déduit qu'elles", "sont sécantes."),
+        text("on déduit qu'elles", "ont la même longueur.")
       ]
     }
   ];

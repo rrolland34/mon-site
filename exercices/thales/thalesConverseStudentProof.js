@@ -154,8 +154,9 @@ function buildThalesParallelismStudentProof(
   let geometry = proof[0], comparisonStep = equalityStep, relationStep = proof[6];
   let theorem = proof[7], conclusion = proof[9];
   if (!legacy) {
-    const equal = createEquality(AB, AD, AC, AE, "=", "Donc ");
-    const different = createEquality(AB, AD, AC, AE, "\\ne", "Donc ");
+    const lead = String.raw`\(\text{Donc}\) `;
+    const equal = createEquality(AB, AD, AC, AE, "=", lead);
+    const different = createEquality(AB, AD, AC, AE, "\\ne", lead);
     equalityStep = {
       id: "ratioComparison",
       correct: comparison.isParallel ? equal : different,
@@ -182,7 +183,7 @@ function buildThalesParallelismStudentProof(
     };
   }
 
-  return [
+  const steps = [
     /*
      * 1. Droites sécantes.
      */
@@ -270,6 +271,8 @@ function buildThalesParallelismStudentProof(
      */
     createChoiceStep(conclusion)
   ];
+  return legacy ? steps : steps.map(step => ["ratioInput", "crossProductInput"].includes(step.kind)
+    ? { ...step, mathjax: true } : step);
 }
 
 export function createThalesParallelismStudentProof(proof, exercise) {

@@ -29,7 +29,7 @@
   <script src="./translations-all.js"></script>
 </head>
 
-<body>
+<body class="exercise-reader flash-reader">
   <nav class="navbar">
     <ul class="nav-list">
       <li class="nav-item">
@@ -431,7 +431,6 @@
       style="
         font-size:1.8em;
         font-weight:700;
-        color:#666;
         text-align:center;
       "
     >
@@ -441,21 +440,15 @@
 
   <main class="main-content">
     <section class="question-container">
-      <h1 class="question-title">
-        Automatismes
-      </h1>
+      <header class="question-header">
+        <h1 class="question-title">Automatismes</h1>
+        <div id="timer" class="timer">30</div>
+      </header>
 
       <div
         id="question"
         class="question-display"
       ></div>
-
-      <div
-        id="timer"
-        class="timer"
-      >
-        30
-      </div>
 
       <div
         id="correction-overlay"

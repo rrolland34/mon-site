@@ -256,7 +256,7 @@ function createCrossProductStep(
 }
 
 export function createThalesProof(
-  exercise
+  exercise, { wrap = false } = {}
 ) {
   const points =
     getPointMap(exercise);
@@ -333,6 +333,19 @@ export function createThalesProof(
     `${unit}` +
     `\\)`;
 
+  const line = name => String.raw`(\mathrm{${name}})`;
+  const secantLines = [line(points.D + points.B), line(points.E + points.C)];
+  const parallelLines = [line(points.B + points.C), line(points.D + points.E)];
+  const secant = String.raw`\text{ sont sécantes en }\mathrm{${points.A}}.`;
+  const parallel = String.raw`\text{ sont parallèles}.`;
+  const perpendicular = String.raw`\text{ sont perpendiculaires}.`;
+  const hypothesis = ([first, second], conclusion) => wrap
+    ? String.raw`\(\text{On sait que}\) \(\text{les droites }${first}\) \(\text{et }${second}\) \(${conclusion}\)`
+    : String.raw`\(\text{On sait que les droites }${first} \text{ et } ${second} ${conclusion}\)`;
+  const theorem = (name, rest) => wrap
+    ? String.raw`\(\text{D'après}\) \(\mathbf{\text{${name}}}\) \(\mathbf{\text{${rest}}}\text{, on a}\)`
+    : String.raw`\(\text{D'après }\mathbf{\text{${name} ${rest}}}\text{, on a}\)`;
+
   return [
     {
       id:
@@ -341,27 +354,11 @@ export function createThalesProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{On sait que les droites }` +
-        `(\\mathrm{${points.D}${points.B}}) ` +
-        `\\text{ et } ` +
-        `(\\mathrm{${points.E}${points.C}}) ` +
-        `\\text{ sont sécantes en }` +
-        `\\mathrm{${points.A}}.\\)`,
+      correct: hypothesis(secantLines, secant),
 
       distractors: [
-        `\\(\\text{On sait que les droites }` +
-        `(\\mathrm{${points.D}${points.E}}) ` +
-        `\\text{ et } ` +
-        `(\\mathrm{${points.B}${points.C}}) ` +
-        `\\text{ sont sécantes en }` +
-        `\\mathrm{${points.A}}.\\)`,
-
-        `\\(\\text{On sait que les droites }` +
-        `(\\mathrm{${points.A}${points.B}}) ` +
-        `\\text{ et } ` +
-        `(\\mathrm{${points.A}${points.C}}) ` +
-        `\\text{ sont parallèles}.\\)`
+        hypothesis([parallelLines[1], parallelLines[0]], secant),
+        hypothesis([line(points.A + points.B), line(points.A + points.C)], parallel)
       ]
     },
 
@@ -372,25 +369,11 @@ export function createThalesProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{On sait que les droites }` +
-        `(\\mathrm{${points.B}${points.C}}) ` +
-        `\\text{ et } ` +
-        `(\\mathrm{${points.D}${points.E}}) ` +
-        `\\text{ sont parallèles}.\\)`,
+      correct: hypothesis(parallelLines, parallel),
 
       distractors: [
-        `\\(\\text{On sait que les droites }` +
-        `(\\mathrm{${points.D}${points.B}}) ` +
-        `\\text{ et } ` +
-        `(\\mathrm{${points.E}${points.C}}) ` +
-        `\\text{ sont parallèles}.\\)`,
-
-        `\\(\\text{On sait que les droites }` +
-        `(\\mathrm{${points.B}${points.C}}) ` +
-        `\\text{ et } ` +
-        `(\\mathrm{${points.D}${points.E}}) ` +
-        `\\text{ sont perpendiculaires}.\\)`
+        hypothesis(secantLines, parallel),
+        hypothesis(parallelLines, perpendicular)
       ]
     },
 
@@ -401,19 +384,11 @@ export function createThalesProof(
       kind:
         "reasoning",
 
-      correct:
-        `\\(\\text{D'après }` +
-        `\\mathbf{\\text{le théorème de Thalès}}` +
-        `\\text{, on a}\\)`,
+      correct: theorem("le théorème", "de Thalès"),
 
       distractors: [
-        `\\(\\text{D'après }` +
-        `\\mathbf{\\text{le théorème de Pythagore}}` +
-        `\\text{, on a}\\)`,
-
-        `\\(\\text{D'après }` +
-        `\\mathbf{\\text{l'égalité des produits en croix}}` +
-        `\\text{, on a}\\)`
+        theorem("le théorème", "de Pythagore"),
+        theorem("l'égalité des produits", "en croix")
       ]
     },
 

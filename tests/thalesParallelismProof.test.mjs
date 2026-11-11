@@ -228,7 +228,7 @@ for (const type of ["series-1", "series-2", "series-3"]) {
       assert.equal(student[0].correct, `\\(\\text{On sait que les droites }(\\mathrm{${D}${B}})\\text{ et }(\\mathrm{${E}${C}})\\text{ sont sécantes en }\\mathrm{${A}}.\\)`);
       assert.ok(student[0].choices.every(text => !/alignés|ordre/.test(text)));
       assert.equal(student[5].id, "ratioComparison");
-      assert.ok(student[5].correct.startsWith("Donc "));
+      assert.ok(student[5].correct.startsWith(String.raw`\(\text{Donc}\)`));
       assert.ok(student.at(-1).correct.startsWith("\\(\\text{les droites }"));
       assert.equal(student[5].correct.includes("\\ne"), !parallel);
       assert.ok(student.every(step => step.id !== "crossProductComparison"));

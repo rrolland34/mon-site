@@ -1,4 +1,6 @@
 // core/export/exportDocument.js
+import { prepareStudentSheet, fillStudentSheet } from './exportStudentSheet.js';
+import { prepareStudentHeader } from './exportStudentHeader.js';
 
 import {
   createExportWindow
@@ -16,10 +18,28 @@ import {
   loadExportScratchBlocks
 } from "./exportScratchBlocks.js";
 
+function reserveEvaluationTitleSpace(document, originalTitle) {
+  const title = document.querySelector(".evaluation-header h1");
+  const measurement = title.cloneNode(false);
+  // Mesurer l'ancien titre à la largeur imprimable de l'A4, sans le publier.
+  measurement.style.cssText = "position:absolute; visibility:hidden; width:174mm;";
+  measurement.textContent = originalTitle;
+  title.after(measurement);
+  const originalHeight = measurement.getBoundingClientRect().height;
+  measurement.remove();
+  if (originalHeight > title.getBoundingClientRect().height) {
+    title.style.minHeight = `${originalHeight}px`;
+  }
+}
+
 export async function exportDocument({
   title,
   content,
-  afterRender
+  afterRender,
+  beforeReady,
+  singlePageStudentSheet = false,
+  studentHeader = 'auto',
+  isEvaluation = false
 }) {
   const currentDate =
     new Intl.DateTimeFormat(
@@ -42,13 +62,25 @@ export async function exportDocument({
     let archiveWindow = existingWindow;
     try {
       archiveWindow = await createExportWindow({
-        title, currentDate, evaluationContent: content, existingWindow
+        title: isEvaluation ? "Évaluation" : title,
+        currentDate, evaluationContent: content, existingWindow
       });
       if (!archiveWindow) return null;
       const printButton = initializeExportPrint({ archiveWindow });
       if (typeof afterRender === "function") await afterRender({ archiveWindow });
+      if (singlePageStudentSheet) prepareStudentSheet({ archiveWindow });
+      // Legacy callers pass a subject's content without an explicit header
+      // option. Its identity block identifies the student subject; corrections
+      // and archives do not have one. Keep explicit opt-out available.
+      else if (studentHeader === true || (studentHeader === 'auto' &&
+        archiveWindow.document.querySelector('.evaluation-student-identity'))) {
+        prepareStudentHeader({ archiveWindow });
+      }
+      if (isEvaluation && title) reserveEvaluationTitleSpace(archiveWindow.document, title);
       await loadExportScratchBlocks({ archiveWindow });
-      await loadExportMathJax({ archiveWindow, printButton, onRetry: () => prepare(archiveWindow) });
+      await loadExportMathJax({ archiveWindow, printButton, beforeReady: singlePageStudentSheet
+        ? async context => { if (beforeReady) await beforeReady(context); fillStudentSheet(context); }
+        : beforeReady, onRetry: () => prepare(archiveWindow) });
       return archiveWindow;
     } catch (error) {
       archiveWindow ||= error.exportWindow;

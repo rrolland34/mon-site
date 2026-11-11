@@ -18,6 +18,124 @@
   >
 
   <style>
+    .pythagoras-exercise .exercise-statement {
+      font-size: clamp(1rem, 2.5vw, 1.8rem);
+    }
+
+    .pythagoras-exercise .proof-display {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+
+    .pythagoras-final-answer,
+    .trigonometry-final-answer {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .4em;
+      max-width: 100%;
+    }
+
+    .pythagoras-final-answer #user-answer,
+    .trigonometry-final-answer #user-answer { width: 8em; min-width: 0; }
+
+    @media (max-width: 768px) {
+      .pythagoras-exercise .main-content { padding: 8px; }
+      .pythagoras-exercise .question-container { width: 100%; padding: 12px; }
+      .pythagoras-exercise .nav-list { flex-wrap: wrap; gap: 8px; }
+      .pythagoras-exercise .nav-link { padding: 6px 8px; }
+      .pythagoras-exercise #presentation-control { margin-left: 0 !important; }
+      .pythagoras-exercise .proof-choice { max-width: 100%; }
+      .pythagoras-exercise .proof-choice-button,
+      .pythagoras-exercise .proof-option { font-size: 1rem; padding: 8px; }
+      .pythagoras-exercise .step-correction-layout { flex-direction: column; gap: 12px; }
+      .pythagoras-exercise .step-correction-side {
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+        /* Prévoir jusqu’à 9,8 em pour l’égalité dans la largeur intérieure
+           de la carte (40 px de marges cumulées). */
+        font-size: min(2.2em, calc((100vw - 40px) / 9.8));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .pythagoras-converse-exercise .main-content { padding: 8px; }
+      .pythagoras-converse-exercise .question-container { width: 100%; padding: 12px; }
+      .pythagoras-converse-exercise .exercise-statement { font-size: clamp(1rem, 2.5vw, 1.8rem); }
+      .pythagoras-converse-exercise .nav-list { flex-wrap: wrap; gap: 8px; }
+      .pythagoras-converse-exercise .nav-link { padding: 6px 8px; }
+      .pythagoras-converse-exercise #presentation-control { margin-left: 0 !important; }
+      .pythagoras-converse-exercise #time-control { max-width: 100%; }
+      .pythagoras-converse-exercise #time-control label { white-space: nowrap; }
+      .pythagoras-converse-exercise #time-slider { min-width: 0; }
+      .pythagoras-converse-exercise .proof-choice { max-width: 100%; }
+      .pythagoras-converse-exercise .proof-choice-input {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 7rem);
+        gap: 8px;
+        max-width: 100%;
+      }
+      .pythagoras-converse-exercise .proof-choice-input-label {
+        grid-column: 1 / -1;
+        width: auto;
+      }
+      .pythagoras-converse-exercise .proof-choice-input .proof-choice,
+      .pythagoras-converse-exercise .proof-choice-input .proof-input-field {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+
+    .thales-proof-exercise .exercise-statement { font-size: clamp(1rem, 2.5vw, 1.8rem); }
+    .thales-proof-exercise .nav-list { flex-wrap: wrap; }
+    .thales-math-statement { line-height: 1.4; }
+    .thales-math-statement mjx-container { max-width: 100%; margin: 0; }
+    .thales-proof-exercise .main-content,
+    .thales-proof-exercise .question-container { min-width: 0; box-sizing: border-box; }
+    .thales-proof-exercise .proof-display { max-width: 100%; }
+    .thales-proof-exercise .proof-ratio-row,
+    .thales-proof-exercise .proof-cross-product-row { flex-wrap: wrap; gap: 16px 32px; }
+    .thales-proof-exercise .proof-ratio-input,
+    .thales-proof-exercise .proof-cross-product-input { flex-wrap: wrap; max-width: 100%; white-space: normal; }
+    .thales-proof-exercise .proof-ratio-input .proof-choice { width: 7.5em; }
+    .thales-proof-exercise .proof-choice-button,
+    .thales-proof-exercise .proof-option { box-sizing: border-box; white-space: normal; }
+    .thales-proof-exercise .proof-box { max-width: 100%; box-sizing: border-box; }
+    .thales-proof-exercise .proof-input-field { max-width: 100%; box-sizing: border-box; }
+    .thales-parallelism-data { margin: .35em 0; }
+    .thales-final-answer { display: inline-flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .4em; max-width: 100%; }
+    .thales-final-answer #user-answer { width: 8em; max-width: 100%; box-sizing: border-box; }
+    .thales-converse-theorem-exercise .proof-input { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+    @media (max-width: 600px) {
+      .thales-proof-exercise .question-container { width: 100%; padding: 12px; }
+      .thales-proof-exercise .main-content { padding: 8px; }
+      .thales-proof-exercise .nav-list { gap: 8px; }
+      .thales-proof-exercise .nav-link { padding: 6px 8px; }
+      .thales-proof-exercise .proof-choice { max-width: 100%; }
+      .thales-proof-exercise #time-control { max-width: calc(100% - 16px); }
+      .thales-proof-exercise #time-control label { white-space: nowrap; }
+      .thales-proof-exercise #time-slider { min-width: 0; }
+      .thales-proof-exercise .proof-ratio-input-label,
+      .thales-proof-exercise .proof-cross-product-label { flex-basis: 100%; }
+      .thales-proof-exercise #presentation-control { margin-left: 0 !important; }
+      .thales-proof-exercise .proof-display { font-size: 1.125rem; }
+
+      .thales-proof-exercise .proof-choice-button,
+      .thales-proof-exercise .proof-option { padding: 8px; }
+    }
+
+    .thales-converse-theorem-slideshow { overflow-y: scroll; }
+    .thales-converse-theorem-slideshow .main-content { align-items: flex-start; }
+    .thales-converse-theorem-slideshow .nav-list { flex-wrap: wrap; }
+    .thales-converse-theorem-slideshow .proof-display {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      line-height: 1.55;
+      color: #FF8A80;
+    }
+    .thales-converse-theorem-slideshow .step-correction-layout { display: block; }
+    .thales-converse-theorem-slideshow .step-correction-content { min-width: 0; }
+    .thales-converse-theorem-slideshow .proof-box { border-color: #FF8A80; }
+
     /* Raccordement de la trigonométrie : espace pour les annotations et les
        formules, sans changer la présentation des familles existantes. */
     .trigonometry-exercise .main-content {
@@ -261,44 +379,44 @@
       align-items: center;
       gap: 12px;
       white-space: nowrap;
+      color: black;
+    }
+
+    .thales-ratio-part {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
     }
 
     .thales-ratio-fraction {
       display: inline-flex;
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: center;
-      min-width: 58px;
-      vertical-align: middle;
-    }
-
-    .thales-ratio-numerator,
-    .thales-ratio-denominator {
-      display: flex;
       align-items: center;
-      justify-content: center;
-      min-height: 1.45em;
-      padding: 0 7px;
+      min-height: 2.9em;
     }
 
-    .thales-ratio-numerator {
-      color: green;
-      border-bottom: 2px solid black;
-      padding-bottom: 2px;
+    .thales-ratio-fraction mjx-frac {
+      min-width: 2.05em;
     }
 
-    .thales-ratio-denominator {
-      color: blue;
-      padding-top: 2px;
+    .thales-direct-exercise .proof-box { max-width: 100%; box-sizing: border-box; }
+    .thales-direct-exercise .thales-given-length { display: inline-block; max-width: 100%; }
+
+    @media (max-width: 960px) {
+      .thales-direct-exercise .step-correction-layout { flex-direction: column; gap: 24px; }
+      .thales-direct-exercise .step-correction-side { max-width: 100%; text-align: center; }
+      .thales-direct-exercise .thales-correspondence-equality { max-width: 100%; }
+      .thales-direct-exercise .thales-ratio-equality { flex-wrap: wrap; justify-content: center; }
     }
 
-    .thales-ratio-placeholder {
-      display: inline-block;
-      min-width: 2.2em;
-    }
-
-    .thales-ratio-equals {
-      color: black;
+    @media (max-width: 768px) {
+      .thales-direct-exercise .main-content { padding: 8px; min-width: 0; }
+      .thales-direct-exercise .question-container { width: 100%; padding: 12px; box-sizing: border-box; }
+      .thales-direct-exercise .nav-list { flex-wrap: wrap; gap: 8px; }
+      .thales-direct-exercise .nav-link { padding: 6px 8px; }
+      .thales-direct-exercise #presentation-control { margin-left: 0 !important; }
+      .thales-direct-exercise .proof-choice { max-width: 100%; }
+      .thales-direct-exercise .proof-choice-button,
+      .thales-direct-exercise .proof-option { padding: 8px; }
     }
 
     .thales-proof-inline {
@@ -431,6 +549,20 @@
       text-align: center;
     }
 
+    .thales-proof-exercise .proof-ratio-expression,
+    .thales-proof-exercise .proof-cross-product-expression,
+    .thales-proof-exercise .proof-cross-product-multiplier,
+    .thales-proof-exercise .proof-cross-product-answer {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      max-width: 100%;
+    }
+
+    .thales-proof-exercise .proof-cross-product-expression { flex-wrap: wrap; }
+    .thales-proof-exercise .proof-cross-product-factor { overflow-wrap: anywhere; }
+
     .proof-cross-product-result {
       box-sizing: border-box;
       width: 110px;
@@ -500,7 +632,7 @@
   ></script>
 </head>
 
-<body>
+<body class="exercise-reader">
   <nav class="navbar">
     <ul class="nav-list">
       <li class="nav-item">
@@ -718,23 +850,14 @@
   <main class="main-content">
     <section class="question-container">
 
-      <h1
-        id="exercise-title"
-        class="question-title"
-      >
-        Exercice
-      </h1>
+      <header class="question-header">
+        <h1 id="exercise-title" class="question-title">Exercice</h1>
+        <div id="timer" class="timer">30</div>
+      </header>
 
       <div
         id="exercise-content"
       ></div>
-
-      <div
-        id="timer"
-        class="timer"
-      >
-        30
-      </div>
 
       <div
         id="correction-overlay"
@@ -825,7 +948,7 @@
     } from "./core/stepCorrection.js";
 
     import {
-      renderStepCorrection,
+      renderStepCorrection as renderBaseStepCorrection,
       createCompleteCorrectionScene
     } from "./core/stepCorrectionRenderer.js";
 
@@ -850,8 +973,9 @@
     } from "./exercices/thales/thalesCorrectionScenes.js";
 
     import {
-      generateThalesParallelism
+      generateThalesParallelism, createThalesParallelismStatement
     } from "./exercices/generators/thalesParallelismGenerator.js";
+    import { wrapThalesProof } from "./exercices/thales/thalesProofFlow.js";
 
     import {
       createThalesParallelismCorrectionScenes
@@ -923,6 +1047,9 @@
     import { createTrigonometryCorrectionPresentation, createTrigonometryExportCorrectionScenes, createTrigonometryResponseCorrectionScene } from "./exercices/trigonometry/trigonometryCorrectionScenes.js";
     import { createTrigonometryAngleCorrectionPresentation, createTrigonometryAngleExportCorrectionScenes, createTrigonometryAngleResponseCorrectionScene } from "./exercices/trigonometry/trigonometryAngleCorrectionScenes.js";
     import { createTrigonometryStudentProof } from "./exercices/trigonometry/trigonometryStudentProof.js";
+    import { getThalesSegmentName } from "./exercices/thales/thalesProof.js";
+    import { generateThalesConverseTheoremExercise } from "./exercices/generators/thalesConverseTheoremGenerator.js";
+    import { createThalesConverseTheoremStudentProof, createThalesConverseTheoremCorrectionScenes, createThalesConverseTheoremSlideshowStatement, createThalesConverseTheoremSlideshowFigure, evaluateThalesConverseTheoremAnswer } from "./exercices/thales/thalesConverseTheorem.js";
     import { generatePythagorasTrigonometryExercise } from "./exercices/generators/pythagorasTrigonometryGenerator.js";
     import { createPythagorasTrigonometryFigureSVG, createPythagorasTrigonometryCorrectionPresentation,
       createPythagorasTrigonometryExportCorrectionScenes, createPythagorasTrigonometryStudentProof,
@@ -961,6 +1088,7 @@
         family ===
         "thalesConverse"
       ) {
+        if (type === "converse-theorem") return generateThalesConverseTheoremExercise();
         return generateThalesParallelism({
           mode: exerciseConfig.mode ?? "reciproque",
           type
@@ -1070,7 +1198,7 @@
 
       if (
         exerciseConfig.family ===
-        "thales"
+        "thales" || exerciseConfig.type === "converse-theorem"
       ) {
         const expectedAnswer =
           generatedExercise.lengths[
@@ -1092,15 +1220,18 @@
         };
       }
 
-      if (exerciseConfig.family === "trigonometry") clearMath(exerciseContent);
+      if (exerciseConfig.family === "trigonometry" || exerciseConfig.family === "thales" || mathjaxPythagoras) clearMath(exerciseContent);
+      if (exerciseConfig.type === "converse-theorem") clearMath(exerciseContent.querySelector(".exercise-statement"));
       exerciseContent.innerHTML = `
         <div class="exercise-statement">
-          ${generatedExercise.statement}
+          ${exerciseConfig.type === "converse-theorem" ? createThalesConverseTheoremSlideshowStatement(generatedExercise)
+            : exerciseConfig.family === "thalesConverse" ? createThalesParallelismStatement(generatedExercise) : generatedExercise.statement}
         </div>
 
         <div id="exercise-figure"></div>
       `;
 
+      if (exerciseConfig.type === "converse-theorem") updateThalesStatement(generatedExercise);
       const figureContainer =
         document.getElementById(
           "exercise-figure"
@@ -1110,7 +1241,6 @@
         figureContainer.innerHTML = exerciseConfig.type === "pythagoras-angle"
           ? createPythagorasTrigonometryFigureSVG(generatedExercise)
           : createTrigonometryFigureSVG(generatedExercise);
-        renderMath(exerciseContent);
       } else if (
         exerciseConfig.family ===
           "thales" ||
@@ -1119,10 +1249,12 @@
       ) {
         figureContainer.innerHTML =
           createThalesFigure(
-            generatedExercise.figureOptions
+            exerciseConfig.type === "converse-theorem" ? createThalesConverseTheoremSlideshowFigure(generatedExercise) : generatedExercise.figureOptions
           );
 
         if (
+          exerciseConfig.family !== "thales" &&
+          exerciseConfig.type !== "converse-theorem" &&
           window.MathJax &&
           typeof MathJax.typesetPromise ===
             "function"
@@ -1218,27 +1350,27 @@
           proof = [];
           studentProof = exerciseConfig.type === "pythagoras-angle"
             ? createPythagorasTrigonometryStudentProof(generatedExercise)
-            : createTrigonometryStudentProof(generatedExercise);
+            : createTrigonometryStudentProof(generatedExercise, { mathjax: true });
         } else if (
           exerciseConfig.family ===
           "pythagorasConverse"
         ) {
           proof =
             createPythagorasConverseProof(
-              generatedExercise
+              generatedExercise, { mathjax: true }
             );
 
           studentProof =
             createStudentProof(
               proof
-            );
+            ).map(step => step.kind === "choiceInput" ? { ...step, mathjax: true } : step);
         } else if (
           exerciseConfig.family ===
           "thales"
         ) {
           const thalesProof =
             createThalesProof(
-              generatedExercise
+              generatedExercise, { wrap: true }
             );
 
           if (
@@ -1274,11 +1406,9 @@
               generatedExercise
             );
 
-          studentProof =
-            createThalesParallelismStudentProof(
-              proof,
-              generatedExercise
-            );
+          studentProof = exerciseConfig.type === "converse-theorem"
+            ? createThalesConverseTheoremStudentProof(generatedExercise)
+            : createThalesParallelismStudentProof(proof, generatedExercise);
         } else {
           proof =
             createPythagorasProof(
@@ -1316,7 +1446,7 @@
             const element =
               usesStudentProofRenderer
                 ? createStudentProofElement(
-                    step
+                    step, exerciseConfig.family === "thalesConverse" ? wrapThalesProof : undefined
                   )
                 : createProofChoiceMenu(
                     step
@@ -1398,12 +1528,10 @@
         answerContainer.id =
           "exercise-answer";
 
-        if (
-          exerciseConfig.family ===
-            "pythagorasConverse" ||
-          exerciseConfig.family ===
-            "thalesConverse"
-        ) {
+        if (exerciseConfig.type !== "converse-theorem" && (
+          exerciseConfig.family === "pythagorasConverse" ||
+          exerciseConfig.family === "thalesConverse"
+        )) {
           answerContainer.innerHTML = `
             <button
               id="submit-answer"
@@ -1453,11 +1581,47 @@
             "user-answer"
           );
 
-        if (exerciseConfig.family === "trigonometry") {
+        if (exerciseConfig.family === "pythagoras") {
+          const segment = generatedExercise.sideNames[generatedExercise.unknownSide];
+          const label = document.createElement("label");
+          label.className = "pythagoras-final-answer";
+          label.htmlFor = "user-answer";
+          label.innerHTML = String.raw`\(\mathrm{${segment}}=\)`;
+          userAnswerInput.setAttribute("aria-label", `Longueur ${segment}, valeur et unité`);
           userAnswerInput.removeAttribute("placeholder");
-          userAnswerInput.setAttribute("aria-label", ["angle", "pythagoras-angle"].includes(exerciseConfig.type)
+          userAnswerInput.before(label);
+          label.appendChild(userAnswerInput);
+        }
+        if (exerciseConfig.family === "thales" || exerciseConfig.type === "converse-theorem") {
+          const unknown = generatedExercise.unknownSegment;
+          const segment = getThalesSegmentName(generatedExercise, unknown);
+          const labelSegment = exerciseConfig.type === "converse-theorem"
+            ? getThalesSegmentName(generatedExercise, [...unknown].reverse().join(""))
+            : segment;
+          userAnswerInput.setAttribute("aria-label", `Longueur ${segment}, valeur et unité`);
+          userAnswerInput.removeAttribute("placeholder");
+          const label = document.createElement("label");
+          label.className = "thales-final-answer";
+          label.htmlFor = "user-answer";
+          label.innerHTML = String.raw`\(\mathrm{${labelSegment}}=\) `;
+          userAnswerInput.before(label);
+          label.appendChild(userAnswerInput);
+        }
+        if (exerciseConfig.family === "trigonometry") {
+          const isAngle = exerciseConfig.type !== "length";
+          userAnswerInput.removeAttribute("placeholder");
+          userAnswerInput.setAttribute("aria-label", isAngle
             ? "Mesure de l’angle arrondie au degré, avec le symbole °"
             : "Longueur arrondie au dixième, avec son unité");
+          const label = document.createElement("label");
+          label.className = "trigonometry-final-answer";
+          label.htmlFor = "user-answer";
+          const name = isAngle
+            ? String.raw`\widehat{\mathrm{${generatedExercise.angle.name}}}`
+            : String.raw`\mathrm{${generatedExercise.sideNames[generatedExercise.unknownSide]}}`;
+          label.innerHTML = String.raw`\(${name}=\)`;
+          userAnswerInput.before(label);
+          label.appendChild(userAnswerInput);
         }
 
         const submitAnswerButton =
@@ -1577,10 +1741,11 @@
             exerciseConfig.family ===
               "pythagoras" ||
             exerciseConfig.family ===
-              "thales" || exerciseConfig.family === "trigonometry"
+              "thales" || exerciseConfig.type === "converse-theorem" || exerciseConfig.family === "trigonometry"
           ) {
-            const evaluation =
-              evaluateCurrentAnswer({
+            const evaluation = exerciseConfig.type === "converse-theorem"
+              ? evaluateThalesConverseTheoremAnswer(generatedExercise, userAnswerInput.value)
+              : evaluateCurrentAnswer({
                 question,
                 answerMode: "direct",
                 selectedQCMAnswer: null
@@ -1598,8 +1763,15 @@
               correctAnswer:
                 evaluation.correctAnswer,
 
-              displayAnswer: exerciseConfig.family === "trigonometry" && ["angle", "pythagoras-angle"].includes(exerciseConfig.type)
-                ? question.display_answer : undefined,
+              displayAnswer: exerciseConfig.family === "pythagoras"
+                ? proof.at(-1).correct
+                : exerciseConfig.family === "trigonometry"
+                  ? exerciseConfig.type === "length"
+                    ? String.raw`\(${formatAnswer(generatedExercise.roundedAnswer, "math")}~\mathrm{${generatedExercise.unit}}\)`
+                    : String.raw`\(${generatedExercise.roundedAnswer}^\circ\)`
+                  : exerciseConfig.family === "thales"
+                    ? String.raw`\(${formatAnswer(generatedExercise.lengths[generatedExercise.unknownSegment], "math")}~\mathrm{${generatedExercise.unit}}\)`
+                    : undefined,
 
               incorrectFeedback:
                 evaluation.result.feedback,
@@ -1615,6 +1787,9 @@
                   ? true
                   : evaluation.result.showCorrectAnswer ?? true
             });
+            if (["pythagoras", "trigonometry", "thales"].includes(exerciseConfig.family)) {
+              renderMath(document.getElementById("feedback"));
+            }
           }
 
           restartButton.style.display =
@@ -1677,12 +1852,14 @@
           );
         }
 
-        if (window.MathJax) {
+        if (!mathjaxPythagoras && !["trigonometry", "thales"].includes(exerciseConfig.family) && window.MathJax) {
           MathJax.typesetPromise([
-            proofContainer
+            proofContainer,
+            ...(exerciseConfig.type === "converse-theorem" ? [answerContainer] : [])
           ]);
         }
       }
+      if (mathjaxPythagoras || ["trigonometry", "thales"].includes(exerciseConfig.family)) renderMath(exerciseContent);
     }
 
     const params =
@@ -1696,6 +1873,12 @@
     const exerciseConfig =
       exerciseConfigs[exercise];
 
+    const mathjaxPythagoras = ["pythagoras", "pythagorasConverse"].includes(exerciseConfig?.family);
+    if (exerciseConfig?.family === "pythagoras") document.body.classList.add("pythagoras-exercise");
+    if (exerciseConfig?.family === "pythagorasConverse") document.body.classList.add("pythagoras-converse-exercise");
+    if (exerciseConfig?.family === "thales") document.body.classList.add("thales-direct-exercise");
+    if (exerciseConfig?.family === "thalesConverse") document.body.classList.add("thales-proof-exercise");
+    if (exerciseConfig?.type === "converse-theorem") document.body.classList.add("thales-converse-theorem-exercise");
     if (exerciseConfig?.family === "trigonometry") {
       document.body.classList.add("trigonometry-exercise");
       if (exerciseConfig.type === "pythagoras-angle") document.body.classList.add("pythagoras-trigonometry-exercise");
@@ -1745,6 +1928,7 @@
       function() {
         presentationMode =
           "response";
+        document.body.classList.remove("thales-converse-theorem-slideshow");
 
         displayPresentationMode(
           presentationMode
@@ -1757,6 +1941,7 @@
       function() {
         presentationMode =
           "slideshow";
+        if (exerciseConfig.type === "converse-theorem") document.body.classList.add("thales-converse-theorem-slideshow");
 
         displayPresentationMode(
           presentationMode
@@ -1836,6 +2021,43 @@
       }
     }
 
+    let thalesStatementVersion = 0;
+    async function updateThalesStatement(exercise) {
+      const target = exerciseContent.querySelector(".exercise-statement");
+      if (!target) return;
+      const version = ++thalesStatementVersion;
+      target.dataset.mathReady = "false";
+      const context = document.createElement("canvas").getContext("2d");
+      // La mesure sert uniquement aux retours de ligne ; aucune mise à l'échelle.
+      const fontSize = parseFloat(getComputedStyle(target).fontSize);
+      context.font = `${fontSize * 1.13}px "Times New Roman"`;
+      const available = target.clientWidth - 12;
+      let maxWidth = available;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        clearMath(target);
+        target.innerHTML = createThalesConverseTheoremSlideshowStatement(exercise, {
+          maxWidth, measure: text => context.measureText(text).width * 1.08
+        });
+        await renderMath(target, { targets: Array.from(target.children) });
+        await document.fonts.ready;
+        if (version !== thalesStatementVersion || !target.isConnected) return;
+        const width = target.querySelector("mjx-math")?.getBoundingClientRect().width ?? 0;
+        if (width <= available + 1) break;
+        // Vérifier la largeur réellement composée, puis replier davantage si besoin.
+        maxWidth *= available / width * .95;
+      }
+      target.dataset.mathReady = "true";
+    }
+
+    let thalesResizeFrame;
+    if (exerciseConfig.type === "converse-theorem") {
+      window.addEventListener("resize", () => {
+        if (!currentExercise) return;
+        cancelAnimationFrame(thalesResizeFrame);
+        thalesResizeFrame = requestAnimationFrame(() => updateThalesStatement(currentExercise));
+      });
+    }
+
     function renderExerciseFigure(
       figureOptions
     ) {
@@ -1851,7 +2073,7 @@
       ) {
         return createThalesFigure(
           deepMerge(
-            currentExercise.figureOptions,
+            isConverseTheoremSlideshow() ? createThalesConverseTheoremSlideshowFigure(currentExercise) : currentExercise.figureOptions,
             figureOptions ?? {}
           )
         );
@@ -1872,7 +2094,7 @@
             .dimensions,
 
         rightAngle: {
-          visible: true,
+          visible: exerciseConfig.family === "pythagoras",
           size: 20
         },
 
@@ -1982,6 +2204,28 @@
       );
     }
 
+    function isConverseTheoremSlideshow() {
+      return exerciseConfig.type === "converse-theorem" && presentationMode === "slideshow";
+    }
+
+    // Le lecteur partagé travaille dans la zone située sous l'énoncé conservé.
+    // Sa taille reste indépendante du nombre de lignes de la correction.
+    function renderStepCorrection(options) {
+      if (exerciseConfig.family === "thalesConverse" && options.scene?.html) {
+        options = { ...options, scene: { ...options.scene, html: wrapThalesProof(options.scene.html) } };
+      }
+      if (!isConverseTheoremSlideshow()) return renderBaseStepCorrection(options);
+      let correction = exerciseContent.querySelector(".thales-slideshow-correction");
+      if (!correction) {
+        // Garder l'énoncé déjà composé pour éviter toute variation de hauteur.
+        exerciseContent.querySelector("#exercise-figure")?.remove();
+        correction = document.createElement("div");
+        correction.className = "thales-slideshow-correction";
+        exerciseContent.appendChild(correction);
+      }
+      return renderBaseStepCorrection({ ...options, container: correction });
+    }
+
     function drawCurrentThalesArrow(
       scene
     ) {
@@ -2008,7 +2252,7 @@
         const presentation = exerciseConfig.type === "pythagoras-angle"
           ? createPythagorasTrigonometryCorrectionPresentation(currentExercise)
           : exerciseConfig.type === "angle"
-          ? createTrigonometryAngleCorrectionPresentation(currentExercise)
+          ? createTrigonometryAngleCorrectionPresentation(currentExercise, { mathjax: true })
           : createTrigonometryCorrectionPresentation(currentExercise);
         correctionSteps = presentation.scenes;
         trigonometryCompleteScene = presentation.completeScene;
@@ -2025,16 +2269,14 @@
         "thalesConverse"
       ) {
         correctionSteps =
-          createThalesParallelismCorrectionScenes(
-            currentExercise
-          );
+          (exerciseConfig.type === "converse-theorem" ? createThalesConverseTheoremCorrectionScenes : createThalesParallelismCorrectionScenes)(currentExercise);
       } else if (
         exerciseConfig.family ===
         "pythagorasConverse"
       ) {
         correctionSteps =
           createPythagorasConverseCorrectionScenes(
-            currentExercise
+              currentExercise, { mathjax: true }
           );
       } else {
         correctionSteps =
@@ -2127,12 +2369,22 @@
     }
 
     function showCompleteStepCorrection() {
-      if (!stepCorrection?.showAll()) return;
+      // showAll déplace le curseur à la dernière étape. Lire la phase avant ce saut.
+      const currentIndex = stepCorrection?.getCurrentStepIndex();
+      const phase = correctionSteps[currentIndex]?.figure?.phase;
+      const theoremStart = exerciseConfig.type === "converse-theorem"
+        ? correctionSteps.findIndex(scene => scene.id === "theoremFigure") : -1;
+      const phaseEnd = currentIndex < theoremStart ? theoremStart - 1 : undefined;
+      if (!stepCorrection?.showAll(phaseEnd)) return;
+      const showAngleOnly =
+        exerciseConfig.type === "pythagoras-angle" && (phase === "proved" || phase === "trigonometry");
       renderStepCorrection({
         container: exerciseContent,
-        scene: exerciseConfig.family === "trigonometry"
-          ? trigonometryCompleteScene
-          : createCompleteCorrectionScene(correctionSteps, { cumulative: true }),
+        scene: showAngleOnly || exerciseConfig.type === "converse-theorem"
+          ? correctionSteps[stepCorrection.getCurrentStepIndex()]
+          : exerciseConfig.family === "trigonometry"
+            ? trigonometryCompleteScene
+            : createCompleteCorrectionScene(correctionSteps, { cumulative: true }),
         renderFigure: renderExerciseFigure
       });
       if (exerciseConfig.family === "trigonometry") {
@@ -2202,16 +2454,19 @@
           );
 
         case "pythagorasConverse":
-          return (
-            createPythagorasConverseCorrectionScenes
-          );
+          return exercise => createPythagorasConverseCorrectionScenes(exercise, { mathjax: true });
 
         case "thales":
-          return (
-            createThalesCorrectionScenes
-          );
+          return exercise => {
+            const scene = createCompleteCorrectionScene(createThalesCorrectionScenes(exercise), { cumulative: true });
+            if (exercise.requiresParallelProof) {
+              scene.html = `<div class="thales-perpendicular-correction">${scene.html}</div>`;
+            }
+            return [scene];
+          };
 
         case "thalesConverse":
+          if (exerciseConfig.type === "converse-theorem") return exercise => createThalesConverseTheoremCorrectionScenes(exercise, { mode: presentationMode, forExport: true });
           return (
             createThalesParallelismCorrectionScenes
           );
@@ -2247,11 +2502,20 @@
             }
 
             exportGeneratedExercise({
+              singlePageStudentSheet: true,
               title:
                 exerciseConfig.title,
 
-              exercise:
-                currentExercise,
+              exercise: exerciseConfig.type === "converse-theorem"
+                ? { ...currentExercise, statement: createThalesConverseTheoremSlideshowStatement(currentExercise, includeCorrection ? {} : {
+                    maxWidth: 620,
+                    measure(text) {
+                      const context = document.createElement('canvas').getContext('2d');
+                      context.font = '18.08px "Times New Roman"';
+                      return context.measureText(text).width * 1.08;
+                    }
+                  }) }
+                : currentExercise,
 
               renderFigure(
                 figureOptions
@@ -2286,7 +2550,7 @@
           exportStageSelect.appendChild(complete);
           const exportScenes = exerciseConfig.type === "pythagoras-angle"
             ? createPythagorasTrigonometryCorrectionPresentation(currentExercise).scenes
-            : createTrigonometryAngleCorrectionPresentation(currentExercise).scenes;
+            : createTrigonometryAngleCorrectionPresentation(currentExercise, { mathjax: true }).scenes;
           exportScenes.forEach((scene, index) => {
             const option = document.createElement("option");
             option.value = String(index);

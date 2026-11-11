@@ -9,6 +9,7 @@ import { createPythagorasConverseCorrectionScenes } from "../exercices/pythagore
 import { createRightTriangleFigureOptions } from "../exercices/figures/rightTriangleConfigurations.js";
 import { checkAnswerSmart } from "../core/correcteur.js";
 import { readFileSync } from "node:fs";
+import { exerciseConfigs } from "../core/exerciseRegistry.js";
 
 // Relevé indépendant des 16 branches triplet(t) du PythonTeX fourni.
 const triples = [[3,4,5],[5,12,13],[8,15,17],[7,24,25],[20,21,29],[12,35,37],[9,40,41],[28,45,53],
@@ -52,7 +53,7 @@ test("génération : réutilisation des tirages de réciproque, diversité et au
 
 test("26 états : neuf scènes de réciproque inchangées, codage prouvé, neuf figures, sept états de rédaction", () => {
   for(let orientation=0;orientation<60;orientation++) for(const angleVertexIndex of [1,2]) {
-    const e=fixture({orientation,angleVertexIndex}), original=createPythagorasConverseCorrectionScenes(e);
+    const e=fixture({orientation,angleVertexIndex}), original=createPythagorasConverseCorrectionScenes(e,{mathjax:true});
     const {scenes,completeScene}=createPythagorasTrigonometryCorrectionPresentation(e);
     assert.equal(scenes.length,26);assert.equal(new Set(scenes.map(s=>s.id)).size,26);
     for(let i=0;i<9;i++) {assert.equal(scenes[i].html?.replace(' style="border-color:#FF8A80;color:#FF8A80"',''),original[i].html);assert.deepEqual(scenes[i].figure.options,original[i].figure);assert.equal(scenes[i].figure.phase,"converse");}
@@ -87,14 +88,14 @@ test("énoncé fidèle et résultat entier avec ° obligatoire, sans réponse r�
   for(const input of ["53","53,0°","53.5°","52°",""])assert.equal(check(input),false);
 });
 
-test("énoncé : trois lignes explicites, texte naturel autour des expressions MathJax", () => {
+test("énoncé : trois lignes explicites entièrement composées en MathJax", () => {
   for(const unit of units) {
     const e=fixture({unit,triple:triples[15],multiplier:.9});
     const lines=e.statement.split("<br>");assert.equal(lines.length,3);
-    assert.match(lines[0],/^Le triangle .*tel que .*AB/);
-    assert.match(lines[1],/AC.*BC.*est-il rectangle \?$/);
-    assert.match(lines[2],/^Si oui, calculer/);
-    assert.ok(!lines[0].includes("\\text{Le triangle"));
+    assert.match(lines[0],/\\text\{Le triangle .*tel que\}.*AB/);
+    assert.match(lines[1],/AC.*BC.*\\text\{est-il rectangle \?\}/);
+    assert.match(lines[2],/\\text\{Si oui, calculer\}.*\\widehat/);
+    assert.ok(lines.every(line=>line.replace(/\\\(.*?\\\)/g, "").trim() === ""));
   }
 });
 
@@ -102,8 +103,8 @@ test("Réponse : une seule conclusion justifiée, trois relations, encadrement d
   for(const angleVertexIndex of [1,2])for(const trigonometricFunction of ["sin","cos","tan"]) {
     const e=fixture({angleVertexIndex,trigonometricFunction});
     const response=createPythagorasTrigonometryResponseCorrectionScene(e);
-    assert.equal((response.html.match(/est rectangle en/g)??[]).length,1);
-    assert.match(response.html,/réciproque du théorème de Pythagore/);
+    assert.equal((response.html.match(/est rectangle/g)??[]).length,1);
+    assert.match(response.html,/la réciproque.*du théorème de.*Pythagore/);
     assert.match(response.html,/on déduit que/);
     assert.match(response.html,/class="proof-box" style="border-color:#FF8A80;color:#FF8A80"/);
     assert.match(response.html,new RegExp('\\\\arc'+trigonometricFunction));
@@ -113,7 +114,7 @@ test("Réponse : une seule conclusion justifiée, trois relations, encadrement d
     assert.equal(presentation.scenes.length,26);
     assert.equal(presentation.scenes[9].id,"rightAngleProved");
     assert.ok(presentation.scenes.some(s=>s.id==="trigonometry-hypothesis"));
-    assert.equal((presentation.completeScene.html.match(/est rectangle en/g)??[]).length,2);
+    assert.equal((presentation.completeScene.html.match(/est rectangle/g)??[]).length,2);
     for(const scene of presentation.scenes.slice(6,9))assert.match(scene.html,/border-color:#FF8A80/);
   }
 });
@@ -153,6 +154,12 @@ test("options invalides et données non rectangles refusées sans modifier l’e
 });
 
 test("lecteur : raccordement explicite, plafonds SVG et navigation partagés", () => {
+  const { correctionMetadata } = exerciseConfigs["pythagoras-trigonometry"];
+  assert.equal(correctionMetadata.type, "multi-phase");
+  assert.deepEqual(correctionMetadata.phases.map(({ summaryScope }) => summaryScope), ["complete-correction", "current-phase"]);
+  assert.equal(correctionMetadata.transition.clearPreviousPhase, true);
+  assert.equal(correctionMetadata.transition.preserveFigure, true);
+  assert.match(correctionMetadata.transition.retainedProperty, /triangle est rectangle/);
   const player=readFileSync(new URL("../exercise_player.html",import.meta.url),"utf8");
   for(const name of ["generatePythagorasTrigonometryExercise","createPythagorasTrigonometryFigureSVG","createPythagorasTrigonometryCorrectionPresentation","createPythagorasTrigonometryExportCorrectionScenes","preparePythagorasTrigonometryResponse"])assert.ok(player.includes(name));
   assert.match(player,/max-height: clamp\(300px, 40vw, 480px\)/);

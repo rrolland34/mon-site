@@ -101,11 +101,16 @@ test("exportExercise transmet la répartition aux sujets et ne change pas l'arch
     userAnswers: [{ question: q.question, answerMode: "qcm", displayAnswer: "1", qcmAnswersOrder: ["2", "1"] }] };
   for (const includeCorrection of [false, true]) {
     context.exportExercise({ ...options, exportType: "evaluation", includeCorrection });
+    assert.equal(document.isEvaluation, true);
     assert.equal(document.content, generators[Number(includeCorrection)](options));
+    assert.equal(document.studentHeader, !includeCorrection);
     assert.equal(count(document.content, "archive-qcm"), 1);
   }
   context.exportExercise({ ...options, exportType: "archive" });
+  assert.equal(document.title, options.exercice.title);
+  assert.equal(document.isEvaluation, undefined);
   assert.equal(document.content, createEvaluationContent(options));
+  assert.equal(document.studentHeader, undefined);
   assert.ok(document.content.indexOf("2") < document.content.lastIndexOf("1"));
 });
 

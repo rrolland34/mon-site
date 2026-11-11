@@ -41,7 +41,8 @@ export function exportExercise({
   ) {
     const content =
       createEvaluationContent({
-        userAnswers
+        userAnswers,
+        answerOnly: exercice.correctionMode === "answer-only"
       });
 
     exportDocument({
@@ -93,10 +94,10 @@ export function exportExercise({
           });
 
     exportDocument({
-      title:
-        exercice.title,
-
-      content
+      title: exercice.title,
+      content,
+      studentHeader: !includeCorrection,
+      isEvaluation: true
     });
 
     return;

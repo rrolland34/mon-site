@@ -998,6 +998,7 @@ function displayCorrectionQuestion() {
     index: currentCorrectionIndex,
     total: userAnswers.length
   });
+  if (exercice.correctionMode === "answer-only") window.scrollTo(0, 0);
 
   correctionStep = "question";
 }
@@ -1079,7 +1080,9 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
     });
     progressiveCorrectionPlayer.start({ atEnd });
   } else {
-    renderCorrectionAnswer(correction);
+    const answerOnly = exercice.correctionMode === "answer-only";
+    renderCorrectionAnswer(correction, { answerOnly });
+    if (answerOnly) container?.scrollIntoView({ block: "nearest" });
   }
 
   correctionStep = "answer";

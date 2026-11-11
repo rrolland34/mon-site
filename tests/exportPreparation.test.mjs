@@ -44,6 +44,36 @@ test('export : initialisation, composition explicite, polices et déduplication'
   assert.equal(f.listeners.size, 0);
   assert.equal(f.document.documentElement.hasAttribute('data-export-ready'), true);
 });
+
+test('export : la mise en page attend les polices et précède l’autorisation d’imprimer', async () => {
+  const f = fixture();
+  let release;
+  const pending = new Promise(resolve => { release = resolve; });
+  let called = false;
+  const job = f.start({ timeoutMs:1000, beforeReady:async ({ archiveWindow }) => {
+    called = true;
+    assert.equal(archiveWindow, f.archiveWindow);
+    assert.equal(f.printButton.disabled, true);
+    await pending;
+  } });
+  const loaded = f.loaded();
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(called, true);
+  assert.equal(f.document.documentElement.hasAttribute('data-export-ready'), false);
+  release(); await loaded;
+  assert.equal(await job, true);
+});
+
+test('export : une page impossible à composer reste non imprimable', async () => {
+  const f = fixture();
+  const error = Object.assign(new Error('Sujet trop long pour une page A4.'), { code:'STUDENT_SHEET_OVERFLOW' });
+  const job = f.start({ beforeReady:() => { throw error; } });
+  await f.loaded();
+  assert.equal(await job, false);
+  assert.equal(f.printButton.disabled, true);
+  assert.equal(f.document.documentElement.hasAttribute('data-export-ready'), false);
+  assert.equal(f.document.getElementById('export-status').textContent, error.message);
+});
 for (const failure of ['network', 'startup', 'typeset', 'merror', 'font', 'raw']) test(`export : échec ${failure}, impression interdite et nouvelle tentative proposée`, async () => {
   const f = fixture();
   initializeExportPrint({ archiveWindow: f.archiveWindow });

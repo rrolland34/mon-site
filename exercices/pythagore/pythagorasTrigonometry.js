@@ -31,11 +31,11 @@ export function createPythagorasTrigonometryFigureSVG(exercise, { phase = "conve
 }
 
 export function createPythagorasTrigonometryCorrectionPresentation(exercise) {
-  const first = createPythagorasConverseCorrectionScenes(exercise).map(scene => ({ ...scene,
+  const first = createPythagorasConverseCorrectionScenes(exercise, { mathjax: true }).map(scene => ({ ...scene,
     // Personnalisation locale de l'encadrement existant, conservée à l'export.
     html: scene.html?.replace('<span class="proof-box">', '<span class="proof-box" style="border-color:#FF8A80;color:#FF8A80">'),
     id: `pythagoras-${scene.id}`, figure: { phase: "converse", options: scene.figure } }));
-  const second = createTrigonometryAngleCorrectionPresentation(exercise).scenes
+  const second = createTrigonometryAngleCorrectionPresentation(exercise, { mathjax: true }).scenes
     .filter(scene => !scene.id.startsWith("memo"))
     .map(scene => ({ ...scene, id: `trigonometry-${scene.id}`, figure: { phase: "trigonometry", options: scene.figure } }));
   const scenes = [...first, { id: "rightAngleProved", figure: { phase: "proved" }, html: "" }, ...second];
@@ -49,7 +49,7 @@ export function createPythagorasTrigonometryResponseCorrectionScene(exercise) {
   const { scenes, completeScene } = createPythagorasTrigonometryCorrectionPresentation(exercise);
   const writing = createCorrectionPresentation({
     stages: [{ id: "responseComplete", figure: completeScene.figure }],
-    blocks: createTrigonometryAngleProof(exercise).slice(1).map(({ id, correct, before }) => ({
+    blocks: createTrigonometryAngleProof(exercise, { mathjax: true }).slice(1).map(({ id, correct, before }) => ({
       id, html: correct, ...(before === undefined ? {} : { before })
     }))
   }).completeScene;
@@ -65,14 +65,15 @@ export function createPythagorasTrigonometryExportCorrectionScenes(exercise, { m
   const { scenes, completeScene } = createPythagorasTrigonometryCorrectionPresentation(exercise);
   if (stageIndex !== undefined && (!Number.isInteger(stageIndex) || stageIndex < 0 || stageIndex >= scenes.length)) throw new RangeError("Étape d’export invalide.");
   const scene = stageIndex === undefined ? completeScene : scenes[stageIndex];
-  return [{ ...scene, html: scene.html || "<p>Figure de la correction.</p>" }];
+  return [{ ...scene, html: scene.html || String.raw`<p>\(\text{Figure de la correction.}\)</p>` }];
 }
 
 export function createPythagorasTrigonometryStudentProof(exercise) {
-  return [...createStudentProof(createPythagorasConverseProof(exercise)),
+  const converse = createStudentProof(createPythagorasConverseProof(exercise, { mathjax: true }));
+  return [...converse.map(step => step.kind === "choiceInput" ? { ...step, mathjax: true } : step),
     // La conclusion de la réciproque établit déjà le triangle rectangle.
     // Filtrer l'hypothèse ici supprime le champ DOM et sa validation partagée.
-    ...createTrigonometryStudentProof(exercise)
+    ...createTrigonometryStudentProof(exercise, { mathjax: true })
       .filter(step => step.id !== "hypothesis")
       .map(step => ({ ...step, kind: "choice" }))];
 }
@@ -86,7 +87,7 @@ export function preparePythagorasTrigonometryResponse(container, exercise) {
   if (!menu) return;
   for (const trigonometricFunction of ["sin", "cos", "tan"]) {
     const candidate = createPythagorasTrigonometryExercise(exercise, { angleVertexIndex: exercise.angle.vertexIndex, trigonometricFunction });
-    const relation = createTrigonometryStudentProof(candidate).find(step => step.id === "literalRelation").correct;
+    const relation = createTrigonometryStudentProof(candidate, { mathjax: true }).find(step => step.id === "literalRelation").correct;
     if (menu.dataset.selectedChoice === relation) {
       menu.dataset.correctChoice = relation;
       Object.assign(exercise, candidate);

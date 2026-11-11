@@ -562,7 +562,8 @@ function createStatement(
   values,
   pointNames,
   unit,
-  historicalStatement
+  historicalStatement,
+  wrap = false
 ) {
   const [
     A,
@@ -614,6 +615,22 @@ function createStatement(
       `(\\mathrm{${DE}})` +
       "\\text{ sont parallèles}.\\)";
 
+  if (wrap) {
+    const parts = configuration.lengthDisplayMode === "parts";
+    const lengths = [[AB, values.PQ], [parts ? BD : AD, parts ? values.QR : values.PR],
+      [AC, values.PS], [parts ? CE : AE, parts ? values.ST : values.PT]];
+    const data = lengths.map(([name, value], index) => {
+      const prefix = index === 3 ? String.raw`\text{et }` : "";
+      const suffix = index < 2 ? "," : index === 3 ? "." : "";
+      return String.raw`\(${prefix}\mathrm{${name}}=${formatNumber(value)}~\mathrm{${unit}}${suffix}\)`;
+    });
+    return [
+      String.raw`\(\text{Les droites }(\mathrm{${DB}})\) \(\text{et }(\mathrm{${EC}})\) \(\text{sont sécantes en }\mathrm{${A}}.\)`,
+      `<div class="thales-parallelism-data">${data.join(" ")}</div>`,
+      String.raw`\(\text{Les droites }(\mathrm{${BC}})\) \(\text{et }(\mathrm{${DE}})\) \(\text{sont-elles parallèles ?}\)`
+    ].join("");
+  }
+
   if (
     configuration.lengthDisplayMode ===
     "parts"
@@ -654,6 +671,10 @@ function createStatement(
 
     question
   );
+}
+
+export function createThalesParallelismStatement(exercise) {
+  return createStatement(exercise, exercise.values, exercise.pointNames, exercise.unit, false, true);
 }
 
 /**
