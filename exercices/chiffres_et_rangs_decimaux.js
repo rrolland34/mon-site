@@ -1,3 +1,5 @@
+import { numerationPrompt, presentNumerationQuestion } from "./numerationPresentation.js";
+
 // exercices/chiffres_et_rangs_decimaux.js
 
 import {
@@ -251,8 +253,7 @@ const numberOfTens =
 function createIntegerPartQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quelle est la partie entière du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quelle est la partie entière du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       integerPart,
@@ -302,8 +303,7 @@ function createDecimalPartQuestion() {
 
   return {
     question:
-      `\\(\\text{Quelle est la partie décimale du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quelle est la partie décimale du nombre", String.raw`${displayedNumber}\ ?`),
 
     answers: [
       correctDecimalAnswer,
@@ -336,8 +336,7 @@ function createDecimalPartQuestion() {
 function createHundredsDigitQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le chiffre des centaines du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le chiffre des centaines du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       hundredsDigit,
@@ -357,8 +356,7 @@ function createHundredsDigitQuestion() {
 function createNumberOfTenthsQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le nombre de dixièmes du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le nombre de dixièmes du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       numberOfTenths,
@@ -387,8 +385,7 @@ function createNumberOfTenthsQuestion() {
 function createTensDigitQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le chiffre des dizaines du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le chiffre des dizaines du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       tensDigit,
@@ -408,8 +405,7 @@ function createTensDigitQuestion() {
 function createNumberOfHundredthsQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le nombre de centièmes du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le nombre de centièmes du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       numberOfHundredths,
@@ -429,8 +425,7 @@ function createNumberOfHundredthsQuestion() {
 function createTenthsDigitQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le chiffre des dixièmes du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le chiffre des dixièmes du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       tenths,
@@ -450,8 +445,7 @@ function createTenthsDigitQuestion() {
 function createNumberOfThousandthsQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le nombre de millièmes du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le nombre de millièmes du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       numberOfThousandths,
@@ -471,8 +465,7 @@ function createNumberOfThousandthsQuestion() {
 function createHundredthsDigitQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le chiffre des centièmes du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le chiffre des centièmes du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       hundredths,
@@ -492,8 +485,7 @@ function createHundredthsDigitQuestion() {
 function createNumberOfTensQuestion() {
   return createIntegerQuestion({
     question:
-      `\\(\\text{Quel est le nombre de dizaines du nombre }` +
-      `${displayedNumber}\\ ?\\)`,
+      numerationPrompt("Quel est le nombre de dizaines du nombre", String.raw`${displayedNumber}\ ?`),
 
     correctAnswer:
       numberOfTens,
@@ -531,5 +523,5 @@ export default {
     createHundredthsDigitQuestion(),
 
     createNumberOfTensQuestion()
-  ]
+  ].map(presentNumerationQuestion)
 };

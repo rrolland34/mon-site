@@ -1,5 +1,6 @@
 // exercices/ecritures_decimales.js
 
+import { decimalFractionPrompt, presentDecimalFractionQuestion } from "./decimalFractionPresentation.js";
 import { formatAnswer } from "../core/answerFormatting.js";
 
 export default {
@@ -9,7 +10,7 @@ export default {
   questions: [
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{10}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{1}{10}.`),
 
       answers: ["0,1"],
 
@@ -29,7 +30,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{100}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{1}{100}.`),
 
       answers: ["0,01"],
 
@@ -49,7 +50,7 @@ export default {
 
     {
       question:
-        `\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{${formatAnswer(1000, "math")}}.\\)`,
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{1}{1~000}.`),
 
       answers: ["0,001"],
 
@@ -69,7 +70,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner la fraction décimale égale à } 0,1.\\)",
+        decimalFractionPrompt("Donner la fraction décimale égale à", String.raw`0{,}1.`),
 
       answers: ["1/10"],
 
@@ -91,7 +92,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner la fraction décimale égale à } 0,01.\\)",
+        decimalFractionPrompt("Donner la fraction décimale égale à", String.raw`0{,}01.`),
 
       answers: ["1/100"],
 
@@ -113,7 +114,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner la fraction décimale égale à } 0,001.\\)",
+        decimalFractionPrompt("Donner la fraction décimale égale à", String.raw`0{,}001.`),
 
       answers: ["1/1000"],
 
@@ -132,5 +133,5 @@ export default {
           "canonicalDecimalFraction"
       }
     }
-  ]
+  ].map(presentDecimalFractionQuestion)
 };

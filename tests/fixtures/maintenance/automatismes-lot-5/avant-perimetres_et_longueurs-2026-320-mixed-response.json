@@ -1,0 +1,249 @@
+{
+  "job": {
+    "id": "perimetres_et_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "7\\ \\text{km}",
+        "5\\ \\text{km}",
+        "35\\,\\text{km}",
+        "24\\,\\text{km}",
+        "12\\,\\text{km}",
+        "70\\,\\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quel est le périmètre d’un rectangle de longueur\n          \n        \n\n        \n          et de largeur\n           ?"
+      ]
+    },
+    {
+      "document": 587,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 853.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèéôéQuel est le périmètre d’un carré de côté 6 hm ?",
+          "scroll": 854,
+          "client": 854,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 580.53125,
+              "right": 598.875,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -266.9375,
+          "right": 586.953125,
+          "width": 853.890625,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Quel est le périmètre d’un carré de côté }6\\ \\text{hm}\\ ?",
+        "35\\,\\text{km}",
+        "24\\,\\text{km}",
+        "12\\,\\text{km}",
+        "70\\,\\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 126.59375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "26\\ \\text{mm}",
+        "3\\ \\text{mm}",
+        "23\\,\\text{mm}",
+        "10\\,\\text{mm}",
+        "13\\,\\text{mm}",
+        "58\\,\\text{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle est la longueur d’un rectangle de périmètre\n          \n        \n\n        \n          et de largeur\n           ?"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 104.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "7\\ \\text{dm}",
+        "4\\ \\text{cm}",
+        "6\\ \\text{mm}",
+        "23\\,\\text{mm}",
+        "10\\,\\text{mm}",
+        "13\\,\\text{mm}",
+        "58\\,\\text{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quel est le périmètre d’un triangle dont les côtés mesurent\n        \n\n        \n          ,\n          \n          et\n           ?"
+      ]
+    },
+    {
+      "document": 738,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 1155.546875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ôéééèQuelle est la longueur du côté d’un carré de périmètre 24 mm ?",
+          "scroll": 1156,
+          "client": 1156,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 733.765625,
+              "right": 752.109375,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -417.765625,
+          "right": 737.78125,
+          "width": 1155.546875,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Quelle est la longueur du côté d’un carré de périmètre }24\\ \\text{mm}\\ ?",
+        "23\\,\\text{mm}",
+        "10\\,\\text{mm}",
+        "13\\,\\text{mm}",
+        "58\\,\\text{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "24 km"
+        ],
+        "possible_answers": [
+          "24 km",
+          "35 km",
+          "12 km",
+          "70 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "35 km",
+          "24 km",
+          "12 km",
+          "70 km"
+        ]
+      },
+      {
+        "answers": [
+          "24 hm"
+        ],
+        "possible_answers": [
+          "24 hm",
+          "36 hm",
+          "12 hm",
+          "18 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "10 mm"
+        ],
+        "possible_answers": [
+          "10 mm",
+          "58 mm",
+          "13 mm",
+          "23 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "23 mm",
+          "10 mm",
+          "13 mm",
+          "58 mm"
+        ]
+      },
+      {
+        "answers": [
+          "74.6 cm"
+        ],
+        "possible_answers": [
+          "74,6 cm",
+          "17 cm",
+          "5,3 cm",
+          "134 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "6 mm"
+        ],
+        "possible_answers": [
+          "6 mm",
+          "96 mm",
+          "24 mm",
+          "12 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "exercices/statistiques.js": "7a5d6e60825155596a5d05b4c0c5dc70c2ecfabf4286a52d260f5bc57e7cb0d0",
+  "core/cartesianPointSelection.js": "f1a82c9c2c3b93b3d081dd4d180f12061bc448b0816befcc2b5c5f36b6dbca04",
+  "exercices/figures/cartesianPlaneFigure.js": "640ab98122fe77d8788d89b2c1791e568b1edab724744eed986eb089480ca7e4",
+  "core/answerFormatting.js": "2909a39ab89fefbf27bada7bb4a322e2be29a6de7073b4b394bc6dc41a6e7601",
+  "core/qcm.js": "588d08bd400b8a22240ba114a0898d353dfaaae1a8657a5874d42ef0f6f36d6f",
+  "core/export/exportCartesianFigures.js": "24a2e83ecac055f9942a6ca29c01a897ef4f3207fcee3b80036041782e2ad310",
+  "exercices/powersPresentation.js": "cdfd8bdbebaabfb93c9c5e35abadf08d82820f0ef383019f8271c6a1a72b96b7"
+}

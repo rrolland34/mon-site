@@ -1,0 +1,272 @@
+{
+  "job": {
+    "id": "vitesse_moyenne",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 429,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 538.328125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Convertir 66,6 km/h en m/s.",
+          "scroll": 538,
+          "client": 538,
+          "children": [],
+          "left": -109.15625,
+          "right": 429.171875,
+          "width": 538.328125,
+          "height": 45.40625
+        }
+      ],
+      "math": [
+        "\\text{Convertir }66{,}6\\ \\text{km/h}\\text{ en }\\text{m/s}\\text{.}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 135.046875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "213\\ \\text{km}",
+        "3\\ \\text{h}",
+        "\\text{km/h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un automobiliste parcourt\n          \n          en\n          .\n        \n\n        \n          Quelle est sa vitesse moyenne\n          en  ?",
+        "81 km/h",
+        "71 km/h",
+        "61 km/h",
+        "91 km/h"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 147.109375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "10{,}5\\ \\text{km}",
+        "30\\ \\text{min}",
+        "\\text{km/h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Sur un vélo, une personne parcourt\n          \n          en\n          .\n        \n\n        \n          Quelle est sa vitesse moyenne\n          en  ?",
+        "81 km/h",
+        "71 km/h",
+        "61 km/h",
+        "91 km/h"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 159.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "288\\ \\text{km}",
+        "80\\ \\text{km/h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un automobiliste parcourt\n          \n          à la vitesse moyenne de\n          .\n        \n\n        \n          Quel temps a-t-il mis ?\n          Donner le résultat en heures\n          et minutes.",
+        "3 h 6 min",
+        "3 h 36 min",
+        "3 h 42 min",
+        "3 h 30 min"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 159.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "76\\ \\text{km/h}",
+        "5\\ \\text{h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un automobiliste roule à la vitesse\n          moyenne de\n        \n\n        \n          \n          pendant\n          .\n        \n\n        \n          Quelle distance, en kilomètres,\n          a-t-il parcourue ?",
+        "3 h 6 min",
+        "3 h 36 min",
+        "3 h 42 min",
+        "3 h 30 min"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "18.5 m/s"
+        ],
+        "possible_answers": [
+          "18,5 m/s",
+          "22,1 m/s",
+          "14,9 m/s",
+          "22,2 m/s"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "m/s"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "71 km/h"
+        ],
+        "possible_answers": [
+          "71 km/h",
+          "81 km/h",
+          "61 km/h",
+          "91 km/h"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "km/h"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "81 km/h",
+          "71 km/h",
+          "61 km/h",
+          "91 km/h"
+        ]
+      },
+      {
+        "answers": [
+          "21 km/h"
+        ],
+        "possible_answers": [
+          "21 km/h",
+          "26 km/h",
+          "16 km/h",
+          "31 km/h"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "km/h"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "3 h 36 min"
+        ],
+        "possible_answers": [
+          "3 h 36 min",
+          "3 h 6 min",
+          "3 h 42 min",
+          "3 h 30 min"
+        ],
+        "answerRule": {
+          "type": "duration"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "3 h 6 min",
+          "3 h 36 min",
+          "3 h 42 min",
+          "3 h 30 min"
+        ]
+      },
+      {
+        "answers": [
+          "380 km"
+        ],
+        "possible_answers": [
+          "380 km",
+          "15,2 km",
+          "76 km",
+          "190 km"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "km"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "18.5 m/s",
+        "correctQCMAnswer": "18.5 m/s",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "71 km/h",
+        "correctQCMAnswer": "71 km/h",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "81 km/h",
+          "71 km/h",
+          "61 km/h",
+          "91 km/h"
+        ]
+      },
+      {
+        "correctAnswer": "21 km/h",
+        "correctQCMAnswer": "21 km/h",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "3 h 36 min",
+        "correctQCMAnswer": "3 h 36 min",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "3 h 6 min",
+          "3 h 36 min",
+          "3 h 42 min",
+          "3 h 30 min"
+        ]
+      },
+      {
+        "correctAnswer": "380 km",
+        "correctQCMAnswer": "380 km",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

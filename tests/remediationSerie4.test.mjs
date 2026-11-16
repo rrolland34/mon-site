@@ -8,6 +8,7 @@ import {evaluateCurrentAnswer,getCorrectQCMAnswer} from '../core/answerEvaluatio
 import {formatQCMAnswer,displayQCMOptions} from '../core/qcm.js';
 import {storeAnswerForCorrections} from '../core/answerHistory.js';
 import {loadExercise} from '../core/exerciseLoader.js';
+import {assertSixiemeCatalog} from './helpers/sixiemeCatalog.mjs';
 import {startExerciseSession} from '../core/session.js';
 let input='';const setup=()=>{globalThis.document={getElementById:()=>({value:input})};};
 function check(q){
@@ -73,7 +74,7 @@ test('série 4 : 1000 séries, intégration, rubrique et conservation de l’ord
  const page=readFileSync(new URL('../automatismes_6.html',import.meta.url),'utf8'),section=page.match(/<section[^>]+aria-labelledby="remediation-evaluations-nationales-title"[\s\S]*?<\/section>/)[0];
  assert.ok(page.indexOf(section)>page.indexOf('id="sixieme-domain-2"'));assert.match(section,/>Remédiation des évaluations nationales<\/h2>/);assert.doesNotMatch(section,/domain-number/);
  assert.deepEqual([...section.matchAll(/data-exercise="([^"]+)"/g)].map(m=>m[1]),[1,2,3,4,5,6].map(i=>'remediation_evaluations_nationales_6e_serie_'+i));
- const ids=[...page.matchAll(/data-exercise="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,24);assert.equal(new Set(ids).size,24);
+ assertSixiemeCatalog(page);
  const node=()=>({style:{},dataset:{},classList:{add(){},remove(){}},addEventListener(){}}),container={...node(),appendChild(){}};
  globalThis.document={getElementById:()=>container,createElement:node};globalThis.window={};
  for(const q of generateQuestions(random)){displayQCMOptions(q);const order=[...q.qcmAnswersOrder];displayQCMOptions(q,true);assert.deepEqual(q.qcmAnswersOrder,order);const history=[];storeAnswerForCorrections({presentationMode:'slideshow',userAnswers:history,currentQuestion:q,answerMode:'qcm',correctAnswer:q.answers[0],correctQCMAnswer:q.qcmAnswer,displayAnswer:q.display_answer});assert.deepEqual(history[0].qcmAnswersOrder,order);for(const answer of order)assert.equal(formatQCMAnswer(answer,history[0]),formatQCMAnswer(answer,q));}

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "exercices/timeClockInteraction.js",
+    "sha256": "5719e05e77e43e0da0f8ffeef66c514f3b11b1ec398a998413f75e077b951aa5"
+  },
+  {
+    "path": "exercices/perimetres_et_longueurs.js",
+    "sha256": "6ebbcbdf0128ced346c44979167eff99426c8ddf56693e2bc011dfc8721f4026"
+  },
+  {
+    "path": "exercices/perimetres_et_disques.js",
+    "sha256": "2e311c84bfa3f95589fdc6faecbb586529c2bbddcde855759e372df0063a1fb7"
+  },
+  {
+    "path": "exercices/conversions_longueurs.js",
+    "sha256": "020a0e8792182f563a0712f6fc96367fcfbe46c75874fe540ec2e49142635215"
+  },
+  {
+    "path": "exercices/aires/aires_et_unites.js",
+    "sha256": "858b82bfe970260d1ed3b4d17cf31ec2ac4e8ee51d069b4cff9e9925261f7f5d"
+  }
+]

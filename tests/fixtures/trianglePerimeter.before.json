@@ -1,0 +1,263 @@
+[
+  {
+    "seed": 17,
+    "randomState": 2944289419,
+    "title": "Périmètres et longueurs",
+    "questions": [
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{rectangle}\\) \\(\\text{de}\\) \\(\\text{longueur}\\) \\(7~\\mathrm{dm}\\) \n         </div> \n\n         <div> \\(\\text{et}\\) \\(\\text{de}\\) \\(\\text{largeur}\\) \\(6~\\mathrm{dm}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "26 dm"
+        ],
+        "display_answer": "\\(26~\\mathrm{dm}\\)",
+        "possible_answers": [
+          "26 dm",
+          "42 dm",
+          "13 dm",
+          "84 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\">\\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{carré}\\) \\(\\text{de}\\) \\(\\text{côté}\\) \\(4~\\mathrm{dam}\\ ?\\)</div>",
+        "answers": [
+          "16 dam"
+        ],
+        "display_answer": "\\(16~\\mathrm{dam}\\)",
+        "possible_answers": [
+          "16 dam",
+          "8 dam",
+          "12 dam",
+          "4 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\">\\(\\text{Quelle}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\text{du}\\) \\(\\text{côté}\\) \\(\\text{d’un}\\) \\(\\text{carré}\\) \\(\\text{de}\\) \\(\\text{périmètre}\\) \\(24~\\mathrm{hm}\\ ?\\)</div>",
+        "answers": [
+          "6 hm"
+        ],
+        "display_answer": "\\(6~\\mathrm{hm}\\)",
+        "possible_answers": [
+          "6 hm",
+          "96 hm",
+          "24 hm",
+          "12 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quelle}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\text{d’un}\\) \\(\\text{rectangle}\\) \\(\\text{de}\\) \\(\\text{périmètre}\\) \\(28~\\mathrm{m}\\) \n         </div> \n\n         <div> \\(\\text{et}\\) \\(\\text{de}\\) \\(\\text{largeur}\\) \\(4~\\mathrm{m}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "10 m"
+        ],
+        "display_answer": "\\(10~\\mathrm{m}\\)",
+        "possible_answers": [
+          "10 m",
+          "64 m",
+          "14 m",
+          "24 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{triangle}\\) \\(\\text{dont}\\) \\(\\text{les}\\) \\(\\text{côtés}\\) \\(\\text{mesurent}\\) </div> \n\n         <div> \n           \\(8~\\mathrm{hm}\\) \\(\\text{,}\\) \\(8~\\mathrm{dam}\\) \\(\\text{et}\\) \\(8~\\mathrm{m}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "88.8 dam"
+        ],
+        "display_answer": "\\(88{,}8~\\mathrm{dam}\\)",
+        "possible_answers": [
+          "88,8 dam",
+          "24 dam",
+          "9,6 dam",
+          "168 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2026,
+    "randomState": 3985550668,
+    "title": "Périmètres et longueurs",
+    "questions": [
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{rectangle}\\) \\(\\text{de}\\) \\(\\text{longueur}\\) \\(7~\\mathrm{mm}\\) \n         </div> \n\n         <div> \\(\\text{et}\\) \\(\\text{de}\\) \\(\\text{largeur}\\) \\(3~\\mathrm{mm}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "20 mm"
+        ],
+        "display_answer": "\\(20~\\mathrm{mm}\\)",
+        "possible_answers": [
+          "20 mm",
+          "21 mm",
+          "10 mm",
+          "42 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\">\\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{carré}\\) \\(\\text{de}\\) \\(\\text{côté}\\) \\(4~\\mathrm{m}\\ ?\\)</div>",
+        "answers": [
+          "16 m"
+        ],
+        "display_answer": "\\(16~\\mathrm{m}\\)",
+        "possible_answers": [
+          "16 m",
+          "8 m",
+          "12 m",
+          "4 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\">\\(\\text{Quelle}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\text{du}\\) \\(\\text{côté}\\) \\(\\text{d’un}\\) \\(\\text{carré}\\) \\(\\text{de}\\) \\(\\text{périmètre}\\) \\(36~\\mathrm{cm}\\ ?\\)</div>",
+        "answers": [
+          "9 cm"
+        ],
+        "display_answer": "\\(9~\\mathrm{cm}\\)",
+        "possible_answers": [
+          "9 cm",
+          "144 cm",
+          "36 cm",
+          "18 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quelle}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\text{d’un}\\) \\(\\text{rectangle}\\) \\(\\text{de}\\) \\(\\text{périmètre}\\) \\(26~\\mathrm{m}\\) \n         </div> \n\n         <div> \\(\\text{et}\\) \\(\\text{de}\\) \\(\\text{largeur}\\) \\(5~\\mathrm{m}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "8 m"
+        ],
+        "display_answer": "\\(8~\\mathrm{m}\\)",
+        "possible_answers": [
+          "8 m",
+          "62 m",
+          "13 m",
+          "21 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{triangle}\\) \\(\\text{dont}\\) \\(\\text{les}\\) \\(\\text{côtés}\\) \\(\\text{mesurent}\\) </div> \n\n         <div> \n           \\(3~\\mathrm{dm}\\) \\(\\text{,}\\) \\(5~\\mathrm{cm}\\) \\(\\text{et}\\) \\(10~\\mathrm{mm}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "36 cm"
+        ],
+        "display_answer": "\\(36~\\mathrm{cm}\\)",
+        "possible_answers": [
+          "36 cm",
+          "18 cm",
+          "6,3 cm",
+          "135 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ]
+  },
+  {
+    "seed": 98765,
+    "randomState": 3124342183,
+    "title": "Périmètres et longueurs",
+    "questions": [
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{rectangle}\\) \\(\\text{de}\\) \\(\\text{longueur}\\) \\(9~\\mathrm{cm}\\) \n         </div> \n\n         <div> \\(\\text{et}\\) \\(\\text{de}\\) \\(\\text{largeur}\\) \\(5~\\mathrm{cm}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "28 cm"
+        ],
+        "display_answer": "\\(28~\\mathrm{cm}\\)",
+        "possible_answers": [
+          "28 cm",
+          "45 cm",
+          "14 cm",
+          "90 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\">\\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{carré}\\) \\(\\text{de}\\) \\(\\text{côté}\\) \\(9~\\mathrm{dam}\\ ?\\)</div>",
+        "answers": [
+          "36 dam"
+        ],
+        "display_answer": "\\(36~\\mathrm{dam}\\)",
+        "possible_answers": [
+          "36 dam",
+          "81 dam",
+          "18 dam",
+          "27 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\">\\(\\text{Quelle}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\text{du}\\) \\(\\text{côté}\\) \\(\\text{d’un}\\) \\(\\text{carré}\\) \\(\\text{de}\\) \\(\\text{périmètre}\\) \\(24~\\mathrm{hm}\\ ?\\)</div>",
+        "answers": [
+          "6 hm"
+        ],
+        "display_answer": "\\(6~\\mathrm{hm}\\)",
+        "possible_answers": [
+          "6 hm",
+          "96 hm",
+          "24 hm",
+          "12 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quelle}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\text{d’un}\\) \\(\\text{rectangle}\\) \\(\\text{de}\\) \\(\\text{périmètre}\\) \\(30~\\mathrm{km}\\) \n         </div> \n\n         <div> \\(\\text{et}\\) \\(\\text{de}\\) \\(\\text{largeur}\\) \\(5~\\mathrm{km}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "10 km"
+        ],
+        "display_answer": "\\(10~\\mathrm{km}\\)",
+        "possible_answers": [
+          "10 km",
+          "70 km",
+          "15 km",
+          "25 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "<div class=\"measure-question\"><div class=\"two-line-question\"> \n         <div> \\(\\text{Quel}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{périmètre}\\) \\(\\text{d’un}\\) \\(\\text{triangle}\\) \\(\\text{dont}\\) \\(\\text{les}\\) \\(\\text{côtés}\\) \\(\\text{mesurent}\\) </div> \n\n         <div> \n           \\(10~\\mathrm{km}\\) \\(\\text{,}\\) \\(8~\\mathrm{hm}\\) \\(\\text{et}\\) \\(8~\\mathrm{dam}\\) \\(\\text{?}\\) </div> \n       </div></div>",
+        "answers": [
+          "108.8 hm"
+        ],
+        "display_answer": "\\(108{,}8~\\mathrm{hm}\\)",
+        "possible_answers": [
+          "108,8 hm",
+          "26 hm",
+          "9,8 hm",
+          "188 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ]
+  }
+]

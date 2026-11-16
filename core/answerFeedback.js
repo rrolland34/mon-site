@@ -117,7 +117,7 @@ export function displayAnswerFeedback({
     } else {
       feedbackElement.innerHTML =
         `<div class="answer-feedback-message">Réponse non saisie.</div>` +
-        `<div class="answer-feedback-expected">Réponse attendue : ${formattedCorrectAnswer}</div>`;
+        `<div class="answer-feedback-expected">Réponse : ${formattedCorrectAnswer}</div>`;
     }
   } else {
     if (answerMode === "qcm" || statusOnly) {
@@ -136,7 +136,7 @@ export function displayAnswerFeedback({
 
       if (showCorrectAnswer) {
         feedbackElement.innerHTML +=
-          `<div class="answer-feedback-expected">Réponse attendue : ${formattedCorrectAnswer}</div>`;
+          `<div class="answer-feedback-expected">Réponse : ${formattedCorrectAnswer}</div>`;
       }
     }
   }

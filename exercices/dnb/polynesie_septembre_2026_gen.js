@@ -1,3 +1,5 @@
+import { validatePolynesieDiskArea } from "../polynesieDiskArea.js";
+import { presentPolynesieReplacementQuestion } from "../polynesieReplacementPresentation.js";
 import { createRightTriangleSVG } from "../figures/rightTriangle.js";
 import { createSegmentMarkCoding } from "../figures/segmentMarkCoding.js";
 
@@ -134,7 +136,8 @@ export default {
       answers: ["pi*3^2", "3^2*pi", "pi*(6/2)^2", "(6/2)^2*pi", "pi*3*3", "3*3*pi", "3*pi*3",
         "π*3^2", "3^2*π", "π*(6/2)^2", "(6/2)^2*π", "π*3*3", "3*3*π", "3*π*3"],
       possible_answers: [String.raw`\(π\times6^2\)`, String.raw`\(π\times3^2\)`, String.raw`\(2\times π\times3\)`, String.raw`\(2\times π\times6\)`],
-      answerRule: { type: "symbolicExact" },
+      answerRule: { type: "custom", validate: validatePolynesieDiskArea },
+      qcmAnswerRule: { type: "symbolicExact" },
       inputTools: ["power","pi"],
       display_answer: String.raw`\(\pi\times3^2.\)<br>\(\text{Le rayon vaut }6\div2=3\text{ cm et l'aire vaut }\pi r^2.\)`
     },
@@ -149,5 +152,5 @@ export default {
       answerRule: { type: "algebra", form: "equivalent" },
       display_answer: String.raw`\(P=3x+11.\)<br>\(P=x+4+x+4+3+x=3x+11.\)<br>\(\text{Le segment }[\mathrm{BC}]\text{ est intérieur : il ne compte pas dans le périmètre.}\)`
     }
-  ]
+  ].map(presentPolynesieReplacementQuestion)
 };

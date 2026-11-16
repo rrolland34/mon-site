@@ -1,0 +1,244 @@
+{
+  "job": {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 391,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 407.6875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 220,62÷10",
+          "left": -16.34375,
+          "right": 391.34375,
+          "width": 407.6875,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 220{,}62\\div 10"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 391,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 940÷1 000",
+          "left": -15.734375,
+          "right": 390.734375,
+          "width": 406.46875,
+          "height": 34.171875
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 940\\div 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 429,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 483.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 850,748÷1 000",
+          "left": -54.3125,
+          "right": 429.328125,
+          "width": 483.640625,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 850{,}748\\div 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 391,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 703÷1 000",
+          "left": -15.734375,
+          "right": 390.734375,
+          "width": 406.46875,
+          "height": 34.171875
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 703\\div 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 381,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 291,1÷10",
+          "left": -5.484375,
+          "right": 380.5,
+          "width": 385.984375,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 291{,}1\\div 10"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "22.062"
+        ],
+        "possible_answers": [
+          "22.062",
+          "220.62",
+          "2.2062",
+          "2206.2"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.94"
+        ],
+        "possible_answers": [
+          "0.94",
+          "940",
+          "9.4",
+          "0.094"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.850748"
+        ],
+        "possible_answers": [
+          "0.850748",
+          "850.748",
+          "8.50748",
+          "0.0850748"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.703"
+        ],
+        "possible_answers": [
+          "0.703",
+          "703",
+          "7.03",
+          "0.0703"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "29.11"
+        ],
+        "possible_answers": [
+          "29.11",
+          "291.1",
+          "2.911",
+          "2911"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "22.062",
+        "correctQCMAnswer": "22.062",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0.94",
+        "correctQCMAnswer": "0.94",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0.850748",
+        "correctQCMAnswer": "0.850748",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0.703",
+        "correctQCMAnswer": "0.703",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "29.11",
+        "correctQCMAnswer": "29.11",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

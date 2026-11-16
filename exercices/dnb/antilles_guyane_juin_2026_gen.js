@@ -1,4 +1,6 @@
 // exercices/dnb/antilles_guyane_juin_2026_gen.js
+import { presentAntillesQuestion } from "../antillesPresentation.js";
+import { validateAntillesArea } from "../antillesArea.js";
 
 import {
   createCartesianPlaneSVG
@@ -508,9 +510,11 @@ const question3 = {
   ],
 
   answerRule: {
-    type:
-      "symbolicExact"
+    type: "custom",
+    validate: validateAntillesArea
   },
+
+  qcmAnswerRule: { type: "symbolicExact" },
 
   display_answer:
     String.raw`\(\dfrac{\mathrm{AC}\times\mathrm{BD}}{2}\).`
@@ -844,5 +848,5 @@ export default {
     question7,
     question8,
     question9
-  ]
+  ].map(presentAntillesQuestion)
 };

@@ -1,0 +1,542 @@
+[
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 937.109375
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 937.109375
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 1219.96875
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 1219.96875
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 375,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 375,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 375,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 320,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 375,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 320,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 320,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 937.109375
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 320,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 937.109375
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 1219.96875
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 1440,
+    "maxMath": 1219.96875
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 446,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 446,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 462,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 418,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 462,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 418,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 434,
+    "maxMath": 516.25
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 835.390625
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 434,
+    "maxMath": 516.25
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 835.390625
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 1240
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 375,
+    "maxMath": 280.75
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 1240
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 375,
+    "maxMath": 280.75
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 375,
+    "maxMath": 280.75
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 375,
+    "maxMath": 280.75
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 320,
+    "maxMath": 234
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 320,
+    "maxMath": 234
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 320,
+    "maxMath": 234
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 320,
+    "maxMath": 234
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 407,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 407,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 418,
+    "maxMath": 516.25
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 418,
+    "maxMath": 516.25
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 407,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 407,
+    "maxMath": 320.765625
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 560,
+    "maxMath": 800.90625
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 560,
+    "maxMath": 800.90625
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "puissances_niveau_1",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 8,
+    "maxDocument": 489,
+    "maxMath": 658.578125
+  },
+  {
+    "id": "puissances_niveau_2",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 8,
+    "maxDocument": 489,
+    "maxMath": 658.578125
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 234
+  },
+  {
+    "id": "ecriture_scientifique",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 234
+  }
+]

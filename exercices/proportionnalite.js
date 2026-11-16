@@ -1,3 +1,5 @@
+import { presentProportionalityQuestion } from './proportionalityPresentation.js';
+
 // exercices/proportionnalite.js
 
 function randomInteger(
@@ -1668,7 +1670,7 @@ function generateQuestions() {
     createGraphQuestion(),
     createCoefficientQuestion(),
     createSecondMissingValueQuestion()
-  ];
+  ].map(presentProportionalityQuestion);
 }
 
 

@@ -1,0 +1,326 @@
+{
+  "job": {
+    "id": "statistiques",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 36.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "11",
+        "1",
+        "2",
+        "3",
+        "3",
+        "4",
+        "11",
+        "15",
+        "18",
+        "20",
+        "78~\\%",
+        "56~\\%",
+        "67~\\%",
+        "33~\\%"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la fréquence des notes inférieures ou égales à  de cette série.Exprimer le résultat en pourcentage et arrondir à l’unité. -  -  -  -  -  -  -  -"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 36.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "1",
+        "2",
+        "3",
+        "9",
+        "11",
+        "17",
+        "19",
+        "19",
+        "10",
+        "12{,}5",
+        "10{,}125",
+        "81"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la moyenne de cette série. -  -  -  -  -  -  -"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 36.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "7",
+        "11",
+        "17",
+        "20",
+        "1",
+        "2",
+        "3",
+        "2",
+        "13{,}75",
+        "16",
+        "15{,}125",
+        "15"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la moyenne de cette série.NoteEffectif"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 36.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "5",
+        "10",
+        "15",
+        "15",
+        "15",
+        "19",
+        "19",
+        "5",
+        "16",
+        "15"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la médiane de cette série. -  -  -  -  -"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 36.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "0",
+        "0",
+        "1",
+        "3",
+        "3",
+        "7",
+        "7",
+        "12",
+        "19",
+        "19",
+        "0",
+        "20",
+        "21"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'étendue de cette série. -  -  -  -  -  -  -  -"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "67%"
+        ],
+        "possible_answers": [
+          "\\(67~\\%\\)",
+          "\\(33~\\%\\)",
+          "\\(78~\\%\\)",
+          "\\(56~\\%\\)"
+        ],
+        "answerRule": {
+          "type": "percentage",
+          "expectedValue": 0.67
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(78~\\%\\)",
+          "\\(56~\\%\\)",
+          "\\(67~\\%\\)",
+          "\\(33~\\%\\)"
+        ]
+      },
+      {
+        "answers": [
+          "10.125"
+        ],
+        "possible_answers": [
+          "\\(10{,}125\\)",
+          "\\(81\\)",
+          "\\(10\\)",
+          "\\(12{,}5\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(10\\)",
+          "\\(12{,}5\\)",
+          "\\(10{,}125\\)",
+          "\\(81\\)"
+        ]
+      },
+      {
+        "answers": [
+          "15"
+        ],
+        "possible_answers": [
+          "\\(15\\)",
+          "\\(13{,}75\\)",
+          "\\(15{,}125\\)",
+          "\\(16\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(13{,}75\\)",
+          "\\(16\\)",
+          "\\(15{,}125\\)",
+          "\\(15\\)"
+        ]
+      },
+      {
+        "answers": [
+          "15"
+        ],
+        "possible_answers": [
+          "\\(15\\)",
+          "\\(5\\)",
+          "\\(19\\)",
+          "\\(16\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(19\\)",
+          "\\(5\\)",
+          "\\(16\\)",
+          "\\(15\\)"
+        ]
+      },
+      {
+        "answers": [
+          "19"
+        ],
+        "possible_answers": [
+          "\\(19\\)",
+          "\\(0\\)",
+          "\\(20\\)",
+          "\\(21\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 30,
+        "qcmAnswersOrder": [
+          "\\(19\\)",
+          "\\(0\\)",
+          "\\(20\\)",
+          "\\(21\\)"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "67%",
+        "correctQCMAnswer": "\\(67~\\%\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(78~\\%\\)",
+          "\\(56~\\%\\)",
+          "\\(67~\\%\\)",
+          "\\(33~\\%\\)"
+        ]
+      },
+      {
+        "correctAnswer": "10.125",
+        "correctQCMAnswer": "\\(10{,}125\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(10\\)",
+          "\\(12{,}5\\)",
+          "\\(10{,}125\\)",
+          "\\(81\\)"
+        ]
+      },
+      {
+        "correctAnswer": "15",
+        "correctQCMAnswer": "\\(15\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(13{,}75\\)",
+          "\\(16\\)",
+          "\\(15{,}125\\)",
+          "\\(15\\)"
+        ]
+      },
+      {
+        "correctAnswer": "15",
+        "correctQCMAnswer": "\\(15\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(19\\)",
+          "\\(5\\)",
+          "\\(16\\)",
+          "\\(15\\)"
+        ]
+      },
+      {
+        "correctAnswer": "19",
+        "correctQCMAnswer": "\\(19\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(19\\)",
+          "\\(0\\)",
+          "\\(20\\)",
+          "\\(21\\)"
+        ]
+      }
+    ]
+  }
+}

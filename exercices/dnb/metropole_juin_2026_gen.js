@@ -1,4 +1,5 @@
 // exercices/dnb/metropole_juin_2026_gen.js
+import { presentMetropoleQuestion } from "../metropolePresentation.js";
 
 import {
   createPieChartSVG
@@ -397,7 +398,7 @@ const questions = [
     question: {
       direct:
         String.raw`
-        \(\text{Quelles est la notation scientifique du nombre }0{,}004~58\text{ ?}\)
+        \(\text{Quelle est la notation scientifique du nombre }0{,}004~58\text{ ?}\)
       `,
 
     qcm:
@@ -623,5 +624,5 @@ export default {
 
   shuffle: false,
 
-  questions
+  questions: questions.map(presentMetropoleQuestion)
 };

@@ -1,3 +1,5 @@
+import { presentPowersQuestion } from '../powersPresentation.js';
+
 // exercices/puissances/puissances_niveau_2.js
 
 function randint(
@@ -1422,7 +1424,7 @@ function generateQuestions() {
     question6,
     question7,
     question8
-  ];
+  ].map(presentPowersQuestion);
 }
 
 

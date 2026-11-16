@@ -1,3 +1,5 @@
+import { presentZeroOneProQuestion } from "../dnbZeroOneProPresentation.js";
+import { validateZeroOneProSimplifiedFraction, validateZeroOneProProbability } from "../dnbZeroOneProAnswers.js";
 import { createCartesianPlaneSVG } from "../figures/cartesianPlaneFigure.js";
 import { createPieChartSVG } from "../figures/pieChartFigure.js";
 
@@ -70,7 +72,8 @@ export default {
       question: String.raw`Simplifier la fraction \(\dfrac{10}{15}\).`,
       answers: ["2/3"],
       possible_answers: ["2/3", "3/2", "1/5", "5/3"],
-      answerRule: { type: "simplifiedValue" },
+      answerRule: { type: "custom", validate: validateZeroOneProSimplifiedFraction },
+      qcmAnswerRule: { type: "simplifiedValue" },
       display_answer: String.raw`On divise le numérateur et le dénominateur par \(5\) :<br>\(\dfrac{10}{15}=\dfrac{2\times5}{3\times5}=\dfrac{2}{3}\).`
     },
     {
@@ -81,7 +84,8 @@ export default {
       </div>`,
       answers: ["1/10"],
       possible_answers: ["1/10", "7/10", "1/7", "9/10"],
-      answerRule: { type: "fraction" },
+      answerRule: { type: "custom", validate: validateZeroOneProProbability },
+      qcmAnswerRule: { type: "fraction" },
       display_answer: String.raw`Il y a une seule issue favorable parmi 10 issues équiprobables.<br>La probabilité d'obtenir 7 est donc \(\dfrac{1}{10}\).`
     },
     {
@@ -134,5 +138,5 @@ export default {
       inputTools: ["power"],
       display_answer: String.raw`\(V=L\times l\times h=10\times5\times2=100~\mathrm{cm}^3\).`
     }
-  ]
+  ].map(presentZeroOneProQuestion)
 };

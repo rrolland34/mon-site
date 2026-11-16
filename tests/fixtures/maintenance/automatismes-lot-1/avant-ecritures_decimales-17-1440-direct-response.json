@@ -1,0 +1,192 @@
+{
+  "job": {
+    "id": "ecritures_decimales",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 776,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,001."
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,001."
+      ],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 894,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{10}."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 754.296875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,01."
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,01."
+      ],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 732.59375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,1."
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,1."
+      ],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 915.703125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{100}."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 948.25,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{1~000}."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "1/1000"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1~000}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,1"
+        ],
+        "possible_answers": [
+          "0,1",
+          "0,01",
+          "0,001",
+          "1,10"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/100"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{100}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/10"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{10}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1,100"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,001"
+        ],
+        "possible_answers": [
+          "0,001",
+          "0,01",
+          "0,1",
+          "1,1000"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

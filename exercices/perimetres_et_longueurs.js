@@ -1,3 +1,5 @@
+import { presentMeasureQuestion } from './measurePresentation.js';
+
 // exercices/perimetres_et_longueurs.js
 
 import {
@@ -632,14 +634,22 @@ function createTrianglePerimeterQuestion() {
       middleUnitIndex + 1
     ];
 
+  /*
+   * Dans l'unité centrale, chacun des trois côtés est dans [30 ; 50] :
+   * 3 à 5 unités supérieures, 30 à 50 unités centrales, 300 à 500
+   * unités inférieures. Ainsi, toute somme de deux côtés est au moins
+   * 60, contre au plus 50 pour le troisième (marge d'au moins 10).
+   * Les trois mesures restent entières ; seule la division par 10
+   * peut produire un dixième. On conserve les trois appels aléatoires.
+   */
   const middleSide =
-    randomInteger(3, 10);
+    randomInteger(30, 50);
 
   const largerSide =
-    randomInteger(3, 10);
+    randomInteger(3, 5);
 
   const smallerSide =
-    randomInteger(3, 10);
+    randomInteger(300, 500);
 
   /*
    * On choisit l’unité centrale
@@ -659,6 +669,16 @@ function createTrianglePerimeterQuestion() {
       smallerUnit,
       middleUnit
     );
+
+  // Vérifier les trois inégalités dans la même unité avant d'accepter
+  // le tirage, même si les plages ci-dessus les garantissent déjà.
+  if (!(
+    largerSideInMiddleUnit + middleSide > smallerSideInMiddleUnit &&
+    largerSideInMiddleUnit + smallerSideInMiddleUnit > middleSide &&
+    middleSide + smallerSideInMiddleUnit > largerSideInMiddleUnit
+  )) {
+    throw new Error("Longueurs incompatibles avec un triangle non dégénéré.");
+  }
 
   const perimeter =
     roundValue(
@@ -783,5 +803,5 @@ export default {
     createRectangleLengthQuestion(),
 
     createTrianglePerimeterQuestion()
-  ]
+  ].map(presentMeasureQuestion)
 };

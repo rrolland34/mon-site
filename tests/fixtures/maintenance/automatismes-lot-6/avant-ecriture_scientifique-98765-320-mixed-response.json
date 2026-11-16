@@ -1,0 +1,206 @@
+{
+  "job": {
+    "id": "ecriture_scientifique",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              4{,}96\\times 10^{-5}\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire le nombre suivant\n            sous forme décimale :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              1~940\n            ",
+        "1{,}94\\times 10^{4}",
+        "1{,}94\\times 10^{2}",
+        "19{,}4\\times 10^{2}",
+        "1{,}94\\times 10^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              -1{,}7\\times 10^{-4}\n            ",
+        "1{,}94\\times 10^{4}",
+        "1{,}94\\times 10^{2}",
+        "19{,}4\\times 10^{2}",
+        "1{,}94\\times 10^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire le nombre suivant\n            sous forme décimale :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              -3{,}4\\times 10^{2}\n            ",
+        "-3~400",
+        "-3{,}4",
+        "-340",
+        "-34"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture décimale de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              0{,}000~076\n            ",
+        "-3~400",
+        "-3{,}4",
+        "-340",
+        "-34"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner l'écriture scientifique\n            du nombre suivant :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "0.0000496"
+        ],
+        "possible_answers": [
+          "0.0000496",
+          "0.000496",
+          "0.00000496",
+          "4.96"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 0.0000496
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1.94*10^3"
+        ],
+        "possible_answers": [
+          "1.94*10^2",
+          "1.94*10^4",
+          "19.4*10^2",
+          "1.94*10^3"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 1940
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1.94*10^4",
+          "1.94*10^2",
+          "19.4*10^2",
+          "1.94*10^3"
+        ]
+      },
+      {
+        "answers": [
+          "-0.00017"
+        ],
+        "possible_answers": [
+          "-0.0017",
+          "-0.000017",
+          "-1.7",
+          "-0.00017"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": -0.00017
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "-340"
+        ],
+        "possible_answers": [
+          "-3.4",
+          "-3400",
+          "-340",
+          "-34"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": -340
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "-3400",
+          "-3.4",
+          "-340",
+          "-34"
+        ]
+      },
+      {
+        "answers": [
+          "7.6*10^-5"
+        ],
+        "possible_answers": [
+          "7.6*10^-4",
+          "7.6*10^-5",
+          "7.6*10^-6",
+          "76*10^-6"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 0.000076
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

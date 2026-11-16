@@ -1,3 +1,5 @@
+import { numerationPrompt, presentNumerationQuestion } from "../numerationPresentation.js";
+
 // exercices/generators/powerOfTenDivision.js
 
 import {
@@ -104,16 +106,9 @@ function createIntegerDivisionQuestion() {
     )
   ];
 
-  return {
+  return presentNumerationQuestion({
     question:
-      `\\(\\text{Calculer : } ${formatAnswer(
-        value,
-        "math"
-      )}` +
-      `\\div ${formatAnswer(
-        powerOfTen,
-        "math"
-      )}\\)`,
+      numerationPrompt("Calculer :", String.raw`${formatAnswer(value, "math")}\div ${formatAnswer(powerOfTen, "math")}`),
 
     answers: [
       String(result)
@@ -131,7 +126,7 @@ function createIntegerDivisionQuestion() {
     answerRule: {
       type: "decimal"
     }
-  };
+  });
 }
 
 
@@ -175,16 +170,9 @@ function createDecimalDivisionQuestion(
     )
   ];
 
-  return {
+  return presentNumerationQuestion({
     question:
-      `\\(\\text{Calculer : } ${formatAnswer(
-        value,
-        "math"
-      )}` +
-      `\\div ${formatAnswer(
-        powerOfTen,
-        "math"
-      )}\\)`,
+      numerationPrompt("Calculer :", String.raw`${formatAnswer(value, "math")}\div ${formatAnswer(powerOfTen, "math")}`),
 
     answers: [
       String(result)
@@ -202,7 +190,7 @@ function createDecimalDivisionQuestion(
     answerRule: {
       type: "decimal"
     }
-  };
+  });
 }
 
 

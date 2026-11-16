@@ -1,0 +1,347 @@
+{
+  "title": "Sujet de référence n° 1 — Septembre 2026 — Série générale",
+  "series": "Générale",
+  "shuffle": false,
+  "correctionMode": "progressive",
+  "questions": [
+    {
+      "id": "q1",
+      "title": "Calcul numérique",
+      "subtitle": "Somme de fractions",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Calculer}\\) \\(\\begin{gathered}\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\end{gathered}\\) \\(\\text{.}\\)  <br>  \\(\\text{Donner}\\) \\(\\text{le}\\) \\(\\text{résultat}\\) \\(\\text{sous}\\) \\(\\text{forme}\\) \\(\\text{de}\\) \\(\\text{fraction}\\) \\(\\text{irréductible.}\\)  </div></div>",
+      "answers": [
+        "7/20"
+      ],
+      "answerRule": {
+        "type": "fraction",
+        "irreducible": true
+      },
+      "possible_answers": [
+        "\\(\\dfrac{2}{1}\\)",
+        "\\(\\dfrac{7}{20}\\)",
+        "\\(\\dfrac{2}{20}\\)",
+        "\\(\\dfrac{17}{20}\\)"
+      ],
+      "display_answer": "\\(\\begin{gathered}\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\\\{}=\\dfrac{12}{20}-\\dfrac{5}{20}\\\\{}=\\dfrac{7}{20}\\end{gathered}\\) \\(\\text{.}\\)  <br>  \\(\\text{Les}\\) \\(\\text{entiers}\\) \\(7\\) \\(\\text{et}\\) \\(20\\) \\(\\text{sont}\\) \\(\\text{premiers}\\) \\(\\text{entre}\\) \\(\\text{eux.}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q2",
+      "title": "Calcul numérique",
+      "subtitle": "Puissances",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Calculer}\\) \\(\\begin{gathered}\\mathrm{B}=3{,}1\\times10^2\\\\{}-5\\times10+2{,}1\\times10^{-1}\\end{gathered}\\) \\(\\text{.}\\)  </div></div>",
+      "answers": [
+        "260.21"
+      ],
+      "answerRule": {
+        "type": "decimal"
+      },
+      "possible_answers": [
+        "\\(260{,}21\\)",
+        "\\(281\\)",
+        "\\(-18{,}79\\)",
+        "\\(307{,}1\\)"
+      ],
+      "display_answer": "\\(\\begin{gathered}\\mathrm{B}=310-50+0{,}21\\\\{}=260{,}21\\end{gathered}\\) \\(\\text{.}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q3",
+      "title": "Calcul numérique",
+      "subtitle": "Identité remarquable",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Calculer}\\) \\((5+2\\sqrt{3})(5-2\\sqrt{3})\\) \\(\\text{.}\\)  </div></div>",
+      "answers": [
+        "13"
+      ],
+      "answerRule": {
+        "type": "integer"
+      },
+      "possible_answers": [
+        "\\(19\\)",
+        "\\(37\\)",
+        "\\(13\\)",
+        "\\(1\\)"
+      ],
+      "display_answer": "\\(\\begin{gathered}(5+2\\sqrt{3})(5-2\\sqrt{3})\\\\{}=5^2-(2\\sqrt{3})^2\\\\{}=25-12\\\\{}=13\\end{gathered}\\) \\(\\text{.}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q4",
+      "title": "Nombres",
+      "subtitle": "Comparaison de nombres",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Classer}\\) \\(\\text{par}\\) \\(\\text{ordre}\\) \\(\\text{croissant}\\) \\(\\text{les}\\) \\(\\text{nombres}\\) \\(\\text{suivants :}\\)  <br>  <span class=\"dnb-reference1-number-list\"><span>\\(1{,}25\\)</span><span>\\(1+\\dfrac{3}{100}\\)</span><span>\\(1{,}3\\)</span><span>\\(\\dfrac{7}{4}\\)</span></span>  </div></div>",
+      "answers": [
+        "1+3/100<1,25<1,3<7/4",
+        "1+3/100;1,25;1,3;7/4",
+        "1+3/100→1,25→1,3→7/4",
+        "1+3/100<1,25<1,3<1,75",
+        "1+3/100;1,25;1,3;1,75",
+        "1+3/100→1,25→1,3→1,75",
+        "1+3/100<1,25<1,3<1.75",
+        "1+3/100;1,25;1,3;1.75",
+        "1+3/100→1,25→1,3→1.75",
+        "1+3/100<1,25<1.3<7/4",
+        "1+3/100;1,25;1.3;7/4",
+        "1+3/100→1,25→1.3→7/4",
+        "1+3/100<1,25<1.3<1,75",
+        "1+3/100;1,25;1.3;1,75",
+        "1+3/100→1,25→1.3→1,75",
+        "1+3/100<1,25<1.3<1.75",
+        "1+3/100;1,25;1.3;1.75",
+        "1+3/100→1,25→1.3→1.75",
+        "1+3/100<1.25<1,3<7/4",
+        "1+3/100;1.25;1,3;7/4",
+        "1+3/100→1.25→1,3→7/4",
+        "1+3/100<1.25<1,3<1,75",
+        "1+3/100;1.25;1,3;1,75",
+        "1+3/100→1.25→1,3→1,75",
+        "1+3/100<1.25<1,3<1.75",
+        "1+3/100;1.25;1,3;1.75",
+        "1+3/100→1.25→1,3→1.75",
+        "1+3/100<1.25<1.3<7/4",
+        "1+3/100;1.25;1.3;7/4",
+        "1+3/100→1.25→1.3→7/4",
+        "1+3/100<1.25<1.3<1,75",
+        "1+3/100;1.25;1.3;1,75",
+        "1+3/100→1.25→1.3→1,75",
+        "1+3/100<1.25<1.3<1.75",
+        "1+3/100;1.25;1.3;1.75",
+        "1+3/100→1.25→1.3→1.75",
+        "1,03<1,25<1,3<7/4",
+        "1,03;1,25;1,3;7/4",
+        "1,03→1,25→1,3→7/4",
+        "1,03<1,25<1,3<1,75",
+        "1,03;1,25;1,3;1,75",
+        "1,03→1,25→1,3→1,75",
+        "1,03<1,25<1,3<1.75",
+        "1,03;1,25;1,3;1.75",
+        "1,03→1,25→1,3→1.75",
+        "1,03<1,25<1.3<7/4",
+        "1,03;1,25;1.3;7/4",
+        "1,03→1,25→1.3→7/4",
+        "1,03<1,25<1.3<1,75",
+        "1,03;1,25;1.3;1,75",
+        "1,03→1,25→1.3→1,75",
+        "1,03<1,25<1.3<1.75",
+        "1,03;1,25;1.3;1.75",
+        "1,03→1,25→1.3→1.75",
+        "1,03<1.25<1,3<7/4",
+        "1,03;1.25;1,3;7/4",
+        "1,03→1.25→1,3→7/4",
+        "1,03<1.25<1,3<1,75",
+        "1,03;1.25;1,3;1,75",
+        "1,03→1.25→1,3→1,75",
+        "1,03<1.25<1,3<1.75",
+        "1,03;1.25;1,3;1.75",
+        "1,03→1.25→1,3→1.75",
+        "1,03<1.25<1.3<7/4",
+        "1,03;1.25;1.3;7/4",
+        "1,03→1.25→1.3→7/4",
+        "1,03<1.25<1.3<1,75",
+        "1,03;1.25;1.3;1,75",
+        "1,03→1.25→1.3→1,75",
+        "1,03<1.25<1.3<1.75",
+        "1,03;1.25;1.3;1.75",
+        "1,03→1.25→1.3→1.75",
+        "1.03<1,25<1,3<7/4",
+        "1.03;1,25;1,3;7/4",
+        "1.03→1,25→1,3→7/4",
+        "1.03<1,25<1,3<1,75",
+        "1.03;1,25;1,3;1,75",
+        "1.03→1,25→1,3→1,75",
+        "1.03<1,25<1,3<1.75",
+        "1.03;1,25;1,3;1.75",
+        "1.03→1,25→1,3→1.75",
+        "1.03<1,25<1.3<7/4",
+        "1.03;1,25;1.3;7/4",
+        "1.03→1,25→1.3→7/4",
+        "1.03<1,25<1.3<1,75",
+        "1.03;1,25;1.3;1,75",
+        "1.03→1,25→1.3→1,75",
+        "1.03<1,25<1.3<1.75",
+        "1.03;1,25;1.3;1.75",
+        "1.03→1,25→1.3→1.75",
+        "1.03<1.25<1,3<7/4",
+        "1.03;1.25;1,3;7/4",
+        "1.03→1.25→1,3→7/4",
+        "1.03<1.25<1,3<1,75",
+        "1.03;1.25;1,3;1,75",
+        "1.03→1.25→1,3→1,75",
+        "1.03<1.25<1,3<1.75",
+        "1.03;1.25;1,3;1.75",
+        "1.03→1.25→1,3→1.75",
+        "1.03<1.25<1.3<7/4",
+        "1.03;1.25;1.3;7/4",
+        "1.03→1.25→1.3→7/4",
+        "1.03<1.25<1.3<1,75",
+        "1.03;1.25;1.3;1,75",
+        "1.03→1.25→1.3→1,75",
+        "1.03<1.25<1.3<1.75",
+        "1.03;1.25;1.3;1.75",
+        "1.03→1.25→1.3→1.75"
+      ],
+      "answerRule": {
+        "type": "symbolicExact"
+      },
+      "possible_answers": [
+        "\\(1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}\\)",
+        "\\(1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}\\)",
+        "\\(\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3\\)",
+        "\\(1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\)"
+      ],
+      "display_answer": "\\(1+\\dfrac{3}{100}=1{,}03\\quad\\) \\(\\text{et}\\) \\(\\quad\\dfrac{7}{4}=1{,}75\\) \\(\\text{.}\\)  <br>  \\(\\begin{gathered}1{,}03<1{,}25\\\\{}<1{,}3<1{,}75\\end{gathered}\\) \\(\\text{.}\\)  <br>  \\(\\begin{gathered}1+\\dfrac{3}{100}<1{,}25\\\\{}<1{,}3<\\dfrac{7}{4}\\end{gathered}\\) \\(\\text{.}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q5",
+      "title": "Calcul littéral",
+      "subtitle": "Résolution d'une équation",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Déterminer}\\) \\(\\text{la}\\) \\(\\text{solution}\\) \\(\\text{de}\\) \\(\\text{l'équation :}\\) \\(3x-2=25\\) \\(\\text{.}\\)  </div></div>",
+      "answers": [
+        "9",
+        "x=9",
+        "9=x"
+      ],
+      "answerRule": {
+        "type": "symbolicExact"
+      },
+      "possible_answers": [
+        "\\(x=9\\)",
+        "\\(x=\\dfrac{23}{3}\\)",
+        "\\(x=27\\)",
+        "\\(x=7\\)"
+      ],
+      "display_answer": "\\(3x-2=25\\)  <br>  \\(3x=25+2=27\\)  <br>  \\(x=\\dfrac{27}{3}=9\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q6",
+      "title": "Calcul littéral",
+      "subtitle": "Réduction",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Réduire}\\) \\(\\text{l'expression :}\\) \\(3a-1-4(2a+3)\\) \\(\\text{.}\\)  </div></div>",
+      "answers": [
+        "-5a-13"
+      ],
+      "answerRule": {
+        "type": "algebra",
+        "form": "developedAndReduced"
+      },
+      "possible_answers": [
+        "\\(-5a+11\\)",
+        "\\(11a-13\\)",
+        "\\(-5a-13\\)",
+        "\\(-5a-4\\)"
+      ],
+      "display_answer": "\\(\\begin{gathered}3a-1-4(2a+3)\\\\{}=3a-1-8a-12\\end{gathered}\\)  <br>  \\(\\begin{gathered}3a-1-4(2a+3)\\\\{}=-5a-13\\end{gathered}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q7",
+      "title": "Géométrie",
+      "subtitle": "Translation",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{La}\\) \\(\\text{figure}\\) \\(\\text{ci-contre}\\) \\(\\text{est}\\) \\(\\text{composée}\\) \\(\\text{de}\\) \\(\\text{l'assemblage}\\)  <br>  \\(\\text{de}\\) \\(16\\) \\(\\text{triangles}\\) \\(\\text{rectangles}\\) \\(\\text{isocèles}\\) \\(\\text{superposables.}\\)  <br>  \\(\\text{Par}\\) \\(\\text{la}\\) \\(\\text{translation}\\) \\(\\text{qui}\\) \\(\\text{transforme}\\) \\(\\text{le}\\) \\(\\text{point}\\) \\(\\mathrm{E}\\) \\(\\text{en}\\) \\(\\mathrm{B}\\) \\(\\text{,}\\)  <br>  \\(\\text{quel}\\) \\(\\text{triangle}\\) \\(\\text{est}\\) \\(\\text{l'image}\\) \\(\\text{du}\\) \\(\\text{triangle}\\) \\(\\mathrm{AMH}\\) \\(\\text{?}\\)  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"/><path data-segment=\"BC\" d=\"M30 150 L150 270\"/><path data-segment=\"CD\" d=\"M150 270 L270 150\"/><path data-segment=\"DA\" d=\"M270 150 L150 30\"/><path data-segment=\"AC\" d=\"M150 30 L150 270\"/><path data-segment=\"BD\" d=\"M30 150 L270 150\"/><path data-segment=\"EH\" d=\"M90 90 L210 90\"/><path data-segment=\"FG\" d=\"M90 210 L210 210\"/><path data-segment=\"EF\" d=\"M90 90 L90 210\"/><path data-segment=\"HG\" d=\"M210 90 L210 210\"/><path data-segment=\"EG\" d=\"M90 90 L210 210\"/><path data-segment=\"FH\" d=\"M90 210 L210 90\"/></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>  </div></div>",
+      "answers": [
+        "EFM",
+        "EMF",
+        "FEM",
+        "FME",
+        "MEF",
+        "MFE",
+        "triangle EFM",
+        "triangle EMF",
+        "triangle FEM",
+        "triangle FME",
+        "triangle MEF",
+        "triangle MFE"
+      ],
+      "answerRule": {
+        "type": "symbolicExact"
+      },
+      "possible_answers": [
+        "\\(\\mathrm{BFM}\\)",
+        "\\(\\mathrm{EFM}\\)",
+        "\\(\\mathrm{FGC}\\)",
+        "\\(\\mathrm{EHM}\\)"
+      ],
+      "display_answer": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"/>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"/><path data-segment=\"BC\" d=\"M30 150 L150 270\"/><path data-segment=\"CD\" d=\"M150 270 L270 150\"/><path data-segment=\"DA\" d=\"M270 150 L150 30\"/><path data-segment=\"AC\" d=\"M150 30 L150 270\"/><path data-segment=\"BD\" d=\"M30 150 L270 150\"/><path data-segment=\"EH\" d=\"M90 90 L210 90\"/><path data-segment=\"FG\" d=\"M90 210 L210 210\"/><path data-segment=\"EF\" d=\"M90 90 L90 210\"/><path data-segment=\"HG\" d=\"M210 90 L210 210\"/><path data-segment=\"EG\" d=\"M90 90 L210 210\"/><path data-segment=\"FH\" d=\"M90 210 L210 90\"/></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"/><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"/></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"/><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"/></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"/><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"/></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"/><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"/></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>  \\(\\mathrm{A}\\mapsto\\mathrm{E},\\) \\(\\mathrm{M}\\mapsto\\mathrm{F},\\) \\(\\mathrm{H}\\mapsto\\mathrm{M}\\) \\(\\text{par}\\) \\(\\text{la}\\) \\(\\text{translation}\\) \\(\\text{de}\\) \\(\\text{vecteur}\\) \\(\\overrightarrow{\\mathrm{EB}}\\) \\(\\text{.}\\)  <br>  \\(\\text{Le}\\) \\(\\text{triangle}\\) \\(\\text{image}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{triangle}\\) \\(\\mathrm{EFM}.\\)",
+      "progressiveCorrection": {
+        "kind": "steps",
+        "steps": [
+          {
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"1\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"/>\n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"/><path data-segment=\"BC\" d=\"M30 150 L150 270\"/><path data-segment=\"CD\" d=\"M150 270 L270 150\"/><path data-segment=\"DA\" d=\"M270 150 L150 30\"/><path data-segment=\"AC\" d=\"M150 30 L150 270\"/><path data-segment=\"BD\" d=\"M30 150 L270 150\"/><path data-segment=\"EH\" d=\"M90 90 L210 90\"/><path data-segment=\"FG\" d=\"M90 210 L210 210\"/><path data-segment=\"EF\" d=\"M90 90 L90 210\"/><path data-segment=\"HG\" d=\"M210 90 L210 210\"/><path data-segment=\"EG\" d=\"M90 90 L210 210\"/><path data-segment=\"FH\" d=\"M90 210 L210 90\"/></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>  \\(\\text{On}\\) \\(\\text{repère}\\) \\(\\text{le}\\) \\(\\text{triangle}\\) \\(\\mathrm{AMH}\\) \\(\\text{.}\\)"
+          },
+          {
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"2\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"/>\n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"/><path data-segment=\"BC\" d=\"M30 150 L150 270\"/><path data-segment=\"CD\" d=\"M150 270 L270 150\"/><path data-segment=\"DA\" d=\"M270 150 L150 30\"/><path data-segment=\"AC\" d=\"M150 30 L150 270\"/><path data-segment=\"BD\" d=\"M30 150 L270 150\"/><path data-segment=\"EH\" d=\"M90 90 L210 90\"/><path data-segment=\"FG\" d=\"M90 210 L210 210\"/><path data-segment=\"EF\" d=\"M90 90 L90 210\"/><path data-segment=\"HG\" d=\"M210 90 L210 210\"/><path data-segment=\"EG\" d=\"M90 90 L210 210\"/><path data-segment=\"FH\" d=\"M90 210 L210 90\"/></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"/><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"/></g>\n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>  \\(\\text{La}\\) \\(\\text{translation}\\) \\(\\text{est}\\) \\(\\text{définie}\\) \\(\\text{par}\\) \\(\\text{le}\\) \\(\\text{vecteur}\\) \\(\\overrightarrow{\\mathrm{EB}}\\) \\(\\text{.}\\)"
+          },
+          {
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"3\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"/>\n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"/><path data-segment=\"BC\" d=\"M30 150 L150 270\"/><path data-segment=\"CD\" d=\"M150 270 L270 150\"/><path data-segment=\"DA\" d=\"M270 150 L150 30\"/><path data-segment=\"AC\" d=\"M150 30 L150 270\"/><path data-segment=\"BD\" d=\"M30 150 L270 150\"/><path data-segment=\"EH\" d=\"M90 90 L210 90\"/><path data-segment=\"FG\" d=\"M90 210 L210 210\"/><path data-segment=\"EF\" d=\"M90 90 L90 210\"/><path data-segment=\"HG\" d=\"M210 90 L210 210\"/><path data-segment=\"EG\" d=\"M90 90 L210 210\"/><path data-segment=\"FH\" d=\"M90 210 L210 90\"/></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"/><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"/></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"/><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"/></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"/><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"/></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"/><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"/></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>  \\(\\mathrm{A}\\mapsto\\mathrm{E},\\) \\(\\mathrm{M}\\mapsto\\mathrm{F},\\) \\(\\mathrm{H}\\mapsto\\mathrm{M}\\) \\(\\text{.}\\)"
+          },
+          {
+            "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"/>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"/>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"/><path data-segment=\"BC\" d=\"M30 150 L150 270\"/><path data-segment=\"CD\" d=\"M150 270 L270 150\"/><path data-segment=\"DA\" d=\"M270 150 L150 30\"/><path data-segment=\"AC\" d=\"M150 30 L150 270\"/><path data-segment=\"BD\" d=\"M30 150 L270 150\"/><path data-segment=\"EH\" d=\"M90 90 L210 90\"/><path data-segment=\"FG\" d=\"M90 210 L210 210\"/><path data-segment=\"EF\" d=\"M90 90 L90 210\"/><path data-segment=\"HG\" d=\"M210 90 L210 210\"/><path data-segment=\"EG\" d=\"M90 90 L210 210\"/><path data-segment=\"FH\" d=\"M90 210 L210 90\"/></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"/><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"/></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"/><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"/></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"/><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"/></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"/><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"/></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>  \\(\\text{Le}\\) \\(\\text{triangle}\\) \\(\\text{image}\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{triangle}\\) \\(\\mathrm{EFM}.\\)"
+          }
+        ]
+      },
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q8",
+      "title": "Géométrie",
+      "subtitle": "Théorème de Thalès",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Sur}\\) \\(\\text{la}\\) \\(\\text{figure}\\) \\(\\text{ci-contre,}\\) \\(\\text{dans}\\) \\(\\text{le}\\) \\(\\text{triangle}\\) \\(\\mathrm{AED}\\) \\(\\text{,}\\)  <br>  \\(\\text{le}\\) \\(\\text{point}\\) \\(\\mathrm{B}\\) \\(\\text{appartient}\\) \\(\\text{au}\\) \\(\\text{segment}\\) \\([\\mathrm{AE}]\\) \\(\\text{,}\\)  <br>  \\(\\text{le}\\) \\(\\text{point}\\) \\(\\mathrm{C}\\) \\(\\text{appartient}\\) \\(\\text{au}\\) \\(\\text{segment}\\) \\([\\mathrm{AD}]\\) \\(\\text{,}\\)  <br>  \\(\\text{les}\\) \\(\\text{droites}\\) \\((\\mathrm{DE})\\) \\(\\text{et}\\) \\((\\mathrm{CB})\\) \\(\\text{sont}\\) \\(\\text{parallèles.}\\)  <br>  \\(\\text{Déterminer}\\) \\(\\text{la}\\) \\(\\text{longueur}\\) \\(\\mathrm{AE}\\) \\(\\text{.}\\)  <div style=\"width:500px;max-width:100%;margin:12px auto\"> \n     <svg\n      class=\"thales-figure\"\n      viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Figure de Thalès\"\n    >\n\n      <defs>\n\n        <marker\n          id=\"thales-arrow-start\"\n          markerWidth=\"8\"\n          markerHeight=\"8\"\n          refX=\"1\"\n          refY=\"4\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M 8 0 L 0 4 L 8 8\"\n            fill=\"none\"\n            stroke=\"currentColor\"\n            stroke-width=\"1.5\"\n          />\n        </marker>\n\n        <marker\n          id=\"thales-arrow-end\"\n          markerWidth=\"8\"\n          markerHeight=\"8\"\n          refX=\"7\"\n          refY=\"4\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M 0 0 L 8 4 L 0 8\"\n            fill=\"none\"\n            stroke=\"currentColor\"\n            stroke-width=\"1.5\"\n          />\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line\n      x1=\"80\"\n      y1=\"340\"\n      x2=\"420\"\n      y2=\"340\"\n    />\n  \n    <line\n      x1=\"80\"\n      y1=\"340\"\n      x2=\"305.422540923866\"\n      y2=\"187.9505762585919\"\n    />\n  \n    <line\n      x1=\"193.33333333333331\"\n      y1=\"340\"\n      x2=\"155.14084697462198\"\n      y2=\"289.31685875286394\"\n    />\n  \n    <line\n      x1=\"420\"\n      y1=\"340\"\n      x2=\"305.422540923866\"\n      y2=\"187.9505762585919\"\n    />\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text\n              x=\"136.66666666666666\"\n              y=\"364\"\n              text-anchor=\"middle\"\n              dominant-baseline=\"middle\"\n              class=\"thales-length-label\"\n              transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \"\n            >\n              6 cm\n            </text>\n          \n            <text\n              x=\"195.80024892525455\"\n              y=\"298.4094237513267\"\n              text-anchor=\"middle\"\n              dominant-baseline=\"middle\"\n              class=\"thales-length-label\"\n              transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \"\n            >\n              3 cm\n            </text>\n          \n            <text\n              x=\"385.0730647432572\"\n              y=\"247.1244674810386\"\n              text-anchor=\"middle\"\n              dominant-baseline=\"middle\"\n              class=\"thales-length-label\"\n              transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \"\n            >\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text\n      x=\"52.96060241201022\"\n      y=\"347.27124322785403\"\n      class=\"thales-point-label\"\n      text-anchor=\"middle\"\n      dominant-baseline=\"middle\"\n      style=\"\"\n    >\n      A\n    </text>\n  \n    <text\n      x=\"204.1660037500702\"\n      y=\"354.3754391808513\"\n      class=\"thales-point-label\"\n      text-anchor=\"middle\"\n      dominant-baseline=\"middle\"\n      style=\"\"\n    >\n      B\n    </text>\n  \n    <text\n      x=\"144.3081765578851\"\n      y=\"274.94141957201265\"\n      class=\"thales-point-label\"\n      text-anchor=\"middle\"\n      dominant-baseline=\"middle\"\n      style=\"\"\n    >\n      C\n    </text>\n  \n    <text\n      x=\"446.5539422519361\"\n      y=\"348.8819001841297\"\n      class=\"thales-point-label\"\n      text-anchor=\"middle\"\n      dominant-baseline=\"middle\"\n      style=\"\"\n    >\n      E\n    </text>\n  \n    <text\n      x=\"315.01149045729414\"\n      y=\"161.64369413916603\"\n      class=\"thales-point-label\"\n      text-anchor=\"middle\"\n      dominant-baseline=\"middle\"\n      style=\"\"\n    >\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg> \n   </div>  </div></div>",
+      "answers": [
+        "30 cm"
+      ],
+      "answerRule": {
+        "type": "length",
+        "requiredUnit": "cm"
+      },
+      "possible_answers": [
+        "\\(18~\\mathrm{cm}\\)",
+        "\\(7{,}5~\\mathrm{cm}\\)",
+        "\\(1{,}2~\\mathrm{cm}\\)",
+        "\\(30~\\mathrm{cm}\\)"
+      ],
+      "display_answer": "\\(\\text{Les}\\) \\(\\text{droites}\\) \\((\\mathrm{AE})\\) \\(\\text{et}\\) \\((\\mathrm{AD})\\) \\(\\text{sont}\\) \\(\\text{sécantes}\\) \\(\\text{en}\\) \\(\\mathrm{A}\\) \\(\\text{.}\\)  <br>  \\((\\mathrm{BC})\\parallel(\\mathrm{DE})\\) \\(\\text{.}\\) \\(\\text{D'après}\\) \\(\\text{le}\\) \\(\\text{théorème}\\) \\(\\text{de}\\) \\(\\text{Thalès :}\\)  <br>  \\(\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}\\)  <br>  \\(\\begin{gathered}\\dfrac{6}{\\mathrm{AE}}\\\\{}=\\dfrac{3}{15}\\end{gathered}\\)  <br>  \\(\\begin{gathered}\\mathrm{AE}=\\dfrac{6\\times15}{3}\\\\{}=30~\\mathrm{cm}\\end{gathered}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    },
+    {
+      "id": "q9",
+      "title": "Proportionnalité",
+      "subtitle": "Pourcentage",
+      "question": "<div class=\"dnb-reference1-question\"><style>\n.dnb-reference1-number-list { display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.5em 1em; max-width:100%; }\n.flash-reader #question > .dnb-reference1-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.dnb-reference1-question) .main-content .question-container { min-width:0; }\n@media (max-width:600px) {\n  .flash-reader .dnb-reference1-question,\n  .flash-reader:has(.dnb-reference1-question) #feedback,\n  .flash-reader:has(.dnb-reference1-question) #qcm-buttons button { font-size:20px; }\n  .flash-reader:has(.dnb-reference1-question) #mode-control,\n  .flash-reader:has(.dnb-reference1-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n  .flash-reader:has(.dnb-reference1-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0 !important; }\n}\n</style><div style=\"max-width:100%;min-width:0\">  \\(\\text{Un}\\) \\(\\text{objet}\\) \\(\\text{coûte}\\) \\(15\\) \\(\\text{euros.}\\)  <br>  \\(\\text{Quel}\\) \\(\\text{sera}\\) \\(\\text{son}\\) \\(\\text{prix}\\) \\(\\text{après}\\) \\(\\text{une}\\) \\(\\text{augmentation}\\) \\(\\text{de}\\) \\(20\\,\\%\\) \\(\\text{?}\\)  </div></div>",
+      "answers": [
+        "18"
+      ],
+      "answerRule": {
+        "type": "valueWithUnit",
+        "requiredUnit": "€"
+      },
+      "possible_answers": [
+        "\\(3~\\text{€}\\)",
+        "\\(18~\\text{€}\\)",
+        "\\(35~\\text{€}\\)",
+        "\\(12~\\text{€}\\)"
+      ],
+      "display_answer": "\\(\\begin{gathered}\\dfrac{20}{100}\\times15\\\\{}=3~\\text{€}\\end{gathered}\\)  <br>  \\(\\text{Nouveau}\\) \\(\\text{prix :}\\) \\(15+3=18~\\text{€}\\)",
+      "qcmRenderAnswer": {
+        "function": "function presentReference1HTML(html) {\r\n  return html.split(/(<svg\\b[\\s\\S]*?<\\/svg>|<style\\b[\\s\\S]*?<\\/style>|<[^>]+>|\\\\\\([\\s\\S]*?\\\\\\))/g)\r\n    .map(part=>part.startsWith('<')?part:part.startsWith(String.raw`\\(`)?presentTex(part.slice(2,-2))\r\n      :part.trim()?decimalFractionText(part.trim()):part).join(' ').trim();\r\n}"
+      }
+    }
+  ]
+}

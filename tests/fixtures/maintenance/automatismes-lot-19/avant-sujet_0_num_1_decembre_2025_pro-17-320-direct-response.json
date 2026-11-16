@@ -1,0 +1,919 @@
+{
+  "job": {
+    "id": "sujet_0_num_1_decembre_2025_pro",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 410,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 560 380\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"71.73076923076923\" y1=\"25\" x2=\"71.73076923076923\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"135.19230769230768\" y1=\"25\" x2=\"135.19230769230768\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"198.65384615384616\" y1=\"25\" x2=\"198.65384615384616\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"262.11538461538464\" y1=\"25\" x2=\"262.11538461538464\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"325.5769230769231\" y1=\"25\" x2=\"325.5769230769231\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"389.03846153846155\" y1=\"25\" x2=\"389.03846153846155\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"452.5\" y1=\"25\" x2=\"452.5\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"515.9615384615385\" y1=\"25\" x2=\"515.9615384615385\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"325\" x2=\"535\" y2=\"325\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"258.33333333333337\" x2=\"535\" y2=\"258.33333333333337\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"191.66666666666669\" x2=\"535\" y2=\"191.66666666666669\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"125\" x2=\"535\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"58.333333333333336\" x2=\"535\" y2=\"58.333333333333336\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"40\" y1=\"191.66666666666669\" x2=\"535\" y2=\"191.66666666666669\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"71.73076923076923\" y1=\"187.66666666666669\" x2=\"71.73076923076923\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"71.73076923076923\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"135.19230769230768\" y1=\"187.66666666666669\" x2=\"135.19230769230768\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"135.19230769230768\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"198.65384615384616\" y1=\"187.66666666666669\" x2=\"198.65384615384616\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"198.65384615384616\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"262.11538461538464\" y1=\"187.66666666666669\" x2=\"262.11538461538464\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"262.11538461538464\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"325.5769230769231\" y1=\"187.66666666666669\" x2=\"325.5769230769231\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"325.5769230769231\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"389.03846153846155\" y1=\"187.66666666666669\" x2=\"389.03846153846155\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"389.03846153846155\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"452.5\" y1=\"187.66666666666669\" x2=\"452.5\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"452.5\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"515.9615384615385\" y1=\"187.66666666666669\" x2=\"515.9615384615385\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"515.9615384615385\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"198.65384615384616\" y1=\"25\" x2=\"198.65384615384616\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"194.65384615384616\" y1=\"325\" x2=\"202.65384615384616\" y2=\"325\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"329\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"194.65384615384616\" y1=\"258.33333333333337\" x2=\"202.65384615384616\" y2=\"258.33333333333337\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"262.33333333333337\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"194.65384615384616\" y1=\"191.66666666666669\" x2=\"202.65384615384616\" y2=\"191.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"194.65384615384616\" y1=\"125\" x2=\"202.65384615384616\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"129\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"194.65384615384616\" y1=\"58.333333333333336\" x2=\"202.65384615384616\" y2=\"58.333333333333336\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"62.333333333333336\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"385.03846153846155\" y1=\"254.33333333333337\" x2=\"393.03846153846155\" y2=\"262.33333333333337\"></line>\n\n          <line x1=\"385.03846153846155\" y1=\"262.33333333333337\" x2=\"393.03846153846155\" y2=\"254.33333333333337\"></line>\n        </g>\n\n        \n          <text x=\"399.03846153846155\" y=\"248.33333333333337\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            A\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": -90,
+          "right": 410,
+          "top": 350.65625,
+          "bottom": 689.9375,
+          "width": 500,
+          "height": 339.28125
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "-2",
+          "left": -30.983474731445312,
+          "right": -20.700523376464844,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 10.282951354980469,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "-1",
+          "left": 25.677871704101562,
+          "right": 35.740379333496094,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 10.062507629394531,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "0",
+          "left": 84.47984313964844,
+          "right": 90.47984313964844,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 6,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "1",
+          "left": 141.14120483398438,
+          "right": 146.92247009277344,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 5.7812652587890625,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "2",
+          "left": 197.80255126953125,
+          "right": 203.80255126953125,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 6,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "3",
+          "left": 254.4638671875,
+          "right": 260.4638671875,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 6,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "4",
+          "left": 310.1252136230469,
+          "right": 317.125244140625,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 7.000030517578125,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "5",
+          "left": 367.78656005859375,
+          "right": 373.78656005859375,
+          "top": 525.856201171875,
+          "bottom": 540.856201171875,
+          "width": 6,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "-2",
+          "left": 69.27235412597656,
+          "right": 79.5552978515625,
+          "top": 632.40234375,
+          "bottom": 647.40234375,
+          "width": 10.282943725585938,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "-1",
+          "left": 69.27235412597656,
+          "right": 79.3348388671875,
+          "top": 572.87939453125,
+          "bottom": 587.87939453125,
+          "width": 10.062484741210938,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "1",
+          "left": 73.55360412597656,
+          "right": 79.3348388671875,
+          "top": 453.83331298828125,
+          "bottom": 468.83331298828125,
+          "width": 5.7812347412109375,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "2",
+          "left": 73.55360412597656,
+          "right": 79.55360412597656,
+          "top": 394.3102722167969,
+          "bottom": 409.3102722167969,
+          "width": 6,
+          "height": 15,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        },
+        {
+          "text": "A",
+          "left": 265.282958984375,
+          "right": 274.345458984375,
+          "top": 559.3795166015625,
+          "bottom": 575.3795166015625,
+          "width": 9.0625,
+          "height": 16,
+          "svg": {
+            "left": -90,
+            "right": 410,
+            "top": 350.65625,
+            "bottom": 689.9375,
+            "width": 500,
+            "height": 339.28125
+          }
+        }
+      ],
+      "mathWidth": 32.5625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "svg",
+          "text": "\n      \n      \n        \n      \n\n      \n      \n        \n        \n      \n        \n      \n        \n    ",
+          "scroll": 500,
+          "client": 500,
+          "children": [],
+          "left": -90,
+          "right": 410,
+          "top": 350.65625,
+          "bottom": 689.9375,
+          "width": 500,
+          "height": 339.28125
+        }
+      ],
+      "math": [
+        "\\mathrm{A}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Déterminer les coordonnées du point  placé dans le repère ci-dessous."
+      ]
+    },
+    {
+      "document": 567,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 813.734375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "On donne l'expression A(x)=2(x+3)−3.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -246.859375,
+          "right": 566.875,
+          "top": 568.140625,
+          "bottom": 626.140625,
+          "width": 813.734375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Donner la valeur de A pour x=2.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -157.4375,
+          "right": 477.453125,
+          "top": 637.5,
+          "bottom": 695.5,
+          "width": 634.890625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{On donne l'expression }A(x)=2(x+3)-3.",
+        "\\text{Donner la valeur de }A\\text{ pour }x=2."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 40.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\dfrac{3}{4}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Donner l'écriture décimale de ."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 62.5,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\dfrac{10}{15}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Simplifier la fraction ."
+      ]
+    },
+    {
+      "document": 360,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"pie-chart-figure\" viewBox=\"0 0 300 300\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Diagramme circulaire\">\n      \n    <circle cx=\"150\" cy=\"150\" r=\"126\" fill=\"rgba(0, 190, 220, 0.25)\" stroke=\"currentColor\" stroke-width=\"2\"></circle>\n  \n      \n      <line x1=\"150\" y1=\"150\" x2=\"111.06385870875664\" y2=\"30.16687894681064\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"188.9361412912434\" y2=\"30.166878946810655\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"251.93614129124336\" y2=\"75.93905821114838\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"276\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"251.93614129124336\" y2=\"224.0609417888516\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"188.9361412912434\" y2=\"269.83312105318936\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"111.06385870875664\" y2=\"269.83312105318936\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"48.06385870875664\" y2=\"224.06094178885164\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"24\" y2=\"150.00000000000003\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"48.06385870875661\" y2=\"75.93905821114839\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      \n      \n      <text x=\"150\" y=\"46.68000000000001\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        1\n      </text>\n    \n      <text x=\"210.7299722668583\" y=\"66.41236414118043\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        2\n      </text>\n    \n      <text x=\"248.26315926361525\" y=\"118.07236414118043\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        3\n      </text>\n    \n      <text x=\"248.26315926361525\" y=\"181.92763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        4\n      </text>\n    \n      <text x=\"210.7299722668583\" y=\"233.58763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        5\n      </text>\n    \n      <text x=\"150\" y=\"253.32\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        6\n      </text>\n    \n      <text x=\"89.27002773314169\" y=\"233.58763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        7\n      </text>\n    \n      <text x=\"51.73684073638475\" y=\"181.92763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        8\n      </text>\n    \n      <text x=\"51.73684073638475\" y=\"118.0723641411804\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        9\n      </text>\n    \n      <text x=\"89.27002773314166\" y=\"66.41236414118045\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        10\n      </text>\n    \n      \n    <g class=\"pie-chart-pointer\" transform=\"translate(150 150) rotate(0)\">\n      <path d=\"M 0 0 L 0 -81.9 M -5 -72.9 L 0 -81.9 L 5 -72.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </g>\n  \n      \n    </svg>",
+          "left": -20,
+          "right": 340,
+          "top": 329.65625,
+          "bottom": 689.65625,
+          "width": 360,
+          "height": 360
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "1",
+          "left": 154.8203125,
+          "right": 165.1796875,
+          "top": 369.4691162109375,
+          "bottom": 395.4691162109375,
+          "width": 10.359375,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "2",
+          "left": 227.69625854492188,
+          "right": 238.05563354492188,
+          "top": 393.14794921875,
+          "bottom": 419.14794921875,
+          "width": 10.359375,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "3",
+          "left": 272.7361145019531,
+          "right": 283.0954895019531,
+          "top": 455.13995361328125,
+          "bottom": 481.13995361328125,
+          "width": 10.359375,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "4",
+          "left": 271.7361145019531,
+          "right": 283.095458984375,
+          "top": 531.7662963867188,
+          "bottom": 557.7662963867188,
+          "width": 11.359344482421875,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "5",
+          "left": 227.69625854492188,
+          "right": 238.05563354492188,
+          "top": 593.75830078125,
+          "bottom": 619.75830078125,
+          "width": 10.359375,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "6",
+          "left": 154.8203125,
+          "right": 165.1796875,
+          "top": 617.4371337890625,
+          "bottom": 643.4371337890625,
+          "width": 10.359375,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "7",
+          "left": 81.94434356689453,
+          "right": 92.30371856689453,
+          "top": 593.75830078125,
+          "bottom": 619.75830078125,
+          "width": 10.359375,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "8",
+          "left": 36.90451431274414,
+          "right": 47.263893127441406,
+          "top": 531.7662963867188,
+          "bottom": 557.7662963867188,
+          "width": 10.359378814697266,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "9",
+          "left": 36.90451431274414,
+          "right": 47.263893127441406,
+          "top": 455.13995361328125,
+          "bottom": 481.13995361328125,
+          "width": 10.359378814697266,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        },
+        {
+          "text": "10",
+          "left": 76.77247619628906,
+          "right": 97.47560119628906,
+          "top": 393.14794921875,
+          "bottom": 419.14794921875,
+          "width": 20.703125,
+          "height": 26,
+          "svg": {
+            "left": -20,
+            "right": 340,
+            "top": 329.65625,
+            "bottom": 689.65625,
+            "width": 360,
+            "height": 360
+          }
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "svg",
+          "text": "\n      \n    \n  \n      \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n     ",
+          "scroll": 360,
+          "client": 360,
+          "children": [],
+          "left": -20,
+          "right": 340,
+          "top": 329.65625,
+          "bottom": 689.65625,
+          "width": 360,
+          "height": 360
+        }
+      ],
+      "math": [],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Une roue équilibrée est divisée en 10 secteurs identiques.On fait tourner la roue. Déterminer la probabilité d'obtenir 7."
+      ]
+    },
+    {
+      "document": 575,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 830.265625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éSur une carte, 1 cm représente 3 km.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 411.1875,
+              "right": 417.875,
+              "top": 568.765625,
+              "bottom": 572.765625,
+              "width": 6.6875,
+              "height": 4
+            }
+          ],
+          "left": -93.578125,
+          "right": 413.59375,
+          "top": 547.765625,
+          "bottom": 590.765625,
+          "width": 507.171875,
+          "height": 43
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Sur cette carte, deux villages sont distants de 5 cm.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -197.234375,
+          "right": 517.234375,
+          "top": 599.890625,
+          "bottom": 642.890625,
+          "width": 714.46875,
+          "height": 43
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éQuelle est la distance réelle, en km, entre ces deux villages ?",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -255.125,
+          "right": 575.140625,
+          "top": 652.21875,
+          "bottom": 695.21875,
+          "width": 830.265625,
+          "height": 43
+        }
+      ],
+      "math": [
+        "\\text{Sur une carte, }1~\\mathrm{cm}\\text{ représente }3~\\mathrm{km}.",
+        "\\text{Sur cette carte, deux villages sont distants de }5~\\mathrm{cm}.",
+        "\\text{Quelle est la distance réelle, en }\\mathrm{km}\\text{, entre ces deux villages ?}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Les distances sur une carte sont proportionnelles aux distances réelles."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Voici une série de notes obtenues par un élève : 12 ; 8 ; 7 ; 13 ; 11.Quelle est la médiane de cette série ?"
+      ]
+    },
+    {
+      "document": 722,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1123.03125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Un village de 800 habitants a connu une augmentation de 10% de sa population.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -401.515625,
+          "right": 721.515625,
+          "top": 585.546875,
+          "bottom": 628.546875,
+          "width": 1123.03125,
+          "height": 43
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "àQuel est le nombre d'habitants à l'issue de cette augmentation ?",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -285,
+          "right": 604.984375,
+          "top": 637.875,
+          "bottom": 680.875,
+          "width": 889.984375,
+          "height": 43
+        }
+      ],
+      "math": [
+        "\\text{Un village de 800 habitants a connu une augmentation de }10\\,\\%\\text{ de sa population.}",
+        "\\text{Quel est le nombre d'habitants à l'issue de cette augmentation ?}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 585,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 850.40625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééàLe volume d'un pavé droit de longueur 10 cm,de largeur 5 cm et de hauteur 2 cm est égal à :",
+          "scroll": 850,
+          "client": 850,
+          "children": [
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 531.953125,
+              "right": 587.25,
+              "top": 545.265625,
+              "bottom": 565.265625,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 531.953125,
+              "right": 587.25,
+              "top": 545.265625,
+              "bottom": 565.265625,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 587.25,
+              "right": 596.171875,
+              "top": 560.265625,
+              "bottom": 571.265625,
+              "width": 8.921875,
+              "height": 11
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 395.703125,
+              "right": 596.453125,
+              "top": 594.515625,
+              "bottom": 633.515625,
+              "width": 200.75,
+              "height": 39
+            }
+          ],
+          "left": -265.203125,
+          "right": 585.203125,
+          "top": 524.140625,
+          "bottom": 625.984375,
+          "width": 850.40625,
+          "height": 101.84375
+        }
+      ],
+      "math": [
+        "\\begin{gathered}\n        \\text{Le volume d'un pavé droit de longueur }10~\\mathrm{cm},\\\\\n        \\text{de largeur }5~\\mathrm{cm}\\text{ et de hauteur }2~\\mathrm{cm}\\text{ est égal à :}\n      \\end{gathered}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "A(3;-1)"
+        ],
+        "possible_answers": [
+          "(3;-1)",
+          "(-1;3)",
+          "(3;1)",
+          "(2;-1)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "7",
+          "4",
+          "10",
+          "1"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.75"
+        ],
+        "possible_answers": [
+          "0,75",
+          "0,34",
+          "0,25",
+          "1,25"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2/3"
+        ],
+        "possible_answers": [
+          "2/3",
+          "3/2",
+          "1/5",
+          "5/3"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/10"
+        ],
+        "possible_answers": [
+          "1/10",
+          "7/10",
+          "1/7",
+          "9/10"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "15 km"
+        ],
+        "possible_answers": [
+          "15 km",
+          "8 km",
+          "2 km",
+          "150 km"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "km"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "11"
+        ],
+        "possible_answers": [
+          "11",
+          "7",
+          "10,2",
+          "12"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "880"
+        ],
+        "possible_answers": [
+          "810 habitants",
+          "880 habitants",
+          "900 habitants",
+          "720 habitants"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "100 cm³"
+        ],
+        "possible_answers": [
+          "\\(100~\\mathrm{cm}^3\\)",
+          "\\(50~\\mathrm{cm}^3\\)",
+          "\\(17~\\mathrm{cm}^3\\)",
+          "\\(10~\\mathrm{cm}^3\\)"
+        ],
+        "answerRule": {
+          "type": "volume"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

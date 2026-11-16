@@ -1,0 +1,210 @@
+{
+  "job": {
+    "id": "statistiques",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 15.8125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "11",
+        "1",
+        "2",
+        "3",
+        "3",
+        "4",
+        "11",
+        "15",
+        "18",
+        "20"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la fréquence des notes inférieures ou égales à  de cette série.Exprimer le résultat en pourcentage et arrondir à l’unité. -  -  -  -  -  -  -  -"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 15.8125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "1",
+        "2",
+        "3",
+        "9",
+        "11",
+        "17",
+        "19",
+        "19"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la moyenne de cette série. -  -  -  -  -  -  -"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 15.8125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "7",
+        "11",
+        "17",
+        "20",
+        "1",
+        "2",
+        "3",
+        "2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la moyenne de cette série.NoteEffectif"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 15.8125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "5",
+        "10",
+        "15",
+        "15",
+        "15",
+        "19"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la médiane de cette série. -  -  -  -  -"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 15.8125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "0",
+        "0",
+        "1",
+        "3",
+        "3",
+        "7",
+        "7",
+        "12",
+        "19"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'étendue de cette série. -  -  -  -  -  -  -  -"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "67%"
+        ],
+        "possible_answers": [
+          "\\(67~\\%\\)",
+          "\\(33~\\%\\)",
+          "\\(78~\\%\\)",
+          "\\(56~\\%\\)"
+        ],
+        "answerRule": {
+          "type": "percentage",
+          "expectedValue": 0.67
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "10.125"
+        ],
+        "possible_answers": [
+          "\\(10{,}125\\)",
+          "\\(81\\)",
+          "\\(10\\)",
+          "\\(12{,}5\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "15"
+        ],
+        "possible_answers": [
+          "\\(15\\)",
+          "\\(13{,}75\\)",
+          "\\(15{,}125\\)",
+          "\\(16\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "15"
+        ],
+        "possible_answers": [
+          "\\(15\\)",
+          "\\(5\\)",
+          "\\(19\\)",
+          "\\(16\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "19"
+        ],
+        "possible_answers": [
+          "\\(19\\)",
+          "\\(0\\)",
+          "\\(20\\)",
+          "\\(21\\)"
+        ],
+        "answerRule": {
+          "type": "custom"
+        },
+        "time": 30
+      }
+    ],
+    "history": []
+  }
+}

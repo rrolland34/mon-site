@@ -1,0 +1,470 @@
+{
+  "job": {
+    "id": "antilles_guyane_juin_2026_gen",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 410,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 500 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"85\" y1=\"25\" x2=\"85\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"155\" y1=\"25\" x2=\"155\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"225\" y1=\"25\" x2=\"225\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"295\" y1=\"25\" x2=\"295\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"365\" y1=\"25\" x2=\"365\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"435\" y1=\"25\" x2=\"435\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"50\" y1=\"345.74468085106383\" x2=\"470\" y2=\"345.74468085106383\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"50\" y1=\"274.468085106383\" x2=\"470\" y2=\"274.468085106383\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"50\" y1=\"203.1914893617021\" x2=\"470\" y2=\"203.1914893617021\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"50\" y1=\"131.91489361702128\" x2=\"470\" y2=\"131.91489361702128\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"50\" y1=\"60.638297872340424\" x2=\"470\" y2=\"60.638297872340424\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"50\" y1=\"274.468085106383\" x2=\"470\" y2=\"274.468085106383\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"85\" y1=\"270.468085106383\" x2=\"85\" y2=\"278.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"85\" y=\"292.468085106383\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"155\" y1=\"270.468085106383\" x2=\"155\" y2=\"278.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"155\" y=\"292.468085106383\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"225\" y1=\"270.468085106383\" x2=\"225\" y2=\"278.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"225\" y=\"292.468085106383\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"295\" y1=\"270.468085106383\" x2=\"295\" y2=\"278.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"295\" y=\"292.468085106383\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"365\" y1=\"270.468085106383\" x2=\"365\" y2=\"278.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"365\" y=\"292.468085106383\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"435\" y1=\"270.468085106383\" x2=\"435\" y2=\"278.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"435\" y=\"292.468085106383\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        \n      <line x1=\"225\" y1=\"25\" x2=\"225\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"221\" y1=\"345.74468085106383\" x2=\"229\" y2=\"345.74468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"216\" y=\"349.74468085106383\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"221\" y1=\"274.468085106383\" x2=\"229\" y2=\"274.468085106383\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"221\" y1=\"203.1914893617021\" x2=\"229\" y2=\"203.1914893617021\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"216\" y=\"207.1914893617021\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"221\" y1=\"131.91489361702128\" x2=\"229\" y2=\"131.91489361702128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"216\" y=\"135.91489361702128\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"221\" y1=\"60.638297872340424\" x2=\"229\" y2=\"60.638297872340424\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"216\" y=\"64.63829787234042\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"81\" y1=\"127.91489361702128\" x2=\"89\" y2=\"135.91489361702128\"></line>\n\n          <line x1=\"81\" y1=\"135.91489361702128\" x2=\"89\" y2=\"127.91489361702128\"></line>\n        </g>\n\n        \n          <text x=\"95\" y=\"121.91489361702128\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            A\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": -90,
+          "right": 410,
+          "top": 748.140625,
+          "bottom": 1148.140625,
+          "width": 500,
+          "height": 400
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "svg",
+          "text": "\n      \n      \n        \n      \n\n      \n      \n        \n        \n      \n        \n      \n        \n    ",
+          "scroll": 500,
+          "client": 500,
+          "children": [],
+          "left": -90,
+          "right": 410,
+          "top": 748.140625,
+          "bottom": 1148.140625,
+          "width": 500,
+          "height": 400
+        }
+      ],
+      "math": [
+        "(2;-2)",
+        "(-2;2)",
+        "(-2;-2)",
+        "(2;2)"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Dans le repère ci-contre,\n        quelles sont les coordonnées\n        du point A ?"
+      ]
+    },
+    {
+      "document": 410,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 440 440\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"20\" y1=\"20\" x2=\"20\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"70\" y1=\"20\" x2=\"70\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"120\" y1=\"20\" x2=\"120\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"220\" y1=\"20\" x2=\"220\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"270\" y1=\"20\" x2=\"270\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"320\" y1=\"20\" x2=\"320\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"370\" y1=\"20\" x2=\"370\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"420\" y1=\"20\" x2=\"420\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"420\" x2=\"420\" y2=\"420\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"370\" x2=\"420\" y2=\"370\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"320\" x2=\"420\" y2=\"320\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"270\" x2=\"420\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"220\" x2=\"420\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"170\" x2=\"420\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"120\" x2=\"420\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"70\" x2=\"420\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"20\" y1=\"20\" x2=\"420\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"316\" y1=\"116\" x2=\"324\" y2=\"124\"></line>\n\n          <line x1=\"316\" y1=\"124\" x2=\"324\" y2=\"116\"></line>\n        </g>\n\n        \n          <text x=\"330\" y=\"110\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            K\n          </text>\n        \n      \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"116\" y1=\"316\" x2=\"124\" y2=\"324\"></line>\n\n          <line x1=\"116\" y1=\"324\" x2=\"124\" y2=\"316\"></line>\n        </g>\n\n        \n          <text x=\"130\" y=\"310\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            M\n          </text>\n        \n      \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"316\" y1=\"316\" x2=\"324\" y2=\"324\"></line>\n\n          <line x1=\"316\" y1=\"324\" x2=\"324\" y2=\"316\"></line>\n        </g>\n\n        \n          <text x=\"330\" y=\"310\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            N\n          </text>\n        \n      \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"116\" y1=\"116\" x2=\"124\" y2=\"124\"></line>\n\n          <line x1=\"116\" y1=\"124\" x2=\"124\" y2=\"116\"></line>\n        </g>\n\n        \n          <text x=\"130\" y=\"110\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            L\n          </text>\n        \n      \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"216\" y1=\"216\" x2=\"224\" y2=\"224\"></line>\n\n          <line x1=\"216\" y1=\"224\" x2=\"224\" y2=\"216\"></line>\n        </g>\n\n        \n          <text x=\"210\" y=\"210\" text-anchor=\"end\" font-size=\"14\" fill=\"currentColor\">\n            O\n          </text>\n        \n      \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"266\" y1=\"166\" x2=\"274\" y2=\"174\"></line>\n\n          <line x1=\"266\" y1=\"174\" x2=\"274\" y2=\"166\"></line>\n        </g>\n\n        \n          <text x=\"260\" y=\"160\" text-anchor=\"end\" font-size=\"14\" fill=\"currentColor\">\n            P\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": -90,
+          "right": 410,
+          "top": 267.140625,
+          "bottom": 767.140625,
+          "width": 500,
+          "height": 500
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "svg",
+          "text": "\n      \n      \n        \n      \n\n      \n      \n        \n        \n      \n        \n      \n        \n    ",
+          "scroll": 500,
+          "client": 500,
+          "children": [],
+          "left": -90,
+          "right": 410,
+          "top": 267.140625,
+          "bottom": 767.140625,
+          "width": 500,
+          "height": 500
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Dans le quadrillage ci-contre,\n        quel est le symétrique du point K\n        par la symétrie centrale\n        de centre O ?",
+        "M",
+        "L",
+        "N",
+        "P"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"triangle-figure\" viewBox=\"\n        20\n        0\n        560\n        380\n      \" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle\">\n\n      <!-- Triangle -->\n      <g>\n        \n    <polygon points=\"\n        70,330\n        220,50\n        530,330\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n  \n      </g>\n\n      <!-- Segments supplémentaires -->\n      <g>\n        \n          <line x1=\"220\" y1=\"50\" x2=\"220\" y2=\"330\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n        \n      </g>\n\n      <!-- Codages des côtés -->\n      <g>\n        \n      </g>\n\n      <!-- Angles droits -->\n      <g>\n        \n    <path d=\"\n        M 200 330\n        L 200 310\n        L 220 310\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n      </g>\n\n      <!-- Angles -->\n      <g>\n        \n      </g>\n\n      <!-- Noms des points -->\n      <g>\n        \n      <text x=\"58\" y=\"358\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        A\n      </text>\n    \n      <text x=\"213.40669293046292\" y=\"38\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        B\n      </text>\n    \n      <text x=\"542\" y=\"358\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        C\n      </text>\n    \n      <text x=\"208.092665479436\" y=\"358\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        D\n      </text>\n    \n      </g>\n\n    </svg>",
+          "left": 16,
+          "right": 304,
+          "top": 494.140625,
+          "bottom": 689.5625,
+          "width": 288,
+          "height": 195.421875
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "On souhaite connaître l'aire\n          du triangle ABC représenté\n          ci-contre.\n        \n\n        \n          Quel calcul doit-on effectuer ?",
+        "M",
+        "L",
+        "N",
+        "P"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "On lance 10 fois une pièce\n        de monnaie.\n      \n\n      \n        Les résultats obtenus sont :\n        \n          pile, pile, face, pile,\n          face, face, face, face,\n          pile, face\n        .\n      \n\n      \n        Quelle est la fréquence\n        d'apparition de « pile » ?",
+        "M",
+        "L",
+        "N",
+        "P"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 26.046875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "n",
+        "n",
+        "\\dfrac{n}{2}",
+        "n^2",
+        "2n",
+        "n+2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "On note  un nombre entier.\n      \n\n      \n        Quelle expression donne\n        la moitié de  ?"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 62.5,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\dfrac{1}{10}",
+        "\\dfrac{n}{2}",
+        "n^2",
+        "2n",
+        "n+2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle durée correspond\n        à  d'heure ?"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 296.625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "10 ; 10 ; 12 ; 16",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 11.6875,
+              "right": 317.421875,
+              "top": 480.140625,
+              "bottom": 516.140625,
+              "width": 305.734375,
+              "height": 36
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 11.6875,
+              "right": 317.421875,
+              "top": 481.140625,
+              "bottom": 516.140625,
+              "width": 305.734375,
+              "height": 35
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 269.3125,
+              "right": 317.421875,
+              "top": 481.140625,
+              "bottom": 510.140625,
+              "width": 48.109375,
+              "height": 29
+            }
+          ],
+          "left": 11.6875,
+          "right": 308.3125,
+          "top": 480.140625,
+          "bottom": 538.140625,
+          "width": 296.625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "10\\ ;\\ 10\\ ;\\ 12\\ ;\\ 16",
+        "\\dfrac{n}{2}",
+        "n^2",
+        "2n",
+        "n+2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "On donne la série suivante :\n        \n\n        \n          \n        \n\n        \n          Calculer la moyenne\n          de cette série."
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"triangle-figure\" viewBox=\"\n        174.78458928748563\n        160\n        325.0181322011046\n        230.08705543345877\n      \" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle\">\n\n      <!-- Triangle -->\n      <g>\n        \n    <polygon points=\"\n        300,210\n        449.80272148859024,210.3803085745301\n        224.78458928748563,340.0870554334588\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n  \n      </g>\n\n      <!-- Segments supplémentaires -->\n      <g>\n        \n      </g>\n\n      <!-- Codages des côtés -->\n      <g>\n        \n      <line x1=\"370.91660596189115\" y1=\"204.18001873770305\" x2=\"370.88614130716246\" y2=\"216.17998006700793\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"378.9165801814278\" y1=\"204.20032850752216\" x2=\"378.8861155266991\" y2=\"216.20028983682704\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"269.58873882019867\" y1=\"274.5839722628883\" x2=\"259.2002264646373\" y2=\"268.5774082668629\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"265.5843628228484\" y1=\"281.50964716659587\" x2=\"255.19585046728702\" y2=\"275.50308317057045\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      </g>\n\n      <!-- Angles droits -->\n      <g>\n        \n      </g>\n\n      <!-- Angles -->\n      <g>\n        \n          \n        <path d=\"\n    M 321.9999291037256 210.05585186700256\n    A 22 22\n      0 0 1\n      288.98796600728673 229.04560598519583\n  \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n      \n\n          <text x=\"322.7021722769526\" y=\"249.46566494495823\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n            120°\n          </text>\n        \n            \n        <path d=\"\n    M 427.80279238486463 210.32445670752753\n    A 22 22\n      0 0 0\n      430.7425552229964 221.3671216669567\n  \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n      \n\n            <foreignObject x=\"372.7289000458905\" y=\"199.24332856827152\" width=\"50\" height=\"50\">\n              <div xmlns=\"http://www.w3.org/1999/xhtml\" style=\"\n                  width: 100%;\n                  height: 100%;\n                  display: flex;\n                  align-items: center;\n                  justify-content: center;\n                  font-size: 22px;\n                  color: currentColor;\n                \">\n                <mjx-container class=\"MathJax CtxtMenu_Attached_0\" jax=\"CHTML\" tabindex=\"0\" ctxtmenu_counter=\"75\" style=\"font-size: 113.1%; position: relative;\"><mjx-math class=\"MJX-TEX\" aria-hidden=\"true\"><mjx-mi class=\"mjx-i\"><mjx-c class=\"mjx-c1D465 TEX-I\"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable=\"on\" display=\"inline\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></mjx-assistive-mml></mjx-container>\n              </div>\n            </foreignObject>\n          \n            \n        <path d=\"\n    M 235.79662328019893 321.04144944826294\n    A 22 22\n      0 0 1\n      243.84475555307952 329.1002423410322\n  \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n      \n\n            <foreignObject x=\"237.99101410141003\" y=\"276.93117220531076\" width=\"50\" height=\"50\">\n              <div xmlns=\"http://www.w3.org/1999/xhtml\" style=\"\n                  width: 100%;\n                  height: 100%;\n                  display: flex;\n                  align-items: center;\n                  justify-content: center;\n                  font-size: 22px;\n                  color: currentColor;\n                \">\n                <mjx-container class=\"MathJax CtxtMenu_Attached_0\" jax=\"CHTML\" tabindex=\"0\" ctxtmenu_counter=\"76\" style=\"font-size: 113.1%; position: relative;\"><mjx-math class=\"MJX-TEX\" aria-hidden=\"true\"><mjx-mi class=\"mjx-i\"><mjx-c class=\"mjx-c1D465 TEX-I\"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable=\"on\" display=\"inline\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></mjx-assistive-mml></mjx-container>\n              </div>\n            </foreignObject>\n          \n      </g>\n\n      <!-- Noms des points -->\n      <g>\n        \n      <text x=\"288.0885085502084\" y=\"189.1645405272276\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        A\n      </text>\n    \n      <text x=\"472.4902201084808\" y=\"202.5523199201909\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        B\n      </text>\n    \n      <text x=\"206.6358324265904\" y=\"355.7912785726054\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n        C\n      </text>\n    \n      </g>\n\n    </svg>",
+          "left": 54.703125,
+          "right": 265.296875,
+          "top": 633.140625,
+          "bottom": 782.21875,
+          "width": 210.59375,
+          "height": 149.078125
+        }
+      ],
+      "mathWidth": 24.828125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "x",
+        "x",
+        "x",
+        "30^\\circ",
+        "120^\\circ",
+        "60^\\circ",
+        "20^\\circ"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "La figure ci-contre\n        n'est pas en vraie grandeur.\n      \n\n      \n        Quelle est la valeur de  ?"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 159.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "20\\text{ km/h}",
+        "15\\text{ km}",
+        "30^\\circ",
+        "120^\\circ",
+        "60^\\circ",
+        "20^\\circ"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un vélo roule à la vitesse\n        moyenne de .\n      \n\n      \n        Quelle est la durée d'un trajet\n        de  ?"
+      ]
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "(-2;2)"
+        ],
+        "possible_answers": [
+          "(-2;2)",
+          "(2;-2)",
+          "(-2;-2)",
+          "(2;2)"
+        ],
+        "answerRule": {
+          "type": "coordinates"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(2;-2)",
+          "(-2;2)",
+          "(-2;-2)",
+          "(2;2)"
+        ]
+      },
+      {
+        "answers": [
+          "M"
+        ],
+        "possible_answers": [
+          "L",
+          "M",
+          "N",
+          "P"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "M",
+          "L",
+          "N",
+          "P"
+        ]
+      },
+      {
+        "answers": [
+          "AC*BD/2",
+          "\\(\\mathrm{AC}\\times\\mathrm{BD}\\div2\\)"
+        ],
+        "possible_answers": [
+          "\\(\\mathrm{AB}+\\mathrm{BC}+\\mathrm{AC}\\)",
+          "\\(\\mathrm{AC}\\times\\mathrm{BD}\\div2\\)",
+          "\\(\\mathrm{AB}\\times\\mathrm{BC}\\times\\mathrm{CA}\\)",
+          "\\(\\mathrm{AC}\\times\\mathrm{BD}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "4/10"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{6}{10}\\)",
+          "\\(\\dfrac{4}{10}\\)",
+          "\\(\\dfrac{4}{6}\\)"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "n/2"
+        ],
+        "possible_answers": [
+          "\\(2n\\)",
+          "\\(n^2\\)",
+          "\\(n+2\\)",
+          "\\(\\dfrac{n}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "equivalent"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{n}{2}\\)",
+          "\\(n^2\\)",
+          "\\(2n\\)",
+          "\\(n+2\\)"
+        ]
+      },
+      {
+        "answers": [
+          "6 min"
+        ],
+        "possible_answers": [
+          "0,1 min",
+          "1 min",
+          "6 min",
+          "10 min"
+        ],
+        "answerRule": {
+          "type": "duration"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "12"
+        ],
+        "possible_answers": [
+          "10",
+          "11",
+          "12",
+          "16"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "30"
+        ],
+        "possible_answers": [
+          "20°",
+          "30°",
+          "60°",
+          "120°"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "°"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "30°",
+          "120°",
+          "60°",
+          "20°"
+        ]
+      },
+      {
+        "answers": [
+          "45 min"
+        ],
+        "possible_answers": [
+          "30 min",
+          "40 min",
+          "45 min",
+          "1 h 20 min"
+        ],
+        "answerRule": {
+          "type": "duration"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

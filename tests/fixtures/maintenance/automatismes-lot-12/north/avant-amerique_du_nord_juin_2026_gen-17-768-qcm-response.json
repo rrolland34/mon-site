@@ -1,0 +1,378 @@
+{
+  "job": {
+    "id": "amerique_du_nord_juin_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 404.921875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer } A=\\dfrac{2}{3}+\\dfrac{3}{4}.",
+        "\\dfrac{5}{12}",
+        "\\dfrac{6}{12}",
+        "\\dfrac{17}{12}",
+        "\\dfrac{5}{7}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Un article coûte 45 €. Quel sera son prix après une réduction de 10 % ?",
+        "4,50 €",
+        "49,50 €",
+        "40,50 €",
+        "35 €"
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        -50\n        -50\n        450\n        280\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Quadrilatère\">\n      <polygon points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line x1=\"0\" y1=\"180\" x2=\"350\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n\n          <line x1=\"320\" y1=\"150\" x2=\"40\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line x1=\"82.33512435136649\" y1=\"130.9092496521586\" x2=\"87.82330050281561\" y2=\"141.58070327997635\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"89.44942676991167\" y1=\"127.25046555119249\" x2=\"94.93760292136079\" y2=\"137.92191917901025\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"249.94942796496085\" y1=\"126.50613179000943\" x2=\"254.67645954791087\" y2=\"115.47639142979274\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"242.59626772481639\" y1=\"123.3547774013761\" x2=\"247.3232993077664\" y2=\"112.3250370411594\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"257.33512435136646\" y1=\"40.90924965215857\" x2=\"262.8233005028156\" y2=\"51.58070327997634\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"264.44942676991167\" y1=\"37.250465551192484\" x2=\"269.9376029213608\" y2=\"47.92191917901025\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"109.94942796496086\" y1=\"66.50613179000943\" x2=\"114.67645954791088\" y2=\"55.476391429792734\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"102.5962677248164\" y1=\"63.35477740137609\" x2=\"107.32329930776642\" y2=\"52.3250370411594\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text x=\"-24.97321904680549\" y=\"192.662477263169\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        A\n      </text>\n\n      <text x=\"345.8057905038658\" y=\"160.86559600162772\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        B\n      </text>\n\n      <text x=\"374.8243756926327\" y=\"-12.951848187460554\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        C\n      </text>\n\n      <text x=\"14.336897405650266\" y=\"18.801555231556478\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        D\n      </text>\n\n        \n    </svg>",
+          "left": 224,
+          "right": 544,
+          "width": 320,
+          "height": 199.109375
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.\n          Que peut-on affirmer à propos de la nature de ce quadrilatère ?",
+        "C'est un rectangle",
+        "Ce n'est ni un losange, ni un rectangle",
+        "C'est un carré",
+        "C'est un losange"
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 635.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Résoudre l'équation } 5x-15=20."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "4",
+        "1",
+        "35",
+        "7"
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 550 430\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"85.62499999999999\" y1=\"30\" x2=\"85.62499999999999\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"141.875\" y1=\"30\" x2=\"141.875\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"198.125\" y1=\"30\" x2=\"198.125\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"254.375\" y1=\"30\" x2=\"254.375\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"310.625\" y1=\"30\" x2=\"310.625\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366.875\" y1=\"30\" x2=\"366.875\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"423.125\" y1=\"30\" x2=\"423.125\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"479.375\" y1=\"30\" x2=\"479.375\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"378.75\" x2=\"485\" y2=\"378.75\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"322.5\" x2=\"485\" y2=\"322.5\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"266.25\" x2=\"485\" y2=\"266.25\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"210\" x2=\"485\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"153.75\" x2=\"485\" y2=\"153.75\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"97.50000000000001\" x2=\"485\" y2=\"97.50000000000001\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"80\" y1=\"41.250000000000014\" x2=\"485\" y2=\"41.250000000000014\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"80\" y1=\"210\" x2=\"485\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"85.62499999999999\" y1=\"206\" x2=\"85.62499999999999\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"85.62499999999999\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"141.875\" y1=\"206\" x2=\"141.875\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"141.875\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"198.125\" y1=\"206\" x2=\"198.125\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"198.125\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"254.375\" y1=\"206\" x2=\"254.375\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"254.375\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"310.625\" y1=\"206\" x2=\"310.625\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"310.625\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366.875\" y1=\"206\" x2=\"366.875\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366.875\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"423.125\" y1=\"206\" x2=\"423.125\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"423.125\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"479.375\" y1=\"206\" x2=\"479.375\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"479.375\" y=\"228\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        \n      <line x1=\"310.625\" y1=\"30\" x2=\"310.625\" y2=\"390\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"306.625\" y1=\"378.75\" x2=\"314.625\" y2=\"378.75\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"301.625\" y=\"382.75\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"306.625\" y1=\"322.5\" x2=\"314.625\" y2=\"322.5\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"301.625\" y=\"326.5\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"306.625\" y1=\"266.25\" x2=\"314.625\" y2=\"266.25\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"301.625\" y=\"270.25\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"306.625\" y1=\"210\" x2=\"314.625\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"306.625\" y1=\"153.75\" x2=\"314.625\" y2=\"153.75\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"301.625\" y=\"157.75\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"306.625\" y1=\"97.50000000000001\" x2=\"314.625\" y2=\"97.50000000000001\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"301.625\" y=\"101.50000000000001\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"306.625\" y1=\"41.250000000000014\" x2=\"314.625\" y2=\"41.250000000000014\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"301.625\" y=\"45.250000000000014\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"194.125\" y1=\"93.50000000000001\" x2=\"202.125\" y2=\"101.50000000000001\"></line>\n\n          <line x1=\"194.125\" y1=\"101.50000000000001\" x2=\"202.125\" y2=\"93.50000000000001\"></line>\n        </g>\n\n        \n          <text x=\"188.125\" y=\"101.50000000000001\" text-anchor=\"end\" font-size=\"14\" fill=\"currentColor\">\n            A\n          </text>\n        \n      \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"194.125\" y1=\"262.25\" x2=\"202.125\" y2=\"270.25\"></line>\n\n          <line x1=\"194.125\" y1=\"270.25\" x2=\"202.125\" y2=\"262.25\"></line>\n        </g>\n\n        \n          <text x=\"188.125\" y=\"270.25\" text-anchor=\"end\" font-size=\"14\" fill=\"currentColor\">\n            B\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 134,
+          "right": 634,
+          "width": 500,
+          "height": 390.90625
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+        "\\mathrm{a.}\\ 2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+        "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-1;-2)",
+        "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(2;1)"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Dans le repère ci-contre, on a placé deux points A et B.\n          a. Quelle est l'abscisse du point A ?\n          b. Quelles sont les coordonnées du point B ?"
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Voici une série de nombres : 8 ; 19 ; 12 ; 3 ; 12 ; 25 ; 3 ; 11 ; 1.Déterminer la médiane de cette série.",
+        "12",
+        "8",
+        "3",
+        "11"
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle rectangle\">\n      <defs>\n        <marker id=\"triangle-arrow-head\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8.5\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M4,1.5 L4,4.5 L9,3 z\" fill=\"red\"></path>\n        </marker>\n      </defs>\n\n      <g transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \">\n\n        \n    <path d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n\n        \n        <path d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line x1=\"100\" y1=\"280\" x2=\"250\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- leg2 : AC -->\n          <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- hypoténuse : BC -->\n          <line x1=\"250\" y1=\"280\" x2=\"100\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text x=\"25.990198080048764\" y=\"65.59411884802928\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        A\n      </text>\n\n      <text x=\"32.07483680939456\" y=\"251.51019582872652\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        B\n      </text>\n\n      <text x=\"326.81913598619224\" y=\"71.95425920414232\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text x=\"187.34789813026063\" y=\"175.57983021710106\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \">\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text x=\"26\" y=\"155\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text x=\"175\" y=\"56\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \">\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text x=\"85.61387617495907\" y=\"167.09911454199187\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\">\n            60°\n          </text>\n        \n\n      \n\n    </svg>",
+          "left": 174,
+          "right": 594,
+          "width": 420,
+          "height": 317.546875
+        }
+      ],
+      "mathWidth": 211.296875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\widehat{\\text{ABC}}=60^\\circ",
+        "5\\div\\sin(60)",
+        "5\\times\\cos(60)",
+        "5\\div\\cos(60)",
+        "5\\times\\sin(60)"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "On considère un triangle ABC rectangle en A, avec BC = 5 cm et .\n          Choisir la formule qui permet d'obtenir la longueur AB."
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Donner un diviseur de 387 autre que 1 et lui-même.",
+        "3",
+        "387",
+        "1",
+        "2"
+      ]
+    }
+  ],
+  "final": {
+    "score": 4,
+    "count": 8,
+    "questions": [
+      {
+        "answers": [
+          "17/12"
+        ],
+        "possible_answers": [
+          "17/12",
+          "5/7",
+          "5/12",
+          "6/12"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "5/12",
+          "6/12",
+          "17/12",
+          "5/7"
+        ]
+      },
+      {
+        "answers": [
+          "40,5"
+        ],
+        "possible_answers": [
+          "40,50 €",
+          "35 €",
+          "4,50 €",
+          "49,50 €"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "€",
+          "valueRule": {
+            "type": "decimal"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "4,50 €",
+          "49,50 €",
+          "40,50 €",
+          "35 €"
+        ]
+      },
+      {
+        "answers": [
+          "rectangle",
+          "un rectangle",
+          "C'est un rectangle",
+          "C’est un rectangle"
+        ],
+        "possible_answers": [
+          "C'est un losange",
+          "C'est un rectangle",
+          "C'est un carré",
+          "Ce n'est ni un losange, ni un rectangle"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "C'est un rectangle",
+          "Ce n'est ni un losange, ni un rectangle",
+          "C'est un carré",
+          "C'est un losange"
+        ]
+      },
+      {
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "7",
+          "1",
+          "4",
+          "35"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "4",
+          "1",
+          "35",
+          "7"
+        ]
+      },
+      {
+        "answers": [
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)"
+        ],
+        "possible_answers": [
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+          "\\mathrm{a.}\\ 2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-1;-2)",
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(2;1)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+          "\\mathrm{a.}\\ 2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-1;-2)",
+          "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(2;1)"
+        ]
+      },
+      {
+        "answers": [
+          "11"
+        ],
+        "possible_answers": [
+          "11",
+          "12",
+          "8",
+          "3"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "12",
+          "8",
+          "3",
+          "11"
+        ]
+      },
+      {
+        "answers": [
+          "5\\times\\cos(60)",
+          "5*cos(60)",
+          "5×cos(60)",
+          "5xcos(60)",
+          "5 cos(60)",
+          "5*cos(60°)",
+          "5×cos(60°)",
+          "AB=5*cos(60)",
+          "AB=5×cos(60)",
+          "AB=5*cos(60°)",
+          "AB=5×cos(60°)"
+        ],
+        "possible_answers": [
+          "5\\times\\sin(60)",
+          "5\\times\\cos(60)",
+          "5\\div\\sin(60)",
+          "5\\div\\cos(60)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "5\\div\\sin(60)",
+          "5\\times\\cos(60)",
+          "5\\div\\cos(60)",
+          "5\\times\\sin(60)"
+        ]
+      },
+      {
+        "answers": [
+          "3",
+          "9",
+          "43",
+          "129"
+        ],
+        "possible_answers": [
+          "3",
+          "1",
+          "387",
+          "2"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "3",
+          "387",
+          "1",
+          "2"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "job": {
+    "id": "puissances_niveau_2",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                8^{2}\n              }{\n                8^{3}\n              }\n            ",
+        "(-8)^{-1}",
+        "8^{1}",
+        "8^{5}",
+        "8^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 560,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 800.90625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "an",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 480.421875,
+              "right": 524.609375,
+              "width": 44.1875,
+              "height": 31.890625
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 480.421875,
+              "right": 524.609375,
+              "width": 44.1875,
+              "height": 30.890625
+            },
+            {
+              "tag": "msup",
+              "visibility": "visible",
+              "position": "static",
+              "left": 480.421875,
+              "right": 524.609375,
+              "width": 44.1875,
+              "height": 30.890625
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 504.625,
+              "right": 522.8125,
+              "width": 18.1875,
+              "height": 15
+            }
+          ],
+          "left": 480.421875,
+          "right": 521.8125,
+          "width": 41.390625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "(−8)×(−8)×(−8)×(−8)×(−8)×(−8)",
+          "scroll": 801,
+          "client": 801,
+          "children": [
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 506.734375,
+              "right": 648.1875,
+              "width": 141.453125,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 549.203125,
+              "right": 581.65625,
+              "width": 32.453125,
+              "height": 3
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 591.203125,
+              "right": 615.265625,
+              "width": 24.0625,
+              "height": 29
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 615.265625,
+              "right": 648.1875,
+              "width": 32.921875,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 655.34375,
+              "right": 686.375,
+              "width": 31.03125,
+              "height": 23
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 693.53125,
+              "right": 834.984375,
+              "width": 141.453125,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 693.53125,
+              "right": 726.453125,
+              "width": 32.921875,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 736,
+              "right": 768.453125,
+              "width": 32.453125,
+              "height": 3
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 778,
+              "right": 802.0625,
+              "width": 24.0625,
+              "height": 29
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 802.0625,
+              "right": 834.984375,
+              "width": 32.921875,
+              "height": 39
+            }
+          ],
+          "left": -240.453125,
+          "right": 560.453125,
+          "width": 800.90625,
+          "height": 43.40625
+        }
+      ],
+      "math": [
+        "a^n",
+        "\n              \\left(-8\\right) \\times \\left(-8\\right) \\times \\left(-8\\right) \\times \\left(-8\\right) \\times \\left(-8\\right) \\times \\left(-8\\right)\n            ",
+        "(-8)^{-1}",
+        "8^{1}",
+        "8^{5}",
+        "8^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 262.28125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(-6\\right)^{9}\n              \\times\n              \\left(-6\\right)^{4}\n            ",
+        "(-8)^{-1}",
+        "8^{1}",
+        "8^{5}",
+        "8^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(\n                \\left(-6\\right)^{6}\n              \\right)^{\n                2\n              }\n            ",
+        "(-6)^{12}",
+        "(-6)^{4}",
+        "(-6)^{13}",
+        "(-6)^{8}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              \\left(-6\\right)^{3}\n            ",
+        "(-6)\\times (-6)\\times (-6)",
+        "(-6)\\times (-6)",
+        "(-6)\\times (-6)\\times (-6)\\times (-6)",
+        "(-6)\\times 3"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer le produit égal à :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(-6\\right)^{3}\n              \\times\n              4^{3}\n            ",
+        "(-6)\\times (-6)\\times (-6)",
+        "(-6)\\times (-6)",
+        "(-6)\\times (-6)\\times (-6)\\times (-6)",
+        "(-6)\\times 3"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{1}{\n                5^{3}\n              }\n            ",
+        "(-5)^{-3}",
+        "5^{-4}",
+        "5^{3}",
+        "5^{-3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                \\left(-45\\right)^{6}\n              }{\n                \\left(-9\\right)^{6}\n              }\n            ",
+        "(-5)^{-3}",
+        "5^{-4}",
+        "5^{3}",
+        "5^{-3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 8,
+    "questions": [
+      {
+        "answers": [
+          "8^-1"
+        ],
+        "possible_answers": [
+          "8^-1",
+          "8^5",
+          "(-8)^-1",
+          "8^1"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.125,
+          "allowOneForZeroExponent": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-8)^-1",
+          "8^1",
+          "8^5",
+          "8^-1"
+        ]
+      },
+      {
+        "answers": [
+          "(-8)^6"
+        ],
+        "possible_answers": [
+          "(-8)^6",
+          "(-8)^5",
+          "(-8)^8",
+          "(-8)^7"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 262144
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(-6)^13"
+        ],
+        "possible_answers": [
+          "(-6)^36",
+          "(-6)^13",
+          "(-6)^5",
+          "6^13"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": -13060694016
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(-6)^12"
+        ],
+        "possible_answers": [
+          "(-6)^12",
+          "(-6)^13",
+          "(-6)^8",
+          "(-6)^4"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 2176782336
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-6)^12",
+          "(-6)^4",
+          "(-6)^13",
+          "(-6)^8"
+        ]
+      },
+      {
+        "answers": [
+          "(-6)*(-6)*(-6)"
+        ],
+        "possible_answers": [
+          "(-6)*(-6)",
+          "(-6)*(-6)*(-6)*(-6)",
+          "(-6)*3",
+          "(-6)*(-6)*(-6)"
+        ],
+        "answerRule": {
+          "type": "repeatedProduct",
+          "base": -6,
+          "exponent": 3
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-6)*(-6)*(-6)",
+          "(-6)*(-6)",
+          "(-6)*(-6)*(-6)*(-6)",
+          "(-6)*3"
+        ]
+      },
+      {
+        "answers": [
+          "(-24)^3"
+        ],
+        "possible_answers": [
+          "(-24)^3",
+          "24^3",
+          "(-2)^3",
+          "(-24)^6"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": -13824
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5^-3"
+        ],
+        "possible_answers": [
+          "5^-3",
+          "5^3",
+          "(-5)^-3",
+          "5^-4"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.008
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-5)^-3",
+          "5^-4",
+          "5^3",
+          "5^-3"
+        ]
+      },
+      {
+        "answers": [
+          "5^6"
+        ],
+        "possible_answers": [
+          "(-9)^6",
+          "5^12",
+          "(-45)^6",
+          "5^6"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 15625
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "8^-1",
+        "correctQCMAnswer": "8^-1",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-8)^-1",
+          "8^1",
+          "8^5",
+          "8^-1"
+        ]
+      },
+      {
+        "correctAnswer": "(-8)^6",
+        "correctQCMAnswer": "(-8)^6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(-6)^13",
+        "correctQCMAnswer": "(-6)^13",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(-6)^12",
+        "correctQCMAnswer": "(-6)^12",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-6)^12",
+          "(-6)^4",
+          "(-6)^13",
+          "(-6)^8"
+        ]
+      },
+      {
+        "correctAnswer": "(-6)*(-6)*(-6)",
+        "correctQCMAnswer": "(-6)*(-6)*(-6)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-6)*(-6)*(-6)",
+          "(-6)*(-6)",
+          "(-6)*(-6)*(-6)*(-6)",
+          "(-6)*3"
+        ]
+      },
+      {
+        "correctAnswer": "(-24)^3",
+        "correctQCMAnswer": "(-24)^3",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "5^-3",
+        "correctQCMAnswer": "5^-3",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-5)^-3",
+          "5^-4",
+          "5^3",
+          "5^-3"
+        ]
+      },
+      {
+        "correctAnswer": "5^6",
+        "correctQCMAnswer": "5^6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

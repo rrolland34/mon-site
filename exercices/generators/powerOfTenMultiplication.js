@@ -1,3 +1,5 @@
+import { numerationPrompt, presentNumerationQuestion } from "../numerationPresentation.js";
+
 // exercices/generators/powerOfTenMultiplication.js
 
 import {
@@ -97,16 +99,9 @@ function createIntegerMultiplicationQuestion() {
     )
   ];
 
-  return {
+  return presentNumerationQuestion({
     question:
-      `\\(\\text{Calculer : } ${formatAnswer(
-        value,
-        "math"
-      )}` +
-      `\\times ${formatAnswer(
-        powerOfTen,
-        "math"
-      )}\\)`,
+      numerationPrompt("Calculer :", String.raw`${formatAnswer(value, "math")}\times ${formatAnswer(powerOfTen, "math")}`),
 
     answers: [
       String(result)
@@ -124,7 +119,7 @@ function createIntegerMultiplicationQuestion() {
     answerRule: {
       type: "decimal"
     }
-  };
+  });
 }
 
 
@@ -160,16 +155,9 @@ function createDecimalToIntegerMultiplicationQuestion() {
     )
   ];
 
-  return {
+  return presentNumerationQuestion({
     question:
-      `\\(\\text{Calculer : } ${formatAnswer(
-        value,
-        "math"
-      )}` +
-      `\\times ${formatAnswer(
-        powerOfTen,
-        "math"
-      )}\\)`,
+      numerationPrompt("Calculer :", String.raw`${formatAnswer(value, "math")}\times ${formatAnswer(powerOfTen, "math")}`),
 
     answers: [
       String(result)
@@ -187,7 +175,7 @@ function createDecimalToIntegerMultiplicationQuestion() {
     answerRule: {
       type: "decimal"
     }
-  };
+  });
 }
 
 
@@ -236,16 +224,9 @@ function createDecimalToDecimalMultiplicationQuestion() {
     )
   ];
 
-  return {
+  return presentNumerationQuestion({
     question:
-      `\\(\\text{Calculer : } ${formatAnswer(
-        value,
-        "math"
-      )}` +
-      `\\times ${formatAnswer(
-        powerOfTen,
-        "math"
-      )}\\)`,
+      numerationPrompt("Calculer :", String.raw`${formatAnswer(value, "math")}\times ${formatAnswer(powerOfTen, "math")}`),
 
     answers: [
       String(result)
@@ -263,7 +244,7 @@ function createDecimalToDecimalMultiplicationQuestion() {
     answerRule: {
       type: "decimal"
     }
-  };
+  });
 }
 
 

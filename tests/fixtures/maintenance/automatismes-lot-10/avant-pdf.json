@@ -1,0 +1,983 @@
+[
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "direct",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 9,
+    "responseLines": 9,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 970.296875,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 1457.03125,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1220.46875,
+        "left": 500
+      },
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"></polygon>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"></polygon>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"></path><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"></path><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"></path><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"></path><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1550.859375,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 2068.125,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [
+      [
+        "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+        "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}"
+      ],
+      [
+        "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}"
+      ],
+      [
+        "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}"
+      ],
+      [
+        "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+        "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}"
+      ],
+      [
+        "3x-2=25",
+        "3x=25+2=27",
+        "x=\\dfrac{27}{3}=9"
+      ],
+      [
+        "3a-1-4(2a+3)=3a-1-8a-12",
+        "3a-1-4(2a+3)=-5a-13"
+      ],
+      [
+        "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+        "\\text{Le triangle image est le triangle }\\mathrm{EFM}."
+      ],
+      [
+        "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+        "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+        "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+        "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+        "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}"
+      ],
+      [
+        "\\dfrac{20}{100}\\times15=3~\\text{€}",
+        "\\text{Nouveau prix : }15+3=18~\\text{€}"
+      ]
+    ],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+      "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+      "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "3x-2=25",
+      "3x=25+2=27",
+      "x=\\dfrac{27}{3}=9",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "3a-1-4(2a+3)=3a-1-8a-12",
+      "3a-1-4(2a+3)=-5a-13",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+      "\\text{Le triangle image est le triangle }\\mathrm{EFM}.",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+      "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+      "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+      "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+      "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "\\dfrac{20}{100}\\times15=3~\\text{€}",
+      "\\text{Nouveau prix : }15+3=18~\\text{€}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "direct",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Sujet de référence n° 1 — Septembre 2026 — Série générale\n        ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1211.671875,
+        "left": 500
+      },
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"></polygon>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"></polygon>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"></path><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"></path><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"></path><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"></path><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1542.0625,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 2065.328125,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [
+      [
+        "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+        "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}"
+      ],
+      [
+        "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}"
+      ],
+      [
+        "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}"
+      ],
+      [
+        "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+        "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}"
+      ],
+      [
+        "3x-2=25",
+        "3x=25+2=27",
+        "x=\\dfrac{27}{3}=9"
+      ],
+      [
+        "3a-1-4(2a+3)=3a-1-8a-12",
+        "3a-1-4(2a+3)=-5a-13"
+      ],
+      [
+        "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+        "\\text{Le triangle image est le triangle }\\mathrm{EFM}."
+      ],
+      [
+        "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+        "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+        "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+        "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+        "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}"
+      ],
+      [
+        "\\dfrac{20}{100}\\times15=3~\\text{€}",
+        "\\text{Nouveau prix : }15+3=18~\\text{€}"
+      ]
+    ],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+      "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+      "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "3x-2=25",
+      "3x=25+2=27",
+      "x=\\dfrac{27}{3}=9",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "3a-1-4(2a+3)=3a-1-8a-12",
+      "3a-1-4(2a+3)=-5a-13",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+      "\\text{Le triangle image est le triangle }\\mathrm{EFM}.",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+      "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+      "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+      "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+      "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "\\dfrac{20}{100}\\times15=3~\\text{€}",
+      "\\text{Nouveau prix : }15+3=18~\\text{€}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "qcm",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1680.75,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 2258.65625,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\dfrac{2}{1}",
+      "\\dfrac{7}{20}",
+      "\\dfrac{2}{20}",
+      "\\dfrac{17}{20}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "260{,}21",
+      "281",
+      "-18{,}79",
+      "307{,}1",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "19",
+      "37",
+      "13",
+      "1",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+      "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "x=9",
+      "x=\\dfrac{23}{3}",
+      "x=27",
+      "x=7",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "-5a+11",
+      "11a-13",
+      "-5a-13",
+      "-5a-4",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{BFM}",
+      "\\mathrm{EFM}",
+      "\\mathrm{FGC}",
+      "\\mathrm{EHM}",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "18~\\mathrm{cm}",
+      "7{,}5~\\mathrm{cm}",
+      "1{,}2~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "3~\\text{€}",
+      "18~\\text{€}",
+      "35~\\text{€}",
+      "12~\\text{€}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "qcm",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1999.515625,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 2615.8125,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [
+      [
+        "\\dfrac{7}{20}"
+      ],
+      [
+        "260{,}21"
+      ],
+      [
+        "13"
+      ],
+      [
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}"
+      ],
+      [
+        "x=9"
+      ],
+      [
+        "-5a-13"
+      ],
+      [
+        "\\mathrm{EFM}"
+      ],
+      [
+        "30~\\mathrm{cm}"
+      ],
+      [
+        "18~\\text{€}"
+      ]
+    ],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\dfrac{2}{1}",
+      "\\dfrac{7}{20}",
+      "\\dfrac{2}{20}",
+      "\\dfrac{17}{20}",
+      "\\dfrac{7}{20}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "260{,}21",
+      "281",
+      "-18{,}79",
+      "307{,}1",
+      "260{,}21",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "19",
+      "37",
+      "13",
+      "1",
+      "13",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+      "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "x=9",
+      "x=\\dfrac{23}{3}",
+      "x=27",
+      "x=7",
+      "x=9",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "-5a+11",
+      "11a-13",
+      "-5a-13",
+      "-5a-4",
+      "-5a-13",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{BFM}",
+      "\\mathrm{EFM}",
+      "\\mathrm{FGC}",
+      "\\mathrm{EHM}",
+      "\\mathrm{EFM}",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "18~\\mathrm{cm}",
+      "7{,}5~\\mathrm{cm}",
+      "1{,}2~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "3~\\text{€}",
+      "18~\\text{€}",
+      "35~\\text{€}",
+      "12~\\text{€}",
+      "18~\\text{€}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "qcm",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 6,
+    "title": "\n          Sujet de référence n° 1 — Septembre 2026 — Série générale\n        ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 2164.46875,
+        "left": 500
+      },
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"></polygon>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"></polygon>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"></path><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"></path><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"></path><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"></path><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 2626.421875,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 3149.6875,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [
+      [
+        "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+        "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}"
+      ],
+      [
+        "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}"
+      ],
+      [
+        "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}"
+      ],
+      [
+        "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+        "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}"
+      ],
+      [
+        "3x-2=25",
+        "3x=25+2=27",
+        "x=\\dfrac{27}{3}=9"
+      ],
+      [
+        "3a-1-4(2a+3)=3a-1-8a-12",
+        "3a-1-4(2a+3)=-5a-13"
+      ],
+      [
+        "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+        "\\text{Le triangle image est le triangle }\\mathrm{EFM}."
+      ],
+      [
+        "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+        "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+        "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+        "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+        "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}"
+      ],
+      [
+        "\\dfrac{20}{100}\\times15=3~\\text{€}",
+        "\\text{Nouveau prix : }15+3=18~\\text{€}"
+      ]
+    ],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\dfrac{2}{1}",
+      "\\dfrac{7}{20}",
+      "\\dfrac{2}{20}",
+      "\\dfrac{17}{20}",
+      "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+      "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "260{,}21",
+      "281",
+      "-18{,}79",
+      "307{,}1",
+      "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "19",
+      "37",
+      "13",
+      "1",
+      "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+      "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+      "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "x=9",
+      "x=\\dfrac{23}{3}",
+      "x=27",
+      "x=7",
+      "3x-2=25",
+      "3x=25+2=27",
+      "x=\\dfrac{27}{3}=9",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "-5a+11",
+      "11a-13",
+      "-5a-13",
+      "-5a-4",
+      "3a-1-4(2a+3)=3a-1-8a-12",
+      "3a-1-4(2a+3)=-5a-13",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{BFM}",
+      "\\mathrm{EFM}",
+      "\\mathrm{FGC}",
+      "\\mathrm{EHM}",
+      "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+      "\\text{Le triangle image est le triangle }\\mathrm{EFM}.",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "18~\\mathrm{cm}",
+      "7{,}5~\\mathrm{cm}",
+      "1{,}2~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+      "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+      "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+      "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+      "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "3~\\text{€}",
+      "18~\\text{€}",
+      "35~\\text{€}",
+      "12~\\text{€}",
+      "\\dfrac{20}{100}\\times15=3~\\text{€}",
+      "\\text{Nouveau prix : }15+3=18~\\text{€}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "mixed",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 9,
+    "responseLines": 5,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1316.875,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 1803.609375,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "260{,}21",
+      "281",
+      "-18{,}79",
+      "307{,}1",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+      "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "-5a+11",
+      "11a-13",
+      "-5a-13",
+      "-5a-4",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "18~\\mathrm{cm}",
+      "7{,}5~\\mathrm{cm}",
+      "1{,}2~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "mixed",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1602.78125,
+        "left": 500
+      },
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"></polygon>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"></polygon>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"></path><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"></path><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"></path><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"></path><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1933.171875,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 2450.4375,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [
+      [
+        "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+        "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}"
+      ],
+      [
+        "260{,}21"
+      ],
+      [
+        "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}"
+      ],
+      [
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}"
+      ],
+      [
+        "3x-2=25",
+        "3x=25+2=27",
+        "x=\\dfrac{27}{3}=9"
+      ],
+      [
+        "-5a-13"
+      ],
+      [
+        "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+        "\\text{Le triangle image est le triangle }\\mathrm{EFM}."
+      ],
+      [
+        "30~\\mathrm{cm}"
+      ],
+      [
+        "\\dfrac{20}{100}\\times15=3~\\text{€}",
+        "\\text{Nouveau prix : }15+3=18~\\text{€}"
+      ]
+    ],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+      "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "260{,}21",
+      "281",
+      "-18{,}79",
+      "307{,}1",
+      "260{,}21",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+      "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "3x-2=25",
+      "3x=25+2=27",
+      "x=\\dfrac{27}{3}=9",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "-5a+11",
+      "11a-13",
+      "-5a-13",
+      "-5a-4",
+      "-5a-13",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+      "\\text{Le triangle image est le triangle }\\mathrm{EFM}.",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "18~\\mathrm{cm}",
+      "7{,}5~\\mathrm{cm}",
+      "1{,}2~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "\\dfrac{20}{100}\\times15=3~\\text{€}",
+      "\\text{Nouveau prix : }15+3=18~\\text{€}"
+    ]
+  },
+  {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "mode": "mixed",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Sujet de référence n° 1 — Septembre 2026 — Série générale\n        ",
+    "questionCount": 9,
+    "responseLines": 0,
+    "errors": 0,
+    "raw": false,
+    "figures": [
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 1679.421875,
+        "left": 500
+      },
+      {
+        "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    <polygon points=\"150,30 150,150 210,90\" fill=\"#0284c7\" fill-opacity=\"0.24\" stroke=\"#0284c7\" stroke-width=\"3\"></polygon>\n    <polygon points=\"90,90 90,210 150,150\" fill=\"#16a34a\" fill-opacity=\"0.24\" stroke=\"#16a34a\" stroke-width=\"3\"></polygon>\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    <g fill=\"none\" stroke=\"#d97706\" stroke-width=\"3\"><path d=\"M90 90 L30 150\"></path><path d=\"M40.60660171779821 146.46446609406726 L30 150 L33.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 30 L90 90\"></path><path d=\"M100.60660171779821 86.46446609406726 L90 90 L93.53553390593274 79.39339828220179\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M150 150 L90 210\"></path><path d=\"M100.60660171779821 206.46446609406726 L90 210 L93.53553390593274 199.3933982822018\"></path></g><g fill=\"none\" stroke=\"#0284c7\" stroke-width=\"3\"><path d=\"M210 90 L150 150\"></path><path d=\"M160.6066017177982 146.46446609406726 L150 150 L153.53553390593274 139.3933982822018\"></path></g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+        "width": 280,
+        "height": 280,
+        "top": 2009.8125,
+        "left": 500
+      },
+      {
+        "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+        "width": 499.984375,
+        "height": 312.046875,
+        "top": 2533.078125,
+        "left": 390
+      }
+    ],
+    "table": [],
+    "correctionMath": [
+      [
+        "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+        "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}"
+      ],
+      [
+        "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}"
+      ],
+      [
+        "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}"
+      ],
+      [
+        "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+        "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}"
+      ],
+      [
+        "3x-2=25",
+        "3x=25+2=27",
+        "x=\\dfrac{27}{3}=9"
+      ],
+      [
+        "3a-1-4(2a+3)=3a-1-8a-12",
+        "3a-1-4(2a+3)=-5a-13"
+      ],
+      [
+        "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+        "\\text{Le triangle image est le triangle }\\mathrm{EFM}."
+      ],
+      [
+        "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+        "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+        "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+        "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+        "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}"
+      ],
+      [
+        "\\dfrac{20}{100}\\times15=3~\\text{€}",
+        "\\text{Nouveau prix : }15+3=18~\\text{€}"
+      ]
+    ],
+    "math": [
+      "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+      "\\text{Donner le résultat sous forme de fraction irréductible.}",
+      "\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}=\\dfrac{12}{20}-\\dfrac{5}{20}=\\dfrac{7}{20}\\text{.}",
+      "\\text{Les entiers }7\\text{ et }20\\text{ sont premiers entre eux.}",
+      "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+      "260{,}21",
+      "281",
+      "-18{,}79",
+      "307{,}1",
+      "\\mathrm{B}=310-50+0{,}21=260{,}21\\text{.}",
+      "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+      "(5+2\\sqrt{3})(5-2\\sqrt{3})=5^2-(2\\sqrt{3})^2=25-12=13\\text{.}",
+      "\\text{Classer par ordre croissant les nombres suivants :}",
+      "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+      "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+      "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+      "1+\\dfrac{3}{100}=1{,}03\\quad\\text{et}\\quad\\dfrac{7}{4}=1{,}75\\text{.}",
+      "1{,}03<1{,}25<1{,}3<1{,}75\\text{.}",
+      "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\text{.}",
+      "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+      "3x-2=25",
+      "3x=25+2=27",
+      "x=\\dfrac{27}{3}=9",
+      "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+      "-5a+11",
+      "11a-13",
+      "-5a-13",
+      "-5a-4",
+      "3a-1-4(2a+3)=3a-1-8a-12",
+      "3a-1-4(2a+3)=-5a-13",
+      "\\text{La figure ci-contre est composée de l'assemblage}",
+      "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+      "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+      "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+      "\\mathrm{A}\\mapsto\\mathrm{E},\\quad\\mathrm{M}\\mapsto\\mathrm{F},\\quad\\mathrm{H}\\mapsto\\mathrm{M}\\text{ par la translation de vecteur }\\overrightarrow{\\mathrm{EB}}\\text{.}",
+      "\\text{Le triangle image est le triangle }\\mathrm{EFM}.",
+      "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+      "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+      "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+      "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+      "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+      "18~\\mathrm{cm}",
+      "7{,}5~\\mathrm{cm}",
+      "1{,}2~\\mathrm{cm}",
+      "30~\\mathrm{cm}",
+      "\\text{Les droites }(\\mathrm{AE})\\text{ et }(\\mathrm{AD})\\text{ sont sécantes en }\\mathrm{A}\\text{.}",
+      "(\\mathrm{BC})\\parallel(\\mathrm{DE})\\text{. D'après le théorème de Thalès :}",
+      "\\dfrac{\\mathrm{AB}}{\\mathrm{AE}}=\\dfrac{\\mathrm{AC}}{\\mathrm{AD}}=\\dfrac{\\mathrm{BC}}{\\mathrm{DE}}",
+      "\\dfrac{6}{\\mathrm{AE}}=\\dfrac{3}{15}",
+      "\\mathrm{AE}=\\dfrac{6\\times15}{3}=30~\\mathrm{cm}",
+      "\\text{Un objet coûte }15\\text{ euros.}",
+      "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+      "\\dfrac{20}{100}\\times15=3~\\text{€}",
+      "\\text{Nouveau prix : }15+3=18~\\text{€}"
+    ]
+  }
+]

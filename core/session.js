@@ -116,5 +116,10 @@ export function startExerciseSession({
     restartBtn.style.display = "none";
   }
 
+  const exportButton = document.getElementById("export-evaluation");
+  if (exportButton) {
+    exportButton.style.display = "none";
+  }
+
   onQuestionsReady(tableauSelectionne);
 }

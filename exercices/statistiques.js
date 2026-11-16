@@ -6,8 +6,15 @@ import { parseAnswer } from '../core/answerParser.js';
 const math = text => `\\(${text}\\)`;
 const number = value => formatAnswer(value, 'math');
 const sum = values => values.reduce((a,b)=>a+b,0);
-// Autoriser un retour avant la fraction sur écran étroit, sans couper son numérateur.
-const meanFraction = (numerator, denominator) => math('\\text{Moyenne}=')+'<wbr><span style="font-size:0.85em">'+math(`\\frac{${numerator}}{${denominator}}`)+'</span>';
+// Garder le calcul entier dans un seul groupe MathJax.
+const meanFraction = (numerator, denominator) => {
+  const terms = numerator.split('+');
+  const limit = numerator.includes(String.raw`\times`) ? 2 : 4;
+  const top = terms.length > limit
+    ? String.raw`\begin{aligned}&${terms.slice(0,limit).join('+')}\\&{}+${terms.slice(limit).join('+')}\end{aligned}`
+    : numerator;
+  return math(String.raw`\text{Moyenne}=\dfrac{${top}}{${denominator}}`);
+};
 // Une fraction réduite a une écriture décimale finie si son dénominateur
 // ne contient que des facteurs 2 et 5. Aucun arrondi des distracteurs.
 function finiteQuotient(numerator, denominator) {
@@ -17,15 +24,34 @@ function finiteQuotient(numerator, denominator) {
   for(const factor of [2,5])while(reduced%factor===0)reduced/=factor;
   return reduced===1 ? numerator/denominator : NaN;
 }
+// Présentation locale : préserver les balises du tableau et les expressions
+// existantes ; composer la prose en groupes courts pour le repli mobile.
+const presentStatistics = html => html.split(/(<style\b[\s\S]*?<\/style>|<[^>]+>|\\\([\s\S]*?\\\))/g)
+  .map(part => part.startsWith('<') || part.startsWith(String.raw`\(`) ? part
+    : part.split(/(\s+)/).map(word => word.trim() ? math(String.raw`\text{${word}}`) : word).join('')).join('');
+const presentationStyles = `<style>
+.flash-reader #question > .statistics-content { width:100%; }
+.statistics-content .statistics-correction { break-inside:avoid; page-break-inside:avoid; }
+@media (max-width:600px) {
+  .flash-reader:has(.statistics-content) #mode-control,
+  .flash-reader:has(.statistics-content) #mode-control > div {
+    flex-wrap:wrap; justify-content:center; max-width:100%;
+  }
+  .flash-reader:has(.statistics-content) #mixed-qcm-control {
+    flex-basis:100%; justify-content:center; margin-left:0 !important;
+  }
+}
+</style>`;
 const correctionStyles = `<style>
 .progressive-correction:has(.statistics-content),
 .progressive-correction:has(.statistics-content) *,
 .statistics-correction, .statistics-correction * { color:red !important; }
 </style>`;
-const redCorrection = html => correctionStyles+'<div class="statistics-correction">'+html.replace(/\\\([\s\S]*?\\\)/g, expression=>`<span style="color:red">${expression}</span>`)+'</div>';
+const redCorrection = html => correctionStyles+'<div class="statistics-correction">'+presentStatistics(html).replace(/\\\([\s\S]*?\\\)/g, expression=>`<span style="color:red">${expression}</span>`)+'</div>';
 export function roundPercentage(count, total) {
   const numerator=count*100, quotient=Math.floor(numerator/total), remainder=numerator%total;
-  return quotient + (2*remainder>total || (2*remainder===total && quotient%2===1) ? 1 : 0);
+  // Arrondi scolaire positif : la demi-unité est arrondie vers le haut.
+  return quotient + (2*remainder>=total ? 1 : 0);
 }
 export function median(values) {
   const middle=Math.floor(values.length/2);
@@ -66,12 +92,13 @@ export function generateQuestions(random = Math.random) {
   const products=weightedNotes.map((n,i)=>n*counts[i]), weightedTotal=sum(products), population=sum(counts), weightedMean=weightedTotal/population;
   const med=median(medianNotes), minimum=rangeNotes[0],maximum=rangeNotes.at(-1),range=maximum-minimum;
   const listHtml=values=>`<p>${values.map(v=>math(number(v))).join(' - ')}</p>`;
-  const wrap=html=>`<div class="statistics-content" style="min-width:0;max-width:100%;font-size:clamp(14px,3vw,32px)">${html}</div>`;
+  const wrap=html=>`<div class="statistics-content" style="min-width:0;max-width:100%;font-size:clamp(14px,3vw,32px)">${presentationStyles}${presentStatistics(html)}</div>`;
   const question=(id,text,data,value,steps,candidates,percentage=false)=>({
     id,question:wrap(text),...(id==='q5'?{duration:30}:{}),
     answers:[percentage?`${value}%`:String(value)],
     answerRule:percentage?{type:'percentage',expectedValue:value/100}:exactRule(value),
-    possible_answers:choices(value,candidates,percentage),display_answer:wrap(steps.map(redCorrection).join('')),
+    possible_answers:choices(value,candidates,percentage),
+    display_answer:{direct:wrap(steps.map(redCorrection).join('')),qcm:wrap(steps.map(redCorrection).join(''))},
     progressiveCorrection:{kind:'steps',steps:steps.map(html=>({html:wrap(redCorrection(html))}))},statisticsData:data
   });
   const table=`<table style="border-collapse:collapse;width:100%;max-width:560px;table-layout:fixed;margin:16px auto">${[['Note',...weightedNotes],['Effectif',...counts]].map(row=>`<tr>${row.map((v,i)=>`<${i?'td':'th'} style="border:1px solid currentColor;padding:8px 2px;text-align:center;font-weight:normal">${i?math(number(v)):v}</${i?'td':'th'}>`).join('')}</tr>`).join('')}</table>`;

@@ -110,13 +110,13 @@ test('Valider réel : réponse graphique, feedback, historique et score',()=>{
   }
 });
 
-test('Q4–Q17 : conteneur unique et corrections en une expression MathJax',()=>{
+test('Q4–Q17 : conteneur conservé et corrections MathJax repliables',()=>{
   const covered=new Set();
   for(let i=0;i<500;i++)for(const q of generateQuestions().slice(2)) {
-    covered.add(q.id);assert.match(q.question,/^<div class="time-duration-statement"[^>]*>.*<\/div>$/);
-    assert.equal((q.display_answer.match(/\\\(/g)||[]).length,1);
-    assert.equal((q.display_answer.match(/\\\)/g)||[]).length,1);
-    assert.match(q.display_answer,/^\\\(\\text\{Il y a /);
+    covered.add(q.id);assert.match(q.question,/<div class="time-duration-statement"[^>]*>.*<\/div>/);
+    assert.ok((q.display_answer.match(/\\\(/g)||[]).length>=1);
+    assert.equal((q.display_answer.match(/\\\)/g)||[]).length,(q.display_answer.match(/\\\(/g)||[]).length);
+    assert.match(q.display_answer,/^\\\(\\text\{Il\}/);
     assert.doesNotMatch(q.display_answer,/textcolor|tikz/);
   }
   assert.equal(covered.size,14);

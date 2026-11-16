@@ -1,0 +1,306 @@
+{
+  "job": {
+    "id": "polynesie_juin_2026_gen",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 463.03125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "12\\ ;\\ 9\\ ;\\ 7\\ ;\\ 23\\ ;\\ 9\\ ;\\ 25\\ ;\\ 7"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Déterminer la médiane de la série :"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 832.359375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la notation scientifique de }0{,}000~457."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        -3.54492739361919\n        -15.614753069811997\n        447.0898547872383\n        329.1446717414635\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle rectangle\">\n      <defs>\n        <marker id=\"triangle-arrow-head\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8.5\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M4,1.5 L4,4.5 L9,3 z\" fill=\"red\"></path>\n        </marker>\n      </defs>\n\n      <g transform=\"\n          rotate(\n            -200\n            220\n            190\n          )\n        \">\n\n        \n    <path d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line x1=\"100\" y1=\"280\" x2=\"340\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- leg2 : AC -->\n          <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- hypoténuse : BC -->\n          <line x1=\"340\" y1=\"280\" x2=\"100\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text x=\"317.2844778927319\" y=\"40.937159690489764\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        B\n      </text>\n\n      <text x=\"48.456391165434276\" y=\"146.19835063741345\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        A\n      </text>\n\n      <text x=\"386.1080453714374\" y=\"250.11019934234753\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text x=\"213.03521301253576\" y=\"212.96718838297906\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            16.869897645844034\n            213.03521301253576\n            212.96718838297906\n          )\n        \">\n        10 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text x=\"181.00970366087375\" y=\"82.87504123040642\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            -19.99999999999997\n            181.00970366087375\n            82.87504123040642\n          )\n        \">\n        8 cm\n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text x=\"355.31573739317076\" y=\"140.74909936110373\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            70\n            355.31573739317076\n            140.74909936110373\n          )\n        \">\n        6 cm\n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>",
+          "left": 510,
+          "right": 930,
+          "top": 368.46875,
+          "bottom": 677.65625,
+          "width": 420,
+          "height": 309.1875
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire, en cm²,\n        du triangle ci-contre."
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Une boîte opaque contient\n        6 beignets à l'abricot,\n        5 beignets à la pomme\n        et 4 beignets à la framboise.\n      \n\n      \n        Déterminer la probabilité\n        de piocher au hasard\n        un beignet à la framboise."
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Un article coûte 800 €. Son prix baisse de 10 %.Calculer le prix, en euro, de l'article après réduction."
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 937.3125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Développer et réduire l'expression }B=4y(3y-1)."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 707.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Compléter l'égalité : }3{,}57\\text{ L}=\\ldots\\text{ cm}^3."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 1306.421875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        10\n        10\n        430\n        340\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Quadrilatère\">\n      <polygon points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line x1=\"80\" y1=\"300\" x2=\"370\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n\n          <line x1=\"390\" y1=\"250\" x2=\"60\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line x1=\"148.67459371579466\" y1=\"235.37763407325187\" x2=\"156.32540628420534\" y2=\"244.62236592674813\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"293.67459371579463\" y1=\"115.37763407325187\" x2=\"301.32540628420537\" y2=\"124.62236592674813\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"308.83902804636404\" y1=\"222.0856900786762\" x2=\"313.525626208638\" y2=\"211.03870869617313\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"301.474373791362\" y1=\"218.96129130382687\" x2=\"306.16097195363596\" y2=\"207.9143099213238\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"143.839028046364\" y1=\"152.0856900786762\" x2=\"148.52562620863804\" y2=\"141.03870869617313\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"136.47437379136196\" y1=\"148.96129130382687\" x2=\"141.160971953636\" y2=\"137.9143099213238\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text x=\"58.428959008508684\" y=\"317.8518959929583\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        A\n      </text>\n\n      <text x=\"415.7762898925072\" y=\"260.9353957119728\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        B\n      </text>\n\n      <text x=\"391.5710409914913\" y=\"42.148104007041674\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        C\n      </text>\n\n      <text x=\"34.22371010749281\" y=\"99.06460428802725\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        D\n      </text>\n\n        \n    </svg>",
+          "left": 560,
+          "right": 880,
+          "top": 427.0625,
+          "bottom": 680.078125,
+          "width": 320,
+          "height": 253.015625
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        \n\n        \n          À partir des codages,\n          déterminer la nature\n          du quadrilatère ABCD."
+      ]
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "9"
+        ],
+        "possible_answers": [
+          "7",
+          "9",
+          "12",
+          "23"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.000457"
+        ],
+        "possible_answers": [
+          "4.57*10^-4",
+          "4.57*10^-3",
+          "45.7*10^-5",
+          "4.57*10^4"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 0.000457
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "24 cm²"
+        ],
+        "possible_answers": [
+          "24 cm²",
+          "48 cm²",
+          "30 cm²",
+          "80 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "4/15"
+        ],
+        "possible_answers": [
+          "4/15",
+          "4/11",
+          "6/15",
+          "5/15"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "720"
+        ],
+        "possible_answers": [
+          "720 €",
+          "790 €",
+          "700 €",
+          "80 €"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "€",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "12y^2-4y"
+        ],
+        "possible_answers": [
+          "\\(12y^2-4y\\)",
+          "\\(12y^2-1\\)",
+          "\\(7y^2-4y\\)",
+          "\\(12y-4\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "developedAndReduced"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "3570"
+        ],
+        "possible_answers": [
+          "3570",
+          "357",
+          "35700",
+          "3.57"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "3",
+          "7",
+          "12",
+          "29"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "parallélogramme",
+          "Un parallélogramme."
+        ],
+        "possible_answers": [
+          "Un losange.",
+          "Un rectangle.",
+          "Un carré.",
+          "Un parallélogramme."
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

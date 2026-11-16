@@ -1,0 +1,252 @@
+{
+  "job": {
+    "id": "arrondis_nombres_decimaux",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 39,26 à l’unité près."
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "35",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "36",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34,7",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 34,7 à l’unité près.",
+        "34",
+        "35",
+        "36",
+        "34,7"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 94,029 897 au dixième près.",
+        "34",
+        "35",
+        "36",
+        "34,7"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "1,66",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2,66",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "3,66",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2,663",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 2,663 au centième près.",
+        "1,66",
+        "2,66",
+        "3,66",
+        "2,663"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 20,362 42 au dixième près.",
+        "1,66",
+        "2,66",
+        "3,66",
+        "2,663"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "39"
+        ],
+        "possible_answers": [
+          "39",
+          "38",
+          "40",
+          "39.26"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "35"
+        ],
+        "possible_answers": [
+          "35",
+          "34",
+          "36",
+          "34.7"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "34",
+          "35",
+          "36",
+          "34.7"
+        ]
+      },
+      {
+        "answers": [
+          "94"
+        ],
+        "possible_answers": [
+          "94",
+          "93",
+          "95",
+          "94.029897"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2.66"
+        ],
+        "possible_answers": [
+          "2.66",
+          "1.6600000000000001",
+          "3.66",
+          "2.663"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1.6600000000000001",
+          "2.66",
+          "3.66",
+          "2.663"
+        ]
+      },
+      {
+        "answers": [
+          "20.4"
+        ],
+        "possible_answers": [
+          "20.4",
+          "19.4",
+          "21.4",
+          "20.36242"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

@@ -1,0 +1,866 @@
+{
+  "job": {
+    "id": "sujet_de_reference_num_1_septembre_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 1083,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 999.5,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner le résultat sous forme de fraction irréductible.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 1082.703125,
+          "width": 999.5,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Calculer }\\mathrm{A}=\\dfrac{3}{5}-\\dfrac{1}{4}\\text{.}",
+        "\\text{Donner le résultat sous forme de fraction irréductible.}",
+        "\\dfrac{2}{20}",
+        "\\dfrac{17}{20}",
+        "\\dfrac{2}{1}",
+        "\\dfrac{7}{20}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 934,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 851.171875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer B=3,1×102−5×10+2,1×10−1.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 83.203125,
+              "right": 934.40625,
+              "width": 851.203125,
+              "height": 47.25
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 83.203125,
+              "right": 934.40625,
+              "width": 851.203125,
+              "height": 46.25
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 925.484375,
+              "right": 934.40625,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": 83.203125,
+          "right": 934.375,
+          "width": 851.171875,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Calculer }\\mathrm{B}=3{,}1\\times10^2-5\\times10+2{,}1\\times10^{-1}\\text{.}",
+        "-18{,}79",
+        "307{,}1",
+        "260{,}21",
+        "281"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 557.765625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer }(5+2\\sqrt{3})(5-2\\sqrt{3})\\text{.}",
+        "37",
+        "1",
+        "13",
+        "19"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1000,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 916.71875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Classer par ordre croissant les nombres suivants :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 999.921875,
+          "width": 916.71875,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Classer par ordre croissant les nombres suivants :}",
+        "1{,}25\\qquad1+\\dfrac{3}{100}\\qquad1{,}3\\qquad\\dfrac{7}{4}",
+        "\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3",
+        "1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}",
+        "1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}",
+        "1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1019,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 935.609375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDéterminer la solution de l'équation : 3x−2=25.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1010.3125,
+              "right": 1019.234375,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": 83.203125,
+          "right": 1018.8125,
+          "width": 935.609375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Déterminer la solution de l'équation : }3x-2=25\\text{.}",
+        "x=9",
+        "x=\\dfrac{23}{3}",
+        "x=27",
+        "x=7"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 852,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 768.609375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éRéduire l'expression : 3a−1−4(2a+3).",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 833.859375,
+              "right": 851.890625,
+              "width": 18.03125,
+              "height": 39
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 851.890625,
+              "right": 860.8125,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": 83.203125,
+          "right": 851.8125,
+          "width": 768.609375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Réduire l'expression : }3a-1-4(2a+3)\\text{.}",
+        "11a-13",
+        "-5a-13",
+        "-5a-4",
+        "-5a+11"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1001,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"280\" role=\"img\" aria-label=\"Carré ABCD partagé en seize triangles rectangles isocèles\" data-translation-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:12px auto\">\n    \n    \n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path data-segment=\"AB\" d=\"M150 30 L30 150\"></path><path data-segment=\"BC\" d=\"M30 150 L150 270\"></path><path data-segment=\"CD\" d=\"M150 270 L270 150\"></path><path data-segment=\"DA\" d=\"M270 150 L150 30\"></path><path data-segment=\"AC\" d=\"M150 30 L150 270\"></path><path data-segment=\"BD\" d=\"M30 150 L270 150\"></path><path data-segment=\"EH\" d=\"M90 90 L210 90\"></path><path data-segment=\"FG\" d=\"M90 210 L210 210\"></path><path data-segment=\"EF\" d=\"M90 90 L90 210\"></path><path data-segment=\"HG\" d=\"M210 90 L210 210\"></path><path data-segment=\"EG\" d=\"M90 90 L210 210\"></path><path data-segment=\"FH\" d=\"M90 210 L210 90\"></path></g>\n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\"><text x=\"150\" y=\"16\">A</text><text x=\"14\" y=\"155\">B</text><text x=\"150\" y=\"290\">C</text><text x=\"286\" y=\"155\">D</text><text x=\"77\" y=\"80\">E</text><text x=\"223\" y=\"80\">H</text><text x=\"77\" y=\"228\">F</text><text x=\"223\" y=\"228\">G</text><text x=\"165\" y=\"145\">M</text></g>\n  </svg>",
+          "left": 244,
+          "right": 524,
+          "width": 280,
+          "height": 280
+        }
+      ],
+      "mathWidth": 917.421875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éLa figure ci-contre est composée de l'assemblage",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 979.09375,
+          "width": 895.890625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ède 16 triangles rectangles isocèles superposables.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 981.34375,
+          "width": 898.140625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Par la translation qui transforme le point E en B,",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 1000.625,
+          "width": 917.421875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "quel triangle est l'image du triangle AMH ?",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 889.265625,
+          "width": 806.0625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{La figure ci-contre est composée de l'assemblage}",
+        "\\text{de }16\\text{ triangles rectangles isocèles superposables.}",
+        "\\text{Par la translation qui transforme le point }\\mathrm{E}\\text{ en }\\mathrm{B}\\text{,}",
+        "\\text{quel triangle est l'image du triangle }\\mathrm{AMH}\\text{ ?}",
+        "\\mathrm{FGC}",
+        "\\mathrm{EFM}",
+        "\\mathrm{EHM}",
+        "\\mathrm{BFM}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 915,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg class=\"thales-figure\" viewBox=\"\n        0\n        107.9505762585919\n        500\n        312.0494237414081\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Figure de Thalès\">\n\n      <defs>\n\n        <marker id=\"thales-arrow-start\" markerWidth=\"8\" markerHeight=\"8\" refX=\"1\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 8 0 L 0 4 L 8 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n        <marker id=\"thales-arrow-end\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M 0 0 L 8 4 L 0 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n        </marker>\n\n      </defs>\n\n      <g class=\"thales-lines\">\n        \n    <line x1=\"80\" y1=\"340\" x2=\"420\" y2=\"340\"></line>\n  \n    <line x1=\"80\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n    <line x1=\"193.33333333333331\" y1=\"340\" x2=\"155.14084697462198\" y2=\"289.31685875286394\"></line>\n  \n    <line x1=\"420\" y1=\"340\" x2=\"305.422540923866\" y2=\"187.9505762585919\"></line>\n  \n      </g>\n\n      <g class=\"thales-highlights\">\n        \n        \n        \n      </g>\n\n      \n      \n\n      <g class=\"thales-length-arrows\">\n        \n      </g>\n\n      <g class=\"thales-length-labels\">\n        \n            <text x=\"136.66666666666666\" y=\"364\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  136.66666666666666\n                  364\n                )\n              \">\n              6 cm\n            </text>\n          \n            <text x=\"195.80024892525455\" y=\"298.4094237513267\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  195.80024892525455\n                  298.4094237513267\n                )\n              \">\n              3 cm\n            </text>\n          \n            <text x=\"385.0730647432572\" y=\"247.1244674810386\" text-anchor=\"middle\" dominant-baseline=\"middle\" class=\"thales-length-label\" transform=\"\n                rotate(\n                  0\n                  385.0730647432572\n                  247.1244674810386\n                )\n              \">\n              15 cm\n            </text>\n          \n      </g>\n\n      <g class=\"thales-point-labels\">\n        \n    <text x=\"52.96060241201022\" y=\"347.27124322785403\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      A\n    </text>\n  \n    <text x=\"204.1660037500702\" y=\"354.3754391808513\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      B\n    </text>\n  \n    <text x=\"144.3081765578851\" y=\"274.94141957201265\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      C\n    </text>\n  \n    <text x=\"446.5539422519361\" y=\"348.8819001841297\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      E\n    </text>\n  \n    <text x=\"315.01149045729414\" y=\"161.64369413916603\" class=\"thales-point-label\" text-anchor=\"middle\" dominant-baseline=\"middle\" style=\"\">\n      D\n    </text>\n  \n      </g>\n\n      <g class=\"thales-angle-codings\">\n        \n      </g>\n\n      <g class=\"thales-angle-labels\">\n        \n      </g>\n\n    </svg>",
+          "left": 159,
+          "right": 609,
+          "width": 450,
+          "height": 280.84375
+        }
+      ],
+      "mathWidth": 832.140625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Sur la figure ci-contre, dans le triangle AED,",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 915.34375,
+          "width": 832.140625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "le point B appartient au segment [AE],",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 805.984375,
+          "width": 722.78125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "le point C appartient au segment [AD],",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 810.203125,
+          "width": 727,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èles droites (DE) et (CB) sont parallèles.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 83.203125,
+          "right": 819.5625,
+          "width": 736.359375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Sur la figure ci-contre, dans le triangle }\\mathrm{AED}\\text{,}",
+        "\\text{le point }\\mathrm{B}\\text{ appartient au segment }[\\mathrm{AE}]\\text{,}",
+        "\\text{le point }\\mathrm{C}\\text{ appartient au segment }[\\mathrm{AD}]\\text{,}",
+        "\\text{les droites }(\\mathrm{DE})\\text{ et }(\\mathrm{CB})\\text{ sont parallèles.}",
+        "\\text{Déterminer la longueur }\\mathrm{AE}\\text{.}",
+        "18~\\mathrm{cm}",
+        "1{,}2~\\mathrm{cm}",
+        "7{,}5~\\mathrm{cm}",
+        "30~\\mathrm{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1060,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "mathWidth": 976.90625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èQuel sera son prix après une augmentation de 20% ?",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1033.828125,
+              "right": 1061.75,
+              "width": 27.921875,
+              "height": 29
+            }
+          ],
+          "left": 83.203125,
+          "right": 1060.109375,
+          "width": 976.90625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Un objet coûte }15\\text{ euros.}",
+        "\\text{Quel sera son prix après une augmentation de }20\\,\\%\\text{ ?}",
+        "12~\\text{€}",
+        "18~\\text{€}",
+        "3~\\text{€}",
+        "35~\\text{€}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "7/20"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{2}{1}\\)",
+          "\\(\\dfrac{7}{20}\\)",
+          "\\(\\dfrac{2}{20}\\)",
+          "\\(\\dfrac{17}{20}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction",
+          "irreducible": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{2}{20}\\)",
+          "\\(\\dfrac{17}{20}\\)",
+          "\\(\\dfrac{2}{1}\\)",
+          "\\(\\dfrac{7}{20}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "260.21"
+        ],
+        "possible_answers": [
+          "\\(260{,}21\\)",
+          "\\(281\\)",
+          "\\(-18{,}79\\)",
+          "\\(307{,}1\\)"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(-18{,}79\\)",
+          "\\(307{,}1\\)",
+          "\\(260{,}21\\)",
+          "\\(281\\)"
+        ]
+      },
+      {
+        "answers": [
+          "13"
+        ],
+        "possible_answers": [
+          "\\(19\\)",
+          "\\(37\\)",
+          "\\(13\\)",
+          "\\(1\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(37\\)",
+          "\\(1\\)",
+          "\\(13\\)",
+          "\\(19\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1+3/100<1,25<1,3<7/4",
+          "1+3/100;1,25;1,3;7/4",
+          "1+3/100→1,25→1,3→7/4",
+          "1+3/100<1,25<1,3<1,75",
+          "1+3/100;1,25;1,3;1,75",
+          "1+3/100→1,25→1,3→1,75",
+          "1+3/100<1,25<1,3<1.75",
+          "1+3/100;1,25;1,3;1.75",
+          "1+3/100→1,25→1,3→1.75",
+          "1+3/100<1,25<1.3<7/4",
+          "1+3/100;1,25;1.3;7/4",
+          "1+3/100→1,25→1.3→7/4",
+          "1+3/100<1,25<1.3<1,75",
+          "1+3/100;1,25;1.3;1,75",
+          "1+3/100→1,25→1.3→1,75",
+          "1+3/100<1,25<1.3<1.75",
+          "1+3/100;1,25;1.3;1.75",
+          "1+3/100→1,25→1.3→1.75",
+          "1+3/100<1.25<1,3<7/4",
+          "1+3/100;1.25;1,3;7/4",
+          "1+3/100→1.25→1,3→7/4",
+          "1+3/100<1.25<1,3<1,75",
+          "1+3/100;1.25;1,3;1,75",
+          "1+3/100→1.25→1,3→1,75",
+          "1+3/100<1.25<1,3<1.75",
+          "1+3/100;1.25;1,3;1.75",
+          "1+3/100→1.25→1,3→1.75",
+          "1+3/100<1.25<1.3<7/4",
+          "1+3/100;1.25;1.3;7/4",
+          "1+3/100→1.25→1.3→7/4",
+          "1+3/100<1.25<1.3<1,75",
+          "1+3/100;1.25;1.3;1,75",
+          "1+3/100→1.25→1.3→1,75",
+          "1+3/100<1.25<1.3<1.75",
+          "1+3/100;1.25;1.3;1.75",
+          "1+3/100→1.25→1.3→1.75",
+          "1,03<1,25<1,3<7/4",
+          "1,03;1,25;1,3;7/4",
+          "1,03→1,25→1,3→7/4",
+          "1,03<1,25<1,3<1,75",
+          "1,03;1,25;1,3;1,75",
+          "1,03→1,25→1,3→1,75",
+          "1,03<1,25<1,3<1.75",
+          "1,03;1,25;1,3;1.75",
+          "1,03→1,25→1,3→1.75",
+          "1,03<1,25<1.3<7/4",
+          "1,03;1,25;1.3;7/4",
+          "1,03→1,25→1.3→7/4",
+          "1,03<1,25<1.3<1,75",
+          "1,03;1,25;1.3;1,75",
+          "1,03→1,25→1.3→1,75",
+          "1,03<1,25<1.3<1.75",
+          "1,03;1,25;1.3;1.75",
+          "1,03→1,25→1.3→1.75",
+          "1,03<1.25<1,3<7/4",
+          "1,03;1.25;1,3;7/4",
+          "1,03→1.25→1,3→7/4",
+          "1,03<1.25<1,3<1,75",
+          "1,03;1.25;1,3;1,75",
+          "1,03→1.25→1,3→1,75",
+          "1,03<1.25<1,3<1.75",
+          "1,03;1.25;1,3;1.75",
+          "1,03→1.25→1,3→1.75",
+          "1,03<1.25<1.3<7/4",
+          "1,03;1.25;1.3;7/4",
+          "1,03→1.25→1.3→7/4",
+          "1,03<1.25<1.3<1,75",
+          "1,03;1.25;1.3;1,75",
+          "1,03→1.25→1.3→1,75",
+          "1,03<1.25<1.3<1.75",
+          "1,03;1.25;1.3;1.75",
+          "1,03→1.25→1.3→1.75",
+          "1.03<1,25<1,3<7/4",
+          "1.03;1,25;1,3;7/4",
+          "1.03→1,25→1,3→7/4",
+          "1.03<1,25<1,3<1,75",
+          "1.03;1,25;1,3;1,75",
+          "1.03→1,25→1,3→1,75",
+          "1.03<1,25<1,3<1.75",
+          "1.03;1,25;1,3;1.75",
+          "1.03→1,25→1,3→1.75",
+          "1.03<1,25<1.3<7/4",
+          "1.03;1,25;1.3;7/4",
+          "1.03→1,25→1.3→7/4",
+          "1.03<1,25<1.3<1,75",
+          "1.03;1,25;1.3;1,75",
+          "1.03→1,25→1.3→1,75",
+          "1.03<1,25<1.3<1.75",
+          "1.03;1,25;1.3;1.75",
+          "1.03→1,25→1.3→1.75",
+          "1.03<1.25<1,3<7/4",
+          "1.03;1.25;1,3;7/4",
+          "1.03→1.25→1,3→7/4",
+          "1.03<1.25<1,3<1,75",
+          "1.03;1.25;1,3;1,75",
+          "1.03→1.25→1,3→1,75",
+          "1.03<1.25<1,3<1.75",
+          "1.03;1.25;1,3;1.75",
+          "1.03→1.25→1,3→1.75",
+          "1.03<1.25<1.3<7/4",
+          "1.03;1.25;1.3;7/4",
+          "1.03→1.25→1.3→7/4",
+          "1.03<1.25<1.3<1,75",
+          "1.03;1.25;1.3;1,75",
+          "1.03→1.25→1.3→1,75",
+          "1.03<1.25<1.3<1.75",
+          "1.03;1.25;1.3;1.75",
+          "1.03→1.25→1.3→1.75"
+        ],
+        "possible_answers": [
+          "\\(1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}\\)",
+          "\\(1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}\\)",
+          "\\(\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3\\)",
+          "\\(1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3\\)",
+          "\\(1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}\\)",
+          "\\(1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\)",
+          "\\(1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "9",
+          "x=9",
+          "9=x"
+        ],
+        "possible_answers": [
+          "\\(x=9\\)",
+          "\\(x=\\dfrac{23}{3}\\)",
+          "\\(x=27\\)",
+          "\\(x=7\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(x=9\\)",
+          "\\(x=\\dfrac{23}{3}\\)",
+          "\\(x=27\\)",
+          "\\(x=7\\)"
+        ]
+      },
+      {
+        "answers": [
+          "-5a-13"
+        ],
+        "possible_answers": [
+          "\\(-5a+11\\)",
+          "\\(11a-13\\)",
+          "\\(-5a-13\\)",
+          "\\(-5a-4\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "developedAndReduced"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(11a-13\\)",
+          "\\(-5a-13\\)",
+          "\\(-5a-4\\)",
+          "\\(-5a+11\\)"
+        ]
+      },
+      {
+        "answers": [
+          "EFM",
+          "EMF",
+          "FEM",
+          "FME",
+          "MEF",
+          "MFE",
+          "triangle EFM",
+          "triangle EMF",
+          "triangle FEM",
+          "triangle FME",
+          "triangle MEF",
+          "triangle MFE"
+        ],
+        "possible_answers": [
+          "\\(\\mathrm{BFM}\\)",
+          "\\(\\mathrm{EFM}\\)",
+          "\\(\\mathrm{FGC}\\)",
+          "\\(\\mathrm{EHM}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\mathrm{FGC}\\)",
+          "\\(\\mathrm{EFM}\\)",
+          "\\(\\mathrm{EHM}\\)",
+          "\\(\\mathrm{BFM}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "30 cm"
+        ],
+        "possible_answers": [
+          "\\(18~\\mathrm{cm}\\)",
+          "\\(7{,}5~\\mathrm{cm}\\)",
+          "\\(1{,}2~\\mathrm{cm}\\)",
+          "\\(30~\\mathrm{cm}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "cm"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(18~\\mathrm{cm}\\)",
+          "\\(1{,}2~\\mathrm{cm}\\)",
+          "\\(7{,}5~\\mathrm{cm}\\)",
+          "\\(30~\\mathrm{cm}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "18"
+        ],
+        "possible_answers": [
+          "\\(3~\\text{€}\\)",
+          "\\(18~\\text{€}\\)",
+          "\\(35~\\text{€}\\)",
+          "\\(12~\\text{€}\\)"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "€"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(12~\\text{€}\\)",
+          "\\(18~\\text{€}\\)",
+          "\\(3~\\text{€}\\)",
+          "\\(35~\\text{€}\\)"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "7/20",
+        "correctQCMAnswer": "\\(\\dfrac{7}{20}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{2}{20}\\)",
+          "\\(\\dfrac{17}{20}\\)",
+          "\\(\\dfrac{2}{1}\\)",
+          "\\(\\dfrac{7}{20}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "260.21",
+        "correctQCMAnswer": "\\(260{,}21\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(-18{,}79\\)",
+          "\\(307{,}1\\)",
+          "\\(260{,}21\\)",
+          "\\(281\\)"
+        ]
+      },
+      {
+        "correctAnswer": "13",
+        "correctQCMAnswer": "\\(13\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(37\\)",
+          "\\(1\\)",
+          "\\(13\\)",
+          "\\(19\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1+3/100<1,25<1,3<7/4",
+        "correctQCMAnswer": "\\(1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{7}{4}<1+\\dfrac{3}{100}<1{,}25<1{,}3\\)",
+          "\\(1+\\dfrac{3}{100}<1{,}3<1{,}25<\\dfrac{7}{4}\\)",
+          "\\(1+\\dfrac{3}{100}<1{,}25<1{,}3<\\dfrac{7}{4}\\)",
+          "\\(1{,}25<1+\\dfrac{3}{100}<1{,}3<\\dfrac{7}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "9",
+        "correctQCMAnswer": "\\(x=9\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(x=9\\)",
+          "\\(x=\\dfrac{23}{3}\\)",
+          "\\(x=27\\)",
+          "\\(x=7\\)"
+        ]
+      },
+      {
+        "correctAnswer": "-5a-13",
+        "correctQCMAnswer": "\\(-5a-13\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(11a-13\\)",
+          "\\(-5a-13\\)",
+          "\\(-5a-4\\)",
+          "\\(-5a+11\\)"
+        ]
+      },
+      {
+        "correctAnswer": "EFM",
+        "correctQCMAnswer": "\\(\\mathrm{EFM}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\mathrm{FGC}\\)",
+          "\\(\\mathrm{EFM}\\)",
+          "\\(\\mathrm{EHM}\\)",
+          "\\(\\mathrm{BFM}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "30 cm",
+        "correctQCMAnswer": "\\(30~\\mathrm{cm}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(18~\\mathrm{cm}\\)",
+          "\\(1{,}2~\\mathrm{cm}\\)",
+          "\\(7{,}5~\\mathrm{cm}\\)",
+          "\\(30~\\mathrm{cm}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "18",
+        "correctQCMAnswer": "\\(18~\\text{€}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(12~\\text{€}\\)",
+          "\\(18~\\text{€}\\)",
+          "\\(3~\\text{€}\\)",
+          "\\(35~\\text{€}\\)"
+        ]
+      }
+    ]
+  }
+}

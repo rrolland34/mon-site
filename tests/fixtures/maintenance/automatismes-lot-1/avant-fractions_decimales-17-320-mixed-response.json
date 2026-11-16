@@ -1,0 +1,1176 @@
+{
+  "job": {
+    "id": "fractions_decimales",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 475.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=…×110",
+          "left": -77.734375,
+          "right": 397.734375,
+          "width": 475.46875,
+          "height": 91.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,1",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "100",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\ldots \\times \\dfrac{1}{10}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,1",
+        "100",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 379,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=10…",
+          "left": -29.5,
+          "right": 349.5,
+          "width": 379,
+          "height": 90.078125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\dfrac{10}{\\ldots}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,1",
+        "100",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 423.0625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Combien valent 100100 ?",
+          "left": -51.53125,
+          "right": 371.53125,
+          "width": 423.0625,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Combien valent } \\dfrac{100}{100} \\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,1",
+        "100",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 348.40625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer 10×1100",
+          "left": -14.203125,
+          "right": 334.203125,
+          "width": 348.40625,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer } 10 \\times \\dfrac{1}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,1",
+        "100",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 434.015625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 110=…100",
+          "left": -57,
+          "right": 377.015625,
+          "width": 434.015625,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } \\dfrac{1}{10} = \\dfrac{\\ldots}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,1",
+        "100",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 326.703125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer 10×110",
+          "left": -74.34375,
+          "right": 252.359375,
+          "width": 326.703125,
+          "height": 91.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,1",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "100",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Calculer } 10 \\times \\dfrac{1}{10}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,1",
+        "100",
+        "1",
+        "10"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 478.078125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=100×…",
+          "left": -150.03125,
+          "right": 328.046875,
+          "width": 478.078125,
+          "height": 43.21875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1100",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "100",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = 100 \\times \\ldots",
+        "\\dfrac{1}{100}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0",
+        "1",
+        "100"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 441.5,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1…=10100",
+          "left": -60.75,
+          "right": 380.75,
+          "width": 441.5,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } \\dfrac{1}{\\ldots} = \\dfrac{10}{100}",
+        "\\dfrac{1}{100}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0",
+        "1",
+        "100"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 425.765625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=1 000…",
+          "left": -123.875,
+          "right": 301.890625,
+          "width": 425.765625,
+          "height": 90.078125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "100",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1 000",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\dfrac{1~000}{\\ldots}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "100",
+        "1 000",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 393.21875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=…100",
+          "left": -91.609375,
+          "right": 301.609375,
+          "width": 393.21875,
+          "height": 67.3125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\dfrac{\\ldots}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "100",
+        "1 000",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 456.375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=10×…",
+          "left": -139.1875,
+          "right": 317.1875,
+          "width": 456.375,
+          "height": 43.21875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "110",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": -28,
+          "right": 72,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 88,
+          "right": 188,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = 10 \\times \\ldots",
+        "\\dfrac{1}{10}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0",
+        "10",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 455.609375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Combien valent 1 0001 000 ?",
+          "left": -110.796875,
+          "right": 344.8125,
+          "width": 455.609375,
+          "height": 91.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "11 000",
+          "left": 0,
+          "right": 100,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1 000",
+          "left": 116,
+          "right": 216,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0",
+          "left": 0,
+          "right": 100,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 116,
+          "right": 216,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Combien valent } \\dfrac{1~000}{1~000} \\ ?",
+        "\\dfrac{1}{1~000}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 000",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 393.21875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=100…",
+          "left": -36.609375,
+          "right": 356.609375,
+          "width": 393.21875,
+          "height": 90.078125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\dfrac{100}{\\ldots}",
+        "\\dfrac{1}{1~000}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 000",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 425.765625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=…1 000",
+          "left": -107.875,
+          "right": 317.890625,
+          "width": 425.765625,
+          "height": 67.3125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\dfrac{\\ldots}{1~000}",
+        "\\dfrac{1}{1~000}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 000",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 370.109375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer 100×1100",
+          "left": -80.046875,
+          "right": 290.0625,
+          "width": 370.109375,
+          "height": 91.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": -12,
+          "right": 88,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "100",
+          "left": 104,
+          "right": 204,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,01",
+          "left": -12,
+          "right": 88,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": 104,
+          "right": 204,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Calculer } 100 \\times \\dfrac{1}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1",
+        "100",
+        "0,01",
+        "10"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 419.796875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 110=10…",
+          "left": -92.890625,
+          "right": 326.90625,
+          "width": 419.796875,
+          "height": 91.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1 000",
+          "left": 0,
+          "right": 100,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": 116,
+          "right": 216,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 0,
+          "right": 100,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "100",
+          "left": 116,
+          "right": 216,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } \\dfrac{1}{10} = \\dfrac{10}{\\ldots}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 000",
+        "10",
+        "1",
+        "100"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 441.5,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : …10=10100",
+          "left": -60.75,
+          "right": 380.75,
+          "width": 441.5,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } \\dfrac{\\ldots}{10} = \\dfrac{10}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 000",
+        "10",
+        "1",
+        "100"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 401.359375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Combien valent 1010 ?",
+          "left": -40.671875,
+          "right": 360.6875,
+          "width": 401.359375,
+          "height": 91.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "10",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "110",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.46875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Combien valent } \\dfrac{10}{10} \\ ?",
+        "\\dfrac{1}{10}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "10",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 379,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 1=…10",
+          "left": -29.5,
+          "right": 349.5,
+          "width": 379,
+          "height": 67.3125
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 1 = \\dfrac{\\ldots}{10}",
+        "\\dfrac{1}{10}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "10",
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "final": {
+    "score": 10,
+    "count": 19,
+    "questions": [
+      {
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "0,1",
+          "100"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,1",
+          "100",
+          "10",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "100",
+          "\\(\\dfrac{1}{100}\\)",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,1"
+        ],
+        "possible_answers": [
+          "0,1",
+          "1",
+          "10",
+          "0,01"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "10",
+          "0,1",
+          "100"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,1",
+          "100",
+          "1",
+          "10"
+        ]
+      },
+      {
+        "answers": [
+          "1/100"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{100}\\)",
+          "100",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0",
+          "\\(\\dfrac{1}{100}\\)",
+          "1",
+          "100"
+        ]
+      },
+      {
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "100",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1000"
+        ],
+        "possible_answers": [
+          "1000",
+          "100",
+          "10",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "100",
+          "1000",
+          "10",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/10"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{10}\\)",
+          "10",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{10}\\)",
+          "0",
+          "10",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "1000",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{1~000}\\)",
+          "1000",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1000"
+        ],
+        "possible_answers": [
+          "1000",
+          "100",
+          "10",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "100",
+          "0,01",
+          "10"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1",
+          "100",
+          "0,01",
+          "10"
+        ]
+      },
+      {
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1",
+          "1000"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1000",
+          "10",
+          "1",
+          "100"
+        ]
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "10",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "10",
+          "\\(\\dfrac{1}{10}\\)",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "10",
+          "\\(\\dfrac{1}{10}\\)",
+          "0",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

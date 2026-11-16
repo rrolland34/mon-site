@@ -1,6 +1,8 @@
 // DNB, série générale — Centres étrangers — 18 juin 2026.
 import { createRightTriangleSVG } from "../figures/rightTriangle.js";
 import { createCartesianPlaneSVG } from "../figures/cartesianPlaneFigure.js";
+import { presentCentresQuestion } from "../centresPresentation.js";
+import { validateCentresTideDuration } from "../centresTideDuration.js";
 
 // Reprise des déplacements polaires du TikZ actif (et de sa numérotation).
 // Aucun générateur partagé ne décrit ce pavage particulier.
@@ -200,9 +202,10 @@ export default {
       question: `<div><p>Le graphique suivant donne la hauteur d'eau dans le port de Quiberon le 23 juillet 2025.</p><div class="question-display dnb-cartesian-plane">${q9Figure}</div><p>Avec la précision permise par le graphique, donner la durée pendant laquelle la hauteur d'eau dans le port a été supérieure à 4 m.</p></div>`,
       answers: ["4 h 30 min"],
       possible_answers: ["2 h 30 min", "4 h 30 min", "5 h 30 min", "7 h"],
-      answerRule: { type: "duration" },
+      answerRule: { type: "custom", validate: validateCentresTideDuration },
+      qcmAnswerRule: { type: "duration" },
       // Intersections du TikZ : environ 14 h 32 et 19 h 01 (durée 4 h 29).
       display_answer: String.raw`\(4\text{ h }30\text{ min}\) environ.<br>La hauteur dépasse 4 m d'environ 14 h 30 à 19 h, soit une durée d'environ 4 h 30 min.`
     }
-  ]
+  ].map(presentCentresQuestion)
 };

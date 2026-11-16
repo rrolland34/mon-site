@@ -1,3 +1,4 @@
+import { presentPolynesieProQuestion } from "../polynesieProPresentation.js";
 import { formatAnswer } from "../../core/answerFormatting.js";
 import { createRightTriangleSVG } from "../figures/rightTriangle.js";
 
@@ -116,5 +117,5 @@ export default {
         { html: String.raw`\(\text{Résultat prend la valeur }7\times2=${formatAnswer(14, "math")}\text{.}\)<br>\(\text{Le script dit }14\text{ pendant }2\text{ secondes.}\)` }
       ] }
     }
-  ].map(question => ({ ...question, qcmAnswersOrder: [...question.possible_answers] }))
+  ].map(question => ({ ...question, qcmAnswersOrder: [...question.possible_answers] })).map(presentPolynesieProQuestion)
 };

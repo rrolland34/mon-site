@@ -1,0 +1,195 @@
+{
+  "job": {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 459.6875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "801{,}68\\ \\text{hm}=801~680\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 343.953125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "518\\ \\text{km}=\\ldots\\ \\text{dam}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 376.5,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "945{,}52\\ \\text{dam}=\\ldots\\ \\text{m}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 450.046875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "438{,}95\\ \\text{dm}=4{,}389~5\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 380.078125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "263\\ \\text{m}=263~000\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 352.375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "246{,}5\\ \\text{cm}=\\ldots\\ \\text{dm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "dm"
+        ],
+        "possible_answers": [
+          "dm",
+          "m",
+          "cm",
+          "dam"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "51800"
+        ],
+        "possible_answers": [
+          "51 800",
+          "5 180",
+          "518 000",
+          "5,18"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "9455.2"
+        ],
+        "possible_answers": [
+          "9 455,2",
+          "945,52",
+          "94 552",
+          "94,552"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "dam"
+        ],
+        "possible_answers": [
+          "dam",
+          "hm",
+          "m",
+          "km"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "mm"
+        ],
+        "possible_answers": [
+          "mm",
+          "cm",
+          "dm",
+          "m"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "24.65"
+        ],
+        "possible_answers": [
+          "24,65",
+          "2,465",
+          "246,5",
+          "2 465"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

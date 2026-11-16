@@ -1,0 +1,538 @@
+{
+  "job": {
+    "id": "conversions_longueurs",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 394.578125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "74,87 km=748,7 …",
+          "scroll": 416,
+          "client": 395,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -37.28125,
+              "right": 378.265625,
+              "width": 415.546875,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -37.28125,
+              "right": 378.265625,
+              "width": 415.546875,
+              "height": 36
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 333.65625,
+              "right": 366.328125,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -37.28125,
+          "right": 357.296875,
+          "width": 394.578125,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "74{,}87\\ \\text{km}=748{,}7\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "m",
+        "km",
+        "dam",
+        "hm"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 382.515625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "706 dam=7 060 …",
+          "scroll": 391,
+          "client": 383,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -31.25,
+              "right": 360.171875,
+              "width": 391.421875,
+              "height": 31
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -31.25,
+              "right": 360.171875,
+              "width": 391.421875,
+              "height": 30
+            }
+          ],
+          "left": -31.25,
+          "right": 351.265625,
+          "width": 382.515625,
+          "height": 35.6875
+        }
+      ],
+      "math": [
+        "706\\ \\text{dam}=7~060\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "dam",
+        "hm",
+        "dm",
+        "m"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 400.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "206,73 dam=… dm",
+          "scroll": 410,
+          "client": 401,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -40.3125,
+              "right": 369.734375,
+              "width": 410.046875,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -40.3125,
+              "right": 369.734375,
+              "width": 410.046875,
+              "height": 36
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 309.5,
+              "right": 369.734375,
+              "width": 60.234375,
+              "height": 30
+            }
+          ],
+          "left": -40.3125,
+          "right": 360.328125,
+          "width": 400.640625,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "206{,}73\\ \\text{dam}=\\ldots\\ \\text{dm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "dam",
+        "hm",
+        "dm",
+        "m"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 345.171875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "776 dam=… dm",
+          "scroll": 346,
+          "client": 345,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -12.578125,
+              "right": 333.28125,
+              "width": 345.859375,
+              "height": 31
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -12.578125,
+              "right": 333.28125,
+              "width": 345.859375,
+              "height": 30
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 273.046875,
+              "right": 333.28125,
+              "width": 60.234375,
+              "height": 30
+            }
+          ],
+          "left": -12.578125,
+          "right": 332.59375,
+          "width": 345.171875,
+          "height": 35.6875
+        }
+      ],
+      "math": [
+        "776\\ \\text{dam}=\\ldots\\ \\text{dm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "dam",
+        "hm",
+        "dm",
+        "m"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 374.078125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "56,02 cm=… dam",
+          "scroll": 381,
+          "client": 374,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -27.03125,
+              "right": 354.03125,
+              "width": 381.0625,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -27.03125,
+              "right": 354.03125,
+              "width": 381.0625,
+              "height": 36
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 272.59375,
+              "right": 354.03125,
+              "width": 81.4375,
+              "height": 30
+            }
+          ],
+          "left": -27.03125,
+          "right": 347.046875,
+          "width": 374.078125,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "56{,}02\\ \\text{cm}=\\ldots\\ \\text{dam}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,560 2",
+        "0,005 602",
+        "0,056 02",
+        "56 020"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 425.90625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "958,38 m=9,583 8 …",
+          "scroll": 443,
+          "client": 426,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -52.953125,
+              "right": 390.3125,
+              "width": 443.265625,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -52.953125,
+              "right": 390.3125,
+              "width": 443.265625,
+              "height": 36
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 345.703125,
+              "right": 378.375,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -52.953125,
+          "right": 372.953125,
+          "width": 425.90625,
+          "height": 39.34375
+        }
+      ],
+      "math": [
+        "958{,}38\\ \\text{m}=9{,}583~8\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,560 2",
+        "0,005 602",
+        "0,056 02",
+        "56 020"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "hm"
+        ],
+        "possible_answers": [
+          "hm",
+          "km",
+          "dam",
+          "m"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "m",
+          "km",
+          "dam",
+          "hm"
+        ]
+      },
+      {
+        "answers": [
+          "m"
+        ],
+        "possible_answers": [
+          "m",
+          "dam",
+          "dm",
+          "hm"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "dam",
+          "hm",
+          "dm",
+          "m"
+        ]
+      },
+      {
+        "answers": [
+          "20673"
+        ],
+        "possible_answers": [
+          "20 673",
+          "2 067,3",
+          "206 730",
+          "2,067 3"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "77600"
+        ],
+        "possible_answers": [
+          "77 600",
+          "7 760",
+          "776 000",
+          "7,76"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.05602"
+        ],
+        "possible_answers": [
+          "0,056 02",
+          "0,005 602",
+          "0,560 2",
+          "56 020"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,560 2",
+          "0,005 602",
+          "0,056 02",
+          "56 020"
+        ]
+      },
+      {
+        "answers": [
+          "hm"
+        ],
+        "possible_answers": [
+          "hm",
+          "km",
+          "dam",
+          "m"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "hm",
+        "correctQCMAnswer": "hm",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "m",
+          "km",
+          "dam",
+          "hm"
+        ]
+      },
+      {
+        "correctAnswer": "m",
+        "correctQCMAnswer": "m",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "dam",
+          "hm",
+          "dm",
+          "m"
+        ]
+      },
+      {
+        "correctAnswer": "20673",
+        "correctQCMAnswer": "20673",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "77600",
+        "correctQCMAnswer": "77600",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0.05602",
+        "correctQCMAnswer": "0,056 02",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,560 2",
+          "0,005 602",
+          "0,056 02",
+          "56 020"
+        ]
+      },
+      {
+        "correctAnswer": "hm",
+        "correctQCMAnswer": "hm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

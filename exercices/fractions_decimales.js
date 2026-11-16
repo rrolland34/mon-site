@@ -1,5 +1,7 @@
 // exercices/fractions_decimales.js
 
+import { decimalFractionPrompt, presentDecimalFractionQuestion } from "./decimalFractionPresentation.js";
+
 export default {
   title:
     "Fractions décimales",
@@ -7,7 +9,7 @@ export default {
   questions: [
     {
       question:
-        "\\(\\text{Combien valent } \\dfrac{10}{10} \\ ?\\)",
+        decimalFractionPrompt("Combien valent", String.raw`\dfrac{10}{10} \ ?`),
 
       answers: [
         "1"
@@ -27,7 +29,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Combien valent } \\dfrac{100}{100} \\ ?\\)",
+        decimalFractionPrompt("Combien valent", String.raw`\dfrac{100}{100} \ ?`),
 
       answers: [
         "1"
@@ -47,7 +49,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Combien valent } \\dfrac{1~000}{1~000} \\ ?\\)",
+        decimalFractionPrompt("Combien valent", String.raw`\dfrac{1~000}{1~000} \ ?`),
 
       answers: [
         "1"
@@ -67,7 +69,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\dfrac{\\ldots}{10}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \dfrac{\ldots}{10}`),
 
       answers: [
         "10"
@@ -87,7 +89,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\dfrac{10}{\\ldots}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \dfrac{10}{\ldots}`),
 
       answers: [
         "10"
@@ -107,7 +109,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\dfrac{\\ldots}{100}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \dfrac{\ldots}{100}`),
 
       answers: [
         "100"
@@ -127,7 +129,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\dfrac{100}{\\ldots}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \dfrac{100}{\ldots}`),
 
       answers: [
         "100"
@@ -147,7 +149,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\dfrac{\\ldots}{1~000}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \dfrac{\ldots}{1~000}`),
 
       answers: [
         "1000"
@@ -167,7 +169,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\dfrac{1~000}{\\ldots}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \dfrac{1~000}{\ldots}`),
 
       answers: [
         "1000"
@@ -187,7 +189,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } \\dfrac{\\ldots}{10} = \\dfrac{10}{100}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`\dfrac{\ldots}{10} = \dfrac{10}{100}`),
 
       answers: [
         "1"
@@ -207,7 +209,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } \\dfrac{1}{\\ldots} = \\dfrac{10}{100}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`\dfrac{1}{\ldots} = \dfrac{10}{100}`),
 
       answers: [
         "10"
@@ -227,7 +229,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } \\dfrac{1}{10} = \\dfrac{\\ldots}{100}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`\dfrac{1}{10} = \dfrac{\ldots}{100}`),
 
       answers: [
         "10"
@@ -247,7 +249,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } \\dfrac{1}{10} = \\dfrac{10}{\\ldots}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`\dfrac{1}{10} = \dfrac{10}{\ldots}`),
 
       answers: [
         "100"
@@ -267,7 +269,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Calculer } 10 \\times \\dfrac{1}{10}\\)",
+        decimalFractionPrompt("Calculer", String.raw`10 \times \dfrac{1}{10}`),
 
       answers: [
         "1"
@@ -287,7 +289,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = 10 \\times \\ldots\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = 10 \times \ldots`),
 
       answers: [
         "1/10"
@@ -310,7 +312,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = \\ldots \\times \\dfrac{1}{10}\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = \ldots \times \dfrac{1}{10}`),
 
       answers: [
         "10"
@@ -330,7 +332,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Calculer } 100 \\times \\dfrac{1}{100}\\)",
+        decimalFractionPrompt("Calculer", String.raw`100 \times \dfrac{1}{100}`),
 
       answers: [
         "1"
@@ -350,7 +352,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Compléter : } 1 = 100 \\times \\ldots\\)",
+        decimalFractionPrompt("Compléter :", String.raw`1 = 100 \times \ldots`),
 
       answers: [
         "1/100"
@@ -373,7 +375,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Calculer } 10 \\times \\dfrac{1}{100}\\)",
+        decimalFractionPrompt("Calculer", String.raw`10 \times \dfrac{1}{100}`),
 
       answers: [
         "0,1"
@@ -390,5 +392,5 @@ export default {
         type: "simplifiedValue"
       }
     }
-  ]
+  ].map(presentDecimalFractionQuestion)
 };

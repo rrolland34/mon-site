@@ -1,0 +1,722 @@
+[
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 413,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 440,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 413,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 413,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 413,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 765,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 765,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 765,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 765,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 849,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 849,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 849,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 849,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 1440,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 1440,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 613,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 1440,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 1440,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 613,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 613,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 613,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 413,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 413,
+    "maxMath": 459.6875
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 407,
+    "maxMath": 445.1875
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 407,
+    "maxMath": 445.1875
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 738,
+    "maxMath": 1155.546875
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 407,
+    "maxMath": 425.90625
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "conversions_longueurs",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 407,
+    "maxMath": 425.90625
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 720,
+    "maxMath": 1119.375
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 720,
+    "maxMath": 1119.375
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "perimetres_et_disques",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 822,
+    "maxMath": 1323.078125
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  },
+  {
+    "id": "aires_et_unites",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 23,
+    "maxDocument": 586,
+    "maxMath": 851.109375
+  }
+]

@@ -1,4 +1,5 @@
 import { scratchStatement, scratchFinalFigure } from '../../core/scratch/scratchStaticContent.js';
+import { presentScratchFigureQuestion } from '../scratchFiguresPresentation.js';
 
 const flag = () => ({id:'drapeau',op:'whenGreenFlagClicked'});
 const origin = () => ({id:'origine',op:'goTo',x:0,y:0});
@@ -51,5 +52,5 @@ export default {
       display_answer:`<span>${conclusion}</span><br>${scratchFinalFigure(program,answer)}`,
       progressiveCorrection:{kind:'scratch',program,conclusion,showAxes:[1,2,7].includes(index)}
     };
-  })
+  }).map(presentScratchFigureQuestion)
 };

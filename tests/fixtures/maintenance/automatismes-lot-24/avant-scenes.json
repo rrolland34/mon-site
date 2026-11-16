@@ -1,0 +1,32 @@
+[
+  {
+    "seed": 17,
+    "width": 320,
+    "states": 128
+  },
+  {
+    "seed": 17,
+    "width": 375,
+    "states": 128
+  },
+  {
+    "seed": 2026,
+    "width": 320,
+    "states": 160
+  },
+  {
+    "seed": 2026,
+    "width": 375,
+    "states": 160
+  },
+  {
+    "seed": 98765,
+    "width": 320,
+    "states": 160
+  },
+  {
+    "seed": 98765,
+    "width": 375,
+    "states": 160
+  }
+]

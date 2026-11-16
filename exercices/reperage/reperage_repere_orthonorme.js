@@ -1,5 +1,7 @@
 // exercices/reperage/reperage_repere_orthonorme.js
 
+import { presentCoordinatesQuestion } from "../coordinatesPresentation.js";
+
 import {
   createCartesianPlaneSVG
 } from "../figures/cartesianPlaneFigure.js";
@@ -207,7 +209,7 @@ const figureConfig = {
     600,
 
   height:
-    400,
+    595,
 
 
   padding: {
@@ -307,6 +309,13 @@ const figureConfig = {
 };
 
 
+function createOrthonormalPlane() {
+  return createCartesianPlaneSVG(figureConfig).replace(
+    'class="cartesian-plane"',
+    'class="cartesian-plane" data-orthonormal-plane="true" style="width:100%;max-width:560px;height:auto"'
+  );
+}
+
 function generateQuestions() {
 
   /*
@@ -349,54 +358,34 @@ function generateQuestions() {
 
 
   const figureA =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureB =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureC =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureD =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureE =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureF =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureG =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureH =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureI =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
   const figureJ =
-    createCartesianPlaneSVG(
-      figureConfig
-    );
+    createOrthonormalPlane();
 
 
   const qcmPointsA =
@@ -1211,7 +1200,7 @@ function generateQuestions() {
     question8,
     question9,
     question10
-  ];
+  ].map(question => ({ ...presentCoordinatesQuestion(question), exportCartesianFigure: true }));
 }
 
 

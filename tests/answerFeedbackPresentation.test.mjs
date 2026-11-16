@@ -22,7 +22,8 @@ test("validation : réussite, erreur et réponse vide, Direct/QCM/point", () => 
         assert.equal(feedback.style.color, CORRECTION_RED_CSS);
         if (answerMode === "direct" || (!isNotAnswered && answerMode === "point")) {
           assert.match(feedback.innerHTML, /answer-feedback-message/);
-          assert.match(feedback.innerHTML, /Réponse attendue :/);
+          assert.match(feedback.innerHTML, /Réponse :/);
+          assert.doesNotMatch(feedback.innerHTML, /Réponse attendue/);
         } else assert.equal(feedback.textContent, isNotAnswered ? "Réponse non saisie." : "Réponse incorrecte !");
       }
     }
@@ -41,5 +42,6 @@ test("validation : fraction 8/100, unités, formatage et masquage de la réponse
     const feedback = feedbackDOM();
     displayAnswerFeedback({ isCorrect: false, answerMode: "direct", correctAnswer: "0.08", showCorrectAnswer: false });
     assert.doesNotMatch(feedback.innerHTML, /Réponse attendue/);
+    assert.doesNotMatch(feedback.innerHTML, /answer-feedback-expected|Réponse :/);
   } finally { delete globalThis.document; }
 });

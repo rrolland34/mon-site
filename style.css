@@ -118,8 +118,51 @@ body {
   flex-shrink: 0;
 }
 
+/* Le repli des consignes ne doit pas rétrécir les SVG des fractions. */
+.flash-reader .fraction-figure-question .question-with-figure svg {
+  flex-shrink: 0;
+}
+
 .question-display p {
   margin: 0 0 5px;
+}
+
+.flash-reader #question > :is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question),
+.flash-reader #question > div:has(.decimal-order) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .flash-reader #question > :is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question),
+  .flash-reader #question .decimal-order,
+  .flash-reader #multi-answer-container .decimal-enclosure-number {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+
+  /* Garder les décompositions corrigées entières sur les petits écrans. */
+  .flash-reader:has(.numeration-question) #feedback,
+  .flash-reader:has(.numeration-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+  }
+
+  .flash-reader:has(.fraction-quantity-question) #feedback,
+  .flash-reader:has(.fraction-quantity-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1.125rem, 5.5vw, 1.375rem);
+  }
+
+  .flash-reader:has(:is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question)) #mode-control,
+  .flash-reader:has(:is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question)) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .flash-reader:has(:is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question)) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
 }
 
 .two-line-question {
@@ -1100,4 +1143,160 @@ button {
 }
 @media (max-width: 1199px) {
   .catalog-page .nav-list { flex-wrap: wrap; gap: 12px; }
+}
+
+/* Lot 4 : repli local, tableaux HTML 2 × 4 et contrôles natifs conservés. */
+.flash-reader #question > .proportionality-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.flash-reader .proportionality-question .two-line-question > div {
+  max-width: 100%;
+  min-width: 0;
+}
+.flash-reader .proportionality-question .proportionality-table {
+  width: 440px;
+  max-width: 100%;
+}
+.flash-reader .proportionality-question .proportionality-table td {
+  width: 25%;
+}
+.flash-reader:has(.proportionality-question) #multi-answer-container {
+  max-width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+.flash-reader:has(.proportionality-question) #multi-answer-container label {
+  max-width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flash-reader:has(.proportionality-question) .multi-answer-input {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .proportionality-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader .proportionality-question .proportionality-table td {
+    font-size: 1em;
+    padding: 0 3px;
+  }
+  .flash-reader:has(.proportionality-question) #feedback,
+  .flash-reader:has(.proportionality-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1.125rem, 5.5vw, 1.375rem);
+  }
+  .flash-reader:has(.proportionality-question) #mode-control,
+  .flash-reader:has(.proportionality-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.proportionality-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Lot 5 : styles limités aux quatre séries de mesures. */
+.flash-reader #question > .measure-question {
+  min-width: 0;
+  max-width: 100%;
+}
+.flash-reader .measure-question .question-with-figure svg {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .measure-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.measure-question) #mode-control,
+  .flash-reader:has(.measure-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.measure-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Sous-lot 5b : vitesse, durée et horaire ; SVG et contrôles natifs conservés. */
+.flash-reader #question > .speed-time-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .speed-time-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.speed-time-question) #mode-control,
+  .flash-reader:has(.speed-time-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.speed-time-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Lot 6 : expressions et consignes de puissances, sans changement des contrôles. */
+.flash-reader #question > .powers-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .powers-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.powers-question) #feedback,
+  .flash-reader:has(.powers-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1.125rem, 5.5vw, 1.375rem);
+  }
+  .flash-reader:has(.powers-question) #mode-control,
+  .flash-reader:has(.powers-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.powers-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Lot 7 : consignes du repérage ; la géométrie du SVG reste native. */
+.flash-reader #question > .coordinates-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .coordinates-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.coordinates-question) #mode-control,
+  .flash-reader:has(.coordinates-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.coordinates-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
 }

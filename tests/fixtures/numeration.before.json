@@ -1,0 +1,3629 @@
+[
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "title": "Multiplier par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 243\\times 1~000\\)",
+        "answers": [
+          "243000"
+        ],
+        "possible_answers": [
+          "243000",
+          "243",
+          "24300",
+          "2430000"
+        ],
+        "display_answer": "\\(243~000\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 460\\times 10\\)",
+        "answers": [
+          "4600"
+        ],
+        "possible_answers": [
+          "4600",
+          "460",
+          "46000",
+          "46"
+        ],
+        "display_answer": "\\(4~600\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 333{,}671\\times 1~000\\)",
+        "answers": [
+          "333671"
+        ],
+        "possible_answers": [
+          "333671",
+          "333.671",
+          "33367.1",
+          "3336710"
+        ],
+        "display_answer": "\\(333~671\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 156{,}6\\times 10\\)",
+        "answers": [
+          "1566"
+        ],
+        "possible_answers": [
+          "1566",
+          "156.6",
+          "15660",
+          "15.66"
+        ],
+        "display_answer": "\\(1~566\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 38{,}221\\times 100\\)",
+        "answers": [
+          "3822.1"
+        ],
+        "possible_answers": [
+          "3822.1",
+          "38.221",
+          "382.21",
+          "38221"
+        ],
+        "display_answer": "\\(3~822{,}1\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 66\\times 1~000\\)",
+        "answers": [
+          "66000"
+        ],
+        "possible_answers": [
+          "66000",
+          "66",
+          "6600",
+          "660000"
+        ],
+        "display_answer": "\\(66~000\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 438\\times 10\\)",
+        "answers": [
+          "4380"
+        ],
+        "possible_answers": [
+          "4380",
+          "438",
+          "43800",
+          "43.8"
+        ],
+        "display_answer": "\\(4~380\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 460{,}72\\times 100\\)",
+        "answers": [
+          "46072"
+        ],
+        "possible_answers": [
+          "46072",
+          "460.72",
+          "4607.2",
+          "460720"
+        ],
+        "display_answer": "\\(46~072\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 110{,}8\\times 10\\)",
+        "answers": [
+          "1108"
+        ],
+        "possible_answers": [
+          "1108",
+          "110.8",
+          "11080",
+          "11.08"
+        ],
+        "display_answer": "\\(1~108\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 1{,}776\\times 100\\)",
+        "answers": [
+          "177.6"
+        ],
+        "possible_answers": [
+          "177.6",
+          "1.776",
+          "17.76",
+          "1776"
+        ],
+        "display_answer": "\\(177{,}6\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 3333855875
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 2026,
+    "title": "Multiplier par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 22\\times 10\\)",
+        "answers": [
+          "220"
+        ],
+        "possible_answers": [
+          "220",
+          "22",
+          "2200",
+          "2.2"
+        ],
+        "display_answer": "\\(220\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 39\\times 100\\)",
+        "answers": [
+          "3900"
+        ],
+        "possible_answers": [
+          "3900",
+          "39",
+          "390",
+          "39000"
+        ],
+        "display_answer": "\\(3~900\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 484{,}62\\times 100\\)",
+        "answers": [
+          "48462"
+        ],
+        "possible_answers": [
+          "48462",
+          "484.62",
+          "4846.2",
+          "484620"
+        ],
+        "display_answer": "\\(48~462\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 165{,}972\\times 1~000\\)",
+        "answers": [
+          "165972"
+        ],
+        "possible_answers": [
+          "165972",
+          "165.972",
+          "16597.2",
+          "1659720"
+        ],
+        "display_answer": "\\(165~972\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 17{,}73\\times 10\\)",
+        "answers": [
+          "177.3"
+        ],
+        "possible_answers": [
+          "177.3",
+          "17.73",
+          "1773",
+          "1.773"
+        ],
+        "display_answer": "\\(177{,}3\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 268\\times 100\\)",
+        "answers": [
+          "26800"
+        ],
+        "possible_answers": [
+          "26800",
+          "268",
+          "2680",
+          "268000"
+        ],
+        "display_answer": "\\(26~800\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 823\\times 1~000\\)",
+        "answers": [
+          "823000"
+        ],
+        "possible_answers": [
+          "823000",
+          "823",
+          "82300",
+          "8230000"
+        ],
+        "display_answer": "\\(823~000\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 316{,}3\\times 10\\)",
+        "answers": [
+          "3163"
+        ],
+        "possible_answers": [
+          "3163",
+          "316.3",
+          "31630",
+          "31.63"
+        ],
+        "display_answer": "\\(3~163\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 833{,}292\\times 1~000\\)",
+        "answers": [
+          "833292"
+        ],
+        "possible_answers": [
+          "833292",
+          "833.292",
+          "83329.2",
+          "8332920"
+        ],
+        "display_answer": "\\(833~292\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 86{,}375\\times 100\\)",
+        "answers": [
+          "8637.5"
+        ],
+        "possible_answers": [
+          "8637.5",
+          "86.375",
+          "863.75",
+          "86375"
+        ],
+        "display_answer": "\\(8~637{,}5\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 1609312548
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 98765,
+    "title": "Multiplier par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 513\\times 100\\)",
+        "answers": [
+          "51300"
+        ],
+        "possible_answers": [
+          "51300",
+          "513",
+          "5130",
+          "513000"
+        ],
+        "display_answer": "\\(51~300\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 33\\times 100\\)",
+        "answers": [
+          "3300"
+        ],
+        "possible_answers": [
+          "3300",
+          "33",
+          "330",
+          "33000"
+        ],
+        "display_answer": "\\(3~300\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 286{,}716\\times 1~000\\)",
+        "answers": [
+          "286716"
+        ],
+        "possible_answers": [
+          "286716",
+          "286.716",
+          "28671.6",
+          "2867160"
+        ],
+        "display_answer": "\\(286~716\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 758{,}48\\times 100\\)",
+        "answers": [
+          "75848"
+        ],
+        "possible_answers": [
+          "75848",
+          "758.48",
+          "7584.8",
+          "758480"
+        ],
+        "display_answer": "\\(75~848\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 21{,}32\\times 10\\)",
+        "answers": [
+          "213.2"
+        ],
+        "possible_answers": [
+          "213.2",
+          "21.32",
+          "2132",
+          "2.132"
+        ],
+        "display_answer": "\\(213{,}2\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 153\\times 1~000\\)",
+        "answers": [
+          "153000"
+        ],
+        "possible_answers": [
+          "153000",
+          "153",
+          "15300",
+          "1530000"
+        ],
+        "display_answer": "\\(153~000\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 410\\times 1~000\\)",
+        "answers": [
+          "410000"
+        ],
+        "possible_answers": [
+          "410000",
+          "410",
+          "41000",
+          "4100000"
+        ],
+        "display_answer": "\\(410~000\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 54{,}54\\times 100\\)",
+        "answers": [
+          "5454"
+        ],
+        "possible_answers": [
+          "5454",
+          "54.54",
+          "545.4",
+          "54540"
+        ],
+        "display_answer": "\\(5~454\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 332{,}932\\times 1~000\\)",
+        "answers": [
+          "332932"
+        ],
+        "possible_answers": [
+          "332932",
+          "332.932",
+          "33293.2",
+          "3329320"
+        ],
+        "display_answer": "\\(332~932\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 80{,}737\\times 100\\)",
+        "answers": [
+          "8073.7"
+        ],
+        "possible_answers": [
+          "8073.7",
+          "80.737",
+          "807.37",
+          "80737"
+        ],
+        "display_answer": "\\(8~073{,}7\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 3167226399
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "title": "Diviser par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 243\\div 1~000\\)",
+        "answers": [
+          "0.243"
+        ],
+        "possible_answers": [
+          "0.243",
+          "243",
+          "2.43",
+          "0.0243"
+        ],
+        "display_answer": "\\(0{,}243\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 460\\div 10\\)",
+        "answers": [
+          "46"
+        ],
+        "possible_answers": [
+          "46",
+          "460",
+          "4.6",
+          "4600"
+        ],
+        "display_answer": "\\(46\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 333{,}7\\div 1~000\\)",
+        "answers": [
+          "0.3337"
+        ],
+        "possible_answers": [
+          "0.3337",
+          "333.7",
+          "3.337",
+          "0.03337"
+        ],
+        "display_answer": "\\(0{,}333~7\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 156{,}56\\div 10\\)",
+        "answers": [
+          "15.656"
+        ],
+        "possible_answers": [
+          "15.656",
+          "156.56",
+          "1.5656",
+          "1565.6"
+        ],
+        "display_answer": "\\(15{,}656\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 379{,}221\\div 100\\)",
+        "answers": [
+          "3.79221"
+        ],
+        "possible_answers": [
+          "3.79221",
+          "379.221",
+          "37.9221",
+          "0.379221"
+        ],
+        "display_answer": "\\(3{,}792~21\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 66\\div 1~000\\)",
+        "answers": [
+          "0.066"
+        ],
+        "possible_answers": [
+          "0.066",
+          "66",
+          "0.66",
+          "0.0066"
+        ],
+        "display_answer": "\\(0{,}066\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 438\\div 10\\)",
+        "answers": [
+          "43.8"
+        ],
+        "possible_answers": [
+          "43.8",
+          "438",
+          "4.38",
+          "4380"
+        ],
+        "display_answer": "\\(43{,}8\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 460{,}7\\div 100\\)",
+        "answers": [
+          "4.607"
+        ],
+        "possible_answers": [
+          "4.607",
+          "460.7",
+          "46.07",
+          "0.4607"
+        ],
+        "display_answer": "\\(4{,}607\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 110{,}79\\div 10\\)",
+        "answers": [
+          "11.079"
+        ],
+        "possible_answers": [
+          "11.079",
+          "110.79",
+          "1.1079",
+          "1107.9"
+        ],
+        "display_answer": "\\(11{,}079\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 9{,}776\\div 100\\)",
+        "answers": [
+          "0.09776"
+        ],
+        "possible_answers": [
+          "0.09776",
+          "9.776",
+          "0.9776",
+          "0.009776"
+        ],
+        "display_answer": "\\(0{,}097~76\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 3333855875
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 2026,
+    "title": "Diviser par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 22\\div 10\\)",
+        "answers": [
+          "2.2"
+        ],
+        "possible_answers": [
+          "2.2",
+          "22",
+          "0.22",
+          "220"
+        ],
+        "display_answer": "\\(2{,}2\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 39\\div 100\\)",
+        "answers": [
+          "0.39"
+        ],
+        "possible_answers": [
+          "0.39",
+          "39",
+          "3.9",
+          "0.039"
+        ],
+        "display_answer": "\\(0{,}39\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 484{,}6\\div 100\\)",
+        "answers": [
+          "4.846"
+        ],
+        "possible_answers": [
+          "4.846",
+          "484.6",
+          "48.46",
+          "0.4846"
+        ],
+        "display_answer": "\\(4{,}846\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 165{,}97\\div 1~000\\)",
+        "answers": [
+          "0.16597"
+        ],
+        "possible_answers": [
+          "0.16597",
+          "165.97",
+          "1.6597",
+          "0.016597"
+        ],
+        "display_answer": "\\(0{,}165~97\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 167{,}734\\div 10\\)",
+        "answers": [
+          "16.7734"
+        ],
+        "possible_answers": [
+          "16.7734",
+          "167.734",
+          "1.67734",
+          "1677.34"
+        ],
+        "display_answer": "\\(16{,}773~4\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 268\\div 100\\)",
+        "answers": [
+          "2.68"
+        ],
+        "possible_answers": [
+          "2.68",
+          "268",
+          "26.8",
+          "0.268"
+        ],
+        "display_answer": "\\(2{,}68\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 823\\div 1~000\\)",
+        "answers": [
+          "0.823"
+        ],
+        "possible_answers": [
+          "0.823",
+          "823",
+          "8.23",
+          "0.0823"
+        ],
+        "display_answer": "\\(0{,}823\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 316{,}3\\div 10\\)",
+        "answers": [
+          "31.63"
+        ],
+        "possible_answers": [
+          "31.63",
+          "316.3",
+          "3.163",
+          "3163"
+        ],
+        "display_answer": "\\(31{,}63\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 833{,}29\\div 1~000\\)",
+        "answers": [
+          "0.83329"
+        ],
+        "possible_answers": [
+          "0.83329",
+          "833.29",
+          "8.3329",
+          "0.083329"
+        ],
+        "display_answer": "\\(0{,}833~29\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 860{,}375\\div 100\\)",
+        "answers": [
+          "8.60375"
+        ],
+        "possible_answers": [
+          "8.60375",
+          "860.375",
+          "86.0375",
+          "0.860375"
+        ],
+        "display_answer": "\\(8{,}603~75\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 1609312548
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 98765,
+    "title": "Diviser par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 513\\div 100\\)",
+        "answers": [
+          "5.13"
+        ],
+        "possible_answers": [
+          "5.13",
+          "513",
+          "51.3",
+          "0.513"
+        ],
+        "display_answer": "\\(5{,}13\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 33\\div 100\\)",
+        "answers": [
+          "0.33"
+        ],
+        "possible_answers": [
+          "0.33",
+          "33",
+          "3.3",
+          "0.033"
+        ],
+        "display_answer": "\\(0{,}33\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 286{,}7\\div 1~000\\)",
+        "answers": [
+          "0.2867"
+        ],
+        "possible_answers": [
+          "0.2867",
+          "286.7",
+          "2.867",
+          "0.02867"
+        ],
+        "display_answer": "\\(0{,}286~7\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 758{,}48\\div 100\\)",
+        "answers": [
+          "7.5848"
+        ],
+        "possible_answers": [
+          "7.5848",
+          "758.48",
+          "75.848",
+          "0.75848"
+        ],
+        "display_answer": "\\(7{,}584~8\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 212{,}314\\div 10\\)",
+        "answers": [
+          "21.2314"
+        ],
+        "possible_answers": [
+          "21.2314",
+          "212.314",
+          "2.12314",
+          "2123.14"
+        ],
+        "display_answer": "\\(21{,}231~4\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 153\\div 1~000\\)",
+        "answers": [
+          "0.153"
+        ],
+        "possible_answers": [
+          "0.153",
+          "153",
+          "1.53",
+          "0.0153"
+        ],
+        "display_answer": "\\(0{,}153\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 410\\div 1~000\\)",
+        "answers": [
+          "0.41"
+        ],
+        "possible_answers": [
+          "0.41",
+          "410",
+          "4.1",
+          "0.041"
+        ],
+        "display_answer": "\\(0{,}41\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 54{,}5\\div 100\\)",
+        "answers": [
+          "0.545"
+        ],
+        "possible_answers": [
+          "0.545",
+          "54.5",
+          "5.45",
+          "0.0545"
+        ],
+        "display_answer": "\\(0{,}545\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 332{,}93\\div 1~000\\)",
+        "answers": [
+          "0.33293"
+        ],
+        "possible_answers": [
+          "0.33293",
+          "332.93",
+          "3.3293",
+          "0.033293"
+        ],
+        "display_answer": "\\(0{,}332~93\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 798{,}737\\div 100\\)",
+        "answers": [
+          "7.98737"
+        ],
+        "possible_answers": [
+          "7.98737",
+          "798.737",
+          "79.8737",
+          "0.798737"
+        ],
+        "display_answer": "\\(7{,}987~37\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 3167226399
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "title": "Multiplier ou diviser par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 243\\times 1~000\\)",
+        "answers": [
+          "243000"
+        ],
+        "possible_answers": [
+          "243000",
+          "243",
+          "24300",
+          "2430000"
+        ],
+        "display_answer": "\\(243~000\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 460\\div 10\\)",
+        "answers": [
+          "46"
+        ],
+        "possible_answers": [
+          "46",
+          "460",
+          "4.6",
+          "4600"
+        ],
+        "display_answer": "\\(46\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 333{,}671\\times 1~000\\)",
+        "answers": [
+          "333671"
+        ],
+        "possible_answers": [
+          "333671",
+          "333.671",
+          "33367.1",
+          "3336710"
+        ],
+        "display_answer": "\\(333~671\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 156{,}56\\div 10\\)",
+        "answers": [
+          "15.656"
+        ],
+        "possible_answers": [
+          "15.656",
+          "156.56",
+          "1.5656",
+          "1565.6"
+        ],
+        "display_answer": "\\(15{,}656\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 38{,}221\\times 100\\)",
+        "answers": [
+          "3822.1"
+        ],
+        "possible_answers": [
+          "3822.1",
+          "38.221",
+          "382.21",
+          "38221"
+        ],
+        "display_answer": "\\(3~822{,}1\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 888{,}4\\div 10\\)",
+        "answers": [
+          "88.84"
+        ],
+        "possible_answers": [
+          "88.84",
+          "888.4",
+          "8.884",
+          "8884"
+        ],
+        "display_answer": "\\(88{,}84\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 312\\times 100\\)",
+        "answers": [
+          "31200"
+        ],
+        "possible_answers": [
+          "31200",
+          "312",
+          "3120",
+          "312000"
+        ],
+        "display_answer": "\\(31~200\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 460\\div 1~000\\)",
+        "answers": [
+          "0.46"
+        ],
+        "possible_answers": [
+          "0.46",
+          "460",
+          "4.6",
+          "0.046"
+        ],
+        "display_answer": "\\(0{,}46\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 110{,}8\\times 10\\)",
+        "answers": [
+          "1108"
+        ],
+        "possible_answers": [
+          "1108",
+          "110.8",
+          "11080",
+          "11.08"
+        ],
+        "display_answer": "\\(1~108\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 9{,}77\\div 100\\)",
+        "answers": [
+          "0.0977"
+        ],
+        "possible_answers": [
+          "0.0977",
+          "9.77",
+          "0.977",
+          "0.00977"
+        ],
+        "display_answer": "\\(0{,}097~7\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 65{,}22\\times 10\\)",
+        "answers": [
+          "652.2"
+        ],
+        "possible_answers": [
+          "652.2",
+          "65.22",
+          "6522",
+          "6.522"
+        ],
+        "display_answer": "\\(652{,}2\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 333{,}6\\div 100\\)",
+        "answers": [
+          "3.336"
+        ],
+        "possible_answers": [
+          "3.336",
+          "333.6",
+          "33.36",
+          "0.3336"
+        ],
+        "display_answer": "\\(3{,}336\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 2831375665
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 2026,
+    "title": "Multiplier ou diviser par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 22\\times 10\\)",
+        "answers": [
+          "220"
+        ],
+        "possible_answers": [
+          "220",
+          "22",
+          "2200",
+          "2.2"
+        ],
+        "display_answer": "\\(220\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 39\\div 100\\)",
+        "answers": [
+          "0.39"
+        ],
+        "possible_answers": [
+          "0.39",
+          "39",
+          "3.9",
+          "0.039"
+        ],
+        "display_answer": "\\(0{,}39\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 484{,}62\\times 100\\)",
+        "answers": [
+          "48462"
+        ],
+        "possible_answers": [
+          "48462",
+          "484.62",
+          "4846.2",
+          "484620"
+        ],
+        "display_answer": "\\(48~462\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 165{,}97\\div 1~000\\)",
+        "answers": [
+          "0.16597"
+        ],
+        "possible_answers": [
+          "0.16597",
+          "165.97",
+          "1.6597",
+          "0.016597"
+        ],
+        "display_answer": "\\(0{,}165~97\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 17{,}73\\times 10\\)",
+        "answers": [
+          "177.3"
+        ],
+        "possible_answers": [
+          "177.3",
+          "17.73",
+          "1773",
+          "1.773"
+        ],
+        "display_answer": "\\(177{,}3\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 597{,}8\\div 10\\)",
+        "answers": [
+          "59.78"
+        ],
+        "possible_answers": [
+          "59.78",
+          "597.8",
+          "5.978",
+          "5978"
+        ],
+        "display_answer": "\\(59{,}78\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 998\\times 10\\)",
+        "answers": [
+          "9980"
+        ],
+        "possible_answers": [
+          "9980",
+          "998",
+          "99800",
+          "99.8"
+        ],
+        "display_answer": "\\(9~980\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 316\\div 10\\)",
+        "answers": [
+          "31.6"
+        ],
+        "possible_answers": [
+          "31.6",
+          "316",
+          "3.16",
+          "3160"
+        ],
+        "display_answer": "\\(31{,}6\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 833{,}292\\times 1~000\\)",
+        "answers": [
+          "833292"
+        ],
+        "possible_answers": [
+          "833292",
+          "833.292",
+          "83329.2",
+          "8332920"
+        ],
+        "display_answer": "\\(833~292\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 860{,}38\\div 100\\)",
+        "answers": [
+          "8.6038"
+        ],
+        "possible_answers": [
+          "8.6038",
+          "860.38",
+          "86.038",
+          "0.86038"
+        ],
+        "display_answer": "\\(8{,}603~8\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 70{,}22\\times 10\\)",
+        "answers": [
+          "702.2"
+        ],
+        "possible_answers": [
+          "702.2",
+          "70.22",
+          "7022",
+          "7.022"
+        ],
+        "display_answer": "\\(702{,}2\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 828{,}3\\div 1~000\\)",
+        "answers": [
+          "0.8283"
+        ],
+        "possible_answers": [
+          "0.8283",
+          "828.3",
+          "8.283",
+          "0.08283"
+        ],
+        "display_answer": "\\(0{,}828~3\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 1288284554
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 98765,
+    "title": "Multiplier ou diviser par 10, 100 ou 1 000",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 513\\times 100\\)",
+        "answers": [
+          "51300"
+        ],
+        "possible_answers": [
+          "51300",
+          "513",
+          "5130",
+          "513000"
+        ],
+        "display_answer": "\\(51~300\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 33\\div 100\\)",
+        "answers": [
+          "0.33"
+        ],
+        "possible_answers": [
+          "0.33",
+          "33",
+          "3.3",
+          "0.033"
+        ],
+        "display_answer": "\\(0{,}33\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 286{,}716\\times 1~000\\)",
+        "answers": [
+          "286716"
+        ],
+        "possible_answers": [
+          "286716",
+          "286.716",
+          "28671.6",
+          "2867160"
+        ],
+        "display_answer": "\\(286~716\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 758{,}48\\div 100\\)",
+        "answers": [
+          "7.5848"
+        ],
+        "possible_answers": [
+          "7.5848",
+          "758.48",
+          "75.848",
+          "0.75848"
+        ],
+        "display_answer": "\\(7{,}584~8\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 21{,}32\\times 10\\)",
+        "answers": [
+          "213.2"
+        ],
+        "possible_answers": [
+          "213.2",
+          "21.32",
+          "2132",
+          "2.132"
+        ],
+        "display_answer": "\\(213{,}2\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 691{,}4\\div 10\\)",
+        "answers": [
+          "69.14"
+        ],
+        "possible_answers": [
+          "69.14",
+          "691.4",
+          "6.914",
+          "6914"
+        ],
+        "display_answer": "\\(69{,}14\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Calculer : } 983\\times 100\\)",
+        "answers": [
+          "98300"
+        ],
+        "possible_answers": [
+          "98300",
+          "983",
+          "9830",
+          "983000"
+        ],
+        "display_answer": "\\(98~300\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 54\\div 100\\)",
+        "answers": [
+          "0.54"
+        ],
+        "possible_answers": [
+          "0.54",
+          "54",
+          "5.4",
+          "0.054"
+        ],
+        "display_answer": "\\(0{,}54\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 332{,}932\\times 1~000\\)",
+        "answers": [
+          "332932"
+        ],
+        "possible_answers": [
+          "332932",
+          "332.932",
+          "33293.2",
+          "3329320"
+        ],
+        "display_answer": "\\(332~932\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 798{,}74\\div 100\\)",
+        "answers": [
+          "7.9874"
+        ],
+        "possible_answers": [
+          "7.9874",
+          "798.74",
+          "79.874",
+          "0.79874"
+        ],
+        "display_answer": "\\(7{,}987~4\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 79{,}588\\times 100\\)",
+        "answers": [
+          "7958.8"
+        ],
+        "possible_answers": [
+          "7958.8",
+          "79.588",
+          "795.88",
+          "79588"
+        ],
+        "display_answer": "\\(7~958{,}8\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 29{,}7\\div 1~000\\)",
+        "answers": [
+          "0.0297"
+        ],
+        "possible_answers": [
+          "0.0297",
+          "29.7",
+          "0.297",
+          "0.00297"
+        ],
+        "display_answer": "\\(0{,}029~7\\)",
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ],
+    "randomState": 2908183789
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "title": "Décomposer un nombre décimal",
+    "questions": [
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }\\dfrac{82~053}{1~000}\\)",
+        "answers": [
+          "82,053"
+        ],
+        "possible_answers": [
+          "82,053",
+          "82 053",
+          "820,53",
+          "8,2053"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }33+\\dfrac{7}{10}\\)",
+        "answers": [
+          "33,7"
+        ],
+        "possible_answers": [
+          "33,7",
+          "40",
+          "33,07",
+          "337"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }16+\\dfrac{6}{10}+\\dfrac{5}{100}+\\dfrac{4}{1~000}\\)",
+        "answers": [
+          "16,654"
+        ],
+        "possible_answers": [
+          "16,654",
+          "16 654",
+          "166,54",
+          "1,6654"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }7,084\\)",
+        "answers": [
+          "7084/1000"
+        ],
+        "display_answer": "\\(\\dfrac{7 084}{1 000}\\)",
+        "possible_answers": [
+          "7084/1000",
+          "7084/100",
+          "7084/10000",
+          "1000/7084"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 57,057.",
+        "answers": [
+          "57+57/1000"
+        ],
+        "display_answer": "\\(57+\\dfrac{57}{1 000}\\)",
+        "possible_answers": [
+          "57+57/1000",
+          "57/1000",
+          "57+57/100",
+          "57+57/10000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 11,085.",
+        "answers": [
+          "11+8/100+5/1000"
+        ],
+        "display_answer": "\\(11+\\dfrac{8}{100}+\\dfrac{5}{1 000}\\)",
+        "possible_answers": [
+          "11+8/100+5/1000",
+          "11+8/1000+5/10000",
+          "11+85/1000",
+          "24"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }\\)\\(77+\\dfrac{262}{1 000}\\)",
+        "answers": [
+          "77262/1000"
+        ],
+        "display_answer": "\\(\\dfrac{77 262}{1 000}\\)",
+        "possible_answers": [
+          "77262/1000",
+          "77+262/1000",
+          "77262/10000",
+          "77262/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner la fraction décimale égale à\n        </div>\n\n        <div>\n          \\(33+\\dfrac{6}{10}+\\dfrac{7}{1 000}\\)\n        </div>\n      </div>\n      ",
+        "answers": [
+          "33607/1000"
+        ],
+        "display_answer": "\\(\\dfrac{33 607}{1 000}\\)",
+        "possible_answers": [
+          "33607/1000",
+          "33607/100",
+          "33607/10000",
+          "607/1000"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et d’une fraction décimale inférieure à 1 de :\n          \\(\\dfrac{743}{10}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "74+3/10"
+        ],
+        "display_answer": "\\(74+\\dfrac{3}{10}\\)",
+        "possible_answers": [
+          "74+3/10",
+          "743/10",
+          "3/10",
+          "74+3/1"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : \\(\\dfrac{15 317}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "15+3/10+1/100+7/1000"
+        ],
+        "display_answer": "\\(15+\\dfrac{3}{10}+\\dfrac{1}{100}+\\dfrac{7}{1 000}\\)",
+        "possible_answers": [
+          "15+3/10+1/100+7/1000",
+          "15317/1000",
+          "15+317/1000",
+          "15+3/100+1/1000+7/10000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }\\dfrac{11~034}{1~000}\\)",
+        "answers": [
+          "11,034"
+        ],
+        "possible_answers": [
+          "11,034",
+          "11 034",
+          "110,34",
+          "1,1034"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }84+\\dfrac{145}{1~000}\\)",
+        "answers": [
+          "84,145"
+        ],
+        "possible_answers": [
+          "84,145",
+          "229",
+          "85,45",
+          "84,0145"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }77+\\dfrac{7}{100}+\\dfrac{7}{1~000}\\)",
+        "answers": [
+          "77,077"
+        ],
+        "possible_answers": [
+          "77,077",
+          "77 077",
+          "770,77",
+          "7,7077"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }60,81\\)",
+        "answers": [
+          "6081/100"
+        ],
+        "display_answer": "\\(\\dfrac{6 081}{100}\\)",
+        "possible_answers": [
+          "6081/100",
+          "6081/10",
+          "6081/1000",
+          "100/6081"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 45,024.",
+        "answers": [
+          "45+24/1000"
+        ],
+        "display_answer": "\\(45+\\dfrac{24}{1 000}\\)",
+        "possible_answers": [
+          "45+24/1000",
+          "24/1000",
+          "45+24/100",
+          "45+24/10000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 10,956.",
+        "answers": [
+          "10+9/10+5/100+6/1000"
+        ],
+        "display_answer": "\\(10+\\dfrac{9}{10}+\\dfrac{5}{100}+\\dfrac{6}{1 000}\\)",
+        "possible_answers": [
+          "10+9/10+5/100+6/1000",
+          "10+9/100+5/1000+6/10000",
+          "10+956/1000",
+          "30"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }\\)\\(37+\\dfrac{5}{10}\\)",
+        "answers": [
+          "375/10"
+        ],
+        "display_answer": "\\(\\dfrac{375}{10}\\)",
+        "possible_answers": [
+          "375/10",
+          "37+5/10",
+          "375/100",
+          "375/1"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner la fraction décimale égale à\n        </div>\n\n        <div>\n          \\(63+\\dfrac{3}{100}+\\dfrac{6}{1 000}\\)\n        </div>\n      </div>\n      ",
+        "answers": [
+          "63036/1000"
+        ],
+        "display_answer": "\\(\\dfrac{63 036}{1 000}\\)",
+        "possible_answers": [
+          "63036/1000",
+          "63036/100",
+          "63036/10000",
+          "36/1000"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et d’une fraction décimale inférieure à 1 de :\n          \\(\\dfrac{55 008}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "55+8/1000"
+        ],
+        "display_answer": "\\(55+\\dfrac{8}{1 000}\\)",
+        "possible_answers": [
+          "55+8/1000",
+          "55008/1000",
+          "8/1000",
+          "55+8/100"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : \\(\\dfrac{398}{100}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "3+9/10+8/100"
+        ],
+        "display_answer": "\\(3+\\dfrac{9}{10}+\\dfrac{8}{100}\\)",
+        "possible_answers": [
+          "3+9/10+8/100",
+          "398/100",
+          "3+98/100",
+          "3+9/100+8/1000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      }
+    ],
+    "randomState": 3563356876
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 2026,
+    "title": "Décomposer un nombre décimal",
+    "questions": [
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }\\dfrac{5~166}{1~000}\\)",
+        "answers": [
+          "5,166"
+        ],
+        "possible_answers": [
+          "5,166",
+          "5 166",
+          "51,66",
+          "0,5166"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }62+\\dfrac{702}{1~000}\\)",
+        "answers": [
+          "62,702"
+        ],
+        "possible_answers": [
+          "62,702",
+          "764",
+          "69,02",
+          "62,0702"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }5+\\dfrac{2}{10}+\\dfrac{7}{100}\\)",
+        "answers": [
+          "5,27"
+        ],
+        "possible_answers": [
+          "5,27",
+          "5 270",
+          "52,7",
+          "0,527"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }60,089\\)",
+        "answers": [
+          "60089/1000"
+        ],
+        "display_answer": "\\(\\dfrac{60 089}{1 000}\\)",
+        "possible_answers": [
+          "60089/1000",
+          "60089/100",
+          "60089/10000",
+          "1000/60089"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 32,378.",
+        "answers": [
+          "32+378/1000"
+        ],
+        "display_answer": "\\(32+\\dfrac{378}{1 000}\\)",
+        "possible_answers": [
+          "32+378/1000",
+          "378/1000",
+          "32+378/100",
+          "32+378/10000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 53,084.",
+        "answers": [
+          "53+8/100+4/1000"
+        ],
+        "display_answer": "\\(53+\\dfrac{8}{100}+\\dfrac{4}{1 000}\\)",
+        "possible_answers": [
+          "53+8/100+4/1000",
+          "53+8/1000+4/10000",
+          "53+84/1000",
+          "65"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }\\)\\(70+\\dfrac{28}{1 000}\\)",
+        "answers": [
+          "70028/1000"
+        ],
+        "display_answer": "\\(\\dfrac{70 028}{1 000}\\)",
+        "possible_answers": [
+          "70028/1000",
+          "70+28/1000",
+          "70028/10000",
+          "70028/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner la fraction décimale égale à\n        </div>\n\n        <div>\n          \\(30+\\dfrac{1}{10}+\\dfrac{9}{100}\\)\n        </div>\n      </div>\n      ",
+        "answers": [
+          "3019/100"
+        ],
+        "display_answer": "\\(\\dfrac{3 019}{100}\\)",
+        "possible_answers": [
+          "3019/100",
+          "3019/10",
+          "3019/1000",
+          "190/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et d’une fraction décimale inférieure à 1 de :\n          \\(\\dfrac{12 153}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "12+153/1000"
+        ],
+        "display_answer": "\\(12+\\dfrac{153}{1 000}\\)",
+        "possible_answers": [
+          "12+153/1000",
+          "12153/1000",
+          "153/1000",
+          "12+153/100"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : \\(\\dfrac{28 053}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "28+5/100+3/1000"
+        ],
+        "display_answer": "\\(28+\\dfrac{5}{100}+\\dfrac{3}{1 000}\\)",
+        "possible_answers": [
+          "28+5/100+3/1000",
+          "28053/1000",
+          "28+53/1000",
+          "28+5/1000+3/10000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }\\dfrac{65~404}{1~000}\\)",
+        "answers": [
+          "65,404"
+        ],
+        "possible_answers": [
+          "65,404",
+          "65 404",
+          "654,04",
+          "6,5404"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }77+\\dfrac{98}{100}\\)",
+        "answers": [
+          "77,98"
+        ],
+        "possible_answers": [
+          "77,98",
+          "175",
+          "86,8",
+          "77,098"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }10+\\dfrac{1}{10}+\\dfrac{2}{100}+\\dfrac{6}{1~000}\\)",
+        "answers": [
+          "10,126"
+        ],
+        "possible_answers": [
+          "10,126",
+          "10 126",
+          "101,26",
+          "1,0126"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }23,009\\)",
+        "answers": [
+          "23009/1000"
+        ],
+        "display_answer": "\\(\\dfrac{23 009}{1 000}\\)",
+        "possible_answers": [
+          "23009/1000",
+          "23009/100",
+          "23009/10000",
+          "1000/23009"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 98,73.",
+        "answers": [
+          "98+73/100"
+        ],
+        "display_answer": "\\(98+\\dfrac{73}{100}\\)",
+        "possible_answers": [
+          "98+73/100",
+          "73/100",
+          "98+73/10",
+          "98+73/1000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 12,864.",
+        "answers": [
+          "12+8/10+6/100+4/1000"
+        ],
+        "display_answer": "\\(12+\\dfrac{8}{10}+\\dfrac{6}{100}+\\dfrac{4}{1 000}\\)",
+        "possible_answers": [
+          "12+8/10+6/100+4/1000",
+          "12+8/100+6/1000+4/10000",
+          "12+864/1000",
+          "30"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }\\)\\(18+\\dfrac{74}{1 000}\\)",
+        "answers": [
+          "18074/1000"
+        ],
+        "display_answer": "\\(\\dfrac{18 074}{1 000}\\)",
+        "possible_answers": [
+          "18074/1000",
+          "18+74/1000",
+          "18074/10000",
+          "18074/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner la fraction décimale égale à\n        </div>\n\n        <div>\n          \\(25+\\dfrac{6}{10}+\\dfrac{8}{100}+\\dfrac{5}{1 000}\\)\n        </div>\n      </div>\n      ",
+        "answers": [
+          "25685/1000"
+        ],
+        "display_answer": "\\(\\dfrac{25 685}{1 000}\\)",
+        "possible_answers": [
+          "25685/1000",
+          "25685/100",
+          "25685/10000",
+          "685/1000"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et d’une fraction décimale inférieure à 1 de :\n          \\(\\dfrac{96 004}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "96+4/1000"
+        ],
+        "display_answer": "\\(96+\\dfrac{4}{1 000}\\)",
+        "possible_answers": [
+          "96+4/1000",
+          "96004/1000",
+          "4/1000",
+          "96+4/100"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : \\(\\dfrac{5 437}{100}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "54+3/10+7/100"
+        ],
+        "display_answer": "\\(54+\\dfrac{3}{10}+\\dfrac{7}{100}\\)",
+        "possible_answers": [
+          "54+3/10+7/100",
+          "5437/100",
+          "54+37/100",
+          "54+3/100+7/1000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      }
+    ],
+    "randomState": 2962900942
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 98765,
+    "title": "Décomposer un nombre décimal",
+    "questions": [
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }\\dfrac{6~316}{100}\\)",
+        "answers": [
+          "63,16"
+        ],
+        "possible_answers": [
+          "63,16",
+          "6 316",
+          "631,6",
+          "6,316"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }29+\\dfrac{7}{1~000}\\)",
+        "answers": [
+          "29,007"
+        ],
+        "possible_answers": [
+          "29,007",
+          "36",
+          "29,07",
+          "29,0007"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }76+\\dfrac{5}{100}+\\dfrac{1}{1~000}\\)",
+        "answers": [
+          "76,051"
+        ],
+        "possible_answers": [
+          "76,051",
+          "76 051",
+          "760,51",
+          "7,6051"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }32,027\\)",
+        "answers": [
+          "32027/1000"
+        ],
+        "display_answer": "\\(\\dfrac{32 027}{1 000}\\)",
+        "possible_answers": [
+          "32027/1000",
+          "32027/100",
+          "32027/10000",
+          "1000/32027"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 98,601.",
+        "answers": [
+          "98+601/1000"
+        ],
+        "display_answer": "\\(98+\\dfrac{601}{1 000}\\)",
+        "possible_answers": [
+          "98+601/1000",
+          "601/1000",
+          "98+601/100",
+          "98+601/10000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 73,309.",
+        "answers": [
+          "73+3/10+9/1000"
+        ],
+        "display_answer": "\\(73+\\dfrac{3}{10}+\\dfrac{9}{1 000}\\)",
+        "possible_answers": [
+          "73+3/10+9/1000",
+          "73+3/100+9/10000",
+          "73+309/1000",
+          "85"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }\\)\\(80+\\dfrac{75}{100}\\)",
+        "answers": [
+          "8075/100"
+        ],
+        "display_answer": "\\(\\dfrac{8 075}{100}\\)",
+        "possible_answers": [
+          "8075/100",
+          "80+75/100",
+          "8075/1000",
+          "8075/10"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner la fraction décimale égale à\n        </div>\n\n        <div>\n          \\(59+\\dfrac{9}{10}+\\dfrac{1}{100}\\)\n        </div>\n      </div>\n      ",
+        "answers": [
+          "5991/100"
+        ],
+        "display_answer": "\\(\\dfrac{5 991}{100}\\)",
+        "possible_answers": [
+          "5991/100",
+          "5991/10",
+          "5991/1000",
+          "910/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et d’une fraction décimale inférieure à 1 de :\n          \\(\\dfrac{927}{10}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "92+7/10"
+        ],
+        "display_answer": "\\(92+\\dfrac{7}{10}\\)",
+        "possible_answers": [
+          "92+7/10",
+          "927/10",
+          "7/10",
+          "92+7/1"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : \\(\\dfrac{93 202}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "93+2/10+2/1000"
+        ],
+        "display_answer": "\\(93+\\dfrac{2}{10}+\\dfrac{2}{1 000}\\)",
+        "possible_answers": [
+          "93+2/10+2/1000",
+          "93202/1000",
+          "93+202/1000",
+          "93+2/100+2/10000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      }
+    ],
+    "generated": [
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }\\dfrac{35~739}{1~000}\\)",
+        "answers": [
+          "35,739"
+        ],
+        "possible_answers": [
+          "35,739",
+          "35 739",
+          "357,39",
+          "3,5739"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }43+\\dfrac{27}{1~000}\\)",
+        "answers": [
+          "43,027"
+        ],
+        "possible_answers": [
+          "43,027",
+          "70",
+          "43,27",
+          "43,0027"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l’écriture décimale la plus simple de }9+\\dfrac{9}{10}+\\dfrac{6}{100}\\)",
+        "answers": [
+          "9,96"
+        ],
+        "possible_answers": [
+          "9,96",
+          "9 960",
+          "99,6",
+          "0,996"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }56,008\\)",
+        "answers": [
+          "56008/1000"
+        ],
+        "display_answer": "\\(\\dfrac{56 008}{1 000}\\)",
+        "possible_answers": [
+          "56008/1000",
+          "56008/100",
+          "56008/10000",
+          "1000/56008"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 40,058.",
+        "answers": [
+          "40+58/1000"
+        ],
+        "display_answer": "\\(40+\\dfrac{58}{1 000}\\)",
+        "possible_answers": [
+          "40+58/1000",
+          "58/1000",
+          "40+58/100",
+          "40+58/10000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 80,033.",
+        "answers": [
+          "80+3/100+3/1000"
+        ],
+        "display_answer": "\\(80+\\dfrac{3}{100}+\\dfrac{3}{1 000}\\)",
+        "possible_answers": [
+          "80+3/100+3/1000",
+          "80+3/1000+3/10000",
+          "80+33/1000",
+          "86"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à }\\)\\(73+\\dfrac{8}{1 000}\\)",
+        "answers": [
+          "73008/1000"
+        ],
+        "display_answer": "\\(\\dfrac{73 008}{1 000}\\)",
+        "possible_answers": [
+          "73008/1000",
+          "73+8/1000",
+          "73008/10000",
+          "73008/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner la fraction décimale égale à\n        </div>\n\n        <div>\n          \\(51+\\dfrac{8}{10}+\\dfrac{7}{100}+\\dfrac{8}{1 000}\\)\n        </div>\n      </div>\n      ",
+        "answers": [
+          "51878/1000"
+        ],
+        "display_answer": "\\(\\dfrac{51 878}{1 000}\\)",
+        "possible_answers": [
+          "51878/1000",
+          "51878/100",
+          "51878/10000",
+          "878/1000"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et d’une fraction décimale inférieure à 1 de :\n          \\(\\dfrac{67 005}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "67+5/1000"
+        ],
+        "display_answer": "\\(67+\\dfrac{5}{1 000}\\)",
+        "possible_answers": [
+          "67+5/1000",
+          "67005/1000",
+          "5/1000",
+          "67+5/100"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Donner une écriture sous forme de la somme d’un nombre entier\n        </div>\n\n        <div>\n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : \\(\\dfrac{33 482}{1 000}\\).\n        </div>\n      </div>\n      ",
+        "answers": [
+          "33+4/10+8/100+2/1000"
+        ],
+        "display_answer": "\\(33+\\dfrac{4}{10}+\\dfrac{8}{100}+\\dfrac{2}{1 000}\\)",
+        "possible_answers": [
+          "33+4/10+8/100+2/1000",
+          "33482/1000",
+          "33+482/1000",
+          "33+4/100+8/1000+2/10000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        }
+      }
+    ],
+    "randomState": 860595955
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "title": "Chiffres, rangs et parties d’un nombre décimal",
+    "questions": [
+      {
+        "question": "\\(\\text{Quelle est la partie entière du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "384"
+        ],
+        "display_answer": "\\(384\\)",
+        "possible_answers": [
+          "\\(384\\)",
+          "\\(276\\)",
+          "\\(3~842\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la partie décimale du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "0.276",
+          "276/1000"
+        ],
+        "display_answer": "\\(0{,}276\\)",
+        "possible_answers": [
+          "0.276",
+          "276",
+          "384",
+          "2.7600000000000002"
+        ]
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des centaines du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "3"
+        ],
+        "display_answer": "\\(3\\)",
+        "possible_answers": [
+          "\\(3\\)",
+          "\\(8\\)",
+          "\\(4\\)",
+          "\\(2\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de dixièmes du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "3842"
+        ],
+        "display_answer": "\\(3~842\\)",
+        "possible_answers": [
+          "\\(3~842\\)",
+          "\\(384\\)",
+          "\\(38~427\\)",
+          "\\(384~276\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des dizaines du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "8"
+        ],
+        "display_answer": "\\(8\\)",
+        "possible_answers": [
+          "\\(8\\)",
+          "\\(3\\)",
+          "\\(4\\)",
+          "\\(2\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de centièmes du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "38427"
+        ],
+        "display_answer": "\\(38~427\\)",
+        "possible_answers": [
+          "\\(38~427\\)",
+          "\\(3~842\\)",
+          "\\(384~276\\)",
+          "\\(384\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des dixièmes du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "2"
+        ],
+        "display_answer": "\\(2\\)",
+        "possible_answers": [
+          "\\(2\\)",
+          "\\(7\\)",
+          "\\(6\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de millièmes du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "384276"
+        ],
+        "display_answer": "\\(384~276\\)",
+        "possible_answers": [
+          "\\(384~276\\)",
+          "\\(38~427\\)",
+          "\\(3~842\\)",
+          "\\(276\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des centièmes du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "7"
+        ],
+        "display_answer": "\\(7\\)",
+        "possible_answers": [
+          "\\(7\\)",
+          "\\(2\\)",
+          "\\(6\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de dizaines du nombre }384{,}276\\ ?\\)",
+        "answers": [
+          "38"
+        ],
+        "display_answer": "\\(38\\)",
+        "possible_answers": [
+          "\\(38\\)",
+          "\\(384\\)",
+          "\\(8\\)",
+          "\\(3\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      }
+    ],
+    "randomState": 2883449826
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 2026,
+    "title": "Chiffres, rangs et parties d’un nombre décimal",
+    "questions": [
+      {
+        "question": "\\(\\text{Quelle est la partie entière du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "106"
+        ],
+        "display_answer": "\\(106\\)",
+        "possible_answers": [
+          "\\(106\\)",
+          "\\(479\\)",
+          "\\(1~064\\)",
+          "\\(6\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la partie décimale du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "0.479",
+          "479/1000"
+        ],
+        "display_answer": "\\(0{,}479\\)",
+        "possible_answers": [
+          "0.479",
+          "479",
+          "106",
+          "4.79"
+        ]
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des centaines du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "1"
+        ],
+        "display_answer": "\\(1\\)",
+        "possible_answers": [
+          "\\(1\\)",
+          "\\(0\\)",
+          "\\(6\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de dixièmes du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "1064"
+        ],
+        "display_answer": "\\(1~064\\)",
+        "possible_answers": [
+          "\\(1~064\\)",
+          "\\(106\\)",
+          "\\(10~647\\)",
+          "\\(106~479\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des dizaines du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "0"
+        ],
+        "display_answer": "\\(0\\)",
+        "possible_answers": [
+          "\\(0\\)",
+          "\\(1\\)",
+          "\\(6\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de centièmes du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "10647"
+        ],
+        "display_answer": "\\(10~647\\)",
+        "possible_answers": [
+          "\\(10~647\\)",
+          "\\(1~064\\)",
+          "\\(106~479\\)",
+          "\\(106\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des dixièmes du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "4"
+        ],
+        "display_answer": "\\(4\\)",
+        "possible_answers": [
+          "\\(4\\)",
+          "\\(7\\)",
+          "\\(9\\)",
+          "\\(6\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de millièmes du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "106479"
+        ],
+        "display_answer": "\\(106~479\\)",
+        "possible_answers": [
+          "\\(106~479\\)",
+          "\\(10~647\\)",
+          "\\(1~064\\)",
+          "\\(479\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des centièmes du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "7"
+        ],
+        "display_answer": "\\(7\\)",
+        "possible_answers": [
+          "\\(7\\)",
+          "\\(4\\)",
+          "\\(9\\)",
+          "\\(6\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de dizaines du nombre }106{,}479\\ ?\\)",
+        "answers": [
+          "10"
+        ],
+        "display_answer": "\\(10\\)",
+        "possible_answers": [
+          "\\(10\\)",
+          "\\(106\\)",
+          "\\(0\\)",
+          "\\(1\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      }
+    ],
+    "randomState": 4176621524
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 98765,
+    "title": "Chiffres, rangs et parties d’un nombre décimal",
+    "questions": [
+      {
+        "question": "\\(\\text{Quelle est la partie entière du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "560"
+        ],
+        "display_answer": "\\(560\\)",
+        "possible_answers": [
+          "\\(560\\)",
+          "\\(927\\)",
+          "\\(5~609\\)",
+          "\\(0\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la partie décimale du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "0.927",
+          "927/1000"
+        ],
+        "display_answer": "\\(0{,}927\\)",
+        "possible_answers": [
+          "0.927",
+          "927",
+          "560",
+          "9.27"
+        ]
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des centaines du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "5"
+        ],
+        "display_answer": "\\(5\\)",
+        "possible_answers": [
+          "\\(5\\)",
+          "\\(6\\)",
+          "\\(0\\)",
+          "\\(9\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de dixièmes du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "5609"
+        ],
+        "display_answer": "\\(5~609\\)",
+        "possible_answers": [
+          "\\(5~609\\)",
+          "\\(560\\)",
+          "\\(56~092\\)",
+          "\\(560~927\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des dizaines du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "6"
+        ],
+        "display_answer": "\\(6\\)",
+        "possible_answers": [
+          "\\(6\\)",
+          "\\(5\\)",
+          "\\(0\\)",
+          "\\(9\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de centièmes du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "56092"
+        ],
+        "display_answer": "\\(56~092\\)",
+        "possible_answers": [
+          "\\(56~092\\)",
+          "\\(5~609\\)",
+          "\\(560~927\\)",
+          "\\(560\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des dixièmes du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "9"
+        ],
+        "display_answer": "\\(9\\)",
+        "possible_answers": [
+          "\\(9\\)",
+          "\\(2\\)",
+          "\\(7\\)",
+          "\\(0\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de millièmes du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "560927"
+        ],
+        "display_answer": "\\(560~927\\)",
+        "possible_answers": [
+          "\\(560~927\\)",
+          "\\(56~092\\)",
+          "\\(5~609\\)",
+          "\\(927\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le chiffre des centièmes du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "2"
+        ],
+        "display_answer": "\\(2\\)",
+        "possible_answers": [
+          "\\(2\\)",
+          "\\(9\\)",
+          "\\(7\\)",
+          "\\(0\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le nombre de dizaines du nombre }560{,}927\\ ?\\)",
+        "answers": [
+          "56"
+        ],
+        "display_answer": "\\(56\\)",
+        "possible_answers": [
+          "\\(56\\)",
+          "\\(560\\)",
+          "\\(6\\)",
+          "\\(5\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        }
+      }
+    ],
+    "randomState": 3076136718
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "title": "Tables, diviseurs et multiples",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 3\\times8\\)",
+        "answers": [
+          "24"
+        ],
+        "possible_answers": [
+          "24",
+          "11",
+          "21",
+          "16"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 5\\times\\ldots=20\\)",
+        "answers": [
+          "4"
+        ],
+        "possible_answers": [
+          "4",
+          "5",
+          "3",
+          "20"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\ldots\\times4=28\\)",
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "7",
+          "4",
+          "6",
+          "8"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 21\\div7\\)",
+        "answers": [
+          "3"
+        ],
+        "possible_answers": [
+          "3",
+          "7",
+          "2",
+          "4"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 18\\div\\ldots=6\\)",
+        "answers": [
+          "3"
+        ],
+        "possible_answers": [
+          "3",
+          "6",
+          "2",
+          "4"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner un diviseur de }35\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "2",
+          "4",
+          "3",
+          "1"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 35
+        }
+      },
+      {
+        "question": "\\(\\text{Donner un multiple de }5\\)",
+        "answers": [
+          "30"
+        ],
+        "possible_answers": [
+          "29",
+          "33",
+          "30",
+          "31"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 5
+        }
+      },
+      {
+        "question": "\\(\\text{Donner le plus petit multiple de }10\\text{ strictement supérieur à }59\\)",
+        "answers": [
+          "60"
+        ],
+        "possible_answers": [
+          "60",
+          "50",
+          "70",
+          "59"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner le plus grand diviseur de }80\\text{ différent de }80\\)",
+        "answers": [
+          "40"
+        ],
+        "possible_answers": [
+          "40",
+          "20",
+          "16",
+          "10"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : }22\\text{ est un multiple de }\\ldots\\)",
+        "answers": [
+          "11"
+        ],
+        "possible_answers": [
+          "4",
+          "5",
+          "3",
+          "11"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 22
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : }9\\text{ est un diviseur de }\\ldots\\)",
+        "answers": [
+          "63"
+        ],
+        "possible_answers": [
+          "60",
+          "63",
+          "62",
+          "61"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 9
+        }
+      }
+    ],
+    "randomState": 1340166901
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 2026,
+    "title": "Tables, diviseurs et multiples",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 2\\times2\\)",
+        "answers": [
+          "4"
+        ],
+        "possible_answers": [
+          "4",
+          "2",
+          "6",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 2\\times\\ldots=14\\)",
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "7",
+          "2",
+          "6",
+          "8"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\ldots\\times5=35\\)",
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "7",
+          "5",
+          "6",
+          "8"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 48\\div6\\)",
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "8",
+          "6",
+          "7",
+          "9"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 27\\div\\ldots=9\\)",
+        "answers": [
+          "3"
+        ],
+        "possible_answers": [
+          "3",
+          "9",
+          "2",
+          "4"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner un diviseur de }14\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "5",
+          "3",
+          "1",
+          "4"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 14
+        }
+      },
+      {
+        "question": "\\(\\text{Donner un multiple de }11\\)",
+        "answers": [
+          "99"
+        ],
+        "possible_answers": [
+          "100",
+          "101",
+          "99",
+          "98"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 11
+        }
+      },
+      {
+        "question": "\\(\\text{Donner le plus petit multiple de }11\\text{ strictement supérieur à }49\\)",
+        "answers": [
+          "55"
+        ],
+        "possible_answers": [
+          "55",
+          "44",
+          "66",
+          "49"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner le plus grand diviseur de }87\\text{ différent de }87\\)",
+        "answers": [
+          "29"
+        ],
+        "possible_answers": [
+          "29",
+          "3",
+          "1",
+          "87"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : }34\\text{ est un multiple de }\\ldots\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "5",
+          "3",
+          "1",
+          "4"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 34
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : }11\\text{ est un diviseur de }\\ldots\\)",
+        "answers": [
+          "44"
+        ],
+        "possible_answers": [
+          "41",
+          "43",
+          "42",
+          "44"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 11
+        }
+      }
+    ],
+    "randomState": 304482363
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 98765,
+    "title": "Tables, diviseurs et multiples",
+    "questions": [
+      {
+        "question": "\\(\\text{Calculer : } 6\\times7\\)",
+        "answers": [
+          "42"
+        ],
+        "possible_answers": [
+          "42",
+          "13",
+          "36",
+          "35"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 2\\times\\ldots=12\\)",
+        "answers": [
+          "6"
+        ],
+        "possible_answers": [
+          "6",
+          "2",
+          "5",
+          "7"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\ldots\\times4=36\\)",
+        "answers": [
+          "9"
+        ],
+        "possible_answers": [
+          "9",
+          "4",
+          "8",
+          "10"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer : } 35\\div7\\)",
+        "answers": [
+          "5"
+        ],
+        "possible_answers": [
+          "5",
+          "7",
+          "4",
+          "6"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 40\\div\\ldots=5\\)",
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "8",
+          "5",
+          "7",
+          "9"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner un diviseur de }12\\)",
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "7",
+          "8",
+          "2",
+          "5"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 12
+        }
+      },
+      {
+        "question": "\\(\\text{Donner un multiple de }6\\)",
+        "answers": [
+          "54"
+        ],
+        "possible_answers": [
+          "58",
+          "55",
+          "53",
+          "54"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 6
+        }
+      },
+      {
+        "question": "\\(\\text{Donner le plus petit multiple de }6\\text{ strictement supérieur à }50\\)",
+        "answers": [
+          "54"
+        ],
+        "possible_answers": [
+          "54",
+          "48",
+          "60",
+          "50"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner le plus grand diviseur de }82\\text{ différent de }82\\)",
+        "answers": [
+          "41"
+        ],
+        "possible_answers": [
+          "41",
+          "2",
+          "1",
+          "82"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : }56\\text{ est un multiple de }\\ldots\\)",
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "8",
+          "5",
+          "3",
+          "6"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 56
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : }2\\text{ est un diviseur de }\\ldots\\)",
+        "answers": [
+          "14"
+        ],
+        "possible_answers": [
+          "14",
+          "11",
+          "13",
+          "15"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 2
+        }
+      }
+    ],
+    "randomState": 2715569882
+  }
+]

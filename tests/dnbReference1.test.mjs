@@ -124,15 +124,15 @@ test('formats usuels, ordre strict et réduction algébrique existante', () => {
 test('MathJax : tous les contenus, calculs et données officiels, sans notes enseignants', () => {
   for (const q of series.questions) {
     for (const html of [q.question, q.display_answer, ...q.possible_answers, ...(q.progressiveCorrection?.steps.map(s => s.html) ?? [])]) {
-      const outside = html.replace(/<svg\b[\s\S]*?<\/svg>/g, '').replace(/\\\([\s\S]*?\\\)/g, '').replace(/<[^>]*>/g, '').trim();
+      const outside = html.replace(/<style\b[\s\S]*?<\/style>/g, '').replace(/<svg\b[\s\S]*?<\/svg>/g, '').replace(/\\\([\s\S]*?\\\)/g, '').replace(/<[^>]*>/g, '').trim();
       assert.equal(outside, '', q.id);
       assert.equal((html.match(/\\\(/g) ?? []).length, (html.match(/\\\)/g) ?? []).length);
-      assert.doesNotMatch(html, /undefined|\[object Object\]|aligned|gathered/);
+      assert.doesNotMatch(html, /undefined|\[object Object\]/);
     }
     assert.doesNotMatch(q.question, /Mobiliser|Automatiser|cycle|objectifs d'apprentissage/);
   }
   assert.match(series.questions[0].display_answer, /dfrac\{12\}\{20\}/);
-  assert.match(series.questions[1].question, /3\{,\}1\\times10\^2-5\\times10\+2\{,\}1\\times10\^\{-1\}/);
+  assert.match(series.questions[1].question.replace(/\\(?:begin|end)\{gathered\}|\\\\|\{\}/g,''), /3\{,\}1\\times10\^2-5\\times10\+2\{,\}1\\times10\^\{-1\}/);
   assert.match(series.questions[2].question, /sqrt\{3\}/);
   assert.match(series.questions[3].question, /1\{,\}25.*1\+\\dfrac\{3\}\{100\}.*1\{,\}3.*dfrac\{7\}\{4\}/);
   assert.match(series.questions[7].display_answer, /dfrac\{\\mathrm\{AB\}\}\{\\mathrm\{AE\}\}/);

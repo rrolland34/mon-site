@@ -8,6 +8,7 @@ import {evaluateCurrentAnswer} from '../core/answerEvaluation.js';
 import {formatQCMAnswer,displayQCMOptions} from '../core/qcm.js';
 import {storeAnswerForCorrections} from '../core/answerHistory.js';
 import {loadExercise} from '../core/exerciseLoader.js';
+import {assertSixiemeCatalog} from './helpers/sixiemeCatalog.mjs';
 import {startExerciseSession} from '../core/session.js';
 
 let input='';
@@ -107,7 +108,7 @@ test('série 5 : catalogue, six boutons, durée et historique QCM natifs',()=>{
   const section=page.match(/<section[^>]+aria-labelledby="remediation-evaluations-nationales-title"[\s\S]*?<\/section>/)[0];
   assert.deepEqual([...section.matchAll(/data-exercise="([^"]+)"/g)].map(m=>m[1]),[1,2,3,4,5,6].map(n=>'remediation_evaluations_nationales_6e_serie_'+n));
   assert.ok(page.indexOf(section)>page.indexOf('id="sixieme-domain-2"'));
-  const ids=[...page.matchAll(/data-exercise="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,24);assert.equal(new Set(ids).size,24);
+  assertSixiemeCatalog(page);
   const node=()=>({style:{},dataset:{},classList:{add(){},remove(){}},addEventListener(){}}),container={...node(),appendChild(){}};
   globalThis.document={getElementById:()=>container,createElement:node};globalThis.window={};
   for(const q of generateQuestions()){

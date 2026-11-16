@@ -1,0 +1,593 @@
+{
+  "job": {
+    "id": "centres_etrangers_juin_2026_gen",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 485,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 595.265625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "0∘C ; −1∘C ; 3∘C ; 7∘C ; 1∘C",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -110.125,
+          "right": 485.140625,
+          "width": 595.265625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "0\\,^\\circ\\mathrm{C}\\ ;\\\n            -1\\,^\\circ\\mathrm{C}\\ ;\\\n            3\\,^\\circ\\mathrm{C}\\ ;\\\n            7\\,^\\circ\\mathrm{C}\\ ;\\\n            1\\,^\\circ\\mathrm{C}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Voici la série des températures minimales relevées à Strasbourg\n            lors des cinq premiers jours de février :\n          \n\n          \n            \n          \n\n          \n            Déterminer la médiane de cette série (en °C).",
+        "3 °C",
+        "8 °C",
+        "1 °C",
+        "2 °C"
+      ]
+    },
+    {
+      "document": 438,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 240\" role=\"img\" aria-label=\"Neuf motifs identiques, numérotés de 1 à 9, sur trois rangées décalées\"><polygon points=\"20,220 62.86825748732972,195.25 113.86336948850303,215.85336263787516 146.86336948850305,158.6956859881022 95.86825748732973,138.09232335022705 53.00000000000001,162.84232335022705\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"95.86825748732973\" y=\"164.49232335022705\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 7</text><polygon points=\"113.86336948850303,215.85336263787516 156.73162697583277,191.10336263787516 207.72673897700605,211.70672527575033 240.72673897700605,154.54904862597738 189.73162697583277,133.9456859881022 146.86336948850305,158.6956859881022\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"189.73162697583277\" y=\"160.34568598810222\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 8</text><polygon points=\"207.72673897700605,211.70672527575033 250.5949964643358,186.95672527575033 301.5901084655091,207.5600879136255 334.5901084655091,150.40241126385254 283.5949964643358,129.79904862597738 240.72673897700605,154.54904862597738\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"283.5949964643358\" y=\"156.19904862597738\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 9</text><polygon points=\"53.00000000000001,162.84232335022705 95.86825748732973,138.09232335022705 146.86336948850305,158.6956859881022 179.86336948850305,101.53800933832929 128.86825748732974,80.93464670045412 86.00000000000001,105.68464670045411\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"128.86825748732974\" y=\"107.33464670045413\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 4</text><polygon points=\"146.86336948850305,158.6956859881022 189.73162697583277,133.9456859881022 240.72673897700605,154.54904862597738 273.726738977006,97.39137197620443 222.73162697583277,76.78800933832926 179.86336948850305,101.53800933832929\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"222.73162697583277\" y=\"103.18800933832927\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 5</text><polygon points=\"240.72673897700605,154.54904862597738 283.5949964643358,129.79904862597738 334.5901084655091,150.40241126385254 367.59010846550905,93.2447346140796 316.5949964643358,72.64137197620445 273.726738977006,97.39137197620443\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"316.5949964643358\" y=\"99.04137197620445\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 6</text><polygon points=\"86.00000000000001,105.68464670045411 128.86825748732974,80.93464670045412 179.86336948850305,101.53800933832929 212.86336948850305,44.38033268855634 161.86825748732974,23.7769700506812 119.00000000000001,48.52697005068114\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"161.86825748732974\" y=\"50.17697005068118\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 1</text><polygon points=\"179.86336948850305,101.53800933832929 222.73162697583277,76.78800933832926 273.7267389770061,97.39137197620445 306.7267389770061,40.2336953264315 255.73162697583274,19.630332688556337 212.86336948850305,44.38033268855634\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"255.73162697583274\" y=\"46.03033268855634\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 2</text><polygon points=\"273.7267389770061,97.39137197620443 316.5949964643358,72.64137197620443 367.5901084655091,93.2447346140796 400.59010846550916,36.08705796430664 349.5949964643358,15.483695326431501 306.7267389770061,40.2336953264315\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"></polygon><text x=\"349.5949964643358\" y=\"41.88369532643148\" text-anchor=\"middle\" font-size=\"16\" fill=\"currentColor\">n° 3</text></svg>",
+          "left": -62.5,
+          "right": 437.5,
+          "width": 500,
+          "height": 279.0625
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "svg",
+          "text": "n° 7n° 8n° 9n° 4n° 5n° 6n° 1n° 2n° 3",
+          "scroll": 500,
+          "client": 500,
+          "children": [],
+          "left": -62.5,
+          "right": 437.5,
+          "width": 500,
+          "height": 279.0625
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle est l'image du motif n° 4 par la translation qui transforme le motif n° 2 en n° 6 ? Donner le numéro du motif.",
+        "7",
+        "9",
+        "8",
+        "5"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\dfrac{3}{5}",
+        "\\dfrac{1}{3}",
+        "\\dfrac{5}{8}",
+        "\\dfrac{3}{8}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Une boîte opaque contient 3 boules rouges et 5 boules vertes identiques et indiscernables au toucher. On pioche une boule au hasard.Quelle est la probabilité qu'elle soit rouge ?"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        -161.68618956991878\n        67.53689848032457\n        504.12702219895874\n        361.41514409482227\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle rectangle\">\n      <defs>\n        <marker id=\"triangle-arrow-head\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8.5\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M4,1.5 L4,4.5 L9,3 z\" fill=\"red\"></path>\n        </marker>\n      </defs>\n\n      <g transform=\"\n          rotate(\n            46\n            240\n            176\n          )\n        \">\n\n        \n    <path d=\"\n        M 125 280\n        L 125 305\n        L 100 305\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n\n        \n        <path d=\"\n    M 325 280\n    A 55 55\n      0 0 0\n      335.8490883625051 312.79782007356766\n  \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line x1=\"100\" y1=\"280\" x2=\"380\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- leg2 : AC -->\n          <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"488\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- hypoténuse : BC -->\n          <line x1=\"380\" y1=\"280\" x2=\"100\" y2=\"488\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text x=\"64.33364083333315\" y=\"119.76966084665341\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        L\n      </text>\n\n      <text x=\"287.68716536491786\" y=\"361.0608279555779\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        K\n      </text>\n\n      <text x=\"-109.25600605513614\" y=\"296.91513590351985\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        J\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text x=\"90.05091324900884\" y=\"322.4621256982221\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"undefined\" fill=\"currentColor\" transform=\"\n          rotate(\n            9.392925187392478\n            90.05091324900884\n            322.4621256982221\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text x=\"182.45281597290793\" y=\"231.57266963671975\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            45.99999999999998\n            182.45281597290793\n            231.57266963671975\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text x=\"-8.26416707561707\" y=\"218.342689407383\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"undefined\" fill=\"currentColor\" transform=\"\n          rotate(\n            -44\n            -8.26416707561707\n            218.342689407383\n          )\n        \">\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>",
+          "left": 23.34375,
+          "right": 351.65625,
+          "width": 328.3125,
+          "height": 235.359375
+        }
+      ],
+      "mathWidth": 328.3125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "cos⁡(LKJ^)=……",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 23.34375,
+          "right": 351.65625,
+          "width": 328.3125,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\cos\\left(\\widehat{\\mathrm{LKJ}}\\right)=\\dfrac{\\dots}{\\dots}",
+        "\\dfrac{\\mathrm{KJ}}{\\mathrm{KL}}",
+        "\\dfrac{\\mathrm{JL}}{\\mathrm{KJ}}",
+        "\\dfrac{\\mathrm{KL}}{\\mathrm{JL}}",
+        "\\dfrac{\\mathrm{KL}}{\\mathrm{KJ}}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Compléter avec des longueurs des côtés du triangle JLK pour que l'égalité soit vraie. Saisir le quotient de deux longueurs."
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 209.828125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "311\\,200\\,000",
+        "311\\,200\\,000",
+        "3{,}112\\times 10^{8}",
+        "3{,}112\\times 10^{7}",
+        "3{,}112\\times 10^{9}",
+        "31{,}12\\times 10^{7}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "La distance entre la Terre et Mars est environ égale à\n             kilomètres.\n          \n\n          \n            Donner la notation scientifique de ."
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "92\\,\\text{km}",
+        "80\\,\\text{km}",
+        "16\\,\\text{km}",
+        "100\\,\\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Charlie a effectué un trajet en vélo en 2 h 30 min à une vitesse moyenne de 40 km/h.Calculer la distance, en km, parcourue par Charlie."
+      ]
+    },
+    {
+      "document": 647,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 918.484375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éChoisir la forme factorisée de l'expression 5x+5.",
+          "scroll": 919,
+          "client": 918,
+          "children": [],
+          "left": -271.734375,
+          "right": 646.75,
+          "width": 918.484375,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Choisir la forme factorisée de l'expression }5x+5.",
+        "10\\,\\text{x}",
+        "5(x+5)",
+        "25\\,\\text{x}",
+        "5(x+1)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "80-10",
+        "80-\\dfrac{10}{100}\\times80",
+        "80-\\dfrac{10}{100}",
+        "\\left(80-\\dfrac{10}{100}\\right)\\times80"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un article coûte 80 €. Son prix baisse de 10 %. Choisir le calcul permettant de trouver le prix final de l'article."
+      ]
+    },
+    {
+      "document": 438,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 650 330\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n        <line x1=\"65\" y1=\"35\" x2=\"65\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"102.33333333333334\" y1=\"35\" x2=\"102.33333333333334\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"139.66666666666669\" y1=\"35\" x2=\"139.66666666666669\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"177\" y1=\"35\" x2=\"177\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"214.33333333333334\" y1=\"35\" x2=\"214.33333333333334\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"251.66666666666666\" y1=\"35\" x2=\"251.66666666666666\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"289\" y1=\"35\" x2=\"289\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"326.3333333333333\" y1=\"35\" x2=\"326.3333333333333\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"363.6666666666667\" y1=\"35\" x2=\"363.6666666666667\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"401\" y1=\"35\" x2=\"401\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"438.3333333333333\" y1=\"35\" x2=\"438.3333333333333\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"475.66666666666663\" y1=\"35\" x2=\"475.66666666666663\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"513\" y1=\"35\" x2=\"513\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"550.3333333333334\" y1=\"35\" x2=\"550.3333333333334\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"587.6666666666666\" y1=\"35\" x2=\"587.6666666666666\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"625\" y1=\"35\" x2=\"625\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"275\" x2=\"625\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"235\" x2=\"625\" y2=\"235\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"195\" x2=\"625\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"155\" x2=\"625\" y2=\"155\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"115\" x2=\"625\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"75\" x2=\"625\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n        <line x1=\"65\" y1=\"35\" x2=\"625\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"0.4\" opacity=\"0.3\"></line>\n      \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"102.33333333333334\" y1=\"35\" x2=\"102.33333333333334\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"177\" y1=\"35\" x2=\"177\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"251.66666666666666\" y1=\"35\" x2=\"251.66666666666666\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"326.3333333333333\" y1=\"35\" x2=\"326.3333333333333\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"401\" y1=\"35\" x2=\"401\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"475.66666666666663\" y1=\"35\" x2=\"475.66666666666663\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"550.3333333333334\" y1=\"35\" x2=\"550.3333333333334\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"625\" y1=\"35\" x2=\"625\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"65\" y1=\"275\" x2=\"625\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"65\" y1=\"195\" x2=\"625\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"65\" y1=\"115\" x2=\"625\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"65\" y1=\"35\" x2=\"625\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"65\" y1=\"275\" x2=\"625\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"102.33333333333334\" y1=\"271\" x2=\"102.33333333333334\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"102.33333333333334\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          13\n        </text>\n      \n        <line x1=\"177\" y1=\"271\" x2=\"177\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"177\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          14\n        </text>\n      \n        <line x1=\"251.66666666666666\" y1=\"271\" x2=\"251.66666666666666\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"251.66666666666666\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          15\n        </text>\n      \n        <line x1=\"326.3333333333333\" y1=\"271\" x2=\"326.3333333333333\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"326.3333333333333\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          16\n        </text>\n      \n        <line x1=\"401\" y1=\"271\" x2=\"401\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"401\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          17\n        </text>\n      \n        <line x1=\"475.66666666666663\" y1=\"271\" x2=\"475.66666666666663\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"475.66666666666663\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          18\n        </text>\n      \n        <line x1=\"550.3333333333334\" y1=\"271\" x2=\"550.3333333333334\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"550.3333333333334\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          19\n        </text>\n      \n        <line x1=\"625\" y1=\"271\" x2=\"625\" y2=\"279\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"625\" y=\"293\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          20\n        </text>\n      \n        \n      <line x1=\"65\" y1=\"35\" x2=\"65\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"61\" y1=\"275\" x2=\"69\" y2=\"275\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"56\" y=\"279\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"61\" y1=\"195\" x2=\"69\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"56\" y=\"199\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"61\" y1=\"115\" x2=\"69\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"56\" y=\"119\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"61\" y1=\"35\" x2=\"69\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"56\" y=\"39\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      <polyline points=\"102.33333333333334,208.96495717728163 106.06666666666672,205.60143690619714 109.79999999999997,202.24930859971917 113.53333333333336,198.90959334860247 117.26666666666662,195.5833084624652 121,192.2714671599059 124.73333333333338,188.97507825986816 128.46666666666664,185.69514587434358 132.20000000000005,182.4326691025103 135.93333333333328,179.18864172639732 139.66666666666669,175.96405190816893 143.40000000000003,172.7598818891211 147.1333333333333,169.57710769048128 150.86666666666667,166.41669881610233 154.59999999999994,163.27961795714322 158.33333333333331,160.16682069882293 162.06666666666672,157.07925522934076 165.79999999999998,154.01786205104884 169.53333333333336,150.98357369396538 173.26666666666662,147.97731443171799 177,145 180.73333333333338,142.05253731762934 184.46666666666664,139.13582421029184 188.20000000000005,136.2507491370547 191.93333333333328,133.39819091973365 195.66666666666666,130.57901847519497 199.40000000000006,127.79409055067521 203.1333333333333,125.04425546219856 206.86666666666667,122.33035083617096 210.59999999999994,119.6532033542319 214.33333333333334,117.0136285014383 218.06666666666672,114.41243031786051 221.79999999999998,111.85040115366377 225.53333333333336,109.32832142775027 229.2666666666666,106.84695939003653 233,104.40707088743665 236.73333333333338,102.00939913362433 240.46666666666664,99.65467448264263 244.20000000000005,97.34361420643069 247.93333333333328,95.07692227633669 251.66666666666666,92.85528914868031 255.40000000000003,90.67939155443369 259.1333333333333,88.54989229308252 262.8666666666667,86.4674400307306 266.59999999999997,84.43266910251033 270.3333333333333,82.44619931935759 274.0666666666667,80.50863577921177 277.79999999999995,78.6205686826969 281.53333333333336,76.78257315334051 285.26666666666665,74.99520906238601 289,73.25902085825 292.7333333333334,71.57453740067837 296.46666666666664,69.94227179965037 300.20000000000005,68.36272125907989 303.9333333333333,66.83636692536325 307.6666666666667,65.36367374081664 311.4000000000001,63.94509030205022 315.1333333333333,62.581048723321686 318.8666666666667,61.271964504909704 322.59999999999997,60.01823640654848 326.3333333333333,58.82024632596199 330.0666666666667,57.678359182533896 333.8000000000001,56.59292280614984 337.53333333333325,55.564267831245076 341.2666666666666,54.592707596089554 345,53.6785380473426 348.73333333333335,52.8220376499047 352.46666666666675,52.02346730209385 356.1999999999999,51.2830702561741 359.9333333333333,50.601072044257904 363.6666666666667,49.97768040960722 367.4000000000001,49.41308524335298 371.13333333333344,48.90745852665219 374.86666666666656,48.46095427830093 378.59999999999997,48.07370850781844 382.3333333333333,47.745839174017846 386.0666666666667,47.47744614907447 389.8000000000001,47.26861118810348 393.5333333333332,47.11939790425724 397.26666666666665,47.029851749347316 401,47.00000000000003 404.7333333333334,47.044565593278094 408.46666666666675,47.17824030542225 412.1999999999999,47.40095794428967 415.9333333333333,47.71260822606145 419.66666666666663,48.11303682985198 423.4000000000001,48.60204547412451 427.13333333333344,49.17939201487535 430.86666666666656,49.844790565536385 434.59999999999997,50.59791163853916 438.3333333333333,51.43838230846768 442.0666666666667,52.3657863967216 445.80000000000007,53.37966467759635 449.5333333333332,54.47951510567975 453.2666666666666,55.66479306445132 457,56.934911635961925 460.7333333333334,58.28924189145951 464.46666666666675,59.727113202818245 468.19999999999993,61.24781357461522 471.9333333333333,62.85058999669218 475.66666666666663,64.53464881702509 479.40000000000003,66.29915613472022 483.13333333333344,68.14323821293925 486.86666666666656,70.06598191155007 490.59999999999997,72.06643513929009 494.33333333333337,74.1436073252158 498.0666666666667,76.29646990920705 501.80000000000007,78.52395685128265 505.53333333333325,80.82496515947483 509.2666666666666,83.1983554360017 513,85.64295244146592 516.7333333333333,88.15754567680216 520.4666666666668,90.74088998268394 524.1999999999999,93.39170615609291 527.9333333333333,96.10868158374672 531.6666666666667,98.89047089206912 535.4000000000001,101.73569661338348 539.1333333333334,104.64294986799764 542.8666666666666,107.61079106184368 546.5999999999999,110.63775059932695 550.3333333333334,113.72232961102924 554.0666666666667,116.86300069590978 557.8000000000002,120.05820867763316 561.5333333333333,123.30637137465068 565.2666666666667,126.60588038365567 569,129.95510187601994 572.7333333333333,133.3523774068231 576.4666666666668,136.79602473607017 580.1999999999999,140.28433866169112 583.9333333333333,143.81559186391286 587.6666666666666,147.38803576057975 591.4,150.9999013730063 595.1333333333334,154.64940020192728 598.8666666666666,158.3347251131149 602.5999999999999,162.05405123222442 606.3333333333334,165.805536848421 610.0666666666667,169.58732432634747 613.8000000000001,173.39754102597476 617.5333333333332,177.23430022988333 621.2666666666667,181.09570207751608 625,184.97983450593702\" fill=\"none\" stroke=\"#d32f2f\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></polyline>\n    \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      <text x=\"345\" y=\"19\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"normal\" opacity=\"1\" fill=\"currentColor\">\n        Port de Quiberon — 23 juillet 2025\n      </text>\n    \n      <text x=\"625\" y=\"317\" text-anchor=\"end\" font-size=\"14\" font-weight=\"normal\" opacity=\"1\" fill=\"currentColor\">\n        Heure (en h)\n      </text>\n    \n      <text x=\"20\" y=\"155\" text-anchor=\"middle\" font-size=\"14\" font-weight=\"normal\" opacity=\"1\" fill=\"currentColor\" transform=\"rotate(-90 20 155)\">\n        Hauteur d'eau (en m)\n      </text>\n    \n      </g>\n    </svg>",
+          "left": -62.5,
+          "right": 437.5,
+          "width": 500,
+          "height": 253.84375
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "svg",
+          "text": "\n      \n      \n        \n        \n      \n        \n      \n        \n      \n        \n      \n        \n   ",
+          "scroll": 500,
+          "client": 500,
+          "children": [],
+          "left": -62.5,
+          "right": 437.5,
+          "width": 500,
+          "height": 253.84375
+        }
+      ],
+      "math": [
+        "7\\,\\text{h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Le graphique suivant donne la hauteur d'eau dans le port de Quiberon le 23 juillet 2025.\n    \n  Avec la précision permise par le graphique, donner la durée pendant laquelle la hauteur d'eau dans le port a été supérieure à 4 m.",
+        "4 h 30 min",
+        "2 h 30 min",
+        "5 h 30 min"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1 °C",
+          "2 °C",
+          "3 °C",
+          "8 °C"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "°C",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "3 °C",
+          "8 °C",
+          "1 °C",
+          "2 °C"
+        ]
+      },
+      {
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "8",
+          "5",
+          "7",
+          "9"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "7",
+          "9",
+          "8",
+          "5"
+        ]
+      },
+      {
+        "answers": [
+          "3/8"
+        ],
+        "possible_answers": [
+          "3/8",
+          "3/5",
+          "5/8",
+          "1/3"
+        ],
+        "time": 120,
+        "qcmAnswersOrder": [
+          "3/5",
+          "1/3",
+          "5/8",
+          "3/8"
+        ]
+      },
+      {
+        "answers": [
+          "KL/KJ",
+          "LK/KJ",
+          "KL/JK",
+          "LK/JK"
+        ],
+        "possible_answers": [
+          "KL/KJ",
+          "JL/KJ",
+          "KJ/KL",
+          "KL/JL"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "KJ/KL",
+          "JL/KJ",
+          "KL/JL",
+          "KL/KJ"
+        ]
+      },
+      {
+        "answers": [
+          "311200000"
+        ],
+        "possible_answers": [
+          "3.112*10^8",
+          "3.112*10^7",
+          "3.112*10^9",
+          "31.12*10^7"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 311200000
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "3.112*10^8",
+          "3.112*10^7",
+          "3.112*10^9",
+          "31.12*10^7"
+        ]
+      },
+      {
+        "answers": [
+          "100 km"
+        ],
+        "possible_answers": [
+          "100 km",
+          "92 km",
+          "80 km",
+          "16 km"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "km"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "92 km",
+          "80 km",
+          "16 km",
+          "100 km"
+        ]
+      },
+      {
+        "answers": [
+          "5(x+1)"
+        ],
+        "possible_answers": [
+          "5(x+1)",
+          "5(x+5)",
+          "10x",
+          "25x"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "factorized"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "10x",
+          "5(x+5)",
+          "25x",
+          "5(x+1)"
+        ]
+      },
+      {
+        "answers": [
+          "72"
+        ],
+        "possible_answers": [
+          "80-10",
+          "80-\\dfrac{10}{100}",
+          "80-\\dfrac{10}{100}\\times80",
+          "\\left(80-\\dfrac{10}{100}\\right)\\times80"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "€",
+          "valueRule": {
+            "type": "decimal"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "80-10",
+          "80-\\dfrac{10}{100}\\times80",
+          "80-\\dfrac{10}{100}",
+          "\\left(80-\\dfrac{10}{100}\\right)\\times80"
+        ]
+      },
+      {
+        "answers": [
+          "4 h 30 min"
+        ],
+        "possible_answers": [
+          "2 h 30 min",
+          "4 h 30 min",
+          "5 h 30 min",
+          "7 h"
+        ],
+        "answerRule": {
+          "type": "duration"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "7 h",
+          "4 h 30 min",
+          "2 h 30 min",
+          "5 h 30 min"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1 °C",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "3 °C",
+          "8 °C",
+          "1 °C",
+          "2 °C"
+        ]
+      },
+      {
+        "correctAnswer": "8",
+        "correctQCMAnswer": "8",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "7",
+          "9",
+          "8",
+          "5"
+        ]
+      },
+      {
+        "correctAnswer": "3/8",
+        "correctQCMAnswer": "3/8",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "3/5",
+          "1/3",
+          "5/8",
+          "3/8"
+        ]
+      },
+      {
+        "correctAnswer": "KL/KJ",
+        "correctQCMAnswer": "KL/KJ",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "KJ/KL",
+          "JL/KJ",
+          "KL/JL",
+          "KL/KJ"
+        ]
+      },
+      {
+        "correctAnswer": "311200000",
+        "correctQCMAnswer": "3.112*10^8",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "3.112*10^8",
+          "3.112*10^7",
+          "3.112*10^9",
+          "31.12*10^7"
+        ]
+      },
+      {
+        "correctAnswer": "100 km",
+        "correctQCMAnswer": "100 km",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "92 km",
+          "80 km",
+          "16 km",
+          "100 km"
+        ]
+      },
+      {
+        "correctAnswer": "5(x+1)",
+        "correctQCMAnswer": "5(x+1)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "10x",
+          "5(x+5)",
+          "25x",
+          "5(x+1)"
+        ]
+      },
+      {
+        "correctAnswer": "72",
+        "correctQCMAnswer": "80-\\dfrac{10}{100}\\times80",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "80-10",
+          "80-\\dfrac{10}{100}\\times80",
+          "80-\\dfrac{10}{100}",
+          "\\left(80-\\dfrac{10}{100}\\right)\\times80"
+        ]
+      },
+      {
+        "correctAnswer": "4 h 30 min",
+        "correctQCMAnswer": "4 h 30 min",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "7 h",
+          "4 h 30 min",
+          "2 h 30 min",
+          "5 h 30 min"
+        ]
+      }
+    ]
+  }
+}

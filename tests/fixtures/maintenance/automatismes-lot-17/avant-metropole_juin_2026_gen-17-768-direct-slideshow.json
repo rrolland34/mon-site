@@ -1,0 +1,523 @@
+{
+  "job": {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 992,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1215,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éDonner une écriture du nombre 0,75 sous la forme d'une fraction.",
+          "scroll": 1215,
+          "client": 1215,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 462.71875,
+              "right": 996.3125,
+              "top": 570.453125,
+              "bottom": 600.453125,
+              "width": 533.59375,
+              "height": 30
+            }
+          ],
+          "left": -223.5,
+          "right": 991.5,
+          "top": 569.453125,
+          "bottom": 612.671875,
+          "width": 1215,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Donner une écriture du nombre }\n        0{,}75\n        \\text{ sous la forme d'une fraction.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 582.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer la somme }\n        -4{,}7+3{,}5."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 885,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1002.609375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éLe tableau suivant est un tableau de proportionnalité.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -117.296875,
+          "right": 885.3125,
+          "top": 444.046875,
+          "bottom": 502.046875,
+          "width": 1002.609375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Le tableau suivant est un tableau de proportionnalité.}",
+        "a",
+        "\\text{Déterminer la valeur de }a\\text{.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "6\n              18\n            \n            \n              12"
+      ]
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": [
+        "Un sac contient 10 boules rouges,\n        4 boules bleues et 6 boules vertes.\n\n        On tire au hasard une boule dans le sac\n        et on note sa couleur.\n\n        Sachant que toutes les boules ont la\n        même probabilité d'être choisies,\n        quelle est la probabilité d'obtenir\n        une boule bleue ?"
+      ]
+    },
+    {
+      "document": 875,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 981.8125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éQuelle est la solution de l'équation 10x+16=−64 ?",
+          "scroll": 982,
+          "client": 982,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 866.265625,
+              "right": 894.1875,
+              "top": 571.453125,
+              "bottom": 600.453125,
+              "width": 27.921875,
+              "height": 29
+            }
+          ],
+          "left": -106.90625,
+          "right": 874.90625,
+          "top": 569.453125,
+          "bottom": 612.671875,
+          "width": 981.8125,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Quelle est la solution de l'équation }\n          10x+16=-64\\text{ ?}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 909,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1050.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Quelles est la notation scientifique du nombre 0,004 58 ?",
+          "scroll": 1050,
+          "client": 1050,
+          "children": [],
+          "left": -141.234375,
+          "right": 909.234375,
+          "top": 570.546875,
+          "bottom": 611.578125,
+          "width": 1050.46875,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Quelles est la notation scientifique du nombre }0{,}004~58\\text{ ?}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1042,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg class=\"pie-chart-figure\" viewBox=\"0 0 320 320\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Diagramme circulaire\">\n      \n    <circle cx=\"160\" cy=\"160\" r=\"134.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></circle>\n  \n      \n      <line x1=\"160\" y1=\"160\" x2=\"160\" y2=\"25.599999999999994\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"160\" y1=\"160\" x2=\"294.4\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"160\" y1=\"160\" x2=\"194.7852796617788\" y2=\"289.8204310532508\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"160\" y1=\"160\" x2=\"31.472640798568023\" y2=\"199.29475711473586\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      \n      <path d=\"\n          M 160 142\n          L 178 142\n          L 178 160\n        \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n    \n      \n      <text x=\"215.12038780705376\" y=\"104.87961219294625\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        Réponse B\n      </text>\n    \n      <text x=\"221.84347958238237\" y=\"207.4541709140878\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        Réponse C\n      </text>\n    \n      <text x=\"122.20812048255755\" y=\"228.17835541093018\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        Réponse D\n      </text>\n    \n      <text x=\"97.33775000116668\" y=\"113.63237412715944\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        Réponse A\n      </text>\n    \n      \n      \n    </svg>",
+          "left": 184,
+          "right": 584,
+          "top": 434.65625,
+          "bottom": 834.65625,
+          "width": 400,
+          "height": 400
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 1315.828125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééèLe diagramme circulaire ci-dessous représente les réponses de 24 élèves.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -273.90625,
+          "right": 1041.921875,
+          "top": 356.140625,
+          "bottom": 414.140625,
+          "width": 1315.828125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèéCombien d'élèves ont choisi la réponse B ?",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -6.46875,
+          "right": 774.46875,
+          "top": 850.171875,
+          "bottom": 908.171875,
+          "width": 780.9375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Le diagramme circulaire ci-dessous représente les réponses de 24 élèves.}",
+        "\\text{Combien d'élèves ont choisi la réponse B ?}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 792,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        50\n        80\n        400\n        250\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Quadrilatère\">\n      <polygon points=\"\n          100,280\n          400,280\n          400,130\n          100,130\n        \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <g class=\"quadrilateral-right-angles\">\n        \n    <path d=\"\n        M 118 280\n        L 118 262\n        L 100 262\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 382 280\n        L 382 262\n        L 400 262\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 400 148\n        L 382 148\n        L 382 130\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 118 130\n        L 118 148\n        L 100 148\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n            <text x=\"250\" y=\"304\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n                rotate(\n                  0\n                  250\n                  304\n                )\n              \">\n              10 mm\n            </text>\n          \n            <text x=\"424\" y=\"205\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n                rotate(\n                  -90\n                  424\n                  205\n                )\n              \">\n              5 mm\n            </text>\n          \n      </g>\n\n      <text x=\"74.95603865200235\" y=\"292.5219806739988\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        \n      </text>\n\n      <text x=\"425.04396134799765\" y=\"292.5219806739988\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        \n      </text>\n\n      <text x=\"425.04396134799765\" y=\"117.47801932600117\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        \n      </text>\n\n      <text x=\"74.95603865200235\" y=\"117.47801932600117\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        \n      </text>\n\n        \n    </svg>",
+          "left": 224,
+          "right": 544,
+          "top": 517.328125,
+          "bottom": 717.328125,
+          "width": 320,
+          "height": 200
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 815.953125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèCalculer le périmètre de la figure ci-dessous.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -23.96875,
+          "right": 791.984375,
+          "top": 448.8125,
+          "bottom": 506.8125,
+          "width": 815.953125,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Calculer le périmètre de la figure ci-dessous.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1045,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        19.999999999999986\n        -250.00000000000003\n        460\n        385.00000000000006\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle rectangle\">\n      <defs>\n        <marker id=\"triangle-arrow-head\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8.5\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M4,1.5 L4,4.5 L9,3 z\" fill=\"red\"></path>\n        </marker>\n      </defs>\n\n      <g transform=\"\n          rotate(\n            180\n            250\n            167.5\n          )\n        \">\n\n        \n    <path d=\"\n        M 124 280\n        L 124 304\n        L 100 304\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line x1=\"100\" y1=\"280\" x2=\"400\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- leg2 : AC -->\n          <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"505\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- hypoténuse : BC -->\n          <line x1=\"400\" y1=\"280\" x2=\"100\" y2=\"505\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text x=\"422.4\" y=\"71.79999999999997\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        E\n      </text>\n\n      <text x=\"73.78278302806675\" y=\"64.831456364475\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        F\n      </text>\n\n      <text x=\"415.53160549430635\" y=\"-193.29740824145966\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        D\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text x=\"235.59999999999997\" y=\"-76.69999999999999\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            -36.869897645844034\n            235.59999999999997\n            -76.69999999999999\n          )\n        \">\n        10 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text x=\"250\" y=\"79\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            0\n            250\n            79\n          )\n        \">\n        8 cm\n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text x=\"424\" y=\"-57.500000000000036\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            89.99999999999999\n            424\n            -57.500000000000036\n          )\n        \">\n        6 cm\n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>",
+          "left": 234.015625,
+          "right": 534,
+          "top": 497.21875,
+          "bottom": 748.28125,
+          "width": 299.984375,
+          "height": 251.0625
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 1322.859375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer le cosinus de l'angle EDF^ dans le triangle rectangle ci-dessous.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -277.421875,
+          "right": 1045.4375,
+          "top": 428.703125,
+          "bottom": 486.703125,
+          "width": 1322.859375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Calculer le cosinus de l'angle }\n              \\widehat{\\mathrm{EDF}}\n              \\text{ dans le triangle rectangle ci-dessous.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{75}{10}\\)",
+          "\\(\\dfrac{75}{1~000}\\)",
+          "\\(\\dfrac{4}{3}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "-1.2"
+        ],
+        "possible_answers": [
+          "\\(-1{,}2\\)",
+          "\\(1{,}2\\)",
+          "\\(-8{,}2\\)",
+          "\\(8{,}2\\)"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "36"
+        ],
+        "possible_answers": [
+          "24",
+          "30",
+          "36",
+          "42"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/5"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{4}{20}\\)",
+          "\\(\\dfrac{4}{16}\\)",
+          "\\(\\dfrac{1}{3}\\)"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "-8"
+        ],
+        "possible_answers": [
+          "\\(8\\)",
+          "\\(-4,8\\)",
+          "\\(-8\\)",
+          "\\(-14\\)"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "4.58*10^-3"
+        ],
+        "possible_answers": [
+          "\\(458\\times10^{-3}\\)",
+          "\\(4{,}58\\times10^{3}\\)",
+          "\\(4{,}58\\times10^{-3}\\)",
+          "\\(458\\times10^{-5}\\)"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 0.00458
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "6"
+        ],
+        "possible_answers": [
+          "4",
+          "6",
+          "8",
+          "12"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "30 mm"
+        ],
+        "possible_answers": [
+          "\\(30\\ \\mathrm{mm}\\)",
+          "\\(30\\ \\mathrm{mm}^2\\)",
+          "\\(50\\ \\mathrm{mm}\\)",
+          "\\(50\\ \\mathrm{mm}^2\\)"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "3/5"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{4}{5}\\)",
+          "\\(\\dfrac{3}{5}\\)",
+          "\\(\\dfrac{5}{3}\\)",
+          "\\(\\dfrac{4}{3}\\)"
+        ],
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "3/4",
+        "correctQCMAnswer": "3/4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "-1.2",
+        "correctQCMAnswer": "-1.2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "36",
+        "correctQCMAnswer": "36",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/5",
+        "correctQCMAnswer": "1/5",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "-8",
+        "correctQCMAnswer": "-8",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "4.58*10^-3",
+        "correctQCMAnswer": "4.58*10^-3",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "6",
+        "correctQCMAnswer": "6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "30 mm",
+        "correctQCMAnswer": "30 mm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "3/5",
+        "correctQCMAnswer": "3/5",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

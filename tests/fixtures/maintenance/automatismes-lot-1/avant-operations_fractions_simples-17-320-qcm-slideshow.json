@@ -1,0 +1,979 @@
+{
+  "job": {
+    "id": "operations_fractions_simples",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 12+14=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{2}+\\dfrac{1}{4}=\\ldots",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 34−12=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{3}{4}-\\dfrac{1}{2}=\\ldots",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 34+14=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{3}{4}+\\dfrac{1}{4}=\\ldots",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 12+12=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{2}+\\dfrac{1}{2}=\\ldots",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 464,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 607.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 1−12=…",
+          "left": -143.625,
+          "right": 463.625,
+          "width": 607.25,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } 1-\\dfrac{1}{2}=\\ldots",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 14+14=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{4}+\\dfrac{1}{4}=\\ldots",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 34−14=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{3}{4}-\\dfrac{1}{4}=\\ldots",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 473,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 12−14=…",
+          "left": -153.171875,
+          "right": 473.171875,
+          "width": 626.34375,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{2}-\\dfrac{1}{4}=\\ldots",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 464,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 607.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 1−14=…",
+          "left": -143.625,
+          "right": 463.625,
+          "width": 607.25,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } 1-\\dfrac{1}{4}=\\ldots",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    },
+    {
+      "document": 464,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 607.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 1−34=…",
+          "left": -143.625,
+          "right": 463.625,
+          "width": 607.25,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } 1-\\dfrac{3}{4}=\\ldots",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 10,
+    "questions": [
+      {
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "3/4",
+        "correctQCMAnswer": "\\(\\dfrac{3}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "\\(\\dfrac{1}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ]
+      },
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ]
+      },
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ]
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "\\(\\dfrac{1}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "\\(\\dfrac{1}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "\\(\\dfrac{1}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "\\(\\dfrac{1}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "3/4",
+        "correctQCMAnswer": "\\(\\dfrac{3}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "1"
+        ]
+      },
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "\\(\\dfrac{1}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)"
+        ]
+      }
+    ]
+  }
+}

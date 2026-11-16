@@ -5,6 +5,7 @@ import { programSource, scratchFinalFigure } from '../../core/scratch/scratchSta
 import { executeProgram, segmentsOf } from '../../core/scratch/scratchGeometry.js';
 import { geometryProjection } from '../../core/scratch/scratchGeometryView.js';
 import { formatAnswer } from "../../core/answerFormatting.js";
+import { presentReference2Question } from '../dnbReference2Presentation.js';
 
 // Règle locale ouverte : aucune liste finie d'exemples ne définit les réponses.
 export function validateFiveDigitMultiple({ userInput }) {
@@ -226,5 +227,5 @@ export default {
     display_answer: ['q8', 'q9'].includes(question.id)
       ? `<span class="dnb-ref2-static-correction" style="display:block">${question.display_answer}</span>`
       : question.display_answer
-  }))
+  })).map(presentReference2Question)
 }

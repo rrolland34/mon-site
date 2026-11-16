@@ -1,0 +1,346 @@
+{
+  "job": {
+    "id": "ecritures_decimales",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 776,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,001.",
+        "\\dfrac{1}{10}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{100}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{1~000}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>",
+        "\\dfrac{1~000}{1}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow><mn>1</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,001."
+      ],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 894,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{10}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,01",
+        "0,001",
+        "1,10",
+        "0,1"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 754.296875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,01.",
+        "\\dfrac{1}{100}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{10}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>",
+        "\\dfrac{100}{1}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>100</mn><mn>1</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{1~000}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,01."
+      ],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 732.59375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,1.",
+        "\\dfrac{1}{100}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>100</mn></mfrac></mstyle></math>",
+        "\\dfrac{10}{1}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>10</mn><mn>1</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{10}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>10</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{1~000}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mrow><mn>1</mn><mtext>&nbsp;</mtext><mn>000</mn></mrow></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,1."
+      ],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 915.703125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{100}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1,100",
+        "0,001",
+        "0,01",
+        "0,1"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 948.25,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{1~000}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,001",
+        "0,01",
+        "1,1000",
+        "0,1"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "1/1000"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1~000}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{1~000}{1}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "0,1"
+        ],
+        "possible_answers": [
+          "0,1",
+          "0,01",
+          "0,001",
+          "1,10"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,01",
+          "0,001",
+          "1,10",
+          "0,1"
+        ]
+      },
+      {
+        "answers": [
+          "1/100"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{100}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{100}{1}\\)",
+          "\\(\\dfrac{1}{1~000}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1/10"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{10}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{10}{1}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{1~000}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1,100"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1,100",
+          "0,001",
+          "0,01",
+          "0,1"
+        ]
+      },
+      {
+        "answers": [
+          "0,001"
+        ],
+        "possible_answers": [
+          "0,001",
+          "0,01",
+          "0,1",
+          "1,1000"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,001",
+          "0,01",
+          "1,1000",
+          "0,1"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "1/1000",
+        "correctQCMAnswer": "1/1000",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{1~000}{1}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "0,1",
+        "correctQCMAnswer": "0,1",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,01",
+          "0,001",
+          "1,10",
+          "0,1"
+        ]
+      },
+      {
+        "correctAnswer": "1/100",
+        "correctQCMAnswer": "\\(\\dfrac{1}{100}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{100}{1}\\)",
+          "\\(\\dfrac{1}{1~000}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1/10",
+        "correctQCMAnswer": "\\(\\dfrac{1}{10}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{10}{1}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{1~000}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "0,01",
+        "correctQCMAnswer": "0,01",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "1,100",
+          "0,001",
+          "0,01",
+          "0,1"
+        ]
+      },
+      {
+        "correctAnswer": "0,001",
+        "correctQCMAnswer": "0,001",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,001",
+          "0,01",
+          "1,1000",
+          "0,1"
+        ]
+      }
+    ]
+  }
+}

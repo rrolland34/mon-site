@@ -1,3 +1,5 @@
+import { presentPowersQuestion } from '../powersPresentation.js';
+
 // exercices/puissances/ecriture_scientifique.js
 
 import {
@@ -741,7 +743,7 @@ function generateQuestions() {
     question3,
     question4,
     question5
-  ];
+  ].map(presentPowersQuestion);
 }
 
 

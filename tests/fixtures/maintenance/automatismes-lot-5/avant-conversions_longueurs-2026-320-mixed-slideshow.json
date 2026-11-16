@@ -1,0 +1,533 @@
+{
+  "job": {
+    "id": "conversions_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 294.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "255 m=… cm",
+          "scroll": 296,
+          "client": 294,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 12.765625,
+              "right": 308.390625,
+              "width": 295.625,
+              "height": 31
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 12.765625,
+              "right": 308.390625,
+              "width": 295.625,
+              "height": 30
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 253.09375,
+              "right": 308.390625,
+              "width": 55.296875,
+              "height": 20
+            }
+          ],
+          "left": 12.765625,
+          "right": 307.234375,
+          "width": 294.46875,
+          "height": 34.46875
+        }
+      ],
+      "math": [
+        "255\\ \\text{m}=\\ldots\\ \\text{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 339.109375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "31 hm=3 100 …",
+          "scroll": 346,
+          "client": 339,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -9.546875,
+              "right": 336.5,
+              "width": 346.046875,
+              "height": 31
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -9.546875,
+              "right": 336.5,
+              "width": 346.046875,
+              "height": 30
+            }
+          ],
+          "left": -9.546875,
+          "right": 329.5625,
+          "width": 339.109375,
+          "height": 35.6875
+        }
+      ],
+      "math": [
+        "31\\ \\text{hm}=3~100\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "dm",
+        "hm",
+        "m",
+        "dam"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 328.234375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "52,21 cm=… m",
+          "scroll": 336,
+          "client": 328,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -4.109375,
+              "right": 331.65625,
+              "width": 335.765625,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -4.109375,
+              "right": 331.65625,
+              "width": 335.765625,
+              "height": 36
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 295.515625,
+              "right": 331.65625,
+              "width": 36.140625,
+              "height": 20
+            }
+          ],
+          "left": -4.109375,
+          "right": 324.125,
+          "width": 328.234375,
+          "height": 39.34375
+        }
+      ],
+      "math": [
+        "52{,}21\\ \\text{cm}=\\ldots\\ \\text{m}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "5,221",
+        "5 221",
+        "0,522 1",
+        "0,052 21"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 436.765625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "763,84 km=76 384 …",
+          "scroll": 457,
+          "client": 437,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -58.375,
+              "right": 398.765625,
+              "width": 457.140625,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -58.375,
+              "right": 398.765625,
+              "width": 457.140625,
+              "height": 36
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 354.15625,
+              "right": 386.828125,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -58.375,
+          "right": 378.390625,
+          "width": 436.765625,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "763{,}84\\ \\text{km}=76~384\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "5,221",
+        "5 221",
+        "0,522 1",
+        "0,052 21"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 353.578125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "957,91 km=… m",
+          "scroll": 363,
+          "client": 354,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -16.78125,
+              "right": 346.65625,
+              "width": 363.4375,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -16.78125,
+              "right": 346.65625,
+              "width": 363.4375,
+              "height": 36
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 310.515625,
+              "right": 346.65625,
+              "width": 36.140625,
+              "height": 20
+            }
+          ],
+          "left": -16.78125,
+          "right": 336.796875,
+          "width": 353.578125,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "957{,}91\\ \\text{km}=\\ldots\\ \\text{m}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "9 579 100",
+        "957 910",
+        "0,957 91",
+        "95 791"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 445.1875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "229,29 cm=2,292 9 …",
+          "scroll": 462,
+          "client": 445,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -62.59375,
+              "right": 399.828125,
+              "width": 462.421875,
+              "height": 36
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -62.59375,
+              "right": 399.828125,
+              "width": 462.421875,
+              "height": 35
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 355.21875,
+              "right": 387.890625,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -62.59375,
+          "right": 382.59375,
+          "width": 445.1875,
+          "height": 39.34375
+        }
+      ],
+      "math": [
+        "229{,}29\\ \\text{cm}=2{,}292~9\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "9 579 100",
+        "957 910",
+        "0,957 91",
+        "95 791"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "25500"
+        ],
+        "possible_answers": [
+          "25 500",
+          "2 550",
+          "255 000",
+          "2,55"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "m"
+        ],
+        "possible_answers": [
+          "m",
+          "dam",
+          "dm",
+          "hm"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "dm",
+          "hm",
+          "m",
+          "dam"
+        ]
+      },
+      {
+        "answers": [
+          "0.5221"
+        ],
+        "possible_answers": [
+          "0,522 1",
+          "0,052 21",
+          "5,221",
+          "5 221"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "5,221",
+          "5 221",
+          "0,522 1",
+          "0,052 21"
+        ]
+      },
+      {
+        "answers": [
+          "dam"
+        ],
+        "possible_answers": [
+          "dam",
+          "hm",
+          "m",
+          "km"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "957910"
+        ],
+        "possible_answers": [
+          "957 910",
+          "95 791",
+          "9 579 100",
+          "0,957 91"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "9 579 100",
+          "957 910",
+          "0,957 91",
+          "95 791"
+        ]
+      },
+      {
+        "answers": [
+          "m"
+        ],
+        "possible_answers": [
+          "m",
+          "dam",
+          "dm",
+          "hm"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "25500",
+        "correctQCMAnswer": "25500",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "m",
+        "correctQCMAnswer": "m",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "dm",
+          "hm",
+          "m",
+          "dam"
+        ]
+      },
+      {
+        "correctAnswer": "0.5221",
+        "correctQCMAnswer": "0,522 1",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "5,221",
+          "5 221",
+          "0,522 1",
+          "0,052 21"
+        ]
+      },
+      {
+        "correctAnswer": "dam",
+        "correctQCMAnswer": "dam",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "957910",
+        "correctQCMAnswer": "957 910",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "9 579 100",
+          "957 910",
+          "0,957 91",
+          "95 791"
+        ]
+      },
+      {
+        "correctAnswer": "m",
+        "correctQCMAnswer": "m",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

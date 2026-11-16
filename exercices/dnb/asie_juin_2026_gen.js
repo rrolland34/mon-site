@@ -1,6 +1,7 @@
 // Série générale — Asie — 15 juin 2026.
 import { createRightTriangleSVG } from "../figures/rightTriangle.js";
 import { createCartesianPlaneSVG } from "../figures/cartesianPlaneFigure.js";
+import { presentAsiaQuestion } from "../asiaPresentation.js";
 
 // Aucun générateur de roue légendée n'est disponible : SVG local à la série.
 // Les positions et les dix gains reprennent le TikZ du sujet.
@@ -185,5 +186,5 @@ export default {
       answerRule: { type: "symbolicExact" },
       display_answer: String.raw`a. \(27\) élèves ; b. médiane : \(11\).<br>L'effectif total est \(3+4+4+5+5+3+2+1=27\). La médiane est la 14e note : les notes 11 occupent les rangs 12 à 16.`
     }
-  ]
+  ].map(presentAsiaQuestion)
 };

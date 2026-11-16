@@ -243,5 +243,5 @@ for(const answerMode of ['direct','qcm']) test(`session, historique et six expor
   assert.doesNotMatch(statement,/data-rosette-scene="4"/);
   const corrected=createEvaluationWithCorrection({exercice:series,answerMode});
   if(answerMode==='direct') assert.ok(corrected.includes(series.questions[7].display_answer));
-  else assert.ok(corrected.includes(series.questions[7].qcmAnswer));
+  else assert.ok(corrected.includes(formatQCMAnswer(series.questions[7].qcmAnswer,series.questions[7])));
 });

@@ -11,8 +11,10 @@ import {
   createFigureQuestions
 } from "../core/questionFactory.js";
 
+import { fractionFigureText, formatFractionFigureAnswer } from "./fractionFigurePresentation.js";
+
 const questionText =
-  "Quelle fraction de la figure est coloriée ?";
+  fractionFigureText("Quelle fraction de la figure est coloriée ?");
 
 function createFractionAnswers({
   numerator,
@@ -385,7 +387,11 @@ const questions = [
   ...diskQuestions,
   ...diagonalRectangleQuestions,
   ...stripQuestions
-];
+].map(question => ({
+  ...question,
+  question: question.question.replace("<div>", '<div class="fraction-figure-question">'),
+  qcmRenderAnswer: formatFractionFigureAnswer
+}));
 
 export default {
   title:

@@ -1,3 +1,4 @@
+import ordreNombresDecimaux from '../exercices/ordre_nombres_decimaux.js';
 import remediationSerie6 from '../exercices/remediation_evaluations_nationales_6e_serie_6.js';
 import remediationSerie5 from '../exercices/remediation_evaluations_nationales_6e_serie_5.js';
 import remediationSerie4 from '../exercices/remediation_evaluations_nationales_6e_serie_4.js';
@@ -129,6 +130,7 @@ import testQcmLatex
 import test_qcm_latex from "../exercices/tests/test_qcm_latex.js";
 
 const exercises = {
+  ordre_nombres_decimaux: ordreNombresDecimaux,
   formules_tableur: formulesTableur,
   tableur_factures: tableurFactures,
   comprendre_programme_scratch: comprendreScratch,

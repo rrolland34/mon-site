@@ -1,0 +1,1061 @@
+{
+  "job": {
+    "id": "sujet_0_num_1_decembre_2025_pro",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 560 380\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"71.73076923076923\" y1=\"25\" x2=\"71.73076923076923\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"135.19230769230768\" y1=\"25\" x2=\"135.19230769230768\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"198.65384615384616\" y1=\"25\" x2=\"198.65384615384616\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"262.11538461538464\" y1=\"25\" x2=\"262.11538461538464\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"325.5769230769231\" y1=\"25\" x2=\"325.5769230769231\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"389.03846153846155\" y1=\"25\" x2=\"389.03846153846155\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"452.5\" y1=\"25\" x2=\"452.5\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"515.9615384615385\" y1=\"25\" x2=\"515.9615384615385\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"325\" x2=\"535\" y2=\"325\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"258.33333333333337\" x2=\"535\" y2=\"258.33333333333337\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"191.66666666666669\" x2=\"535\" y2=\"191.66666666666669\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"125\" x2=\"535\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"40\" y1=\"58.333333333333336\" x2=\"535\" y2=\"58.333333333333336\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"40\" y1=\"191.66666666666669\" x2=\"535\" y2=\"191.66666666666669\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"71.73076923076923\" y1=\"187.66666666666669\" x2=\"71.73076923076923\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"71.73076923076923\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"135.19230769230768\" y1=\"187.66666666666669\" x2=\"135.19230769230768\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"135.19230769230768\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"198.65384615384616\" y1=\"187.66666666666669\" x2=\"198.65384615384616\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"198.65384615384616\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"262.11538461538464\" y1=\"187.66666666666669\" x2=\"262.11538461538464\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"262.11538461538464\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"325.5769230769231\" y1=\"187.66666666666669\" x2=\"325.5769230769231\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"325.5769230769231\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"389.03846153846155\" y1=\"187.66666666666669\" x2=\"389.03846153846155\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"389.03846153846155\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"452.5\" y1=\"187.66666666666669\" x2=\"452.5\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"452.5\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"515.9615384615385\" y1=\"187.66666666666669\" x2=\"515.9615384615385\" y2=\"195.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"515.9615384615385\" y=\"209.66666666666669\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"198.65384615384616\" y1=\"25\" x2=\"198.65384615384616\" y2=\"345\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"194.65384615384616\" y1=\"325\" x2=\"202.65384615384616\" y2=\"325\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"329\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"194.65384615384616\" y1=\"258.33333333333337\" x2=\"202.65384615384616\" y2=\"258.33333333333337\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"262.33333333333337\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"194.65384615384616\" y1=\"191.66666666666669\" x2=\"202.65384615384616\" y2=\"191.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"194.65384615384616\" y1=\"125\" x2=\"202.65384615384616\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"129\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"194.65384615384616\" y1=\"58.333333333333336\" x2=\"202.65384615384616\" y2=\"58.333333333333336\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"189.65384615384616\" y=\"62.333333333333336\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g stroke=\"currentColor\" stroke-width=\"2\">\n          <line x1=\"385.03846153846155\" y1=\"254.33333333333337\" x2=\"393.03846153846155\" y2=\"262.33333333333337\"></line>\n\n          <line x1=\"385.03846153846155\" y1=\"262.33333333333337\" x2=\"393.03846153846155\" y2=\"254.33333333333337\"></line>\n        </g>\n\n        \n          <text x=\"399.03846153846155\" y=\"248.33333333333337\" text-anchor=\"start\" font-size=\"14\" fill=\"currentColor\">\n            A\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "top": 618.6875,
+          "bottom": 809.1875,
+          "width": 280.75,
+          "height": 190.5
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "-2",
+          "left": 76.96634674072266,
+          "right": 89.21634674072266,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 12.25,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "-1",
+          "left": 108.7806167602539,
+          "right": 121.0306167602539,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 12.25,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "0",
+          "left": 143.20425415039062,
+          "right": 150.23550415039062,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 7.03125,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "1",
+          "left": 175.01852416992188,
+          "right": 182.04978942871094,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 7.0312652587890625,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "2",
+          "left": 206.8328094482422,
+          "right": 213.86407470703125,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 7.0312652587890625,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "3",
+          "left": 238.64707946777344,
+          "right": 245.67832946777344,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 7.03125,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "4",
+          "left": 269.46136474609375,
+          "right": 277.49261474609375,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 8.03125,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "5",
+          "left": 302.275634765625,
+          "right": 309.306884765625,
+          "top": 709.7966918945312,
+          "bottom": 726.7966918945312,
+          "width": 7.03125,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "-2",
+          "left": 129.95803833007812,
+          "right": 142.20803833007812,
+          "top": 769.620361328125,
+          "bottom": 786.620361328125,
+          "width": 12.25,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "-1",
+          "left": 129.95803833007812,
+          "right": 142.20803833007812,
+          "top": 736.1993408203125,
+          "bottom": 753.1993408203125,
+          "width": 12.25,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "1",
+          "left": 135.17678833007812,
+          "right": 142.20803833007812,
+          "top": 669.3572387695312,
+          "bottom": 686.3572387695312,
+          "width": 7.03125,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "2",
+          "left": 135.17678833007812,
+          "right": 142.20803833007812,
+          "top": 635.9361572265625,
+          "bottom": 652.9361572265625,
+          "width": 7.03125,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        },
+        {
+          "text": "A",
+          "left": 246.1758575439453,
+          "right": 256.17584228515625,
+          "top": 729.180908203125,
+          "bottom": 746.180908203125,
+          "width": 9.999984741210938,
+          "height": 17,
+          "svg": {
+            "left": 47.125,
+            "right": 327.875,
+            "top": 618.6875,
+            "bottom": 809.1875,
+            "width": 280.75,
+            "height": 190.5
+          }
+        }
+      ],
+      "mathWidth": 118.28125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Déterminer}",
+        "\\text{les}",
+        "\\text{coordonnées}",
+        "\\text{du}",
+        "\\text{point}",
+        "\\mathrm{A}",
+        "\\text{placé}",
+        "\\text{dans}",
+        "\\text{le}",
+        "\\text{repère}",
+        "\\text{ci-dessous.}",
+        "(3\\,;\\,1)",
+        "(2\\,;\\,-1)",
+        "(3\\,;\\,-1)",
+        "(-1\\,;\\,3)"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 203.59375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{On}",
+        "\\text{donne}",
+        "\\text{l'expression}",
+        "A(x)=2(x+3)-3.",
+        "\\text{Donner}",
+        "\\text{la}",
+        "\\text{valeur}",
+        "\\text{de}",
+        "A",
+        "\\text{pour}",
+        "x=2.",
+        "10",
+        "1",
+        "7",
+        "4"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 86.859375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner}",
+        "\\text{l'écriture}",
+        "\\text{décimale}",
+        "\\text{de}",
+        "\\dfrac{3}{4}.",
+        "0{,}34",
+        "1{,}25",
+        "0{,}25",
+        "0{,}75"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 96.375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Simplifier}",
+        "\\text{la}",
+        "\\text{fraction}",
+        "\\dfrac{10}{15}.",
+        "\\dfrac{1}{5}",
+        "\\dfrac{3}{2}",
+        "\\dfrac{5}{3}",
+        "\\dfrac{2}{3}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg class=\"pie-chart-figure\" viewBox=\"0 0 300 300\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Diagramme circulaire\">\n      \n    <circle cx=\"150\" cy=\"150\" r=\"126\" fill=\"rgba(0, 190, 220, 0.25)\" stroke=\"currentColor\" stroke-width=\"2\"></circle>\n  \n      \n      <line x1=\"150\" y1=\"150\" x2=\"111.06385870875664\" y2=\"30.16687894681064\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"188.9361412912434\" y2=\"30.166878946810655\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"251.93614129124336\" y2=\"75.93905821114838\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"276\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"251.93614129124336\" y2=\"224.0609417888516\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"188.9361412912434\" y2=\"269.83312105318936\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"111.06385870875664\" y2=\"269.83312105318936\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"48.06385870875664\" y2=\"224.06094178885164\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"24\" y2=\"150.00000000000003\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      <line x1=\"150\" y1=\"150\" x2=\"48.06385870875661\" y2=\"75.93905821114839\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n      \n      \n      <text x=\"150\" y=\"46.68000000000001\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        1\n      </text>\n    \n      <text x=\"210.7299722668583\" y=\"66.41236414118043\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        2\n      </text>\n    \n      <text x=\"248.26315926361525\" y=\"118.07236414118043\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        3\n      </text>\n    \n      <text x=\"248.26315926361525\" y=\"181.92763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        4\n      </text>\n    \n      <text x=\"210.7299722668583\" y=\"233.58763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        5\n      </text>\n    \n      <text x=\"150\" y=\"253.32\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        6\n      </text>\n    \n      <text x=\"89.27002773314169\" y=\"233.58763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        7\n      </text>\n    \n      <text x=\"51.73684073638475\" y=\"181.92763585881957\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        8\n      </text>\n    \n      <text x=\"51.73684073638475\" y=\"118.0723641411804\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        9\n      </text>\n    \n      <text x=\"89.27002773314166\" y=\"66.41236414118045\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"16\" fill=\"currentColor\">\n        10\n      </text>\n    \n      \n    <g class=\"pie-chart-pointer\" transform=\"translate(150 150) rotate(0)\">\n      <path d=\"M 0 0 L 0 -81.9 M -5 -72.9 L 0 -81.9 L 5 -72.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n    </g>\n  \n      \n    </svg>",
+          "left": 61.15625,
+          "right": 313.828125,
+          "top": 710.0625,
+          "bottom": 962.734375,
+          "width": 252.671875,
+          "height": 252.671875
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "1",
+          "left": 183.85939025878906,
+          "right": 191.12501525878906,
+          "top": 737.7532348632812,
+          "bottom": 755.7532348632812,
+          "width": 7.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "2",
+          "left": 235.00856018066406,
+          "right": 242.27418518066406,
+          "top": 754.3726196289062,
+          "bottom": 772.3726196289062,
+          "width": 7.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "3",
+          "left": 266.6204833984375,
+          "right": 273.8861083984375,
+          "top": 797.8826904296875,
+          "bottom": 815.8827514648438,
+          "width": 7.265625,
+          "height": 18.00006103515625,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "4",
+          "left": 265.6204833984375,
+          "right": 273.8861083984375,
+          "top": 851.6641845703125,
+          "bottom": 869.6641845703125,
+          "width": 8.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "5",
+          "left": 235.00856018066406,
+          "right": 242.27418518066406,
+          "top": 895.1742553710938,
+          "bottom": 913.1742553710938,
+          "width": 7.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "6",
+          "left": 183.85939025878906,
+          "right": 191.12501525878906,
+          "top": 911.7936401367188,
+          "bottom": 929.7936401367188,
+          "width": 7.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "7",
+          "left": 132.71018981933594,
+          "right": 139.97581481933594,
+          "top": 895.1742553710938,
+          "bottom": 913.1742553710938,
+          "width": 7.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "8",
+          "left": 101.09825134277344,
+          "right": 108.36387634277344,
+          "top": 851.6641845703125,
+          "bottom": 869.6641845703125,
+          "width": 7.265625,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "9",
+          "left": 101.09825134277344,
+          "right": 108.36387634277344,
+          "top": 797.8826904296875,
+          "bottom": 815.8827514648438,
+          "width": 7.265625,
+          "height": 18.00006103515625,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        },
+        {
+          "text": "10",
+          "left": 129.07736206054688,
+          "right": 143.60861206054688,
+          "top": 754.3726196289062,
+          "bottom": 772.3726196289062,
+          "width": 14.53125,
+          "height": 18,
+          "svg": {
+            "left": 61.15625,
+            "right": 313.828125,
+            "top": 710.0625,
+            "bottom": 962.734375,
+            "width": 252.671875,
+            "height": 252.671875
+          }
+        }
+      ],
+      "mathWidth": 110.40625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Une}",
+        "\\text{roue}",
+        "\\text{équilibrée}",
+        "\\text{est}",
+        "\\text{divisée}",
+        "\\text{en}",
+        "10",
+        "\\text{secteurs}",
+        "\\text{identiques.}",
+        "\\text{On}",
+        "\\text{fait}",
+        "\\text{tourner}",
+        "\\text{la}",
+        "\\text{roue.}",
+        "\\text{Déterminer}",
+        "\\text{la}",
+        "\\text{probabilité}",
+        "\\text{d'obtenir}",
+        "7.",
+        "\\dfrac{1}{10}",
+        "\\dfrac{7}{10}",
+        "\\dfrac{1}{7}",
+        "\\dfrac{9}{10}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 158.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Les}",
+        "\\text{distances}",
+        "\\text{sur}",
+        "\\text{une}",
+        "\\text{carte}",
+        "\\text{sont}",
+        "\\text{proportionnelles}",
+        "\\text{aux}",
+        "\\text{distances}",
+        "\\text{réelles.}",
+        "\\text{Sur}",
+        "\\text{une}",
+        "\\text{carte,}",
+        "1~\\mathrm{cm}",
+        "\\text{représente}",
+        "3~\\mathrm{km}.",
+        "\\text{Sur}",
+        "\\text{cette}",
+        "\\text{carte,}",
+        "\\text{deux}",
+        "\\text{villages}",
+        "\\text{sont}",
+        "\\text{distants}",
+        "\\text{de}",
+        "5~\\mathrm{cm}.",
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{distance}",
+        "\\text{réelle,}",
+        "\\text{en}",
+        "\\mathrm{km},",
+        "\\text{entre}",
+        "\\text{ces}",
+        "\\text{deux}",
+        "\\text{villages ?}",
+        "8~\\mathrm{km}",
+        "2~\\mathrm{km}",
+        "150~\\mathrm{km}",
+        "15~\\mathrm{km}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 86.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Voici}",
+        "\\text{une}",
+        "\\text{série}",
+        "\\text{de}",
+        "\\text{notes}",
+        "\\text{obtenues}",
+        "\\text{par}",
+        "\\text{un}",
+        "\\text{élève :}",
+        "12~;",
+        "8~;",
+        "7~;",
+        "13~;",
+        "11.",
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{médiane}",
+        "\\text{de}",
+        "\\text{cette}",
+        "\\text{série ?}",
+        "10{,}2",
+        "7",
+        "12",
+        "11"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 151.921875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Un}",
+        "\\text{village}",
+        "\\text{de}",
+        "800~\\text{habitants}",
+        "\\text{a}",
+        "\\text{connu}",
+        "\\text{une}",
+        "\\text{augmentation}",
+        "\\text{de}",
+        "10\\,\\%",
+        "\\text{de}",
+        "\\text{sa}",
+        "\\text{population.}",
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{nombre}",
+        "\\text{d'habitants}",
+        "\\text{à}",
+        "\\text{l'issue}",
+        "\\text{de}",
+        "\\text{cette}",
+        "\\text{augmentation ?}",
+        "810~\\text{habitants}",
+        "900~\\text{habitants}",
+        "880~\\text{habitants}",
+        "720~\\text{habitants}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 85.453125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Le}",
+        "\\text{volume}",
+        "\\text{d'un}",
+        "\\text{pavé}",
+        "\\text{droit}",
+        "\\text{de}",
+        "\\text{longueur}",
+        "10~\\mathrm{cm},",
+        "\\text{de}",
+        "\\text{largeur}",
+        "5~\\mathrm{cm}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{hauteur}",
+        "2~\\mathrm{cm}",
+        "\\text{est}",
+        "\\text{égal}",
+        "\\text{à :}",
+        "10~\\mathrm{cm}^3",
+        "50~\\mathrm{cm}^3",
+        "100~\\mathrm{cm}^3",
+        "17~\\mathrm{cm}^3"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "A(3;-1)"
+        ],
+        "possible_answers": [
+          "(3;-1)",
+          "(-1;3)",
+          "(3;1)",
+          "(2;-1)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(3;1)",
+          "(2;-1)",
+          "(3;-1)",
+          "(-1;3)"
+        ]
+      },
+      {
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "7",
+          "4",
+          "10",
+          "1"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "10",
+          "1",
+          "7",
+          "4"
+        ]
+      },
+      {
+        "answers": [
+          "0.75"
+        ],
+        "possible_answers": [
+          "0,75",
+          "0,34",
+          "0,25",
+          "1,25"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,34",
+          "1,25",
+          "0,25",
+          "0,75"
+        ]
+      },
+      {
+        "answers": [
+          "2/3"
+        ],
+        "possible_answers": [
+          "2/3",
+          "3/2",
+          "1/5",
+          "5/3"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1/5",
+          "3/2",
+          "5/3",
+          "2/3"
+        ]
+      },
+      {
+        "answers": [
+          "1/10"
+        ],
+        "possible_answers": [
+          "1/10",
+          "7/10",
+          "1/7",
+          "9/10"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1/10",
+          "7/10",
+          "1/7",
+          "9/10"
+        ]
+      },
+      {
+        "answers": [
+          "15 km"
+        ],
+        "possible_answers": [
+          "15 km",
+          "8 km",
+          "2 km",
+          "150 km"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "km"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "8 km",
+          "2 km",
+          "150 km",
+          "15 km"
+        ]
+      },
+      {
+        "answers": [
+          "11"
+        ],
+        "possible_answers": [
+          "11",
+          "7",
+          "10,2",
+          "12"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "10,2",
+          "7",
+          "12",
+          "11"
+        ]
+      },
+      {
+        "answers": [
+          "880"
+        ],
+        "possible_answers": [
+          "810 habitants",
+          "880 habitants",
+          "900 habitants",
+          "720 habitants"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "810 habitants",
+          "900 habitants",
+          "880 habitants",
+          "720 habitants"
+        ]
+      },
+      {
+        "answers": [
+          "100 cm³"
+        ],
+        "possible_answers": [
+          "\\(100~\\mathrm{cm}^3\\)",
+          "\\(50~\\mathrm{cm}^3\\)",
+          "\\(17~\\mathrm{cm}^3\\)",
+          "\\(10~\\mathrm{cm}^3\\)"
+        ],
+        "answerRule": {
+          "type": "volume"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(10~\\mathrm{cm}^3\\)",
+          "\\(50~\\mathrm{cm}^3\\)",
+          "\\(100~\\mathrm{cm}^3\\)",
+          "\\(17~\\mathrm{cm}^3\\)"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "A(3;-1)",
+        "correctQCMAnswer": "(3;-1)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(3;1)",
+          "(2;-1)",
+          "(3;-1)",
+          "(-1;3)"
+        ]
+      },
+      {
+        "correctAnswer": "7",
+        "correctQCMAnswer": "7",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "10",
+          "1",
+          "7",
+          "4"
+        ]
+      },
+      {
+        "correctAnswer": "0.75",
+        "correctQCMAnswer": "0,75",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,34",
+          "1,25",
+          "0,25",
+          "0,75"
+        ]
+      },
+      {
+        "correctAnswer": "2/3",
+        "correctQCMAnswer": "2/3",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "1/5",
+          "3/2",
+          "5/3",
+          "2/3"
+        ]
+      },
+      {
+        "correctAnswer": "1/10",
+        "correctQCMAnswer": "1/10",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "1/10",
+          "7/10",
+          "1/7",
+          "9/10"
+        ]
+      },
+      {
+        "correctAnswer": "15 km",
+        "correctQCMAnswer": "15 km",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "8 km",
+          "2 km",
+          "150 km",
+          "15 km"
+        ]
+      },
+      {
+        "correctAnswer": "11",
+        "correctQCMAnswer": "11",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "10,2",
+          "7",
+          "12",
+          "11"
+        ]
+      },
+      {
+        "correctAnswer": "880",
+        "correctQCMAnswer": "880 habitants",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "810 habitants",
+          "900 habitants",
+          "880 habitants",
+          "720 habitants"
+        ]
+      },
+      {
+        "correctAnswer": "100 cm³",
+        "correctQCMAnswer": "\\(100~\\mathrm{cm}^3\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(10~\\mathrm{cm}^3\\)",
+          "\\(50~\\mathrm{cm}^3\\)",
+          "\\(100~\\mathrm{cm}^3\\)",
+          "\\(17~\\mathrm{cm}^3\\)"
+        ]
+      }
+    ]
+  }
+}

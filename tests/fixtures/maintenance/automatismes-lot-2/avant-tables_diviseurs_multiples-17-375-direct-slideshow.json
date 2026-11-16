@@ -1,0 +1,500 @@
+{
+  "job": {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 527,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 678.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 10 est un diviseur de …",
+          "left": -151.9375,
+          "right": 526.953125,
+          "width": 678.890625,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Compléter : }10\\text{ est un diviseur de }\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 657,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 939.796875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éDonner le plus grand diviseur de 64 différent de 64",
+          "left": -282.390625,
+          "right": 657.40625,
+          "width": 939.796875,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Donner le plus grand diviseur de }64\\text{ différent de }64"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 287.109375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 3\\times8"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 531,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 686.96875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 34 est un multiple de …",
+          "left": -155.984375,
+          "right": 530.984375,
+          "width": 686.96875,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Compléter : }34\\text{ est un multiple de }\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 425,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 474.75,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Donner un multiple de 12",
+          "left": -49.875,
+          "right": 424.875,
+          "width": 474.75,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "\\text{Donner un multiple de }12"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 416,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 456.375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 18÷…=3",
+          "left": -40.6875,
+          "right": 415.6875,
+          "width": 456.375,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 18\\div\\ldots=3"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 416,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 456.375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : 6×…=12",
+          "left": -40.6875,
+          "right": 415.6875,
+          "width": 456.375,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } 6\\times\\ldots=12"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 308.8125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 35\\div7"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 745,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 1115.3125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner le plus petit multiple de 4 strictement supérieur à 18",
+          "left": -370.15625,
+          "right": 745.15625,
+          "width": 1115.3125,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Donner le plus petit multiple de }4\\text{ strictement supérieur à }18"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 419,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 463.625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter : …×9=81",
+          "left": -44.3125,
+          "right": 419.3125,
+          "width": 463.625,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Compléter : } \\ldots\\times9=81"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 421,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 466.671875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Donner un diviseur de 55",
+          "left": -45.828125,
+          "right": 420.84375,
+          "width": 466.671875,
+          "height": 33.09375
+        }
+      ],
+      "math": [
+        "\\text{Donner un diviseur de }55"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 11,
+    "questions": [
+      {
+        "answers": [
+          "70"
+        ],
+        "possible_answers": [
+          "68",
+          "67",
+          "70",
+          "69"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 10
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "32"
+        ],
+        "possible_answers": [
+          "32",
+          "16",
+          "8",
+          "4"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "24"
+        ],
+        "possible_answers": [
+          "24",
+          "11",
+          "21",
+          "16"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "4",
+          "5",
+          "3",
+          "1"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 34
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "48"
+        ],
+        "possible_answers": [
+          "50",
+          "47",
+          "48",
+          "49"
+        ],
+        "answerRule": {
+          "type": "multipleOf",
+          "referenceNumber": 12
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "6"
+        ],
+        "possible_answers": [
+          "6",
+          "3",
+          "5",
+          "7"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "2",
+          "6",
+          "1",
+          "3"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5"
+        ],
+        "possible_answers": [
+          "5",
+          "7",
+          "4",
+          "6"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "20"
+        ],
+        "possible_answers": [
+          "20",
+          "16",
+          "24",
+          "18"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "9"
+        ],
+        "possible_answers": [
+          "9",
+          "8",
+          "10",
+          "81"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "2",
+          "4",
+          "3"
+        ],
+        "answerRule": {
+          "type": "divisorOf",
+          "referenceNumber": 55
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "70",
+        "correctQCMAnswer": "70",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "32",
+        "correctQCMAnswer": "32",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "24",
+        "correctQCMAnswer": "24",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "48",
+        "correctQCMAnswer": "48",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "6",
+        "correctQCMAnswer": "6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "2",
+        "correctQCMAnswer": "2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "5",
+        "correctQCMAnswer": "5",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "20",
+        "correctQCMAnswer": "20",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "9",
+        "correctQCMAnswer": "9",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

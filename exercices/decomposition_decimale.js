@@ -1,3 +1,5 @@
+import { numerationPrompt, numerationText, presentNumerationQuestion } from "./numerationPresentation.js";
+
 // exercices/decomposition_decimale.js
 
 import {
@@ -251,9 +253,7 @@ function createDecimalWritingQuestion() {
 
   return {
     question:
-      "\\(\\text{Donner l’écriture décimale la plus simple de }" +
-      `\\dfrac{${formatMathInteger(numerator)}}` +
-      `{${formatMathInteger(denominator)}}\\)`,
+      numerationPrompt("Donner l’écriture décimale la plus simple de", String.raw`\dfrac{${formatMathInteger(numerator)}}{${formatMathInteger(denominator)}}`),
 
     answers: [
       correctAnswer
@@ -337,10 +337,7 @@ function createIntegerPlusFractionQuestion() {
 
   return {
     question:
-      "\\(\\text{Donner l’écriture décimale la plus simple de }" +
-      `${formatMathInteger(integerPart)}` +
-      `+\\dfrac{${formatMathInteger(numerator)}}` +
-      `{${formatMathInteger(denominator)}}\\)`,
+      numerationPrompt("Donner l’écriture décimale la plus simple de", String.raw`${formatMathInteger(integerPart)}+\dfrac{${formatMathInteger(numerator)}}{${formatMathInteger(denominator)}}`),
 
     answers: [
       correctAnswer
@@ -443,8 +440,7 @@ function createDecomposedDecimalQuestion() {
 
   return {
     question:
-      "\\(\\text{Donner l’écriture décimale la plus simple de }" +
-      `${expression}\\)`,
+      numerationPrompt("Donner l’écriture décimale la plus simple de", expression),
 
     answers: [
       correctAnswer
@@ -502,8 +498,7 @@ function createDecimalFractionQuestion() {
 
   return {
     question:
-      "\\(\\text{Donner la fraction décimale égale à }" +
-      `${decimalNumber}\\)`,
+      numerationPrompt("Donner la fraction décimale égale à", decimalNumber),
 
     answers: [
       correctAnswer
@@ -578,9 +573,7 @@ function createIntegerPlusDecimalFractionAnswerQuestion() {
 
   return {
     question:
-      "Donner une écriture sous forme de la somme d’un nombre entier " +
-      "et d’une fraction décimale inférieure à 1 de : " +
-      `${decimalNumber}.`,
+      numerationPrompt("Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de :", decimalNumber + "."),
 
     answers: [
       correctAnswer
@@ -713,9 +706,7 @@ function createDecimalFractionDecompositionQuestion() {
 
   return {
     question:
-      "Donner une écriture sous forme de la somme d’un nombre entier " +
-      "et de fractions décimales ayant un numérateur inférieur à 10 " +
-      `de : ${decimalNumber}.`,
+      numerationPrompt("Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de :", decimalNumber + "."),
 
     answers: [
       correctAnswer
@@ -781,8 +772,7 @@ function createDecimalFractionFromSumQuestion() {
 
   return {
     question:
-      "\\(\\text{Donner la fraction décimale égale à }\\)" +
-      `${displayExpression}`,
+      numerationPrompt("Donner la fraction décimale égale à", displayExpression),
 
     answers: [
       correctAnswer
@@ -913,17 +903,7 @@ function createDecimalFractionFromDecompositionQuestion() {
 
   return {
     question:
-      `
-      <div class="two-line-question">
-        <div>
-          Donner la fraction décimale égale à
-        </div>
-
-        <div>
-          ${displayExpression}
-        </div>
-      </div>
-      `,
+      numerationPrompt("Donner la fraction décimale égale à", displayExpression),
 
     answers: [
       correctAnswer
@@ -1026,18 +1006,7 @@ function createIntegerPlusFractionFromDecimalFractionQuestion() {
 
   return {
     question:
-      `
-      <div class="two-line-question">
-        <div>
-          Donner une écriture sous forme de la somme d’un nombre entier
-        </div>
-
-        <div>
-          et d’une fraction décimale inférieure à 1 de :
-          ${displayQuestionFraction}.
-        </div>
-      </div>
-      `,
+      numerationPrompt("Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de :", displayQuestionFraction) + numerationText("."),
 
     answers: [
       correctAnswer
@@ -1201,18 +1170,7 @@ function createExpandedDecompositionFromDecimalFractionQuestion() {
 
   return {
     question:
-      `
-      <div class="two-line-question">
-        <div>
-          Donner une écriture sous forme de la somme d’un nombre entier
-        </div>
-
-        <div>
-          et de fractions décimales ayant un numérateur inférieur à 10
-          de : ${displayQuestionFraction}.
-        </div>
-      </div>
-      `,
+      numerationPrompt("Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de :", displayQuestionFraction) + numerationText("."),
 
     answers: [
       correctAnswer
@@ -1252,7 +1210,7 @@ function generateQuestions() {
     createIntegerPlusFractionFromDecimalFractionQuestion(),
 
     createExpandedDecompositionFromDecimalFractionQuestion()
-  ];
+  ].map(presentNumerationQuestion);
 }
 
 

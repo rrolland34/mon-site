@@ -1,0 +1,261 @@
+{
+  "job": {
+    "id": "ecriture_scientifique",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              532\n            ",
+        "5{,}32\\times 10^{3}",
+        "0{,}532\\times 10^{3}",
+        "-5{,}32\\times 10^{2}",
+        "5{,}32\\times 10^{2}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              0{,}063~9\n            ",
+        "5{,}32\\times 10^{3}",
+        "0{,}532\\times 10^{3}",
+        "-5{,}32\\times 10^{2}",
+        "5{,}32\\times 10^{2}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              3{,}79\\times 10^{-3}\n            ",
+        "0{,}000~379",
+        "0{,}037~9",
+        "0{,}003~79",
+        "3{,}79"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture décimale de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              -0{,}053~3\n            ",
+        "0{,}000~379",
+        "0{,}037~9",
+        "0{,}003~79",
+        "3{,}79"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              1{,}33\\times 10^{4}\n            ",
+        "0{,}000~379",
+        "0{,}037~9",
+        "0{,}003~79",
+        "3{,}79"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire le nombre suivant\n            sous forme décimale :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "5.32*10^2"
+        ],
+        "possible_answers": [
+          "0.532*10^3",
+          "5.32*10^3",
+          "-5.32*10^2",
+          "5.32*10^2"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 532
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "5.32*10^3",
+          "0.532*10^3",
+          "-5.32*10^2",
+          "5.32*10^2"
+        ]
+      },
+      {
+        "answers": [
+          "6.39*10^-2"
+        ],
+        "possible_answers": [
+          "6.39*10^-3",
+          "6.39*10^-1",
+          "63.9*10^-3",
+          "6.39*10^-2"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 0.0639
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.00379"
+        ],
+        "possible_answers": [
+          "0.0379",
+          "3.79",
+          "0.00379",
+          "0.000379"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 0.00379
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0.000379",
+          "0.0379",
+          "0.00379",
+          "3.79"
+        ]
+      },
+      {
+        "answers": [
+          "-5.33*10^-2"
+        ],
+        "possible_answers": [
+          "-5.33*10^-1",
+          "-5.33*10^-2",
+          "-53.3*10^-3",
+          "-5.33*10^-3"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": -0.0533
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "13300"
+        ],
+        "possible_answers": [
+          "13300",
+          "133000",
+          "1.33",
+          "1330"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 13300
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "5.32*10^2",
+        "correctQCMAnswer": "5.32*10^2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "5.32*10^3",
+          "0.532*10^3",
+          "-5.32*10^2",
+          "5.32*10^2"
+        ]
+      },
+      {
+        "correctAnswer": "6.39*10^-2",
+        "correctQCMAnswer": "6.39*10^-2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0.00379",
+        "correctQCMAnswer": "0.00379",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0.000379",
+          "0.0379",
+          "0.00379",
+          "3.79"
+        ]
+      },
+      {
+        "correctAnswer": "-5.33*10^-2",
+        "correctQCMAnswer": "-5.33*10^-2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "13300",
+        "correctQCMAnswer": "13300",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

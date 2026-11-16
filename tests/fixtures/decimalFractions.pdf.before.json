@@ -1,0 +1,487 @@
+[
+  {
+    "id": "ecritures_decimales",
+    "mode": "direct",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 6,
+    "responseLines": 6
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "direct",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Fractions décimales et écritures décimales\n        ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "qcm",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "qcm",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "qcm",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Fractions décimales et écritures décimales\n        ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "mixed",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 6,
+    "responseLines": 3
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "mixed",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "ecritures_decimales",
+    "mode": "mixed",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Fractions décimales et écritures décimales\n        ",
+    "questionCount": 6,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "direct",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 19,
+    "responseLines": 19
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "direct",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Fractions décimales\n        ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "qcm",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 5,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "qcm",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 6,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "qcm",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 7,
+    "title": "\n          Fractions décimales\n        ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "mixed",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 19,
+    "responseLines": 10
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "mixed",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 5,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_decimales",
+    "mode": "mixed",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 5,
+    "title": "\n          Fractions décimales\n        ",
+    "questionCount": 19,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "direct",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 12,
+    "responseLines": 12
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "direct",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Fractions usuelles et écritures décimales\n        ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "qcm",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "qcm",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "qcm",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Fractions usuelles et écritures décimales\n        ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "mixed",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 12,
+    "responseLines": 6
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "mixed",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "mode": "mixed",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Fractions usuelles et écritures décimales\n        ",
+    "questionCount": 12,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "direct",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 5,
+    "responseLines": 5
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "direct",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Arrondir un nombre décimal\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "qcm",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "qcm",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "qcm",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Arrondir un nombre décimal\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "mixed",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 5,
+    "responseLines": 3
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "mixed",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "mixed",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 1,
+    "title": "\n          Arrondir un nombre décimal\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "direct",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 10,
+    "responseLines": 10
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "direct",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 2,
+    "title": "\n          Opérations simples sur les fractions\n        ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "qcm",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "qcm",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 4,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "qcm",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 5,
+    "title": "\n          Opérations simples sur les fractions\n        ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "mixed",
+    "kind": "subject",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "identities": "\n\n      \n        Nom :\n        \n      \n\n      \n        Prénom :\n        \n      \n\n    ",
+    "questionCount": 10,
+    "responseLines": 5
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "mixed",
+    "kind": "correction",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "operations_fractions_simples",
+    "mode": "mixed",
+    "kind": "archive",
+    "seed": 17,
+    "pages": 3,
+    "title": "\n          Opérations simples sur les fractions\n        ",
+    "questionCount": 10,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 2026,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "mode": "direct",
+    "kind": "correction",
+    "seed": 98765,
+    "pages": 1,
+    "title": "\n          Évaluation\n        ",
+    "questionCount": 5,
+    "responseLines": 0
+  }
+]

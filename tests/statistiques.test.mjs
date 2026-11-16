@@ -9,14 +9,17 @@ import {evaluateCurrentAnswer,getCorrectQCMAnswer} from '../core/answerEvaluatio
 import {startExerciseSession} from '../core/session.js';
 import {createEvaluationStatement,createEvaluationWithCorrection} from '../core/export/exportEvaluationContent.js';
 
-test('statistiques : arrondi Python et médianes exactes',()=>{
-  assert.equal(roundPercentage(5,8),62);assert.equal(roundPercentage(3,8),38);
-  assert.equal(roundPercentage(1,8),12);assert.equal(roundPercentage(7,8),88);
+const unalign=html=>html.replace(/\\begin\{aligned\}&|\\end\{aligned\}|\\\\&\{\}/g,'');
+const plain=html=>html.replace(/<style\b[\s\S]*?<\/style>/g,'').replace(/<[^>]+>/g,'').replace(/\\[()]/g,'').replace(/\\text\{([^{}]*)\}/g,'$1');
+
+test('statistiques : arrondi scolaire et médianes exactes',()=>{
+  assert.equal(roundPercentage(5,8),63);assert.equal(roundPercentage(3,8),38);
+  assert.equal(roundPercentage(1,8),13);assert.equal(roundPercentage(7,8),88);
   assert.equal(roundPercentage(0,7),0);assert.equal(roundPercentage(10,10),100);
   assert.equal(median([1,2,8]),2);assert.equal(median([1,2,7,8]),4.5);
 });
 
-test('statistiques : 1000 tirages, distributions Python, calculs et contrats direct/QCM',()=>{
+test('statistiques : 1000 tirages, distributions conservées, calculs et contrats direct/QCM',()=>{
   let input='';globalThis.document={getElementById:()=>({value:input})};
   const totals=new Set(),lengths=new Set(),thresholds=new Set(),bounds=new Set();let repeats=false;
   const unchanged=createHash('sha256');
@@ -24,7 +27,7 @@ test('statistiques : 1000 tirages, distributions Python, calculs et contrats dir
   const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/2**32;};
   for(let draw=0;draw<1000;draw++) {
     const qs=generateQuestions(random);
-    unchanged.update(JSON.stringify(qs.map(({id,question,answers,statisticsData})=>({id,question:question.replaceAll(';font-weight:normal',''),answers,statisticsData}))));
+    unchanged.update(JSON.stringify(qs.slice(1).map(({id,answers,statisticsData})=>({id,answers,statisticsData}))));
     assert.deepEqual(qs.map(q=>q.id),['q1','q2','q3','q4','q5']);
     qs.slice(0,4).forEach(q=>assert.equal(Object.hasOwn(q,'duration'),false));
     assert.equal(qs[4].duration,30);
@@ -50,11 +53,11 @@ test('statistiques : 1000 tirages, distributions Python, calculs et contrats dir
       const good=getCorrectQCMAnswer({question:q});
       assert.deepEqual([...q.possible_answers].reverse().filter(selectedQCMAnswer=>evaluateCurrentAnswer({question:q,answerMode:'qcm',selectedQCMAnswer}).isCorrect),[good]);
       if(i===0)q.possible_answers.forEach(v=>assert.match(v,/\\%/));
-      for(const html of [q.question,q.display_answer,...q.possible_answers]){assert.equal((html.match(/\\\(/g)||[]).length,(html.match(/\\\)/g)||[]).length);assert.doesNotMatch(html,/[\x00-\x08]|NaN|Infinity|undefined|\\boxed/);}
+      for(const html of [q.question,q.display_answer.direct,...q.possible_answers]){assert.equal((html.match(/\\\(/g)||[]).length,(html.match(/\\\)/g)||[]).length);assert.doesNotMatch(html,/[\x00-\x08]|NaN|Infinity|undefined|\\boxed/);}
       assert.doesNotMatch(q.question+q.possible_answers.join(''),/color:red/);
       const steps=q.progressiveCorrection.steps;
       assert.equal(steps.length,[4,3,4,3,3][i]);
-      for(const html of [q.display_answer,...steps.map(s=>s.html)]) {
+      for(const html of [q.display_answer.direct,...steps.map(s=>s.html)]) {
         assert.doesNotMatch(html,/\\boxed/);
         const maths=html.match(/\\\([\s\S]*?\\\)/g)||[];
         assert.equal((html.match(/<span style="color:red">/g)||[]).length,maths.length);
@@ -81,17 +84,18 @@ test('statistiques : 1000 tirages, distributions Python, calculs et contrats dir
     }
     const tex=value=>formatAnswer(value,'math');
     const q2=qs[1].progressiveCorrection.steps,q3=qs[2].progressiveCorrection.steps;
-    for(const step of [q2[1],q3[1],q3[2]]) {assert.ok(step.html.includes('\\text{Moyenne}='));assert.ok(step.html.includes('<wbr>'));}
-    assert.ok(q2[0].html.includes('On additionne toutes les notes, puis on divise par le nombre de notes.'));
-    assert.ok(q2[1].html.includes(`\\frac{${notes[1].join('+')}}{${notes[1].length}}`));
+    for(const step of [q2[1],q3[1],q3[2]]) {assert.ok(step.html.includes('\\text{Moyenne}='));assert.ok(step.html.includes('\\dfrac'));assert.ok(!step.html.includes('<wbr>'));}
+    assert.ok(plain(q2[0].html).includes('On additionne toutes les notes, puis on divise par le nombre de notes.'));
+    assert.ok(unalign(q2[1].html).includes(`\\dfrac{${notes[1].join('+')}}{${notes[1].length}}`));
     assert.ok(q2[2].html.includes(`\\text{Moyenne}=${tex(sum(notes[1])/notes[1].length)}`));
-    assert.ok(q3[0].html.includes("On multiplie chaque note par son effectif, on additionne les résultats, puis on divise par l'effectif total."));
-    assert.ok(q3[1].html.includes(`\\frac{${notes[2].map((n,j)=>`${n}\\times${counts[j]}`).join('+')}}{${counts.join('+')}}`));
-    assert.ok(q3[2].html.includes(`\\frac{${notes[2].map((n,j)=>n*counts[j]).join('+')}}{${total}}`));
+    assert.ok(plain(q3[0].html).includes("On multiplie chaque note par son effectif, on additionne les résultats, puis on divise par l'effectif total."));
+    assert.ok(unalign(q3[1].html).includes(`\\dfrac{${notes[2].map((n,j)=>`${n}\\times${counts[j]}`).join('+')}}{${counts.join('+')}}`));
+    assert.ok(q3[2].html.includes(`\\dfrac{${notes[2].map((n,j)=>n*counts[j]).join('+')}}{${total}}`));
     assert.ok(q3[3].html.includes(`\\text{Moyenne}=${tex(Number(expected[2]))}`));
   }
-  // Empreinte des 1000 tirages avant intervention : données, énoncés et bonnes réponses.
-  assert.equal(unchanged.digest('hex'),'75e612c3b51e72c4b97de19435ac9775e758ad4de3074d196a347bc6268c5013');
+  // Empreinte des 1000 tirages avant correction de l’arrondi : q2 à q5 uniquement.
+  // Les énoncés/étapes sont comparés sémantiquement dans statistiquesPresentation.
+  assert.equal(unchanged.digest('hex'),'95c24395295f5f6b84a9ec665ad3737d1815130edfd26cdb84825409d5f65198');
   assert.deepEqual([...totals].sort(),[16,8]);assert.equal(lengths.size,2);assert.equal(thresholds.size,5);assert.equal(bounds.size,21);assert.equal(repeats,true);
 });
 

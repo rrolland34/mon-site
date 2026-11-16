@@ -1,0 +1,246 @@
+{
+  "job": {
+    "id": "ecritures_decimales",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 548,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 776,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééàDonner la fraction décimale égale à 0,001.",
+          "left": -228,
+          "right": 548,
+          "width": 776,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,001."
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,001."
+      ],
+      "prose": []
+    },
+    {
+      "document": 607,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 894,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 110.",
+          "left": -287,
+          "right": 607,
+          "width": 894,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{10}."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 537,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 754.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééàDonner la fraction décimale égale à 0,01.",
+          "left": -217.140625,
+          "right": 537.15625,
+          "width": 754.296875,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,01."
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,01."
+      ],
+      "prose": []
+    },
+    {
+      "document": 526,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 732.59375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééàDonner la fraction décimale égale à 0,1.",
+          "left": -206.296875,
+          "right": 526.296875,
+          "width": 732.59375,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Donner la fraction décimale égale à } 0,1."
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à } 0,1."
+      ],
+      "prose": []
+    },
+    {
+      "document": 618,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 915.703125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 1100.",
+          "left": -297.84375,
+          "right": 617.859375,
+          "width": 915.703125,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{100}."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 634,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 948.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 11 000.",
+          "left": -314.125,
+          "right": 634.125,
+          "width": 948.25,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{1~000}."
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "1/1000"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1~000}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,1"
+        ],
+        "possible_answers": [
+          "0,1",
+          "0,01",
+          "0,001",
+          "1,10"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/100"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{100}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/10"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{10}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1,100"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,001"
+        ],
+        "possible_answers": [
+          "0,001",
+          "0,01",
+          "0,1",
+          "1,1000"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

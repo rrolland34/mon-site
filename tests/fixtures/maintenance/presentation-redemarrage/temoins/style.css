@@ -1,0 +1,1299 @@
+/* ===== RESET & BASE ===== */
+:root {
+  --correction-red: #FF8A80;
+}
+
+.answer-feedback-expected,
+.answer-feedback-explanation {
+  color: var(--correction-red);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", "Inter", system-ui, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: rgba(20, 30, 40, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #3498db, #6dd5fa);
+  color: white;
+}
+
+/* ===== MAIN ===== */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.question-container {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 45px;
+  width: 95%;
+  max-width: 1400px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  text-align: center;
+  position: relative;
+}
+
+/* ===== TITRE ===== */
+.question-title,
+.dnb-generator h1 {
+  font-size: 1.6em;
+  color: #6dd5fa;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+/* ===== QUESTION ===== */
+.question-display {
+  font-size: 2.4em;
+  margin: 25px 0;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-display.question-with-figure {
+  margin: 5px 0;
+  min-height: 60px;
+}
+
+.cartesian-plane {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Le repli des consignes ne doit pas rétrécir les SVG des fractions. */
+.flash-reader .fraction-figure-question .question-with-figure svg {
+  flex-shrink: 0;
+}
+
+.question-display p {
+  margin: 0 0 5px;
+}
+
+.flash-reader #question > :is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .flash-reader #question > :is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question) {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+
+  /* Garder les décompositions corrigées entières sur les petits écrans. */
+  .flash-reader:has(.numeration-question) #feedback,
+  .flash-reader:has(.numeration-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+  }
+
+  .flash-reader:has(.fraction-quantity-question) #feedback,
+  .flash-reader:has(.fraction-quantity-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1.125rem, 5.5vw, 1.375rem);
+  }
+
+  .flash-reader:has(:is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question)) #mode-control,
+  .flash-reader:has(:is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question)) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .flash-reader:has(:is(.decimal-fraction-question, .numeration-question, .fraction-quantity-question, .fraction-figure-question)) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+.two-line-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.dnb-right-triangle svg {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+.dnb-triangle svg {
+  width: 340px;
+  max-width: 90%;
+  height: auto;
+}
+
+.dnb-cartesian-plane {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.dnb-quadrilateral {
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.dnb-polynesie-q9 {
+  width: 350px;
+}
+
+/* ===== TIMER ===== */
+.timer {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ff7675;
+  background: rgba(0,0,0,0.4);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+/* ===== INPUT ===== */
+.controls input {
+  padding: 12px;
+  font-size: 1.2em;
+  width: 300px;
+  max-width: 90%;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 12px 22px;
+  font-size: 1.05em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+#top-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px auto;
+  width: 100%;
+}
+
+#top-controls button {
+  font-size: 0.85em;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Boutons principaux */
+.controls button,
+.dnb-generator .dnb-actions button {
+  background: linear-gradient(135deg, #3498db, #6dd5fa);
+  color: white;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Boutons start/restart */
+.primary-action,
+#start,
+#restart,
+#pause-timer,
+#export-evaluation,
+#export-exercise {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  font-size: 1.2em;
+}
+
+.primary-action:hover:not(:disabled),
+#start:hover,
+#restart:hover,
+#pause-timer:hover,
+#export-evaluation:hover {
+  background: linear-gradient(135deg, #229954, #27ae60);
+}
+
+/* ===== FEEDBACK ===== */
+.progressive-correction {
+  color: #fff;
+  font-size: 0.8em;
+}
+.progressive-correction-counter {
+  font-size: 0.65em;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+.feedback {
+  margin-top: 15px;
+  font-size: 1.8em;
+  min-height: 30px;
+}
+
+#feedback .answer-feedback-expected {
+  margin-top: 0.5em;
+}
+
+/* ===== SLIDER ===== */
+#time-control input[type="range"],
+#dnb-count {
+  width: 200px;
+  accent-color: #2ecc71;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+.category-btn {
+  width: 260px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.category-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* ===== TIMER ANIMATION ===== */
+#timer {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+}
+
+#timer.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+@media (max-width: 1024px) {
+  .exercise-reader .nav-list {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+  }
+
+  .exercise-reader #time-control {
+    max-width: calc(100% - 16px);
+  }
+
+  .exercise-reader #time-control label {
+    white-space: nowrap;
+  }
+
+  .exercise-reader #time-slider {
+    min-width: 0;
+  }
+
+  .question-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question-header .question-title {
+    overflow-wrap: anywhere;
+  }
+
+  .question-header .timer {
+    position: static;
+    order: -1;
+    align-self: flex-end;
+    font-size: clamp(1.125rem, 3vw, 2.5rem);
+    padding: 2px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flash-reader .main-content .question-container {
+    padding-inline: clamp(12px, 5vw, 45px);
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .question-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+
+  .question-header .timer {
+    grid-column: 2;
+    grid-row: 1;
+    order: 0;
+    align-self: start;
+    margin-inline-start: 12px;
+  }
+}
+
+/* ===== OVERLAY ===== */
+.correction-overlay {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: #29434d;
+  font-size: 4rem;
+  font-weight: 800;
+  border-radius: 20px;
+}
+
+.correction-overlay .overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+}
+
+.correction-overlay .overlay-title {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.correction-overlay .overlay-subtext {
+  margin: 0;
+  font-size: 0.4em;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.correction-overlay.visible {
+  display: flex;
+}
+
+/* =========================
+   Glisse-nombre
+   ========================= */
+
+.glisse-number-controls {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin: 30px auto;
+}
+
+.glisse-number-controls label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.glisse-number-controls input,
+.glisse-number-controls select {
+  padding: 8px 10px;
+
+  font-size: 1rem;
+
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.glisse-number-controls input {
+  width: 140px;
+}
+
+.glisse-number-controls select {
+  min-width: 80px;
+}
+
+.operation-display {
+  margin: 25px auto;
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+/* Conteneur du tableau */
+
+#place-value-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+
+
+/* Tableau de numération */
+
+.place-value-table {
+  border-collapse: collapse;
+
+  margin: 0 auto;
+
+  min-width: 1300px;
+}
+
+.place-value-table th,
+.place-value-table td {
+  width: 100px;
+  min-width: 100px;
+  height: 70px;
+
+  border: 1px solid #777;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.place-value-table th {
+  padding: 8px 4px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  white-space: normal;
+}
+
+.place-value-table td {
+  font-size: 1rem;
+}
+
+
+/* Colonne des unités */
+
+.units-column {
+  position: relative;
+
+  border-left: 2px solid white !important;
+  border-right: 2px solid white !important;
+}
+
+
+/* Chiffres */
+
+.digit {
+  display: inline-block;
+
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+/* Virgule fixe */
+
+.decimal-separator {
+  position: absolute;
+
+  right: -10px;
+  bottom: 12px;
+
+  z-index: 2;
+
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+/* Animation */
+
+.moving-digit {
+  transition:
+    transform 1s ease,
+    opacity 0.4s ease;
+}
+
+.result-zero {
+  opacity: 0;
+
+  transition:
+    opacity 0.4s ease;
+}
+
+
+/* Bouton Glisser */
+
+.glisse-number-actions {
+  display: flex;
+  justify-content: center;
+
+  margin: 25px 0;
+}
+
+.glisse-number-actions .category-btn {
+  width: 260px;
+  max-width: 90%;
+}
+
+.glisse-number-generate {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.glisse-number-generate .category-btn {
+  width: 260px;
+  max-width: 90%;
+}
+
+.glisse-number-page h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.glisse-number-controls {
+  margin: 0 auto 30px;
+}
+
+.number-input-wrapper {
+  position: relative;
+}
+
+.number-input-wrapper input {
+  padding-right: 36px;
+}
+
+.clear-value-button {
+  position: absolute;
+
+  top: 50%;
+  right: 8px;
+
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  font-size: 1.2rem;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.thales-figure {
+  display: block;
+
+  width: 500px;
+  max-width: 90%;
+
+  margin: 40px auto;
+}
+
+.thales-lines line {
+  stroke: currentColor;
+  stroke-width: 3;
+  fill: none;
+}
+
+.thales-point-label {
+  font-size: 18px;
+  font-weight: 600;
+  fill: currentColor;
+}
+
+.thales-length-label {
+  font-size: 18px;
+  fill: currentColor;
+}
+
+.thales-length-arrow {
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.thales-angle-label {
+  font-size: 18px;
+  fill: currentColor;
+}
+
+.dnb-thales svg {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.proportionality-table {
+  border-collapse:
+    collapse;
+
+  table-layout:
+    fixed;
+
+  width:
+    440px;
+
+  margin:
+    20px
+    auto;
+}
+
+.proportionality-table td {
+  width:
+    110px;
+
+  height:
+    45px;
+
+  padding:
+    0
+    6px;
+
+  box-sizing:
+    border-box;
+
+  text-align:
+    center;
+
+  vertical-align:
+    middle;
+
+  border:
+    1px solid
+    currentColor;
+
+  font-size:
+    1.1em;
+
+  white-space:
+    nowrap;
+}
+
+.qcm-proportionality-answer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  white-space: nowrap;
+}
+
+.qcm-proportionality-math {
+  font-size: 0.82em;
+}
+
+.proportionality-graph {
+  width: 430px;
+  max-width: 95%;
+  height: auto;
+
+  display: block;
+
+  margin:
+    15px
+    auto;
+}
+
+.proportionality-graph-grid {
+  stroke:
+    currentColor;
+
+  stroke-width:
+    0.5;
+
+  opacity:
+    0.25;
+}
+
+.proportionality-graph-axis {
+  stroke:
+    currentColor;
+
+  stroke-width:
+    1.5;
+}
+
+.proportionality-graph-arrow {
+  fill:
+    currentColor;
+}
+
+.proportionality-graph-line {
+  stroke:
+    currentColor;
+
+  stroke-width:
+    3;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+}
+
+.proportionality-graph-label {
+  fill:
+    currentColor;
+
+  font-size:
+    14px;
+}
+
+.proportionality-graph-title {
+  fill:
+    currentColor;
+
+  font-size:
+    15px;
+}
+
+.proportionality-graph-qcm {
+  display: flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  width:
+    100%;
+
+  margin:
+    15px
+    auto;
+}
+
+.proportionality-graph-qcm
+.qcm-button {
+  width:
+    min(
+      750px,
+      90%
+    );
+
+  margin:
+    0;
+
+  padding:
+    10px
+    15px;
+
+  font-size:
+    0.8em;
+
+  text-align:
+    center;
+}
+
+.proportionality-answer-fields {
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  gap:
+    25px;
+
+  width:
+    100%;
+
+  margin:
+    18px
+    auto;
+}
+
+.proportionality-answer-fields label {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    8px;
+}
+
+.export-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(
+      0,
+      0,
+      0,
+      0.55
+    );
+}
+
+.export-dialog {
+  width: min(
+    420px,
+    90%
+  );
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background:
+    white;
+
+  color:
+    #111;
+
+  box-shadow:
+    0 10px 30px
+    rgba(
+      0,
+      0,
+      0,
+      0.3
+    );
+}
+
+.export-dialog h2 {
+  margin-top: 0;
+}
+
+.export-dialog label {
+  display: block;
+  margin: 12px 0;
+}
+
+.export-evaluation-options {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.export-dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+#qcm-buttons {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    16px;
+}
+
+#qcm-buttons.qcm-two-columns {
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap:
+    10px;
+}
+
+.qcm-two-columns
+button {
+  width:
+    100%;
+}
+
+.dnb-pie-chart {
+  width: 400px;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+.dnb-pie-chart svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Générateur DNB : disposition des filtres dans la carte du lecteur. */
+.dnb-generator {
+  max-width: 850px;
+  margin: 24px auto;
+  padding: 28px;
+  text-align: left;
+  flex-shrink: 0;
+}
+.dnb-generator h1 { margin-top: 0; }
+.dnb-generator h2 { font-size: 1.2em; margin: 24px 0 12px; }
+.dnb-generator fieldset {
+  min-width: 0;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 20px 0;
+}
+.dnb-generator fieldset label { display: inline-block; margin: 6px 20px 6px 0; }
+.dnb-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+.dnb-domain {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.dnb-domain label { overflow-wrap: anywhere; cursor: pointer; }
+.dnb-toggle { padding: 8px 12px; min-width: 40px; min-height: 40px; }
+.dnb-toggle[aria-expanded="true"] { background: #3498db; color: white; }
+.dnb-subdomains { grid-column: 1 / -1; margin-left: 28px; }
+.dnb-subdomains label { display: block; padding: 6px 0; }
+.dnb-generator input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  accent-color: #2ecc71;
+}
+.dnb-generator .control-group { flex-wrap: wrap; }
+#dnb-count { max-width: 100%; }
+#dnb-count-value { min-width: 2ch; font-weight: 700; text-align: center; }
+.dnb-generator button:disabled, #dnb-count:disabled { opacity: .5; cursor: not-allowed; }
+.dnb-generator :focus-visible { outline: 2px solid #6dd5fa; outline-offset: 3px; }
+.dnb-error { color: #ff7675; }
+@media (max-width: 600px) {
+  .dnb-generator { width: calc(100% - 24px); margin: 12px auto; padding: 16px; }
+  .dnb-generator .dnb-actions button { width: 100%; }
+}
+.dnb-generator[hidden], .dnb-subdomains[hidden], .dnb-actions[hidden],
+.main-content[hidden], #top-controls[hidden], .controls[hidden] { display: none; }
+/* Catalogues : mêmes cartes et proportions que les automatismes 6e et 3e. */
+.catalog-page {
+  height: auto;
+  min-height: 100%;
+}
+.catalog-page .catalog-layout {
+  width: calc(100% - 32px);
+  max-width: 1200px;
+  margin: 28px auto;
+}
+.catalog-page .catalog-card {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 24px;
+  padding: clamp(16px, 2.5vw, 28px);
+  background: rgba(255, 255, 255, 0.065);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+.catalog-page .domain-header {
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 1.3;
+  margin: 0 0 22px;
+}
+.catalog-page .series-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  width: 100%;
+  align-items: stretch;
+}
+.catalog-page .series-grid > a {
+  display: flex;
+  min-width: 0;
+  text-decoration: none;
+}
+.catalog-page .series-grid .category-btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 76px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+  font-size: 1.05em;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (min-width: 500px) {
+  .catalog-page .series-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 800px) {
+  .catalog-page .series-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1200px) {
+  .catalog-page .series-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 1199px) {
+  .catalog-page .nav-list { flex-wrap: wrap; gap: 12px; }
+}
+
+/* Lot 4 : repli local, tableaux HTML 2 × 4 et contrôles natifs conservés. */
+.flash-reader #question > .proportionality-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+.flash-reader .proportionality-question .two-line-question > div {
+  max-width: 100%;
+  min-width: 0;
+}
+.flash-reader .proportionality-question .proportionality-table {
+  width: 440px;
+  max-width: 100%;
+}
+.flash-reader .proportionality-question .proportionality-table td {
+  width: 25%;
+}
+.flash-reader:has(.proportionality-question) #multi-answer-container {
+  max-width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+.flash-reader:has(.proportionality-question) #multi-answer-container label {
+  max-width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flash-reader:has(.proportionality-question) .multi-answer-input {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .proportionality-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader .proportionality-question .proportionality-table td {
+    font-size: 1em;
+    padding: 0 3px;
+  }
+  .flash-reader:has(.proportionality-question) #feedback,
+  .flash-reader:has(.proportionality-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1.125rem, 5.5vw, 1.375rem);
+  }
+  .flash-reader:has(.proportionality-question) #mode-control,
+  .flash-reader:has(.proportionality-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.proportionality-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Lot 5 : styles limités aux quatre séries de mesures. */
+.flash-reader #question > .measure-question {
+  min-width: 0;
+  max-width: 100%;
+}
+.flash-reader .measure-question .question-with-figure svg {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .measure-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.measure-question) #mode-control,
+  .flash-reader:has(.measure-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.measure-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Sous-lot 5b : vitesse, durée et horaire ; SVG et contrôles natifs conservés. */
+.flash-reader #question > .speed-time-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .speed-time-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.speed-time-question) #mode-control,
+  .flash-reader:has(.speed-time-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.speed-time-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Lot 6 : expressions et consignes de puissances, sans changement des contrôles. */
+.flash-reader #question > .powers-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .powers-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.powers-question) #feedback,
+  .flash-reader:has(.powers-question) #feedback .answer-feedback-expected {
+    font-size: clamp(1.125rem, 5.5vw, 1.375rem);
+  }
+  .flash-reader:has(.powers-question) #mode-control,
+  .flash-reader:has(.powers-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.powers-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}
+
+/* Lot 7 : consignes du repérage ; la géométrie du SVG reste native. */
+.flash-reader #question > .coordinates-question {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .flash-reader #question > .coordinates-question {
+    font-size: clamp(1.25rem, 6vw, 1.5rem);
+  }
+  .flash-reader:has(.coordinates-question) #mode-control,
+  .flash-reader:has(.coordinates-question) #mode-control > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .flash-reader:has(.coordinates-question) #mixed-qcm-control {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0 !important;
+  }
+}

@@ -1,4 +1,5 @@
 import { createThalesFigure } from '../figures/thalesFigure.js';
+import { presentReference1Question } from '../dnbReference1Presentation.js';
 
 // Repère interne uniquement : le dessin du sujet comporte seize demi-carrés.
 export const translationPoints = {
@@ -63,7 +64,7 @@ export default {
   series: 'Générale', shuffle: false, correctionMode: 'progressive',
   questions: [
     {
-      id: 'q1', title: 'Calcul numérique', subtitle: 'Somme de fractions',
+      id: 'q1', title: 'Calcul numérique', subtitle: 'Soustraction de fractions',
       question: String.raw`\(\text{Calculer }\mathrm{A}=\dfrac{3}{5}-\dfrac{1}{4}\text{.}\)<br>\(\text{Donner le résultat sous forme de fraction irréductible.}\)`,
       answers: ['7/20'], answerRule: { type: 'fraction', irreducible: true },
       possible_answers: [String.raw`\(\dfrac{2}{1}\)`, String.raw`\(\dfrac{7}{20}\)`, String.raw`\(\dfrac{2}{20}\)`, String.raw`\(\dfrac{17}{20}\)`],
@@ -130,5 +131,5 @@ export default {
     ...question,
     // Un seul enfant du conteneur flex du lecteur, avec taille locale responsive.
     question: `<div style="max-width:100%;min-width:0">${question.question}</div>`
-  }))
+  })).map(presentReference1Question)
 };

@@ -1,0 +1,439 @@
+{
+  "job": {
+    "id": "arrondis_nombres_decimaux",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 375,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "2,22",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "3",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 2,22 à l’unité près.",
+        "2,22",
+        "2",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "96",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "97,292 49",
+          "left": 163.125,
+          "right": 266.3125,
+          "width": 103.1875,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "97",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "98",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 97,292 49 à l’unité près.",
+        "96",
+        "97,292 49",
+        "97",
+        "98"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "72,2",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "73,2",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "72,19",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "71,2",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 72,19 au dixième près.",
+        "72,2",
+        "73,2",
+        "72,19",
+        "71,2"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "54,4",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "55,4",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "55,433 056",
+          "left": 47.125,
+          "right": 159.203125,
+          "width": 112.078125,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "56,4",
+          "left": 175.203125,
+          "right": 275.203125,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 55,433 056 au dixième près.",
+        "54,4",
+        "55,4",
+        "55,433 056",
+        "56,4"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "44,35",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "43,351",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "42,35",
+          "left": 47.125,
+          "right": 147.125,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "43,35",
+          "left": 163.125,
+          "right": 263.125,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 43,351 au centième près.",
+        "44,35",
+        "43,351",
+        "42,35",
+        "43,35"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "2",
+          "1",
+          "3",
+          "2.22"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "2.22",
+          "2",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "answers": [
+          "97"
+        ],
+        "possible_answers": [
+          "97",
+          "96",
+          "98",
+          "97.29249"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "96",
+          "97.29249",
+          "97",
+          "98"
+        ]
+      },
+      {
+        "answers": [
+          "72.2"
+        ],
+        "possible_answers": [
+          "72.2",
+          "71.2",
+          "73.2",
+          "72.19"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "72.2",
+          "73.2",
+          "72.19",
+          "71.2"
+        ]
+      },
+      {
+        "answers": [
+          "55.4"
+        ],
+        "possible_answers": [
+          "55.4",
+          "54.4",
+          "56.4",
+          "55.433056"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "54.4",
+          "55.4",
+          "55.433056",
+          "56.4"
+        ]
+      },
+      {
+        "answers": [
+          "43.35"
+        ],
+        "possible_answers": [
+          "43.35",
+          "42.35",
+          "44.35",
+          "43.351"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "44.35",
+          "43.351",
+          "42.35",
+          "43.35"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "2",
+        "correctQCMAnswer": "2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "2.22",
+          "2",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "correctAnswer": "97",
+        "correctQCMAnswer": "97",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "96",
+          "97.29249",
+          "97",
+          "98"
+        ]
+      },
+      {
+        "correctAnswer": "72.2",
+        "correctQCMAnswer": "72.2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "72.2",
+          "73.2",
+          "72.19",
+          "71.2"
+        ]
+      },
+      {
+        "correctAnswer": "55.4",
+        "correctQCMAnswer": "55.4",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "54.4",
+          "55.4",
+          "55.433056",
+          "56.4"
+        ]
+      },
+      {
+        "correctAnswer": "43.35",
+        "correctQCMAnswer": "43.35",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "44.35",
+          "43.351",
+          "42.35",
+          "43.35"
+        ]
+      }
+    ]
+  }
+}

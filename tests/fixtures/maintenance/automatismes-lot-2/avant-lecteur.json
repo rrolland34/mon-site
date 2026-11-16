@@ -1,0 +1,882 @@
+[
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 435,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 435,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 435,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 435,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 429,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 429,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 429,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 429,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 402,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 402,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 402,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 402,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 1440,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 402,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 402,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 402,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 402,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 375,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 375,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 375,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 375,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 745,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 745,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 745,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 745,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 992.125
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 684,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 684,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 684,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 684,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 656,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 656,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 656,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 656,
+    "maxMath": 992.125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 1440,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 1440,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 1440,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 1440,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 745,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 745,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 745,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 745,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 718,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 718,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 718,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 718,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 494.484375
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 483.640625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 6,
+    "maxDocument": 407,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 6,
+    "maxDocument": 407,
+    "maxMath": 429.390625
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 656,
+    "maxMath": 992.125
+  },
+  {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 656,
+    "maxMath": 992.125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 11,
+    "maxDocument": 718,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "tables_diviseurs_multiples",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 11,
+    "maxDocument": 718,
+    "maxMath": 1115.3125
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 734,
+    "maxMath": 1148.21875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 734,
+    "maxMath": 1148.21875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  },
+  {
+    "id": "decomposition_decimale",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 718,
+    "maxMath": 1115.671875
+  }
+]

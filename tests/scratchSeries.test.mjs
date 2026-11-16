@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import series from '../exercices/scratch/reconnaitre_figures.js';
+import {presentScratchFigureQuestion} from '../exercices/scratchFiguresPresentation.js';
 import { loadExercise } from '../core/exerciseLoader.js';
 import { executeProgram, segmentsOf } from '../core/scratch/scratchGeometry.js';
 import { scratchStatement } from '../core/scratch/scratchStaticContent.js';
@@ -14,7 +15,7 @@ const expected=['triangle équilatéral','triangle rectangle','triangle rectangl
 
 test('série enregistrée : huit questions conservées, mélange autorisé et représentation unique',()=>{
   assert.equal(loadExercise('scratch_reconnaitre_figures'),series);assert.equal(series.questions.length,8);
-  series.questions.forEach((q,i)=>{assert.equal(q.answers[0],expected[i]);assert.equal(q.progressiveCorrection.program[0].op,'whenGreenFlagClicked');assert.equal(q.question,scratchStatement(q.progressiveCorrection.program));assert.equal(q.question.includes('<svg'),false);});
+  series.questions.forEach((q,i)=>{assert.equal(q.answers[0],expected[i]);assert.equal(q.progressiveCorrection.program[0].op,'whenGreenFlagClicked');assert.equal(q.question,presentScratchFigureQuestion({...q,question:scratchStatement(q.progressiveCorrection.program)}).question);assert.equal(q.question.includes('<svg'),false);});
   const before = JSON.stringify(series), sourceIds = series.questions.map(q => q.id);
   const previousDocument = globalThis.document, previousRandom = Math.random;
   try {

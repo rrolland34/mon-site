@@ -6,6 +6,7 @@ import {
 
 import { formatAnswer }
   from "../../core/answerFormatting.js";
+import { decimalFractionText, formatDecimalFractionAnswer, presentDecimalFractionQuestion } from "../decimalFractionPresentation.js";
 
 export function createRoundingQuestion(decimalPlaces) {
   if (
@@ -78,9 +79,10 @@ export function createRoundingQuestion(decimalPlaces) {
     decimalPlaces
   );
 
-  return {
+  return presentDecimalFractionQuestion({
     question:
-      `Arrondir le nombre ${displayedNumber} ${roundingLabel}.`,
+      decimalFractionText("Arrondir le nombre") + " " +
+      formatDecimalFractionAnswer(displayedNumber) + " " + decimalFractionText(roundingLabel + "."),
 
     answers: [
       correctAnswer
@@ -99,5 +101,5 @@ export function createRoundingQuestion(decimalPlaces) {
     answerRule: {
       type: "decimal"
     }
-  };
+  });
 }

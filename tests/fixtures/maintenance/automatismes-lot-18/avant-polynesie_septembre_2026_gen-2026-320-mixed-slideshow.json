@@ -1,0 +1,1047 @@
+{
+  "job": {
+    "id": "polynesie_septembre_2026_gen",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 477,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 634.875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éRéduire l'expression A=4x+3x.",
+          "scroll": 635,
+          "client": 635,
+          "children": [],
+          "left": -157.4375,
+          "right": 477.4375,
+          "top": 686.53125,
+          "bottom": 729.75,
+          "width": 634.875,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Réduire l'expression }A=4x+3x.",
+        "7x^2",
+        "7x",
+        "12x",
+        "12x^2"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 479,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 637.21875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééDéterminer la médiane de la série :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -158.609375,
+          "right": 478.609375,
+          "top": 657.140625,
+          "bottom": 715.140625,
+          "width": 637.21875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "8 ; 18 ; 17 ; 3 ; 7.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -4,
+              "right": 324.375,
+              "top": 719.65625,
+              "bottom": 755.65625,
+              "width": 328.375,
+              "height": 36
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -4,
+              "right": 324.375,
+              "top": 720.65625,
+              "bottom": 755.65625,
+              "width": 328.375,
+              "height": 35
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 291.40625,
+              "right": 324.375,
+              "top": 720.65625,
+              "bottom": 749.65625,
+              "width": 32.96875,
+              "height": 29
+            }
+          ],
+          "left": -4,
+          "right": 323.984375,
+          "top": 719.65625,
+          "bottom": 777.65625,
+          "width": 327.984375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Déterminer la médiane de la série :}",
+        "8\\ ;\\ 18\\ ;\\ 17\\ ;\\ 3\\ ;\\ 7.",
+        "7",
+        "17",
+        "10{,}6",
+        "8"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 426.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "€Calculer 25% de 160 €.",
+          "scroll": 437,
+          "client": 427,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -53.4375,
+              "right": 383.953125,
+              "top": 719.9375,
+              "bottom": 752.9375,
+              "width": 437.390625,
+              "height": 33
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -53.4375,
+              "right": 383.953125,
+              "top": 720.9375,
+              "bottom": 752.9375,
+              "width": 437.390625,
+              "height": 32
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 338.1875,
+              "right": 383.953125,
+              "top": 721.9375,
+              "bottom": 750.9375,
+              "width": 45.765625,
+              "height": 29
+            }
+          ],
+          "left": -53.4375,
+          "right": 373.453125,
+          "top": 719.9375,
+          "bottom": 763.171875,
+          "width": 426.890625,
+          "height": 43.234375
+        }
+      ],
+      "math": [
+        "\\text{Calculer }25\\,\\%\\text{ de }160\\text{ €.}",
+        "7",
+        "17",
+        "10{,}6",
+        "8"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 593,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 866.1875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èUn triangle possède deux angles de 60∘ et 100∘.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 599.90625,
+              "right": 608.828125,
+              "top": 708.0625,
+              "bottom": 713.0625,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -273.09375,
+          "right": 593.09375,
+          "top": 678.8125,
+          "bottom": 736.8125,
+          "width": 866.1875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèéDéterminer le troisième angle, en degré.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -206.3125,
+          "right": 526.296875,
+          "top": 741.328125,
+          "bottom": 799.328125,
+          "width": 732.609375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Un triangle possède deux angles de }60^\\circ\\text{ et }100^\\circ.",
+        "\\text{Déterminer le troisième angle, en degré.}",
+        "7",
+        "17",
+        "10{,}6",
+        "8"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 536,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        71\n        11\n        298\n        400\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle rectangle\">\n      <defs>\n        <marker id=\"triangle-arrow-head\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8.5\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M4,1.5 L4,4.5 L9,3 z\" fill=\"red\"></path>\n        </marker>\n      </defs>\n\n      <g transform=\"\n          rotate(\n            -90\n            220\n            211\n          )\n        \">\n\n        \n    <path d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line x1=\"100\" y1=\"280\" x2=\"340\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- leg2 : AC -->\n          <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- hypoténuse : BC -->\n          <line x1=\"340\" y1=\"280\" x2=\"100\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text x=\"302.9571914792263\" y=\"355.273376485611\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        D\n      </text>\n\n      <text x=\"296.7366078966356\" y=\"64.09005948996327\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        E\n      </text>\n\n      <text x=\"129.87104537942187\" y=\"349.373004017894\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        F\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text x=\"218.26618739388493\" y=\"210.00305775148382\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"undefined\" fill=\"currentColor\" transform=\"\n          rotate(\n            -60.10109816138544\n            218.26618739388493\n            210.00305775148382\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text x=\"313\" y=\"211\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            -90\n            313\n            211\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text x=\"220\" y=\"333\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"undefined\" fill=\"currentColor\" transform=\"\n          rotate(\n            0\n            220\n            333\n          )\n        \">\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>",
+          "left": 10,
+          "right": 309.984375,
+          "top": 824.8125,
+          "bottom": 1227.46875,
+          "width": 299.984375,
+          "height": 402.65625
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "D",
+          "left": 235.03152465820312,
+          "right": 251.96902465820312,
+          "top": 1151.4033203125,
+          "bottom": 1183.4033203125,
+          "width": 16.9375,
+          "height": 32,
+          "svg": {
+            "left": 10,
+            "right": 309.984375,
+            "top": 824.8125,
+            "bottom": 1227.46875,
+            "width": 299.984375,
+            "height": 402.65625
+          }
+        },
+        {
+          "text": "E",
+          "left": 231.1289825439453,
+          "right": 243.3477325439453,
+          "top": 858.286376953125,
+          "bottom": 890.286376953125,
+          "width": 12.21875,
+          "height": 32,
+          "svg": {
+            "left": 10,
+            "right": 309.984375,
+            "top": 824.8125,
+            "bottom": 1227.46875,
+            "width": 299.984375,
+            "height": 402.65625
+          }
+        },
+        {
+          "text": "F",
+          "left": 63.36628341674805,
+          "right": 75.36628723144531,
+          "top": 1145.4637451171875,
+          "bottom": 1177.4637451171875,
+          "width": 12.000003814697266,
+          "height": 32,
+          "svg": {
+            "left": 10,
+            "right": 309.984375,
+            "top": 824.8125,
+            "bottom": 1227.46875,
+            "width": 299.984375,
+            "height": 402.65625
+          }
+        }
+      ],
+      "mathWidth": 751.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter par un rapport de longueurs :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -215.625,
+          "right": 535.625,
+          "top": 657.140625,
+          "bottom": 715.140625,
+          "width": 751.25,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "cos⁡(DEF^)=……",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 4.5625,
+          "right": 315.421875,
+          "top": 730.515625,
+          "bottom": 788.515625,
+          "width": 310.859375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter par un rapport de longueurs :}",
+        "\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\ldots}{\\ldots}",
+        "\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}",
+        "\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}",
+        "\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}",
+        "\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 574,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 828.15625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDévelopper et réduire l'expression a(3a−2).",
+          "scroll": 828,
+          "client": 828,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 560.4375,
+              "right": 578.46875,
+              "top": 686.4375,
+              "bottom": 725.4375,
+              "width": 18.03125,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 585.625,
+              "right": 594.546875,
+              "top": 711.4375,
+              "bottom": 716.4375,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -254.078125,
+          "right": 574.078125,
+          "top": 685.4375,
+          "bottom": 730.84375,
+          "width": 828.15625,
+          "height": 45.40625
+        }
+      ],
+      "math": [
+        "\\text{Développer et réduire l'expression }a(3a-2).",
+        "3a^2-2",
+        "3a^2+2a",
+        "3a-2a",
+        "3a^2-2a"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 519,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 717.4375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉÉcrire le calcul permettant d'appliquer",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -198.71875,
+          "right": 518.71875,
+          "top": 678.8125,
+          "bottom": 736.8125,
+          "width": 717.4375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èéàle critère de divisibilité par 3 à 4836.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 427.65625,
+              "right": 508.71875,
+              "top": 743.328125,
+              "bottom": 772.328125,
+              "width": 81.0625,
+              "height": 29
+            }
+          ],
+          "left": -175.8125,
+          "right": 495.8125,
+          "top": 741.328125,
+          "bottom": 799.328125,
+          "width": 671.625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Écrire le calcul permettant d'appliquer}",
+        "\\text{le critère de divisibilité par }3\\text{ à }4\\,836.",
+        "3a^2-2",
+        "3a^2+2a",
+        "3a-2a",
+        "3a^2-2a"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 849,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1377.859375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉéÉcrire un calcul permettant de déterminer l'aire",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -281.515625,
+          "right": 601.53125,
+          "top": 678.8125,
+          "bottom": 736.8125,
+          "width": 883.046875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èééd'un disque de diamètre 6 cm, sans effectuer le calcul et sans écrire l'unité.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -528.921875,
+          "right": 848.9375,
+          "top": 741.328125,
+          "bottom": 799.328125,
+          "width": 1377.859375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Écrire un calcul permettant de déterminer l'aire}",
+        "\\text{d'un disque de diamètre }6\\text{ cm, sans effectuer le calcul et sans écrire l'unité.}",
+        "3a^2-2",
+        "3a^2+2a",
+        "3a-2a",
+        "3a^2-2a"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 527,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\" width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\" aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"></path>\n      \n      <line x1=\"102.47487373415291\" y1=\"138.2824855787278\" x2=\"93.2824855787278\" y2=\"147.47487373415294\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"106.7175144212722\" y1=\"142.52512626584706\" x2=\"97.52512626584709\" y2=\"151.7175144212722\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"116.46475527340837\" y1=\"58.46090663827347\" x2=\"119.72726333759681\" y2=\"71.04486631442889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"122.27273666240319\" y1=\"56.95513368557111\" x2=\"125.53524472659163\" y2=\"69.53909336172653\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"173.95513368557113\" y1=\"125.27273666240319\" x2=\"186.53909336172654\" y2=\"128.53524472659163\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"175.46090663827346\" y1=\"119.46475527340837\" x2=\"188.04486631442887\" y2=\"122.72726333759681\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"474.2701581071148\" y1=\"110.15485464345892\" x2=\"461.8937868104064\" y2=\"114.13297398882949\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"476.1062131895936\" y1=\"115.86702601117051\" x2=\"463.7298418928852\" y2=\"119.84514535654108\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"321.6754054898647\" y1=\"30.50810979729401\" x2=\"322.3245945101353\" y2=\"43.49189020270599\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"396.47487373415294\" y1=\"247.01040764008565\" x2=\"391.52512626584706\" y2=\"234.98959235991435\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"></path>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg>",
+          "left": -15,
+          "right": 335,
+          "top": 788.171875,
+          "bottom": 1008.53125,
+          "width": 350,
+          "height": 220.359375
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "A",
+          "left": -2.9924631118774414,
+          "right": 9.007537841796875,
+          "top": 822.4843139648438,
+          "bottom": 838.4843139648438,
+          "width": 12.000000953674316,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "B",
+          "left": 81.65321350097656,
+          "right": 92.16883850097656,
+          "top": 930.071533203125,
+          "bottom": 946.071533203125,
+          "width": 10.515625,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "C",
+          "left": 110.52220153808594,
+          "right": 120.52220153808594,
+          "top": 793.319091796875,
+          "bottom": 809.319091796875,
+          "width": 10,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "D",
+          "left": 267.2718200683594,
+          "right": 278.5686950683594,
+          "top": 788.1342163085938,
+          "bottom": 804.1342163085938,
+          "width": 11.296875,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "E",
+          "left": 314.7252197265625,
+          "right": 324.7252197265625,
+          "top": 907.3875122070312,
+          "bottom": 923.3875122070312,
+          "width": 10,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "F",
+          "left": 179.0115203857422,
+          "right": 188.0115203857422,
+          "top": 977.3839721679688,
+          "bottom": 993.384033203125,
+          "width": 9,
+          "height": 16.00006103515625,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "x",
+          "left": 21.67596435546875,
+          "right": 29.675960540771484,
+          "top": 893.7770385742188,
+          "bottom": 909.777099609375,
+          "width": 7.999996185302734,
+          "height": 16.00006103515625,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "3",
+          "left": 123.38359069824219,
+          "right": 130.5085906982422,
+          "top": 968.95849609375,
+          "bottom": 984.95849609375,
+          "width": 7.125,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "4",
+          "left": 247.46994018554688,
+          "right": 255.59494018554688,
+          "top": 967.6622924804688,
+          "bottom": 983.6622924804688,
+          "width": 8.125,
+          "height": 16,
+          "svg": {
+            "left": -15,
+            "right": 335,
+            "top": 788.171875,
+            "bottom": 1008.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        }
+      ],
+      "mathWidth": 734.578125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Donner une expression en fonction de x",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -207.28125,
+          "right": 527.296875,
+          "top": 657.140625,
+          "bottom": 715.140625,
+          "width": 734.578125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèdu périmètre du polygone ACDEFB.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -181.03125,
+          "right": 501.03125,
+          "top": 719.65625,
+          "bottom": 777.65625,
+          "width": 682.0625,
+          "height": 58
+        },
+        {
+          "tag": "svg",
+          "text": "\n    \n      \n      \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n    \n      \n ",
+          "scroll": 350,
+          "client": 350,
+          "children": [],
+          "left": -15,
+          "right": 335,
+          "top": 788.171875,
+          "bottom": 1008.53125,
+          "width": 350,
+          "height": 220.359375
+        }
+      ],
+      "math": [
+        "\\text{Donner une expression en fonction de }x",
+        "\\text{du périmètre du polygone }\\mathrm{ACDEFB}.",
+        "3a^2-2",
+        "3a^2+2a",
+        "3a-2a",
+        "3a^2-2a"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "7x"
+        ],
+        "possible_answers": [
+          "\\(7x\\)",
+          "\\(7x^2\\)",
+          "\\(12x\\)",
+          "\\(12x^2\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "reduced"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(7x^2\\)",
+          "\\(7x\\)",
+          "\\(12x\\)",
+          "\\(12x^2\\)"
+        ]
+      },
+      {
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "\\(17\\)",
+          "\\(8\\)",
+          "\\(10{,}6\\)",
+          "\\(7\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(7\\)",
+          "\\(17\\)",
+          "\\(10{,}6\\)",
+          "\\(8\\)"
+        ]
+      },
+      {
+        "answers": [
+          "40"
+        ],
+        "possible_answers": [
+          "\\(25\\text{ €}\\)",
+          "\\(120\\text{ €}\\)",
+          "\\(40\\text{ €}\\)",
+          "\\(4\\text{ €}\\)"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "€",
+          "valueRule": {
+            "type": "decimal"
+          }
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "20"
+        ],
+        "possible_answers": [
+          "\\(40\\text{°}\\)",
+          "\\(160\\text{°}\\)",
+          "\\(200\\text{°}\\)",
+          "\\(20\\text{°}\\)"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "°",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "DE/EF",
+          "ED/EF",
+          "DE/FE",
+          "ED/FE"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "3a^2-2a"
+        ],
+        "possible_answers": [
+          "\\(3a^2-2\\)",
+          "\\(3a-2a\\)",
+          "\\(3a^2-2a\\)",
+          "\\(3a^2+2a\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "developedAndReduced"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(3a^2-2\\)",
+          "\\(3a^2+2a\\)",
+          "\\(3a-2a\\)",
+          "\\(3a^2-2a\\)"
+        ]
+      },
+      {
+        "answers": [
+          "4+8+3+6"
+        ],
+        "possible_answers": [
+          "\\(\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3.\\)",
+          "\\(\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.\\)",
+          "\\(\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}\\)",
+          "\\(\\text{Élève 4 : }36\\text{ est divisible par }3.\\)"
+        ],
+        "answerRule": {
+          "type": "sum",
+          "terms": [
+            4,
+            8,
+            3,
+            6
+          ]
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "pi*3^2",
+          "3^2*pi",
+          "pi*(6/2)^2",
+          "(6/2)^2*pi",
+          "pi*3*3",
+          "3*3*pi",
+          "3*pi*3",
+          "π*3^2",
+          "3^2*π",
+          "π*(6/2)^2",
+          "(6/2)^2*π",
+          "π*3*3",
+          "3*3*π",
+          "3*π*3"
+        ],
+        "possible_answers": [
+          "\\(π\\times6^2\\)",
+          "\\(π\\times3^2\\)",
+          "\\(2\\times π\\times3\\)",
+          "\\(2\\times π\\times6\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "3x+11"
+        ],
+        "possible_answers": [
+          "\\(4x+11\\)",
+          "\\(x^3+11\\)",
+          "\\(x+7\\)",
+          "\\(3x+11\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "equivalent"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "7x",
+        "correctQCMAnswer": "\\(7x\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(7x^2\\)",
+          "\\(7x\\)",
+          "\\(12x\\)",
+          "\\(12x^2\\)"
+        ]
+      },
+      {
+        "correctAnswer": "8",
+        "correctQCMAnswer": "\\(8\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(7\\)",
+          "\\(17\\)",
+          "\\(10{,}6\\)",
+          "\\(8\\)"
+        ]
+      },
+      {
+        "correctAnswer": "40",
+        "correctQCMAnswer": "40",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "20",
+        "correctQCMAnswer": "20",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "DE/EF",
+        "correctQCMAnswer": "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "3a^2-2a",
+        "correctQCMAnswer": "\\(3a^2-2a\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(3a^2-2\\)",
+          "\\(3a^2+2a\\)",
+          "\\(3a-2a\\)",
+          "\\(3a^2-2a\\)"
+        ]
+      },
+      {
+        "correctAnswer": "4+8+3+6",
+        "correctQCMAnswer": "4+8+3+6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "pi*3^2",
+        "correctQCMAnswer": "pi*3^2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "3x+11",
+        "correctQCMAnswer": "3x+11",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

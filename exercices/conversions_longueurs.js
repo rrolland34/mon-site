@@ -1,3 +1,5 @@
+import { presentMeasureQuestion } from './measurePresentation.js';
+
 // exercices/conversions_longueurs.js
 
 import {
@@ -603,5 +605,5 @@ export default {
     createQuestion4(),
     createQuestion5(),
     createQuestion6()
-  ]
+  ].map(presentMeasureQuestion)
 };

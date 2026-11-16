@@ -1,3 +1,4 @@
+import { presentAntillesProQuestion } from "../antillesProPresentation.js";
 import { createRightAngleMark } from "../figures/rightAngleCoding.js";
 
 const calculation = patterns => ({
@@ -46,11 +47,11 @@ export default {
   questions: [
     {
       id: "q1", title: "Calcul numérique", subtitle: "Puissances",
-      question: String.raw`\(\text{Écrire l'expression correspondant à }3\times4^5\text{.}\)`,
+      question: String.raw`\(\text{Quelle écriture sous forme de produit de facteurs, sans utiliser de puissance, correspond à l'expression }3\times4^5\text{ ?}\)`,
       answers: ["3*4*4*4*4*4"], answerRule: calculation(["3*4*4*4*4*4"]),
       // Ordre officiel A, B, C, D : seul le deuxième libellé C erroné devient B.
       possible_answers: [String.raw`\(3\times4\times5\)`, String.raw`\(3\times(4+4+4+4+4)\)`, String.raw`\(3\times4\times4\times4\times4\times4\)`, String.raw`\(3\times5\times5\times5\times5\)`],
-      display_answer: String.raw`\(\text{La bonne réponse est C : }3\times4\times4\times4\times4\times4\text{.}\)<br>\(4^5\text{ est le produit de cinq facteurs égaux à }4\text{.}\)<br>\(\text{On conserve le facteur }3\text{ devant ce produit.}\)`
+      display_answer: String.raw`\(\text{L'écriture attendue est }3\times4\times4\times4\times4\times4\text{.}\)<br>\(4^5\text{ est le produit de cinq facteurs égaux à }4\text{.}\)<br>\(\text{On conserve le facteur }3\text{ devant ce produit.}\)`
     },
     {
       id: "q2", title: "Calcul numérique", subtitle: "Écriture scientifique",
@@ -109,5 +110,5 @@ export default {
       possible_answers:[String.raw`\(20\times\dfrac{40}{100}\)`,String.raw`\(20+40\)`,String.raw`\(28\)`,String.raw`\(20+\dfrac{20\times40}{100}\)`],
       display_answer:String.raw`\(\text{Le calcul attendu est }20+\dfrac{20\times40}{100}\text{.}\)<br>\(\text{On ajoute au prix initial une augmentation égale à }40\,\%\text{ de ce prix.}\)<br>\(\text{On peut aussi écrire }20\times\left(1+\dfrac{40}{100}\right)=20\times1{,}4\text{.}\)<br>\(\text{Le nouveau prix est }28~\text{€}\text{, mais le calcul est demandé.}\)`
     }
-  ].map(question => ({...question,qcmAnswersOrder:[...question.possible_answers]}))
+  ].map(question => ({...question,qcmAnswersOrder:[...question.possible_answers]})).map(presentAntillesProQuestion)
 };

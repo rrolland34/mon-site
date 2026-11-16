@@ -1,0 +1,572 @@
+[
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-16/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-22/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-13/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-14/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/correction-reperage-orthonorme/hachages-avant.json",
+    "changes": [
+      {
+        "file": "exercices/dnb/amerique_du_nord_juin_2026_gen.js",
+        "before": "3043ec11b507e814b3fa187c207f999123597a4878f780bd4e7342eba19a4c34",
+        "after": "0a1f83c722d921f5e56b130ca85aa4513a57ec61f16760c1bf9d8c2cfde5c650"
+      },
+      {
+        "file": "exercices/dnb/antilles_guyane_juin_2026_gen.js",
+        "before": "a1a3f474d731510816c270308d853c4c9addb23413849782947fd8f865e09735",
+        "after": "ba7a31980e84d6cbf2490096817878ef52723b1a3c4bc9eed079b8766bbefc8a"
+      },
+      {
+        "file": "exercices/dnb/antilles_guyane_juin_2026_pro.js",
+        "before": "fc65b31b67f3ad6bd4c92d9dd0f08676562400fa4a17ba3b075412638ea94028",
+        "after": "8f3ad3ac3d8834d2bd91b15e2e0515ee206a6965ef1995711dc7354a5c690d4e"
+      },
+      {
+        "file": "exercices/dnb/asie_juin_2026_gen.js",
+        "before": "6e7bd97e3c45a20952613bce2199ebb147fbb222e29c413c82d388b28fb90f4c",
+        "after": "ad07f490dbefd3068a874226f307f364fce5d6fd0f0bd61c3967c241e62151f1"
+      },
+      {
+        "file": "exercices/dnb/centres_etrangers_juin_2026_gen.js",
+        "before": "b56b530fa5c9642b786c2ad55bb3bfc29ef73f7d71e451a46e3638b840abe718",
+        "after": "6ce4fe980e1eaaa40eb9013905e642e1191d342f6b84694c387b88d64058cc0d"
+      },
+      {
+        "file": "exercices/dnb/metropole_juin_2026_gen.js",
+        "before": "76ed42519a695d94f39db7088a7c0f9642f506c127b8302758b97dfd1401de51",
+        "after": "a19cdc2460be17540b480b1535e046d0ee498a05e2734cc86f30075f39d09f8e"
+      },
+      {
+        "file": "exercices/dnb/metropole_juin_2026_pro.js",
+        "before": "3fdb33281e4dbe0966cf949d9aa3cf38677a9e58793cdcb90943526d6bc52041",
+        "after": "18ab8d4ac209dbaa67ac4c01a935b824c1d5ca864746e2e581ba72f8876d7d05"
+      },
+      {
+        "file": "exercices/dnb/polynesie_juin_2026_gen.js",
+        "before": "6791a79764f91fec7196beebb5ae8805a74793c57dbba7d938c0806e475965dd",
+        "after": "499642ccdc6b9c7af5165c37c834a9ac2beb4ad97fce79495f8a4e06caa9b595"
+      },
+      {
+        "file": "exercices/dnb/polynesie_juin_2026_pro.js",
+        "before": "2f15e42cbc32d702f6824a10b38d81244e2896057d6460aa0af95569e2f4ddb0",
+        "after": "d845bc30b176925517db016cd662e73f879b756ecaf47153234a2a2b690cb082"
+      },
+      {
+        "file": "exercices/dnb/polynesie_septembre_2026_gen.js",
+        "before": "1d561917b043ca23ad136a07f36a25a2f922badf8ef109bd17e37516e3282f85",
+        "after": "676c4677160378f61b7220da3de4ed000de2439083ab6c191832083d48b1eff4"
+      },
+      {
+        "file": "exercices/dnb/sujet_0_num_1_decembre_2025_gen.js",
+        "before": "b7a72d961915348af02a7ebaeeb2beeea1c94b55b7982c3ac2e5d6c7e801d4dd",
+        "after": "28072c321a602bb91894a11bf8d2a0cf5195341ba15771d13234161c5ce3a679"
+      },
+      {
+        "file": "exercices/dnb/sujet_0_num_1_decembre_2025_pro.js",
+        "before": "1566276360060e0f87b8396b2ac1bb02a61e3a245426d701fc6e75f05016b5d9",
+        "after": "b909330b6aab45c2094c819601174a388abd197f3e220de445b32f24e44c8e60"
+      },
+      {
+        "file": "exercices/dnb/sujet_0_num_2_decembre_2025_gen.js",
+        "before": "dccf495cdc036323a3aceff8f390a929e2d44838faee0f682748e9ea0936004c",
+        "after": "c0ce2d5564ff971421ab5c899600335c467a7139e9bb842a66fa73ae2dd46a07"
+      },
+      {
+        "file": "exercices/dnb/sujet_0_num_2_decembre_2025_pro.js",
+        "before": "c964d2edc66b579a3e6ff71c186e73ef844a4f782bef10d0983106bc61f7c4c7",
+        "after": "a51da80e6c88e2676bda97b241074b67572439ec3a14974d7e1032154f875fae"
+      },
+      {
+        "file": "exercices/dnb/sujet_de_reference_num_1_septembre_2026_gen.js",
+        "before": "a8c3d507ae5235cc9728d76616c36c9a5ef7915ab5fe55b8faf38ec54161a078",
+        "after": "a038f2d6ef7f73d33bcce9ce535303ef850b82a96e877406a669eeddf74c25db"
+      },
+      {
+        "file": "exercices/dnb/sujet_de_reference_num_2_septembre_2026_gen.js",
+        "before": "b96428743dc53040acaa76f8dc4d7cb69acad15e3d8cb4021468fa2f3b1dc4d6",
+        "after": "42141c6bedac5f5b227816889617f16566be791a18b3d45ef237d29f43c0093e"
+      },
+      {
+        "file": "exercices/scratch/reconnaitre_figures.js",
+        "before": "0396e08c9d649cef7ed683dbe7556e34cdeff90b1efc7512b8a93e806832094a",
+        "after": "39cf12b2d0a79d50b39efdd7b124434433fa7bf84d1046ea9d066fde70c4c72c"
+      },
+      {
+        "file": "exercices/statistiques.js",
+        "before": "4cc4398e7d9a7d58d92474431c60c872461da4dddd8773a4f38c5c24880900a1",
+        "after": "7a5d6e60825155596a5d05b4c0c5dc70c2ecfabf4286a52d260f5bc57e7cb0d0"
+      },
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-7/hachages-hors-perimetre.json",
+    "changes": [
+      {
+        "file": "exercices/statistiques.js",
+        "before": "4cc4398e7d9a7d58d92474431c60c872461da4dddd8773a4f38c5c24880900a1",
+        "after": "7a5d6e60825155596a5d05b4c0c5dc70c2ecfabf4286a52d260f5bc57e7cb0d0"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-10/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-9/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-19/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-11/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-20/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-17/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-23/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-12/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-15/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-21/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-18/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-24/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/automatismes-lot-8/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  },
+  {
+    "manifest": "tests/fixtures/maintenance/correction-thales-rapports/hachages-avant.json",
+    "changes": [
+      {
+        "file": "core/answerFeedback.js",
+        "before": "edd559ce02602f8a2e28e0945396dd5c3ab4f8a2edf60cd6a23414a5c7c8028b",
+        "after": "d92a668bd20990cfb998d8703f2ef0c330bfc5ed786b43470da2b7b2d04b0923"
+      },
+      {
+        "file": "core/exerciseLoader.js",
+        "before": "abb1daf899460f518b03d11d00704e939cc75196811863cd57ea0c8123e64d41",
+        "after": "1d8e5020f5035b2506ec933f22147975bd5787d1259c8fdfea7b5c48ee486634"
+      },
+      {
+        "file": "core/session.js",
+        "before": "f1c0b355fe64d059e9d6ad0be1e74c54d26d7b847e489e4ebc40b0fe7fb719ad",
+        "after": "e29d7476395ebff067b08c4d4995099b8c1b8df68479f96c99ea123c77762874"
+      },
+      {
+        "file": "style.css",
+        "before": "1b936cb36752420929a5b89b35371bee8b2cd768379a8729a49a976a480bde44",
+        "after": "e2f43d3575cf4ca6f3062eb7b6edc4994bb41922013e72e80b5d4a7673da193e"
+      }
+    ]
+  }
+]

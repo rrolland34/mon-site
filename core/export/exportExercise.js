@@ -13,6 +13,7 @@ import {
 } from "./exportDocument.js";
 
 import {
+  getQuestionAnswerMode,
   createEvaluationStatement,
   createEvaluationWithCorrection
 } from "./exportEvaluationContent.js";
@@ -97,7 +98,19 @@ export function exportExercise({
       title: exercice.title,
       content,
       studentHeader: !includeCorrection,
-      isEvaluation: true
+      isEvaluation: true,
+      ...(questions.some(question => question.exportCartesianFigure) ? {
+        afterRender({ archiveWindow }) {
+          renderExportCartesianFigures({ archiveWindow, includeSolutions: includeCorrection,
+            labelPropositions: true,
+            userAnswers: questions.map((question, index) => question.exportCartesianFigure ? {
+              figureConfig: question.figureConfig, givenPoint: question.givenPoint,
+              qcmPoints: question.qcmPoints, correctAnswer: question.answerPoint,
+              answerMode: getQuestionAnswerMode(answerMode, questionAnswerModes, index, question)
+            } : {})
+          });
+        }
+      } : {})
     });
 
     return;

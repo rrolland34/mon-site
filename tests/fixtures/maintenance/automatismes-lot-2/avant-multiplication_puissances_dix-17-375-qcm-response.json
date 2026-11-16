@@ -1,0 +1,258 @@
+{
+  "job": {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 381,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 141,4×10",
+          "left": -5.484375,
+          "right": 380.5,
+          "width": 385.984375,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 141{,}4\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "14,14",
+        "1 414",
+        "14 140",
+        "141,4"
+      ]
+    },
+    {
+      "document": 391,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 217×1 000",
+          "left": -15.734375,
+          "right": 390.734375,
+          "width": 406.46875,
+          "height": 33.5625
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 217\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "217",
+        "2 170 000",
+        "217 000",
+        "21 700"
+      ]
+    },
+    {
+      "document": 435,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 494.484375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 19,900 4×1 000",
+          "left": -59.734375,
+          "right": 434.75,
+          "width": 494.484375,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 19{,}900~4\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "19 900,4",
+        "1 990,04",
+        "199 004",
+        "19,900 4"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 330.515625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 41×10",
+          "left": 22.25,
+          "right": 352.765625,
+          "width": 330.515625,
+          "height": 33.5625
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 41\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "41",
+        "410",
+        "4,1",
+        "4 100"
+      ]
+    },
+    {
+      "document": 429,
+      "card": 318.25,
+      "question": 280.75,
+      "mathWidth": 483.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 903,367×1 000",
+          "left": -54.3125,
+          "right": 429.328125,
+          "width": 483.640625,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 903{,}367\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "90 336,7",
+        "9 033 670",
+        "903,367",
+        "903 367"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "1414"
+        ],
+        "possible_answers": [
+          "1414",
+          "141.4",
+          "14140",
+          "14.14"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "14.14",
+          "1414",
+          "14140",
+          "141.4"
+        ]
+      },
+      {
+        "answers": [
+          "217000"
+        ],
+        "possible_answers": [
+          "217000",
+          "217",
+          "21700",
+          "2170000"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "217",
+          "2170000",
+          "217000",
+          "21700"
+        ]
+      },
+      {
+        "answers": [
+          "19900.4"
+        ],
+        "possible_answers": [
+          "19900.4",
+          "19.9004",
+          "1990.04",
+          "199004"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "19900.4",
+          "1990.04",
+          "199004",
+          "19.9004"
+        ]
+      },
+      {
+        "answers": [
+          "410"
+        ],
+        "possible_answers": [
+          "410",
+          "41",
+          "4100",
+          "4.1"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "41",
+          "410",
+          "4.1",
+          "4100"
+        ]
+      },
+      {
+        "answers": [
+          "903367"
+        ],
+        "possible_answers": [
+          "903367",
+          "903.367",
+          "90336.7",
+          "9033670"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "90336.7",
+          "9033670",
+          "903.367",
+          "903367"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

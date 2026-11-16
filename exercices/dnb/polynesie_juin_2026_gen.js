@@ -1,4 +1,5 @@
 // exercices/dnb/polynesie_juin_2026_gen.js
+import { presentPolynesieQuestion } from "../polynesiePresentation.js";
 
 import {
   createRightTriangleSVG
@@ -588,5 +589,5 @@ export default {
     question7,
     question8,
     question9
-  ]
+  ].map(presentPolynesieQuestion)
 };

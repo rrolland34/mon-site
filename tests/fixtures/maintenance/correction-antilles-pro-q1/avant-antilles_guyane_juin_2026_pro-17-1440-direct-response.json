@@ -1,0 +1,515 @@
+{
+  "job": {
+    "id": "antilles_guyane_juin_2026_pro",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 268.265625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Écrire}",
+        "\\text{l'expression}",
+        "\\text{correspondant}",
+        "\\text{à}",
+        "3\\times4^5."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 215.375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Écrire}",
+        "\\text{la}",
+        "\\text{notation}",
+        "\\text{scientifique}",
+        "\\text{de}",
+        "1\\,200\\,000."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 369.015625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Écrire}",
+        "\\text{le}",
+        "\\text{calcul}",
+        "\\text{permettant}",
+        "\\text{d'obtenir}",
+        "\\text{la}",
+        "\\text{moyenne}",
+        "\\text{des}",
+        "\\text{notes}",
+        "\\text{suivantes :}",
+        "11\\quad10\\quad16\\quad9\\quad20"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 212.078125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{On}",
+        "\\text{donne}",
+        "\\text{la}",
+        "\\text{taille}",
+        "\\text{de}",
+        "11",
+        "\\text{joueurs}",
+        "\\text{de}",
+        "\\text{football}",
+        "\\text{en}",
+        "\\text{mètre.}",
+        "1{,}72",
+        "1{,}75",
+        "1{,}78",
+        "1{,}84",
+        "1{,}85",
+        "1{,}89",
+        "1{,}89",
+        "1{,}90",
+        "1{,}90",
+        "1{,}92",
+        "1{,}99",
+        "\\text{Déterminer}",
+        "\\text{la}",
+        "\\text{taille}",
+        "\\text{médiane}",
+        "\\text{de}",
+        "\\text{ces}",
+        "\\text{joueurs.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 139.453125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner}",
+        "\\text{le}",
+        "\\text{quart}",
+        "\\text{de}",
+        "20."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 167.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Une}",
+        "\\text{voiture}",
+        "\\text{parcourt}",
+        "240~\\mathrm{km}",
+        "\\text{en}",
+        "3~\\mathrm{heures}.",
+        "\\text{Calculer}",
+        "\\text{sa}",
+        "\\text{vitesse}",
+        "\\text{moyenne}",
+        "\\text{en}",
+        "\\mathrm{km/h}."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 192\" width=\"260\" role=\"img\" aria-label=\"Surface rectangulaire à carreler\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"255\" height=\"187.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></rect>\n  \n    <path d=\"\n        M 17 2\n        L 17 17\n        L 2 17\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 257 17\n        L 242 17\n        L 242 2\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 2 174.5\n        L 17 174.5\n        L 17 189.5\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n</svg>",
+          "left": 338.28125,
+          "right": 598.28125,
+          "top": 374.71875,
+          "bottom": 566.71875,
+          "width": 260,
+          "height": 192
+        },
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" width=\"64\" role=\"img\" aria-label=\"Carreau carré\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></rect>\n</svg>",
+          "left": 822.984375,
+          "right": 886.984375,
+          "top": 374.71875,
+          "bottom": 438.71875,
+          "width": 64,
+          "height": 64
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 261.03125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{On}",
+        "\\text{dispose}",
+        "\\text{de}",
+        "\\text{carreaux}",
+        "\\text{dont}",
+        "\\text{les}",
+        "\\text{dimensions}",
+        "\\text{sont}",
+        "\\text{données}",
+        "\\text{ci-dessous.}",
+        "\\text{Écrire}",
+        "\\text{le}",
+        "\\text{calcul}",
+        "\\text{qui}",
+        "\\text{permet}",
+        "\\text{de}",
+        "\\text{connaître}",
+        "\\text{le}",
+        "\\text{nombre}",
+        "\\text{de}",
+        "\\text{carreaux}",
+        "\\text{nécessaires}",
+        "\\text{pour}",
+        "\\text{couvrir}",
+        "\\text{la}",
+        "\\text{surface}",
+        "\\text{à}",
+        "\\text{carreler}",
+        "\\text{ci-dessous :}",
+        "\\text{Surface}",
+        "\\text{à}",
+        "\\text{carreler}",
+        "\\text{Carreau}",
+        "\\text{de}",
+        "\\text{carrelage}",
+        "80~\\mathrm{cm}",
+        "90~\\mathrm{cm}",
+        "10~\\mathrm{cm}",
+        "10~\\mathrm{cm}",
+        "\\text{Les}",
+        "\\text{schémas}",
+        "\\text{ne}",
+        "\\text{sont}",
+        "\\text{pas à l'échelle.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 169.078125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Dans}",
+        "\\text{une}",
+        "\\text{pièce}",
+        "\\text{de}",
+        "2{,}50~\\mathrm{m}",
+        "\\text{de}",
+        "\\text{hauteur,}",
+        "\\text{on}",
+        "\\text{place}",
+        "\\text{une}",
+        "\\text{armoire}",
+        "\\text{de}",
+        "170~\\mathrm{cm}",
+        "\\text{de}",
+        "\\text{hauteur.}",
+        "\\text{Calculer}",
+        "\\text{la}",
+        "\\text{distance}",
+        "\\text{entre}",
+        "\\text{le}",
+        "\\text{haut}",
+        "\\text{de}",
+        "\\text{l'armoire}",
+        "\\text{et}",
+        "\\text{le}",
+        "\\text{plafond.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 183.3125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Le}",
+        "\\text{prix}",
+        "\\text{d'un}",
+        "\\text{article}",
+        "\\text{coûtant}",
+        "20~~\\text{€}",
+        "\\text{augmente}",
+        "\\text{de}",
+        "40\\,\\%.",
+        "\\text{Indiquer}",
+        "\\text{le}",
+        "\\text{calcul}",
+        "\\text{qui}",
+        "\\text{permet}",
+        "\\text{de}",
+        "\\text{trouver}",
+        "\\text{le}",
+        "\\text{nouveau}",
+        "\\text{prix.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "3*4*4*4*4*4"
+        ],
+        "possible_answers": [
+          "\\(3\\times4\\times5\\)",
+          "\\(3\\times(4+4+4+4+4)\\)",
+          "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+          "\\(3\\times5\\times5\\times5\\times5\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "3*4*4*4*4*4"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1.2*10^6"
+        ],
+        "possible_answers": [
+          "\\(12\\times10^5\\)",
+          "\\(1{,}2\\times10^5\\)",
+          "\\(1{,}2\\times10^6\\)",
+          "\\(0{,}12\\times10^7\\)"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 1200000
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(11+10+16+9+20)/5"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+          "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+          "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+          "\\(13{,}2\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "(11+10+16+9+20)/5"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1.89 m"
+        ],
+        "possible_answers": [
+          "\\(1{,}85~\\mathrm{m}\\)",
+          "\\(1{,}89~\\mathrm{m}\\)",
+          "\\(1{,}90~\\mathrm{m}\\)",
+          "\\(1{,}99~\\mathrm{m}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "m"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5"
+        ],
+        "possible_answers": [
+          "\\(4\\)",
+          "\\(5\\)",
+          "\\(10\\)",
+          "\\(80\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "80 km/h"
+        ],
+        "possible_answers": [
+          "\\(80~\\mathrm{km/h}\\)",
+          "\\(720~\\mathrm{km/h}\\)",
+          "\\(237~\\mathrm{km/h}\\)",
+          "\\(0{,}0125~\\mathrm{km/h}\\)"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "km/h"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(90*80)/(10*10)",
+          "(90/10)*(80/10)"
+        ],
+        "possible_answers": [
+          "\\(72\\)",
+          "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+          "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+          "\\(\\dfrac{90+80}{10+10}\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "(90*80)/(10*10)",
+            "(90/10)*(80/10)"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "80 cm"
+        ],
+        "possible_answers": [
+          "\\(80~\\mathrm{cm}\\)",
+          "\\(420~\\mathrm{cm}\\)",
+          "\\(167{,}5~\\mathrm{cm}\\)",
+          "\\(0{,}80~\\mathrm{cm}\\)"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "20+20*40/100",
+          "20*(1+40/100)",
+          "20*1.4",
+          "20+20*0.4"
+        ],
+        "possible_answers": [
+          "\\(20\\times\\dfrac{40}{100}\\)",
+          "\\(20+40\\)",
+          "\\(28\\)",
+          "\\(20+\\dfrac{20\\times40}{100}\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "20+20*40/100",
+            "20*(1+40/100)",
+            "20*1.4",
+            "20+20*0.4"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

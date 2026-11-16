@@ -1,0 +1,620 @@
+[
+  {
+    "seed": 17,
+    "state": 17,
+    "exercise": {
+      "title": "Polynésie — juin 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "\n    <div>\n      <p>\n        Déterminer la médiane de la série :\n      </p>\n\n      <p style=\"text-align: center;\">\n        \\(12\\ ;\\ 9\\ ;\\ 7\\ ;\\ 23\\ ;\\ 9\\ ;\\ 25\\ ;\\ 7\\)\n      </p>\n    </div>\n  ",
+          "answers": [
+            "9"
+          ],
+          "possible_answers": [
+            "7",
+            "9",
+            "12",
+            "23"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(9\\).<br>La série ordonnée est \\(7\\ ;\\ 7\\ ;\\ 9\\ ;\\ 9\\ ;\\ 12\\ ;\\ 23\\ ;\\ 25\\). La médiane est la quatrième valeur."
+        },
+        {
+          "id": "q2",
+          "title": "Nombres",
+          "subtitle": "Notation scientifique",
+          "question": "\\(\\text{Donner la notation scientifique de }0{,}000~457.\\)",
+          "answers": [
+            "0.000457"
+          ],
+          "possible_answers": [
+            "4.57*10^-4",
+            "4.57*10^-3",
+            "45.7*10^-5",
+            "4.57*10^4"
+          ],
+          "answerRule": {
+            "type": "scientificNotation",
+            "expectedValue": 0.000457
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(4{,}57\\times10^{-4}\\)."
+        },
+        {
+          "id": "q3",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un triangle",
+          "question": "\n    <div>\n      <p>\n        Calculer l'aire, en cm²,\n        du triangle ci-contre.\n      </p>\n\n      <div class=\"question-display question-with-figure dnb-right-triangle\">\n        \n    <svg\n      viewBox=\"\n        -3.54492739361919\n        -15.614753069811997\n        447.0898547872383\n        329.1446717414635\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            -200\n            220\n            190\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"340\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"100\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"340\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"100\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"317.2844778927319\"\n        y=\"40.937159690489764\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"48.456391165434276\"\n        y=\"146.19835063741345\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"386.1080453714374\"\n        y=\"250.11019934234753\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"213.03521301253576\"\n        y=\"212.96718838297906\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            16.869897645844034\n            213.03521301253576\n            212.96718838297906\n          )\n        \"\n      >\n        10 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"181.00970366087375\"\n        y=\"82.87504123040642\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -19.99999999999997\n            181.00970366087375\n            82.87504123040642\n          )\n        \"\n      >\n        8 cm\n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"355.31573739317076\"\n        y=\"140.74909936110373\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            70\n            355.31573739317076\n            140.74909936110373\n          )\n        \"\n      >\n        6 cm\n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>\n  \n      </div>\n    </div>\n  ",
+          "answers": [
+            "24 cm²"
+          ],
+          "possible_answers": [
+            "24 cm²",
+            "48 cm²",
+            "30 cm²",
+            "80 cm²"
+          ],
+          "answerRule": {
+            "type": "area",
+            "requiredUnit": "cm²"
+          },
+          "display_answer": "\\(24\\ \\text{cm}^2\\).<br>\\(\\dfrac{8\\times6}{2}=24\\)."
+        },
+        {
+          "id": "q4",
+          "title": "Probabilités",
+          "subtitle": "Calcul d'une probabilité",
+          "question": "\n    <div>\n      <p>\n        Une boîte opaque contient\n        6 beignets à l'abricot,\n        5 beignets à la pomme\n        et 4 beignets à la framboise.\n      </p>\n\n      <p>\n        Déterminer la probabilité\n        de piocher au hasard\n        un beignet à la framboise.\n      </p>\n    </div>\n  ",
+          "answers": [
+            "4/15"
+          ],
+          "possible_answers": [
+            "4/15",
+            "4/11",
+            "6/15",
+            "5/15"
+          ],
+          "display_answer": "\\(\\dfrac{4}{15}\\).<br>Il y a 4 beignets à la framboise parmi \\(6+5+4=15\\) beignets."
+        },
+        {
+          "id": "q5",
+          "title": "Proportionnalité",
+          "subtitle": "Réduction en pourcentage",
+          "question": "Un article coûte 800 €. Son prix baisse de 10 %.<br>Calculer le prix, en euro, de l'article après réduction.",
+          "answers": [
+            "720"
+          ],
+          "possible_answers": [
+            "720 €",
+            "790 €",
+            "700 €",
+            "80 €"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "integer"
+            }
+          },
+          "display_answer": "\\(720\\text{ €}\\).<br>La réduction est de \\(10\\,\\%\\) de \\(800\\), soit \\(80\\) €. Ainsi \\(800-80=720\\) €."
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Développement et réduction",
+          "question": {
+            "direct": "\\(\\text{Développer et réduire l'expression }B=4y(3y-1).\\)",
+            "qcm": "\\(\\text{Choisir la forme développée et réduite de }B=4y(3y-1).\\)"
+          },
+          "answers": [
+            "12y^2-4y"
+          ],
+          "possible_answers": [
+            "\\(12y^2-4y\\)",
+            "\\(12y^2-1\\)",
+            "\\(7y^2-4y\\)",
+            "\\(12y-4\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "developedAndReduced"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(B=12y^2-4y\\).<br>\\(4y\\times3y=12y^2\\) et \\(4y\\times(-1)=-4y\\)."
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Conversion de volumes",
+          "question": "\\(\\text{Compléter l'égalité : }3{,}57\\text{ L}=\\ldots\\text{ cm}^3.\\)",
+          "answers": [
+            "3570"
+          ],
+          "possible_answers": [
+            "3570",
+            "357",
+            "35700",
+            "3.57"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(3\\,570\\).<br>Comme \\(1\\text{ L}=1\\,000\\text{ cm}^3\\), on a \\(3{,}57\\times1\\,000=3\\,570\\)."
+        },
+        {
+          "id": "q8",
+          "title": "Fonctions",
+          "subtitle": "Image par une fonction affine",
+          "question": {
+            "direct": "\\(\\text{Donner l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5.\\)",
+            "qcm": "\\(\\text{Quelle est l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5\\text{ ?}\\)"
+          },
+          "answers": [
+            "7"
+          ],
+          "possible_answers": [
+            "3",
+            "7",
+            "12",
+            "29"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(7\\).<br>\\(f(4)=3\\times4-5=12-5=7\\)."
+        },
+        {
+          "id": "q9",
+          "title": "Géométrie",
+          "subtitle": "Nature d'un quadrilatère",
+          "question": {
+            "direct": "\n      <div>\n        <p>\n          Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        </p>\n\n        <p>\n          À partir des codages,\n          déterminer la nature\n          du quadrilatère ABCD.\n        </p>\n\n        <div class=\"question-display dnb-quadrilateral\">\n          \n    <svg\n      viewBox=\"\n        10\n        10\n        430\n        340\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"80\"\n            y1=\"300\"\n            x2=\"370\"\n            y2=\"60\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"390\"\n            y1=\"250\"\n            x2=\"60\"\n            y2=\"110\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"148.67459371579466\"\n        y1=\"235.37763407325187\"\n        x2=\"156.32540628420534\"\n        y2=\"244.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"293.67459371579463\"\n        y1=\"115.37763407325187\"\n        x2=\"301.32540628420537\"\n        y2=\"124.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"308.83902804636404\"\n        y1=\"222.0856900786762\"\n        x2=\"313.525626208638\"\n        y2=\"211.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"301.474373791362\"\n        y1=\"218.96129130382687\"\n        x2=\"306.16097195363596\"\n        y2=\"207.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"143.839028046364\"\n        y1=\"152.0856900786762\"\n        x2=\"148.52562620863804\"\n        y2=\"141.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"136.47437379136196\"\n        y1=\"148.96129130382687\"\n        x2=\"141.160971953636\"\n        y2=\"137.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"58.428959008508684\"\n        y=\"317.8518959929583\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"415.7762898925072\"\n        y=\"260.9353957119728\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"391.5710409914913\"\n        y=\"42.148104007041674\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"34.22371010749281\"\n        y=\"99.06460428802725\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  \n        </div>\n      </div>\n    ",
+            "qcm": "\n      <div>\n        <p>\n          Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        </p>\n\n        <p>\n          Recopier la bonne réponse.\n        </p>\n\n        <div class=\"question-display dnb-quadrilateral\">\n          \n    <svg\n      viewBox=\"\n        10\n        10\n        430\n        340\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"80\"\n            y1=\"300\"\n            x2=\"370\"\n            y2=\"60\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"390\"\n            y1=\"250\"\n            x2=\"60\"\n            y2=\"110\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"148.67459371579466\"\n        y1=\"235.37763407325187\"\n        x2=\"156.32540628420534\"\n        y2=\"244.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"293.67459371579463\"\n        y1=\"115.37763407325187\"\n        x2=\"301.32540628420537\"\n        y2=\"124.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"308.83902804636404\"\n        y1=\"222.0856900786762\"\n        x2=\"313.525626208638\"\n        y2=\"211.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"301.474373791362\"\n        y1=\"218.96129130382687\"\n        x2=\"306.16097195363596\"\n        y2=\"207.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"143.839028046364\"\n        y1=\"152.0856900786762\"\n        x2=\"148.52562620863804\"\n        y2=\"141.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"136.47437379136196\"\n        y1=\"148.96129130382687\"\n        x2=\"141.160971953636\"\n        y2=\"137.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"58.428959008508684\"\n        y=\"317.8518959929583\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"415.7762898925072\"\n        y=\"260.9353957119728\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"391.5710409914913\"\n        y=\"42.148104007041674\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"34.22371010749281\"\n        y=\"99.06460428802725\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  \n        </div>\n      </div>\n    "
+          },
+          "answers": [
+            "parallélogramme",
+            "Un parallélogramme."
+          ],
+          "possible_answers": [
+            "Un losange.",
+            "Un rectangle.",
+            "Un carré.",
+            "Un parallélogramme."
+          ],
+          "qcmClass": "qcm-two-columns",
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "Un parallélogramme.<br>Ses diagonales se coupent en leur milieu."
+        }
+      ]
+    }
+  },
+  {
+    "seed": 2026,
+    "state": 2026,
+    "exercise": {
+      "title": "Polynésie — juin 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "\n    <div>\n      <p>\n        Déterminer la médiane de la série :\n      </p>\n\n      <p style=\"text-align: center;\">\n        \\(12\\ ;\\ 9\\ ;\\ 7\\ ;\\ 23\\ ;\\ 9\\ ;\\ 25\\ ;\\ 7\\)\n      </p>\n    </div>\n  ",
+          "answers": [
+            "9"
+          ],
+          "possible_answers": [
+            "7",
+            "9",
+            "12",
+            "23"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(9\\).<br>La série ordonnée est \\(7\\ ;\\ 7\\ ;\\ 9\\ ;\\ 9\\ ;\\ 12\\ ;\\ 23\\ ;\\ 25\\). La médiane est la quatrième valeur."
+        },
+        {
+          "id": "q2",
+          "title": "Nombres",
+          "subtitle": "Notation scientifique",
+          "question": "\\(\\text{Donner la notation scientifique de }0{,}000~457.\\)",
+          "answers": [
+            "0.000457"
+          ],
+          "possible_answers": [
+            "4.57*10^-4",
+            "4.57*10^-3",
+            "45.7*10^-5",
+            "4.57*10^4"
+          ],
+          "answerRule": {
+            "type": "scientificNotation",
+            "expectedValue": 0.000457
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(4{,}57\\times10^{-4}\\)."
+        },
+        {
+          "id": "q3",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un triangle",
+          "question": "\n    <div>\n      <p>\n        Calculer l'aire, en cm²,\n        du triangle ci-contre.\n      </p>\n\n      <div class=\"question-display question-with-figure dnb-right-triangle\">\n        \n    <svg\n      viewBox=\"\n        -3.54492739361919\n        -15.614753069811997\n        447.0898547872383\n        329.1446717414635\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            -200\n            220\n            190\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"340\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"100\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"340\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"100\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"317.2844778927319\"\n        y=\"40.937159690489764\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"48.456391165434276\"\n        y=\"146.19835063741345\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"386.1080453714374\"\n        y=\"250.11019934234753\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"213.03521301253576\"\n        y=\"212.96718838297906\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            16.869897645844034\n            213.03521301253576\n            212.96718838297906\n          )\n        \"\n      >\n        10 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"181.00970366087375\"\n        y=\"82.87504123040642\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -19.99999999999997\n            181.00970366087375\n            82.87504123040642\n          )\n        \"\n      >\n        8 cm\n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"355.31573739317076\"\n        y=\"140.74909936110373\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            70\n            355.31573739317076\n            140.74909936110373\n          )\n        \"\n      >\n        6 cm\n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>\n  \n      </div>\n    </div>\n  ",
+          "answers": [
+            "24 cm²"
+          ],
+          "possible_answers": [
+            "24 cm²",
+            "48 cm²",
+            "30 cm²",
+            "80 cm²"
+          ],
+          "answerRule": {
+            "type": "area",
+            "requiredUnit": "cm²"
+          },
+          "display_answer": "\\(24\\ \\text{cm}^2\\).<br>\\(\\dfrac{8\\times6}{2}=24\\)."
+        },
+        {
+          "id": "q4",
+          "title": "Probabilités",
+          "subtitle": "Calcul d'une probabilité",
+          "question": "\n    <div>\n      <p>\n        Une boîte opaque contient\n        6 beignets à l'abricot,\n        5 beignets à la pomme\n        et 4 beignets à la framboise.\n      </p>\n\n      <p>\n        Déterminer la probabilité\n        de piocher au hasard\n        un beignet à la framboise.\n      </p>\n    </div>\n  ",
+          "answers": [
+            "4/15"
+          ],
+          "possible_answers": [
+            "4/15",
+            "4/11",
+            "6/15",
+            "5/15"
+          ],
+          "display_answer": "\\(\\dfrac{4}{15}\\).<br>Il y a 4 beignets à la framboise parmi \\(6+5+4=15\\) beignets."
+        },
+        {
+          "id": "q5",
+          "title": "Proportionnalité",
+          "subtitle": "Réduction en pourcentage",
+          "question": "Un article coûte 800 €. Son prix baisse de 10 %.<br>Calculer le prix, en euro, de l'article après réduction.",
+          "answers": [
+            "720"
+          ],
+          "possible_answers": [
+            "720 €",
+            "790 €",
+            "700 €",
+            "80 €"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "integer"
+            }
+          },
+          "display_answer": "\\(720\\text{ €}\\).<br>La réduction est de \\(10\\,\\%\\) de \\(800\\), soit \\(80\\) €. Ainsi \\(800-80=720\\) €."
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Développement et réduction",
+          "question": {
+            "direct": "\\(\\text{Développer et réduire l'expression }B=4y(3y-1).\\)",
+            "qcm": "\\(\\text{Choisir la forme développée et réduite de }B=4y(3y-1).\\)"
+          },
+          "answers": [
+            "12y^2-4y"
+          ],
+          "possible_answers": [
+            "\\(12y^2-4y\\)",
+            "\\(12y^2-1\\)",
+            "\\(7y^2-4y\\)",
+            "\\(12y-4\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "developedAndReduced"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(B=12y^2-4y\\).<br>\\(4y\\times3y=12y^2\\) et \\(4y\\times(-1)=-4y\\)."
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Conversion de volumes",
+          "question": "\\(\\text{Compléter l'égalité : }3{,}57\\text{ L}=\\ldots\\text{ cm}^3.\\)",
+          "answers": [
+            "3570"
+          ],
+          "possible_answers": [
+            "3570",
+            "357",
+            "35700",
+            "3.57"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(3\\,570\\).<br>Comme \\(1\\text{ L}=1\\,000\\text{ cm}^3\\), on a \\(3{,}57\\times1\\,000=3\\,570\\)."
+        },
+        {
+          "id": "q8",
+          "title": "Fonctions",
+          "subtitle": "Image par une fonction affine",
+          "question": {
+            "direct": "\\(\\text{Donner l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5.\\)",
+            "qcm": "\\(\\text{Quelle est l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5\\text{ ?}\\)"
+          },
+          "answers": [
+            "7"
+          ],
+          "possible_answers": [
+            "3",
+            "7",
+            "12",
+            "29"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(7\\).<br>\\(f(4)=3\\times4-5=12-5=7\\)."
+        },
+        {
+          "id": "q9",
+          "title": "Géométrie",
+          "subtitle": "Nature d'un quadrilatère",
+          "question": {
+            "direct": "\n      <div>\n        <p>\n          Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        </p>\n\n        <p>\n          À partir des codages,\n          déterminer la nature\n          du quadrilatère ABCD.\n        </p>\n\n        <div class=\"question-display dnb-quadrilateral\">\n          \n    <svg\n      viewBox=\"\n        10\n        10\n        430\n        340\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"80\"\n            y1=\"300\"\n            x2=\"370\"\n            y2=\"60\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"390\"\n            y1=\"250\"\n            x2=\"60\"\n            y2=\"110\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"148.67459371579466\"\n        y1=\"235.37763407325187\"\n        x2=\"156.32540628420534\"\n        y2=\"244.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"293.67459371579463\"\n        y1=\"115.37763407325187\"\n        x2=\"301.32540628420537\"\n        y2=\"124.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"308.83902804636404\"\n        y1=\"222.0856900786762\"\n        x2=\"313.525626208638\"\n        y2=\"211.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"301.474373791362\"\n        y1=\"218.96129130382687\"\n        x2=\"306.16097195363596\"\n        y2=\"207.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"143.839028046364\"\n        y1=\"152.0856900786762\"\n        x2=\"148.52562620863804\"\n        y2=\"141.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"136.47437379136196\"\n        y1=\"148.96129130382687\"\n        x2=\"141.160971953636\"\n        y2=\"137.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"58.428959008508684\"\n        y=\"317.8518959929583\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"415.7762898925072\"\n        y=\"260.9353957119728\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"391.5710409914913\"\n        y=\"42.148104007041674\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"34.22371010749281\"\n        y=\"99.06460428802725\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  \n        </div>\n      </div>\n    ",
+            "qcm": "\n      <div>\n        <p>\n          Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        </p>\n\n        <p>\n          Recopier la bonne réponse.\n        </p>\n\n        <div class=\"question-display dnb-quadrilateral\">\n          \n    <svg\n      viewBox=\"\n        10\n        10\n        430\n        340\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"80\"\n            y1=\"300\"\n            x2=\"370\"\n            y2=\"60\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"390\"\n            y1=\"250\"\n            x2=\"60\"\n            y2=\"110\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"148.67459371579466\"\n        y1=\"235.37763407325187\"\n        x2=\"156.32540628420534\"\n        y2=\"244.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"293.67459371579463\"\n        y1=\"115.37763407325187\"\n        x2=\"301.32540628420537\"\n        y2=\"124.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"308.83902804636404\"\n        y1=\"222.0856900786762\"\n        x2=\"313.525626208638\"\n        y2=\"211.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"301.474373791362\"\n        y1=\"218.96129130382687\"\n        x2=\"306.16097195363596\"\n        y2=\"207.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"143.839028046364\"\n        y1=\"152.0856900786762\"\n        x2=\"148.52562620863804\"\n        y2=\"141.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"136.47437379136196\"\n        y1=\"148.96129130382687\"\n        x2=\"141.160971953636\"\n        y2=\"137.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"58.428959008508684\"\n        y=\"317.8518959929583\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"415.7762898925072\"\n        y=\"260.9353957119728\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"391.5710409914913\"\n        y=\"42.148104007041674\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"34.22371010749281\"\n        y=\"99.06460428802725\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  \n        </div>\n      </div>\n    "
+          },
+          "answers": [
+            "parallélogramme",
+            "Un parallélogramme."
+          ],
+          "possible_answers": [
+            "Un losange.",
+            "Un rectangle.",
+            "Un carré.",
+            "Un parallélogramme."
+          ],
+          "qcmClass": "qcm-two-columns",
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "Un parallélogramme.<br>Ses diagonales se coupent en leur milieu."
+        }
+      ]
+    }
+  },
+  {
+    "seed": 98765,
+    "state": 98765,
+    "exercise": {
+      "title": "Polynésie — juin 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "\n    <div>\n      <p>\n        Déterminer la médiane de la série :\n      </p>\n\n      <p style=\"text-align: center;\">\n        \\(12\\ ;\\ 9\\ ;\\ 7\\ ;\\ 23\\ ;\\ 9\\ ;\\ 25\\ ;\\ 7\\)\n      </p>\n    </div>\n  ",
+          "answers": [
+            "9"
+          ],
+          "possible_answers": [
+            "7",
+            "9",
+            "12",
+            "23"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(9\\).<br>La série ordonnée est \\(7\\ ;\\ 7\\ ;\\ 9\\ ;\\ 9\\ ;\\ 12\\ ;\\ 23\\ ;\\ 25\\). La médiane est la quatrième valeur."
+        },
+        {
+          "id": "q2",
+          "title": "Nombres",
+          "subtitle": "Notation scientifique",
+          "question": "\\(\\text{Donner la notation scientifique de }0{,}000~457.\\)",
+          "answers": [
+            "0.000457"
+          ],
+          "possible_answers": [
+            "4.57*10^-4",
+            "4.57*10^-3",
+            "45.7*10^-5",
+            "4.57*10^4"
+          ],
+          "answerRule": {
+            "type": "scientificNotation",
+            "expectedValue": 0.000457
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(4{,}57\\times10^{-4}\\)."
+        },
+        {
+          "id": "q3",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un triangle",
+          "question": "\n    <div>\n      <p>\n        Calculer l'aire, en cm²,\n        du triangle ci-contre.\n      </p>\n\n      <div class=\"question-display question-with-figure dnb-right-triangle\">\n        \n    <svg\n      viewBox=\"\n        -3.54492739361919\n        -15.614753069811997\n        447.0898547872383\n        329.1446717414635\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            -200\n            220\n            190\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"340\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"100\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"340\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"100\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"317.2844778927319\"\n        y=\"40.937159690489764\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"48.456391165434276\"\n        y=\"146.19835063741345\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"386.1080453714374\"\n        y=\"250.11019934234753\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"213.03521301253576\"\n        y=\"212.96718838297906\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            16.869897645844034\n            213.03521301253576\n            212.96718838297906\n          )\n        \"\n      >\n        10 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"181.00970366087375\"\n        y=\"82.87504123040642\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -19.99999999999997\n            181.00970366087375\n            82.87504123040642\n          )\n        \"\n      >\n        8 cm\n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"355.31573739317076\"\n        y=\"140.74909936110373\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            70\n            355.31573739317076\n            140.74909936110373\n          )\n        \"\n      >\n        6 cm\n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>\n  \n      </div>\n    </div>\n  ",
+          "answers": [
+            "24 cm²"
+          ],
+          "possible_answers": [
+            "24 cm²",
+            "48 cm²",
+            "30 cm²",
+            "80 cm²"
+          ],
+          "answerRule": {
+            "type": "area",
+            "requiredUnit": "cm²"
+          },
+          "display_answer": "\\(24\\ \\text{cm}^2\\).<br>\\(\\dfrac{8\\times6}{2}=24\\)."
+        },
+        {
+          "id": "q4",
+          "title": "Probabilités",
+          "subtitle": "Calcul d'une probabilité",
+          "question": "\n    <div>\n      <p>\n        Une boîte opaque contient\n        6 beignets à l'abricot,\n        5 beignets à la pomme\n        et 4 beignets à la framboise.\n      </p>\n\n      <p>\n        Déterminer la probabilité\n        de piocher au hasard\n        un beignet à la framboise.\n      </p>\n    </div>\n  ",
+          "answers": [
+            "4/15"
+          ],
+          "possible_answers": [
+            "4/15",
+            "4/11",
+            "6/15",
+            "5/15"
+          ],
+          "display_answer": "\\(\\dfrac{4}{15}\\).<br>Il y a 4 beignets à la framboise parmi \\(6+5+4=15\\) beignets."
+        },
+        {
+          "id": "q5",
+          "title": "Proportionnalité",
+          "subtitle": "Réduction en pourcentage",
+          "question": "Un article coûte 800 €. Son prix baisse de 10 %.<br>Calculer le prix, en euro, de l'article après réduction.",
+          "answers": [
+            "720"
+          ],
+          "possible_answers": [
+            "720 €",
+            "790 €",
+            "700 €",
+            "80 €"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "integer"
+            }
+          },
+          "display_answer": "\\(720\\text{ €}\\).<br>La réduction est de \\(10\\,\\%\\) de \\(800\\), soit \\(80\\) €. Ainsi \\(800-80=720\\) €."
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Développement et réduction",
+          "question": {
+            "direct": "\\(\\text{Développer et réduire l'expression }B=4y(3y-1).\\)",
+            "qcm": "\\(\\text{Choisir la forme développée et réduite de }B=4y(3y-1).\\)"
+          },
+          "answers": [
+            "12y^2-4y"
+          ],
+          "possible_answers": [
+            "\\(12y^2-4y\\)",
+            "\\(12y^2-1\\)",
+            "\\(7y^2-4y\\)",
+            "\\(12y-4\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "developedAndReduced"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(B=12y^2-4y\\).<br>\\(4y\\times3y=12y^2\\) et \\(4y\\times(-1)=-4y\\)."
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Conversion de volumes",
+          "question": "\\(\\text{Compléter l'égalité : }3{,}57\\text{ L}=\\ldots\\text{ cm}^3.\\)",
+          "answers": [
+            "3570"
+          ],
+          "possible_answers": [
+            "3570",
+            "357",
+            "35700",
+            "3.57"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(3\\,570\\).<br>Comme \\(1\\text{ L}=1\\,000\\text{ cm}^3\\), on a \\(3{,}57\\times1\\,000=3\\,570\\)."
+        },
+        {
+          "id": "q8",
+          "title": "Fonctions",
+          "subtitle": "Image par une fonction affine",
+          "question": {
+            "direct": "\\(\\text{Donner l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5.\\)",
+            "qcm": "\\(\\text{Quelle est l'image de }4\\text{ par la fonction affine }f\\text{ définie par }f(x)=3x-5\\text{ ?}\\)"
+          },
+          "answers": [
+            "7"
+          ],
+          "possible_answers": [
+            "3",
+            "7",
+            "12",
+            "29"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(7\\).<br>\\(f(4)=3\\times4-5=12-5=7\\)."
+        },
+        {
+          "id": "q9",
+          "title": "Géométrie",
+          "subtitle": "Nature d'un quadrilatère",
+          "question": {
+            "direct": "\n      <div>\n        <p>\n          Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        </p>\n\n        <p>\n          À partir des codages,\n          déterminer la nature\n          du quadrilatère ABCD.\n        </p>\n\n        <div class=\"question-display dnb-quadrilateral\">\n          \n    <svg\n      viewBox=\"\n        10\n        10\n        430\n        340\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"80\"\n            y1=\"300\"\n            x2=\"370\"\n            y2=\"60\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"390\"\n            y1=\"250\"\n            x2=\"60\"\n            y2=\"110\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"148.67459371579466\"\n        y1=\"235.37763407325187\"\n        x2=\"156.32540628420534\"\n        y2=\"244.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"293.67459371579463\"\n        y1=\"115.37763407325187\"\n        x2=\"301.32540628420537\"\n        y2=\"124.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"308.83902804636404\"\n        y1=\"222.0856900786762\"\n        x2=\"313.525626208638\"\n        y2=\"211.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"301.474373791362\"\n        y1=\"218.96129130382687\"\n        x2=\"306.16097195363596\"\n        y2=\"207.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"143.839028046364\"\n        y1=\"152.0856900786762\"\n        x2=\"148.52562620863804\"\n        y2=\"141.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"136.47437379136196\"\n        y1=\"148.96129130382687\"\n        x2=\"141.160971953636\"\n        y2=\"137.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"58.428959008508684\"\n        y=\"317.8518959929583\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"415.7762898925072\"\n        y=\"260.9353957119728\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"391.5710409914913\"\n        y=\"42.148104007041674\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"34.22371010749281\"\n        y=\"99.06460428802725\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  \n        </div>\n      </div>\n    ",
+            "qcm": "\n      <div>\n        <p>\n          Le quadrilatère ABCD ci-contre\n          est tracé à main levée.\n        </p>\n\n        <p>\n          Recopier la bonne réponse.\n        </p>\n\n        <div class=\"question-display dnb-quadrilateral\">\n          \n    <svg\n      viewBox=\"\n        10\n        10\n        430\n        340\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          80,300\n          390,250\n          370,60\n          60,110\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"80\"\n            y1=\"300\"\n            x2=\"370\"\n            y2=\"60\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"390\"\n            y1=\"250\"\n            x2=\"60\"\n            y2=\"110\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"148.67459371579466\"\n        y1=\"235.37763407325187\"\n        x2=\"156.32540628420534\"\n        y2=\"244.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"293.67459371579463\"\n        y1=\"115.37763407325187\"\n        x2=\"301.32540628420537\"\n        y2=\"124.62236592674813\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"308.83902804636404\"\n        y1=\"222.0856900786762\"\n        x2=\"313.525626208638\"\n        y2=\"211.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"301.474373791362\"\n        y1=\"218.96129130382687\"\n        x2=\"306.16097195363596\"\n        y2=\"207.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"143.839028046364\"\n        y1=\"152.0856900786762\"\n        x2=\"148.52562620863804\"\n        y2=\"141.03870869617313\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"136.47437379136196\"\n        y1=\"148.96129130382687\"\n        x2=\"141.160971953636\"\n        y2=\"137.9143099213238\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"58.428959008508684\"\n        y=\"317.8518959929583\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"415.7762898925072\"\n        y=\"260.9353957119728\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"391.5710409914913\"\n        y=\"42.148104007041674\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"34.22371010749281\"\n        y=\"99.06460428802725\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  \n        </div>\n      </div>\n    "
+          },
+          "answers": [
+            "parallélogramme",
+            "Un parallélogramme."
+          ],
+          "possible_answers": [
+            "Un losange.",
+            "Un rectangle.",
+            "Un carré.",
+            "Un parallélogramme."
+          ],
+          "qcmClass": "qcm-two-columns",
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "Un parallélogramme.<br>Ses diagonales se coupent en leur milieu."
+        }
+      ]
+    }
+  }
+]

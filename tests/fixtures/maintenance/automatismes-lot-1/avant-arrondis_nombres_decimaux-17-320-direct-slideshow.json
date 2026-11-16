@@ -1,0 +1,199 @@
+{
+  "job": {
+    "id": "arrondis_nombres_decimaux",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 2,22 à l’unité près."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 97,292 49 à l’unité près."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 72,19 au dixième près."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 55,433 056 au dixième près."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Arrondir le nombre 43,351 au centième près."
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "2",
+          "1",
+          "3",
+          "2.22"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "97"
+        ],
+        "possible_answers": [
+          "97",
+          "96",
+          "98",
+          "97.29249"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "72.2"
+        ],
+        "possible_answers": [
+          "72.2",
+          "71.2",
+          "73.2",
+          "72.19"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "55.4"
+        ],
+        "possible_answers": [
+          "55.4",
+          "54.4",
+          "56.4",
+          "55.433056"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "43.35"
+        ],
+        "possible_answers": [
+          "43.35",
+          "42.35",
+          "44.35",
+          "43.351"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "2",
+        "correctQCMAnswer": "2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "97",
+        "correctQCMAnswer": "97",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "72.2",
+        "correctQCMAnswer": "72.2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "55.4",
+        "correctQCMAnswer": "55.4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "43.35",
+        "correctQCMAnswer": "43.35",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

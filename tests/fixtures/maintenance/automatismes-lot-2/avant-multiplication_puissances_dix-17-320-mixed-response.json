@@ -1,0 +1,235 @@
+{
+  "job": {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 483.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 903,367×1 000",
+          "left": -81.8125,
+          "right": 401.828125,
+          "width": 483.640625,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 903{,}367\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 494.484375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 19,900 4×1 000",
+          "left": -87.234375,
+          "right": 407.25,
+          "width": 494.484375,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 19{,}900~4\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "19,900 4",
+        "1 990,04",
+        "199 004",
+        "19 900,4"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 217×1 000",
+          "left": -98.234375,
+          "right": 308.234375,
+          "width": 406.46875,
+          "height": 33.5625
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 217\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "19,900 4",
+        "1 990,04",
+        "199 004",
+        "19 900,4"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 141,4×10",
+          "left": -103.984375,
+          "right": 282,
+          "width": 385.984375,
+          "height": 41.03125
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 141{,}4\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 414",
+        "141,4",
+        "14,14",
+        "14 140"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 330.515625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer : 41×10",
+          "left": -60.25,
+          "right": 270.265625,
+          "width": 330.515625,
+          "height": 33.5625
+        }
+      ],
+      "math": [
+        "\\text{Calculer : } 41\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "1 414",
+        "141,4",
+        "14,14",
+        "14 140"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "903367"
+        ],
+        "possible_answers": [
+          "903367",
+          "903.367",
+          "90336.7",
+          "9033670"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "19900.4"
+        ],
+        "possible_answers": [
+          "19900.4",
+          "19.9004",
+          "1990.04",
+          "199004"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "19.9004",
+          "1990.04",
+          "199004",
+          "19900.4"
+        ]
+      },
+      {
+        "answers": [
+          "217000"
+        ],
+        "possible_answers": [
+          "217000",
+          "217",
+          "21700",
+          "2170000"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1414"
+        ],
+        "possible_answers": [
+          "1414",
+          "141.4",
+          "14140",
+          "14.14"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "1414",
+          "141.4",
+          "14.14",
+          "14140"
+        ]
+      },
+      {
+        "answers": [
+          "410"
+        ],
+        "possible_answers": [
+          "410",
+          "41",
+          "4100",
+          "4.1"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

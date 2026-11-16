@@ -1,3 +1,4 @@
+import { presentZeroTwoProQuestion } from "../dnbZeroTwoProPresentation.js";
 import { createCartesianPlaneSVG } from "../figures/cartesianPlaneFigure.js";
 
 // Même figure pour les deux lectures ; échelles et quadrillage du sujet.
@@ -120,5 +121,5 @@ export default {
       answerRule: { type: "integer" },
       display_answer: String.raw`\(8\times8=64.\) Le script affiche « Le résultat est64 ».`
     }
-  ]
+  ].map(presentZeroTwoProQuestion)
 };

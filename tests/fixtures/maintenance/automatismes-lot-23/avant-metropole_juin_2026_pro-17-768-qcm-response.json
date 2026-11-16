@@ -1,0 +1,1647 @@
+{
+  "job": {
+    "id": "metropole_juin_2026_pro",
+    "seed": 17,
+    "width": 768,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 826,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 883.4375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Recopier les quatre nombres de la liste suivante",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -57.71875,
+          "right": 825.71875,
+          "top": 443.734375,
+          "bottom": 501.734375,
+          "width": 883.4375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Recopier les quatre nombres de la liste suivante}",
+        "\\text{qui divisent }15\\text{.}",
+        "1\\quad2\\quad3\\quad4\\quad5\\quad7\\quad10\\quad12\\quad15",
+        "3\\,;\\,5\\,;\\,10\\,;\\,15",
+        "1\\,;\\,3\\,;\\,5\\,;\\,7",
+        "1\\,;\\,3\\,;\\,5\\,;\\,15",
+        "1\\,;\\,2\\,;\\,3\\,;\\,5"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 822,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 870.75,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éRecopier le calcul qui permet de déterminer",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -20.015625,
+          "right": 788.015625,
+          "top": 444.046875,
+          "bottom": 502.046875,
+          "width": 808.03125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "3×34+4+43+3+3+33×2",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -51.375,
+              "right": 822.3125,
+              "top": 569.078125,
+              "bottom": 600.078125,
+              "width": 873.6875,
+              "height": 31
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -51.375,
+              "right": 822.3125,
+              "top": 570.078125,
+              "bottom": 600.078125,
+              "width": 873.6875,
+              "height": 30
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 798.25,
+              "right": 822.3125,
+              "top": 570.078125,
+              "bottom": 599.078125,
+              "width": 24.0625,
+              "height": 29
+            }
+          ],
+          "left": -51.375,
+          "right": 819.375,
+          "top": 569.078125,
+          "bottom": 627.078125,
+          "width": 870.75,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Recopier le calcul qui permet de déterminer}",
+        "\\text{le périmètre d'un carré de côté }3~\\mathrm{cm}\\text{.}",
+        "3\\times3\\qquad4+4+4\\qquad3+3+3+3\\qquad3\\times2",
+        "3+3+3+3",
+        "3\\times2",
+        "3\\times3",
+        "4+4+4"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 803,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 210 260\" width=\"170\" role=\"img\" aria-label=\"Solide à base circulaire et sommet unique\" style=\"max-width:100%;height:auto\">\n  <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n    <path d=\"M20 190 A85 29 0 0 0 190 190\"></path>\n    <path d=\"M20 190 A85 29 0 0 1 190 190\" stroke-dasharray=\"6 5\"></path>\n    <path d=\"M21 190 L105 33 L189 190\"></path>\n    <path d=\"M105 5 V255\" stroke-dasharray=\"6 5\"></path>\n    <path d=\"M101 186 L109 194 M101 194 L109 186\"></path>\n  </g>\n</svg>",
+          "left": 299,
+          "right": 469,
+          "top": 458.65625,
+          "bottom": 669.125,
+          "width": 170,
+          "height": 210.46875
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 837.65625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner le nom du solide représenté ci-contre.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -34.828125,
+          "right": 802.828125,
+          "top": 390.140625,
+          "bottom": 448.140625,
+          "width": 837.65625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Donner le nom du solide représenté ci-contre.}",
+        "\\text{Cône de révolution}",
+        "\\text{Boule}",
+        "\\text{Pyramide}",
+        "\\text{Cylindre}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 825,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 882.65625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉÉcrire la fraction 25 sous forme de pourcentage.",
+          "scroll": 883,
+          "client": 883,
+          "children": [],
+          "left": -57.328125,
+          "right": 825.328125,
+          "top": 492.015625,
+          "bottom": 583.046875,
+          "width": 882.65625,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Écrire la fraction }\\dfrac{2}{5}\\text{ sous forme de pourcentage.}",
+        "40\\,\\%",
+        "25\\,\\%",
+        "250\\,\\%",
+        "2\\,\\%"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 764.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Exprimer 72 minutes en heure et minute.",
+          "scroll": 765,
+          "client": 765,
+          "children": [],
+          "left": 1.6875,
+          "right": 766.328125,
+          "top": 517.765625,
+          "bottom": 558.328125,
+          "width": 764.640625,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "\\text{Exprimer }72\\text{ minutes en heure et minute.}",
+        "1~\\mathrm{h}~12~\\mathrm{min}",
+        "1~\\mathrm{h}~2~\\mathrm{min}",
+        "1~\\mathrm{h}~20~\\mathrm{min}",
+        "2~\\mathrm{h}~12~\\mathrm{min}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 947,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 280 248\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"14\" y1=\"124\" x2=\"266\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"32\" y1=\"120\" x2=\"32\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"32\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"68\" y1=\"120\" x2=\"68\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"68\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"104\" y1=\"120\" x2=\"104\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"104\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"140\" y1=\"120\" x2=\"140\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"176\" y1=\"120\" x2=\"176\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"176\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"212\" y1=\"120\" x2=\"212\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"212\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"248\" y1=\"120\" x2=\"248\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"248\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        \n      <line x1=\"140\" y1=\"16\" x2=\"140\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"136\" y1=\"232\" x2=\"144\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"236\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"136\" y1=\"196\" x2=\"144\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"200\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"136\" y1=\"160\" x2=\"144\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"164\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"136\" y1=\"124\" x2=\"144\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"136\" y1=\"88\" x2=\"144\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"136\" y1=\"52\" x2=\"144\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"56\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"136\" y1=\"16\" x2=\"144\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"20\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      <polyline points=\"86,16 194,232\" fill=\"none\" stroke=\"#fb7185\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></polyline>\n    \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 84,
+          "right": 378,
+          "top": 588.171875,
+          "bottom": 848.5625,
+          "width": 294,
+          "height": 260.390625
+        },
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 280 248\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"14\" y1=\"124\" x2=\"266\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"32\" y1=\"120\" x2=\"32\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"32\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"68\" y1=\"120\" x2=\"68\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"68\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"104\" y1=\"120\" x2=\"104\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"104\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"140\" y1=\"120\" x2=\"140\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"176\" y1=\"120\" x2=\"176\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"176\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"212\" y1=\"120\" x2=\"212\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"212\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"248\" y1=\"120\" x2=\"248\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"248\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        \n      <line x1=\"140\" y1=\"16\" x2=\"140\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"136\" y1=\"232\" x2=\"144\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"236\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"136\" y1=\"196\" x2=\"144\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"200\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"136\" y1=\"160\" x2=\"144\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"164\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"136\" y1=\"124\" x2=\"144\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"136\" y1=\"88\" x2=\"144\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"136\" y1=\"52\" x2=\"144\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"56\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"136\" y1=\"16\" x2=\"144\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"20\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      <polyline points=\"104,16 212,232\" fill=\"none\" stroke=\"#fb7185\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></polyline>\n    \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 390,
+          "right": 684,
+          "top": 588.171875,
+          "bottom": 848.5625,
+          "width": 294,
+          "height": 260.390625
+        },
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 280 248\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"14\" y1=\"124\" x2=\"266\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"32\" y1=\"120\" x2=\"32\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"32\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"68\" y1=\"120\" x2=\"68\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"68\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"104\" y1=\"120\" x2=\"104\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"104\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"140\" y1=\"120\" x2=\"140\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"176\" y1=\"120\" x2=\"176\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"176\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"212\" y1=\"120\" x2=\"212\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"212\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"248\" y1=\"120\" x2=\"248\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"248\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        \n      <line x1=\"140\" y1=\"16\" x2=\"140\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"136\" y1=\"232\" x2=\"144\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"236\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"136\" y1=\"196\" x2=\"144\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"200\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"136\" y1=\"160\" x2=\"144\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"164\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"136\" y1=\"124\" x2=\"144\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"136\" y1=\"88\" x2=\"144\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"136\" y1=\"52\" x2=\"144\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"56\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"136\" y1=\"16\" x2=\"144\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"20\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      <polyline points=\"32,232 266,76\" fill=\"none\" stroke=\"#fb7185\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></polyline>\n    \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 84,
+          "right": 378,
+          "top": 921.5625,
+          "bottom": 1181.953125,
+          "width": 294,
+          "height": 260.390625
+        },
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 280 248\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"14\" y1=\"124\" x2=\"266\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"32\" y1=\"120\" x2=\"32\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"32\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"68\" y1=\"120\" x2=\"68\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"68\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"104\" y1=\"120\" x2=\"104\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"104\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"140\" y1=\"120\" x2=\"140\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"140\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"176\" y1=\"120\" x2=\"176\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"176\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"212\" y1=\"120\" x2=\"212\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"212\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"248\" y1=\"120\" x2=\"248\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"248\" y=\"142\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        \n      <line x1=\"140\" y1=\"16\" x2=\"140\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"136\" y1=\"232\" x2=\"144\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"236\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"136\" y1=\"196\" x2=\"144\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"200\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"136\" y1=\"160\" x2=\"144\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"164\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"136\" y1=\"124\" x2=\"144\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"136\" y1=\"88\" x2=\"144\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"136\" y1=\"52\" x2=\"144\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"56\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"136\" y1=\"16\" x2=\"144\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"131\" y=\"20\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      <polyline points=\"14,52 266,52\" fill=\"none\" stroke=\"#fb7185\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></polyline>\n    \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 390,
+          "right": 684,
+          "top": 921.5625,
+          "bottom": 1181.953125,
+          "width": 294,
+          "height": 260.390625
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "-3",
+          "left": 111.69001770019531,
+          "right": 123.72477722167969,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 149.48866271972656,
+          "right": 161.52342224121094,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 187.2873077392578,
+          "right": 199.1154327392578,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 11.828125,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "0",
+          "left": 227.6015625,
+          "right": 234.6015625,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 265.40020751953125,
+          "right": 272.19708251953125,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 303.1988525390625,
+          "right": 310.1988525390625,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 340.99749755859375,
+          "right": 347.99749755859375,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 209.72222900390625,
+          "right": 221.75698852539062,
+          "top": 821.9629516601562,
+          "bottom": 838.9629516601562,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 209.72222900390625,
+          "right": 221.75698852539062,
+          "top": 784.164306640625,
+          "bottom": 801.164306640625,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 209.72222900390625,
+          "right": 221.5503387451172,
+          "top": 746.36572265625,
+          "bottom": 763.3656616210938,
+          "width": 11.828109741210938,
+          "height": 16.99993896484375,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 214.7534637451172,
+          "right": 221.5503387451172,
+          "top": 670.7684326171875,
+          "bottom": 687.7684326171875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 214.7534637451172,
+          "right": 221.75347900390625,
+          "top": 632.9697265625,
+          "bottom": 649.9697265625,
+          "width": 7.0000152587890625,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 214.7534637451172,
+          "right": 221.75347900390625,
+          "top": 595.171142578125,
+          "bottom": 612.171142578125,
+          "width": 7.0000152587890625,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 417.6900329589844,
+          "right": 429.72479248046875,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 455.4886474609375,
+          "right": 467.5234375,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 12.0347900390625,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 493.28729248046875,
+          "right": 505.11541748046875,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 11.828125,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "0",
+          "left": 533.6015625,
+          "right": 540.6015625,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 571.4002075195312,
+          "right": 578.1970825195312,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 609.1988525390625,
+          "right": 616.1988525390625,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 646.9974975585938,
+          "right": 653.9974975585938,
+          "top": 723.2664794921875,
+          "bottom": 740.2664794921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 515.7222290039062,
+          "right": 527.7569580078125,
+          "top": 821.9629516601562,
+          "bottom": 838.9629516601562,
+          "width": 12.03472900390625,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 515.7222290039062,
+          "right": 527.7569580078125,
+          "top": 784.164306640625,
+          "bottom": 801.164306640625,
+          "width": 12.03472900390625,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 515.7222290039062,
+          "right": 527.5503540039062,
+          "top": 746.36572265625,
+          "bottom": 763.3656616210938,
+          "width": 11.828125,
+          "height": 16.99993896484375,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 520.7534790039062,
+          "right": 527.5503540039062,
+          "top": 670.7684326171875,
+          "bottom": 687.7684326171875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 520.7534790039062,
+          "right": 527.7534790039062,
+          "top": 632.9697265625,
+          "bottom": 649.9697265625,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 520.7534790039062,
+          "right": 527.7534790039062,
+          "top": 595.171142578125,
+          "bottom": 612.171142578125,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 588.171875,
+            "bottom": 848.5625,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 111.69001770019531,
+          "right": 123.72477722167969,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 149.48866271972656,
+          "right": 161.52342224121094,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 187.2873077392578,
+          "right": 199.1154327392578,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 11.828125,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "0",
+          "left": 227.6015625,
+          "right": 234.6015625,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 265.40020751953125,
+          "right": 272.19708251953125,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 303.1988525390625,
+          "right": 310.1988525390625,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 340.99749755859375,
+          "right": 347.99749755859375,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 209.72222900390625,
+          "right": 221.75698852539062,
+          "top": 1155.3536376953125,
+          "bottom": 1172.3536376953125,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 209.72222900390625,
+          "right": 221.75698852539062,
+          "top": 1117.554931640625,
+          "bottom": 1134.554931640625,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 209.72222900390625,
+          "right": 221.5503387451172,
+          "top": 1079.75634765625,
+          "bottom": 1096.75634765625,
+          "width": 11.828109741210938,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 214.7534637451172,
+          "right": 221.5503387451172,
+          "top": 1004.1590576171875,
+          "bottom": 1021.1590576171875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 214.7534637451172,
+          "right": 221.75347900390625,
+          "top": 966.3603515625,
+          "bottom": 983.3603515625,
+          "width": 7.0000152587890625,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 214.7534637451172,
+          "right": 221.75347900390625,
+          "top": 928.561767578125,
+          "bottom": 945.561767578125,
+          "width": 7.0000152587890625,
+          "height": 17,
+          "svg": {
+            "left": 84,
+            "right": 378,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 417.6900329589844,
+          "right": 429.72479248046875,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 12.034759521484375,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 455.4886474609375,
+          "right": 467.5234375,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 12.0347900390625,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 493.28729248046875,
+          "right": 505.11541748046875,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 11.828125,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "0",
+          "left": 533.6015625,
+          "right": 540.6015625,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 571.4002075195312,
+          "right": 578.1970825195312,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 609.1988525390625,
+          "right": 616.1988525390625,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 646.9974975585938,
+          "right": 653.9974975585938,
+          "top": 1056.6571044921875,
+          "bottom": 1073.6571044921875,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-3",
+          "left": 515.7222290039062,
+          "right": 527.7569580078125,
+          "top": 1155.3536376953125,
+          "bottom": 1172.3536376953125,
+          "width": 12.03472900390625,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-2",
+          "left": 515.7222290039062,
+          "right": 527.7569580078125,
+          "top": 1117.554931640625,
+          "bottom": 1134.554931640625,
+          "width": 12.03472900390625,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "-1",
+          "left": 515.7222290039062,
+          "right": 527.5503540039062,
+          "top": 1079.75634765625,
+          "bottom": 1096.75634765625,
+          "width": 11.828125,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "1",
+          "left": 520.7534790039062,
+          "right": 527.5503540039062,
+          "top": 1004.1590576171875,
+          "bottom": 1021.1590576171875,
+          "width": 6.796875,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "2",
+          "left": 520.7534790039062,
+          "right": 527.7534790039062,
+          "top": 966.3603515625,
+          "bottom": 983.3603515625,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        },
+        {
+          "text": "3",
+          "left": 520.7534790039062,
+          "right": 527.7534790039062,
+          "top": 928.561767578125,
+          "bottom": 945.561767578125,
+          "width": 7,
+          "height": 17,
+          "svg": {
+            "left": 390,
+            "right": 684,
+            "top": 921.5625,
+            "bottom": 1181.953125,
+            "width": 294,
+            "height": 260.390625
+          }
+        }
+      ],
+      "mathWidth": 1125.75,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éParmi les quatre représentations graphiques ci-dessous,",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -130.671875,
+          "right": 898.671875,
+          "top": 390.140625,
+          "bottom": 448.140625,
+          "width": 1029.34375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééchoisir celle qui représente une situation de proportionnalité.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -178.875,
+          "right": 946.875,
+          "top": 452.65625,
+          "bottom": 510.65625,
+          "width": 1125.75,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Parmi les quatre représentations graphiques ci-dessous,}",
+        "\\text{choisir celle qui représente une situation de proportionnalité.}",
+        "\\text{Situation }1",
+        "\\text{Situation }2",
+        "\\text{Situation }3",
+        "\\text{Situation }4",
+        "2",
+        "3",
+        "4",
+        "1"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 815,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 861.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééDéterminer la médiane de la série de nombres :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -46.9375,
+          "right": 814.953125,
+          "top": 475.3125,
+          "bottom": 533.3125,
+          "width": 861.890625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Déterminer la médiane de la série de nombres :}",
+        "19\\,;\\,15\\,;\\,8\\,;\\,22\\,;\\,12\\text{.}",
+        "15",
+        "12",
+        "19",
+        "8"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 840,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 912.703125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDéterminer la solution de l'équation 2x+3=15.",
+          "scroll": 913,
+          "client": 913,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 833.75,
+              "right": 842.671875,
+              "top": 542.453125,
+              "bottom": 547.453125,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -72.34375,
+          "right": 840.359375,
+          "top": 516.453125,
+          "bottom": 559.671875,
+          "width": 912.703125,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Déterminer la solution de l'équation }2x+3=15\\text{.}",
+        "x=9",
+        "x=6",
+        "x=12",
+        "x=24"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 887,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 390\" width=\"100%\" role=\"img\" aria-label=\"Quadrillage de dix colonnes et douze lignes, vélo en A7\">\n      <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\" opacity=\"0.65\"><path d=\"M0 0 H330\"></path><path d=\"M0 30 H330\"></path><path d=\"M0 60 H330\"></path><path d=\"M0 90 H330\"></path><path d=\"M0 120 H330\"></path><path d=\"M0 150 H330\"></path><path d=\"M0 180 H330\"></path><path d=\"M0 210 H330\"></path><path d=\"M0 240 H330\"></path><path d=\"M0 270 H330\"></path><path d=\"M0 300 H330\"></path><path d=\"M0 330 H330\"></path><path d=\"M0 360 H330\"></path><path d=\"M0 390 H330\"></path><path d=\"M0 0 V390\"></path><path d=\"M30 0 V390\"></path><path d=\"M60 0 V390\"></path><path d=\"M90 0 V390\"></path><path d=\"M120 0 V390\"></path><path d=\"M150 0 V390\"></path><path d=\"M180 0 V390\"></path><path d=\"M210 0 V390\"></path><path d=\"M240 0 V390\"></path><path d=\"M270 0 V390\"></path><path d=\"M300 0 V390\"></path><path d=\"M330 0 V390\"></path></g>\n      <polyline points=\"45,225\" fill=\"none\" stroke=\"#fbbf24\" stroke-width=\"4\" stroke-linejoin=\"round\"></polyline>\n      <rect x=\"31\" y=\"211\" width=\"28\" height=\"28\" fill=\"#38bdf8\" fill-opacity=\"0.22\"></rect>\n      <g transform=\"translate(45 225) rotate(0)\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <circle cx=\"-8\" cy=\"2\" r=\"4\"></circle><circle cx=\"8\" cy=\"2\" r=\"4\"></circle>\n        <path d=\"M-8 2 L-3 -6 L2 2 Z M-3 -6 H5 L8 2 M2 2 L5 -6 L4 -9 H8 M-5 -7 H-1\"></path>\n        <path d=\"M-9 12 H10 L6 9 M10 12 L6 15\" stroke-width=\"2\"></path>\n      </g>\n    </svg>",
+          "left": 219,
+          "right": 549,
+          "top": 972.453125,
+          "bottom": 1362.453125,
+          "width": 330,
+          "height": 390
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 1005.703125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééLe vélo part de la case de coordonnées A7.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 765.078125,
+              "right": 774,
+              "top": 416.140625,
+              "bottom": 421.140625,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -5.109375,
+          "right": 773.125,
+          "top": 390.140625,
+          "bottom": 448.140625,
+          "width": 778.234375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éOn applique le programme de déplacement ci-dessous.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -118.84375,
+          "right": 886.859375,
+          "top": 577.6875,
+          "bottom": 635.6875,
+          "width": 1005.703125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééIndiquer les coordonnées de la case d'arrivée.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -31.015625,
+          "right": 799.015625,
+          "top": 891.9375,
+          "bottom": 949.9375,
+          "width": 830.03125,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Le vélo part de la case de coordonnées }\\mathrm{A7}\\text{.}",
+        "\\text{La flèche située sous le vélo indique}",
+        "\\text{le sens de déplacement initial.}",
+        "\\text{On applique le programme de déplacement ci-dessous.}",
+        "\\bullet\\ \\text{Avancer de }5\\text{ cases.}",
+        "\\bullet\\ \\text{Répéter }2\\text{ fois :}",
+        "\\quad\\left\\vert\\begin{array}{l}\\text{Tourner de }90^\\circ\\text{ vers la gauche.}\\\\\\text{Avancer de }2\\text{ cases.}\\end{array}\\right.",
+        "\\text{Indiquer les coordonnées de la case d'arrivée.}",
+        "\\mathrm{A}",
+        "\\mathrm{B}",
+        "\\mathrm{C}",
+        "\\mathrm{D}",
+        "\\mathrm{E}",
+        "\\mathrm{F}",
+        "\\mathrm{G}",
+        "\\mathrm{H}",
+        "\\mathrm{I}",
+        "\\mathrm{J}",
+        "\\mathrm{1}",
+        "\\mathrm{2}",
+        "\\mathrm{3}",
+        "\\mathrm{4}",
+        "\\mathrm{5}",
+        "\\mathrm{6}",
+        "\\mathrm{7}",
+        "\\mathrm{8}",
+        "\\mathrm{9}",
+        "\\mathrm{10}",
+        "\\mathrm{11}",
+        "\\mathrm{12}",
+        "\\mathrm{D5}",
+        "\\mathrm{D9}",
+        "\\mathrm{F5}",
+        "\\mathrm{H5}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 9,
+    "questions": [
+      {
+        "id": "q1",
+        "progressiveStepCount": 0,
+        "answers": [
+          "1;3;5;15"
+        ],
+        "possible_answers": [
+          "\\(1\\,;\\,3\\,;\\,5\\,;\\,15\\)",
+          "\\(1\\,;\\,2\\,;\\,3\\,;\\,5\\)",
+          "\\(3\\,;\\,5\\,;\\,10\\,;\\,15\\)",
+          "\\(1\\,;\\,3\\,;\\,5\\,;\\,7\\)"
+        ],
+        "answerRule": {
+          "type": "integerSet",
+          "expectedValues": [
+            1,
+            3,
+            5,
+            15
+          ]
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(3\\,;\\,5\\,;\\,10\\,;\\,15\\)",
+          "\\(1\\,;\\,3\\,;\\,5\\,;\\,7\\)",
+          "\\(1\\,;\\,3\\,;\\,5\\,;\\,15\\)",
+          "\\(1\\,;\\,2\\,;\\,3\\,;\\,5\\)"
+        ]
+      },
+      {
+        "id": "q2",
+        "progressiveStepCount": 0,
+        "answers": [
+          "3+3+3+3"
+        ],
+        "possible_answers": [
+          "\\(3\\times3\\)",
+          "\\(4+4+4\\)",
+          "\\(3+3+3+3\\)",
+          "\\(3\\times2\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "3+3+3+3"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(3+3+3+3\\)",
+          "\\(3\\times2\\)",
+          "\\(3\\times3\\)",
+          "\\(4+4+4\\)"
+        ]
+      },
+      {
+        "id": "q3",
+        "progressiveStepCount": 0,
+        "answers": [
+          "cône de révolution",
+          "cône",
+          "cone de revolution",
+          "cone"
+        ],
+        "possible_answers": [
+          "\\(\\text{Cylindre}\\)",
+          "\\(\\text{Cône de révolution}\\)",
+          "\\(\\text{Pyramide}\\)",
+          "\\(\\text{Boule}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\text{Cône de révolution}\\)",
+          "\\(\\text{Boule}\\)",
+          "\\(\\text{Pyramide}\\)",
+          "\\(\\text{Cylindre}\\)"
+        ]
+      },
+      {
+        "id": "q4",
+        "progressiveStepCount": 0,
+        "answers": [
+          "40%"
+        ],
+        "possible_answers": [
+          "\\(2\\,\\%\\)",
+          "\\(25\\,\\%\\)",
+          "\\(40\\,\\%\\)",
+          "\\(250\\,\\%\\)"
+        ],
+        "answerRule": {
+          "type": "percentage",
+          "expectedValue": 0.4
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(40\\,\\%\\)",
+          "\\(25\\,\\%\\)",
+          "\\(250\\,\\%\\)",
+          "\\(2\\,\\%\\)"
+        ]
+      },
+      {
+        "id": "q5",
+        "progressiveStepCount": 0,
+        "answers": [
+          "1 h 12 min"
+        ],
+        "possible_answers": [
+          "\\(1~\\mathrm{h}~12~\\mathrm{min}\\)",
+          "\\(1~\\mathrm{h}~2~\\mathrm{min}\\)",
+          "\\(1~\\mathrm{h}~20~\\mathrm{min}\\)",
+          "\\(2~\\mathrm{h}~12~\\mathrm{min}\\)"
+        ],
+        "answerRule": {
+          "type": "duration",
+          "requiredFormat": "hoursMinutes"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(1~\\mathrm{h}~12~\\mathrm{min}\\)",
+          "\\(1~\\mathrm{h}~2~\\mathrm{min}\\)",
+          "\\(1~\\mathrm{h}~20~\\mathrm{min}\\)",
+          "\\(2~\\mathrm{h}~12~\\mathrm{min}\\)"
+        ]
+      },
+      {
+        "id": "q6",
+        "progressiveStepCount": 0,
+        "answers": [
+          "1",
+          "Situation 1"
+        ],
+        "possible_answers": [
+          "\\(1\\)",
+          "\\(2\\)",
+          "\\(3\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(2\\)",
+          "\\(3\\)",
+          "\\(4\\)",
+          "\\(1\\)"
+        ]
+      },
+      {
+        "id": "q7",
+        "progressiveStepCount": 0,
+        "answers": [
+          "15"
+        ],
+        "possible_answers": [
+          "\\(8\\)",
+          "\\(12\\)",
+          "\\(15\\)",
+          "\\(19\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(15\\)",
+          "\\(12\\)",
+          "\\(19\\)",
+          "\\(8\\)"
+        ]
+      },
+      {
+        "id": "q8",
+        "progressiveStepCount": 0,
+        "answers": [
+          "6",
+          "x=6",
+          "6=x"
+        ],
+        "possible_answers": [
+          "\\(x=9\\)",
+          "\\(x=12\\)",
+          "\\(x=6\\)",
+          "\\(x=24\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(x=9\\)",
+          "\\(x=6\\)",
+          "\\(x=12\\)",
+          "\\(x=24\\)"
+        ]
+      },
+      {
+        "id": "q9",
+        "progressiveStepCount": 7,
+        "answers": [
+          "D5",
+          "(D5)",
+          "D;5",
+          "D,5"
+        ],
+        "possible_answers": [
+          "\\(\\mathrm{F5}\\)",
+          "\\(\\mathrm{D9}\\)",
+          "\\(\\mathrm{H5}\\)",
+          "\\(\\mathrm{D5}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\mathrm{D5}\\)",
+          "\\(\\mathrm{D9}\\)",
+          "\\(\\mathrm{F5}\\)",
+          "\\(\\mathrm{H5}\\)"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

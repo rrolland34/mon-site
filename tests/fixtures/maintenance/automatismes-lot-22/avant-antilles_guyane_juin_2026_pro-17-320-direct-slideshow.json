@@ -1,0 +1,1271 @@
+{
+  "job": {
+    "id": "antilles_guyane_juin_2026_pro",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 550,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 779.5625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉàÉcrire l'expression correspondant à 3×45.",
+          "scroll": 780,
+          "client": 780,
+          "children": [
+            {
+              "tag": "msup",
+              "visibility": "visible",
+              "position": "static",
+              "left": 507.640625,
+              "right": 551.0625,
+              "top": 728.625,
+              "bottom": 769.875,
+              "width": 43.421875,
+              "height": 41.25
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 551.0625,
+              "right": 559.984375,
+              "top": 764.875,
+              "bottom": 769.875,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -229.78125,
+          "right": 549.78125,
+          "top": 727.625,
+          "bottom": 774.484375,
+          "width": 779.5625,
+          "height": 46.859375
+        }
+      ],
+      "math": [
+        "\\text{Écrire l'expression correspondant à }3\\times4^5\\text{.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 556,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 792.609375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉÉcrire la notation scientifique de 1200000.",
+          "scroll": 793,
+          "client": 793,
+          "children": [
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 486.421875,
+              "right": 558.578125,
+              "top": 739.453125,
+              "bottom": 768.453125,
+              "width": 72.15625,
+              "height": 29
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 558.578125,
+              "right": 567.5,
+              "top": 763.453125,
+              "bottom": 768.453125,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -236.296875,
+          "right": 556.3125,
+          "top": 729.453125,
+          "bottom": 772.671875,
+          "width": 792.609375,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Écrire la notation scientifique de }1\\,200\\,000\\text{.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 609,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 898.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉÉcrire le calcul permettant d'obtenir la moyenne",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -289.140625,
+          "right": 609.15625,
+          "top": 676.140625,
+          "bottom": 734.140625,
+          "width": 898.296875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "des notes suivantes :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -29.796875,
+          "right": 349.8125,
+          "top": 738.65625,
+          "bottom": 796.65625,
+          "width": 379.609375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "111016920",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -24.5,
+              "right": 365.6875,
+              "top": 801.171875,
+              "bottom": 831.171875,
+              "width": 390.1875,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -24.5,
+              "right": 365.6875,
+              "top": 802.171875,
+              "bottom": 831.171875,
+              "width": 390.1875,
+              "height": 29
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 317.578125,
+              "right": 365.6875,
+              "top": 802.171875,
+              "bottom": 831.171875,
+              "width": 48.109375,
+              "height": 29
+            }
+          ],
+          "left": -24.5,
+          "right": 344.515625,
+          "top": 801.171875,
+          "bottom": 859.171875,
+          "width": 369.015625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Écrire le calcul permettant d'obtenir la moyenne}",
+        "\\text{des notes suivantes :}",
+        "11\\quad10\\quad16\\quad9\\quad20"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 736,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1151.6875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èOn donne la taille de 11 joueurs de football en mètre.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -331.40625,
+          "right": 651.40625,
+          "top": 676.140625,
+          "bottom": 734.140625,
+          "width": 982.8125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "1,721,751,781,841,851,891,891,901,901,921,99",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -415.84375,
+          "right": 735.84375,
+          "top": 738.65625,
+          "bottom": 796.65625,
+          "width": 1151.6875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDéterminer la taille médiane de ces joueurs.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -243.671875,
+          "right": 563.671875,
+          "top": 811.3125,
+          "bottom": 869.3125,
+          "width": 807.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{On donne la taille de }11\\text{ joueurs de football en mètre.}",
+        "\\small\\begin{array}{|c|c|c|c|c|c|c|c|c|c|c|}\\hline1{,}72&1{,}75&1{,}78&1{,}84&1{,}85&1{,}89&1{,}89&1{,}90&1{,}90&1{,}92&1{,}99\\\\\\hline\\end{array}",
+        "\\text{Déterminer la taille médiane de ces joueurs.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 368,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 415.734375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Donner le quart de 20.",
+          "scroll": 416,
+          "client": 416,
+          "children": [],
+          "left": -47.859375,
+          "right": 367.875,
+          "top": 730.78125,
+          "bottom": 771.34375,
+          "width": 415.734375,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "\\text{Donner le quart de }20\\text{.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 545,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 770.15625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Une voiture parcourt 240 km en 3 heures.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 401.34375,
+              "right": 546.125,
+              "top": 688.390625,
+              "bottom": 718.390625,
+              "width": 144.78125,
+              "height": 30
+            }
+          ],
+          "left": -225.078125,
+          "right": 545.078125,
+          "top": 687.390625,
+          "bottom": 745.390625,
+          "width": 770.15625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer sa vitesse moyenne en km/h.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 391.671875,
+              "right": 514.953125,
+              "top": 750.90625,
+              "bottom": 789.90625,
+              "width": 123.28125,
+              "height": 39
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 490.984375,
+              "right": 514.953125,
+              "top": 750.90625,
+              "bottom": 780.90625,
+              "width": 23.96875,
+              "height": 30
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 514.953125,
+              "right": 523.875,
+              "top": 775.90625,
+              "bottom": 780.90625,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -191.328125,
+          "right": 511.3125,
+          "top": 749.90625,
+          "bottom": 807.90625,
+          "width": 702.640625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Une voiture parcourt }240~\\mathrm{km}\\text{ en }3\\text{ heures.}",
+        "\\text{Calculer sa vitesse moyenne en }\\mathrm{km/h}\\text{.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 594,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 192\" width=\"260\" role=\"img\" aria-label=\"Surface rectangulaire à carreler\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"255\" height=\"187.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></rect>\n  \n    <path d=\"\n        M 17 2\n        L 17 17\n        L 2 17\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 257 17\n        L 242 17\n        L 242 2\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n    <path d=\"\n        M 2 174.5\n        L 17 174.5\n        L 17 189.5\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n</svg>",
+          "left": -222.03125,
+          "right": 37.96875,
+          "top": 1055.71875,
+          "bottom": 1247.71875,
+          "width": 260,
+          "height": 192
+        },
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" width=\"64\" role=\"img\" aria-label=\"Carreau carré\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></rect>\n</svg>",
+          "left": 262.984375,
+          "right": 326.984375,
+          "top": 1055.71875,
+          "bottom": 1119.71875,
+          "width": 64,
+          "height": 64
+        }
+      ],
+      "figureLabels": [],
+      "mathWidth": 867.625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "On dispose de carreaux dont les dimensions",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -244.140625,
+          "right": 564.125,
+          "top": 676.140625,
+          "bottom": 734.140625,
+          "width": 808.265625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ésont données ci-dessous.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -63.78125,
+          "right": 383.765625,
+          "top": 738.65625,
+          "bottom": 796.65625,
+          "width": 447.546875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ÉîÉcrire le calcul qui permet de connaître",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -201.609375,
+          "right": 521.59375,
+          "top": 801.171875,
+          "bottom": 859.171875,
+          "width": 723.203125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éle nombre de carreaux nécessaires pour couvrir",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -273.8125,
+          "right": 593.8125,
+          "top": 863.6875,
+          "bottom": 921.6875,
+          "width": 867.625,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "àla surface à carreler ci-dessous :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -130.40625,
+          "right": 450.40625,
+          "top": 926.203125,
+          "bottom": 984.203125,
+          "width": 580.8125,
+          "height": 58
+        },
+        {
+          "tag": "TABLE",
+          "text": "\n  àSurface à carrelerCarreau de carrelage\n  \n  \n  \n    \n  \n    \n  \n    \n  \n80 cm90 cm\n  \n    \n     ",
+          "scroll": 776,
+          "client": 776,
+          "children": [],
+          "left": -228.03125,
+          "right": 548.03125,
+          "top": 994.71875,
+          "bottom": 1318.71875,
+          "width": 776.0625,
+          "height": 324
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "àSurface à carreler",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -196.734375,
+          "right": 126.359375,
+          "top": 991.71875,
+          "bottom": 1049.71875,
+          "width": 323.09375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Carreau de carrelage",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 158.671875,
+          "right": 545.03125,
+          "top": 991.71875,
+          "bottom": 1049.71875,
+          "width": 386.359375,
+          "height": 58
+        },
+        {
+          "tag": "TABLE",
+          "text": "\n  \n  \n    \n  \n    \n  \n    \n  \n80 cm90 cm",
+          "scroll": 380,
+          "client": 380,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 41.96875,
+              "right": 154.953125,
+              "top": 1125.21875,
+              "bottom": 1155.21875,
+              "width": 112.984375,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 41.96875,
+              "right": 154.953125,
+              "top": 1126.21875,
+              "bottom": 1155.21875,
+              "width": 112.984375,
+              "height": 29
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 99.65625,
+              "right": 154.953125,
+              "top": 1135.21875,
+              "bottom": 1155.21875,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 99.65625,
+              "right": 154.953125,
+              "top": 1135.21875,
+              "bottom": 1155.21875,
+              "width": 55.296875,
+              "height": 20
+            }
+          ],
+          "left": -225.03125,
+          "right": 154.671875,
+          "top": 1052.71875,
+          "bottom": 1315.71875,
+          "width": 379.703125,
+          "height": 263
+        },
+        {
+          "tag": "svg",
+          "text": "\n  \n  \n    \n  \n    \n  \n    \n  \n",
+          "scroll": 260,
+          "client": 260,
+          "children": [],
+          "left": -222.03125,
+          "right": 37.96875,
+          "top": 1055.71875,
+          "bottom": 1247.71875,
+          "width": 260,
+          "height": 192
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "90 cm",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -146.890625,
+              "right": -33.90625,
+              "top": 1255.71875,
+              "bottom": 1285.71875,
+              "width": 112.984375,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -146.890625,
+              "right": -33.90625,
+              "top": 1256.71875,
+              "bottom": 1285.71875,
+              "width": 112.984375,
+              "height": 29
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": -89.203125,
+              "right": -33.90625,
+              "top": 1265.71875,
+              "bottom": 1285.71875,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": -89.203125,
+              "right": -33.90625,
+              "top": 1265.71875,
+              "bottom": 1285.71875,
+              "width": 55.296875,
+              "height": 20
+            }
+          ],
+          "left": -146.890625,
+          "right": -37.1875,
+          "top": 1255.71875,
+          "bottom": 1313.71875,
+          "width": 109.703125,
+          "height": 58
+        },
+        {
+          "tag": "TABLE",
+          "text": "\n      \n        \n          \n  \n\n          10 cm\n        \n        \n          10 cm\n          \n       ",
+          "scroll": 230,
+          "client": 229,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 353.84375,
+              "right": 466.828125,
+              "top": 1061.21875,
+              "bottom": 1091.21875,
+              "width": 112.984375,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 353.84375,
+              "right": 466.828125,
+              "top": 1062.21875,
+              "bottom": 1091.21875,
+              "width": 112.984375,
+              "height": 29
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 411.53125,
+              "right": 466.828125,
+              "top": 1071.21875,
+              "bottom": 1091.21875,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 411.53125,
+              "right": 466.828125,
+              "top": 1071.21875,
+              "bottom": 1091.21875,
+              "width": 55.296875,
+              "height": 20
+            }
+          ],
+          "left": 237.140625,
+          "right": 466.546875,
+          "top": 1052.71875,
+          "bottom": 1187.71875,
+          "width": 229.40625,
+          "height": 135
+        },
+        {
+          "tag": "svg",
+          "text": "\n  \n",
+          "scroll": 64,
+          "client": 64,
+          "children": [],
+          "left": 262.984375,
+          "right": 326.984375,
+          "top": 1055.71875,
+          "bottom": 1119.71875,
+          "width": 64,
+          "height": 64
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "10 cm",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 353.84375,
+              "right": 466.828125,
+              "top": 1061.21875,
+              "bottom": 1091.21875,
+              "width": 112.984375,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 353.84375,
+              "right": 466.828125,
+              "top": 1062.21875,
+              "bottom": 1091.21875,
+              "width": 112.984375,
+              "height": 29
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 411.53125,
+              "right": 466.828125,
+              "top": 1071.21875,
+              "bottom": 1091.21875,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 411.53125,
+              "right": 466.828125,
+              "top": 1071.21875,
+              "bottom": 1091.21875,
+              "width": 55.296875,
+              "height": 20
+            }
+          ],
+          "left": 353.84375,
+          "right": 463.546875,
+          "top": 1061.21875,
+          "bottom": 1119.21875,
+          "width": 109.703125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "10 cm",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 240.140625,
+              "right": 353.125,
+              "top": 1127.71875,
+              "bottom": 1157.71875,
+              "width": 112.984375,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 240.140625,
+              "right": 353.125,
+              "top": 1128.71875,
+              "bottom": 1157.71875,
+              "width": 112.984375,
+              "height": 29
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 297.828125,
+              "right": 353.125,
+              "top": 1137.71875,
+              "bottom": 1157.71875,
+              "width": 55.296875,
+              "height": 20
+            },
+            {
+              "tag": "mi",
+              "visibility": "visible",
+              "position": "static",
+              "left": 297.828125,
+              "right": 353.125,
+              "top": 1137.71875,
+              "bottom": 1157.71875,
+              "width": 55.296875,
+              "height": 20
+            }
+          ],
+          "left": 240.140625,
+          "right": 349.84375,
+          "top": 1127.71875,
+          "bottom": 1185.71875,
+          "width": 109.703125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàéLes schémas ne sont pas à l'échelle.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -161.890625,
+          "right": 481.875,
+          "top": 1324.234375,
+          "bottom": 1382.234375,
+          "width": 643.765625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{On dispose de carreaux dont les dimensions}",
+        "\\text{sont données ci-dessous.}",
+        "\\text{Écrire le calcul qui permet de connaître}",
+        "\\text{le nombre de carreaux nécessaires pour couvrir}",
+        "\\text{la surface à carreler ci-dessous :}",
+        "\\text{Surface à carreler}",
+        "\\text{Carreau de carrelage}",
+        "80~\\mathrm{cm}",
+        "90~\\mathrm{cm}",
+        "10~\\mathrm{cm}",
+        "10~\\mathrm{cm}",
+        "\\text{Les schémas ne sont pas à l'échelle.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 712,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1104.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èDans une pièce de 2,50 m de hauteur,",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 292.015625,
+              "right": 507.6875,
+              "top": 677.140625,
+              "bottom": 713.140625,
+              "width": 215.671875,
+              "height": 36
+            }
+          ],
+          "left": -185.484375,
+          "right": 505.484375,
+          "top": 676.140625,
+          "bottom": 734.140625,
+          "width": 690.96875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "on place une armoire de 170 cm de hauteur.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 349.078125,
+              "right": 564.75,
+              "top": 739.65625,
+              "bottom": 769.65625,
+              "width": 215.671875,
+              "height": 30
+            }
+          ],
+          "left": -244.171875,
+          "right": 564.1875,
+          "top": 738.65625,
+          "bottom": 796.65625,
+          "width": 808.359375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Calculer la distance entre le haut de l'armoire et le plafond.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -392.3125,
+          "right": 712.328125,
+          "top": 801.171875,
+          "bottom": 859.171875,
+          "width": 1104.640625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Dans une pièce de }2{,}50~\\mathrm{m}\\text{ de hauteur,}",
+        "\\text{on place une armoire de }170~\\mathrm{cm}\\text{ de hauteur.}",
+        "\\text{Calculer la distance entre le haut de l'armoire et le plafond.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 684,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 1048.71875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "û€Le prix d'un article coûtant 20 € augmente de 40%.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 630.34375,
+              "right": 639.265625,
+              "top": 714.3125,
+              "bottom": 719.3125,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -315.5,
+          "right": 635.484375,
+          "top": 688.3125,
+          "bottom": 746.3125,
+          "width": 950.984375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Indiquer le calcul qui permet de trouver le nouveau prix.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -364.359375,
+          "right": 684.359375,
+          "top": 750.828125,
+          "bottom": 808.828125,
+          "width": 1048.71875,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Le prix d'un article coûtant }20~\\text{€}\\text{ augmente de }40\\,\\%\\text{.}",
+        "\\text{Indiquer le calcul qui permet de trouver le nouveau prix.}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "3*4*4*4*4*4"
+        ],
+        "possible_answers": [
+          "\\(3\\times4\\times5\\)",
+          "\\(3\\times(4+4+4+4+4)\\)",
+          "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+          "\\(3\\times5\\times5\\times5\\times5\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "3*4*4*4*4*4"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1.2*10^6"
+        ],
+        "possible_answers": [
+          "\\(12\\times10^5\\)",
+          "\\(1{,}2\\times10^5\\)",
+          "\\(1{,}2\\times10^6\\)",
+          "\\(0{,}12\\times10^7\\)"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 1200000
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(11+10+16+9+20)/5"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+          "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+          "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+          "\\(13{,}2\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "(11+10+16+9+20)/5"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1.89 m"
+        ],
+        "possible_answers": [
+          "\\(1{,}85~\\mathrm{m}\\)",
+          "\\(1{,}89~\\mathrm{m}\\)",
+          "\\(1{,}90~\\mathrm{m}\\)",
+          "\\(1{,}99~\\mathrm{m}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "m"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5"
+        ],
+        "possible_answers": [
+          "\\(4\\)",
+          "\\(5\\)",
+          "\\(10\\)",
+          "\\(80\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "80 km/h"
+        ],
+        "possible_answers": [
+          "\\(80~\\mathrm{km/h}\\)",
+          "\\(720~\\mathrm{km/h}\\)",
+          "\\(237~\\mathrm{km/h}\\)",
+          "\\(0{,}0125~\\mathrm{km/h}\\)"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "km/h"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(90*80)/(10*10)",
+          "(90/10)*(80/10)"
+        ],
+        "possible_answers": [
+          "\\(72\\)",
+          "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+          "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+          "\\(\\dfrac{90+80}{10+10}\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "(90*80)/(10*10)",
+            "(90/10)*(80/10)"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "80 cm"
+        ],
+        "possible_answers": [
+          "\\(80~\\mathrm{cm}\\)",
+          "\\(420~\\mathrm{cm}\\)",
+          "\\(167{,}5~\\mathrm{cm}\\)",
+          "\\(0{,}80~\\mathrm{cm}\\)"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "20+20*40/100",
+          "20*(1+40/100)",
+          "20*1.4",
+          "20+20*0.4"
+        ],
+        "possible_answers": [
+          "\\(20\\times\\dfrac{40}{100}\\)",
+          "\\(20+40\\)",
+          "\\(28\\)",
+          "\\(20+\\dfrac{20\\times40}{100}\\)"
+        ],
+        "answerRule": {
+          "type": "calculationExpression",
+          "patterns": [
+            "20+20*40/100",
+            "20*(1+40/100)",
+            "20*1.4",
+            "20+20*0.4"
+          ],
+          "equivalences": {
+            "associativeAddition": true,
+            "commutativeAddition": true,
+            "associativeMultiplication": true,
+            "commutativeMultiplication": true
+          },
+          "allowNumberOnly": false
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "3*4*4*4*4*4",
+        "correctQCMAnswer": "3*4*4*4*4*4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1.2*10^6",
+        "correctQCMAnswer": "1.2*10^6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(11+10+16+9+20)/5",
+        "correctQCMAnswer": "(11+10+16+9+20)/5",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1.89 m",
+        "correctQCMAnswer": "1.89 m",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "5",
+        "correctQCMAnswer": "5",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "80 km/h",
+        "correctQCMAnswer": "80 km/h",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(90*80)/(10*10)",
+        "correctQCMAnswer": "(90*80)/(10*10)",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "80 cm",
+        "correctQCMAnswer": "80 cm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "20+20*40/100",
+        "correctQCMAnswer": "20+20*40/100",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

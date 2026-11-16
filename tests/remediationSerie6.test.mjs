@@ -8,6 +8,7 @@ import {getDisplayAnswer} from '../core/answerDisplay.js';
 import {formatQCMAnswer,displayQCMOptions} from '../core/qcm.js';
 import {storeAnswerForCorrections} from '../core/answerHistory.js';
 import {loadExercise} from '../core/exerciseLoader.js';
+import {assertSixiemeCatalog} from './helpers/sixiemeCatalog.mjs';
 
 let input='';const setup=()=>{globalThis.document={getElementById:()=>({value:input})};};
 const correct=q=>evaluateCurrentAnswer({question:q,answerMode:'direct'}).isCorrect;
@@ -119,7 +120,7 @@ test('série 6 : catalogue, six boutons et historique QCM du moteur',()=>{
   assert.equal(loadExercise('remediation_evaluations_nationales_6e_serie_6'),series);
   const page=readFileSync(new URL('../automatismes_6.html',import.meta.url),'utf8'),section=page.match(/<section[^>]+aria-labelledby="remediation-evaluations-nationales-title"[\s\S]*?<\/section>/)[0];
   assert.deepEqual([...section.matchAll(/data-exercise="([^"]+)"/g)].map(m=>m[1]),[1,2,3,4,5,6].map(n=>'remediation_evaluations_nationales_6e_serie_'+n));
-  const ids=[...page.matchAll(/data-exercise="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,24);assert.equal(new Set(ids).size,24);
+  assertSixiemeCatalog(page);
   const node=()=>({style:{},dataset:{},classList:{add(){},remove(){}},addEventListener(){}}),container={...node(),appendChild(){}};
   globalThis.document={getElementById:()=>container,createElement:node};globalThis.window={};
   for(const q of generateQuestions()){

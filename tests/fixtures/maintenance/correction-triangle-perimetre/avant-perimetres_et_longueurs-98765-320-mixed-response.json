@@ -1,0 +1,250 @@
+{
+  "job": {
+    "id": "perimetres_et_longueurs",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{longueur}",
+        "\\text{d’un}",
+        "\\text{rectangle}",
+        "\\text{de}",
+        "\\text{périmètre}",
+        "28~\\mathrm{km}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{largeur}",
+        "4~\\mathrm{km}",
+        "\\text{?}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{rectangle}",
+        "\\text{de}",
+        "\\text{longueur}",
+        "8~\\mathrm{cm}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{largeur}",
+        "3~\\mathrm{cm}",
+        "\\text{?}",
+        "24~\\mathrm{cm}",
+        "22~\\mathrm{cm}",
+        "11~\\mathrm{cm}",
+        "48~\\mathrm{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{triangle}",
+        "\\text{dont}",
+        "\\text{les}",
+        "\\text{côtés}",
+        "\\text{mesurent}",
+        "10~\\mathrm{hm}",
+        "\\text{,}",
+        "8~\\mathrm{dam}",
+        "\\text{et}",
+        "7~\\mathrm{m}",
+        "\\text{?}",
+        "24~\\mathrm{cm}",
+        "22~\\mathrm{cm}",
+        "11~\\mathrm{cm}",
+        "48~\\mathrm{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{longueur}",
+        "\\text{du}",
+        "\\text{côté}",
+        "\\text{d’un}",
+        "\\text{carré}",
+        "\\text{de}",
+        "\\text{périmètre}",
+        "24~\\mathrm{m}\\ ?",
+        "96~\\mathrm{m}",
+        "6~\\mathrm{m}",
+        "24~\\mathrm{m}",
+        "12~\\mathrm{m}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{carré}",
+        "\\text{de}",
+        "\\text{côté}",
+        "3~\\mathrm{m}\\ ?",
+        "96~\\mathrm{m}",
+        "6~\\mathrm{m}",
+        "24~\\mathrm{m}",
+        "12~\\mathrm{m}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "10 km"
+        ],
+        "possible_answers": [
+          "10 km",
+          "64 km",
+          "14 km",
+          "24 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "22 cm"
+        ],
+        "possible_answers": [
+          "22 cm",
+          "24 cm",
+          "11 cm",
+          "48 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "24 cm",
+          "22 cm",
+          "11 cm",
+          "48 cm"
+        ]
+      },
+      {
+        "answers": [
+          "108.7 dam"
+        ],
+        "possible_answers": [
+          "108,7 dam",
+          "25 dam",
+          "9,7 dam",
+          "178 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "6 m"
+        ],
+        "possible_answers": [
+          "6 m",
+          "96 m",
+          "24 m",
+          "12 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "96 m",
+          "6 m",
+          "24 m",
+          "12 m"
+        ]
+      },
+      {
+        "answers": [
+          "12 m"
+        ],
+        "possible_answers": [
+          "12 m",
+          "9 m",
+          "6 m",
+          "3 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

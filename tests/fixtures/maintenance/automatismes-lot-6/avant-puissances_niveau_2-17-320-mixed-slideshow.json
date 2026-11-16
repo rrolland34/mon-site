@@ -1,0 +1,488 @@
+{
+  "job": {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{1}{\n                6^{3}\n              }\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(\n                \\left(-7\\right)^{3}\n              \\right)^{\n                6\n              }\n            ",
+        "(-7)^{18}",
+        "(-7)^{19}",
+        "(-7)^{9}",
+        "(-7)^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                7^{6}\n              }{\n                7^{6}\n              }\n            ",
+        "7^{1}",
+        "7^{0}",
+        "7^{-1}",
+        "7^{12}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              8^{10}\n              \\times\n              8^{2}\n            ",
+        "7^{1}",
+        "7^{0}",
+        "7^{-1}",
+        "7^{12}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              \\left(-7\\right)^{6}\n            ",
+        "7^{1}",
+        "7^{0}",
+        "7^{-1}",
+        "7^{12}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire la puissance suivante\n            sous la forme d'un produit :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                \\left(-4\\right)^{6}\n              }{\n                \\left(-2\\right)^{6}\n              }\n            ",
+        "7^{1}",
+        "7^{0}",
+        "7^{-1}",
+        "7^{12}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 418,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 516.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "(−3)×(−3)×(−3)×(−3)",
+          "scroll": 516,
+          "client": 516,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 424.078125,
+              "right": 455.109375,
+              "width": 31.03125,
+              "height": 23
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 462.265625,
+              "right": 603.71875,
+              "width": 141.453125,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 462.265625,
+              "right": 495.1875,
+              "width": 32.921875,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 504.734375,
+              "right": 537.1875,
+              "width": 32.453125,
+              "height": 3
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 546.734375,
+              "right": 570.796875,
+              "width": 24.0625,
+              "height": 29
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 570.796875,
+              "right": 603.71875,
+              "width": 32.921875,
+              "height": 39
+            }
+          ],
+          "left": -98.125,
+          "right": 418.125,
+          "width": 516.25,
+          "height": 43.40625
+        }
+      ],
+      "math": [
+        "a^n",
+        "\n              \\left(-3\\right) \\times \\left(-3\\right) \\times \\left(-3\\right) \\times \\left(-3\\right)\n            ",
+        "(-3)^{6}",
+        "(-3)^{5}",
+        "(-3)^{4}",
+        "(-3)^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              9^{2}\n              \\times\n              2^{2}\n            ",
+        "11^{2}",
+        "18^{2}",
+        "18^{4}",
+        "18^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 8,
+    "questions": [
+      {
+        "answers": [
+          "6^-3"
+        ],
+        "possible_answers": [
+          "6^-3",
+          "6^-4",
+          "6^3",
+          "(-6)^-3"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.004629629629629629
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(-7)^18"
+        ],
+        "possible_answers": [
+          "(-7)^9",
+          "(-7)^18",
+          "(-7)^3",
+          "(-7)^19"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1628413597910449
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-7)^18",
+          "(-7)^19",
+          "(-7)^9",
+          "(-7)^3"
+        ]
+      },
+      {
+        "answers": [
+          "7^0",
+          "1"
+        ],
+        "possible_answers": [
+          "7^-1",
+          "7^12",
+          "7^0",
+          "7^1"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1,
+          "allowOneForZeroExponent": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "7^1",
+          "7^0",
+          "7^-1",
+          "7^12"
+        ]
+      },
+      {
+        "answers": [
+          "8^12"
+        ],
+        "possible_answers": [
+          "8^13",
+          "8^20",
+          "8^8",
+          "8^12"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 68719476736
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)"
+        ],
+        "possible_answers": [
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*6",
+          "(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)"
+        ],
+        "answerRule": {
+          "type": "repeatedProduct",
+          "base": -7,
+          "exponent": 6
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2^6"
+        ],
+        "possible_answers": [
+          "2^12",
+          "(-4)^6",
+          "2^6",
+          "2^7"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 64
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "(-3)^4"
+        ],
+        "possible_answers": [
+          "(-3)^6",
+          "(-3)^5",
+          "(-3)^3",
+          "(-3)^4"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 81
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-3)^6",
+          "(-3)^5",
+          "(-3)^4",
+          "(-3)^3"
+        ]
+      },
+      {
+        "answers": [
+          "18^2"
+        ],
+        "possible_answers": [
+          "18^2",
+          "18^4",
+          "18^3",
+          "11^2"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 324
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "11^2",
+          "18^2",
+          "18^4",
+          "18^3"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "6^-3",
+        "correctQCMAnswer": "6^-3",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(-7)^18",
+        "correctQCMAnswer": "(-7)^18",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-7)^18",
+          "(-7)^19",
+          "(-7)^9",
+          "(-7)^3"
+        ]
+      },
+      {
+        "correctAnswer": "7^0",
+        "correctQCMAnswer": "7^0",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "7^1",
+          "7^0",
+          "7^-1",
+          "7^12"
+        ]
+      },
+      {
+        "correctAnswer": "8^12",
+        "correctQCMAnswer": "8^12",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+        "correctQCMAnswer": "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "2^6",
+        "correctQCMAnswer": "2^6",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "(-3)^4",
+        "correctQCMAnswer": "(-3)^4",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-3)^6",
+          "(-3)^5",
+          "(-3)^4",
+          "(-3)^3"
+        ]
+      },
+      {
+        "correctAnswer": "18^2",
+        "correctQCMAnswer": "18^2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "11^2",
+          "18^2",
+          "18^4",
+          "18^3"
+        ]
+      }
+    ]
+  }
+}

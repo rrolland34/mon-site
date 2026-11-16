@@ -1,0 +1,261 @@
+{
+  "job": {
+    "id": "fraction_quantite",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 367.28125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 23 de 30 ha",
+          "scroll": 367,
+          "client": 367,
+          "children": [],
+          "left": -27.796875,
+          "right": 339.484375,
+          "width": 367.28125,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{2}{3}\\text{ de } 30\\ \\text{ha}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "."
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 340.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "€Prendre 32 de 40 €",
+          "scroll": 341,
+          "client": 341,
+          "children": [],
+          "left": -14.484375,
+          "right": 326.15625,
+          "width": 340.640625,
+          "height": 90.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{3}{2}\\text{ de } 40\\ \\text{€}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "20",
+        "60",
+        "120",
+        "40"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 380.53125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 34 de 28 km",
+          "scroll": 381,
+          "client": 381,
+          "children": [],
+          "left": -89.421875,
+          "right": 291.109375,
+          "width": 380.53125,
+          "height": 90.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{3}{4}\\text{ de } 28\\ \\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "20",
+        "60",
+        "120",
+        "40"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 357.609375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 14 de 48 m",
+          "scroll": 358,
+          "client": 358,
+          "children": [],
+          "left": -77.96875,
+          "right": 279.640625,
+          "width": 357.609375,
+          "height": 90.078125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{1}{4}\\text{ de } 48\\ \\text{m}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "48",
+        "12",
+        "24",
+        "0"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 348.578125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 13 de 24 L",
+          "scroll": 349,
+          "client": 349,
+          "children": [],
+          "left": -73.453125,
+          "right": 275.125,
+          "width": 348.578125,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{1}{3}\\text{ de } 24\\ \\text{L}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "48",
+        "12",
+        "24",
+        "0"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "20"
+        ],
+        "possible_answers": [
+          "20",
+          "10",
+          "60",
+          "30"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "60"
+        ],
+        "possible_answers": [
+          "60",
+          "20",
+          "120",
+          "40"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "20",
+          "60",
+          "120",
+          "40"
+        ]
+      },
+      {
+        "answers": [
+          "21"
+        ],
+        "possible_answers": [
+          "21",
+          "7",
+          "84",
+          "28"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "12"
+        ],
+        "possible_answers": [
+          "12",
+          "48",
+          "24",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "48",
+          "12",
+          "24",
+          "0"
+        ]
+      },
+      {
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "8",
+          "24",
+          "16",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

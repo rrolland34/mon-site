@@ -1,0 +1,294 @@
+{
+  "job": {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              2{,}11\\times 10^{-4}\n            ",
+        "0{,}002~11",
+        "0{,}000~021~1",
+        "0{,}000~211",
+        "2{,}11"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture décimale de :"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              263\n            ",
+        "2{,}63\\times 10^{3}",
+        "0{,}263\\times 10^{3}",
+        "2{,}63\\times 10^{2}",
+        "-2{,}63\\times 10^{2}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              -4{,}99\\times 10^{2}\n            ",
+        "-4{,}99",
+        "-499",
+        "-4~990",
+        "-49{,}9"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture décimale de :"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              0{,}008~01\n            ",
+        "8{,}01\\times 10^{-2}",
+        "8{,}01\\times 10^{-3}",
+        "80{,}1\\times 10^{-4}",
+        "8{,}01\\times 10^{-4}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              8{,}37\\times 10^{5}\n            ",
+        "8{,}37",
+        "83~700",
+        "837~000",
+        "8~370~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture décimale de :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "0.000211"
+        ],
+        "possible_answers": [
+          "0.0000211",
+          "2.11",
+          "0.000211",
+          "0.00211"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 0.000211
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0.00211",
+          "0.0000211",
+          "0.000211",
+          "2.11"
+        ]
+      },
+      {
+        "answers": [
+          "2.63*10^2"
+        ],
+        "possible_answers": [
+          "2.63*10^2",
+          "2.63*10^3",
+          "-2.63*10^2",
+          "0.263*10^3"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 263
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "2.63*10^3",
+          "0.263*10^3",
+          "2.63*10^2",
+          "-2.63*10^2"
+        ]
+      },
+      {
+        "answers": [
+          "-499"
+        ],
+        "possible_answers": [
+          "-4.99",
+          "-49.9",
+          "-499",
+          "-4990"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": -499
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "-4.99",
+          "-499",
+          "-4990",
+          "-49.9"
+        ]
+      },
+      {
+        "answers": [
+          "8.01*10^-3"
+        ],
+        "possible_answers": [
+          "8.01*10^-3",
+          "8.01*10^-2",
+          "8.01*10^-4",
+          "80.1*10^-4"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 0.00801
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "8.01*10^-2",
+          "8.01*10^-3",
+          "80.1*10^-4",
+          "8.01*10^-4"
+        ]
+      },
+      {
+        "answers": [
+          "837000"
+        ],
+        "possible_answers": [
+          "8370000",
+          "837000",
+          "8.37",
+          "83700"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 837000
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "8.37",
+          "83700",
+          "837000",
+          "8370000"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "0.000211",
+        "correctQCMAnswer": "0.000211",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0.00211",
+          "0.0000211",
+          "0.000211",
+          "2.11"
+        ]
+      },
+      {
+        "correctAnswer": "2.63*10^2",
+        "correctQCMAnswer": "2.63*10^2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "2.63*10^3",
+          "0.263*10^3",
+          "2.63*10^2",
+          "-2.63*10^2"
+        ]
+      },
+      {
+        "correctAnswer": "-499",
+        "correctQCMAnswer": "-499",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "-4.99",
+          "-499",
+          "-4990",
+          "-49.9"
+        ]
+      },
+      {
+        "correctAnswer": "8.01*10^-3",
+        "correctQCMAnswer": "8.01*10^-3",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "8.01*10^-2",
+          "8.01*10^-3",
+          "80.1*10^-4",
+          "8.01*10^-4"
+        ]
+      },
+      {
+        "correctAnswer": "837000",
+        "correctQCMAnswer": "837000",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "8.37",
+          "83700",
+          "837000",
+          "8370000"
+        ]
+      }
+    ]
+  }
+}

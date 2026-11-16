@@ -1,3 +1,5 @@
+import { numerationPrompt, presentNumerationQuestion } from "./numerationPresentation.js";
+
 // exercices/tables_diviseurs_multiples.js
 
 function randomInteger(min, max) {
@@ -179,8 +181,7 @@ function createMultiplicationQuestion() {
 
   return {
     question:
-      `\\(\\text{Calculer : } ` +
-      `${firstFactor}\\times${secondFactor}\\)`,
+      numerationPrompt("Calculer :", String.raw`${firstFactor}\times${secondFactor}`),
 
     answers: [
       String(answer)
@@ -223,8 +224,7 @@ function createMissingRightFactorQuestion() {
 
   return {
     question:
-      `\\(\\text{Compléter : } ` +
-      `${firstFactor}\\times\\ldots=${product}\\)`,
+      numerationPrompt("Compléter :", String.raw`${firstFactor}\times\ldots=${product}`),
 
     answers: [
       String(answer)
@@ -267,8 +267,7 @@ function createMissingLeftFactorQuestion() {
 
   return {
     question:
-      `\\(\\text{Compléter : } ` +
-      `\\ldots\\times${secondFactor}=${product}\\)`,
+      numerationPrompt("Compléter :", String.raw`\ldots\times${secondFactor}=${product}`),
 
     answers: [
       String(answer)
@@ -310,8 +309,7 @@ function createExactDivisionQuestion() {
 
   return {
     question:
-      `\\(\\text{Calculer : } ` +
-      `${dividend}\\div${divisor}\\)`,
+      numerationPrompt("Calculer :", String.raw`${dividend}\div${divisor}`),
 
     answers: [
       String(answer)
@@ -354,8 +352,7 @@ function createMissingDivisorQuestion() {
 
   return {
     question:
-      `\\(\\text{Compléter : } ` +
-      `${dividend}\\div\\ldots=${quotient}\\)`,
+      numerationPrompt("Compléter :", String.raw`${dividend}\div\ldots=${quotient}`),
 
     answers: [
       String(answer)
@@ -414,8 +411,7 @@ function createDivisorQuestion() {
 
   return {
     question:
-      `\\(\\text{Donner un diviseur de }` +
-      `${number}\\)`,
+      numerationPrompt("Donner un diviseur de", number),
 
     answers: [
       String(displayedAnswer)
@@ -486,8 +482,7 @@ function createMultipleQuestion() {
 
   return {
     question:
-      `\\(\\text{Donner un multiple de }` +
-      `${referenceNumber}\\)`,
+      numerationPrompt("Donner un multiple de", referenceNumber),
 
     answers: [
       String(displayedAnswer)
@@ -545,10 +540,7 @@ function createNextMultipleQuestion() {
 
   return {
     question:
-      `\\(\\text{Donner le plus petit multiple de }` +
-      `${referenceNumber}` +
-      `\\text{ strictement supérieur à }` +
-      `${lowerBound}\\)`,
+      numerationPrompt("Donner le plus petit multiple de", referenceNumber) + " " + numerationPrompt("strictement supérieur à", lowerBound),
 
     answers: [
       String(answer)
@@ -602,8 +594,7 @@ function createGreatestProperDivisorQuestion() {
 
   return {
     question:
-      `\\(\\text{Donner le plus grand diviseur de }` +
-      `${number}\\text{ différent de }${number}\\)`,
+      numerationPrompt("Donner le plus grand diviseur de", number) + " " + numerationPrompt("différent de", number),
 
     answers: [
       String(answer)
@@ -666,9 +657,7 @@ function createMultipleSentenceQuestion() {
 
   return {
     question:
-      `\\(\\text{Compléter : }` +
-      `${referenceNumber}` +
-      `\\text{ est un multiple de }\\ldots\\)`,
+      numerationPrompt("Compléter :", referenceNumber) + " " + numerationPrompt("est un multiple de", String.raw`\ldots`),
 
     answers: [
       String(displayedAnswer)
@@ -730,9 +719,7 @@ function createDivisorSentenceQuestion() {
 
   return {
     question:
-      `\\(\\text{Compléter : }` +
-      `${referenceNumber}` +
-      `\\text{ est un diviseur de }\\ldots\\)`,
+      numerationPrompt("Compléter :", referenceNumber) + " " + numerationPrompt("est un diviseur de", String.raw`\ldots`),
 
     answers: [
       String(displayedAnswer)
@@ -777,5 +764,5 @@ export default {
     createMultipleSentenceQuestion(),
 
     createDivisorSentenceQuestion()
-  ]
+  ].map(presentNumerationQuestion)
 };

@@ -762,7 +762,9 @@ function processAnswer(
 
   if (presentationMode === "response" && currentQuestion.renderResponseCorrection) {
     const correction = document.createElement("div");
-    correction.innerHTML = currentQuestion.renderResponseCorrection({
+    const answerLabel = exercice.correctionMode === "answer-only"
+      ? '<div class="answer-feedback-label">Réponse :</div>' : "";
+    correction.innerHTML = answerLabel + currentQuestion.renderResponseCorrection({
       isCorrect, isNotAnswered, userAnswer, answerMode: currentQuestionAnswerMode
     });
     document.getElementById("feedback").appendChild(correction);
@@ -1040,7 +1042,7 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
       questionElement: document.getElementById("question"),
       onConclusion(visible) {
         if (correction.answerMode !== "qcm") return;
-        displayQCMOptions({ possible_answers: correction.qcmAnswersOrder, qcmAnswersOrder: correction.qcmAnswersOrder, qcmClass: correction.qcmClass }, true);
+        displayQCMOptions({ possible_answers: correction.qcmAnswersOrder, qcmAnswersOrder: correction.qcmAnswersOrder, qcmClass: correction.qcmClass, qcmRenderAnswer: correction.qcmRenderAnswer }, true);
         if (visible) highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer);
       }
     });

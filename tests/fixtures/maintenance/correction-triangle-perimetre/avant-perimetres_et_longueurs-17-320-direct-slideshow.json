@@ -1,0 +1,263 @@
+{
+  "job": {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{longueur}",
+        "\\text{d’un}",
+        "\\text{rectangle}",
+        "\\text{de}",
+        "\\text{périmètre}",
+        "26~\\mathrm{dm}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{largeur}",
+        "4~\\mathrm{dm}",
+        "\\text{?}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{rectangle}",
+        "\\text{de}",
+        "\\text{longueur}",
+        "8~\\mathrm{km}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{largeur}",
+        "6~\\mathrm{km}",
+        "\\text{?}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{triangle}",
+        "\\text{dont}",
+        "\\text{les}",
+        "\\text{côtés}",
+        "\\text{mesurent}",
+        "8~\\mathrm{km}",
+        "\\text{,}",
+        "4~\\mathrm{hm}",
+        "\\text{et}",
+        "7~\\mathrm{dam}",
+        "\\text{?}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{carré}",
+        "\\text{de}",
+        "\\text{côté}",
+        "4~\\mathrm{hm}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{longueur}",
+        "\\text{du}",
+        "\\text{côté}",
+        "\\text{d’un}",
+        "\\text{carré}",
+        "\\text{de}",
+        "\\text{périmètre}",
+        "20~\\mathrm{mm}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "9 dm"
+        ],
+        "possible_answers": [
+          "9 dm",
+          "60 dm",
+          "13 dm",
+          "22 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "28 km"
+        ],
+        "possible_answers": [
+          "28 km",
+          "48 km",
+          "14 km",
+          "96 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "84.7 hm"
+        ],
+        "possible_answers": [
+          "84,7 hm",
+          "19 hm",
+          "5,5 hm",
+          "154 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "16 hm"
+        ],
+        "possible_answers": [
+          "16 hm",
+          "8 hm",
+          "12 hm",
+          "4 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5 mm"
+        ],
+        "possible_answers": [
+          "5 mm",
+          "80 mm",
+          "20 mm",
+          "10 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "9 dm",
+        "correctQCMAnswer": "9 dm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "28 km",
+        "correctQCMAnswer": "28 km",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "84.7 hm",
+        "correctQCMAnswer": "84.7 hm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "16 hm",
+        "correctQCMAnswer": "16 hm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "5 mm",
+        "correctQCMAnswer": "5 mm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

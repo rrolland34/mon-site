@@ -1,0 +1,252 @@
+{
+  "job": {
+    "id": "operations_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 282{,}8\\div 10"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "2,828",
+        "282,8",
+        "28,28",
+        "2 828"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 577\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "577",
+        "57 700",
+        "5 770 000",
+        "577 000"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 54{,}83\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "548,3",
+        "54,83",
+        "5,483",
+        "5 483"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 429.390625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 949{,}21\\div 100"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "949,21",
+        "0,949 21",
+        "9,492 1",
+        "94,921"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 373.921875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 917\\div 100"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,917",
+        "91,7",
+        "9,17",
+        "917"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 429.390625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 705{,}84\\times 100"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "70 584",
+        "705,84",
+        "705 840",
+        "7 058,4"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "28.28"
+        ],
+        "possible_answers": [
+          "28.28",
+          "282.8",
+          "2.828",
+          "2828"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "2.828",
+          "282.8",
+          "28.28",
+          "2828"
+        ]
+      },
+      {
+        "answers": [
+          "577000"
+        ],
+        "possible_answers": [
+          "577000",
+          "577",
+          "57700",
+          "5770000"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "577",
+          "57700",
+          "5770000",
+          "577000"
+        ]
+      },
+      {
+        "answers": [
+          "548.3"
+        ],
+        "possible_answers": [
+          "548.3",
+          "54.83",
+          "5483",
+          "5.483"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "548.3",
+          "54.83",
+          "5.483",
+          "5483"
+        ]
+      },
+      {
+        "answers": [
+          "9.4921"
+        ],
+        "possible_answers": [
+          "9.4921",
+          "949.21",
+          "94.921",
+          "0.94921"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "949.21",
+          "0.94921",
+          "9.4921",
+          "94.921"
+        ]
+      },
+      {
+        "answers": [
+          "9.17"
+        ],
+        "possible_answers": [
+          "9.17",
+          "917",
+          "91.7",
+          "0.917"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0.917",
+          "91.7",
+          "9.17",
+          "917"
+        ]
+      },
+      {
+        "answers": [
+          "70584"
+        ],
+        "possible_answers": [
+          "70584",
+          "705.84",
+          "7058.4",
+          "705840"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "70584",
+          "705.84",
+          "705840",
+          "7058.4"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

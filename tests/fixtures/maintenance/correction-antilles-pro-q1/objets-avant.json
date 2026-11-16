@@ -1,0 +1,953 @@
+[
+  {
+    "seed": 17,
+    "state": 17,
+    "exercise": {
+      "title": "Antilles–Guyane — 30 juin 2026 — Série professionnelle",
+      "series": "Professionnelle",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Puissances",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q1\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Écrire}\\) \\(\\text{l'expression}\\) \\(\\text{correspondant}\\) \\(\\text{à}\\) \\(3\\times4^5.\\)</div>",
+          "answers": [
+            "3*4*4*4*4*4"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "3*4*4*4*4*4"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(3\\times4\\times5\\)",
+            "\\(3\\times(4+4+4+4+4)\\)",
+            "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+            "\\(3\\times5\\times5\\times5\\times5\\)"
+          ],
+          "display_answer": "\\(\\text{La}\\) \\(\\text{bonne}\\) \\(\\text{réponse}\\) \\(\\text{est}\\) \\(\\mathrm{C}~:\\) \\(3\\times4\\times4\\times4\\times4\\times4.\\)  <br>  \\(4^5\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{produit}\\) \\(\\text{de}\\) \\(\\text{cinq}\\) \\(\\text{facteurs}\\) \\(\\text{égaux}\\) \\(\\text{à}\\) \\(4.\\)  <br>  \\(\\text{On}\\) \\(\\text{conserve}\\) \\(\\text{le}\\) \\(\\text{facteur}\\) \\(3\\) \\(\\text{devant}\\) \\(\\text{ce}\\) \\(\\text{produit.}\\)",
+          "qcmAnswersOrder": [
+            "\\(3\\times4\\times5\\)",
+            "\\(3\\times(4+4+4+4+4)\\)",
+            "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+            "\\(3\\times5\\times5\\times5\\times5\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q2",
+          "title": "Calcul numérique",
+          "subtitle": "Écriture scientifique",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q2\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Écrire}\\) \\(\\text{la}\\) \\(\\text{notation}\\) \\(\\text{scientifique}\\) \\(\\text{de}\\) \\(1\\,200\\,000.\\)</div>",
+          "answers": [
+            "1.2*10^6"
+          ],
+          "answerRule": {
+            "type": "scientificNotation",
+            "expectedValue": 1200000
+          },
+          "inputTools": [
+            "power"
+          ],
+          "possible_answers": [
+            "\\(12\\times10^5\\)",
+            "\\(1{,}2\\times10^5\\)",
+            "\\(1{,}2\\times10^6\\)",
+            "\\(0{,}12\\times10^7\\)"
+          ],
+          "display_answer": "\\(1\\,200\\,000=1{,}2\\times10^6.\\)  <br>  \\(\\text{Le}\\) \\(\\text{coefficient}\\) \\(\\text{vérifie}\\) \\(1\\leq1{,}2<10~:\\) \\(\\text{c'est}\\) \\(\\text{une}\\) \\(\\text{notation}\\) \\(\\text{scientifique.}\\)",
+          "qcmAnswersOrder": [
+            "\\(12\\times10^5\\)",
+            "\\(1{,}2\\times10^5\\)",
+            "\\(1{,}2\\times10^6\\)",
+            "\\(0{,}12\\times10^7\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q3",
+          "title": "Organisation et gestion de données",
+          "subtitle": "Moyenne",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q3\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Écrire}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{permettant}\\) \\(\\text{d'obtenir}\\) \\(\\text{la}\\) \\(\\text{moyenne}\\)  </div>  <div>  \\(\\text{des}\\) \\(\\text{notes}\\) \\(\\text{suivantes :}\\)  </div>  <div>  \\(11\\quad10\\quad16\\quad9\\quad20\\)  </div>  </div></div>",
+          "answers": [
+            "(11+10+16+9+20)/5"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "(11+10+16+9+20)/5"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+            "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+            "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+            "\\(13{,}2\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(\\dfrac{11+10+16+9+20}{5}.\\)  <br>  \\(\\text{On}\\) \\(\\text{additionne}\\) \\(\\text{les}\\) \\(\\text{cinq}\\) \\(\\text{notes,}\\) \\(\\text{puis}\\) \\(\\text{on}\\) \\(\\text{divise}\\) \\(\\text{la}\\) \\(\\text{somme}\\) \\(\\text{par}\\) \\(5.\\)  <br>  \\(\\text{Le}\\) \\(\\text{résultat}\\) \\(\\text{seul,}\\) \\(13{,}2,\\) \\(\\text{ne}\\) \\(\\text{répond}\\) \\(\\text{pas}\\) \\(\\text{à}\\) \\(\\text{la}\\) \\(\\text{consigne.}\\)",
+          "qcmAnswersOrder": [
+            "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+            "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+            "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+            "\\(13{,}2\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q4",
+          "title": "Organisation et gestion de données",
+          "subtitle": "Médiane",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q4\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{On}\\) \\(\\text{donne}\\) \\(\\text{la}\\) \\(\\text{taille}\\) \\(\\text{de}\\) \\(11\\) \\(\\text{joueurs}\\) \\(\\text{de}\\) \\(\\text{football}\\) \\(\\text{en}\\) \\(\\text{mètre.}\\)  </div>  <div>  <table class=\"antilles-pro-sizes\">  <tbody>  <tr>  <td>  \\(1{,}72\\)  </td>  <td>  \\(1{,}75\\)  </td>  <td>  \\(1{,}78\\)  </td>  <td>  \\(1{,}84\\)  </td>  <td>  \\(1{,}85\\)  </td>  <td>  \\(1{,}89\\)  </td>  <td>  \\(1{,}89\\)  </td>  <td>  \\(1{,}90\\)  </td>  <td>  \\(1{,}90\\)  </td>  <td>  \\(1{,}92\\)  </td>  <td>  \\(1{,}99\\)  </td>  </tr>  </tbody>  </table>  </div>  <div>  \\(\\text{Déterminer}\\) \\(\\text{la}\\) \\(\\text{taille}\\) \\(\\text{médiane}\\) \\(\\text{de}\\) \\(\\text{ces}\\) \\(\\text{joueurs.}\\)  </div>  </div></div>",
+          "answers": [
+            "1.89 m"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "m"
+          },
+          "possible_answers": [
+            "\\(1{,}85~\\mathrm{m}\\)",
+            "\\(1{,}89~\\mathrm{m}\\)",
+            "\\(1{,}90~\\mathrm{m}\\)",
+            "\\(1{,}99~\\mathrm{m}\\)"
+          ],
+          "display_answer": "\\(\\text{Les}\\) \\(11\\) \\(\\text{tailles}\\) \\(\\text{sont}\\) \\(\\text{déjà}\\) \\(\\text{rangées}\\) \\(\\text{dans}\\) \\(\\text{l'ordre}\\) \\(\\text{croissant.}\\)  <br>  \\(\\dfrac{11+1}{2}=6~:\\) \\(\\text{la}\\) \\(\\text{médiane}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{sixième}\\) \\(\\text{valeur.}\\)  <br>  \\(\\text{La}\\) \\(\\text{taille}\\) \\(\\text{médiane}\\) \\(\\text{est}\\) \\(\\text{donc}\\) \\(1{,}89~\\mathrm{m}.\\)",
+          "qcmAnswersOrder": [
+            "\\(1{,}85~\\mathrm{m}\\)",
+            "\\(1{,}89~\\mathrm{m}\\)",
+            "\\(1{,}90~\\mathrm{m}\\)",
+            "\\(1{,}99~\\mathrm{m}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q5",
+          "title": "Calcul numérique",
+          "subtitle": "Fraction d'une quantité",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q5\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Donner}\\) \\(\\text{le}\\) \\(\\text{quart}\\) \\(\\text{de}\\) \\(20.\\)</div>",
+          "answers": [
+            "5"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(80\\)"
+          ],
+          "display_answer": "\\(\\text{Prendre}\\) \\(\\text{le}\\) \\(\\text{quart}\\) \\(\\text{revient}\\) \\(\\text{à}\\) \\(\\text{diviser}\\) \\(\\text{par}\\) \\(4.\\)  <br>  \\(20\\div4=5.\\)",
+          "qcmAnswersOrder": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(80\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q6",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Vitesse moyenne",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q6\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Une}\\) \\(\\text{voiture}\\) \\(\\text{parcourt}\\) \\(240~\\mathrm{km}\\) \\(\\text{en}\\) \\(3~\\mathrm{heures}.\\)  </div>  <div>  \\(\\text{Calculer}\\) \\(\\text{sa}\\) \\(\\text{vitesse}\\) \\(\\text{moyenne}\\) \\(\\text{en}\\) \\(\\mathrm{km/h}.\\)  </div>  </div></div>",
+          "answers": [
+            "80 km/h"
+          ],
+          "answerRule": {
+            "type": "speed",
+            "requiredUnit": "km/h"
+          },
+          "possible_answers": [
+            "\\(80~\\mathrm{km/h}\\)",
+            "\\(720~\\mathrm{km/h}\\)",
+            "\\(237~\\mathrm{km/h}\\)",
+            "\\(0{,}0125~\\mathrm{km/h}\\)"
+          ],
+          "display_answer": "\\(\\begin{aligned}&\\text{Vitesse moyenne}\\\\&=\\dfrac{\\text{distance parcourue}}{\\text{durée du trajet}}.\\end{aligned}\\)  <br>  \\(\\begin{aligned}v&=\\dfrac{240}{3}\\\\&=80~\\mathrm{km/h}.\\end{aligned}\\)",
+          "qcmAnswersOrder": [
+            "\\(80~\\mathrm{km/h}\\)",
+            "\\(720~\\mathrm{km/h}\\)",
+            "\\(237~\\mathrm{km/h}\\)",
+            "\\(0{,}0125~\\mathrm{km/h}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un rectangle",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q7\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{On}\\) \\(\\text{dispose}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{dont}\\) \\(\\text{les}\\) \\(\\text{dimensions}\\)  </div>  <div>  \\(\\text{sont}\\) \\(\\text{données}\\) \\(\\text{ci-dessous.}\\)  </div>  <div>  \\(\\text{Écrire}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{qui}\\) \\(\\text{permet}\\) \\(\\text{de}\\) \\(\\text{connaître}\\)  </div>  <div>  \\(\\text{le}\\) \\(\\text{nombre}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{nécessaires}\\) \\(\\text{pour}\\) \\(\\text{couvrir}\\)  </div>  <div>  \\(\\text{la}\\) \\(\\text{surface}\\) \\(\\text{à}\\) \\(\\text{carreler}\\) \\(\\text{ci-dessous :}\\)  </div>  <div class=\"question-with-figure\">  <table role=\"presentation\">  <tbody>  <tr>  <td>  \\(\\text{Surface}\\) \\(\\text{à}\\) \\(\\text{carreler}\\)  </td>  <td>  \\(\\text{Carreau}\\) \\(\\text{de}\\) \\(\\text{carrelage}\\)  </td>  </tr>  <tr>  <td>  <table role=\"presentation\">  <tbody>  <tr>  <td>  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 192\" width=\"260\" role=\"img\" aria-label=\"Surface rectangulaire à carreler\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"255\" height=\"187.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n  \n    <path\n      d=\"\n        M 17 2\n        L 17 17\n        L 2 17\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n    <path\n      d=\"\n        M 257 17\n        L 242 17\n        L 242 2\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n    <path\n      d=\"\n        M 2 174.5\n        L 17 174.5\n        L 17 189.5\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n</svg>  </td>  <td>  \\(80~\\mathrm{cm}\\)  </td>  </tr>  <tr>  <td>  \\(90~\\mathrm{cm}\\)  </td>  <td>  </td>  </tr>  </tbody>  </table>  </td>  <td style=\"vertical-align:top\">  <table role=\"presentation\" style=\"margin:auto\">  <tbody>  <tr>  <td>  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" width=\"64\" role=\"img\" aria-label=\"Carreau carré\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n</svg>  </td>  <td>  \\(10~\\mathrm{cm}\\)  </td>  </tr>  <tr>  <td>  \\(10~\\mathrm{cm}\\)  </td>  <td>  </td>  </tr>  </tbody>  </table>  </td>  </tr>  </tbody>  </table>  </div>  <div>  \\(\\text{Les}\\) \\(\\text{schémas}\\) \\(\\text{ne}\\) \\(\\text{sont}\\) \\(\\text{pas à l'échelle.}\\)  </div>  </div></div>",
+          "answers": [
+            "(90*80)/(10*10)",
+            "(90/10)*(80/10)"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "(90*80)/(10*10)",
+              "(90/10)*(80/10)"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(72\\)",
+            "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+            "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+            "\\(\\dfrac{90+80}{10+10}\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(\\dfrac{90\\times80}{10\\times10}.\\)  <br>  \\(\\text{On}\\) \\(\\text{divise}\\) \\(\\text{l'aire}\\) \\(\\text{du}\\) \\(\\text{rectangle}\\) \\(\\text{par}\\) \\(\\text{l'aire}\\) \\(\\text{d'un}\\) \\(\\text{carreau.}\\)  <br>  \\(\\text{On}\\) \\(\\text{peut}\\) \\(\\text{aussi}\\) \\(\\text{écrire}\\) \\(\\dfrac{90}{10}\\times\\dfrac{80}{10}~:\\)  <br>  \\(\\text{on}\\) \\(\\text{multiplie}\\) \\(\\text{les}\\) \\(\\text{nombres}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{dans}\\) \\(\\text{les}\\) \\(\\text{deux}\\) \\(\\text{directions.}\\)  <br>  \\(\\text{Ces}\\) \\(\\text{calculs}\\) \\(\\text{donnent}\\) \\(72\\) \\(\\text{carreaux ;}\\) \\(\\text{le}\\) \\(\\text{résultat}\\) \\(\\text{seul}\\) \\(\\text{ne}\\) \\(\\text{suffit}\\) \\(\\text{pas.}\\)",
+          "qcmAnswersOrder": [
+            "\\(72\\)",
+            "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+            "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+            "\\(\\dfrac{90+80}{10+10}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q8",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Conversion de longueurs",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q8\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Dans}\\) \\(\\text{une}\\) \\(\\text{pièce}\\) \\(\\text{de}\\) \\(2{,}50~\\mathrm{m}\\) \\(\\text{de}\\) \\(\\text{hauteur,}\\)  </div>  <div>  \\(\\text{on}\\) \\(\\text{place}\\) \\(\\text{une}\\) \\(\\text{armoire}\\) \\(\\text{de}\\) \\(170~\\mathrm{cm}\\) \\(\\text{de}\\) \\(\\text{hauteur.}\\)  </div>  <div>  \\(\\text{Calculer}\\) \\(\\text{la}\\) \\(\\text{distance}\\) \\(\\text{entre}\\) \\(\\text{le}\\) \\(\\text{haut}\\) \\(\\text{de}\\) \\(\\text{l'armoire}\\) \\(\\text{et}\\) \\(\\text{le}\\) \\(\\text{plafond.}\\)  </div>  </div></div>",
+          "answers": [
+            "80 cm"
+          ],
+          "answerRule": {
+            "type": "length"
+          },
+          "possible_answers": [
+            "\\(80~\\mathrm{cm}\\)",
+            "\\(420~\\mathrm{cm}\\)",
+            "\\(167{,}5~\\mathrm{cm}\\)",
+            "\\(0{,}80~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\text{On}\\) \\(\\text{exprime}\\) \\(\\text{les}\\) \\(\\text{deux}\\) \\(\\text{hauteurs}\\) \\(\\text{dans}\\) \\(\\text{la}\\) \\(\\text{même}\\) \\(\\text{unité :}\\)  <br>  \\(2{,}50~\\mathrm{m}=250~\\mathrm{cm}.\\)  <br>  \\(250-170=80.\\)  <br>  \\(\\text{La}\\) \\(\\text{distance}\\) \\(\\text{entre}\\) \\(\\text{le}\\) \\(\\text{haut}\\) \\(\\text{de}\\) \\(\\text{l'armoire}\\) \\(\\text{et}\\) \\(\\text{le}\\) \\(\\text{plafond}\\) \\(\\text{est}\\) \\(80~\\mathrm{cm}.\\)",
+          "qcmAnswersOrder": [
+            "\\(80~\\mathrm{cm}\\)",
+            "\\(420~\\mathrm{cm}\\)",
+            "\\(167{,}5~\\mathrm{cm}\\)",
+            "\\(0{,}80~\\mathrm{cm}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q9",
+          "title": "Calcul numérique",
+          "subtitle": "Pourcentage d'une quantité",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q9\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Le}\\) \\(\\text{prix}\\) \\(\\text{d'un}\\) \\(\\text{article}\\) \\(\\text{coûtant}\\) \\(20~~\\text{€}\\) \\(\\text{augmente}\\) \\(\\text{de}\\) \\(40\\,\\%.\\)  </div>  <div>  \\(\\text{Indiquer}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{qui}\\) \\(\\text{permet}\\) \\(\\text{de}\\) \\(\\text{trouver}\\) \\(\\text{le}\\) \\(\\text{nouveau}\\) \\(\\text{prix.}\\)  </div>  </div></div>",
+          "answers": [
+            "20+20*40/100",
+            "20*(1+40/100)",
+            "20*1.4",
+            "20+20*0.4"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "20+20*40/100",
+              "20*(1+40/100)",
+              "20*1.4",
+              "20+20*0.4"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(20\\times\\dfrac{40}{100}\\)",
+            "\\(20+40\\)",
+            "\\(28\\)",
+            "\\(20+\\dfrac{20\\times40}{100}\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(20+\\dfrac{20\\times40}{100}.\\)  <br>  \\(\\text{On}\\) \\(\\text{ajoute}\\) \\(\\text{au}\\) \\(\\text{prix}\\) \\(\\text{initial}\\) \\(\\text{une}\\) \\(\\text{augmentation}\\) \\(\\text{égale}\\) \\(\\text{à}\\) \\(40\\,\\%\\) \\(\\text{de}\\) \\(\\text{ce}\\) \\(\\text{prix.}\\)  <br>  \\(\\text{On}\\) \\(\\text{peut}\\) \\(\\text{aussi}\\) \\(\\text{écrire}\\) \\(\\begin{aligned}&20\\times\\left(1+\\dfrac{40}{100}\\right)\\\\&=20\\times1{,}4.\\end{aligned}\\)  <br>  \\(\\text{Le}\\) \\(\\text{nouveau}\\) \\(\\text{prix}\\) \\(\\text{est}\\) \\(28~~\\text{€},\\) \\(\\text{mais}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{est}\\) \\(\\text{demandé.}\\)",
+          "qcmAnswersOrder": [
+            "\\(20\\times\\dfrac{40}{100}\\)",
+            "\\(20+40\\)",
+            "\\(28\\)",
+            "\\(20+\\dfrac{20\\times40}{100}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seed": 2026,
+    "state": 2026,
+    "exercise": {
+      "title": "Antilles–Guyane — 30 juin 2026 — Série professionnelle",
+      "series": "Professionnelle",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Puissances",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q1\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Écrire}\\) \\(\\text{l'expression}\\) \\(\\text{correspondant}\\) \\(\\text{à}\\) \\(3\\times4^5.\\)</div>",
+          "answers": [
+            "3*4*4*4*4*4"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "3*4*4*4*4*4"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(3\\times4\\times5\\)",
+            "\\(3\\times(4+4+4+4+4)\\)",
+            "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+            "\\(3\\times5\\times5\\times5\\times5\\)"
+          ],
+          "display_answer": "\\(\\text{La}\\) \\(\\text{bonne}\\) \\(\\text{réponse}\\) \\(\\text{est}\\) \\(\\mathrm{C}~:\\) \\(3\\times4\\times4\\times4\\times4\\times4.\\)  <br>  \\(4^5\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{produit}\\) \\(\\text{de}\\) \\(\\text{cinq}\\) \\(\\text{facteurs}\\) \\(\\text{égaux}\\) \\(\\text{à}\\) \\(4.\\)  <br>  \\(\\text{On}\\) \\(\\text{conserve}\\) \\(\\text{le}\\) \\(\\text{facteur}\\) \\(3\\) \\(\\text{devant}\\) \\(\\text{ce}\\) \\(\\text{produit.}\\)",
+          "qcmAnswersOrder": [
+            "\\(3\\times4\\times5\\)",
+            "\\(3\\times(4+4+4+4+4)\\)",
+            "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+            "\\(3\\times5\\times5\\times5\\times5\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q2",
+          "title": "Calcul numérique",
+          "subtitle": "Écriture scientifique",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q2\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Écrire}\\) \\(\\text{la}\\) \\(\\text{notation}\\) \\(\\text{scientifique}\\) \\(\\text{de}\\) \\(1\\,200\\,000.\\)</div>",
+          "answers": [
+            "1.2*10^6"
+          ],
+          "answerRule": {
+            "type": "scientificNotation",
+            "expectedValue": 1200000
+          },
+          "inputTools": [
+            "power"
+          ],
+          "possible_answers": [
+            "\\(12\\times10^5\\)",
+            "\\(1{,}2\\times10^5\\)",
+            "\\(1{,}2\\times10^6\\)",
+            "\\(0{,}12\\times10^7\\)"
+          ],
+          "display_answer": "\\(1\\,200\\,000=1{,}2\\times10^6.\\)  <br>  \\(\\text{Le}\\) \\(\\text{coefficient}\\) \\(\\text{vérifie}\\) \\(1\\leq1{,}2<10~:\\) \\(\\text{c'est}\\) \\(\\text{une}\\) \\(\\text{notation}\\) \\(\\text{scientifique.}\\)",
+          "qcmAnswersOrder": [
+            "\\(12\\times10^5\\)",
+            "\\(1{,}2\\times10^5\\)",
+            "\\(1{,}2\\times10^6\\)",
+            "\\(0{,}12\\times10^7\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q3",
+          "title": "Organisation et gestion de données",
+          "subtitle": "Moyenne",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q3\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Écrire}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{permettant}\\) \\(\\text{d'obtenir}\\) \\(\\text{la}\\) \\(\\text{moyenne}\\)  </div>  <div>  \\(\\text{des}\\) \\(\\text{notes}\\) \\(\\text{suivantes :}\\)  </div>  <div>  \\(11\\quad10\\quad16\\quad9\\quad20\\)  </div>  </div></div>",
+          "answers": [
+            "(11+10+16+9+20)/5"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "(11+10+16+9+20)/5"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+            "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+            "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+            "\\(13{,}2\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(\\dfrac{11+10+16+9+20}{5}.\\)  <br>  \\(\\text{On}\\) \\(\\text{additionne}\\) \\(\\text{les}\\) \\(\\text{cinq}\\) \\(\\text{notes,}\\) \\(\\text{puis}\\) \\(\\text{on}\\) \\(\\text{divise}\\) \\(\\text{la}\\) \\(\\text{somme}\\) \\(\\text{par}\\) \\(5.\\)  <br>  \\(\\text{Le}\\) \\(\\text{résultat}\\) \\(\\text{seul,}\\) \\(13{,}2,\\) \\(\\text{ne}\\) \\(\\text{répond}\\) \\(\\text{pas}\\) \\(\\text{à}\\) \\(\\text{la}\\) \\(\\text{consigne.}\\)",
+          "qcmAnswersOrder": [
+            "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+            "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+            "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+            "\\(13{,}2\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q4",
+          "title": "Organisation et gestion de données",
+          "subtitle": "Médiane",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q4\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{On}\\) \\(\\text{donne}\\) \\(\\text{la}\\) \\(\\text{taille}\\) \\(\\text{de}\\) \\(11\\) \\(\\text{joueurs}\\) \\(\\text{de}\\) \\(\\text{football}\\) \\(\\text{en}\\) \\(\\text{mètre.}\\)  </div>  <div>  <table class=\"antilles-pro-sizes\">  <tbody>  <tr>  <td>  \\(1{,}72\\)  </td>  <td>  \\(1{,}75\\)  </td>  <td>  \\(1{,}78\\)  </td>  <td>  \\(1{,}84\\)  </td>  <td>  \\(1{,}85\\)  </td>  <td>  \\(1{,}89\\)  </td>  <td>  \\(1{,}89\\)  </td>  <td>  \\(1{,}90\\)  </td>  <td>  \\(1{,}90\\)  </td>  <td>  \\(1{,}92\\)  </td>  <td>  \\(1{,}99\\)  </td>  </tr>  </tbody>  </table>  </div>  <div>  \\(\\text{Déterminer}\\) \\(\\text{la}\\) \\(\\text{taille}\\) \\(\\text{médiane}\\) \\(\\text{de}\\) \\(\\text{ces}\\) \\(\\text{joueurs.}\\)  </div>  </div></div>",
+          "answers": [
+            "1.89 m"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "m"
+          },
+          "possible_answers": [
+            "\\(1{,}85~\\mathrm{m}\\)",
+            "\\(1{,}89~\\mathrm{m}\\)",
+            "\\(1{,}90~\\mathrm{m}\\)",
+            "\\(1{,}99~\\mathrm{m}\\)"
+          ],
+          "display_answer": "\\(\\text{Les}\\) \\(11\\) \\(\\text{tailles}\\) \\(\\text{sont}\\) \\(\\text{déjà}\\) \\(\\text{rangées}\\) \\(\\text{dans}\\) \\(\\text{l'ordre}\\) \\(\\text{croissant.}\\)  <br>  \\(\\dfrac{11+1}{2}=6~:\\) \\(\\text{la}\\) \\(\\text{médiane}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{sixième}\\) \\(\\text{valeur.}\\)  <br>  \\(\\text{La}\\) \\(\\text{taille}\\) \\(\\text{médiane}\\) \\(\\text{est}\\) \\(\\text{donc}\\) \\(1{,}89~\\mathrm{m}.\\)",
+          "qcmAnswersOrder": [
+            "\\(1{,}85~\\mathrm{m}\\)",
+            "\\(1{,}89~\\mathrm{m}\\)",
+            "\\(1{,}90~\\mathrm{m}\\)",
+            "\\(1{,}99~\\mathrm{m}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q5",
+          "title": "Calcul numérique",
+          "subtitle": "Fraction d'une quantité",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q5\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Donner}\\) \\(\\text{le}\\) \\(\\text{quart}\\) \\(\\text{de}\\) \\(20.\\)</div>",
+          "answers": [
+            "5"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(80\\)"
+          ],
+          "display_answer": "\\(\\text{Prendre}\\) \\(\\text{le}\\) \\(\\text{quart}\\) \\(\\text{revient}\\) \\(\\text{à}\\) \\(\\text{diviser}\\) \\(\\text{par}\\) \\(4.\\)  <br>  \\(20\\div4=5.\\)",
+          "qcmAnswersOrder": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(80\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q6",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Vitesse moyenne",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q6\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Une}\\) \\(\\text{voiture}\\) \\(\\text{parcourt}\\) \\(240~\\mathrm{km}\\) \\(\\text{en}\\) \\(3~\\mathrm{heures}.\\)  </div>  <div>  \\(\\text{Calculer}\\) \\(\\text{sa}\\) \\(\\text{vitesse}\\) \\(\\text{moyenne}\\) \\(\\text{en}\\) \\(\\mathrm{km/h}.\\)  </div>  </div></div>",
+          "answers": [
+            "80 km/h"
+          ],
+          "answerRule": {
+            "type": "speed",
+            "requiredUnit": "km/h"
+          },
+          "possible_answers": [
+            "\\(80~\\mathrm{km/h}\\)",
+            "\\(720~\\mathrm{km/h}\\)",
+            "\\(237~\\mathrm{km/h}\\)",
+            "\\(0{,}0125~\\mathrm{km/h}\\)"
+          ],
+          "display_answer": "\\(\\begin{aligned}&\\text{Vitesse moyenne}\\\\&=\\dfrac{\\text{distance parcourue}}{\\text{durée du trajet}}.\\end{aligned}\\)  <br>  \\(\\begin{aligned}v&=\\dfrac{240}{3}\\\\&=80~\\mathrm{km/h}.\\end{aligned}\\)",
+          "qcmAnswersOrder": [
+            "\\(80~\\mathrm{km/h}\\)",
+            "\\(720~\\mathrm{km/h}\\)",
+            "\\(237~\\mathrm{km/h}\\)",
+            "\\(0{,}0125~\\mathrm{km/h}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un rectangle",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q7\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{On}\\) \\(\\text{dispose}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{dont}\\) \\(\\text{les}\\) \\(\\text{dimensions}\\)  </div>  <div>  \\(\\text{sont}\\) \\(\\text{données}\\) \\(\\text{ci-dessous.}\\)  </div>  <div>  \\(\\text{Écrire}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{qui}\\) \\(\\text{permet}\\) \\(\\text{de}\\) \\(\\text{connaître}\\)  </div>  <div>  \\(\\text{le}\\) \\(\\text{nombre}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{nécessaires}\\) \\(\\text{pour}\\) \\(\\text{couvrir}\\)  </div>  <div>  \\(\\text{la}\\) \\(\\text{surface}\\) \\(\\text{à}\\) \\(\\text{carreler}\\) \\(\\text{ci-dessous :}\\)  </div>  <div class=\"question-with-figure\">  <table role=\"presentation\">  <tbody>  <tr>  <td>  \\(\\text{Surface}\\) \\(\\text{à}\\) \\(\\text{carreler}\\)  </td>  <td>  \\(\\text{Carreau}\\) \\(\\text{de}\\) \\(\\text{carrelage}\\)  </td>  </tr>  <tr>  <td>  <table role=\"presentation\">  <tbody>  <tr>  <td>  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 192\" width=\"260\" role=\"img\" aria-label=\"Surface rectangulaire à carreler\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"255\" height=\"187.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n  \n    <path\n      d=\"\n        M 17 2\n        L 17 17\n        L 2 17\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n    <path\n      d=\"\n        M 257 17\n        L 242 17\n        L 242 2\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n    <path\n      d=\"\n        M 2 174.5\n        L 17 174.5\n        L 17 189.5\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n</svg>  </td>  <td>  \\(80~\\mathrm{cm}\\)  </td>  </tr>  <tr>  <td>  \\(90~\\mathrm{cm}\\)  </td>  <td>  </td>  </tr>  </tbody>  </table>  </td>  <td style=\"vertical-align:top\">  <table role=\"presentation\" style=\"margin:auto\">  <tbody>  <tr>  <td>  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" width=\"64\" role=\"img\" aria-label=\"Carreau carré\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n</svg>  </td>  <td>  \\(10~\\mathrm{cm}\\)  </td>  </tr>  <tr>  <td>  \\(10~\\mathrm{cm}\\)  </td>  <td>  </td>  </tr>  </tbody>  </table>  </td>  </tr>  </tbody>  </table>  </div>  <div>  \\(\\text{Les}\\) \\(\\text{schémas}\\) \\(\\text{ne}\\) \\(\\text{sont}\\) \\(\\text{pas à l'échelle.}\\)  </div>  </div></div>",
+          "answers": [
+            "(90*80)/(10*10)",
+            "(90/10)*(80/10)"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "(90*80)/(10*10)",
+              "(90/10)*(80/10)"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(72\\)",
+            "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+            "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+            "\\(\\dfrac{90+80}{10+10}\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(\\dfrac{90\\times80}{10\\times10}.\\)  <br>  \\(\\text{On}\\) \\(\\text{divise}\\) \\(\\text{l'aire}\\) \\(\\text{du}\\) \\(\\text{rectangle}\\) \\(\\text{par}\\) \\(\\text{l'aire}\\) \\(\\text{d'un}\\) \\(\\text{carreau.}\\)  <br>  \\(\\text{On}\\) \\(\\text{peut}\\) \\(\\text{aussi}\\) \\(\\text{écrire}\\) \\(\\dfrac{90}{10}\\times\\dfrac{80}{10}~:\\)  <br>  \\(\\text{on}\\) \\(\\text{multiplie}\\) \\(\\text{les}\\) \\(\\text{nombres}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{dans}\\) \\(\\text{les}\\) \\(\\text{deux}\\) \\(\\text{directions.}\\)  <br>  \\(\\text{Ces}\\) \\(\\text{calculs}\\) \\(\\text{donnent}\\) \\(72\\) \\(\\text{carreaux ;}\\) \\(\\text{le}\\) \\(\\text{résultat}\\) \\(\\text{seul}\\) \\(\\text{ne}\\) \\(\\text{suffit}\\) \\(\\text{pas.}\\)",
+          "qcmAnswersOrder": [
+            "\\(72\\)",
+            "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+            "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+            "\\(\\dfrac{90+80}{10+10}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q8",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Conversion de longueurs",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q8\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Dans}\\) \\(\\text{une}\\) \\(\\text{pièce}\\) \\(\\text{de}\\) \\(2{,}50~\\mathrm{m}\\) \\(\\text{de}\\) \\(\\text{hauteur,}\\)  </div>  <div>  \\(\\text{on}\\) \\(\\text{place}\\) \\(\\text{une}\\) \\(\\text{armoire}\\) \\(\\text{de}\\) \\(170~\\mathrm{cm}\\) \\(\\text{de}\\) \\(\\text{hauteur.}\\)  </div>  <div>  \\(\\text{Calculer}\\) \\(\\text{la}\\) \\(\\text{distance}\\) \\(\\text{entre}\\) \\(\\text{le}\\) \\(\\text{haut}\\) \\(\\text{de}\\) \\(\\text{l'armoire}\\) \\(\\text{et}\\) \\(\\text{le}\\) \\(\\text{plafond.}\\)  </div>  </div></div>",
+          "answers": [
+            "80 cm"
+          ],
+          "answerRule": {
+            "type": "length"
+          },
+          "possible_answers": [
+            "\\(80~\\mathrm{cm}\\)",
+            "\\(420~\\mathrm{cm}\\)",
+            "\\(167{,}5~\\mathrm{cm}\\)",
+            "\\(0{,}80~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\text{On}\\) \\(\\text{exprime}\\) \\(\\text{les}\\) \\(\\text{deux}\\) \\(\\text{hauteurs}\\) \\(\\text{dans}\\) \\(\\text{la}\\) \\(\\text{même}\\) \\(\\text{unité :}\\)  <br>  \\(2{,}50~\\mathrm{m}=250~\\mathrm{cm}.\\)  <br>  \\(250-170=80.\\)  <br>  \\(\\text{La}\\) \\(\\text{distance}\\) \\(\\text{entre}\\) \\(\\text{le}\\) \\(\\text{haut}\\) \\(\\text{de}\\) \\(\\text{l'armoire}\\) \\(\\text{et}\\) \\(\\text{le}\\) \\(\\text{plafond}\\) \\(\\text{est}\\) \\(80~\\mathrm{cm}.\\)",
+          "qcmAnswersOrder": [
+            "\\(80~\\mathrm{cm}\\)",
+            "\\(420~\\mathrm{cm}\\)",
+            "\\(167{,}5~\\mathrm{cm}\\)",
+            "\\(0{,}80~\\mathrm{cm}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q9",
+          "title": "Calcul numérique",
+          "subtitle": "Pourcentage d'une quantité",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q9\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Le}\\) \\(\\text{prix}\\) \\(\\text{d'un}\\) \\(\\text{article}\\) \\(\\text{coûtant}\\) \\(20~~\\text{€}\\) \\(\\text{augmente}\\) \\(\\text{de}\\) \\(40\\,\\%.\\)  </div>  <div>  \\(\\text{Indiquer}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{qui}\\) \\(\\text{permet}\\) \\(\\text{de}\\) \\(\\text{trouver}\\) \\(\\text{le}\\) \\(\\text{nouveau}\\) \\(\\text{prix.}\\)  </div>  </div></div>",
+          "answers": [
+            "20+20*40/100",
+            "20*(1+40/100)",
+            "20*1.4",
+            "20+20*0.4"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "20+20*40/100",
+              "20*(1+40/100)",
+              "20*1.4",
+              "20+20*0.4"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(20\\times\\dfrac{40}{100}\\)",
+            "\\(20+40\\)",
+            "\\(28\\)",
+            "\\(20+\\dfrac{20\\times40}{100}\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(20+\\dfrac{20\\times40}{100}.\\)  <br>  \\(\\text{On}\\) \\(\\text{ajoute}\\) \\(\\text{au}\\) \\(\\text{prix}\\) \\(\\text{initial}\\) \\(\\text{une}\\) \\(\\text{augmentation}\\) \\(\\text{égale}\\) \\(\\text{à}\\) \\(40\\,\\%\\) \\(\\text{de}\\) \\(\\text{ce}\\) \\(\\text{prix.}\\)  <br>  \\(\\text{On}\\) \\(\\text{peut}\\) \\(\\text{aussi}\\) \\(\\text{écrire}\\) \\(\\begin{aligned}&20\\times\\left(1+\\dfrac{40}{100}\\right)\\\\&=20\\times1{,}4.\\end{aligned}\\)  <br>  \\(\\text{Le}\\) \\(\\text{nouveau}\\) \\(\\text{prix}\\) \\(\\text{est}\\) \\(28~~\\text{€},\\) \\(\\text{mais}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{est}\\) \\(\\text{demandé.}\\)",
+          "qcmAnswersOrder": [
+            "\\(20\\times\\dfrac{40}{100}\\)",
+            "\\(20+40\\)",
+            "\\(28\\)",
+            "\\(20+\\dfrac{20\\times40}{100}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seed": 98765,
+    "state": 98765,
+    "exercise": {
+      "title": "Antilles–Guyane — 30 juin 2026 — Série professionnelle",
+      "series": "Professionnelle",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Puissances",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q1\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Écrire}\\) \\(\\text{l'expression}\\) \\(\\text{correspondant}\\) \\(\\text{à}\\) \\(3\\times4^5.\\)</div>",
+          "answers": [
+            "3*4*4*4*4*4"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "3*4*4*4*4*4"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(3\\times4\\times5\\)",
+            "\\(3\\times(4+4+4+4+4)\\)",
+            "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+            "\\(3\\times5\\times5\\times5\\times5\\)"
+          ],
+          "display_answer": "\\(\\text{La}\\) \\(\\text{bonne}\\) \\(\\text{réponse}\\) \\(\\text{est}\\) \\(\\mathrm{C}~:\\) \\(3\\times4\\times4\\times4\\times4\\times4.\\)  <br>  \\(4^5\\) \\(\\text{est}\\) \\(\\text{le}\\) \\(\\text{produit}\\) \\(\\text{de}\\) \\(\\text{cinq}\\) \\(\\text{facteurs}\\) \\(\\text{égaux}\\) \\(\\text{à}\\) \\(4.\\)  <br>  \\(\\text{On}\\) \\(\\text{conserve}\\) \\(\\text{le}\\) \\(\\text{facteur}\\) \\(3\\) \\(\\text{devant}\\) \\(\\text{ce}\\) \\(\\text{produit.}\\)",
+          "qcmAnswersOrder": [
+            "\\(3\\times4\\times5\\)",
+            "\\(3\\times(4+4+4+4+4)\\)",
+            "\\(3\\times4\\times4\\times4\\times4\\times4\\)",
+            "\\(3\\times5\\times5\\times5\\times5\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q2",
+          "title": "Calcul numérique",
+          "subtitle": "Écriture scientifique",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q2\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Écrire}\\) \\(\\text{la}\\) \\(\\text{notation}\\) \\(\\text{scientifique}\\) \\(\\text{de}\\) \\(1\\,200\\,000.\\)</div>",
+          "answers": [
+            "1.2*10^6"
+          ],
+          "answerRule": {
+            "type": "scientificNotation",
+            "expectedValue": 1200000
+          },
+          "inputTools": [
+            "power"
+          ],
+          "possible_answers": [
+            "\\(12\\times10^5\\)",
+            "\\(1{,}2\\times10^5\\)",
+            "\\(1{,}2\\times10^6\\)",
+            "\\(0{,}12\\times10^7\\)"
+          ],
+          "display_answer": "\\(1\\,200\\,000=1{,}2\\times10^6.\\)  <br>  \\(\\text{Le}\\) \\(\\text{coefficient}\\) \\(\\text{vérifie}\\) \\(1\\leq1{,}2<10~:\\) \\(\\text{c'est}\\) \\(\\text{une}\\) \\(\\text{notation}\\) \\(\\text{scientifique.}\\)",
+          "qcmAnswersOrder": [
+            "\\(12\\times10^5\\)",
+            "\\(1{,}2\\times10^5\\)",
+            "\\(1{,}2\\times10^6\\)",
+            "\\(0{,}12\\times10^7\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q3",
+          "title": "Organisation et gestion de données",
+          "subtitle": "Moyenne",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q3\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Écrire}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{permettant}\\) \\(\\text{d'obtenir}\\) \\(\\text{la}\\) \\(\\text{moyenne}\\)  </div>  <div>  \\(\\text{des}\\) \\(\\text{notes}\\) \\(\\text{suivantes :}\\)  </div>  <div>  \\(11\\quad10\\quad16\\quad9\\quad20\\)  </div>  </div></div>",
+          "answers": [
+            "(11+10+16+9+20)/5"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "(11+10+16+9+20)/5"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+            "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+            "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+            "\\(13{,}2\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(\\dfrac{11+10+16+9+20}{5}.\\)  <br>  \\(\\text{On}\\) \\(\\text{additionne}\\) \\(\\text{les}\\) \\(\\text{cinq}\\) \\(\\text{notes,}\\) \\(\\text{puis}\\) \\(\\text{on}\\) \\(\\text{divise}\\) \\(\\text{la}\\) \\(\\text{somme}\\) \\(\\text{par}\\) \\(5.\\)  <br>  \\(\\text{Le}\\) \\(\\text{résultat}\\) \\(\\text{seul,}\\) \\(13{,}2,\\) \\(\\text{ne}\\) \\(\\text{répond}\\) \\(\\text{pas}\\) \\(\\text{à}\\) \\(\\text{la}\\) \\(\\text{consigne.}\\)",
+          "qcmAnswersOrder": [
+            "\\(\\dfrac{11+10+16+9+20}{5}\\)",
+            "\\(11+10+16+9+\\dfrac{20}{5}\\)",
+            "\\(\\dfrac{11+10+16+9+20}{4}\\)",
+            "\\(13{,}2\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q4",
+          "title": "Organisation et gestion de données",
+          "subtitle": "Médiane",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q4\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{On}\\) \\(\\text{donne}\\) \\(\\text{la}\\) \\(\\text{taille}\\) \\(\\text{de}\\) \\(11\\) \\(\\text{joueurs}\\) \\(\\text{de}\\) \\(\\text{football}\\) \\(\\text{en}\\) \\(\\text{mètre.}\\)  </div>  <div>  <table class=\"antilles-pro-sizes\">  <tbody>  <tr>  <td>  \\(1{,}72\\)  </td>  <td>  \\(1{,}75\\)  </td>  <td>  \\(1{,}78\\)  </td>  <td>  \\(1{,}84\\)  </td>  <td>  \\(1{,}85\\)  </td>  <td>  \\(1{,}89\\)  </td>  <td>  \\(1{,}89\\)  </td>  <td>  \\(1{,}90\\)  </td>  <td>  \\(1{,}90\\)  </td>  <td>  \\(1{,}92\\)  </td>  <td>  \\(1{,}99\\)  </td>  </tr>  </tbody>  </table>  </div>  <div>  \\(\\text{Déterminer}\\) \\(\\text{la}\\) \\(\\text{taille}\\) \\(\\text{médiane}\\) \\(\\text{de}\\) \\(\\text{ces}\\) \\(\\text{joueurs.}\\)  </div>  </div></div>",
+          "answers": [
+            "1.89 m"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "m"
+          },
+          "possible_answers": [
+            "\\(1{,}85~\\mathrm{m}\\)",
+            "\\(1{,}89~\\mathrm{m}\\)",
+            "\\(1{,}90~\\mathrm{m}\\)",
+            "\\(1{,}99~\\mathrm{m}\\)"
+          ],
+          "display_answer": "\\(\\text{Les}\\) \\(11\\) \\(\\text{tailles}\\) \\(\\text{sont}\\) \\(\\text{déjà}\\) \\(\\text{rangées}\\) \\(\\text{dans}\\) \\(\\text{l'ordre}\\) \\(\\text{croissant.}\\)  <br>  \\(\\dfrac{11+1}{2}=6~:\\) \\(\\text{la}\\) \\(\\text{médiane}\\) \\(\\text{est}\\) \\(\\text{la}\\) \\(\\text{sixième}\\) \\(\\text{valeur.}\\)  <br>  \\(\\text{La}\\) \\(\\text{taille}\\) \\(\\text{médiane}\\) \\(\\text{est}\\) \\(\\text{donc}\\) \\(1{,}89~\\mathrm{m}.\\)",
+          "qcmAnswersOrder": [
+            "\\(1{,}85~\\mathrm{m}\\)",
+            "\\(1{,}89~\\mathrm{m}\\)",
+            "\\(1{,}90~\\mathrm{m}\\)",
+            "\\(1{,}99~\\mathrm{m}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q5",
+          "title": "Calcul numérique",
+          "subtitle": "Fraction d'une quantité",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q5\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style>\\(\\text{Donner}\\) \\(\\text{le}\\) \\(\\text{quart}\\) \\(\\text{de}\\) \\(20.\\)</div>",
+          "answers": [
+            "5"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(80\\)"
+          ],
+          "display_answer": "\\(\\text{Prendre}\\) \\(\\text{le}\\) \\(\\text{quart}\\) \\(\\text{revient}\\) \\(\\text{à}\\) \\(\\text{diviser}\\) \\(\\text{par}\\) \\(4.\\)  <br>  \\(20\\div4=5.\\)",
+          "qcmAnswersOrder": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(80\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q6",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Vitesse moyenne",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q6\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Une}\\) \\(\\text{voiture}\\) \\(\\text{parcourt}\\) \\(240~\\mathrm{km}\\) \\(\\text{en}\\) \\(3~\\mathrm{heures}.\\)  </div>  <div>  \\(\\text{Calculer}\\) \\(\\text{sa}\\) \\(\\text{vitesse}\\) \\(\\text{moyenne}\\) \\(\\text{en}\\) \\(\\mathrm{km/h}.\\)  </div>  </div></div>",
+          "answers": [
+            "80 km/h"
+          ],
+          "answerRule": {
+            "type": "speed",
+            "requiredUnit": "km/h"
+          },
+          "possible_answers": [
+            "\\(80~\\mathrm{km/h}\\)",
+            "\\(720~\\mathrm{km/h}\\)",
+            "\\(237~\\mathrm{km/h}\\)",
+            "\\(0{,}0125~\\mathrm{km/h}\\)"
+          ],
+          "display_answer": "\\(\\begin{aligned}&\\text{Vitesse moyenne}\\\\&=\\dfrac{\\text{distance parcourue}}{\\text{durée du trajet}}.\\end{aligned}\\)  <br>  \\(\\begin{aligned}v&=\\dfrac{240}{3}\\\\&=80~\\mathrm{km/h}.\\end{aligned}\\)",
+          "qcmAnswersOrder": [
+            "\\(80~\\mathrm{km/h}\\)",
+            "\\(720~\\mathrm{km/h}\\)",
+            "\\(237~\\mathrm{km/h}\\)",
+            "\\(0{,}0125~\\mathrm{km/h}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un rectangle",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q7\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{On}\\) \\(\\text{dispose}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{dont}\\) \\(\\text{les}\\) \\(\\text{dimensions}\\)  </div>  <div>  \\(\\text{sont}\\) \\(\\text{données}\\) \\(\\text{ci-dessous.}\\)  </div>  <div>  \\(\\text{Écrire}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{qui}\\) \\(\\text{permet}\\) \\(\\text{de}\\) \\(\\text{connaître}\\)  </div>  <div>  \\(\\text{le}\\) \\(\\text{nombre}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{nécessaires}\\) \\(\\text{pour}\\) \\(\\text{couvrir}\\)  </div>  <div>  \\(\\text{la}\\) \\(\\text{surface}\\) \\(\\text{à}\\) \\(\\text{carreler}\\) \\(\\text{ci-dessous :}\\)  </div>  <div class=\"question-with-figure\">  <table role=\"presentation\">  <tbody>  <tr>  <td>  \\(\\text{Surface}\\) \\(\\text{à}\\) \\(\\text{carreler}\\)  </td>  <td>  \\(\\text{Carreau}\\) \\(\\text{de}\\) \\(\\text{carrelage}\\)  </td>  </tr>  <tr>  <td>  <table role=\"presentation\">  <tbody>  <tr>  <td>  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 192\" width=\"260\" role=\"img\" aria-label=\"Surface rectangulaire à carreler\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"255\" height=\"187.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n  \n    <path\n      d=\"\n        M 17 2\n        L 17 17\n        L 2 17\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n    <path\n      d=\"\n        M 257 17\n        L 242 17\n        L 242 2\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n    <path\n      d=\"\n        M 2 174.5\n        L 17 174.5\n        L 17 189.5\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n</svg>  </td>  <td>  \\(80~\\mathrm{cm}\\)  </td>  </tr>  <tr>  <td>  \\(90~\\mathrm{cm}\\)  </td>  <td>  </td>  </tr>  </tbody>  </table>  </td>  <td style=\"vertical-align:top\">  <table role=\"presentation\" style=\"margin:auto\">  <tbody>  <tr>  <td>  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" width=\"64\" role=\"img\" aria-label=\"Carreau carré\" style=\"max-width:100%;height:auto\">\n  <rect x=\"2\" y=\"2\" width=\"60\" height=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n</svg>  </td>  <td>  \\(10~\\mathrm{cm}\\)  </td>  </tr>  <tr>  <td>  \\(10~\\mathrm{cm}\\)  </td>  <td>  </td>  </tr>  </tbody>  </table>  </td>  </tr>  </tbody>  </table>  </div>  <div>  \\(\\text{Les}\\) \\(\\text{schémas}\\) \\(\\text{ne}\\) \\(\\text{sont}\\) \\(\\text{pas à l'échelle.}\\)  </div>  </div></div>",
+          "answers": [
+            "(90*80)/(10*10)",
+            "(90/10)*(80/10)"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "(90*80)/(10*10)",
+              "(90/10)*(80/10)"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(72\\)",
+            "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+            "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+            "\\(\\dfrac{90+80}{10+10}\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(\\dfrac{90\\times80}{10\\times10}.\\)  <br>  \\(\\text{On}\\) \\(\\text{divise}\\) \\(\\text{l'aire}\\) \\(\\text{du}\\) \\(\\text{rectangle}\\) \\(\\text{par}\\) \\(\\text{l'aire}\\) \\(\\text{d'un}\\) \\(\\text{carreau.}\\)  <br>  \\(\\text{On}\\) \\(\\text{peut}\\) \\(\\text{aussi}\\) \\(\\text{écrire}\\) \\(\\dfrac{90}{10}\\times\\dfrac{80}{10}~:\\)  <br>  \\(\\text{on}\\) \\(\\text{multiplie}\\) \\(\\text{les}\\) \\(\\text{nombres}\\) \\(\\text{de}\\) \\(\\text{carreaux}\\) \\(\\text{dans}\\) \\(\\text{les}\\) \\(\\text{deux}\\) \\(\\text{directions.}\\)  <br>  \\(\\text{Ces}\\) \\(\\text{calculs}\\) \\(\\text{donnent}\\) \\(72\\) \\(\\text{carreaux ;}\\) \\(\\text{le}\\) \\(\\text{résultat}\\) \\(\\text{seul}\\) \\(\\text{ne}\\) \\(\\text{suffit}\\) \\(\\text{pas.}\\)",
+          "qcmAnswersOrder": [
+            "\\(72\\)",
+            "\\(\\dfrac{90\\times80}{10}\\times10\\)",
+            "\\(\\dfrac{90\\times80}{10\\times10}\\)",
+            "\\(\\dfrac{90+80}{10+10}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q8",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Conversion de longueurs",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q8\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Dans}\\) \\(\\text{une}\\) \\(\\text{pièce}\\) \\(\\text{de}\\) \\(2{,}50~\\mathrm{m}\\) \\(\\text{de}\\) \\(\\text{hauteur,}\\)  </div>  <div>  \\(\\text{on}\\) \\(\\text{place}\\) \\(\\text{une}\\) \\(\\text{armoire}\\) \\(\\text{de}\\) \\(170~\\mathrm{cm}\\) \\(\\text{de}\\) \\(\\text{hauteur.}\\)  </div>  <div>  \\(\\text{Calculer}\\) \\(\\text{la}\\) \\(\\text{distance}\\) \\(\\text{entre}\\) \\(\\text{le}\\) \\(\\text{haut}\\) \\(\\text{de}\\) \\(\\text{l'armoire}\\) \\(\\text{et}\\) \\(\\text{le}\\) \\(\\text{plafond.}\\)  </div>  </div></div>",
+          "answers": [
+            "80 cm"
+          ],
+          "answerRule": {
+            "type": "length"
+          },
+          "possible_answers": [
+            "\\(80~\\mathrm{cm}\\)",
+            "\\(420~\\mathrm{cm}\\)",
+            "\\(167{,}5~\\mathrm{cm}\\)",
+            "\\(0{,}80~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\text{On}\\) \\(\\text{exprime}\\) \\(\\text{les}\\) \\(\\text{deux}\\) \\(\\text{hauteurs}\\) \\(\\text{dans}\\) \\(\\text{la}\\) \\(\\text{même}\\) \\(\\text{unité :}\\)  <br>  \\(2{,}50~\\mathrm{m}=250~\\mathrm{cm}.\\)  <br>  \\(250-170=80.\\)  <br>  \\(\\text{La}\\) \\(\\text{distance}\\) \\(\\text{entre}\\) \\(\\text{le}\\) \\(\\text{haut}\\) \\(\\text{de}\\) \\(\\text{l'armoire}\\) \\(\\text{et}\\) \\(\\text{le}\\) \\(\\text{plafond}\\) \\(\\text{est}\\) \\(80~\\mathrm{cm}.\\)",
+          "qcmAnswersOrder": [
+            "\\(80~\\mathrm{cm}\\)",
+            "\\(420~\\mathrm{cm}\\)",
+            "\\(167{,}5~\\mathrm{cm}\\)",
+            "\\(0{,}80~\\mathrm{cm}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        },
+        {
+          "id": "q9",
+          "title": "Calcul numérique",
+          "subtitle": "Pourcentage d'une quantité",
+          "question": "<div class=\"antilles-pro-question antilles-pro-q9\"><style>\n.antilles-pro-sizes { border-collapse:collapse; margin:.5em auto; }\n.antilles-pro-sizes td { border:1px solid currentColor; padding:2px 6px; text-align:center; }\n.flash-reader #question > .antilles-pro-question { width:100%; max-width:100%; min-width:0; }\n.flash-reader:has(.antilles-pro-question) .main-content .question-container { min-width:0; }\n@media(min-width:601px) and (max-width:900px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n}\n@media(max-width:600px) {\n .flash-reader .antilles-pro-sizes, .flash-reader .antilles-pro-sizes tbody { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-sizes tr { display:flex; flex-wrap:wrap; justify-content:center; }\n .flash-reader .antilles-pro-sizes td { display:block; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table { display:block; width:100%; max-width:100%; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody { display:grid; grid-template-columns:minmax(0,1fr); row-gap:.5em; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr { display:contents; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:first-child { grid-area:1 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:first-child { grid-area:2 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:first-child > td:last-child { grid-area:3 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure > table > tbody > tr:last-child > td:last-child { grid-area:4 / 1; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table { width:100%; table-layout:fixed; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:first-child { width:calc(100% - 70px); }\n .flash-reader .antilles-pro-q7 .question-with-figure table table td:last-child { width:70px; }\n .flash-reader .antilles-pro-q7 .question-with-figure table table svg { max-width:100%; height:auto; }\n\n .flash-reader .antilles-pro-question,\n .flash-reader:has(.antilles-pro-question) #feedback,\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { font-size:20px; }\n .flash-reader:has(.antilles-pro-question) #qcm-buttons button { max-width:100%; }\n .flash-reader .antilles-pro-question .two-line-question[style] { font-size:1em!important; }\n .flash-reader .antilles-pro-question pre.blocks { max-width:100%; white-space:normal; }\n .flash-reader .antilles-pro-question pre.blocks svg { max-width:100%; height:auto; }\n .flash-reader:has(.antilles-pro-question) #mode-control,\n .flash-reader:has(.antilles-pro-question) #mode-control > div { flex-wrap:wrap; justify-content:center; max-width:100%; }\n .flash-reader:has(.antilles-pro-question) #mixed-qcm-control { flex-basis:100%; justify-content:center; margin-left:0!important; }\n}\n</style><div class=\"two-line-question\">  <div>  \\(\\text{Le}\\) \\(\\text{prix}\\) \\(\\text{d'un}\\) \\(\\text{article}\\) \\(\\text{coûtant}\\) \\(20~~\\text{€}\\) \\(\\text{augmente}\\) \\(\\text{de}\\) \\(40\\,\\%.\\)  </div>  <div>  \\(\\text{Indiquer}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{qui}\\) \\(\\text{permet}\\) \\(\\text{de}\\) \\(\\text{trouver}\\) \\(\\text{le}\\) \\(\\text{nouveau}\\) \\(\\text{prix.}\\)  </div>  </div></div>",
+          "answers": [
+            "20+20*40/100",
+            "20*(1+40/100)",
+            "20*1.4",
+            "20+20*0.4"
+          ],
+          "answerRule": {
+            "type": "calculationExpression",
+            "patterns": [
+              "20+20*40/100",
+              "20*(1+40/100)",
+              "20*1.4",
+              "20+20*0.4"
+            ],
+            "equivalences": {
+              "associativeAddition": true,
+              "commutativeAddition": true,
+              "associativeMultiplication": true,
+              "commutativeMultiplication": true
+            },
+            "allowNumberOnly": false
+          },
+          "possible_answers": [
+            "\\(20\\times\\dfrac{40}{100}\\)",
+            "\\(20+40\\)",
+            "\\(28\\)",
+            "\\(20+\\dfrac{20\\times40}{100}\\)"
+          ],
+          "display_answer": "\\(\\text{Le}\\) \\(\\text{calcul}\\) \\(\\text{attendu}\\) \\(\\text{est}\\) \\(20+\\dfrac{20\\times40}{100}.\\)  <br>  \\(\\text{On}\\) \\(\\text{ajoute}\\) \\(\\text{au}\\) \\(\\text{prix}\\) \\(\\text{initial}\\) \\(\\text{une}\\) \\(\\text{augmentation}\\) \\(\\text{égale}\\) \\(\\text{à}\\) \\(40\\,\\%\\) \\(\\text{de}\\) \\(\\text{ce}\\) \\(\\text{prix.}\\)  <br>  \\(\\text{On}\\) \\(\\text{peut}\\) \\(\\text{aussi}\\) \\(\\text{écrire}\\) \\(\\begin{aligned}&20\\times\\left(1+\\dfrac{40}{100}\\right)\\\\&=20\\times1{,}4.\\end{aligned}\\)  <br>  \\(\\text{Le}\\) \\(\\text{nouveau}\\) \\(\\text{prix}\\) \\(\\text{est}\\) \\(28~~\\text{€},\\) \\(\\text{mais}\\) \\(\\text{le}\\) \\(\\text{calcul}\\) \\(\\text{est}\\) \\(\\text{demandé.}\\)",
+          "qcmAnswersOrder": [
+            "\\(20\\times\\dfrac{40}{100}\\)",
+            "\\(20+40\\)",
+            "\\(28\\)",
+            "\\(20+\\dfrac{20\\times40}{100}\\)"
+          ],
+          "qcmRenderAnswer": {
+            "function": "value=>formatAntillesProChoice(value,question.id)"
+          }
+        }
+      ]
+    }
+  }
+]

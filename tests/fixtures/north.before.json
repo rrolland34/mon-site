@@ -1,0 +1,629 @@
+[
+  {
+    "seed": 17,
+    "state": 17,
+    "exercise": {
+      "title": "Amérique du Nord — juin 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Somme de fractions",
+          "question": "\\(\\text{Calculer } A=\\dfrac{2}{3}+\\dfrac{3}{4}.\\)",
+          "answers": [
+            "17/12"
+          ],
+          "possible_answers": [
+            "17/12",
+            "5/7",
+            "5/12",
+            "6/12"
+          ],
+          "answerRule": {
+            "type": "fraction"
+          },
+          "display_answer": "\\(A=\\dfrac{8}{12}+\\dfrac{9}{12}=\\dfrac{17}{12}\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Proportionnalité",
+          "subtitle": "Réduction en pourcentage",
+          "question": "Un article coûte 45 €. Quel sera son prix après une réduction de 10 % ?",
+          "answers": [
+            "40,5"
+          ],
+          "possible_answers": [
+            "40,50 €",
+            "35 €",
+            "4,50 €",
+            "49,50 €"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "decimal"
+            }
+          },
+          "display_answer": "\\(45\\times(1-0{,}10)=40{,}50\\) €"
+        },
+        {
+          "id": "q3",
+          "title": "Géométrie",
+          "subtitle": "Nature d'un quadrilatère",
+          "question": {
+            "direct": "\n        <div>\n          <p>Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.<br>\n          Quelle est la nature de ce quadrilatère ? Saisir son nom.</p>\n          <div class=\"question-display dnb-quadrilateral\">\n    <svg\n      viewBox=\"\n        -50\n        -50\n        450\n        280\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"0\"\n            y1=\"180\"\n            x2=\"350\"\n            y2=\"0\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"320\"\n            y1=\"150\"\n            x2=\"40\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"82.33512435136649\"\n        y1=\"130.9092496521586\"\n        x2=\"87.82330050281561\"\n        y2=\"141.58070327997635\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"89.44942676991167\"\n        y1=\"127.25046555119249\"\n        x2=\"94.93760292136079\"\n        y2=\"137.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"249.94942796496085\"\n        y1=\"126.50613179000943\"\n        x2=\"254.67645954791087\"\n        y2=\"115.47639142979274\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"242.59626772481639\"\n        y1=\"123.3547774013761\"\n        x2=\"247.3232993077664\"\n        y2=\"112.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"257.33512435136646\"\n        y1=\"40.90924965215857\"\n        x2=\"262.8233005028156\"\n        y2=\"51.58070327997634\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"264.44942676991167\"\n        y1=\"37.250465551192484\"\n        x2=\"269.9376029213608\"\n        y2=\"47.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"109.94942796496086\"\n        y1=\"66.50613179000943\"\n        x2=\"114.67645954791088\"\n        y2=\"55.476391429792734\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"102.5962677248164\"\n        y1=\"63.35477740137609\"\n        x2=\"107.32329930776642\"\n        y2=\"52.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"-24.97321904680549\"\n        y=\"192.662477263169\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"345.8057905038658\"\n        y=\"160.86559600162772\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"374.8243756926327\"\n        y=\"-12.951848187460554\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"14.336897405650266\"\n        y=\"18.801555231556478\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  </div>\n        </div>\n        ",
+            "qcm": "\n        <div>\n          <p>Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.<br>\n          Que peut-on affirmer à propos de la nature de ce quadrilatère ?</p>\n          <div class=\"question-display dnb-quadrilateral\">\n    <svg\n      viewBox=\"\n        -50\n        -50\n        450\n        280\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"0\"\n            y1=\"180\"\n            x2=\"350\"\n            y2=\"0\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"320\"\n            y1=\"150\"\n            x2=\"40\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"82.33512435136649\"\n        y1=\"130.9092496521586\"\n        x2=\"87.82330050281561\"\n        y2=\"141.58070327997635\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"89.44942676991167\"\n        y1=\"127.25046555119249\"\n        x2=\"94.93760292136079\"\n        y2=\"137.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"249.94942796496085\"\n        y1=\"126.50613179000943\"\n        x2=\"254.67645954791087\"\n        y2=\"115.47639142979274\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"242.59626772481639\"\n        y1=\"123.3547774013761\"\n        x2=\"247.3232993077664\"\n        y2=\"112.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"257.33512435136646\"\n        y1=\"40.90924965215857\"\n        x2=\"262.8233005028156\"\n        y2=\"51.58070327997634\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"264.44942676991167\"\n        y1=\"37.250465551192484\"\n        x2=\"269.9376029213608\"\n        y2=\"47.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"109.94942796496086\"\n        y1=\"66.50613179000943\"\n        x2=\"114.67645954791088\"\n        y2=\"55.476391429792734\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"102.5962677248164\"\n        y1=\"63.35477740137609\"\n        x2=\"107.32329930776642\"\n        y2=\"52.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"-24.97321904680549\"\n        y=\"192.662477263169\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"345.8057905038658\"\n        y=\"160.86559600162772\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"374.8243756926327\"\n        y=\"-12.951848187460554\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"14.336897405650266\"\n        y=\"18.801555231556478\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  </div>\n        </div>\n        "
+          },
+          "answers": [
+            "rectangle",
+            "un rectangle",
+            "C'est un rectangle",
+            "C’est un rectangle"
+          ],
+          "possible_answers": [
+            "C'est un losange",
+            "C'est un rectangle",
+            "C'est un carré",
+            "Ce n'est ni un losange, ni un rectangle"
+          ],
+          "qcmAnswer": "C'est un rectangle",
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "C'est un rectangle.<br>Ses diagonales ont le même milieu et la même longueur, d'après le codage."
+        },
+        {
+          "id": "q4",
+          "title": "Calcul littéral",
+          "subtitle": "Résolution d'une équation",
+          "question": "\\(\\text{Résoudre l'équation } 5x-15=20.\\)",
+          "answers": [
+            "7"
+          ],
+          "possible_answers": [
+            "7",
+            "1",
+            "4",
+            "35"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(5x=35\\), donc \\(x=7\\)."
+        },
+        {
+          "id": "q5",
+          "title": "Géométrie",
+          "subtitle": "Repérage dans le plan",
+          "question": "\n        <div>\n          <p>Dans le repère ci-contre, on a placé deux points A et B.</p>\n          <p>a. Quelle est l'abscisse du point A ?<br>\n          b. Quelles sont les coordonnées du point B ?</p>\n          <div class=\"question-display dnb-cartesian-plane\">\n    <svg\n      class=\"cartesian-plane\"\n      viewBox=\"0 0 550 430\"\n      width=\"100%\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Repère cartésien\"\n    >\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line\n          x1=\"85.62499999999999\"\n          y1=\"30\"\n          x2=\"85.62499999999999\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"141.875\"\n          y1=\"30\"\n          x2=\"141.875\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"198.125\"\n          y1=\"30\"\n          x2=\"198.125\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"254.375\"\n          y1=\"30\"\n          x2=\"254.375\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"310.625\"\n          y1=\"30\"\n          x2=\"310.625\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"366.875\"\n          y1=\"30\"\n          x2=\"366.875\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"423.125\"\n          y1=\"30\"\n          x2=\"423.125\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"479.375\"\n          y1=\"30\"\n          x2=\"479.375\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"378.75\"\n          x2=\"485\"\n          y2=\"378.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"322.5\"\n          x2=\"485\"\n          y2=\"322.5\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"266.25\"\n          x2=\"485\"\n          y2=\"266.25\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"210\"\n          x2=\"485\"\n          y2=\"210\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"153.75\"\n          x2=\"485\"\n          y2=\"153.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"97.50000000000001\"\n          x2=\"485\"\n          y2=\"97.50000000000001\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"41.250000000000014\"\n          x2=\"485\"\n          y2=\"41.250000000000014\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line\n        x1=\"80\"\n        y1=\"210\"\n        x2=\"485\"\n        y2=\"210\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n      />\n    \n        <line\n          x1=\"85.62499999999999\"\n          y1=\"206\"\n          x2=\"85.62499999999999\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"85.62499999999999\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -4\n        </text>\n      \n        <line\n          x1=\"141.875\"\n          y1=\"206\"\n          x2=\"141.875\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"141.875\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -3\n        </text>\n      \n        <line\n          x1=\"198.125\"\n          y1=\"206\"\n          x2=\"198.125\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"198.125\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -2\n        </text>\n      \n        <line\n          x1=\"254.375\"\n          y1=\"206\"\n          x2=\"254.375\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"254.375\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -1\n        </text>\n      \n        <line\n          x1=\"310.625\"\n          y1=\"206\"\n          x2=\"310.625\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"310.625\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          0\n        </text>\n      \n        <line\n          x1=\"366.875\"\n          y1=\"206\"\n          x2=\"366.875\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"366.875\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          1\n        </text>\n      \n        <line\n          x1=\"423.125\"\n          y1=\"206\"\n          x2=\"423.125\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"423.125\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          2\n        </text>\n      \n        <line\n          x1=\"479.375\"\n          y1=\"206\"\n          x2=\"479.375\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"479.375\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          3\n        </text>\n      \n        \n      <line\n        x1=\"310.625\"\n        y1=\"30\"\n        x2=\"310.625\"\n        y2=\"390\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n      />\n    \n        <line\n          x1=\"306.625\"\n          y1=\"378.75\"\n          x2=\"314.625\"\n          y2=\"378.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"382.75\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -3\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"322.5\"\n          x2=\"314.625\"\n          y2=\"322.5\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"326.5\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -2\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"266.25\"\n          x2=\"314.625\"\n          y2=\"266.25\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"270.25\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -1\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"210\"\n          x2=\"314.625\"\n          y2=\"210\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <line\n          x1=\"306.625\"\n          y1=\"153.75\"\n          x2=\"314.625\"\n          y2=\"153.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"157.75\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            1\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"97.50000000000001\"\n          x2=\"314.625\"\n          y2=\"97.50000000000001\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"101.50000000000001\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            2\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"41.250000000000014\"\n          x2=\"314.625\"\n          y2=\"41.250000000000014\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"45.250000000000014\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        >\n          <line\n            x1=\"194.125\"\n            y1=\"93.50000000000001\"\n            x2=\"202.125\"\n            y2=\"101.50000000000001\"\n          />\n\n          <line\n            x1=\"194.125\"\n            y1=\"101.50000000000001\"\n            x2=\"202.125\"\n            y2=\"93.50000000000001\"\n          />\n        </g>\n\n        \n          <text\n            x=\"188.125\"\n            y=\"101.50000000000001\"\n            text-anchor=\"end\"\n            font-size=\"14\"\n            fill=\"currentColor\"\n          >\n            A\n          </text>\n        \n      \n        <g\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        >\n          <line\n            x1=\"194.125\"\n            y1=\"262.25\"\n            x2=\"202.125\"\n            y2=\"270.25\"\n          />\n\n          <line\n            x1=\"194.125\"\n            y1=\"270.25\"\n            x2=\"202.125\"\n            y2=\"262.25\"\n          />\n        </g>\n\n        \n          <text\n            x=\"188.125\"\n            y=\"270.25\"\n            text-anchor=\"end\"\n            font-size=\"14\"\n            fill=\"currentColor\"\n          >\n            B\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>\n  </div>\n        </div>\n      ",
+          "answerFields": [
+            {
+              "label": "a. Abscisse de A :",
+              "answer": "-2",
+              "answerRule": {
+                "type": "integer"
+              }
+            },
+            {
+              "label": "b. Coordonnées de B :",
+              "answer": "B(-2;-1)",
+              "answerRule": {
+                "type": "coordinates",
+                "valueRule": {
+                  "type": "integer"
+                }
+              }
+            }
+          ],
+          "answers": [
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)"
+          ],
+          "possible_answers": [
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+            "\\mathrm{a.}\\ 2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-1;-2)",
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(2;1)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "a. \\(-2\\) ; b. \\(\\mathrm{B}(-2;-1)\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "Voici une série de nombres : 8 ; 19 ; 12 ; 3 ; 12 ; 25 ; 3 ; 11 ; 1.<br>Déterminer la médiane de cette série.",
+          "answers": [
+            "11"
+          ],
+          "possible_answers": [
+            "11",
+            "12",
+            "8",
+            "3"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "11.<br>La série ordonnée est 1 ; 3 ; 3 ; 8 ; 11 ; 12 ; 12 ; 19 ; 25. La médiane est la cinquième valeur."
+        },
+        {
+          "id": "q7",
+          "title": "Trigonométrie",
+          "subtitle": "Cosinus dans un triangle rectangle",
+          "question": {
+            "direct": "\n        <div>\n          <p>On considère un triangle ABC rectangle en A, avec BC = 5 cm et \\(\\widehat{\\text{ABC}}=60^\\circ\\).<br>\n          Écrire la formule qui permet d'obtenir la longueur AB.</p>\n          <div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n        <path\n          d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \"\n          fill=\"none\"\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        />\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"250\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"250\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"25.990198080048764\"\n        y=\"65.59411884802928\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"32.07483680939456\"\n        y=\"251.51019582872652\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"326.81913598619224\"\n        y=\"71.95425920414232\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"187.34789813026063\"\n        y=\"175.57983021710106\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \"\n      >\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"26\"\n        y=\"155\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"175\"\n        y=\"56\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text\n            x=\"85.61387617495907\"\n            y=\"167.09911454199187\"\n            text-anchor=\"middle\"\n            dominant-baseline=\"middle\"\n            font-size=\"22\"\n            fill=\"currentColor\"\n          >\n            60°\n          </text>\n        \n\n      \n\n    </svg>\n  </div>\n        </div>\n        ",
+            "qcm": "\n        <div>\n          <p>On considère un triangle ABC rectangle en A, avec BC = 5 cm et \\(\\widehat{\\text{ABC}}=60^\\circ\\).<br>\n          Choisir la formule qui permet d'obtenir la longueur AB.</p>\n          <div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n        <path\n          d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \"\n          fill=\"none\"\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        />\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"250\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"250\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"25.990198080048764\"\n        y=\"65.59411884802928\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"32.07483680939456\"\n        y=\"251.51019582872652\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"326.81913598619224\"\n        y=\"71.95425920414232\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"187.34789813026063\"\n        y=\"175.57983021710106\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \"\n      >\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"26\"\n        y=\"155\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"175\"\n        y=\"56\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text\n            x=\"85.61387617495907\"\n            y=\"167.09911454199187\"\n            text-anchor=\"middle\"\n            dominant-baseline=\"middle\"\n            font-size=\"22\"\n            fill=\"currentColor\"\n          >\n            60°\n          </text>\n        \n\n      \n\n    </svg>\n  </div>\n        </div>\n        "
+          },
+          "answers": [
+            "5\\times\\cos(60)",
+            "5*cos(60)",
+            "5×cos(60)",
+            "5xcos(60)",
+            "5 cos(60)",
+            "5*cos(60°)",
+            "5×cos(60°)",
+            "AB=5*cos(60)",
+            "AB=5×cos(60)",
+            "AB=5*cos(60°)",
+            "AB=5×cos(60°)"
+          ],
+          "possible_answers": [
+            "5\\times\\sin(60)",
+            "5\\times\\cos(60)",
+            "5\\div\\sin(60)",
+            "5\\div\\cos(60)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(\\text{AB}=5\\times\\cos(60^\\circ)\\).<br>En effet, \\(\\cos(60^\\circ)=\\dfrac{\\text{AB}}{5}\\)."
+        },
+        {
+          "id": "q8",
+          "title": "Arithmétique",
+          "subtitle": "Diviseurs d'un entier",
+          "question": "Donner un diviseur de 387 autre que 1 et lui-même.",
+          "answers": [
+            "3",
+            "9",
+            "43",
+            "129"
+          ],
+          "possible_answers": [
+            "3",
+            "1",
+            "387",
+            "2"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(3\\), \\(9\\), \\(43\\) ou \\(129\\).<br>En effet, \\(387=3\\times129=9\\times43\\)."
+        }
+      ]
+    }
+  },
+  {
+    "seed": 2026,
+    "state": 2026,
+    "exercise": {
+      "title": "Amérique du Nord — juin 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Somme de fractions",
+          "question": "\\(\\text{Calculer } A=\\dfrac{2}{3}+\\dfrac{3}{4}.\\)",
+          "answers": [
+            "17/12"
+          ],
+          "possible_answers": [
+            "17/12",
+            "5/7",
+            "5/12",
+            "6/12"
+          ],
+          "answerRule": {
+            "type": "fraction"
+          },
+          "display_answer": "\\(A=\\dfrac{8}{12}+\\dfrac{9}{12}=\\dfrac{17}{12}\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Proportionnalité",
+          "subtitle": "Réduction en pourcentage",
+          "question": "Un article coûte 45 €. Quel sera son prix après une réduction de 10 % ?",
+          "answers": [
+            "40,5"
+          ],
+          "possible_answers": [
+            "40,50 €",
+            "35 €",
+            "4,50 €",
+            "49,50 €"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "decimal"
+            }
+          },
+          "display_answer": "\\(45\\times(1-0{,}10)=40{,}50\\) €"
+        },
+        {
+          "id": "q3",
+          "title": "Géométrie",
+          "subtitle": "Nature d'un quadrilatère",
+          "question": {
+            "direct": "\n        <div>\n          <p>Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.<br>\n          Quelle est la nature de ce quadrilatère ? Saisir son nom.</p>\n          <div class=\"question-display dnb-quadrilateral\">\n    <svg\n      viewBox=\"\n        -50\n        -50\n        450\n        280\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"0\"\n            y1=\"180\"\n            x2=\"350\"\n            y2=\"0\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"320\"\n            y1=\"150\"\n            x2=\"40\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"82.33512435136649\"\n        y1=\"130.9092496521586\"\n        x2=\"87.82330050281561\"\n        y2=\"141.58070327997635\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"89.44942676991167\"\n        y1=\"127.25046555119249\"\n        x2=\"94.93760292136079\"\n        y2=\"137.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"249.94942796496085\"\n        y1=\"126.50613179000943\"\n        x2=\"254.67645954791087\"\n        y2=\"115.47639142979274\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"242.59626772481639\"\n        y1=\"123.3547774013761\"\n        x2=\"247.3232993077664\"\n        y2=\"112.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"257.33512435136646\"\n        y1=\"40.90924965215857\"\n        x2=\"262.8233005028156\"\n        y2=\"51.58070327997634\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"264.44942676991167\"\n        y1=\"37.250465551192484\"\n        x2=\"269.9376029213608\"\n        y2=\"47.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"109.94942796496086\"\n        y1=\"66.50613179000943\"\n        x2=\"114.67645954791088\"\n        y2=\"55.476391429792734\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"102.5962677248164\"\n        y1=\"63.35477740137609\"\n        x2=\"107.32329930776642\"\n        y2=\"52.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"-24.97321904680549\"\n        y=\"192.662477263169\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"345.8057905038658\"\n        y=\"160.86559600162772\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"374.8243756926327\"\n        y=\"-12.951848187460554\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"14.336897405650266\"\n        y=\"18.801555231556478\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  </div>\n        </div>\n        ",
+            "qcm": "\n        <div>\n          <p>Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.<br>\n          Que peut-on affirmer à propos de la nature de ce quadrilatère ?</p>\n          <div class=\"question-display dnb-quadrilateral\">\n    <svg\n      viewBox=\"\n        -50\n        -50\n        450\n        280\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"0\"\n            y1=\"180\"\n            x2=\"350\"\n            y2=\"0\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"320\"\n            y1=\"150\"\n            x2=\"40\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"82.33512435136649\"\n        y1=\"130.9092496521586\"\n        x2=\"87.82330050281561\"\n        y2=\"141.58070327997635\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"89.44942676991167\"\n        y1=\"127.25046555119249\"\n        x2=\"94.93760292136079\"\n        y2=\"137.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"249.94942796496085\"\n        y1=\"126.50613179000943\"\n        x2=\"254.67645954791087\"\n        y2=\"115.47639142979274\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"242.59626772481639\"\n        y1=\"123.3547774013761\"\n        x2=\"247.3232993077664\"\n        y2=\"112.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"257.33512435136646\"\n        y1=\"40.90924965215857\"\n        x2=\"262.8233005028156\"\n        y2=\"51.58070327997634\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"264.44942676991167\"\n        y1=\"37.250465551192484\"\n        x2=\"269.9376029213608\"\n        y2=\"47.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"109.94942796496086\"\n        y1=\"66.50613179000943\"\n        x2=\"114.67645954791088\"\n        y2=\"55.476391429792734\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"102.5962677248164\"\n        y1=\"63.35477740137609\"\n        x2=\"107.32329930776642\"\n        y2=\"52.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"-24.97321904680549\"\n        y=\"192.662477263169\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"345.8057905038658\"\n        y=\"160.86559600162772\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"374.8243756926327\"\n        y=\"-12.951848187460554\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"14.336897405650266\"\n        y=\"18.801555231556478\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  </div>\n        </div>\n        "
+          },
+          "answers": [
+            "rectangle",
+            "un rectangle",
+            "C'est un rectangle",
+            "C’est un rectangle"
+          ],
+          "possible_answers": [
+            "C'est un losange",
+            "C'est un rectangle",
+            "C'est un carré",
+            "Ce n'est ni un losange, ni un rectangle"
+          ],
+          "qcmAnswer": "C'est un rectangle",
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "C'est un rectangle.<br>Ses diagonales ont le même milieu et la même longueur, d'après le codage."
+        },
+        {
+          "id": "q4",
+          "title": "Calcul littéral",
+          "subtitle": "Résolution d'une équation",
+          "question": "\\(\\text{Résoudre l'équation } 5x-15=20.\\)",
+          "answers": [
+            "7"
+          ],
+          "possible_answers": [
+            "7",
+            "1",
+            "4",
+            "35"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(5x=35\\), donc \\(x=7\\)."
+        },
+        {
+          "id": "q5",
+          "title": "Géométrie",
+          "subtitle": "Repérage dans le plan",
+          "question": "\n        <div>\n          <p>Dans le repère ci-contre, on a placé deux points A et B.</p>\n          <p>a. Quelle est l'abscisse du point A ?<br>\n          b. Quelles sont les coordonnées du point B ?</p>\n          <div class=\"question-display dnb-cartesian-plane\">\n    <svg\n      class=\"cartesian-plane\"\n      viewBox=\"0 0 550 430\"\n      width=\"100%\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Repère cartésien\"\n    >\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line\n          x1=\"85.62499999999999\"\n          y1=\"30\"\n          x2=\"85.62499999999999\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"141.875\"\n          y1=\"30\"\n          x2=\"141.875\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"198.125\"\n          y1=\"30\"\n          x2=\"198.125\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"254.375\"\n          y1=\"30\"\n          x2=\"254.375\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"310.625\"\n          y1=\"30\"\n          x2=\"310.625\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"366.875\"\n          y1=\"30\"\n          x2=\"366.875\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"423.125\"\n          y1=\"30\"\n          x2=\"423.125\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"479.375\"\n          y1=\"30\"\n          x2=\"479.375\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"378.75\"\n          x2=\"485\"\n          y2=\"378.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"322.5\"\n          x2=\"485\"\n          y2=\"322.5\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"266.25\"\n          x2=\"485\"\n          y2=\"266.25\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"210\"\n          x2=\"485\"\n          y2=\"210\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"153.75\"\n          x2=\"485\"\n          y2=\"153.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"97.50000000000001\"\n          x2=\"485\"\n          y2=\"97.50000000000001\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"41.250000000000014\"\n          x2=\"485\"\n          y2=\"41.250000000000014\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line\n        x1=\"80\"\n        y1=\"210\"\n        x2=\"485\"\n        y2=\"210\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n      />\n    \n        <line\n          x1=\"85.62499999999999\"\n          y1=\"206\"\n          x2=\"85.62499999999999\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"85.62499999999999\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -4\n        </text>\n      \n        <line\n          x1=\"141.875\"\n          y1=\"206\"\n          x2=\"141.875\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"141.875\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -3\n        </text>\n      \n        <line\n          x1=\"198.125\"\n          y1=\"206\"\n          x2=\"198.125\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"198.125\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -2\n        </text>\n      \n        <line\n          x1=\"254.375\"\n          y1=\"206\"\n          x2=\"254.375\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"254.375\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -1\n        </text>\n      \n        <line\n          x1=\"310.625\"\n          y1=\"206\"\n          x2=\"310.625\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"310.625\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          0\n        </text>\n      \n        <line\n          x1=\"366.875\"\n          y1=\"206\"\n          x2=\"366.875\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"366.875\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          1\n        </text>\n      \n        <line\n          x1=\"423.125\"\n          y1=\"206\"\n          x2=\"423.125\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"423.125\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          2\n        </text>\n      \n        <line\n          x1=\"479.375\"\n          y1=\"206\"\n          x2=\"479.375\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"479.375\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          3\n        </text>\n      \n        \n      <line\n        x1=\"310.625\"\n        y1=\"30\"\n        x2=\"310.625\"\n        y2=\"390\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n      />\n    \n        <line\n          x1=\"306.625\"\n          y1=\"378.75\"\n          x2=\"314.625\"\n          y2=\"378.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"382.75\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -3\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"322.5\"\n          x2=\"314.625\"\n          y2=\"322.5\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"326.5\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -2\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"266.25\"\n          x2=\"314.625\"\n          y2=\"266.25\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"270.25\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -1\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"210\"\n          x2=\"314.625\"\n          y2=\"210\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <line\n          x1=\"306.625\"\n          y1=\"153.75\"\n          x2=\"314.625\"\n          y2=\"153.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"157.75\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            1\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"97.50000000000001\"\n          x2=\"314.625\"\n          y2=\"97.50000000000001\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"101.50000000000001\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            2\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"41.250000000000014\"\n          x2=\"314.625\"\n          y2=\"41.250000000000014\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"45.250000000000014\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        >\n          <line\n            x1=\"194.125\"\n            y1=\"93.50000000000001\"\n            x2=\"202.125\"\n            y2=\"101.50000000000001\"\n          />\n\n          <line\n            x1=\"194.125\"\n            y1=\"101.50000000000001\"\n            x2=\"202.125\"\n            y2=\"93.50000000000001\"\n          />\n        </g>\n\n        \n          <text\n            x=\"188.125\"\n            y=\"101.50000000000001\"\n            text-anchor=\"end\"\n            font-size=\"14\"\n            fill=\"currentColor\"\n          >\n            A\n          </text>\n        \n      \n        <g\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        >\n          <line\n            x1=\"194.125\"\n            y1=\"262.25\"\n            x2=\"202.125\"\n            y2=\"270.25\"\n          />\n\n          <line\n            x1=\"194.125\"\n            y1=\"270.25\"\n            x2=\"202.125\"\n            y2=\"262.25\"\n          />\n        </g>\n\n        \n          <text\n            x=\"188.125\"\n            y=\"270.25\"\n            text-anchor=\"end\"\n            font-size=\"14\"\n            fill=\"currentColor\"\n          >\n            B\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>\n  </div>\n        </div>\n      ",
+          "answerFields": [
+            {
+              "label": "a. Abscisse de A :",
+              "answer": "-2",
+              "answerRule": {
+                "type": "integer"
+              }
+            },
+            {
+              "label": "b. Coordonnées de B :",
+              "answer": "B(-2;-1)",
+              "answerRule": {
+                "type": "coordinates",
+                "valueRule": {
+                  "type": "integer"
+                }
+              }
+            }
+          ],
+          "answers": [
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)"
+          ],
+          "possible_answers": [
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+            "\\mathrm{a.}\\ 2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-1;-2)",
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(2;1)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "a. \\(-2\\) ; b. \\(\\mathrm{B}(-2;-1)\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "Voici une série de nombres : 8 ; 19 ; 12 ; 3 ; 12 ; 25 ; 3 ; 11 ; 1.<br>Déterminer la médiane de cette série.",
+          "answers": [
+            "11"
+          ],
+          "possible_answers": [
+            "11",
+            "12",
+            "8",
+            "3"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "11.<br>La série ordonnée est 1 ; 3 ; 3 ; 8 ; 11 ; 12 ; 12 ; 19 ; 25. La médiane est la cinquième valeur."
+        },
+        {
+          "id": "q7",
+          "title": "Trigonométrie",
+          "subtitle": "Cosinus dans un triangle rectangle",
+          "question": {
+            "direct": "\n        <div>\n          <p>On considère un triangle ABC rectangle en A, avec BC = 5 cm et \\(\\widehat{\\text{ABC}}=60^\\circ\\).<br>\n          Écrire la formule qui permet d'obtenir la longueur AB.</p>\n          <div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n        <path\n          d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \"\n          fill=\"none\"\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        />\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"250\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"250\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"25.990198080048764\"\n        y=\"65.59411884802928\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"32.07483680939456\"\n        y=\"251.51019582872652\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"326.81913598619224\"\n        y=\"71.95425920414232\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"187.34789813026063\"\n        y=\"175.57983021710106\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \"\n      >\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"26\"\n        y=\"155\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"175\"\n        y=\"56\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text\n            x=\"85.61387617495907\"\n            y=\"167.09911454199187\"\n            text-anchor=\"middle\"\n            dominant-baseline=\"middle\"\n            font-size=\"22\"\n            fill=\"currentColor\"\n          >\n            60°\n          </text>\n        \n\n      \n\n    </svg>\n  </div>\n        </div>\n        ",
+            "qcm": "\n        <div>\n          <p>On considère un triangle ABC rectangle en A, avec BC = 5 cm et \\(\\widehat{\\text{ABC}}=60^\\circ\\).<br>\n          Choisir la formule qui permet d'obtenir la longueur AB.</p>\n          <div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n        <path\n          d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \"\n          fill=\"none\"\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        />\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"250\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"250\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"25.990198080048764\"\n        y=\"65.59411884802928\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"32.07483680939456\"\n        y=\"251.51019582872652\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"326.81913598619224\"\n        y=\"71.95425920414232\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"187.34789813026063\"\n        y=\"175.57983021710106\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \"\n      >\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"26\"\n        y=\"155\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"175\"\n        y=\"56\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text\n            x=\"85.61387617495907\"\n            y=\"167.09911454199187\"\n            text-anchor=\"middle\"\n            dominant-baseline=\"middle\"\n            font-size=\"22\"\n            fill=\"currentColor\"\n          >\n            60°\n          </text>\n        \n\n      \n\n    </svg>\n  </div>\n        </div>\n        "
+          },
+          "answers": [
+            "5\\times\\cos(60)",
+            "5*cos(60)",
+            "5×cos(60)",
+            "5xcos(60)",
+            "5 cos(60)",
+            "5*cos(60°)",
+            "5×cos(60°)",
+            "AB=5*cos(60)",
+            "AB=5×cos(60)",
+            "AB=5*cos(60°)",
+            "AB=5×cos(60°)"
+          ],
+          "possible_answers": [
+            "5\\times\\sin(60)",
+            "5\\times\\cos(60)",
+            "5\\div\\sin(60)",
+            "5\\div\\cos(60)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(\\text{AB}=5\\times\\cos(60^\\circ)\\).<br>En effet, \\(\\cos(60^\\circ)=\\dfrac{\\text{AB}}{5}\\)."
+        },
+        {
+          "id": "q8",
+          "title": "Arithmétique",
+          "subtitle": "Diviseurs d'un entier",
+          "question": "Donner un diviseur de 387 autre que 1 et lui-même.",
+          "answers": [
+            "3",
+            "9",
+            "43",
+            "129"
+          ],
+          "possible_answers": [
+            "3",
+            "1",
+            "387",
+            "2"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(3\\), \\(9\\), \\(43\\) ou \\(129\\).<br>En effet, \\(387=3\\times129=9\\times43\\)."
+        }
+      ]
+    }
+  },
+  {
+    "seed": 98765,
+    "state": 98765,
+    "exercise": {
+      "title": "Amérique du Nord — juin 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Somme de fractions",
+          "question": "\\(\\text{Calculer } A=\\dfrac{2}{3}+\\dfrac{3}{4}.\\)",
+          "answers": [
+            "17/12"
+          ],
+          "possible_answers": [
+            "17/12",
+            "5/7",
+            "5/12",
+            "6/12"
+          ],
+          "answerRule": {
+            "type": "fraction"
+          },
+          "display_answer": "\\(A=\\dfrac{8}{12}+\\dfrac{9}{12}=\\dfrac{17}{12}\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Proportionnalité",
+          "subtitle": "Réduction en pourcentage",
+          "question": "Un article coûte 45 €. Quel sera son prix après une réduction de 10 % ?",
+          "answers": [
+            "40,5"
+          ],
+          "possible_answers": [
+            "40,50 €",
+            "35 €",
+            "4,50 €",
+            "49,50 €"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "decimal"
+            }
+          },
+          "display_answer": "\\(45\\times(1-0{,}10)=40{,}50\\) €"
+        },
+        {
+          "id": "q3",
+          "title": "Géométrie",
+          "subtitle": "Nature d'un quadrilatère",
+          "question": {
+            "direct": "\n        <div>\n          <p>Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.<br>\n          Quelle est la nature de ce quadrilatère ? Saisir son nom.</p>\n          <div class=\"question-display dnb-quadrilateral\">\n    <svg\n      viewBox=\"\n        -50\n        -50\n        450\n        280\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"0\"\n            y1=\"180\"\n            x2=\"350\"\n            y2=\"0\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"320\"\n            y1=\"150\"\n            x2=\"40\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"82.33512435136649\"\n        y1=\"130.9092496521586\"\n        x2=\"87.82330050281561\"\n        y2=\"141.58070327997635\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"89.44942676991167\"\n        y1=\"127.25046555119249\"\n        x2=\"94.93760292136079\"\n        y2=\"137.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"249.94942796496085\"\n        y1=\"126.50613179000943\"\n        x2=\"254.67645954791087\"\n        y2=\"115.47639142979274\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"242.59626772481639\"\n        y1=\"123.3547774013761\"\n        x2=\"247.3232993077664\"\n        y2=\"112.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"257.33512435136646\"\n        y1=\"40.90924965215857\"\n        x2=\"262.8233005028156\"\n        y2=\"51.58070327997634\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"264.44942676991167\"\n        y1=\"37.250465551192484\"\n        x2=\"269.9376029213608\"\n        y2=\"47.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"109.94942796496086\"\n        y1=\"66.50613179000943\"\n        x2=\"114.67645954791088\"\n        y2=\"55.476391429792734\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"102.5962677248164\"\n        y1=\"63.35477740137609\"\n        x2=\"107.32329930776642\"\n        y2=\"52.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"-24.97321904680549\"\n        y=\"192.662477263169\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"345.8057905038658\"\n        y=\"160.86559600162772\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"374.8243756926327\"\n        y=\"-12.951848187460554\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"14.336897405650266\"\n        y=\"18.801555231556478\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  </div>\n        </div>\n        ",
+            "qcm": "\n        <div>\n          <p>Un professeur a dessiné à main levée le quadrilatère ci-dessous avec ses diagonales.<br>\n          Que peut-on affirmer à propos de la nature de ce quadrilatère ?</p>\n          <div class=\"question-display dnb-quadrilateral\">\n    <svg\n      viewBox=\"\n        -50\n        -50\n        450\n        280\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Quadrilatère\"\n    >\n      <polygon\n        points=\"\n          0,180\n          320,150\n          350,0\n          40,30\n        \"\n        fill=\"none\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <g class=\"quadrilateral-right-angles\">\n        \n        \n      </g>\n\n      <g class=\"quadrilateral-angle-codings\">\n        \n      </g>\n\n      <g class=\"quadrilateral-angle-labels\">\n        \n      </g>\n\n        \n        <g class=\"quadrilateral-diagonals\">\n          <line\n            x1=\"0\"\n            y1=\"180\"\n            x2=\"350\"\n            y2=\"0\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n\n          <line\n            x1=\"320\"\n            y1=\"150\"\n            x2=\"40\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"2\"\n          />\n        </g>\n      \n\n      <g class=\"quadrilateral-side-marks\">\n        \n      </g>\n\n      <g class=\"quadrilateral-diagonal-marks\">\n        \n      <line\n        x1=\"82.33512435136649\"\n        y1=\"130.9092496521586\"\n        x2=\"87.82330050281561\"\n        y2=\"141.58070327997635\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"89.44942676991167\"\n        y1=\"127.25046555119249\"\n        x2=\"94.93760292136079\"\n        y2=\"137.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"249.94942796496085\"\n        y1=\"126.50613179000943\"\n        x2=\"254.67645954791087\"\n        y2=\"115.47639142979274\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"242.59626772481639\"\n        y1=\"123.3547774013761\"\n        x2=\"247.3232993077664\"\n        y2=\"112.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"257.33512435136646\"\n        y1=\"40.90924965215857\"\n        x2=\"262.8233005028156\"\n        y2=\"51.58070327997634\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"264.44942676991167\"\n        y1=\"37.250465551192484\"\n        x2=\"269.9376029213608\"\n        y2=\"47.92191917901025\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"109.94942796496086\"\n        y1=\"66.50613179000943\"\n        x2=\"114.67645954791088\"\n        y2=\"55.476391429792734\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"102.5962677248164\"\n        y1=\"63.35477740137609\"\n        x2=\"107.32329930776642\"\n        y2=\"52.3250370411594\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      </g>\n\n      <g class=\"quadrilateral-length-labels\">\n        \n      </g>\n\n      <text\n        x=\"-24.97321904680549\"\n        y=\"192.662477263169\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"345.8057905038658\"\n        y=\"160.86559600162772\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"374.8243756926327\"\n        y=\"-12.951848187460554\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <text\n        x=\"14.336897405650266\"\n        y=\"18.801555231556478\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n        \n    </svg>\n  </div>\n        </div>\n        "
+          },
+          "answers": [
+            "rectangle",
+            "un rectangle",
+            "C'est un rectangle",
+            "C’est un rectangle"
+          ],
+          "possible_answers": [
+            "C'est un losange",
+            "C'est un rectangle",
+            "C'est un carré",
+            "Ce n'est ni un losange, ni un rectangle"
+          ],
+          "qcmAnswer": "C'est un rectangle",
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "C'est un rectangle.<br>Ses diagonales ont le même milieu et la même longueur, d'après le codage."
+        },
+        {
+          "id": "q4",
+          "title": "Calcul littéral",
+          "subtitle": "Résolution d'une équation",
+          "question": "\\(\\text{Résoudre l'équation } 5x-15=20.\\)",
+          "answers": [
+            "7"
+          ],
+          "possible_answers": [
+            "7",
+            "1",
+            "4",
+            "35"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(5x=35\\), donc \\(x=7\\)."
+        },
+        {
+          "id": "q5",
+          "title": "Géométrie",
+          "subtitle": "Repérage dans le plan",
+          "question": "\n        <div>\n          <p>Dans le repère ci-contre, on a placé deux points A et B.</p>\n          <p>a. Quelle est l'abscisse du point A ?<br>\n          b. Quelles sont les coordonnées du point B ?</p>\n          <div class=\"question-display dnb-cartesian-plane\">\n    <svg\n      class=\"cartesian-plane\"\n      viewBox=\"0 0 550 430\"\n      width=\"100%\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Repère cartésien\"\n    >\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line\n          x1=\"85.62499999999999\"\n          y1=\"30\"\n          x2=\"85.62499999999999\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"141.875\"\n          y1=\"30\"\n          x2=\"141.875\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"198.125\"\n          y1=\"30\"\n          x2=\"198.125\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"254.375\"\n          y1=\"30\"\n          x2=\"254.375\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"310.625\"\n          y1=\"30\"\n          x2=\"310.625\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"366.875\"\n          y1=\"30\"\n          x2=\"366.875\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"423.125\"\n          y1=\"30\"\n          x2=\"423.125\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"479.375\"\n          y1=\"30\"\n          x2=\"479.375\"\n          y2=\"390\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"378.75\"\n          x2=\"485\"\n          y2=\"378.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"322.5\"\n          x2=\"485\"\n          y2=\"322.5\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"266.25\"\n          x2=\"485\"\n          y2=\"266.25\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"210\"\n          x2=\"485\"\n          y2=\"210\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"153.75\"\n          x2=\"485\"\n          y2=\"153.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"97.50000000000001\"\n          x2=\"485\"\n          y2=\"97.50000000000001\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n        <line\n          x1=\"80\"\n          y1=\"41.250000000000014\"\n          x2=\"485\"\n          y2=\"41.250000000000014\"\n          stroke=\"currentColor\"\n          stroke-width=\"0.7\"\n          opacity=\"0.45\"\n        />\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line\n        x1=\"80\"\n        y1=\"210\"\n        x2=\"485\"\n        y2=\"210\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n      />\n    \n        <line\n          x1=\"85.62499999999999\"\n          y1=\"206\"\n          x2=\"85.62499999999999\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"85.62499999999999\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -4\n        </text>\n      \n        <line\n          x1=\"141.875\"\n          y1=\"206\"\n          x2=\"141.875\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"141.875\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -3\n        </text>\n      \n        <line\n          x1=\"198.125\"\n          y1=\"206\"\n          x2=\"198.125\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"198.125\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -2\n        </text>\n      \n        <line\n          x1=\"254.375\"\n          y1=\"206\"\n          x2=\"254.375\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"254.375\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          -1\n        </text>\n      \n        <line\n          x1=\"310.625\"\n          y1=\"206\"\n          x2=\"310.625\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"310.625\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          0\n        </text>\n      \n        <line\n          x1=\"366.875\"\n          y1=\"206\"\n          x2=\"366.875\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"366.875\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          1\n        </text>\n      \n        <line\n          x1=\"423.125\"\n          y1=\"206\"\n          x2=\"423.125\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"423.125\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          2\n        </text>\n      \n        <line\n          x1=\"479.375\"\n          y1=\"206\"\n          x2=\"479.375\"\n          y2=\"214\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <text\n          x=\"479.375\"\n          y=\"228\"\n          text-anchor=\"middle\"\n          font-size=\"12\"\n          fill=\"currentColor\"\n        >\n          3\n        </text>\n      \n        \n      <line\n        x1=\"310.625\"\n        y1=\"30\"\n        x2=\"310.625\"\n        y2=\"390\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n      />\n    \n        <line\n          x1=\"306.625\"\n          y1=\"378.75\"\n          x2=\"314.625\"\n          y2=\"378.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"382.75\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -3\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"322.5\"\n          x2=\"314.625\"\n          y2=\"322.5\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"326.5\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -2\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"266.25\"\n          x2=\"314.625\"\n          y2=\"266.25\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"270.25\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            -1\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"210\"\n          x2=\"314.625\"\n          y2=\"210\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n        <line\n          x1=\"306.625\"\n          y1=\"153.75\"\n          x2=\"314.625\"\n          y2=\"153.75\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"157.75\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            1\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"97.50000000000001\"\n          x2=\"314.625\"\n          y2=\"97.50000000000001\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"101.50000000000001\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            2\n          </text>\n        \n        <line\n          x1=\"306.625\"\n          y1=\"41.250000000000014\"\n          x2=\"314.625\"\n          y2=\"41.250000000000014\"\n          stroke=\"currentColor\"\n          stroke-width=\"1\"\n        />\n      \n          <text\n            x=\"301.625\"\n            y=\"45.250000000000014\"\n            text-anchor=\"end\"\n            font-size=\"12\"\n            fill=\"currentColor\"\n          >\n            3\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n        <g\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        >\n          <line\n            x1=\"194.125\"\n            y1=\"93.50000000000001\"\n            x2=\"202.125\"\n            y2=\"101.50000000000001\"\n          />\n\n          <line\n            x1=\"194.125\"\n            y1=\"101.50000000000001\"\n            x2=\"202.125\"\n            y2=\"93.50000000000001\"\n          />\n        </g>\n\n        \n          <text\n            x=\"188.125\"\n            y=\"101.50000000000001\"\n            text-anchor=\"end\"\n            font-size=\"14\"\n            fill=\"currentColor\"\n          >\n            A\n          </text>\n        \n      \n        <g\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        >\n          <line\n            x1=\"194.125\"\n            y1=\"262.25\"\n            x2=\"202.125\"\n            y2=\"270.25\"\n          />\n\n          <line\n            x1=\"194.125\"\n            y1=\"270.25\"\n            x2=\"202.125\"\n            y2=\"262.25\"\n          />\n        </g>\n\n        \n          <text\n            x=\"188.125\"\n            y=\"270.25\"\n            text-anchor=\"end\"\n            font-size=\"14\"\n            fill=\"currentColor\"\n          >\n            B\n          </text>\n        \n      \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>\n  </div>\n        </div>\n      ",
+          "answerFields": [
+            {
+              "label": "a. Abscisse de A :",
+              "answer": "-2",
+              "answerRule": {
+                "type": "integer"
+              }
+            },
+            {
+              "label": "b. Coordonnées de B :",
+              "answer": "B(-2;-1)",
+              "answerRule": {
+                "type": "coordinates",
+                "valueRule": {
+                  "type": "integer"
+                }
+              }
+            }
+          ],
+          "answers": [
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)"
+          ],
+          "possible_answers": [
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+            "\\mathrm{a.}\\ 2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-2;-1)",
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(-1;-2)",
+            "\\mathrm{a.}\\ -2\\ ;\\quad \\mathrm{b.}\\ \\mathrm{B}(2;1)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "a. \\(-2\\) ; b. \\(\\mathrm{B}(-2;-1)\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "Voici une série de nombres : 8 ; 19 ; 12 ; 3 ; 12 ; 25 ; 3 ; 11 ; 1.<br>Déterminer la médiane de cette série.",
+          "answers": [
+            "11"
+          ],
+          "possible_answers": [
+            "11",
+            "12",
+            "8",
+            "3"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "11.<br>La série ordonnée est 1 ; 3 ; 3 ; 8 ; 11 ; 12 ; 12 ; 19 ; 25. La médiane est la cinquième valeur."
+        },
+        {
+          "id": "q7",
+          "title": "Trigonométrie",
+          "subtitle": "Cosinus dans un triangle rectangle",
+          "question": {
+            "direct": "\n        <div>\n          <p>On considère un triangle ABC rectangle en A, avec BC = 5 cm et \\(\\widehat{\\text{ABC}}=60^\\circ\\).<br>\n          Écrire la formule qui permet d'obtenir la longueur AB.</p>\n          <div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n        <path\n          d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \"\n          fill=\"none\"\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        />\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"250\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"250\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"25.990198080048764\"\n        y=\"65.59411884802928\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"32.07483680939456\"\n        y=\"251.51019582872652\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"326.81913598619224\"\n        y=\"71.95425920414232\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"187.34789813026063\"\n        y=\"175.57983021710106\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \"\n      >\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"26\"\n        y=\"155\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"175\"\n        y=\"56\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text\n            x=\"85.61387617495907\"\n            y=\"167.09911454199187\"\n            text-anchor=\"middle\"\n            dominant-baseline=\"middle\"\n            font-size=\"22\"\n            fill=\"currentColor\"\n          >\n            60°\n          </text>\n        \n\n      \n\n    </svg>\n  </div>\n        </div>\n        ",
+            "qcm": "\n        <div>\n          <p>On considère un triangle ABC rectangle en A, avec BC = 5 cm et \\(\\widehat{\\text{ABC}}=60^\\circ\\).<br>\n          Choisir la formule qui permet d'obtenir la longueur AB.</p>\n          <div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        -30\n        -1.4210854715202004e-14\n        410\n        310\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            90\n            175\n            155\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 120 280\n        L 120 260\n        L 100 260\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n        <path\n          d=\"\n    M 210 280\n    A 40 40\n      0 0 1\n      229.42016978289894 245.7002829714982\n  \"\n          fill=\"none\"\n          stroke=\"currentColor\"\n          stroke-width=\"2\"\n        />\n      \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"250\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"250\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"30\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"25.990198080048764\"\n        y=\"65.59411884802928\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        A\n      </text>\n\n      <text\n        x=\"32.07483680939456\"\n        y=\"251.51019582872652\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        B\n      </text>\n\n      <text\n        x=\"326.81913598619224\"\n        y=\"71.95425920414232\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        C\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"187.34789813026063\"\n        y=\"175.57983021710106\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -30.96375653207352\n            187.34789813026063\n            175.57983021710106\n          )\n        \"\n      >\n        5 cm\n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"26\"\n        y=\"155\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            90\n            26\n            155\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"175\"\n        y=\"56\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -6.513775987637282e-15\n            175\n            56\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n          <!-- Texte du premier angle aigu -->\n          <text\n            x=\"85.61387617495907\"\n            y=\"167.09911454199187\"\n            text-anchor=\"middle\"\n            dominant-baseline=\"middle\"\n            font-size=\"22\"\n            fill=\"currentColor\"\n          >\n            60°\n          </text>\n        \n\n      \n\n    </svg>\n  </div>\n        </div>\n        "
+          },
+          "answers": [
+            "5\\times\\cos(60)",
+            "5*cos(60)",
+            "5×cos(60)",
+            "5xcos(60)",
+            "5 cos(60)",
+            "5*cos(60°)",
+            "5×cos(60°)",
+            "AB=5*cos(60)",
+            "AB=5×cos(60)",
+            "AB=5*cos(60°)",
+            "AB=5×cos(60°)"
+          ],
+          "possible_answers": [
+            "5\\times\\sin(60)",
+            "5\\times\\cos(60)",
+            "5\\div\\sin(60)",
+            "5\\div\\cos(60)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(\\text{AB}=5\\times\\cos(60^\\circ)\\).<br>En effet, \\(\\cos(60^\\circ)=\\dfrac{\\text{AB}}{5}\\)."
+        },
+        {
+          "id": "q8",
+          "title": "Arithmétique",
+          "subtitle": "Diviseurs d'un entier",
+          "question": "Donner un diviseur de 387 autre que 1 et lui-même.",
+          "answers": [
+            "3",
+            "9",
+            "43",
+            "129"
+          ],
+          "possible_answers": [
+            "3",
+            "1",
+            "387",
+            "2"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(3\\), \\(9\\), \\(43\\) ou \\(129\\).<br>En effet, \\(387=3\\times129=9\\times43\\)."
+        }
+      ]
+    }
+  }
+]

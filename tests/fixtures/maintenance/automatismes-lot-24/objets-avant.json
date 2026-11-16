@@ -1,0 +1,1709 @@
+[
+  {
+    "seed": 17,
+    "state": 17,
+    "exercise": {
+      "title": "Scratch — Reconnaître une figure géométrique",
+      "correctionMode": "progressive",
+      "questions": [
+        {
+          "id": "scratch-q1",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (3) fois\navancer de (100) pas\ntourner @turnRight de (120) degrés\nfin</pre></div>",
+          "answers": [
+            "triangle équilatéral",
+            "triangle equilateral"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle équilatéral",
+            "triangle rectangle",
+            "triangle rectangle isocèle",
+            "carré"
+          ],
+          "qcmAnswer": "triangle équilatéral",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle équilatéral.</strong> Les trois côtés mesurent 100 pas : le triangle est équilatéral. Les rotations de 120° correspondent ici à des angles intérieurs de 60°.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle équilatéral\"><path d=\"M 110 100.09618943240002 L 410 100.09618943240002 M 410 100.09618943240002 L 260 359.9038105676 M 260 359.9038105676 L 110 100.09618943240002\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 3,
+                "body": [
+                  {
+                    "id": "cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 120
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Triangle équilatéral.</strong> Les trois côtés mesurent 100 pas : le triangle est équilatéral. Les rotations de 120° correspondent ici à des angles intérieurs de 60°.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q2",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (100) y: (0)\naller à x: (0) y: (50)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle rectangle",
+            "triangle équilatéral",
+            "triangle rectangle isocèle",
+            "triangle isocèle non rectangle"
+          ],
+          "qcmAnswer": "triangle rectangle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle rectangle.</strong> Les côtés issus de (0 ; 0) sont horizontal et vertical, donc perpendiculaires. Ils mesurent 100 et 50 pas : le triangle est rectangle, mais pas isocèle.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle rectangle\"><path d=\"M 110 305 L 410 305 M 410 305 L 110 155 M 110 155 L 110 305\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 100,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 50
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle rectangle.</strong> Les côtés issus de (0 ; 0) sont horizontal et vertical, donc perpendiculaires. Ils mesurent 100 et 50 pas : le triangle est rectangle, mais pas isocèle.",
+            "showAxes": true
+          }
+        },
+        {
+          "id": "scratch-q3",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (100) y: (0)\naller à x: (0) y: (100)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle rectangle isocèle",
+            "triangle rectangle isocele",
+            "triangle isocèle rectangle",
+            "triangle isocele rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle rectangle isocèle",
+            "triangle équilatéral",
+            "triangle rectangle non isocèle",
+            "triangle isocèle non rectangle"
+          ],
+          "qcmAnswer": "triangle rectangle isocèle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle rectangle isocèle.</strong> Les deux côtés issus de (0 ; 0) sont perpendiculaires et mesurent chacun 100 pas : le triangle est rectangle isocèle.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle rectangle isocèle\"><path d=\"M 110 380 L 410 380 M 410 380 L 110 80 M 110 80 L 110 380\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 100,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 100
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle rectangle isocèle.</strong> Les deux côtés issus de (0 ; 0) sont perpendiculaires et mesurent chacun 100 pas : le triangle est rectangle isocèle.",
+            "showAxes": true
+          }
+        },
+        {
+          "id": "scratch-q4",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (50) degrés\navancer de (50) pas\ntourner @turnRight de (130) degrés\nfin</pre></div>",
+          "answers": [
+            "parallélogramme",
+            "parallelogramme"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "parallélogramme",
+            "rectangle",
+            "losange",
+            "carré"
+          ],
+          "qcmAnswer": "parallélogramme",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Parallélogramme.</strong> Les côtés opposés sont parallèles et de même longueur. Les côtés consécutifs mesurent 100 et 50 pas, et les angles ne sont pas droits : c’est un parallélogramme, ni rectangle ni losange.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"parallélogramme\"><path d=\"M 80 177.82478953061877 L 352.43960027705214 177.82478953061877 M 352.43960027705214 177.82478953061877 L 440 282.1752104693812 M 440 282.1752104693812 L 167.5603997229478 282.1752104693812 M 167.5603997229478 282.1752104693812 L 80 177.82478953061877\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "grand-cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-50",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 50
+                  },
+                  {
+                    "id": "petit-cote",
+                    "op": "move",
+                    "distance": 50
+                  },
+                  {
+                    "id": "angle-130",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 130
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Parallélogramme.</strong> Les côtés opposés sont parallèles et de même longueur. Les côtés consécutifs mesurent 100 et 50 pas, et les angles ne sont pas droits : c’est un parallélogramme, ni rectangle ni losange.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q5",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (90) degrés\navancer de (50) pas\ntourner @turnRight de (90) degrés\nfin</pre></div>",
+          "answers": [
+            "rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "rectangle",
+            "carré",
+            "losange non carré",
+            "triangle rectangle"
+          ],
+          "qcmAnswer": "rectangle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Rectangle.</strong> Les quatre angles sont droits. Deux côtés consécutifs mesurent 100 et 50 pas : c’est un rectangle qui n’est pas un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"rectangle\"><path d=\"M 110 155 L 410 155 M 410 155 L 410 305 M 410 305 L 110 305 M 110 305 L 110 155\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "grand-cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-1",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "petit-cote",
+                    "op": "move",
+                    "distance": 50
+                  },
+                  {
+                    "id": "angle-2",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Rectangle.</strong> Les quatre angles sont droits. Deux côtés consécutifs mesurent 100 et 50 pas : c’est un rectangle qui n’est pas un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q6",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (50) degrés\navancer de (100) pas\ntourner @turnRight de (130) degrés\nfin</pre></div>",
+          "answers": [
+            "losange"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "losange",
+            "carré",
+            "rectangle non carré",
+            "triangle isocèle"
+          ],
+          "qcmAnswer": "losange",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Losange.</strong> Les quatre côtés mesurent 100 pas. Les angles ne sont pas droits : c’est un losange qui n’est pas un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"losange\"><path d=\"M 80.00000000000003 146.0646215321214 L 299.1397097696584 146.0646215321214 M 299.1397097696584 146.0646215321214 L 440 313.9353784678786 M 440 313.9353784678786 L 220.86029023034163 313.9353784678786 M 220.86029023034163 313.9353784678786 L 80.00000000000003 146.0646215321214\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "cote-1",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-50",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 50
+                  },
+                  {
+                    "id": "cote-2",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-130",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 130
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Losange.</strong> Les quatre côtés mesurent 100 pas. Les angles ne sont pas droits : c’est un losange qui n’est pas un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q7",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (4) fois\navancer de (100) pas\ntourner @turnRight de (90) degrés\nfin</pre></div>",
+          "answers": [
+            "carré",
+            "carre"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "carré",
+            "rectangle non carré",
+            "losange non carré",
+            "parallélogramme sans angle droit"
+          ],
+          "qcmAnswer": "carré",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Carré.</strong> Les quatre côtés mesurent 100 pas et les quatre angles sont droits : la figure est un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"carré\"><path d=\"M 110 80 L 410 80 M 410 80 L 410 380 M 410 380 L 110 380 M 110 380 L 110 80\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 4,
+                "body": [
+                  {
+                    "id": "cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Carré.</strong> Les quatre côtés mesurent 100 pas et les quatre angles sont droits : la figure est un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q8",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (50) y: (0)\naller à x: (0) y: (100)\naller à x: (-50) y: (0)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle isocèle",
+            "triangle isocele"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle isocèle",
+            "triangle équilatéral",
+            "triangle rectangle",
+            "triangle rectangle isocèle"
+          ],
+          "qcmAnswer": "triangle isocèle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle isocèle.</strong> Les deux côtés reliant (0 ; 100) à (50 ; 0) et à (−50 ; 0) ont la même longueur par symétrie. Les passages par (0 ; 0) partagent la base en deux segments alignés : la figure est un triangle isocèle, ni rectangle ni équilatéral.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle isocèle\"><path d=\"M 260 380 L 410 380 M 410 380 L 260 80 M 260 80 L 110 380 M 110 380 L 260 380\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 50,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 100
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": -50,
+                "y": 0
+              },
+              {
+                "id": "sommet-4",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle isocèle.</strong> Les deux côtés reliant (0 ; 100) à (50 ; 0) et à (−50 ; 0) ont la même longueur par symétrie. Les passages par (0 ; 0) partagent la base en deux segments alignés : la figure est un triangle isocèle, ni rectangle ni équilatéral.",
+            "showAxes": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seed": 2026,
+    "state": 2026,
+    "exercise": {
+      "title": "Scratch — Reconnaître une figure géométrique",
+      "correctionMode": "progressive",
+      "questions": [
+        {
+          "id": "scratch-q1",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (3) fois\navancer de (100) pas\ntourner @turnRight de (120) degrés\nfin</pre></div>",
+          "answers": [
+            "triangle équilatéral",
+            "triangle equilateral"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle équilatéral",
+            "triangle rectangle",
+            "triangle rectangle isocèle",
+            "carré"
+          ],
+          "qcmAnswer": "triangle équilatéral",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle équilatéral.</strong> Les trois côtés mesurent 100 pas : le triangle est équilatéral. Les rotations de 120° correspondent ici à des angles intérieurs de 60°.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle équilatéral\"><path d=\"M 110 100.09618943240002 L 410 100.09618943240002 M 410 100.09618943240002 L 260 359.9038105676 M 260 359.9038105676 L 110 100.09618943240002\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 3,
+                "body": [
+                  {
+                    "id": "cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 120
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Triangle équilatéral.</strong> Les trois côtés mesurent 100 pas : le triangle est équilatéral. Les rotations de 120° correspondent ici à des angles intérieurs de 60°.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q2",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (100) y: (0)\naller à x: (0) y: (50)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle rectangle",
+            "triangle équilatéral",
+            "triangle rectangle isocèle",
+            "triangle isocèle non rectangle"
+          ],
+          "qcmAnswer": "triangle rectangle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle rectangle.</strong> Les côtés issus de (0 ; 0) sont horizontal et vertical, donc perpendiculaires. Ils mesurent 100 et 50 pas : le triangle est rectangle, mais pas isocèle.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle rectangle\"><path d=\"M 110 305 L 410 305 M 410 305 L 110 155 M 110 155 L 110 305\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 100,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 50
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle rectangle.</strong> Les côtés issus de (0 ; 0) sont horizontal et vertical, donc perpendiculaires. Ils mesurent 100 et 50 pas : le triangle est rectangle, mais pas isocèle.",
+            "showAxes": true
+          }
+        },
+        {
+          "id": "scratch-q3",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (100) y: (0)\naller à x: (0) y: (100)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle rectangle isocèle",
+            "triangle rectangle isocele",
+            "triangle isocèle rectangle",
+            "triangle isocele rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle rectangle isocèle",
+            "triangle équilatéral",
+            "triangle rectangle non isocèle",
+            "triangle isocèle non rectangle"
+          ],
+          "qcmAnswer": "triangle rectangle isocèle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle rectangle isocèle.</strong> Les deux côtés issus de (0 ; 0) sont perpendiculaires et mesurent chacun 100 pas : le triangle est rectangle isocèle.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle rectangle isocèle\"><path d=\"M 110 380 L 410 380 M 410 380 L 110 80 M 110 80 L 110 380\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 100,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 100
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle rectangle isocèle.</strong> Les deux côtés issus de (0 ; 0) sont perpendiculaires et mesurent chacun 100 pas : le triangle est rectangle isocèle.",
+            "showAxes": true
+          }
+        },
+        {
+          "id": "scratch-q4",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (50) degrés\navancer de (50) pas\ntourner @turnRight de (130) degrés\nfin</pre></div>",
+          "answers": [
+            "parallélogramme",
+            "parallelogramme"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "parallélogramme",
+            "rectangle",
+            "losange",
+            "carré"
+          ],
+          "qcmAnswer": "parallélogramme",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Parallélogramme.</strong> Les côtés opposés sont parallèles et de même longueur. Les côtés consécutifs mesurent 100 et 50 pas, et les angles ne sont pas droits : c’est un parallélogramme, ni rectangle ni losange.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"parallélogramme\"><path d=\"M 80 177.82478953061877 L 352.43960027705214 177.82478953061877 M 352.43960027705214 177.82478953061877 L 440 282.1752104693812 M 440 282.1752104693812 L 167.5603997229478 282.1752104693812 M 167.5603997229478 282.1752104693812 L 80 177.82478953061877\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "grand-cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-50",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 50
+                  },
+                  {
+                    "id": "petit-cote",
+                    "op": "move",
+                    "distance": 50
+                  },
+                  {
+                    "id": "angle-130",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 130
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Parallélogramme.</strong> Les côtés opposés sont parallèles et de même longueur. Les côtés consécutifs mesurent 100 et 50 pas, et les angles ne sont pas droits : c’est un parallélogramme, ni rectangle ni losange.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q5",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (90) degrés\navancer de (50) pas\ntourner @turnRight de (90) degrés\nfin</pre></div>",
+          "answers": [
+            "rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "rectangle",
+            "carré",
+            "losange non carré",
+            "triangle rectangle"
+          ],
+          "qcmAnswer": "rectangle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Rectangle.</strong> Les quatre angles sont droits. Deux côtés consécutifs mesurent 100 et 50 pas : c’est un rectangle qui n’est pas un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"rectangle\"><path d=\"M 110 155 L 410 155 M 410 155 L 410 305 M 410 305 L 110 305 M 110 305 L 110 155\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "grand-cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-1",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "petit-cote",
+                    "op": "move",
+                    "distance": 50
+                  },
+                  {
+                    "id": "angle-2",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Rectangle.</strong> Les quatre angles sont droits. Deux côtés consécutifs mesurent 100 et 50 pas : c’est un rectangle qui n’est pas un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q6",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (50) degrés\navancer de (100) pas\ntourner @turnRight de (130) degrés\nfin</pre></div>",
+          "answers": [
+            "losange"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "losange",
+            "carré",
+            "rectangle non carré",
+            "triangle isocèle"
+          ],
+          "qcmAnswer": "losange",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Losange.</strong> Les quatre côtés mesurent 100 pas. Les angles ne sont pas droits : c’est un losange qui n’est pas un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"losange\"><path d=\"M 80.00000000000003 146.0646215321214 L 299.1397097696584 146.0646215321214 M 299.1397097696584 146.0646215321214 L 440 313.9353784678786 M 440 313.9353784678786 L 220.86029023034163 313.9353784678786 M 220.86029023034163 313.9353784678786 L 80.00000000000003 146.0646215321214\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "cote-1",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-50",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 50
+                  },
+                  {
+                    "id": "cote-2",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-130",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 130
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Losange.</strong> Les quatre côtés mesurent 100 pas. Les angles ne sont pas droits : c’est un losange qui n’est pas un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q7",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (4) fois\navancer de (100) pas\ntourner @turnRight de (90) degrés\nfin</pre></div>",
+          "answers": [
+            "carré",
+            "carre"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "carré",
+            "rectangle non carré",
+            "losange non carré",
+            "parallélogramme sans angle droit"
+          ],
+          "qcmAnswer": "carré",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Carré.</strong> Les quatre côtés mesurent 100 pas et les quatre angles sont droits : la figure est un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"carré\"><path d=\"M 110 80 L 410 80 M 410 80 L 410 380 M 410 380 L 110 380 M 110 380 L 110 80\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 4,
+                "body": [
+                  {
+                    "id": "cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Carré.</strong> Les quatre côtés mesurent 100 pas et les quatre angles sont droits : la figure est un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q8",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (50) y: (0)\naller à x: (0) y: (100)\naller à x: (-50) y: (0)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle isocèle",
+            "triangle isocele"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle isocèle",
+            "triangle équilatéral",
+            "triangle rectangle",
+            "triangle rectangle isocèle"
+          ],
+          "qcmAnswer": "triangle isocèle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle isocèle.</strong> Les deux côtés reliant (0 ; 100) à (50 ; 0) et à (−50 ; 0) ont la même longueur par symétrie. Les passages par (0 ; 0) partagent la base en deux segments alignés : la figure est un triangle isocèle, ni rectangle ni équilatéral.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle isocèle\"><path d=\"M 260 380 L 410 380 M 410 380 L 260 80 M 260 80 L 110 380 M 110 380 L 260 380\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 50,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 100
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": -50,
+                "y": 0
+              },
+              {
+                "id": "sommet-4",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle isocèle.</strong> Les deux côtés reliant (0 ; 100) à (50 ; 0) et à (−50 ; 0) ont la même longueur par symétrie. Les passages par (0 ; 0) partagent la base en deux segments alignés : la figure est un triangle isocèle, ni rectangle ni équilatéral.",
+            "showAxes": true
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seed": 98765,
+    "state": 98765,
+    "exercise": {
+      "title": "Scratch — Reconnaître une figure géométrique",
+      "correctionMode": "progressive",
+      "questions": [
+        {
+          "id": "scratch-q1",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (3) fois\navancer de (100) pas\ntourner @turnRight de (120) degrés\nfin</pre></div>",
+          "answers": [
+            "triangle équilatéral",
+            "triangle equilateral"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle équilatéral",
+            "triangle rectangle",
+            "triangle rectangle isocèle",
+            "carré"
+          ],
+          "qcmAnswer": "triangle équilatéral",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle équilatéral.</strong> Les trois côtés mesurent 100 pas : le triangle est équilatéral. Les rotations de 120° correspondent ici à des angles intérieurs de 60°.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle équilatéral\"><path d=\"M 110 100.09618943240002 L 410 100.09618943240002 M 410 100.09618943240002 L 260 359.9038105676 M 260 359.9038105676 L 110 100.09618943240002\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 3,
+                "body": [
+                  {
+                    "id": "cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 120
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Triangle équilatéral.</strong> Les trois côtés mesurent 100 pas : le triangle est équilatéral. Les rotations de 120° correspondent ici à des angles intérieurs de 60°.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q2",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (100) y: (0)\naller à x: (0) y: (50)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle rectangle",
+            "triangle équilatéral",
+            "triangle rectangle isocèle",
+            "triangle isocèle non rectangle"
+          ],
+          "qcmAnswer": "triangle rectangle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle rectangle.</strong> Les côtés issus de (0 ; 0) sont horizontal et vertical, donc perpendiculaires. Ils mesurent 100 et 50 pas : le triangle est rectangle, mais pas isocèle.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle rectangle\"><path d=\"M 110 305 L 410 305 M 410 305 L 110 155 M 110 155 L 110 305\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 100,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 50
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle rectangle.</strong> Les côtés issus de (0 ; 0) sont horizontal et vertical, donc perpendiculaires. Ils mesurent 100 et 50 pas : le triangle est rectangle, mais pas isocèle.",
+            "showAxes": true
+          }
+        },
+        {
+          "id": "scratch-q3",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (100) y: (0)\naller à x: (0) y: (100)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle rectangle isocèle",
+            "triangle rectangle isocele",
+            "triangle isocèle rectangle",
+            "triangle isocele rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle rectangle isocèle",
+            "triangle équilatéral",
+            "triangle rectangle non isocèle",
+            "triangle isocèle non rectangle"
+          ],
+          "qcmAnswer": "triangle rectangle isocèle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle rectangle isocèle.</strong> Les deux côtés issus de (0 ; 0) sont perpendiculaires et mesurent chacun 100 pas : le triangle est rectangle isocèle.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle rectangle isocèle\"><path d=\"M 110 380 L 410 380 M 410 380 L 110 80 M 110 80 L 110 380\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 100,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 100
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle rectangle isocèle.</strong> Les deux côtés issus de (0 ; 0) sont perpendiculaires et mesurent chacun 100 pas : le triangle est rectangle isocèle.",
+            "showAxes": true
+          }
+        },
+        {
+          "id": "scratch-q4",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (50) degrés\navancer de (50) pas\ntourner @turnRight de (130) degrés\nfin</pre></div>",
+          "answers": [
+            "parallélogramme",
+            "parallelogramme"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "parallélogramme",
+            "rectangle",
+            "losange",
+            "carré"
+          ],
+          "qcmAnswer": "parallélogramme",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Parallélogramme.</strong> Les côtés opposés sont parallèles et de même longueur. Les côtés consécutifs mesurent 100 et 50 pas, et les angles ne sont pas droits : c’est un parallélogramme, ni rectangle ni losange.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"parallélogramme\"><path d=\"M 80 177.82478953061877 L 352.43960027705214 177.82478953061877 M 352.43960027705214 177.82478953061877 L 440 282.1752104693812 M 440 282.1752104693812 L 167.5603997229478 282.1752104693812 M 167.5603997229478 282.1752104693812 L 80 177.82478953061877\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "grand-cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-50",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 50
+                  },
+                  {
+                    "id": "petit-cote",
+                    "op": "move",
+                    "distance": 50
+                  },
+                  {
+                    "id": "angle-130",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 130
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Parallélogramme.</strong> Les côtés opposés sont parallèles et de même longueur. Les côtés consécutifs mesurent 100 et 50 pas, et les angles ne sont pas droits : c’est un parallélogramme, ni rectangle ni losange.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q5",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (90) degrés\navancer de (50) pas\ntourner @turnRight de (90) degrés\nfin</pre></div>",
+          "answers": [
+            "rectangle"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "rectangle",
+            "carré",
+            "losange non carré",
+            "triangle rectangle"
+          ],
+          "qcmAnswer": "rectangle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Rectangle.</strong> Les quatre angles sont droits. Deux côtés consécutifs mesurent 100 et 50 pas : c’est un rectangle qui n’est pas un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"rectangle\"><path d=\"M 110 155 L 410 155 M 410 155 L 410 305 M 410 305 L 110 305 M 110 305 L 110 155\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "grand-cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-1",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "petit-cote",
+                    "op": "move",
+                    "distance": 50
+                  },
+                  {
+                    "id": "angle-2",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Rectangle.</strong> Les quatre angles sont droits. Deux côtés consécutifs mesurent 100 et 50 pas : c’est un rectangle qui n’est pas un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q6",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (2) fois\navancer de (100) pas\ntourner @turnRight de (50) degrés\navancer de (100) pas\ntourner @turnRight de (130) degrés\nfin</pre></div>",
+          "answers": [
+            "losange"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "losange",
+            "carré",
+            "rectangle non carré",
+            "triangle isocèle"
+          ],
+          "qcmAnswer": "losange",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Losange.</strong> Les quatre côtés mesurent 100 pas. Les angles ne sont pas droits : c’est un losange qui n’est pas un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"losange\"><path d=\"M 80.00000000000003 146.0646215321214 L 299.1397097696584 146.0646215321214 M 299.1397097696584 146.0646215321214 L 440 313.9353784678786 M 440 313.9353784678786 L 220.86029023034163 313.9353784678786 M 220.86029023034163 313.9353784678786 L 80.00000000000003 146.0646215321214\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 2,
+                "body": [
+                  {
+                    "id": "cote-1",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-50",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 50
+                  },
+                  {
+                    "id": "cote-2",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle-130",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 130
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Losange.</strong> Les quatre côtés mesurent 100 pas. Les angles ne sont pas droits : c’est un losange qui n’est pas un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q7",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\ns'orienter à (90)\naller à x: (0) y: (0)\nstylo en position d'écriture\nrépéter (4) fois\navancer de (100) pas\ntourner @turnRight de (90) degrés\nfin</pre></div>",
+          "answers": [
+            "carré",
+            "carre"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "carré",
+            "rectangle non carré",
+            "losange non carré",
+            "parallélogramme sans angle droit"
+          ],
+          "qcmAnswer": "carré",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Carré.</strong> Les quatre côtés mesurent 100 pas et les quatre angles sont droits : la figure est un carré.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"carré\"><path d=\"M 110 80 L 410 80 M 410 80 L 410 380 M 410 380 L 110 380 M 110 380 L 110 80\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "orientation",
+                "op": "pointInDirection",
+                "direction": 90
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "boucle",
+                "op": "repeat",
+                "count": 4,
+                "body": [
+                  {
+                    "id": "cote",
+                    "op": "move",
+                    "distance": 100
+                  },
+                  {
+                    "id": "angle",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "<strong>Carré.</strong> Les quatre côtés mesurent 100 pas et les quatre angles sont droits : la figure est un carré.",
+            "showAxes": false
+          }
+        },
+        {
+          "id": "scratch-q8",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Reconnaître une figure",
+          "time": 30,
+          "question": "<div class=\"scratch-statement\"><p>Quelle est la nature la plus précise de la figure obtenue ?</p><pre class=\"blocks\">quand @greenFlag est cliqué\naller à x: (0) y: (0)\nstylo en position d'écriture\naller à x: (50) y: (0)\naller à x: (0) y: (100)\naller à x: (-50) y: (0)\naller à x: (0) y: (0)</pre></div>",
+          "answers": [
+            "triangle isocèle",
+            "triangle isocele"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "triangle isocèle",
+            "triangle équilatéral",
+            "triangle rectangle",
+            "triangle rectangle isocèle"
+          ],
+          "qcmAnswer": "triangle isocèle",
+          "qcmClass": "qcm-two-columns",
+          "display_answer": "<span><strong>Triangle isocèle.</strong> Les deux côtés reliant (0 ; 100) à (50 ; 0) et à (−50 ; 0) ont la même longueur par symétrie. Les passages par (0 ; 0) partagent la base en deux segments alignés : la figure est un triangle isocèle, ni rectangle ni équilatéral.</span><br><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 520 460\" width=\"220\" height=\"195\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"triangle isocèle\"><path d=\"M 260 380 L 410 380 M 410 380 L 260 80 M 260 80 L 110 380 M 110 380 L 260 380\" fill=\"none\" stroke=\"#174b71\" stroke-width=\"4\"/></svg>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "origine",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "sommet-1",
+                "op": "goTo",
+                "x": 50,
+                "y": 0
+              },
+              {
+                "id": "sommet-2",
+                "op": "goTo",
+                "x": 0,
+                "y": 100
+              },
+              {
+                "id": "sommet-3",
+                "op": "goTo",
+                "x": -50,
+                "y": 0
+              },
+              {
+                "id": "sommet-4",
+                "op": "goTo",
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "conclusion": "<strong>Triangle isocèle.</strong> Les deux côtés reliant (0 ; 100) à (50 ; 0) et à (−50 ; 0) ont la même longueur par symétrie. Les passages par (0 ; 0) partagent la base en deux segments alignés : la figure est un triangle isocèle, ni rectangle ni équilatéral.",
+            "showAxes": true
+          }
+        }
+      ]
+    }
+  }
+]

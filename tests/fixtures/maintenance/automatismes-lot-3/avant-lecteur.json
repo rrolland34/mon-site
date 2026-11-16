@@ -1,0 +1,362 @@
+[
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 384,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 384,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 357,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 384,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 384,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 357,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 357,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 357,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 375,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 375,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 375,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 320,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 375,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 320,
+    "maxMath": 0
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 384.75
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 320,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 320,
+    "maxMath": 0
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 406.5625
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 406.5625
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 407,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 407,
+    "maxMath": 0
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 380.53125
+  },
+  {
+    "id": "fraction_quantite",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 380.53125
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 407,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 407,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 28,
+    "maxDocument": 407,
+    "maxMath": 0
+  },
+  {
+    "id": "fractions_figures",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 28,
+    "maxDocument": 407,
+    "maxMath": 0
+  }
+]

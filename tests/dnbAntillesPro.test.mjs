@@ -68,7 +68,7 @@ test('composition MathJax intégrale, onze tailles, figure et explications',()=>
   // Contrôle de source ; la qualité visuelle est vérifiée séparément au navigateur.
   for(const q of series.questions) {
     for(const html of [q.question,q.display_answer,...q.possible_answers]) {
-      const outside=html.replace(/\\\([\s\S]*?\\\)/g,'').replace(/<[^>]*>/g,'').trim();
+      const outside=html.replace(/<style\b[\s\S]*?<\/style>/g,'').replace(/\\\([\s\S]*?\\\)/g,'').replace(/<[^>]*>/g,'').trim();
       assert.equal(outside,'',q.id);
     }
     assert.doesNotMatch(q.display_answer,/gathered/);

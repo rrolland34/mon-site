@@ -1,0 +1,1994 @@
+[
+  {
+    "id": "scratch-q1",
+    "value": "triangle équilatéral",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle équilatéral",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle equilateral",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle equilateral",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "TRIANGLE ÉQUILATÉRAL",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "TRIANGLE ÉQUILATÉRAL",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "TRIANGLE EQUILATERAL",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "TRIANGLE EQUILATERAL",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle équilatéral",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle équilatéral",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q1",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q2",
+    "value": "TRIANGLE RECTANGLE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q2",
+    "value": "TRIANGLE RECTANGLE",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle équilatéral",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle équilatéral",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle isocèle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle isocèle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q2",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocèle rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocèle rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE RECTANGLE ISOCÈLE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE RECTANGLE ISOCÈLE",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE RECTANGLE ISOCELE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE RECTANGLE ISOCELE",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE ISOCÈLE RECTANGLE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE ISOCÈLE RECTANGLE",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE ISOCELE RECTANGLE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "TRIANGLE ISOCELE RECTANGLE",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle équilatéral",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle équilatéral",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle non isocèle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle non isocèle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocèle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocèle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q3",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "parallélogramme",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "parallélogramme",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "parallelogramme",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "parallelogramme",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "PARALLÉLOGRAMME",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "PARALLÉLOGRAMME",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "PARALLELOGRAMME",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "PARALLELOGRAMME",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "parallélogramme",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "parallélogramme",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q4",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q4",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "RECTANGLE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "RECTANGLE",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "losange non carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "losange non carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q5",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q5",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "LOSANGE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "LOSANGE",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "rectangle non carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "rectangle non carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle isocèle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle isocèle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q6",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carre",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carre",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "CARRÉ",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "CARRÉ",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "CARRE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "CARRE",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "rectangle non carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "rectangle non carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "losange non carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "losange non carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "parallélogramme sans angle droit",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "parallélogramme sans angle droit",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q7",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q7",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocèle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocèle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocele",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "TRIANGLE ISOCÈLE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "TRIANGLE ISOCÈLE",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "TRIANGLE ISOCELE",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "TRIANGLE ISOCELE",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocèle",
+    "answerMode": "direct",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocèle",
+    "answerMode": "qcm",
+    "correct": true
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle équilatéral",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle équilatéral",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle rectangle isocèle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "quadrilatère",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "quadrilatère",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "100",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "100",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "100 cm",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "100 cm",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "carré",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "carré",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "losange",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "losange",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocele rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle isocele rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle rectangle isocele",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle rectangle isocele",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle non rectangle",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "triangle non rectangle",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "(carré)",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "(carré)",
+    "answerMode": "qcm",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "abc",
+    "answerMode": "direct",
+    "correct": false
+  },
+  {
+    "id": "scratch-q8",
+    "value": "abc",
+    "answerMode": "qcm",
+    "correct": false
+  }
+]

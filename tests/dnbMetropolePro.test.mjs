@@ -8,6 +8,7 @@ import { createDnbBank } from '../core/dnbGenerator.js';
 import { storeAnswerForCorrections } from '../core/answerHistory.js';
 import { startExerciseSession } from '../core/session.js';
 import { getQuestionText } from '../core/questionDisplay.js';
+import {formatQCMAnswer} from '../core/qcm.js';
 import { getProgressiveCorrectionSteps, createProgressiveCorrectionPlayer } from '../core/progressiveCorrectionPlayer.js';
 import { createEvaluationStatement, createEvaluationWithCorrection } from '../core/export/exportEvaluationContent.js';
 import { createEvaluationContent } from '../core/export/exportContent.js';
@@ -80,7 +81,7 @@ test('MathJax intégral, cône et quatre repères communs aux modes', () => {
   for (const q of series.questions) {
     for (const html of [q.question, q.display_answer, ...q.possible_answers, ...(q.progressiveCorrection?.steps.map(s => s.html) ?? [])]) {
       // Les graduations du composant SVG existant sont gérées par ce composant.
-      const outside = html.replace(/<svg\b[\s\S]*?<\/svg>/g, '').replace(/\\\([\s\S]*?\\\)/g, '').replace(/<[^>]*>/g, '').trim();
+      const outside = html.replace(/<style\b[\s\S]*?<\/style>/g, '').replace(/<svg\b[\s\S]*?<\/svg>/g, '').replace(/\\\([\s\S]*?\\\)/g, '').replace(/<[^>]*>/g, '').trim();
       assert.equal(outside, '', q.id);
     }
     assert.doesNotMatch(q.display_answer, /gathered/);
@@ -153,7 +154,7 @@ for (const answerMode of ['direct', 'qcm']) test(`session, historique, diaporama
   }
   for (const q of series.questions) {
     assert.ok(archive.includes(q.display_answer));
-    assert.ok(correction.includes(answerMode === 'qcm' ? getCorrectQCMAnswer({ question: q }) : q.display_answer));
+    assert.ok(correction.includes(answerMode === 'qcm' ? formatQCMAnswer(getCorrectQCMAnswer({ question: q }), q) : q.display_answer));
   }
   assert.match(archive, /data-cell="D5"/);
 });

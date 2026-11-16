@@ -1,0 +1,305 @@
+{
+  "job": {
+    "id": "perimetres_et_longueurs",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{rectangle}",
+        "\\text{de}",
+        "\\text{longueur}",
+        "7~\\mathrm{km}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{largeur}",
+        "5~\\mathrm{km}",
+        "\\text{?}",
+        "35~\\mathrm{km}",
+        "24~\\mathrm{km}",
+        "12~\\mathrm{km}",
+        "70~\\mathrm{km}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{carré}",
+        "\\text{de}",
+        "\\text{côté}",
+        "6~\\mathrm{hm}\\ ?",
+        "35~\\mathrm{km}",
+        "24~\\mathrm{km}",
+        "12~\\mathrm{km}",
+        "70~\\mathrm{km}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{longueur}",
+        "\\text{d’un}",
+        "\\text{rectangle}",
+        "\\text{de}",
+        "\\text{périmètre}",
+        "26~\\mathrm{mm}",
+        "\\text{et}",
+        "\\text{de}",
+        "\\text{largeur}",
+        "3~\\mathrm{mm}",
+        "\\text{?}",
+        "23~\\mathrm{mm}",
+        "10~\\mathrm{mm}",
+        "13~\\mathrm{mm}",
+        "58~\\mathrm{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel}",
+        "\\text{est}",
+        "\\text{le}",
+        "\\text{périmètre}",
+        "\\text{d’un}",
+        "\\text{triangle}",
+        "\\text{dont}",
+        "\\text{les}",
+        "\\text{côtés}",
+        "\\text{mesurent}",
+        "7~\\mathrm{dm}",
+        "\\text{,}",
+        "4~\\mathrm{cm}",
+        "\\text{et}",
+        "6~\\mathrm{mm}",
+        "\\text{?}",
+        "23~\\mathrm{mm}",
+        "10~\\mathrm{mm}",
+        "13~\\mathrm{mm}",
+        "58~\\mathrm{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.96875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle}",
+        "\\text{est}",
+        "\\text{la}",
+        "\\text{longueur}",
+        "\\text{du}",
+        "\\text{côté}",
+        "\\text{d’un}",
+        "\\text{carré}",
+        "\\text{de}",
+        "\\text{périmètre}",
+        "24~\\mathrm{mm}\\ ?",
+        "23~\\mathrm{mm}",
+        "10~\\mathrm{mm}",
+        "13~\\mathrm{mm}",
+        "58~\\mathrm{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "24 km"
+        ],
+        "possible_answers": [
+          "24 km",
+          "35 km",
+          "12 km",
+          "70 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "35 km",
+          "24 km",
+          "12 km",
+          "70 km"
+        ]
+      },
+      {
+        "answers": [
+          "24 hm"
+        ],
+        "possible_answers": [
+          "24 hm",
+          "36 hm",
+          "12 hm",
+          "18 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "10 mm"
+        ],
+        "possible_answers": [
+          "10 mm",
+          "58 mm",
+          "13 mm",
+          "23 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "23 mm",
+          "10 mm",
+          "13 mm",
+          "58 mm"
+        ]
+      },
+      {
+        "answers": [
+          "74.6 cm"
+        ],
+        "possible_answers": [
+          "74,6 cm",
+          "17 cm",
+          "5,3 cm",
+          "134 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "6 mm"
+        ],
+        "possible_answers": [
+          "6 mm",
+          "96 mm",
+          "24 mm",
+          "12 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "24 km",
+        "correctQCMAnswer": "24 km",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "35 km",
+          "24 km",
+          "12 km",
+          "70 km"
+        ]
+      },
+      {
+        "correctAnswer": "24 hm",
+        "correctQCMAnswer": "24 hm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "10 mm",
+        "correctQCMAnswer": "10 mm",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "23 mm",
+          "10 mm",
+          "13 mm",
+          "58 mm"
+        ]
+      },
+      {
+        "correctAnswer": "74.6 cm",
+        "correctQCMAnswer": "74.6 cm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "6 mm",
+        "correctQCMAnswer": "6 mm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

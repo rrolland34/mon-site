@@ -1,0 +1,158 @@
+{
+  "job": {
+    "id": "division_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 407.6875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 220{,}62\\div 10"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 940\\div 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 483.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 850{,}748\\div 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 703\\div 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 291{,}1\\div 10"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "22.062"
+        ],
+        "possible_answers": [
+          "22.062",
+          "220.62",
+          "2.2062",
+          "2206.2"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.94"
+        ],
+        "possible_answers": [
+          "0.94",
+          "940",
+          "9.4",
+          "0.094"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.850748"
+        ],
+        "possible_answers": [
+          "0.850748",
+          "850.748",
+          "8.50748",
+          "0.0850748"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.703"
+        ],
+        "possible_answers": [
+          "0.703",
+          "703",
+          "7.03",
+          "0.0703"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "29.11"
+        ],
+        "possible_answers": [
+          "29.11",
+          "291.1",
+          "2.911",
+          "2911"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

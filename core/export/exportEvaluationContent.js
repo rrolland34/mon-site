@@ -17,11 +17,15 @@ import {
 } from "./exportAnswerFormatting.js";
 
 // Sans répartition exploitable, conserver le repli historique du générateur.
-function getQuestionAnswerMode(answerMode, questionAnswerModes, index) {
+export function getQuestionAnswerMode(answerMode, questionAnswerModes, index, question) {
   const mode = questionAnswerModes?.[index];
-  return answerMode === "mixed" && (mode === "direct" || mode === "qcm" || mode === "point")
+  const resolved = answerMode === "mixed" && (mode === "direct" || mode === "qcm" || mode === "point")
     ? mode
     : answerMode;
+  // Contrat explicite de la seule série de repérage ; repli historique ailleurs.
+  if (!question?.exportCartesianFigure) return resolved;
+  const cartesianMode = resolved === "mixed" ? "direct" : resolved;
+  return question.answerMode === "point" && cartesianMode === "direct" ? "point" : cartesianMode;
 }
 
 export function createEvaluationStatement({
@@ -38,7 +42,7 @@ export function createEvaluationStatement({
         question,
         index
       ) => {
-        const questionAnswerMode = getQuestionAnswerMode(answerMode, questionAnswerModes, index);
+        const questionAnswerMode = getQuestionAnswerMode(answerMode, questionAnswerModes, index, question);
         const questionText =
           typeof question.question ===
           "string"
@@ -103,7 +107,7 @@ export function createEvaluationStatement({
                 : "";
 
         return `
-          <section class="evaluation-question">
+          <section class="evaluation-question"${question.exportCartesianFigure ? ` data-question-index="${index}"` : ""}>
             <h2>
               Question ${index + 1}
             </h2>
@@ -139,7 +143,7 @@ export function createEvaluationWithCorrection({
         question,
         index
       ) => {
-        const questionAnswerMode = getQuestionAnswerMode(answerMode, questionAnswerModes, index);
+        const questionAnswerMode = getQuestionAnswerMode(answerMode, questionAnswerModes, index, question);
         const questionText =
           typeof question.question ===
           "string"
@@ -207,7 +211,9 @@ export function createEvaluationWithCorrection({
                 ""
               ));
 
-        const displayedAnswer =
+        const graphicalAnswer = question.exportCartesianFigure && question.answerPoint
+          ? `${question.answerPoint.name}(${question.answerPoint.x};${question.answerPoint.y})` : null;
+        const displayedAnswer = graphicalAnswer !== null ? formatExportAnswer(graphicalAnswer) :
           (modeCorrection !== null || scratchCorrection) ? formatExportAnswer(rawAnswer) : questionAnswerMode === "qcm"
             ? correctionHtml(formatQCMAnswer(
                 rawAnswer,
@@ -220,7 +226,7 @@ export function createEvaluationWithCorrection({
                 );
 
         return `
-          <section class="evaluation-question">
+          <section class="evaluation-question"${question.exportCartesianFigure ? ` data-question-index="${index}"` : ""}>
             <h2>
               Question ${index + 1}
             </h2>

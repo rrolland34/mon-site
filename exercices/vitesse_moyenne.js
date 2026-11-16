@@ -1,3 +1,5 @@
+import { presentSpeedTimeQuestion } from './speedTimePresentation.js';
+
 // exercices/vitesse_moyenne.js
 
 import {
@@ -1166,7 +1168,7 @@ function generateQuestions() {
     createSpeedConversionQuestion(),
 
     createCyclistSpeedQuestion()
-  ];
+  ].map(presentSpeedTimeQuestion);
 }
 
 

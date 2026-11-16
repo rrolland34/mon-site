@@ -1,0 +1,1139 @@
+[
+  {
+    "seed": 17,
+    "state": 17,
+    "exercise": {
+      "title": "Sujet de référence n° 2 — Septembre 2026 — Série générale",
+      "series": "Générale",
+      "shuffle": false,
+      "correctionMode": "progressive",
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Priorités opératoires",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Calculer : }\\mathrm{A}=2{,}5-5{,}5+3\\times4\\)</div>",
+          "answers": [
+            "9"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(0\\)",
+            "\\(9\\)",
+            "\\(-9\\)",
+            "\\(-12\\)"
+          ],
+          "display_answer": "\\(\\mathrm{A}=2{,}5-5{,}5+3\\times4\\)<br>\\(\\mathrm{A}=2{,}5-5{,}5+12\\)<br>\\(\\mathrm{A}=9\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Calcul numérique",
+          "subtitle": "Puissances",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Écrire sous la forme d'une puissance de }10\\text{ :}\\)<br>\\(\\mathrm{B}=100^3\\times10^{-2}\\)</div>",
+          "answers": [
+            "10^4"
+          ],
+          "answerRule": {
+            "type": "power",
+            "expectedValue": 10000,
+            "expectedBase": 10
+          },
+          "inputTools": [
+            "power"
+          ],
+          "possible_answers": [
+            "\\(10^1\\)",
+            "\\(10^6\\)",
+            "\\(10^4\\)",
+            "\\(10^8\\)"
+          ],
+          "display_answer": "\\(\\mathrm{B}=100^3\\times10^{-2}\\)<br>\\(\\mathrm{B}=(10^2)^3\\times10^{-2}\\)<br>\\(\\mathrm{B}=10^6\\times10^{-2}\\)<br>\\(\\mathrm{B}=10^4\\)"
+        },
+        {
+          "id": "q3",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un carré",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Quel est le côté d'un carré d'aire }49~\\mathrm{cm}^2\\text{ ?}\\)</div>",
+          "answers": [
+            "7 cm"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "cm"
+          },
+          "possible_answers": [
+            "\\(24{,}5~\\mathrm{cm}\\)",
+            "\\(7~\\mathrm{cm}\\)",
+            "\\(12{,}25~\\mathrm{cm}\\)",
+            "\\(49~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\sqrt{49}=7\\)<br>\\(\\text{Le côté mesure }7~\\mathrm{cm}.\\)"
+        },
+        {
+          "id": "q4",
+          "title": "Arithmétique",
+          "subtitle": "Divisibilité par 9",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Donner un nombre entier à }5\\text{ chiffres}\\)<br>\\(\\text{divisible par }9\\text{ et se terminant par }7\\text{.}\\)</div>",
+          "answers": [
+            "10017"
+          ],
+          "answerRule": {
+            "type": "custom",
+            "validate": {
+              "function": "function validateFiveDigitMultiple({ userInput }) {\n  const text = String(userInput ?? '').trim();\n  const valid = /^[1-9]\\d{3}7$/.test(text)\n    && validateIntegerFormat(text).valid && validateMultipleOf(text, 9).valid;\n  return { valid, feedback: valid ? '' : 'Un entier de cinq chiffres, divisible par 9 et se terminant par 7, est attendu.' };\n}"
+            }
+          },
+          "possible_answers": [
+            10027,
+            10017,
+            10007,
+            10008
+          ],
+          "qcmNumberFormat": "math",
+          "display_answer": "\\(\\text{La somme des chiffres doit être}\\)<br>\\(\\text{un multiple de }9\\text{ et le chiffre des unités doit être }7\\text{.}\\)<br>\\(\\text{Par exemple, }10~017\\text{ possède cinq chiffres et se termine par }7\\text{.}\\)<br>\\(1+0+0+1+7=9\\text{, donc }10~017\\text{ est divisible par }9\\text{.}\\)<br>\\(\\text{D'autres réponses sont possibles, par exemple }10~107\\text{.}\\)"
+        },
+        {
+          "id": "q5",
+          "title": "Calcul littéral",
+          "subtitle": "Factorisation",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Factoriser }9x^2-25\\)</div>",
+          "answers": [
+            "(3x-5)(3x+5)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "factorized"
+          },
+          "possible_answers": [
+            "\\((3x-5)(3x+5)\\)",
+            "\\((9x-5)(x+5)\\)",
+            "\\((3x-5)^2\\)",
+            "\\((3x+5)^2\\)"
+          ],
+          "display_answer": "\\(9x^2-25=(3x)^2-5^2\\)<br>\\(9x^2-25=(3x-5)(3x+5)\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Résolution d'une équation",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Déterminer la solution de l'équation :}\\)<br>\\(3x-2=2x+5\\)</div>",
+          "answers": [
+            "7",
+            "x=7",
+            "7=x"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "\\(x=3\\)",
+            "\\(x=-7\\)",
+            "\\(x=7\\)",
+            "\\(x=\\dfrac{7}{5}\\)"
+          ],
+          "display_answer": "\\(3x-2=2x+5\\)<br>\\(3x-2x=5+2\\)<br>\\(x=7\\)"
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Patron d'un cylindre",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Un cylindre a un rayon de }3~\\mathrm{cm}\\)<br>\\(\\text{et une hauteur de }5~\\mathrm{cm}\\text{.}\\)<br>\\(\\text{Quelle est la longueur du rectangle}\\)<br>\\(\\text{qui apparaît dans son patron ?}\\)</div>",
+          "answers": [
+            "6pi cm"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "cm",
+            "valueRule": {
+              "type": "piMultiple"
+            }
+          },
+          "inputTools": [
+            "pi"
+          ],
+          "possible_answers": [
+            "\\(3\\pi~\\mathrm{cm}\\)",
+            "\\(6\\pi~\\mathrm{cm}\\)",
+            "\\(10\\pi~\\mathrm{cm}\\)",
+            "\\(15~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\text{La longueur du rectangle est}\\)<br>\\(\\text{le périmètre du disque de base.}\\)<br>\\(\\mathrm{L}=2\\pi r\\)<br>\\(\\mathrm{L}=2\\times\\pi\\times3\\)<br>\\(\\mathrm{L}=6\\pi~\\mathrm{cm}\\)"
+        },
+        {
+          "id": "q8",
+          "title": "Géométrie",
+          "subtitle": "Rotation",
+          "question": "<style>@media print {\n  .evaluation-question:has(.dnb-ref2-large-question) { break-inside:auto;page-break-inside:auto; }\n  .dnb-ref2-large-question,.dnb-ref2-static-correction { break-inside:avoid;page-break-inside:avoid; }\n}</style><div class=\"dnb-ref2-large-question\" style=\"max-width:100%;min-width:0\"><style>\n  #multi-answer-container.dnb-ref2-rotations[style*=\"display: flex\"] { display:grid!important;grid-template-columns:repeat(3,auto);justify-content:center;max-width:1120px;margin:16px auto;gap:16px 24px; }\n  #multi-answer-container.dnb-ref2-rotations label { display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;min-width:0; }\n  #multi-answer-container.dnb-ref2-rotations input { width:80px;max-width:100%;box-sizing:border-box; }\n  #multi-answer-container.dnb-ref2-rotations select { font:inherit;max-width:100%; }\n  @media (max-width:900px) {\n    #multi-answer-container.dnb-ref2-rotations[style*=\"display: flex\"] { grid-template-columns:1fr; }\n    #multi-answer-container.dnb-ref2-rotations label:nth-child(4) { margin-top:16px; }\n  }\n</style>\\(\\text{À partir du pentagone }\\mathrm{ABCDE}\\text{,}\\)<br>\\(\\text{on obtient la rosace à droite en construisant}\\)<br>\\(\\text{les images du pentagone par deux rotations.}\\)<br>\\(\\text{Pour chacune des deux rotations,}\\)<br>\\(\\text{préciser le centre et l'angle.}\\)<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg></div>",
+          "answers": [
+            "B;120;antihoraire;B;120;horaire"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "answerFields": [
+            {
+              "label": "\\(\\text{Rotation }1\\text{ — Centre :}\\)",
+              "answer": "B",
+              "answerRule": {
+                "type": "symbolicExact"
+              }
+            },
+            {
+              "label": "\\(\\text{Angle (en degrés) :}\\)",
+              "answer": "120",
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: numericAngle(userInput) !== null })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Sens :}\\)",
+              "type": "select",
+              "answer": "antihoraire",
+              "options": [
+                {
+                  "value": "horaire",
+                  "label": "Horaire"
+                },
+                {
+                  "value": "antihoraire",
+                  "label": "Antihoraire"
+                }
+              ],
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: ['horaire', 'antihoraire'].includes(userInput) })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Rotation }2\\text{ — Centre :}\\)",
+              "answer": "B",
+              "answerRule": {
+                "type": "symbolicExact"
+              }
+            },
+            {
+              "label": "\\(\\text{Angle (en degrés) :}\\)",
+              "answer": "120",
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: numericAngle(userInput) !== null })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Sens :}\\)",
+              "type": "select",
+              "answer": "horaire",
+              "options": [
+                {
+                  "value": "horaire",
+                  "label": "Horaire"
+                },
+                {
+                  "value": "antihoraire",
+                  "label": "Antihoraire"
+                }
+              ],
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: ['horaire', 'antihoraire'].includes(userInput) })"
+                }
+              }
+            }
+          ],
+          "answerFieldsClass": "dnb-ref2-rotations",
+          "answerFieldsRule": {
+            "type": "custom",
+            "validate": {
+              "function": "function validateRotationPair({ userInput }) {\n  if (!Array.isArray(userInput) || userInput.length !== 6) return { valid: false };\n  const angles = [];\n  for (const offset of [0, 3]) {\n    const [center, angleText, direction] = userInput.slice(offset, offset + 3);\n    const angle = numericAngle(angleText);\n    if (!validateSymbolicExact({ userInput: center, validAnswers: ['B'] }).valid\n      || angle === null || !['horaire', 'antihoraire'].includes(direction)) return { valid: false };\n    const oriented = direction === 'antihoraire' ? angle : -angle;\n    angles.push(((oriented % 360) + 360) % 360);\n  }\n  return { valid: angles.includes(120) && angles.includes(240), feedback: 'Il faut décrire les deux rotations distinctes de centre B.' };\n}"
+            }
+          },
+          "qcmClass": "qcm-two-columns",
+          "possible_answers": [
+            "\\((\\mathrm{B},90^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},90^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{C},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{A},120^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},240^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},120^\\circ,\\text{horaire})\\)"
+          ],
+          "qcmAnswer": "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},120^\\circ,\\text{horaire})\\)",
+          "display_answer": "<span class=\"dnb-ref2-static-correction\" style=\"display:block\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{BCFGH}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens horaire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{C},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{H},\\ \\mathrm{D}\\mapsto\\mathrm{G},\\ \\mathrm{E}\\mapsto\\mathrm{F}\\text{.}\\)</p><p>\\(\\text{Pour obtenir }\\mathrm{ABHIJ}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens horaire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens antihoraire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{H},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{A},\\ \\mathrm{D}\\mapsto\\mathrm{J},\\ \\mathrm{E}\\mapsto\\mathrm{I}\\text{.}\\)</p><p>\\(\\text{Les deux rotations ont pour centre }\\mathrm{B}\\text{.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{BCFGH}\\text{ : }120^\\circ\\text{ antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ horaire.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{ABHIJ}\\text{ : }120^\\circ\\text{ horaire}\\) \\(\\text{ou }240^\\circ\\text{ antihoraire.}\\)</p></span>",
+          "progressiveCorrection": {
+            "kind": "steps",
+            "steps": [
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"1\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text>\n    </g>\n  </svg>\\(\\text{On repère le pentagone }\\mathrm{ABCDE}\\text{.}\\)"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"2\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{BCFGH}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens horaire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{C},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{H},\\ \\mathrm{D}\\mapsto\\mathrm{G},\\ \\mathrm{E}\\mapsto\\mathrm{F}\\text{.}\\)</p>"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"3\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{ABHIJ}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens horaire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens antihoraire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{H},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{A},\\ \\mathrm{D}\\mapsto\\mathrm{J},\\ \\mathrm{E}\\mapsto\\mathrm{I}\\text{.}\\)</p>"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Les deux rotations ont pour centre }\\mathrm{B}\\text{.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{BCFGH}\\text{ : }120^\\circ\\text{ antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ horaire.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{ABHIJ}\\text{ : }120^\\circ\\text{ horaire}\\) \\(\\text{ou }240^\\circ\\text{ antihoraire.}\\)</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q9",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Programme Scratch",
+          "question": "<style>@media print {\n  .evaluation-question:has(.dnb-ref2-large-question) { break-inside:auto;page-break-inside:auto; }\n  .dnb-ref2-large-question,.dnb-ref2-static-correction { break-inside:avoid;page-break-inside:avoid; }\n}</style><div class=\"dnb-ref2-large-question\" style=\"max-width:100%;min-width:0\">\\(\\text{Par quelle valeur doit-on remplacer les pointillés}\\)<br>\\(\\text{dans le script ci-contre}\\)<br>\\(\\text{pour obtenir la figure ci-dessous ?}\\)<div style=\"display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px;margin:16px auto\"><div style=\"flex:0 1 260px;min-width:0\"><pre class=\"blocks\" style=\"margin:0;max-width:100%\">quand @greenFlag est cliqué\naller à x: (-200) y: (0)\neffacer tout\nstylo en position d'écriture\nrépéter (...) fois\navancer de (30) pas\ntourner @turnLeft de (90) degrés\navancer de (10) pas\ntourner @turnRight de (90) degrés\navancer de (30) pas\ntourner @turnRight de (90) degrés\navancer de (10) pas\ntourner @turnLeft de (90) degrés\nfin</pre></div><div style=\"flex:1 1 380px;min-width:0\"><span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span></div></div></div>",
+          "answers": [
+            "6"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(7\\)"
+          ],
+          "display_answer": "<span class=\"dnb-ref2-static-correction\" style=\"display:block\">\\(\\text{Une itération trace un motif :}\\)<br>\\(30\\text{ pas, }10\\text{ pas, }30\\text{ pas, puis }10\\text{ pas.}\\)<br><span data-motif-count=\"1\" style=\"display:block;width:100px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 218 114 24\" width=\"100\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"1 motif rectangulaire Scratch\"><path d=\"M 80 239 L 134 239 M 134 239 L 134 221 M 134 221 L 188 221 M 188 221 L 188 239\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span>\\(\\text{Le dessin comporte six motifs identiques.}\\)<span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg><span style=\"display:grid;grid-template-columns:repeat(6,1fr)\"><span>\\(1\\)</span><span>\\(2\\)</span><span>\\(3\\)</span><span>\\(4\\)</span><span>\\(5\\)</span><span>\\(6\\)</span></span></span>\\(\\text{Il faut remplacer les pointillés par }6.\\)</span>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "depart",
+                "op": "goTo",
+                "x": -200,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "motifs",
+                "op": "repeat",
+                "count": 6,
+                "body": [
+                  {
+                    "id": "bas",
+                    "op": "move",
+                    "distance": 30
+                  },
+                  {
+                    "id": "monter",
+                    "op": "turn",
+                    "sense": "left",
+                    "angle": 90
+                  },
+                  {
+                    "id": "hauteur",
+                    "op": "move",
+                    "distance": 10
+                  },
+                  {
+                    "id": "droite",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "haut",
+                    "op": "move",
+                    "distance": 30
+                  },
+                  {
+                    "id": "descendre",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "retour",
+                    "op": "move",
+                    "distance": 10
+                  },
+                  {
+                    "id": "suite",
+                    "op": "turn",
+                    "sense": "left",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "\\(\\text{Une itération trace un motif :}\\)<br>\\(30\\text{ pas, }10\\text{ pas, }30\\text{ pas, puis }10\\text{ pas.}\\)<br><span data-motif-count=\"1\" style=\"display:block;width:100px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 218 114 24\" width=\"100\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"1 motif rectangulaire Scratch\"><path d=\"M 80 239 L 134 239 M 134 239 L 134 221 M 134 221 L 188 221 M 188 221 L 188 239\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span>\\(\\text{Le dessin comporte six motifs identiques.}\\)<span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg><span style=\"display:grid;grid-template-columns:repeat(6,1fr)\"><span>\\(1\\)</span><span>\\(2\\)</span><span>\\(3\\)</span><span>\\(4\\)</span><span>\\(5\\)</span><span>\\(6\\)</span></span></span>\\(\\text{Il faut remplacer les pointillés par }6.\\)",
+            "showAxes": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seed": 2026,
+    "state": 2026,
+    "exercise": {
+      "title": "Sujet de référence n° 2 — Septembre 2026 — Série générale",
+      "series": "Générale",
+      "shuffle": false,
+      "correctionMode": "progressive",
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Priorités opératoires",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Calculer : }\\mathrm{A}=2{,}5-5{,}5+3\\times4\\)</div>",
+          "answers": [
+            "9"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(0\\)",
+            "\\(9\\)",
+            "\\(-9\\)",
+            "\\(-12\\)"
+          ],
+          "display_answer": "\\(\\mathrm{A}=2{,}5-5{,}5+3\\times4\\)<br>\\(\\mathrm{A}=2{,}5-5{,}5+12\\)<br>\\(\\mathrm{A}=9\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Calcul numérique",
+          "subtitle": "Puissances",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Écrire sous la forme d'une puissance de }10\\text{ :}\\)<br>\\(\\mathrm{B}=100^3\\times10^{-2}\\)</div>",
+          "answers": [
+            "10^4"
+          ],
+          "answerRule": {
+            "type": "power",
+            "expectedValue": 10000,
+            "expectedBase": 10
+          },
+          "inputTools": [
+            "power"
+          ],
+          "possible_answers": [
+            "\\(10^1\\)",
+            "\\(10^6\\)",
+            "\\(10^4\\)",
+            "\\(10^8\\)"
+          ],
+          "display_answer": "\\(\\mathrm{B}=100^3\\times10^{-2}\\)<br>\\(\\mathrm{B}=(10^2)^3\\times10^{-2}\\)<br>\\(\\mathrm{B}=10^6\\times10^{-2}\\)<br>\\(\\mathrm{B}=10^4\\)"
+        },
+        {
+          "id": "q3",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un carré",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Quel est le côté d'un carré d'aire }49~\\mathrm{cm}^2\\text{ ?}\\)</div>",
+          "answers": [
+            "7 cm"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "cm"
+          },
+          "possible_answers": [
+            "\\(24{,}5~\\mathrm{cm}\\)",
+            "\\(7~\\mathrm{cm}\\)",
+            "\\(12{,}25~\\mathrm{cm}\\)",
+            "\\(49~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\sqrt{49}=7\\)<br>\\(\\text{Le côté mesure }7~\\mathrm{cm}.\\)"
+        },
+        {
+          "id": "q4",
+          "title": "Arithmétique",
+          "subtitle": "Divisibilité par 9",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Donner un nombre entier à }5\\text{ chiffres}\\)<br>\\(\\text{divisible par }9\\text{ et se terminant par }7\\text{.}\\)</div>",
+          "answers": [
+            "10017"
+          ],
+          "answerRule": {
+            "type": "custom",
+            "validate": {
+              "function": "function validateFiveDigitMultiple({ userInput }) {\n  const text = String(userInput ?? '').trim();\n  const valid = /^[1-9]\\d{3}7$/.test(text)\n    && validateIntegerFormat(text).valid && validateMultipleOf(text, 9).valid;\n  return { valid, feedback: valid ? '' : 'Un entier de cinq chiffres, divisible par 9 et se terminant par 7, est attendu.' };\n}"
+            }
+          },
+          "possible_answers": [
+            10027,
+            10017,
+            10007,
+            10008
+          ],
+          "qcmNumberFormat": "math",
+          "display_answer": "\\(\\text{La somme des chiffres doit être}\\)<br>\\(\\text{un multiple de }9\\text{ et le chiffre des unités doit être }7\\text{.}\\)<br>\\(\\text{Par exemple, }10~017\\text{ possède cinq chiffres et se termine par }7\\text{.}\\)<br>\\(1+0+0+1+7=9\\text{, donc }10~017\\text{ est divisible par }9\\text{.}\\)<br>\\(\\text{D'autres réponses sont possibles, par exemple }10~107\\text{.}\\)"
+        },
+        {
+          "id": "q5",
+          "title": "Calcul littéral",
+          "subtitle": "Factorisation",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Factoriser }9x^2-25\\)</div>",
+          "answers": [
+            "(3x-5)(3x+5)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "factorized"
+          },
+          "possible_answers": [
+            "\\((3x-5)(3x+5)\\)",
+            "\\((9x-5)(x+5)\\)",
+            "\\((3x-5)^2\\)",
+            "\\((3x+5)^2\\)"
+          ],
+          "display_answer": "\\(9x^2-25=(3x)^2-5^2\\)<br>\\(9x^2-25=(3x-5)(3x+5)\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Résolution d'une équation",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Déterminer la solution de l'équation :}\\)<br>\\(3x-2=2x+5\\)</div>",
+          "answers": [
+            "7",
+            "x=7",
+            "7=x"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "\\(x=3\\)",
+            "\\(x=-7\\)",
+            "\\(x=7\\)",
+            "\\(x=\\dfrac{7}{5}\\)"
+          ],
+          "display_answer": "\\(3x-2=2x+5\\)<br>\\(3x-2x=5+2\\)<br>\\(x=7\\)"
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Patron d'un cylindre",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Un cylindre a un rayon de }3~\\mathrm{cm}\\)<br>\\(\\text{et une hauteur de }5~\\mathrm{cm}\\text{.}\\)<br>\\(\\text{Quelle est la longueur du rectangle}\\)<br>\\(\\text{qui apparaît dans son patron ?}\\)</div>",
+          "answers": [
+            "6pi cm"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "cm",
+            "valueRule": {
+              "type": "piMultiple"
+            }
+          },
+          "inputTools": [
+            "pi"
+          ],
+          "possible_answers": [
+            "\\(3\\pi~\\mathrm{cm}\\)",
+            "\\(6\\pi~\\mathrm{cm}\\)",
+            "\\(10\\pi~\\mathrm{cm}\\)",
+            "\\(15~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\text{La longueur du rectangle est}\\)<br>\\(\\text{le périmètre du disque de base.}\\)<br>\\(\\mathrm{L}=2\\pi r\\)<br>\\(\\mathrm{L}=2\\times\\pi\\times3\\)<br>\\(\\mathrm{L}=6\\pi~\\mathrm{cm}\\)"
+        },
+        {
+          "id": "q8",
+          "title": "Géométrie",
+          "subtitle": "Rotation",
+          "question": "<style>@media print {\n  .evaluation-question:has(.dnb-ref2-large-question) { break-inside:auto;page-break-inside:auto; }\n  .dnb-ref2-large-question,.dnb-ref2-static-correction { break-inside:avoid;page-break-inside:avoid; }\n}</style><div class=\"dnb-ref2-large-question\" style=\"max-width:100%;min-width:0\"><style>\n  #multi-answer-container.dnb-ref2-rotations[style*=\"display: flex\"] { display:grid!important;grid-template-columns:repeat(3,auto);justify-content:center;max-width:1120px;margin:16px auto;gap:16px 24px; }\n  #multi-answer-container.dnb-ref2-rotations label { display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;min-width:0; }\n  #multi-answer-container.dnb-ref2-rotations input { width:80px;max-width:100%;box-sizing:border-box; }\n  #multi-answer-container.dnb-ref2-rotations select { font:inherit;max-width:100%; }\n  @media (max-width:900px) {\n    #multi-answer-container.dnb-ref2-rotations[style*=\"display: flex\"] { grid-template-columns:1fr; }\n    #multi-answer-container.dnb-ref2-rotations label:nth-child(4) { margin-top:16px; }\n  }\n</style>\\(\\text{À partir du pentagone }\\mathrm{ABCDE}\\text{,}\\)<br>\\(\\text{on obtient la rosace à droite en construisant}\\)<br>\\(\\text{les images du pentagone par deux rotations.}\\)<br>\\(\\text{Pour chacune des deux rotations,}\\)<br>\\(\\text{préciser le centre et l'angle.}\\)<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg></div>",
+          "answers": [
+            "B;120;antihoraire;B;120;horaire"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "answerFields": [
+            {
+              "label": "\\(\\text{Rotation }1\\text{ — Centre :}\\)",
+              "answer": "B",
+              "answerRule": {
+                "type": "symbolicExact"
+              }
+            },
+            {
+              "label": "\\(\\text{Angle (en degrés) :}\\)",
+              "answer": "120",
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: numericAngle(userInput) !== null })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Sens :}\\)",
+              "type": "select",
+              "answer": "antihoraire",
+              "options": [
+                {
+                  "value": "horaire",
+                  "label": "Horaire"
+                },
+                {
+                  "value": "antihoraire",
+                  "label": "Antihoraire"
+                }
+              ],
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: ['horaire', 'antihoraire'].includes(userInput) })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Rotation }2\\text{ — Centre :}\\)",
+              "answer": "B",
+              "answerRule": {
+                "type": "symbolicExact"
+              }
+            },
+            {
+              "label": "\\(\\text{Angle (en degrés) :}\\)",
+              "answer": "120",
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: numericAngle(userInput) !== null })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Sens :}\\)",
+              "type": "select",
+              "answer": "horaire",
+              "options": [
+                {
+                  "value": "horaire",
+                  "label": "Horaire"
+                },
+                {
+                  "value": "antihoraire",
+                  "label": "Antihoraire"
+                }
+              ],
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: ['horaire', 'antihoraire'].includes(userInput) })"
+                }
+              }
+            }
+          ],
+          "answerFieldsClass": "dnb-ref2-rotations",
+          "answerFieldsRule": {
+            "type": "custom",
+            "validate": {
+              "function": "function validateRotationPair({ userInput }) {\n  if (!Array.isArray(userInput) || userInput.length !== 6) return { valid: false };\n  const angles = [];\n  for (const offset of [0, 3]) {\n    const [center, angleText, direction] = userInput.slice(offset, offset + 3);\n    const angle = numericAngle(angleText);\n    if (!validateSymbolicExact({ userInput: center, validAnswers: ['B'] }).valid\n      || angle === null || !['horaire', 'antihoraire'].includes(direction)) return { valid: false };\n    const oriented = direction === 'antihoraire' ? angle : -angle;\n    angles.push(((oriented % 360) + 360) % 360);\n  }\n  return { valid: angles.includes(120) && angles.includes(240), feedback: 'Il faut décrire les deux rotations distinctes de centre B.' };\n}"
+            }
+          },
+          "qcmClass": "qcm-two-columns",
+          "possible_answers": [
+            "\\((\\mathrm{B},90^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},90^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{C},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{A},120^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},240^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},120^\\circ,\\text{horaire})\\)"
+          ],
+          "qcmAnswer": "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},120^\\circ,\\text{horaire})\\)",
+          "display_answer": "<span class=\"dnb-ref2-static-correction\" style=\"display:block\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{BCFGH}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens horaire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{C},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{H},\\ \\mathrm{D}\\mapsto\\mathrm{G},\\ \\mathrm{E}\\mapsto\\mathrm{F}\\text{.}\\)</p><p>\\(\\text{Pour obtenir }\\mathrm{ABHIJ}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens horaire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens antihoraire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{H},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{A},\\ \\mathrm{D}\\mapsto\\mathrm{J},\\ \\mathrm{E}\\mapsto\\mathrm{I}\\text{.}\\)</p><p>\\(\\text{Les deux rotations ont pour centre }\\mathrm{B}\\text{.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{BCFGH}\\text{ : }120^\\circ\\text{ antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ horaire.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{ABHIJ}\\text{ : }120^\\circ\\text{ horaire}\\) \\(\\text{ou }240^\\circ\\text{ antihoraire.}\\)</p></span>",
+          "progressiveCorrection": {
+            "kind": "steps",
+            "steps": [
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"1\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text>\n    </g>\n  </svg>\\(\\text{On repère le pentagone }\\mathrm{ABCDE}\\text{.}\\)"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"2\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{BCFGH}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens horaire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{C},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{H},\\ \\mathrm{D}\\mapsto\\mathrm{G},\\ \\mathrm{E}\\mapsto\\mathrm{F}\\text{.}\\)</p>"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"3\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{ABHIJ}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens horaire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens antihoraire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{H},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{A},\\ \\mathrm{D}\\mapsto\\mathrm{J},\\ \\mathrm{E}\\mapsto\\mathrm{I}\\text{.}\\)</p>"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Les deux rotations ont pour centre }\\mathrm{B}\\text{.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{BCFGH}\\text{ : }120^\\circ\\text{ antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ horaire.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{ABHIJ}\\text{ : }120^\\circ\\text{ horaire}\\) \\(\\text{ou }240^\\circ\\text{ antihoraire.}\\)</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q9",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Programme Scratch",
+          "question": "<style>@media print {\n  .evaluation-question:has(.dnb-ref2-large-question) { break-inside:auto;page-break-inside:auto; }\n  .dnb-ref2-large-question,.dnb-ref2-static-correction { break-inside:avoid;page-break-inside:avoid; }\n}</style><div class=\"dnb-ref2-large-question\" style=\"max-width:100%;min-width:0\">\\(\\text{Par quelle valeur doit-on remplacer les pointillés}\\)<br>\\(\\text{dans le script ci-contre}\\)<br>\\(\\text{pour obtenir la figure ci-dessous ?}\\)<div style=\"display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px;margin:16px auto\"><div style=\"flex:0 1 260px;min-width:0\"><pre class=\"blocks\" style=\"margin:0;max-width:100%\">quand @greenFlag est cliqué\naller à x: (-200) y: (0)\neffacer tout\nstylo en position d'écriture\nrépéter (...) fois\navancer de (30) pas\ntourner @turnLeft de (90) degrés\navancer de (10) pas\ntourner @turnRight de (90) degrés\navancer de (30) pas\ntourner @turnRight de (90) degrés\navancer de (10) pas\ntourner @turnLeft de (90) degrés\nfin</pre></div><div style=\"flex:1 1 380px;min-width:0\"><span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span></div></div></div>",
+          "answers": [
+            "6"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(7\\)"
+          ],
+          "display_answer": "<span class=\"dnb-ref2-static-correction\" style=\"display:block\">\\(\\text{Une itération trace un motif :}\\)<br>\\(30\\text{ pas, }10\\text{ pas, }30\\text{ pas, puis }10\\text{ pas.}\\)<br><span data-motif-count=\"1\" style=\"display:block;width:100px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 218 114 24\" width=\"100\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"1 motif rectangulaire Scratch\"><path d=\"M 80 239 L 134 239 M 134 239 L 134 221 M 134 221 L 188 221 M 188 221 L 188 239\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span>\\(\\text{Le dessin comporte six motifs identiques.}\\)<span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg><span style=\"display:grid;grid-template-columns:repeat(6,1fr)\"><span>\\(1\\)</span><span>\\(2\\)</span><span>\\(3\\)</span><span>\\(4\\)</span><span>\\(5\\)</span><span>\\(6\\)</span></span></span>\\(\\text{Il faut remplacer les pointillés par }6.\\)</span>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "depart",
+                "op": "goTo",
+                "x": -200,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "motifs",
+                "op": "repeat",
+                "count": 6,
+                "body": [
+                  {
+                    "id": "bas",
+                    "op": "move",
+                    "distance": 30
+                  },
+                  {
+                    "id": "monter",
+                    "op": "turn",
+                    "sense": "left",
+                    "angle": 90
+                  },
+                  {
+                    "id": "hauteur",
+                    "op": "move",
+                    "distance": 10
+                  },
+                  {
+                    "id": "droite",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "haut",
+                    "op": "move",
+                    "distance": 30
+                  },
+                  {
+                    "id": "descendre",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "retour",
+                    "op": "move",
+                    "distance": 10
+                  },
+                  {
+                    "id": "suite",
+                    "op": "turn",
+                    "sense": "left",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "\\(\\text{Une itération trace un motif :}\\)<br>\\(30\\text{ pas, }10\\text{ pas, }30\\text{ pas, puis }10\\text{ pas.}\\)<br><span data-motif-count=\"1\" style=\"display:block;width:100px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 218 114 24\" width=\"100\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"1 motif rectangulaire Scratch\"><path d=\"M 80 239 L 134 239 M 134 239 L 134 221 M 134 221 L 188 221 M 188 221 L 188 239\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span>\\(\\text{Le dessin comporte six motifs identiques.}\\)<span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg><span style=\"display:grid;grid-template-columns:repeat(6,1fr)\"><span>\\(1\\)</span><span>\\(2\\)</span><span>\\(3\\)</span><span>\\(4\\)</span><span>\\(5\\)</span><span>\\(6\\)</span></span></span>\\(\\text{Il faut remplacer les pointillés par }6.\\)",
+            "showAxes": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "seed": 98765,
+    "state": 98765,
+    "exercise": {
+      "title": "Sujet de référence n° 2 — Septembre 2026 — Série générale",
+      "series": "Générale",
+      "shuffle": false,
+      "correctionMode": "progressive",
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul numérique",
+          "subtitle": "Priorités opératoires",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Calculer : }\\mathrm{A}=2{,}5-5{,}5+3\\times4\\)</div>",
+          "answers": [
+            "9"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(0\\)",
+            "\\(9\\)",
+            "\\(-9\\)",
+            "\\(-12\\)"
+          ],
+          "display_answer": "\\(\\mathrm{A}=2{,}5-5{,}5+3\\times4\\)<br>\\(\\mathrm{A}=2{,}5-5{,}5+12\\)<br>\\(\\mathrm{A}=9\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Calcul numérique",
+          "subtitle": "Puissances",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Écrire sous la forme d'une puissance de }10\\text{ :}\\)<br>\\(\\mathrm{B}=100^3\\times10^{-2}\\)</div>",
+          "answers": [
+            "10^4"
+          ],
+          "answerRule": {
+            "type": "power",
+            "expectedValue": 10000,
+            "expectedBase": 10
+          },
+          "inputTools": [
+            "power"
+          ],
+          "possible_answers": [
+            "\\(10^1\\)",
+            "\\(10^6\\)",
+            "\\(10^4\\)",
+            "\\(10^8\\)"
+          ],
+          "display_answer": "\\(\\mathrm{B}=100^3\\times10^{-2}\\)<br>\\(\\mathrm{B}=(10^2)^3\\times10^{-2}\\)<br>\\(\\mathrm{B}=10^6\\times10^{-2}\\)<br>\\(\\mathrm{B}=10^4\\)"
+        },
+        {
+          "id": "q3",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un carré",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Quel est le côté d'un carré d'aire }49~\\mathrm{cm}^2\\text{ ?}\\)</div>",
+          "answers": [
+            "7 cm"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "cm"
+          },
+          "possible_answers": [
+            "\\(24{,}5~\\mathrm{cm}\\)",
+            "\\(7~\\mathrm{cm}\\)",
+            "\\(12{,}25~\\mathrm{cm}\\)",
+            "\\(49~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\sqrt{49}=7\\)<br>\\(\\text{Le côté mesure }7~\\mathrm{cm}.\\)"
+        },
+        {
+          "id": "q4",
+          "title": "Arithmétique",
+          "subtitle": "Divisibilité par 9",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Donner un nombre entier à }5\\text{ chiffres}\\)<br>\\(\\text{divisible par }9\\text{ et se terminant par }7\\text{.}\\)</div>",
+          "answers": [
+            "10017"
+          ],
+          "answerRule": {
+            "type": "custom",
+            "validate": {
+              "function": "function validateFiveDigitMultiple({ userInput }) {\n  const text = String(userInput ?? '').trim();\n  const valid = /^[1-9]\\d{3}7$/.test(text)\n    && validateIntegerFormat(text).valid && validateMultipleOf(text, 9).valid;\n  return { valid, feedback: valid ? '' : 'Un entier de cinq chiffres, divisible par 9 et se terminant par 7, est attendu.' };\n}"
+            }
+          },
+          "possible_answers": [
+            10027,
+            10017,
+            10007,
+            10008
+          ],
+          "qcmNumberFormat": "math",
+          "display_answer": "\\(\\text{La somme des chiffres doit être}\\)<br>\\(\\text{un multiple de }9\\text{ et le chiffre des unités doit être }7\\text{.}\\)<br>\\(\\text{Par exemple, }10~017\\text{ possède cinq chiffres et se termine par }7\\text{.}\\)<br>\\(1+0+0+1+7=9\\text{, donc }10~017\\text{ est divisible par }9\\text{.}\\)<br>\\(\\text{D'autres réponses sont possibles, par exemple }10~107\\text{.}\\)"
+        },
+        {
+          "id": "q5",
+          "title": "Calcul littéral",
+          "subtitle": "Factorisation",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Factoriser }9x^2-25\\)</div>",
+          "answers": [
+            "(3x-5)(3x+5)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "factorized"
+          },
+          "possible_answers": [
+            "\\((3x-5)(3x+5)\\)",
+            "\\((9x-5)(x+5)\\)",
+            "\\((3x-5)^2\\)",
+            "\\((3x+5)^2\\)"
+          ],
+          "display_answer": "\\(9x^2-25=(3x)^2-5^2\\)<br>\\(9x^2-25=(3x-5)(3x+5)\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Résolution d'une équation",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Déterminer la solution de l'équation :}\\)<br>\\(3x-2=2x+5\\)</div>",
+          "answers": [
+            "7",
+            "x=7",
+            "7=x"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "possible_answers": [
+            "\\(x=3\\)",
+            "\\(x=-7\\)",
+            "\\(x=7\\)",
+            "\\(x=\\dfrac{7}{5}\\)"
+          ],
+          "display_answer": "\\(3x-2=2x+5\\)<br>\\(3x-2x=5+2\\)<br>\\(x=7\\)"
+        },
+        {
+          "id": "q7",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Patron d'un cylindre",
+          "question": "<div class=\"\" style=\"max-width:100%;min-width:0\">\\(\\text{Un cylindre a un rayon de }3~\\mathrm{cm}\\)<br>\\(\\text{et une hauteur de }5~\\mathrm{cm}\\text{.}\\)<br>\\(\\text{Quelle est la longueur du rectangle}\\)<br>\\(\\text{qui apparaît dans son patron ?}\\)</div>",
+          "answers": [
+            "6pi cm"
+          ],
+          "answerRule": {
+            "type": "length",
+            "requiredUnit": "cm",
+            "valueRule": {
+              "type": "piMultiple"
+            }
+          },
+          "inputTools": [
+            "pi"
+          ],
+          "possible_answers": [
+            "\\(3\\pi~\\mathrm{cm}\\)",
+            "\\(6\\pi~\\mathrm{cm}\\)",
+            "\\(10\\pi~\\mathrm{cm}\\)",
+            "\\(15~\\mathrm{cm}\\)"
+          ],
+          "display_answer": "\\(\\text{La longueur du rectangle est}\\)<br>\\(\\text{le périmètre du disque de base.}\\)<br>\\(\\mathrm{L}=2\\pi r\\)<br>\\(\\mathrm{L}=2\\times\\pi\\times3\\)<br>\\(\\mathrm{L}=6\\pi~\\mathrm{cm}\\)"
+        },
+        {
+          "id": "q8",
+          "title": "Géométrie",
+          "subtitle": "Rotation",
+          "question": "<style>@media print {\n  .evaluation-question:has(.dnb-ref2-large-question) { break-inside:auto;page-break-inside:auto; }\n  .dnb-ref2-large-question,.dnb-ref2-static-correction { break-inside:avoid;page-break-inside:avoid; }\n}</style><div class=\"dnb-ref2-large-question\" style=\"max-width:100%;min-width:0\"><style>\n  #multi-answer-container.dnb-ref2-rotations[style*=\"display: flex\"] { display:grid!important;grid-template-columns:repeat(3,auto);justify-content:center;max-width:1120px;margin:16px auto;gap:16px 24px; }\n  #multi-answer-container.dnb-ref2-rotations label { display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;min-width:0; }\n  #multi-answer-container.dnb-ref2-rotations input { width:80px;max-width:100%;box-sizing:border-box; }\n  #multi-answer-container.dnb-ref2-rotations select { font:inherit;max-width:100%; }\n  @media (max-width:900px) {\n    #multi-answer-container.dnb-ref2-rotations[style*=\"display: flex\"] { grid-template-columns:1fr; }\n    #multi-answer-container.dnb-ref2-rotations label:nth-child(4) { margin-top:16px; }\n  }\n</style>\\(\\text{À partir du pentagone }\\mathrm{ABCDE}\\text{,}\\)<br>\\(\\text{on obtient la rosace à droite en construisant}\\)<br>\\(\\text{les images du pentagone par deux rotations.}\\)<br>\\(\\text{Pour chacune des deux rotations,}\\)<br>\\(\\text{préciser le centre et l'angle.}\\)<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"0\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg></div>",
+          "answers": [
+            "B;120;antihoraire;B;120;horaire"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "answerFields": [
+            {
+              "label": "\\(\\text{Rotation }1\\text{ — Centre :}\\)",
+              "answer": "B",
+              "answerRule": {
+                "type": "symbolicExact"
+              }
+            },
+            {
+              "label": "\\(\\text{Angle (en degrés) :}\\)",
+              "answer": "120",
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: numericAngle(userInput) !== null })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Sens :}\\)",
+              "type": "select",
+              "answer": "antihoraire",
+              "options": [
+                {
+                  "value": "horaire",
+                  "label": "Horaire"
+                },
+                {
+                  "value": "antihoraire",
+                  "label": "Antihoraire"
+                }
+              ],
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: ['horaire', 'antihoraire'].includes(userInput) })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Rotation }2\\text{ — Centre :}\\)",
+              "answer": "B",
+              "answerRule": {
+                "type": "symbolicExact"
+              }
+            },
+            {
+              "label": "\\(\\text{Angle (en degrés) :}\\)",
+              "answer": "120",
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: numericAngle(userInput) !== null })"
+                }
+              }
+            },
+            {
+              "label": "\\(\\text{Sens :}\\)",
+              "type": "select",
+              "answer": "horaire",
+              "options": [
+                {
+                  "value": "horaire",
+                  "label": "Horaire"
+                },
+                {
+                  "value": "antihoraire",
+                  "label": "Antihoraire"
+                }
+              ],
+              "answerRule": {
+                "type": "custom",
+                "validate": {
+                  "function": "({ userInput }) => ({ valid: ['horaire', 'antihoraire'].includes(userInput) })"
+                }
+              }
+            }
+          ],
+          "answerFieldsClass": "dnb-ref2-rotations",
+          "answerFieldsRule": {
+            "type": "custom",
+            "validate": {
+              "function": "function validateRotationPair({ userInput }) {\n  if (!Array.isArray(userInput) || userInput.length !== 6) return { valid: false };\n  const angles = [];\n  for (const offset of [0, 3]) {\n    const [center, angleText, direction] = userInput.slice(offset, offset + 3);\n    const angle = numericAngle(angleText);\n    if (!validateSymbolicExact({ userInput: center, validAnswers: ['B'] }).valid\n      || angle === null || !['horaire', 'antihoraire'].includes(direction)) return { valid: false };\n    const oriented = direction === 'antihoraire' ? angle : -angle;\n    angles.push(((oriented % 360) + 360) % 360);\n  }\n  return { valid: angles.includes(120) && angles.includes(240), feedback: 'Il faut décrire les deux rotations distinctes de centre B.' };\n}"
+            }
+          },
+          "qcmClass": "qcm-two-columns",
+          "possible_answers": [
+            "\\((\\mathrm{B},90^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},90^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{C},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{A},120^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},240^\\circ,\\text{horaire})\\)",
+            "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},120^\\circ,\\text{horaire})\\)"
+          ],
+          "qcmAnswer": "\\((\\mathrm{B},120^\\circ,\\text{antihoraire})\\) \\(\\text{et }(\\mathrm{B},120^\\circ,\\text{horaire})\\)",
+          "display_answer": "<span class=\"dnb-ref2-static-correction\" style=\"display:block\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{BCFGH}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens horaire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{C},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{H},\\ \\mathrm{D}\\mapsto\\mathrm{G},\\ \\mathrm{E}\\mapsto\\mathrm{F}\\text{.}\\)</p><p>\\(\\text{Pour obtenir }\\mathrm{ABHIJ}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens horaire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens antihoraire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{H},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{A},\\ \\mathrm{D}\\mapsto\\mathrm{J},\\ \\mathrm{E}\\mapsto\\mathrm{I}\\text{.}\\)</p><p>\\(\\text{Les deux rotations ont pour centre }\\mathrm{B}\\text{.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{BCFGH}\\text{ : }120^\\circ\\text{ antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ horaire.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{ABHIJ}\\text{ : }120^\\circ\\text{ horaire}\\) \\(\\text{ou }240^\\circ\\text{ antihoraire.}\\)</p></span>",
+          "progressiveCorrection": {
+            "kind": "steps",
+            "steps": [
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"1\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    \n    \n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text>\n    </g>\n  </svg>\\(\\text{On repère le pentagone }\\mathrm{ABCDE}\\text{.}\\)"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"2\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    \n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{BCFGH}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens horaire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{C},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{H},\\ \\mathrm{D}\\mapsto\\mathrm{G},\\ \\mathrm{E}\\mapsto\\mathrm{F}\\text{.}\\)</p>"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"3\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Pour obtenir }\\mathrm{ABHIJ}\\text{ : centre }\\mathrm{B}\\text{,}\\) \\(120^\\circ\\text{ dans le sens horaire}\\) \\(\\text{ou }240^\\circ\\text{ dans le sens antihoraire.}\\)</p><p>\\(\\mathrm{A}\\mapsto\\mathrm{H},\\ \\mathrm{B}\\mapsto\\mathrm{B},\\ \\mathrm{C}\\mapsto\\mathrm{A},\\ \\mathrm{D}\\mapsto\\mathrm{J},\\ \\mathrm{E}\\mapsto\\mathrm{I}\\text{.}\\)</p>"
+              },
+              {
+                "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 680 400\" width=\"680\" role=\"img\" aria-label=\"Pentagone ABCDE à gauche et rosace de trois pentagones à droite\" data-rosette-scene=\"4\" style=\"display:block;max-width:100%;height:auto;margin:16px auto\">\n    <polygon points=\"150,270 90,270 60,218.03847577293368 111.96152422706632,128.0384757729337 201.96152422706632,180\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"550,222 490,222 460,170.03847577293368 511.9615242270663,80.03847577293371 601.9615242270663,132\" fill=\"none\" fill-opacity=\"1\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,170.03847577293368 490,222 460,273.9615242270663 356.07695154586736,273.96152422706626 356.07695154586736,170.03847577293365\" fill=\"#0284c7\" fill-opacity=\"0.18\" stroke=\"#0284c7\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <polygon points=\"460,273.9615242270663 490,222 550,222 601.9615242270663,311.99999999999994 511.9615242270663,363.9615242270663\" fill=\"#16a34a\" fill-opacity=\"0.18\" stroke=\"#16a34a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n    <circle cx=\"490\" cy=\"222\" r=\"5\" fill=\"#d97706\"/>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"17\" text-anchor=\"middle\">\n      <text x=\"162\" y=\"278\">A</text><text x=\"95\" y=\"290\">B</text><text x=\"48\" y=\"212.03847577293368\">C</text><text x=\"111.96152422706632\" y=\"116.03847577293371\">D</text><text x=\"213.96152422706632\" y=\"180\">E</text>\n      <text x=\"562\" y=\"230\">A</text><text x=\"495\" y=\"242\">B</text><text x=\"448\" y=\"164.03847577293368\">C</text><text x=\"511.9615242270663\" y=\"68.03847577293371\">D</text><text x=\"613.9615242270663\" y=\"132\">E</text><text x=\"344.07695154586736\" y=\"168.03847577293365\">F</text><text x=\"344.07695154586736\" y=\"283.96152422706626\">G</text><text x=\"448\" y=\"291.9615242270663\">H</text><text x=\"511.9615242270663\" y=\"383.9615242270663\">I</text><text x=\"613.9615242270663\" y=\"315.99999999999994\">J</text>\n    </g>\n  </svg><p>\\(\\text{Les deux rotations ont pour centre }\\mathrm{B}\\text{.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{BCFGH}\\text{ : }120^\\circ\\text{ antihoraire}\\) \\(\\text{ou }240^\\circ\\text{ horaire.}\\)</p><p>\\(\\mathrm{ABCDE}\\to\\mathrm{ABHIJ}\\text{ : }120^\\circ\\text{ horaire}\\) \\(\\text{ou }240^\\circ\\text{ antihoraire.}\\)</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q9",
+          "title": "Algorithmique et programmation",
+          "subtitle": "Programme Scratch",
+          "question": "<style>@media print {\n  .evaluation-question:has(.dnb-ref2-large-question) { break-inside:auto;page-break-inside:auto; }\n  .dnb-ref2-large-question,.dnb-ref2-static-correction { break-inside:avoid;page-break-inside:avoid; }\n}</style><div class=\"dnb-ref2-large-question\" style=\"max-width:100%;min-width:0\">\\(\\text{Par quelle valeur doit-on remplacer les pointillés}\\)<br>\\(\\text{dans le script ci-contre}\\)<br>\\(\\text{pour obtenir la figure ci-dessous ?}\\)<div style=\"display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:24px;margin:16px auto\"><div style=\"flex:0 1 260px;min-width:0\"><pre class=\"blocks\" style=\"margin:0;max-width:100%\">quand @greenFlag est cliqué\naller à x: (-200) y: (0)\neffacer tout\nstylo en position d'écriture\nrépéter (...) fois\navancer de (30) pas\ntourner @turnLeft de (90) degrés\navancer de (10) pas\ntourner @turnRight de (90) degrés\navancer de (30) pas\ntourner @turnRight de (90) degrés\navancer de (10) pas\ntourner @turnLeft de (90) degrés\nfin</pre></div><div style=\"flex:1 1 380px;min-width:0\"><span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span></div></div></div>",
+          "answers": [
+            "6"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "possible_answers": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(7\\)"
+          ],
+          "display_answer": "<span class=\"dnb-ref2-static-correction\" style=\"display:block\">\\(\\text{Une itération trace un motif :}\\)<br>\\(30\\text{ pas, }10\\text{ pas, }30\\text{ pas, puis }10\\text{ pas.}\\)<br><span data-motif-count=\"1\" style=\"display:block;width:100px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 218 114 24\" width=\"100\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"1 motif rectangulaire Scratch\"><path d=\"M 80 239 L 134 239 M 134 239 L 134 221 M 134 221 L 188 221 M 188 221 L 188 239\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span>\\(\\text{Le dessin comporte six motifs identiques.}\\)<span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg><span style=\"display:grid;grid-template-columns:repeat(6,1fr)\"><span>\\(1\\)</span><span>\\(2\\)</span><span>\\(3\\)</span><span>\\(4\\)</span><span>\\(5\\)</span><span>\\(6\\)</span></span></span>\\(\\text{Il faut remplacer les pointillés par }6.\\)</span>",
+          "progressiveCorrection": {
+            "kind": "scratch",
+            "program": [
+              {
+                "id": "drapeau",
+                "op": "whenGreenFlagClicked"
+              },
+              {
+                "id": "depart",
+                "op": "goTo",
+                "x": -200,
+                "y": 0
+              },
+              {
+                "id": "stylo",
+                "op": "penDown"
+              },
+              {
+                "id": "motifs",
+                "op": "repeat",
+                "count": 6,
+                "body": [
+                  {
+                    "id": "bas",
+                    "op": "move",
+                    "distance": 30
+                  },
+                  {
+                    "id": "monter",
+                    "op": "turn",
+                    "sense": "left",
+                    "angle": 90
+                  },
+                  {
+                    "id": "hauteur",
+                    "op": "move",
+                    "distance": 10
+                  },
+                  {
+                    "id": "droite",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "haut",
+                    "op": "move",
+                    "distance": 30
+                  },
+                  {
+                    "id": "descendre",
+                    "op": "turn",
+                    "sense": "right",
+                    "angle": 90
+                  },
+                  {
+                    "id": "retour",
+                    "op": "move",
+                    "distance": 10
+                  },
+                  {
+                    "id": "suite",
+                    "op": "turn",
+                    "sense": "left",
+                    "angle": 90
+                  }
+                ]
+              }
+            ],
+            "conclusion": "\\(\\text{Une itération trace un motif :}\\)<br>\\(30\\text{ pas, }10\\text{ pas, }30\\text{ pas, puis }10\\text{ pas.}\\)<br><span data-motif-count=\"1\" style=\"display:block;width:100px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 218 114 24\" width=\"100\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"1 motif rectangulaire Scratch\"><path d=\"M 80 239 L 134 239 M 134 239 L 134 221 M 134 221 L 188 221 M 188 221 L 188 239\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg></span>\\(\\text{Le dessin comporte six motifs identiques.}\\)<span data-motif-count=\"6\" style=\"display:block;width:600px;max-width:100%;margin:16px auto\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"77 222 366 16\" width=\"600\" style=\"max-width:100%;height:auto;background:white;border-radius:6px;vertical-align:middle\" role=\"img\" aria-label=\"6 motifs rectangulaires Scratch\"><path d=\"M 80 235 L 110 235 M 110 235 L 110 225 M 110 225 L 140 225 M 140 225 L 140 235 M 140 235 L 170 235 M 170 235 L 170 225 M 170 225 L 200 225 M 200 225 L 200 235 M 200 235 L 230 235 M 230 235 L 230 225 M 230 225 L 260 225 M 260 225 L 260 235 M 260 235 L 290 235 M 290 235 L 290 225 M 290 225 L 320 225 M 320 225 L 320 235 M 320 235 L 350 235 M 350 235 L 350 225 M 350 225 L 380 225 M 380 225 L 380 235 M 380 235 L 410 235 M 410 235 L 410 225 M 410 225 L 440 225 M 440 225 L 440 235\" fill=\"none\" stroke=\"#0000ff\" stroke-width=\"1\"/></svg><span style=\"display:grid;grid-template-columns:repeat(6,1fr)\"><span>\\(1\\)</span><span>\\(2\\)</span><span>\\(3\\)</span><span>\\(4\\)</span><span>\\(5\\)</span><span>\\(6\\)</span></span></span>\\(\\text{Il faut remplacer les pointillés par }6.\\)",
+            "showAxes": false
+          }
+        }
+      ]
+    }
+  }
+]

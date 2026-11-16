@@ -1,0 +1,182 @@
+[
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 1440,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 488,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 488,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 489,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 489,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 462,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 462,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 194.234375
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 208.125
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 208.125
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 212.640625
+  },
+  {
+    "id": "reperage_repere_orthonorme",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 10,
+    "maxDocument": 460,
+    "maxMath": 212.640625
+  }
+]

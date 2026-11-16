@@ -1,0 +1,339 @@
+{
+  "job": {
+    "id": "puissances_niveau_1",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              6^{4}\n            ",
+        "6\\times 6\\times 6\\times 6\\times 6",
+        "6\\times 4",
+        "6\\times 6\\times 6\\times 6",
+        "6\\times 6\\times 6"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer le produit égal à :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(\n                8^{6}\n              \\right)^{\n                5\n              }\n            ",
+        "6\\times 6\\times 6\\times 6\\times 6",
+        "6\\times 4",
+        "6\\times 6\\times 6\\times 6",
+        "6\\times 6\\times 6"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              2^{5}\n              \\times\n              2^{6}\n            ",
+        "2^{11}",
+        "2^{30}",
+        "2^{12}",
+        "2^{1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                4^{7}\n              }{\n                4^{8}\n              }\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{1}{\n                2^{8}\n              }\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                6^{5}\n              }{\n                3^{5}\n              }\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              5^{7}\n              \\times\n              3^{7}\n            ",
+        "15^{7}",
+        "15^{8}",
+        "15^{14}",
+        "8^{7}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              4 \\times 4 \\times 4\n            ",
+        "15^{7}",
+        "15^{8}",
+        "15^{14}",
+        "8^{7}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 4,
+    "count": 8,
+    "questions": [
+      {
+        "answers": [
+          "6*6*6*6"
+        ],
+        "possible_answers": [
+          "6*6*6*6",
+          "6*4",
+          "6*6*6",
+          "6*6*6*6*6"
+        ],
+        "answerRule": {
+          "type": "repeatedProduct",
+          "base": 6,
+          "exponent": 4
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "6*6*6*6*6",
+          "6*4",
+          "6*6*6*6",
+          "6*6*6"
+        ]
+      },
+      {
+        "answers": [
+          "8^30"
+        ],
+        "possible_answers": [
+          "8^31",
+          "8^30",
+          "8^1",
+          "8^11"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1.2379400392853803e+27
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2^11"
+        ],
+        "possible_answers": [
+          "2^1",
+          "2^11",
+          "2^12",
+          "2^30"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 2048
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "2^11",
+          "2^30",
+          "2^12",
+          "2^1"
+        ]
+      },
+      {
+        "answers": [
+          "4^-1"
+        ],
+        "possible_answers": [
+          "4^-1",
+          "4^15",
+          "4^56",
+          "4^1"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.25,
+          "allowOneForZeroExponent": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "4^56",
+          "4^1",
+          "4^15",
+          "4^-1"
+        ]
+      },
+      {
+        "answers": [
+          "2^-8"
+        ],
+        "possible_answers": [
+          "2^-8",
+          "2^8",
+          "2^-9",
+          "-2^8"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.00390625
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2^5"
+        ],
+        "possible_answers": [
+          "2^5",
+          "2^10",
+          "3^5",
+          "6^5"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 32
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "15^7"
+        ],
+        "possible_answers": [
+          "15^14",
+          "15^8",
+          "8^7",
+          "15^7"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 170859375
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "15^7",
+          "15^8",
+          "15^14",
+          "8^7"
+        ]
+      },
+      {
+        "answers": [
+          "4^3"
+        ],
+        "possible_answers": [
+          "5^3",
+          "4^4",
+          "4^3",
+          "4^2"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 64
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

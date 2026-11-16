@@ -1,0 +1,222 @@
+[
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 1440,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 1440,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 1440,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 1045,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 1440,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 1045,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 1042,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 1042,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 849,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 849,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 845,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 845,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 818,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 818,
+    "maxMath": 1315.828125
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  },
+  {
+    "id": "metropole_juin_2026_gen",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 9,
+    "maxDocument": 821,
+    "maxMath": 1322.859375
+  }
+]

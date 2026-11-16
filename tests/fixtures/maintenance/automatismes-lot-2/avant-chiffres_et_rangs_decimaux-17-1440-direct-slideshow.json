@@ -1,0 +1,377 @@
+{
+  "job": {
+    "id": "chiffres_et_rangs_decimaux",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 992.125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le nombre de centièmes du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 960.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le nombre de dizaines du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 984.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le nombre de millièmes du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 884.71875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle est la partie entière du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 971.65625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le nombre de dixièmes du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 920.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle est la partie décimale du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 990.84375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le chiffre des centièmes du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 970.375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le chiffre des dixièmes du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 983.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le chiffre des centaines du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 959.359375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le chiffre des dizaines du nombre }574{,}206\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 10,
+    "questions": [
+      {
+        "answers": [
+          "57420"
+        ],
+        "possible_answers": [
+          "\\(57~420\\)",
+          "\\(5~742\\)",
+          "\\(574~206\\)",
+          "\\(574\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "57"
+        ],
+        "possible_answers": [
+          "\\(57\\)",
+          "\\(574\\)",
+          "\\(7\\)",
+          "\\(5\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "574206"
+        ],
+        "possible_answers": [
+          "\\(574~206\\)",
+          "\\(57~420\\)",
+          "\\(5~742\\)",
+          "\\(206\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "574"
+        ],
+        "possible_answers": [
+          "\\(574\\)",
+          "\\(206\\)",
+          "\\(5~742\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5742"
+        ],
+        "possible_answers": [
+          "\\(5~742\\)",
+          "\\(574\\)",
+          "\\(57~420\\)",
+          "\\(574~206\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0.206",
+          "206/1000"
+        ],
+        "possible_answers": [
+          "0.206",
+          "206",
+          "574",
+          "2.06"
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "0"
+        ],
+        "possible_answers": [
+          "\\(0\\)",
+          "\\(2\\)",
+          "\\(6\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "\\(2\\)",
+          "\\(0\\)",
+          "\\(6\\)",
+          "\\(4\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5"
+        ],
+        "possible_answers": [
+          "\\(5\\)",
+          "\\(7\\)",
+          "\\(4\\)",
+          "\\(2\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "7"
+        ],
+        "possible_answers": [
+          "\\(7\\)",
+          "\\(5\\)",
+          "\\(4\\)",
+          "\\(2\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "57420",
+        "correctQCMAnswer": "57420",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "57",
+        "correctQCMAnswer": "57",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "574206",
+        "correctQCMAnswer": "574206",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "574",
+        "correctQCMAnswer": "574",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "5742",
+        "correctQCMAnswer": "5742",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0.206",
+        "correctQCMAnswer": "0.206",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "0",
+        "correctQCMAnswer": "0",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "2",
+        "correctQCMAnswer": "2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "5",
+        "correctQCMAnswer": "5",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "7",
+        "correctQCMAnswer": "7",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

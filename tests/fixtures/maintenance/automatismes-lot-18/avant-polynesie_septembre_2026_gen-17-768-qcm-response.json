@@ -1,0 +1,2930 @@
+{
+  "job": {
+    "id": "polynesie_septembre_2026_gen",
+    "seed": 17,
+    "width": 768,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 634.875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Réduire l'expression }A=4x+3x.",
+        "12x",
+        "12x^2",
+        "7x",
+        "7x^2"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 637.21875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Déterminer la médiane de la série :}",
+        "8\\ ;\\ 18\\ ;\\ 17\\ ;\\ 3\\ ;\\ 7.",
+        "10{,}6",
+        "7",
+        "17",
+        "8"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 426.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer }25\\,\\%\\text{ de }160\\text{ €.}",
+        "120\\text{ €}",
+        "4\\text{ €}",
+        "40\\text{ €}",
+        "25\\text{ €}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 817,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 866.1875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "èUn triangle possède deux angles de 60∘ et 100∘.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 823.90625,
+              "right": 832.828125,
+              "top": 504.34375,
+              "bottom": 509.34375,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -49.09375,
+          "right": 817.09375,
+          "top": 475.09375,
+          "bottom": 533.09375,
+          "width": 866.1875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèéDéterminer le troisième angle, en degré.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 17.6875,
+          "right": 750.296875,
+          "top": 537.609375,
+          "bottom": 595.609375,
+          "width": 732.609375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Un triangle possède deux angles de }60^\\circ\\text{ et }100^\\circ.",
+        "\\text{Déterminer le troisième angle, en degré.}",
+        "200\\text{°}",
+        "160\\text{°}",
+        "20\\text{°}",
+        "40\\text{°}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"\n        71\n        11\n        298\n        400\n      \" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Triangle rectangle\">\n      <defs>\n        <marker id=\"triangle-arrow-head\" markerWidth=\"10\" markerHeight=\"10\" refX=\"8.5\" refY=\"3\" orient=\"auto\" markerUnits=\"strokeWidth\">\n          <path d=\"M4,1.5 L4,4.5 L9,3 z\" fill=\"red\"></path>\n        </marker>\n      </defs>\n\n      <g transform=\"\n          rotate(\n            -90\n            220\n            211\n          )\n        \">\n\n        \n    <path d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"></path>\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line x1=\"100\" y1=\"280\" x2=\"340\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- leg2 : AC -->\n          <line x1=\"100\" y1=\"280\" x2=\"100\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n          <!-- hypoténuse : BC -->\n          <line x1=\"340\" y1=\"280\" x2=\"100\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text x=\"302.9571914792263\" y=\"355.273376485611\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        D\n      </text>\n\n      <text x=\"296.7366078966356\" y=\"64.09005948996327\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        E\n      </text>\n\n      <text x=\"129.87104537942187\" y=\"349.373004017894\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"24\" fill=\"currentColor\">\n        F\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text x=\"218.26618739388493\" y=\"210.00305775148382\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"undefined\" fill=\"currentColor\" transform=\"\n          rotate(\n            -60.10109816138544\n            218.26618739388493\n            210.00305775148382\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text x=\"313\" y=\"211\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"22\" fill=\"currentColor\" transform=\"\n          rotate(\n            -90\n            313\n            211\n          )\n        \">\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text x=\"220\" y=\"333\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"undefined\" fill=\"currentColor\" transform=\"\n          rotate(\n            0\n            220\n            333\n          )\n        \">\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>",
+          "left": 234,
+          "right": 533.984375,
+          "top": 557.8125,
+          "bottom": 960.46875,
+          "width": 299.984375,
+          "height": 402.65625
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "D",
+          "left": 459.0315246582031,
+          "right": 475.9690246582031,
+          "top": 884.4033203125,
+          "bottom": 916.4033203125,
+          "width": 16.9375,
+          "height": 32,
+          "svg": {
+            "left": 234,
+            "right": 533.984375,
+            "top": 557.8125,
+            "bottom": 960.46875,
+            "width": 299.984375,
+            "height": 402.65625
+          }
+        },
+        {
+          "text": "E",
+          "left": 455.12896728515625,
+          "right": 467.34771728515625,
+          "top": 591.286376953125,
+          "bottom": 623.286376953125,
+          "width": 12.21875,
+          "height": 32,
+          "svg": {
+            "left": 234,
+            "right": 533.984375,
+            "top": 557.8125,
+            "bottom": 960.46875,
+            "width": 299.984375,
+            "height": 402.65625
+          }
+        },
+        {
+          "text": "F",
+          "left": 287.36627197265625,
+          "right": 299.36627197265625,
+          "top": 878.4637451171875,
+          "bottom": 910.4637451171875,
+          "width": 12,
+          "height": 32,
+          "svg": {
+            "left": 234,
+            "right": 533.984375,
+            "top": 557.8125,
+            "bottom": 960.46875,
+            "width": 299.984375,
+            "height": 402.65625
+          }
+        }
+      ],
+      "mathWidth": 751.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter par un rapport de longueurs :",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 8.375,
+          "right": 759.625,
+          "top": 390.140625,
+          "bottom": 448.140625,
+          "width": 751.25,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter par un rapport de longueurs :}",
+        "\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\ldots}{\\ldots}",
+        "\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}",
+        "\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}",
+        "\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}",
+        "\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 798,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 828.15625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDévelopper et réduire l'expression a(3a−2).",
+          "scroll": 828,
+          "client": 828,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 784.4375,
+              "right": 802.46875,
+              "top": 515.03125,
+              "bottom": 554.03125,
+              "width": 18.03125,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 809.625,
+              "right": 818.546875,
+              "top": 540.03125,
+              "bottom": 545.03125,
+              "width": 8.921875,
+              "height": 5
+            }
+          ],
+          "left": -30.078125,
+          "right": 798.078125,
+          "top": 514.03125,
+          "bottom": 559.4375,
+          "width": 828.15625,
+          "height": 45.40625
+        }
+      ],
+      "math": [
+        "\\text{Développer et réduire l'expression }a(3a-2).",
+        "3a-2a",
+        "3a^2-2a",
+        "3a^2+2a",
+        "3a^2-2"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1044,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 781.28125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèQuatre élèves proposent une justification",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 2.59375,
+          "right": 765.40625,
+          "top": 416.21875,
+          "bottom": 474.21875,
+          "width": 762.8125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "pour montrer que 4836 est divisible par 3.",
+          "scroll": 0,
+          "client": 0,
+          "children": [
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 751.03125,
+              "right": 784,
+              "top": 480.734375,
+              "bottom": 509.734375,
+              "width": 32.96875,
+              "height": 29
+            }
+          ],
+          "left": -6.640625,
+          "right": 774.640625,
+          "top": 478.734375,
+          "bottom": 536.734375,
+          "width": 781.28125,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèéChoisir l'élève qui a justifié correctement.",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -1,
+          "right": 769,
+          "top": 541.25,
+          "bottom": 599.25,
+          "width": 770,
+          "height": 58
+        },
+        {
+          "tag": "BUTTON",
+          "text": "ÉèÉèÉlève 2 : La somme des chiffres de 4836 est divisible par 3.",
+          "scroll": 562,
+          "client": 292,
+          "children": [
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": 405,
+              "right": 872.546875,
+              "top": 645.328125,
+              "bottom": 666.328125,
+              "width": 467.546875,
+              "height": 21
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 872.546875,
+              "top": 647.25,
+              "bottom": 667.078125,
+              "width": 467.546875,
+              "height": 19.828125
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 680.921875,
+              "right": 690.3125,
+              "top": 649.625,
+              "bottom": 662.328125,
+              "width": 9.390625,
+              "height": 12.703125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 680.921875,
+              "right": 690.3125,
+              "top": 649.625,
+              "bottom": 662.328125,
+              "width": 9.390625,
+              "height": 12.703125
+            },
+            {
+              "tag": "MJX-MSTYLE",
+              "visibility": "visible",
+              "position": "static",
+              "left": 690.3125,
+              "right": 693.4375,
+              "top": 662.328125,
+              "bottom": 662.328125,
+              "width": 3.125,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MSPACE",
+              "visibility": "visible",
+              "position": "static",
+              "left": 690.3125,
+              "right": 693.4375,
+              "top": 662.328125,
+              "bottom": 662.328125,
+              "width": 3.125,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 693.4375,
+              "right": 721.609375,
+              "top": 649.828125,
+              "bottom": 662.734375,
+              "width": 28.171875,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 693.4375,
+              "right": 702.828125,
+              "top": 649.828125,
+              "bottom": 662.734375,
+              "width": 9.390625,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 702.828125,
+              "right": 712.21875,
+              "top": 649.84375,
+              "bottom": 662.734375,
+              "width": 9.390625,
+              "height": 12.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 712.21875,
+              "right": 721.609375,
+              "top": 649.828125,
+              "bottom": 662.734375,
+              "width": 9.390625,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 721.609375,
+              "right": 857.9375,
+              "top": 649.296875,
+              "bottom": 665.96875,
+              "width": 136.328125,
+              "height": 16.671875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 721.609375,
+              "right": 726.296875,
+              "top": 662.328125,
+              "bottom": 662.328125,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 726.296875,
+              "right": 734.625,
+              "top": 653.921875,
+              "bottom": 662.53125,
+              "width": 8.328125,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 734.625,
+              "right": 742.015625,
+              "top": 653.921875,
+              "bottom": 662.53125,
+              "width": 7.390625,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 742.015625,
+              "right": 749.3125,
+              "top": 650.78125,
+              "bottom": 662.515625,
+              "width": 7.296875,
+              "height": 11.734375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 749.3125,
+              "right": 754,
+              "top": 662.328125,
+              "bottom": 662.328125,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 754,
+              "right": 764.4375,
+              "top": 649.296875,
+              "bottom": 662.53125,
+              "width": 10.4375,
+              "height": 13.234375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 764.4375,
+              "right": 769.65625,
+              "top": 649.765625,
+              "bottom": 662.328125,
+              "width": 5.21875,
+              "height": 12.5625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 769.65625,
+              "right": 779.5625,
+              "top": 654.234375,
+              "bottom": 662.53125,
+              "width": 9.90625,
+              "height": 8.296875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 779.5625,
+              "right": 784.78125,
+              "top": 649.765625,
+              "bottom": 662.328125,
+              "width": 5.21875,
+              "height": 12.5625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 784.78125,
+              "right": 792.171875,
+              "top": 653.921875,
+              "bottom": 662.53125,
+              "width": 7.390625,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 792.171875,
+              "right": 797.390625,
+              "top": 649.765625,
+              "bottom": 662.328125,
+              "width": 5.21875,
+              "height": 12.5625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 797.390625,
+              "right": 807.828125,
+              "top": 649.296875,
+              "bottom": 662.53125,
+              "width": 10.4375,
+              "height": 13.234375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 807.828125,
+              "right": 813.046875,
+              "top": 649.296875,
+              "bottom": 662.328125,
+              "width": 5.21875,
+              "height": 13.03125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 813.046875,
+              "right": 821.375,
+              "top": 653.921875,
+              "bottom": 662.53125,
+              "width": 8.328125,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 821.375,
+              "right": 826.0625,
+              "top": 662.328125,
+              "bottom": 662.328125,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 826.0625,
+              "right": 836.5,
+              "top": 654.03125,
+              "bottom": 665.96875,
+              "width": 10.4375,
+              "height": 11.9375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 836.5,
+              "right": 845.890625,
+              "top": 653.921875,
+              "bottom": 662.53125,
+              "width": 9.390625,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 845.890625,
+              "right": 853.25,
+              "top": 654.03125,
+              "bottom": 662.328125,
+              "width": 7.359375,
+              "height": 8.296875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 853.25,
+              "right": 857.9375,
+              "top": 662.328125,
+              "bottom": 662.328125,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 857.9375,
+              "right": 872.546875,
+              "top": 649.84375,
+              "bottom": 662.734375,
+              "width": 14.609375,
+              "height": 12.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 857.9375,
+              "right": 867.328125,
+              "top": 649.84375,
+              "bottom": 662.734375,
+              "width": 9.390625,
+              "height": 12.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 867.328125,
+              "right": 872.546875,
+              "top": 660.078125,
+              "bottom": 662.328125,
+              "width": 5.21875,
+              "height": 2.25
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 405,
+              "right": 953.0625,
+              "top": 645.328125,
+              "bottom": 669.21875,
+              "width": 548.0625,
+              "height": 23.890625
+            },
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": 405,
+              "right": 953.0625,
+              "top": 643.828125,
+              "bottom": 668.828125,
+              "width": 548.0625,
+              "height": 25
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 953.0625,
+              "top": 646.328125,
+              "bottom": 669.21875,
+              "width": 548.0625,
+              "height": 22.890625
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 728.46875,
+              "top": 647.328125,
+              "bottom": 668.21875,
+              "width": 323.46875,
+              "height": 20.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 677.03125,
+              "right": 686.796875,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 686.796875,
+              "right": 695.46875,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 8.671875,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 695.46875,
+              "right": 700.96875,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 700.96875,
+              "right": 713.203125,
+              "top": 648.5625,
+              "bottom": 664.0625,
+              "width": 12.234375,
+              "height": 15.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 713.203125,
+              "right": 722.96875,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 722.96875,
+              "right": 728.46875,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 728.46875,
+              "right": 739.46875,
+              "top": 648.9375,
+              "bottom": 663.828125,
+              "width": 11,
+              "height": 14.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 728.46875,
+              "right": 739.46875,
+              "top": 648.9375,
+              "bottom": 663.828125,
+              "width": 11,
+              "height": 14.890625
+            },
+            {
+              "tag": "MJX-MSTYLE",
+              "visibility": "visible",
+              "position": "static",
+              "left": 739.46875,
+              "right": 743.140625,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MSPACE",
+              "visibility": "visible",
+              "position": "static",
+              "left": 739.46875,
+              "right": 743.140625,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 743.140625,
+              "right": 776.140625,
+              "top": 649.171875,
+              "bottom": 664.296875,
+              "width": 33,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 743.140625,
+              "right": 754.140625,
+              "top": 649.171875,
+              "bottom": 664.296875,
+              "width": 11,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 754.140625,
+              "right": 765.140625,
+              "top": 649.203125,
+              "bottom": 664.296875,
+              "width": 11,
+              "height": 15.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 765.140625,
+              "right": 776.140625,
+              "top": 649.171875,
+              "bottom": 664.296875,
+              "width": 11,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 776.140625,
+              "right": 935.953125,
+              "top": 648.5625,
+              "bottom": 668.09375,
+              "width": 159.8125,
+              "height": 19.53125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 776.140625,
+              "right": 781.640625,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 781.640625,
+              "right": 791.40625,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 791.40625,
+              "right": 800.078125,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 8.671875,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 800.078125,
+              "right": 808.640625,
+              "top": 650.296875,
+              "bottom": 664.046875,
+              "width": 8.5625,
+              "height": 13.75
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 808.640625,
+              "right": 814.140625,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 814.140625,
+              "right": 826.375,
+              "top": 648.5625,
+              "bottom": 664.0625,
+              "width": 12.234375,
+              "height": 15.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 826.375,
+              "right": 832.484375,
+              "top": 649.109375,
+              "bottom": 663.828125,
+              "width": 6.109375,
+              "height": 14.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 832.484375,
+              "right": 844.09375,
+              "top": 654.34375,
+              "bottom": 664.0625,
+              "width": 11.609375,
+              "height": 9.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 844.09375,
+              "right": 850.203125,
+              "top": 649.109375,
+              "bottom": 663.828125,
+              "width": 6.109375,
+              "height": 14.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 850.203125,
+              "right": 858.875,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 8.671875,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 858.875,
+              "right": 864.984375,
+              "top": 649.109375,
+              "bottom": 663.828125,
+              "width": 6.109375,
+              "height": 14.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 864.984375,
+              "right": 877.21875,
+              "top": 648.5625,
+              "bottom": 664.0625,
+              "width": 12.234375,
+              "height": 15.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 877.21875,
+              "right": 883.328125,
+              "top": 648.5625,
+              "bottom": 663.828125,
+              "width": 6.109375,
+              "height": 15.265625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 883.328125,
+              "right": 893.09375,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 893.09375,
+              "right": 898.59375,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 898.59375,
+              "right": 910.828125,
+              "top": 654.109375,
+              "bottom": 668.09375,
+              "width": 12.234375,
+              "height": 13.984375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 910.828125,
+              "right": 921.828125,
+              "top": 653.96875,
+              "bottom": 664.0625,
+              "width": 11,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 921.828125,
+              "right": 930.453125,
+              "top": 654.109375,
+              "bottom": 663.828125,
+              "width": 8.625,
+              "height": 9.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 930.453125,
+              "right": 935.953125,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 935.953125,
+              "right": 953.0625,
+              "top": 649.203125,
+              "bottom": 664.296875,
+              "width": 17.109375,
+              "height": 15.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 935.953125,
+              "right": 946.953125,
+              "top": 649.203125,
+              "bottom": 664.296875,
+              "width": 11,
+              "height": 15.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 946.953125,
+              "right": 953.0625,
+              "top": 661.1875,
+              "bottom": 663.828125,
+              "width": 6.109375,
+              "height": 2.640625
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 405,
+              "right": 953.0625,
+              "top": 643.828125,
+              "bottom": 668.828125,
+              "width": 548.0625,
+              "height": 25
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 953.0625,
+              "top": 644.828125,
+              "bottom": 668.828125,
+              "width": 548.0625,
+              "height": 24
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 729,
+              "top": 644.828125,
+              "bottom": 663.828125,
+              "width": 324,
+              "height": 19
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 729,
+              "right": 741.1875,
+              "top": 648.828125,
+              "bottom": 663.828125,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mstyle",
+              "visibility": "visible",
+              "position": "static",
+              "left": 741.1875,
+              "right": 744.859375,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "mspace",
+              "visibility": "visible",
+              "position": "static",
+              "left": 741.1875,
+              "right": 744.859375,
+              "top": 663.828125,
+              "bottom": 663.828125,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 744.859375,
+              "right": 781.421875,
+              "top": 648.828125,
+              "bottom": 663.828125,
+              "width": 36.5625,
+              "height": 15
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 781.421875,
+              "right": 939.96875,
+              "top": 647.828125,
+              "bottom": 668.828125,
+              "width": 158.546875,
+              "height": 21
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 939.96875,
+              "right": 956.671875,
+              "top": 648.828125,
+              "bottom": 663.828125,
+              "width": 16.703125,
+              "height": 15
+            }
+          ],
+          "left": 389,
+          "right": 684.796875,
+          "top": 635.25,
+          "bottom": 679.078125,
+          "width": 295.796875,
+          "height": 43.828125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "ÉèéÉèéÉlève 1 : Le chiffre des unités de 4836 est 6, qui est un multiple de 3.",
+          "scroll": 653,
+          "client": 292,
+          "children": [
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": 405,
+              "right": 950.40625,
+              "top": 699.15625,
+              "bottom": 720.15625,
+              "width": 545.40625,
+              "height": 21
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 950.40625,
+              "top": 701.078125,
+              "bottom": 720.90625,
+              "width": 545.40625,
+              "height": 19.828125
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 676.484375,
+              "right": 704.65625,
+              "top": 703.65625,
+              "bottom": 716.5625,
+              "width": 28.171875,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 676.484375,
+              "right": 685.875,
+              "top": 703.65625,
+              "bottom": 716.5625,
+              "width": 9.390625,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 685.875,
+              "right": 695.265625,
+              "top": 703.671875,
+              "bottom": 716.5625,
+              "width": 9.390625,
+              "height": 12.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 695.265625,
+              "right": 704.65625,
+              "top": 703.65625,
+              "bottom": 716.5625,
+              "width": 9.390625,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 704.65625,
+              "right": 737.046875,
+              "top": 704.609375,
+              "bottom": 716.359375,
+              "width": 32.390625,
+              "height": 11.75
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 704.65625,
+              "right": 709.34375,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 709.34375,
+              "right": 717.671875,
+              "top": 707.75,
+              "bottom": 716.359375,
+              "width": 8.328125,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 717.671875,
+              "right": 725.0625,
+              "top": 707.75,
+              "bottom": 716.359375,
+              "width": 7.390625,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 725.0625,
+              "right": 732.359375,
+              "top": 704.609375,
+              "bottom": 716.34375,
+              "width": 7.296875,
+              "height": 11.734375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 732.359375,
+              "right": 737.046875,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 737.046875,
+              "right": 746.4375,
+              "top": 703.65625,
+              "bottom": 716.5625,
+              "width": 9.390625,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 737.046875,
+              "right": 746.4375,
+              "top": 703.65625,
+              "bottom": 716.5625,
+              "width": 9.390625,
+              "height": 12.90625
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 746.4375,
+              "right": 935.796875,
+              "top": 703.125,
+              "bottom": 719.796875,
+              "width": 189.359375,
+              "height": 16.671875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 746.4375,
+              "right": 751.65625,
+              "top": 713.890625,
+              "bottom": 719.796875,
+              "width": 5.21875,
+              "height": 5.90625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 751.65625,
+              "right": 756.34375,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 756.34375,
+              "right": 766.25,
+              "top": 707.859375,
+              "bottom": 719.796875,
+              "width": 9.90625,
+              "height": 11.9375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 766.25,
+              "right": 776.6875,
+              "top": 707.859375,
+              "bottom": 716.359375,
+              "width": 10.4375,
+              "height": 8.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 776.6875,
+              "right": 781.90625,
+              "top": 703.59375,
+              "bottom": 716.15625,
+              "width": 5.21875,
+              "height": 12.5625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 781.90625,
+              "right": 786.59375,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 786.59375,
+              "right": 794.921875,
+              "top": 707.75,
+              "bottom": 716.359375,
+              "width": 8.328125,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 794.921875,
+              "right": 802.3125,
+              "top": 707.75,
+              "bottom": 716.359375,
+              "width": 7.390625,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 802.3125,
+              "right": 809.609375,
+              "top": 704.609375,
+              "bottom": 716.34375,
+              "width": 7.296875,
+              "height": 11.734375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 809.609375,
+              "right": 814.296875,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 814.296875,
+              "right": 824.734375,
+              "top": 707.859375,
+              "bottom": 716.359375,
+              "width": 10.4375,
+              "height": 8.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 824.734375,
+              "right": 835.171875,
+              "top": 707.859375,
+              "bottom": 716.15625,
+              "width": 10.4375,
+              "height": 8.296875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 835.171875,
+              "right": 839.859375,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 839.859375,
+              "right": 855.5,
+              "top": 707.859375,
+              "bottom": 716.15625,
+              "width": 15.640625,
+              "height": 8.296875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 855.5,
+              "right": 865.9375,
+              "top": 707.859375,
+              "bottom": 716.359375,
+              "width": 10.4375,
+              "height": 8.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 865.9375,
+              "right": 871.15625,
+              "top": 703.125,
+              "bottom": 716.15625,
+              "width": 5.21875,
+              "height": 13.03125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 871.15625,
+              "right": 878.453125,
+              "top": 704.609375,
+              "bottom": 716.34375,
+              "width": 7.296875,
+              "height": 11.734375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 878.453125,
+              "right": 883.671875,
+              "top": 703.59375,
+              "bottom": 716.15625,
+              "width": 5.21875,
+              "height": 12.5625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 883.671875,
+              "right": 894.109375,
+              "top": 707.859375,
+              "bottom": 719.796875,
+              "width": 10.4375,
+              "height": 11.9375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 894.109375,
+              "right": 899.328125,
+              "top": 703.125,
+              "bottom": 716.15625,
+              "width": 5.21875,
+              "height": 13.03125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 899.328125,
+              "right": 907.65625,
+              "top": 707.75,
+              "bottom": 716.359375,
+              "width": 8.328125,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 907.65625,
+              "right": 912.34375,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 912.34375,
+              "right": 922.78125,
+              "top": 703.125,
+              "bottom": 716.359375,
+              "width": 10.4375,
+              "height": 13.234375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 922.78125,
+              "right": 931.109375,
+              "top": 707.75,
+              "bottom": 716.359375,
+              "width": 8.328125,
+              "height": 8.609375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 931.109375,
+              "right": 935.796875,
+              "top": 716.15625,
+              "bottom": 716.15625,
+              "width": 4.6875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 935.796875,
+              "right": 950.40625,
+              "top": 703.671875,
+              "bottom": 716.5625,
+              "width": 14.609375,
+              "height": 12.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 935.796875,
+              "right": 945.1875,
+              "top": 703.671875,
+              "bottom": 716.5625,
+              "width": 9.390625,
+              "height": 12.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 945.1875,
+              "right": 950.40625,
+              "top": 713.90625,
+              "bottom": 716.15625,
+              "width": 5.21875,
+              "height": 2.25
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 405,
+              "right": 1044.390625,
+              "top": 699.15625,
+              "bottom": 723.046875,
+              "width": 639.390625,
+              "height": 23.890625
+            },
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": 405,
+              "right": 1044.390625,
+              "top": 697.65625,
+              "bottom": 722.65625,
+              "width": 639.390625,
+              "height": 25
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 1044.390625,
+              "top": 700.15625,
+              "bottom": 723.046875,
+              "width": 639.390625,
+              "height": 22.890625
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 708.625,
+              "top": 701.15625,
+              "bottom": 722.046875,
+              "width": 303.625,
+              "height": 20.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 681.125,
+              "right": 693.359375,
+              "top": 702.390625,
+              "bottom": 717.890625,
+              "width": 12.234375,
+              "height": 15.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 693.359375,
+              "right": 703.125,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 703.125,
+              "right": 708.625,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 708.625,
+              "right": 719.625,
+              "top": 702.765625,
+              "bottom": 717.65625,
+              "width": 11,
+              "height": 14.890625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 708.625,
+              "right": 719.625,
+              "top": 702.765625,
+              "bottom": 717.65625,
+              "width": 11,
+              "height": 14.890625
+            },
+            {
+              "tag": "MJX-MSTYLE",
+              "visibility": "visible",
+              "position": "static",
+              "left": 719.625,
+              "right": 723.296875,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MSPACE",
+              "visibility": "visible",
+              "position": "static",
+              "left": 719.625,
+              "right": 723.296875,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 723.296875,
+              "right": 756.296875,
+              "top": 703,
+              "bottom": 718.125,
+              "width": 33,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 723.296875,
+              "right": 734.296875,
+              "top": 703,
+              "bottom": 718.125,
+              "width": 11,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 734.296875,
+              "right": 745.296875,
+              "top": 703.03125,
+              "bottom": 718.125,
+              "width": 11,
+              "height": 15.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 745.296875,
+              "right": 756.296875,
+              "top": 703,
+              "bottom": 718.125,
+              "width": 11,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 756.296875,
+              "right": 794.296875,
+              "top": 704.125,
+              "bottom": 717.890625,
+              "width": 38,
+              "height": 13.765625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 756.296875,
+              "right": 761.796875,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 761.796875,
+              "right": 771.5625,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 771.5625,
+              "right": 780.234375,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 8.671875,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 780.234375,
+              "right": 788.796875,
+              "top": 704.125,
+              "bottom": 717.875,
+              "width": 8.5625,
+              "height": 13.75
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 788.796875,
+              "right": 794.296875,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 794.296875,
+              "right": 805.296875,
+              "top": 703,
+              "bottom": 718.125,
+              "width": 11,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 794.296875,
+              "right": 805.296875,
+              "top": 703,
+              "bottom": 718.125,
+              "width": 11,
+              "height": 15.125
+            },
+            {
+              "tag": "MJX-MTEXT",
+              "visibility": "visible",
+              "position": "static",
+              "left": 805.296875,
+              "right": 1027.28125,
+              "top": 702.390625,
+              "bottom": 721.921875,
+              "width": 221.984375,
+              "height": 19.53125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 805.296875,
+              "right": 811.40625,
+              "top": 715,
+              "bottom": 721.921875,
+              "width": 6.109375,
+              "height": 6.921875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 811.40625,
+              "right": 816.90625,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 816.90625,
+              "right": 828.515625,
+              "top": 707.9375,
+              "bottom": 721.921875,
+              "width": 11.609375,
+              "height": 13.984375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 828.515625,
+              "right": 840.75,
+              "top": 707.9375,
+              "bottom": 717.890625,
+              "width": 12.234375,
+              "height": 9.953125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 840.75,
+              "right": 846.859375,
+              "top": 702.9375,
+              "bottom": 717.65625,
+              "width": 6.109375,
+              "height": 14.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 846.859375,
+              "right": 852.359375,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 852.359375,
+              "right": 862.125,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 862.125,
+              "right": 870.796875,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 8.671875,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 870.796875,
+              "right": 879.359375,
+              "top": 704.125,
+              "bottom": 717.875,
+              "width": 8.5625,
+              "height": 13.75
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 879.359375,
+              "right": 884.859375,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 884.859375,
+              "right": 897.09375,
+              "top": 707.9375,
+              "bottom": 717.890625,
+              "width": 12.234375,
+              "height": 9.953125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 897.09375,
+              "right": 909.328125,
+              "top": 707.9375,
+              "bottom": 717.65625,
+              "width": 12.234375,
+              "height": 9.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 909.328125,
+              "right": 914.828125,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 914.828125,
+              "right": 933.15625,
+              "top": 707.9375,
+              "bottom": 717.65625,
+              "width": 18.328125,
+              "height": 9.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 933.15625,
+              "right": 945.390625,
+              "top": 707.9375,
+              "bottom": 717.890625,
+              "width": 12.234375,
+              "height": 9.953125
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 945.390625,
+              "right": 951.5,
+              "top": 702.390625,
+              "bottom": 717.65625,
+              "width": 6.109375,
+              "height": 15.265625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 951.5,
+              "right": 960.0625,
+              "top": 704.125,
+              "bottom": 717.875,
+              "width": 8.5625,
+              "height": 13.75
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 960.0625,
+              "right": 966.171875,
+              "top": 702.9375,
+              "bottom": 717.65625,
+              "width": 6.109375,
+              "height": 14.71875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 966.171875,
+              "right": 978.40625,
+              "top": 707.9375,
+              "bottom": 721.921875,
+              "width": 12.234375,
+              "height": 13.984375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 978.40625,
+              "right": 984.515625,
+              "top": 702.390625,
+              "bottom": 717.65625,
+              "width": 6.109375,
+              "height": 15.265625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 984.515625,
+              "right": 994.28125,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 994.28125,
+              "right": 999.78125,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 999.78125,
+              "right": 1012.015625,
+              "top": 702.390625,
+              "bottom": 717.890625,
+              "width": 12.234375,
+              "height": 15.5
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1012.015625,
+              "right": 1021.78125,
+              "top": 707.796875,
+              "bottom": 717.890625,
+              "width": 9.765625,
+              "height": 10.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1021.78125,
+              "right": 1027.28125,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 5.5,
+              "height": 0
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1027.28125,
+              "right": 1044.390625,
+              "top": 703.03125,
+              "bottom": 718.125,
+              "width": 17.109375,
+              "height": 15.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1027.28125,
+              "right": 1038.28125,
+              "top": 703.03125,
+              "bottom": 718.125,
+              "width": 11,
+              "height": 15.09375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1038.28125,
+              "right": 1044.390625,
+              "top": 715.015625,
+              "bottom": 717.65625,
+              "width": 6.109375,
+              "height": 2.640625
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 405,
+              "right": 1044.390625,
+              "top": 697.65625,
+              "bottom": 722.65625,
+              "width": 639.390625,
+              "height": 25
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 1044.390625,
+              "top": 698.65625,
+              "bottom": 722.65625,
+              "width": 639.390625,
+              "height": 24
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 405,
+              "right": 709.03125,
+              "top": 698.65625,
+              "bottom": 717.65625,
+              "width": 304.03125,
+              "height": 19
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 709.03125,
+              "right": 721.21875,
+              "top": 702.65625,
+              "bottom": 717.65625,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mstyle",
+              "visibility": "visible",
+              "position": "static",
+              "left": 721.21875,
+              "right": 724.890625,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "mspace",
+              "visibility": "visible",
+              "position": "static",
+              "left": 721.21875,
+              "right": 724.890625,
+              "top": 717.65625,
+              "bottom": 717.65625,
+              "width": 3.671875,
+              "height": 0
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 724.890625,
+              "right": 761.453125,
+              "top": 702.65625,
+              "bottom": 717.65625,
+              "width": 36.5625,
+              "height": 15
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 761.453125,
+              "right": 798.796875,
+              "top": 704.65625,
+              "bottom": 717.65625,
+              "width": 37.34375,
+              "height": 13
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 798.796875,
+              "right": 810.984375,
+              "top": 702.65625,
+              "bottom": 717.65625,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 810.984375,
+              "right": 1028.875,
+              "top": 701.65625,
+              "bottom": 722.65625,
+              "width": 217.890625,
+              "height": 21
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 1028.875,
+              "right": 1045.578125,
+              "top": 702.65625,
+              "bottom": 717.65625,
+              "width": 16.703125,
+              "height": 15
+            }
+          ],
+          "left": 389,
+          "right": 684.796875,
+          "top": 689.078125,
+          "bottom": 732.90625,
+          "width": 295.796875,
+          "height": 43.828125
+        }
+      ],
+      "math": [
+        "\\text{Quatre élèves proposent une justification}",
+        "\\text{pour montrer que }4\\,836\\text{ est divisible par }3.",
+        "\\text{Choisir l'élève qui a justifié correctement.}",
+        "\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}",
+        "\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.",
+        "\\text{Élève 4 : }36\\text{ est divisible par }3.",
+        "\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3."
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 768,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [],
+      "figureLabels": [],
+      "mathWidth": 729.765625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Choisir le calcul donnant l'aire, en cm2,",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": 19.125,
+          "right": 748.890625,
+          "top": 473.984375,
+          "bottom": 531.984375,
+          "width": 729.765625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Choisir le calcul donnant l'aire, en }\\mathrm{cm}^2,",
+        "\\text{d'un disque de diamètre }6\\text{ cm.}",
+        "π\\times6^2",
+        "2\\times π\\times3",
+        "π\\times3^2",
+        "2\\times π\\times6"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 865,
+      "card": 691.59375,
+      "question": 601.59375,
+      "figures": [
+        {
+          "markup": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\" width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\" aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"></path>\n      \n      <line x1=\"102.47487373415291\" y1=\"138.2824855787278\" x2=\"93.2824855787278\" y2=\"147.47487373415294\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"106.7175144212722\" y1=\"142.52512626584706\" x2=\"97.52512626584709\" y2=\"151.7175144212722\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"116.46475527340837\" y1=\"58.46090663827347\" x2=\"119.72726333759681\" y2=\"71.04486631442889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"122.27273666240319\" y1=\"56.95513368557111\" x2=\"125.53524472659163\" y2=\"69.53909336172653\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"173.95513368557113\" y1=\"125.27273666240319\" x2=\"186.53909336172654\" y2=\"128.53524472659163\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"175.46090663827346\" y1=\"119.46475527340837\" x2=\"188.04486631442887\" y2=\"122.72726333759681\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"474.2701581071148\" y1=\"110.15485464345892\" x2=\"461.8937868104064\" y2=\"114.13297398882949\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"476.1062131895936\" y1=\"115.86702601117051\" x2=\"463.7298418928852\" y2=\"119.84514535654108\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"321.6754054898647\" y1=\"30.50810979729401\" x2=\"322.3245945101353\" y2=\"43.49189020270599\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <line x1=\"396.47487373415294\" y1=\"247.01040764008565\" x2=\"391.52512626584706\" y2=\"234.98959235991435\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"></line>\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"></path>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg>",
+          "left": 209,
+          "right": 559,
+          "top": 521.171875,
+          "bottom": 741.53125,
+          "width": 350,
+          "height": 220.359375
+        }
+      ],
+      "figureLabels": [
+        {
+          "text": "A",
+          "left": 221.00753784179688,
+          "right": 233.00753784179688,
+          "top": 555.4843139648438,
+          "bottom": 571.4843139648438,
+          "width": 12,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "B",
+          "left": 305.6531982421875,
+          "right": 316.1688232421875,
+          "top": 663.071533203125,
+          "bottom": 679.071533203125,
+          "width": 10.515625,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "C",
+          "left": 334.522216796875,
+          "right": 344.522216796875,
+          "top": 526.319091796875,
+          "bottom": 542.319091796875,
+          "width": 10,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "D",
+          "left": 491.2718200683594,
+          "right": 502.5686950683594,
+          "top": 521.1342163085938,
+          "bottom": 537.1342163085938,
+          "width": 11.296875,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "E",
+          "left": 538.7252197265625,
+          "right": 548.7252197265625,
+          "top": 640.3875122070312,
+          "bottom": 656.3875122070312,
+          "width": 10,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "F",
+          "left": 403.01153564453125,
+          "right": 412.01153564453125,
+          "top": 710.3839721679688,
+          "bottom": 726.384033203125,
+          "width": 9,
+          "height": 16.00006103515625,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "x",
+          "left": 245.67596435546875,
+          "right": 253.67596435546875,
+          "top": 626.7770385742188,
+          "bottom": 642.777099609375,
+          "width": 8,
+          "height": 16.00006103515625,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "3",
+          "left": 347.38360595703125,
+          "right": 354.50860595703125,
+          "top": 701.95849609375,
+          "bottom": 717.95849609375,
+          "width": 7.125,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        },
+        {
+          "text": "4",
+          "left": 471.4699401855469,
+          "right": 479.5949401855469,
+          "top": 700.6622924804688,
+          "bottom": 716.6622924804688,
+          "width": 8.125,
+          "height": 16,
+          "svg": {
+            "left": 209,
+            "right": 559,
+            "top": 521.171875,
+            "bottom": 741.53125,
+            "width": 350,
+            "height": 220.359375
+          }
+        }
+      ],
+      "mathWidth": 962.625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Choisir l'expression en fonction de x qui correspond",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -97.3125,
+          "right": 865.3125,
+          "top": 390.140625,
+          "bottom": 448.140625,
+          "width": 962.625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Choisir l'expression en fonction de }x\\text{ qui correspond}",
+        "\\text{au périmètre du polygone }\\mathrm{ACDEFB}.",
+        "3x+11",
+        "x^3+11",
+        "4x+11",
+        "x+7"
+      ],
+      "isolatedPunctuation": [],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 9,
+    "questions": [
+      {
+        "answers": [
+          "7x"
+        ],
+        "possible_answers": [
+          "\\(7x\\)",
+          "\\(7x^2\\)",
+          "\\(12x\\)",
+          "\\(12x^2\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "reduced"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(12x\\)",
+          "\\(12x^2\\)",
+          "\\(7x\\)",
+          "\\(7x^2\\)"
+        ]
+      },
+      {
+        "answers": [
+          "8"
+        ],
+        "possible_answers": [
+          "\\(17\\)",
+          "\\(8\\)",
+          "\\(10{,}6\\)",
+          "\\(7\\)"
+        ],
+        "answerRule": {
+          "type": "integer"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(10{,}6\\)",
+          "\\(7\\)",
+          "\\(17\\)",
+          "\\(8\\)"
+        ]
+      },
+      {
+        "answers": [
+          "40"
+        ],
+        "possible_answers": [
+          "\\(25\\text{ €}\\)",
+          "\\(120\\text{ €}\\)",
+          "\\(40\\text{ €}\\)",
+          "\\(4\\text{ €}\\)"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "€",
+          "valueRule": {
+            "type": "decimal"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(120\\text{ €}\\)",
+          "\\(4\\text{ €}\\)",
+          "\\(40\\text{ €}\\)",
+          "\\(25\\text{ €}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "20"
+        ],
+        "possible_answers": [
+          "\\(40\\text{°}\\)",
+          "\\(160\\text{°}\\)",
+          "\\(200\\text{°}\\)",
+          "\\(20\\text{°}\\)"
+        ],
+        "answerRule": {
+          "type": "valueWithUnit",
+          "requiredUnit": "°",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(200\\text{°}\\)",
+          "\\(160\\text{°}\\)",
+          "\\(20\\text{°}\\)",
+          "\\(40\\text{°}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "DE/EF",
+          "ED/EF",
+          "DE/FE",
+          "ED/FE"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+          "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+          "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "3a^2-2a"
+        ],
+        "possible_answers": [
+          "\\(3a^2-2\\)",
+          "\\(3a-2a\\)",
+          "\\(3a^2-2a\\)",
+          "\\(3a^2+2a\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "developedAndReduced"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(3a-2a\\)",
+          "\\(3a^2-2a\\)",
+          "\\(3a^2+2a\\)",
+          "\\(3a^2-2\\)"
+        ]
+      },
+      {
+        "answers": [
+          "4+8+3+6"
+        ],
+        "possible_answers": [
+          "\\(\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3.\\)",
+          "\\(\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.\\)",
+          "\\(\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}\\)",
+          "\\(\\text{Élève 4 : }36\\text{ est divisible par }3.\\)"
+        ],
+        "answerRule": {
+          "type": "sum",
+          "terms": [
+            4,
+            8,
+            3,
+            6
+          ]
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}\\)",
+          "\\(\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.\\)",
+          "\\(\\text{Élève 4 : }36\\text{ est divisible par }3.\\)",
+          "\\(\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3.\\)"
+        ]
+      },
+      {
+        "answers": [
+          "pi*3^2",
+          "3^2*pi",
+          "pi*(6/2)^2",
+          "(6/2)^2*pi",
+          "pi*3*3",
+          "3*3*pi",
+          "3*pi*3",
+          "π*3^2",
+          "3^2*π",
+          "π*(6/2)^2",
+          "(6/2)^2*π",
+          "π*3*3",
+          "3*3*π",
+          "3*π*3"
+        ],
+        "possible_answers": [
+          "\\(π\\times6^2\\)",
+          "\\(π\\times3^2\\)",
+          "\\(2\\times π\\times3\\)",
+          "\\(2\\times π\\times6\\)"
+        ],
+        "answerRule": {
+          "type": "symbolicExact"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(π\\times6^2\\)",
+          "\\(2\\times π\\times3\\)",
+          "\\(π\\times3^2\\)",
+          "\\(2\\times π\\times6\\)"
+        ]
+      },
+      {
+        "answers": [
+          "3x+11"
+        ],
+        "possible_answers": [
+          "\\(4x+11\\)",
+          "\\(x^3+11\\)",
+          "\\(x+7\\)",
+          "\\(3x+11\\)"
+        ],
+        "answerRule": {
+          "type": "algebra",
+          "form": "equivalent"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(3x+11\\)",
+          "\\(x^3+11\\)",
+          "\\(4x+11\\)",
+          "\\(x+7\\)"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

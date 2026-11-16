@@ -1,0 +1,182 @@
+[
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 470,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 1440,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 408,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 553,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 443,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 553,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 381,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 526,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 526,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 443,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 526,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 526,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response",
+    "samples": 5,
+    "maxDocument": 443,
+    "maxMath": 0
+  },
+  {
+    "id": "proportionnalite",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow",
+    "samples": 5,
+    "maxDocument": 407,
+    "maxMath": 0
+  }
+]

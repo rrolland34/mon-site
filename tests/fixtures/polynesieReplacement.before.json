@@ -1,0 +1,710 @@
+[
+  {
+    "seed": 17,
+    "state": 17,
+    "exercise": {
+      "title": "Polynésie — remplacement — 7 septembre 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul littéral",
+          "subtitle": "Réduction",
+          "question": "\\(\\text{Réduire l'expression }A=4x+3x.\\)",
+          "answers": [
+            "7x"
+          ],
+          "possible_answers": [
+            "\\(7x\\)",
+            "\\(7x^2\\)",
+            "\\(12x\\)",
+            "\\(12x^2\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "reduced"
+          },
+          "display_answer": "\\(A=7x\\text{, car }4x+3x=(4+3)x.\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Déterminer la médiane de la série :}\\)</div><div>\\(8\\ ;\\ 18\\ ;\\ 17\\ ;\\ 3\\ ;\\ 7.\\)</div></div>",
+          "answers": [
+            "8"
+          ],
+          "possible_answers": [
+            "\\(17\\)",
+            "\\(8\\)",
+            "\\(10{,}6\\)",
+            "\\(7\\)"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(8.\\)<br>\\(\\text{La série ordonnée est }3\\ ;\\ 7\\ ;\\ 8\\ ;\\ 17\\ ;\\ 18.\\)<br>\\(\\text{La médiane est la troisième valeur.}\\)"
+        },
+        {
+          "id": "q3",
+          "title": "Proportionnalité",
+          "subtitle": "Pourcentage",
+          "question": "\\(\\text{Calculer }25\\,\\%\\text{ de }160\\text{ €.}\\)",
+          "answers": [
+            "40"
+          ],
+          "possible_answers": [
+            "\\(25\\text{ €}\\)",
+            "\\(120\\text{ €}\\)",
+            "\\(40\\text{ €}\\)",
+            "\\(4\\text{ €}\\)"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "decimal"
+            }
+          },
+          "display_answer": "\\(40\\text{ €}.\\)<br>\\(25\\,\\%\\times160=\\dfrac{160}{4}=40.\\)"
+        },
+        {
+          "id": "q4",
+          "title": "Géométrie",
+          "subtitle": "Angles dans un triangle",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Un triangle possède deux angles de }60^\\circ\\text{ et }100^\\circ.\\)</div><div>\\(\\text{Déterminer le troisième angle, en degré.}\\)</div></div>",
+          "answers": [
+            "20"
+          ],
+          "possible_answers": [
+            "\\(40\\text{°}\\)",
+            "\\(160\\text{°}\\)",
+            "\\(200\\text{°}\\)",
+            "\\(20\\text{°}\\)"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "°",
+            "valueRule": {
+              "type": "integer"
+            }
+          },
+          "display_answer": "\\(20^\\circ.\\)<br>\\(\\text{La somme des angles d'un triangle vaut }180^\\circ.\\)<br>\\(180^\\circ-60^\\circ-100^\\circ=20^\\circ.\\)"
+        },
+        {
+          "id": "q5",
+          "title": "Trigonométrie",
+          "subtitle": "Cosinus dans un triangle rectangle",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Compléter par un rapport de longueurs :}\\)</div><div>\\(\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\ldots}{\\ldots}\\)</div><div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        71\n        11\n        298\n        400\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            -90\n            220\n            211\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"340\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"142\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"340\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"142\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"302.9571914792263\"\n        y=\"355.273376485611\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n      <text\n        x=\"296.7366078966356\"\n        y=\"64.09005948996327\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        E\n      </text>\n\n      <text\n        x=\"129.87104537942187\"\n        y=\"349.373004017894\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        F\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"218.26618739388493\"\n        y=\"210.00305775148382\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"undefined\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -60.10109816138542\n            218.26618739388493\n            210.00305775148382\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"313\"\n        y=\"211\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -90\n            313\n            211\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"220\"\n        y=\"333\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"undefined\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            0\n            220\n            333\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>\n  </div></div>",
+          "answers": [
+            "DE/EF",
+            "ED/EF",
+            "DE/FE",
+            "ED/FE"
+          ],
+          "possible_answers": [
+            "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)",
+            "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+            "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+            "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}.\\)<br>\\(\\text{Le cosinus est le rapport du côté adjacent à l'hypoténuse.}\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Développement et réduction",
+          "question": "\\(\\text{Développer et réduire l'expression }a(3a-2).\\)",
+          "answers": [
+            "3a^2-2a"
+          ],
+          "possible_answers": [
+            "\\(3a^2-2\\)",
+            "\\(3a-2a\\)",
+            "\\(3a^2-2a\\)",
+            "\\(3a^2+2a\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "developedAndReduced"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(3a^2-2a.\\)<br>\\(a(3a-2)=a\\times3a-a\\times2=3a^2-2a.\\)"
+        },
+        {
+          "id": "q7",
+          "title": "Arithmétique",
+          "subtitle": "Critère de divisibilité",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Écrire le calcul permettant d'appliquer}\\)</div><div>\\(\\text{le critère de divisibilité par }3\\text{ à }4\\,836.\\)</div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Quatre élèves proposent une justification}\\)</div><div>\\(\\text{pour montrer que }4\\,836\\text{ est divisible par }3.\\)</div><div>\\(\\text{Choisir l'élève qui a justifié correctement.}\\)</div></div>"
+          },
+          "answers": [
+            "4+8+3+6"
+          ],
+          "possible_answers": [
+            "\\(\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3.\\)",
+            "\\(\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.\\)",
+            "\\(\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}\\)",
+            "\\(\\text{Élève 4 : }36\\text{ est divisible par }3.\\)"
+          ],
+          "qcmClass": "qcm-two-columns",
+          "qcmAnswer": "Élève 2 : La somme des chiffres de 4836 est divisible par 3.",
+          "answerRule": {
+            "type": "sum",
+            "terms": [
+              4,
+              8,
+              3,
+              6
+            ]
+          },
+          "qcmAnswerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(4+8+3+6\\)"
+        },
+        {
+          "id": "q8",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un disque",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Écrire un calcul permettant de déterminer l'aire}\\)</div><div>\\(\\text{d'un disque de diamètre }6\\text{ cm, sans effectuer le calcul et sans écrire l'unité.}\\)</div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Choisir le calcul donnant l'aire, en }\\mathrm{cm}^2,\\)</div><div>\\(\\text{d'un disque de diamètre }6\\text{ cm.}\\)</div></div>"
+          },
+          "answers": [
+            "pi*3^2",
+            "3^2*pi",
+            "pi*(6/2)^2",
+            "(6/2)^2*pi",
+            "pi*3*3",
+            "3*3*pi",
+            "3*pi*3",
+            "π*3^2",
+            "3^2*π",
+            "π*(6/2)^2",
+            "(6/2)^2*π",
+            "π*3*3",
+            "3*3*π",
+            "3*π*3"
+          ],
+          "possible_answers": [
+            "\\(π\\times6^2\\)",
+            "\\(π\\times3^2\\)",
+            "\\(2\\times π\\times3\\)",
+            "\\(2\\times π\\times6\\)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "inputTools": [
+            "power",
+            "pi"
+          ],
+          "display_answer": "\\(\\pi\\times3^2.\\)<br>\\(\\text{Le rayon vaut }6\\div2=3\\text{ cm et l'aire vaut }\\pi r^2.\\)"
+        },
+        {
+          "id": "q9",
+          "title": "Calcul littéral",
+          "subtitle": "Expression d'un périmètre",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Donner une expression en fonction de }x\\)</div><div>\\(\\text{du périmètre du polygone }\\mathrm{ACDEFB}.\\)</div><div class=\"dnb-quadrilateral dnb-polynesie-q9\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\"\n    width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\"\n    aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"/>\n      \n      <line\n        x1=\"102.47487373415291\"\n        y1=\"138.2824855787278\"\n        x2=\"93.2824855787278\"\n        y2=\"147.47487373415294\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"106.7175144212722\"\n        y1=\"142.52512626584706\"\n        x2=\"97.52512626584709\"\n        y2=\"151.7175144212722\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"116.46475527340837\"\n        y1=\"58.46090663827347\"\n        x2=\"119.72726333759681\"\n        y2=\"71.04486631442889\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"122.27273666240319\"\n        y1=\"56.95513368557111\"\n        x2=\"125.53524472659163\"\n        y2=\"69.53909336172653\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"173.95513368557113\"\n        y1=\"125.27273666240319\"\n        x2=\"186.53909336172654\"\n        y2=\"128.53524472659163\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"175.46090663827346\"\n        y1=\"119.46475527340837\"\n        x2=\"188.04486631442887\"\n        y2=\"122.72726333759681\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"474.2701581071148\"\n        y1=\"110.15485464345892\"\n        x2=\"461.8937868104064\"\n        y2=\"114.13297398882949\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"476.1062131895936\"\n        y1=\"115.86702601117051\"\n        x2=\"463.7298418928852\"\n        y2=\"119.84514535654108\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"321.6754054898647\"\n        y1=\"30.50810979729401\"\n        x2=\"322.3245945101353\"\n        y2=\"43.49189020270599\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"396.47487373415294\"\n        y1=\"247.01040764008565\"\n        x2=\"391.52512626584706\"\n        y2=\"234.98959235991435\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"/>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg></div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Choisir l'expression en fonction de }x\\text{ qui correspond}\\)</div><div>\\(\\text{au périmètre du polygone }\\mathrm{ACDEFB}.\\)</div><div class=\"dnb-quadrilateral dnb-polynesie-q9\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\"\n    width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\"\n    aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"/>\n      \n      <line\n        x1=\"102.47487373415291\"\n        y1=\"138.2824855787278\"\n        x2=\"93.2824855787278\"\n        y2=\"147.47487373415294\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"106.7175144212722\"\n        y1=\"142.52512626584706\"\n        x2=\"97.52512626584709\"\n        y2=\"151.7175144212722\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"116.46475527340837\"\n        y1=\"58.46090663827347\"\n        x2=\"119.72726333759681\"\n        y2=\"71.04486631442889\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"122.27273666240319\"\n        y1=\"56.95513368557111\"\n        x2=\"125.53524472659163\"\n        y2=\"69.53909336172653\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"173.95513368557113\"\n        y1=\"125.27273666240319\"\n        x2=\"186.53909336172654\"\n        y2=\"128.53524472659163\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"175.46090663827346\"\n        y1=\"119.46475527340837\"\n        x2=\"188.04486631442887\"\n        y2=\"122.72726333759681\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"474.2701581071148\"\n        y1=\"110.15485464345892\"\n        x2=\"461.8937868104064\"\n        y2=\"114.13297398882949\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"476.1062131895936\"\n        y1=\"115.86702601117051\"\n        x2=\"463.7298418928852\"\n        y2=\"119.84514535654108\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"321.6754054898647\"\n        y1=\"30.50810979729401\"\n        x2=\"322.3245945101353\"\n        y2=\"43.49189020270599\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"396.47487373415294\"\n        y1=\"247.01040764008565\"\n        x2=\"391.52512626584706\"\n        y2=\"234.98959235991435\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"/>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg></div></div>"
+          },
+          "answers": [
+            "3x+11"
+          ],
+          "possible_answers": [
+            "\\(4x+11\\)",
+            "\\(x^3+11\\)",
+            "\\(x+7\\)",
+            "\\(3x+11\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "equivalent"
+          },
+          "display_answer": "\\(P=3x+11.\\)<br>\\(P=x+4+x+4+3+x=3x+11.\\)<br>\\(\\text{Le segment }[\\mathrm{BC}]\\text{ est intérieur : il ne compte pas dans le périmètre.}\\)"
+        }
+      ]
+    }
+  },
+  {
+    "seed": 2026,
+    "state": 2026,
+    "exercise": {
+      "title": "Polynésie — remplacement — 7 septembre 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul littéral",
+          "subtitle": "Réduction",
+          "question": "\\(\\text{Réduire l'expression }A=4x+3x.\\)",
+          "answers": [
+            "7x"
+          ],
+          "possible_answers": [
+            "\\(7x\\)",
+            "\\(7x^2\\)",
+            "\\(12x\\)",
+            "\\(12x^2\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "reduced"
+          },
+          "display_answer": "\\(A=7x\\text{, car }4x+3x=(4+3)x.\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Déterminer la médiane de la série :}\\)</div><div>\\(8\\ ;\\ 18\\ ;\\ 17\\ ;\\ 3\\ ;\\ 7.\\)</div></div>",
+          "answers": [
+            "8"
+          ],
+          "possible_answers": [
+            "\\(17\\)",
+            "\\(8\\)",
+            "\\(10{,}6\\)",
+            "\\(7\\)"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(8.\\)<br>\\(\\text{La série ordonnée est }3\\ ;\\ 7\\ ;\\ 8\\ ;\\ 17\\ ;\\ 18.\\)<br>\\(\\text{La médiane est la troisième valeur.}\\)"
+        },
+        {
+          "id": "q3",
+          "title": "Proportionnalité",
+          "subtitle": "Pourcentage",
+          "question": "\\(\\text{Calculer }25\\,\\%\\text{ de }160\\text{ €.}\\)",
+          "answers": [
+            "40"
+          ],
+          "possible_answers": [
+            "\\(25\\text{ €}\\)",
+            "\\(120\\text{ €}\\)",
+            "\\(40\\text{ €}\\)",
+            "\\(4\\text{ €}\\)"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "decimal"
+            }
+          },
+          "display_answer": "\\(40\\text{ €}.\\)<br>\\(25\\,\\%\\times160=\\dfrac{160}{4}=40.\\)"
+        },
+        {
+          "id": "q4",
+          "title": "Géométrie",
+          "subtitle": "Angles dans un triangle",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Un triangle possède deux angles de }60^\\circ\\text{ et }100^\\circ.\\)</div><div>\\(\\text{Déterminer le troisième angle, en degré.}\\)</div></div>",
+          "answers": [
+            "20"
+          ],
+          "possible_answers": [
+            "\\(40\\text{°}\\)",
+            "\\(160\\text{°}\\)",
+            "\\(200\\text{°}\\)",
+            "\\(20\\text{°}\\)"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "°",
+            "valueRule": {
+              "type": "integer"
+            }
+          },
+          "display_answer": "\\(20^\\circ.\\)<br>\\(\\text{La somme des angles d'un triangle vaut }180^\\circ.\\)<br>\\(180^\\circ-60^\\circ-100^\\circ=20^\\circ.\\)"
+        },
+        {
+          "id": "q5",
+          "title": "Trigonométrie",
+          "subtitle": "Cosinus dans un triangle rectangle",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Compléter par un rapport de longueurs :}\\)</div><div>\\(\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\ldots}{\\ldots}\\)</div><div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        71\n        11\n        298\n        400\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            -90\n            220\n            211\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"340\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"142\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"340\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"142\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"302.9571914792263\"\n        y=\"355.273376485611\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n      <text\n        x=\"296.7366078966356\"\n        y=\"64.09005948996327\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        E\n      </text>\n\n      <text\n        x=\"129.87104537942187\"\n        y=\"349.373004017894\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        F\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"218.26618739388493\"\n        y=\"210.00305775148382\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"undefined\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -60.10109816138542\n            218.26618739388493\n            210.00305775148382\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"313\"\n        y=\"211\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -90\n            313\n            211\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"220\"\n        y=\"333\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"undefined\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            0\n            220\n            333\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>\n  </div></div>",
+          "answers": [
+            "DE/EF",
+            "ED/EF",
+            "DE/FE",
+            "ED/FE"
+          ],
+          "possible_answers": [
+            "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)",
+            "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+            "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+            "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}.\\)<br>\\(\\text{Le cosinus est le rapport du côté adjacent à l'hypoténuse.}\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Développement et réduction",
+          "question": "\\(\\text{Développer et réduire l'expression }a(3a-2).\\)",
+          "answers": [
+            "3a^2-2a"
+          ],
+          "possible_answers": [
+            "\\(3a^2-2\\)",
+            "\\(3a-2a\\)",
+            "\\(3a^2-2a\\)",
+            "\\(3a^2+2a\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "developedAndReduced"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(3a^2-2a.\\)<br>\\(a(3a-2)=a\\times3a-a\\times2=3a^2-2a.\\)"
+        },
+        {
+          "id": "q7",
+          "title": "Arithmétique",
+          "subtitle": "Critère de divisibilité",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Écrire le calcul permettant d'appliquer}\\)</div><div>\\(\\text{le critère de divisibilité par }3\\text{ à }4\\,836.\\)</div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Quatre élèves proposent une justification}\\)</div><div>\\(\\text{pour montrer que }4\\,836\\text{ est divisible par }3.\\)</div><div>\\(\\text{Choisir l'élève qui a justifié correctement.}\\)</div></div>"
+          },
+          "answers": [
+            "4+8+3+6"
+          ],
+          "possible_answers": [
+            "\\(\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3.\\)",
+            "\\(\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.\\)",
+            "\\(\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}\\)",
+            "\\(\\text{Élève 4 : }36\\text{ est divisible par }3.\\)"
+          ],
+          "qcmClass": "qcm-two-columns",
+          "qcmAnswer": "Élève 2 : La somme des chiffres de 4836 est divisible par 3.",
+          "answerRule": {
+            "type": "sum",
+            "terms": [
+              4,
+              8,
+              3,
+              6
+            ]
+          },
+          "qcmAnswerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(4+8+3+6\\)"
+        },
+        {
+          "id": "q8",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un disque",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Écrire un calcul permettant de déterminer l'aire}\\)</div><div>\\(\\text{d'un disque de diamètre }6\\text{ cm, sans effectuer le calcul et sans écrire l'unité.}\\)</div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Choisir le calcul donnant l'aire, en }\\mathrm{cm}^2,\\)</div><div>\\(\\text{d'un disque de diamètre }6\\text{ cm.}\\)</div></div>"
+          },
+          "answers": [
+            "pi*3^2",
+            "3^2*pi",
+            "pi*(6/2)^2",
+            "(6/2)^2*pi",
+            "pi*3*3",
+            "3*3*pi",
+            "3*pi*3",
+            "π*3^2",
+            "3^2*π",
+            "π*(6/2)^2",
+            "(6/2)^2*π",
+            "π*3*3",
+            "3*3*π",
+            "3*π*3"
+          ],
+          "possible_answers": [
+            "\\(π\\times6^2\\)",
+            "\\(π\\times3^2\\)",
+            "\\(2\\times π\\times3\\)",
+            "\\(2\\times π\\times6\\)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "inputTools": [
+            "power",
+            "pi"
+          ],
+          "display_answer": "\\(\\pi\\times3^2.\\)<br>\\(\\text{Le rayon vaut }6\\div2=3\\text{ cm et l'aire vaut }\\pi r^2.\\)"
+        },
+        {
+          "id": "q9",
+          "title": "Calcul littéral",
+          "subtitle": "Expression d'un périmètre",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Donner une expression en fonction de }x\\)</div><div>\\(\\text{du périmètre du polygone }\\mathrm{ACDEFB}.\\)</div><div class=\"dnb-quadrilateral dnb-polynesie-q9\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\"\n    width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\"\n    aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"/>\n      \n      <line\n        x1=\"102.47487373415291\"\n        y1=\"138.2824855787278\"\n        x2=\"93.2824855787278\"\n        y2=\"147.47487373415294\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"106.7175144212722\"\n        y1=\"142.52512626584706\"\n        x2=\"97.52512626584709\"\n        y2=\"151.7175144212722\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"116.46475527340837\"\n        y1=\"58.46090663827347\"\n        x2=\"119.72726333759681\"\n        y2=\"71.04486631442889\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"122.27273666240319\"\n        y1=\"56.95513368557111\"\n        x2=\"125.53524472659163\"\n        y2=\"69.53909336172653\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"173.95513368557113\"\n        y1=\"125.27273666240319\"\n        x2=\"186.53909336172654\"\n        y2=\"128.53524472659163\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"175.46090663827346\"\n        y1=\"119.46475527340837\"\n        x2=\"188.04486631442887\"\n        y2=\"122.72726333759681\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"474.2701581071148\"\n        y1=\"110.15485464345892\"\n        x2=\"461.8937868104064\"\n        y2=\"114.13297398882949\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"476.1062131895936\"\n        y1=\"115.86702601117051\"\n        x2=\"463.7298418928852\"\n        y2=\"119.84514535654108\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"321.6754054898647\"\n        y1=\"30.50810979729401\"\n        x2=\"322.3245945101353\"\n        y2=\"43.49189020270599\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"396.47487373415294\"\n        y1=\"247.01040764008565\"\n        x2=\"391.52512626584706\"\n        y2=\"234.98959235991435\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"/>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg></div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Choisir l'expression en fonction de }x\\text{ qui correspond}\\)</div><div>\\(\\text{au périmètre du polygone }\\mathrm{ACDEFB}.\\)</div><div class=\"dnb-quadrilateral dnb-polynesie-q9\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\"\n    width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\"\n    aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"/>\n      \n      <line\n        x1=\"102.47487373415291\"\n        y1=\"138.2824855787278\"\n        x2=\"93.2824855787278\"\n        y2=\"147.47487373415294\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"106.7175144212722\"\n        y1=\"142.52512626584706\"\n        x2=\"97.52512626584709\"\n        y2=\"151.7175144212722\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"116.46475527340837\"\n        y1=\"58.46090663827347\"\n        x2=\"119.72726333759681\"\n        y2=\"71.04486631442889\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"122.27273666240319\"\n        y1=\"56.95513368557111\"\n        x2=\"125.53524472659163\"\n        y2=\"69.53909336172653\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"173.95513368557113\"\n        y1=\"125.27273666240319\"\n        x2=\"186.53909336172654\"\n        y2=\"128.53524472659163\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"175.46090663827346\"\n        y1=\"119.46475527340837\"\n        x2=\"188.04486631442887\"\n        y2=\"122.72726333759681\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"474.2701581071148\"\n        y1=\"110.15485464345892\"\n        x2=\"461.8937868104064\"\n        y2=\"114.13297398882949\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"476.1062131895936\"\n        y1=\"115.86702601117051\"\n        x2=\"463.7298418928852\"\n        y2=\"119.84514535654108\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"321.6754054898647\"\n        y1=\"30.50810979729401\"\n        x2=\"322.3245945101353\"\n        y2=\"43.49189020270599\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"396.47487373415294\"\n        y1=\"247.01040764008565\"\n        x2=\"391.52512626584706\"\n        y2=\"234.98959235991435\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"/>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg></div></div>"
+          },
+          "answers": [
+            "3x+11"
+          ],
+          "possible_answers": [
+            "\\(4x+11\\)",
+            "\\(x^3+11\\)",
+            "\\(x+7\\)",
+            "\\(3x+11\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "equivalent"
+          },
+          "display_answer": "\\(P=3x+11.\\)<br>\\(P=x+4+x+4+3+x=3x+11.\\)<br>\\(\\text{Le segment }[\\mathrm{BC}]\\text{ est intérieur : il ne compte pas dans le périmètre.}\\)"
+        }
+      ]
+    }
+  },
+  {
+    "seed": 98765,
+    "state": 98765,
+    "exercise": {
+      "title": "Polynésie — remplacement — 7 septembre 2026",
+      "series": "Générale",
+      "shuffle": false,
+      "questions": [
+        {
+          "id": "q1",
+          "title": "Calcul littéral",
+          "subtitle": "Réduction",
+          "question": "\\(\\text{Réduire l'expression }A=4x+3x.\\)",
+          "answers": [
+            "7x"
+          ],
+          "possible_answers": [
+            "\\(7x\\)",
+            "\\(7x^2\\)",
+            "\\(12x\\)",
+            "\\(12x^2\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "reduced"
+          },
+          "display_answer": "\\(A=7x\\text{, car }4x+3x=(4+3)x.\\)"
+        },
+        {
+          "id": "q2",
+          "title": "Statistiques",
+          "subtitle": "Médiane",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Déterminer la médiane de la série :}\\)</div><div>\\(8\\ ;\\ 18\\ ;\\ 17\\ ;\\ 3\\ ;\\ 7.\\)</div></div>",
+          "answers": [
+            "8"
+          ],
+          "possible_answers": [
+            "\\(17\\)",
+            "\\(8\\)",
+            "\\(10{,}6\\)",
+            "\\(7\\)"
+          ],
+          "answerRule": {
+            "type": "integer"
+          },
+          "display_answer": "\\(8.\\)<br>\\(\\text{La série ordonnée est }3\\ ;\\ 7\\ ;\\ 8\\ ;\\ 17\\ ;\\ 18.\\)<br>\\(\\text{La médiane est la troisième valeur.}\\)"
+        },
+        {
+          "id": "q3",
+          "title": "Proportionnalité",
+          "subtitle": "Pourcentage",
+          "question": "\\(\\text{Calculer }25\\,\\%\\text{ de }160\\text{ €.}\\)",
+          "answers": [
+            "40"
+          ],
+          "possible_answers": [
+            "\\(25\\text{ €}\\)",
+            "\\(120\\text{ €}\\)",
+            "\\(40\\text{ €}\\)",
+            "\\(4\\text{ €}\\)"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "€",
+            "valueRule": {
+              "type": "decimal"
+            }
+          },
+          "display_answer": "\\(40\\text{ €}.\\)<br>\\(25\\,\\%\\times160=\\dfrac{160}{4}=40.\\)"
+        },
+        {
+          "id": "q4",
+          "title": "Géométrie",
+          "subtitle": "Angles dans un triangle",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Un triangle possède deux angles de }60^\\circ\\text{ et }100^\\circ.\\)</div><div>\\(\\text{Déterminer le troisième angle, en degré.}\\)</div></div>",
+          "answers": [
+            "20"
+          ],
+          "possible_answers": [
+            "\\(40\\text{°}\\)",
+            "\\(160\\text{°}\\)",
+            "\\(200\\text{°}\\)",
+            "\\(20\\text{°}\\)"
+          ],
+          "answerRule": {
+            "type": "valueWithUnit",
+            "requiredUnit": "°",
+            "valueRule": {
+              "type": "integer"
+            }
+          },
+          "display_answer": "\\(20^\\circ.\\)<br>\\(\\text{La somme des angles d'un triangle vaut }180^\\circ.\\)<br>\\(180^\\circ-60^\\circ-100^\\circ=20^\\circ.\\)"
+        },
+        {
+          "id": "q5",
+          "title": "Trigonométrie",
+          "subtitle": "Cosinus dans un triangle rectangle",
+          "question": "<div class=\"two-line-question\"><div>\\(\\text{Compléter par un rapport de longueurs :}\\)</div><div>\\(\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\ldots}{\\ldots}\\)</div><div class=\"question-display question-with-figure dnb-right-triangle\">\n    <svg\n      viewBox=\"\n        71\n        11\n        298\n        400\n      \"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      role=\"img\"\n      aria-label=\"Triangle rectangle\"\n    >\n      <defs>\n        <marker\n          id=\"triangle-arrow-head\"\n          markerWidth=\"10\"\n          markerHeight=\"10\"\n          refX=\"8.5\"\n          refY=\"3\"\n          orient=\"auto\"\n          markerUnits=\"strokeWidth\"\n        >\n          <path\n            d=\"M4,1.5 L4,4.5 L9,3 z\"\n            fill=\"red\"\n          />\n        </marker>\n      </defs>\n\n      <g\n        transform=\"\n          rotate(\n            -90\n            220\n            211\n          )\n        \"\n      >\n\n        \n    <path\n      d=\"\n        M 122 280\n        L 122 258\n        L 100 258\n      \"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      stroke-width=\"2\"\n    />\n  \n\n        \n\n        \n\n        <!-- Triangle -->\n          <!-- leg1 : AB -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"340\"\n            y2=\"280\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- leg2 : AC -->\n          <line\n            x1=\"100\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"142\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n          <!-- hypoténuse : BC -->\n          <line\n            x1=\"340\"\n            y1=\"280\"\n            x2=\"100\"\n            y2=\"142\"\n            stroke=\"currentColor\"\n            stroke-width=\"3\"\n            stroke-linecap=\"round\"\n          />\n\n      </g>\n\n      \n\n      <!-- Noms des sommets -->\n      <text\n        x=\"302.9571914792263\"\n        y=\"355.273376485611\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        D\n      </text>\n\n      <text\n        x=\"296.7366078966356\"\n        y=\"64.09005948996327\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        E\n      </text>\n\n      <text\n        x=\"129.87104537942187\"\n        y=\"349.373004017894\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"24\"\n        fill=\"currentColor\"\n      >\n        F\n      </text>\n\n      <!-- Texte de l'hypoténuse -->\n      <text\n        x=\"218.26618739388493\"\n        y=\"210.00305775148382\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"undefined\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -60.10109816138542\n            218.26618739388493\n            210.00305775148382\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg1 -->\n      <text\n        x=\"313\"\n        y=\"211\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"22\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            -90\n            313\n            211\n          )\n        \"\n      >\n        \n      </text>\n\n      <!-- Texte du côté leg2 -->\n      <text\n        x=\"220\"\n        y=\"333\"\n        text-anchor=\"middle\"\n        dominant-baseline=\"middle\"\n        font-size=\"undefined\"\n        fill=\"currentColor\"\n        transform=\"\n          rotate(\n            0\n            220\n            333\n          )\n        \"\n      >\n        \n      </text>\n\n      \n\n      \n\n      \n\n      \n\n      \n\n    </svg>\n  </div></div>",
+          "answers": [
+            "DE/EF",
+            "ED/EF",
+            "DE/FE",
+            "ED/FE"
+          ],
+          "possible_answers": [
+            "\\(\\dfrac{\\mathrm{DF}}{\\mathrm{EF}}\\)",
+            "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}\\)",
+            "\\(\\dfrac{\\mathrm{EF}}{\\mathrm{DE}}\\)",
+            "\\(\\dfrac{\\mathrm{DE}}{\\mathrm{DF}}\\)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(\\cos(\\widehat{\\mathrm{DEF}})=\\dfrac{\\mathrm{DE}}{\\mathrm{EF}}.\\)<br>\\(\\text{Le cosinus est le rapport du côté adjacent à l'hypoténuse.}\\)"
+        },
+        {
+          "id": "q6",
+          "title": "Calcul littéral",
+          "subtitle": "Développement et réduction",
+          "question": "\\(\\text{Développer et réduire l'expression }a(3a-2).\\)",
+          "answers": [
+            "3a^2-2a"
+          ],
+          "possible_answers": [
+            "\\(3a^2-2\\)",
+            "\\(3a-2a\\)",
+            "\\(3a^2-2a\\)",
+            "\\(3a^2+2a\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "developedAndReduced"
+          },
+          "inputTools": [
+            "power"
+          ],
+          "display_answer": "\\(3a^2-2a.\\)<br>\\(a(3a-2)=a\\times3a-a\\times2=3a^2-2a.\\)"
+        },
+        {
+          "id": "q7",
+          "title": "Arithmétique",
+          "subtitle": "Critère de divisibilité",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Écrire le calcul permettant d'appliquer}\\)</div><div>\\(\\text{le critère de divisibilité par }3\\text{ à }4\\,836.\\)</div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Quatre élèves proposent une justification}\\)</div><div>\\(\\text{pour montrer que }4\\,836\\text{ est divisible par }3.\\)</div><div>\\(\\text{Choisir l'élève qui a justifié correctement.}\\)</div></div>"
+          },
+          "answers": [
+            "4+8+3+6"
+          ],
+          "possible_answers": [
+            "\\(\\text{Élève 1 : Le chiffre des unités de }4\\,836\\text{ est }6\\text{, qui est un multiple de }3.\\)",
+            "\\(\\text{Élève 2 : La somme des chiffres de }4\\,836\\text{ est divisible par }3.\\)",
+            "\\(\\text{Élève 3 : }4\\,836\\text{ est un nombre pair.}\\)",
+            "\\(\\text{Élève 4 : }36\\text{ est divisible par }3.\\)"
+          ],
+          "qcmClass": "qcm-two-columns",
+          "qcmAnswer": "Élève 2 : La somme des chiffres de 4836 est divisible par 3.",
+          "answerRule": {
+            "type": "sum",
+            "terms": [
+              4,
+              8,
+              3,
+              6
+            ]
+          },
+          "qcmAnswerRule": {
+            "type": "symbolicExact"
+          },
+          "display_answer": "\\(4+8+3+6\\)"
+        },
+        {
+          "id": "q8",
+          "title": "Grandeurs et mesures",
+          "subtitle": "Aire d'un disque",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Écrire un calcul permettant de déterminer l'aire}\\)</div><div>\\(\\text{d'un disque de diamètre }6\\text{ cm, sans effectuer le calcul et sans écrire l'unité.}\\)</div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Choisir le calcul donnant l'aire, en }\\mathrm{cm}^2,\\)</div><div>\\(\\text{d'un disque de diamètre }6\\text{ cm.}\\)</div></div>"
+          },
+          "answers": [
+            "pi*3^2",
+            "3^2*pi",
+            "pi*(6/2)^2",
+            "(6/2)^2*pi",
+            "pi*3*3",
+            "3*3*pi",
+            "3*pi*3",
+            "π*3^2",
+            "3^2*π",
+            "π*(6/2)^2",
+            "(6/2)^2*π",
+            "π*3*3",
+            "3*3*π",
+            "3*π*3"
+          ],
+          "possible_answers": [
+            "\\(π\\times6^2\\)",
+            "\\(π\\times3^2\\)",
+            "\\(2\\times π\\times3\\)",
+            "\\(2\\times π\\times6\\)"
+          ],
+          "answerRule": {
+            "type": "symbolicExact"
+          },
+          "inputTools": [
+            "power",
+            "pi"
+          ],
+          "display_answer": "\\(\\pi\\times3^2.\\)<br>\\(\\text{Le rayon vaut }6\\div2=3\\text{ cm et l'aire vaut }\\pi r^2.\\)"
+        },
+        {
+          "id": "q9",
+          "title": "Calcul littéral",
+          "subtitle": "Expression d'un périmètre",
+          "question": {
+            "direct": "<div class=\"two-line-question\"><div>\\(\\text{Donner une expression en fonction de }x\\)</div><div>\\(\\text{du périmètre du polygone }\\mathrm{ACDEFB}.\\)</div><div class=\"dnb-quadrilateral dnb-polynesie-q9\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\"\n    width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\"\n    aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"/>\n      \n      <line\n        x1=\"102.47487373415291\"\n        y1=\"138.2824855787278\"\n        x2=\"93.2824855787278\"\n        y2=\"147.47487373415294\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"106.7175144212722\"\n        y1=\"142.52512626584706\"\n        x2=\"97.52512626584709\"\n        y2=\"151.7175144212722\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"116.46475527340837\"\n        y1=\"58.46090663827347\"\n        x2=\"119.72726333759681\"\n        y2=\"71.04486631442889\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"122.27273666240319\"\n        y1=\"56.95513368557111\"\n        x2=\"125.53524472659163\"\n        y2=\"69.53909336172653\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"173.95513368557113\"\n        y1=\"125.27273666240319\"\n        x2=\"186.53909336172654\"\n        y2=\"128.53524472659163\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"175.46090663827346\"\n        y1=\"119.46475527340837\"\n        x2=\"188.04486631442887\"\n        y2=\"122.72726333759681\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"474.2701581071148\"\n        y1=\"110.15485464345892\"\n        x2=\"461.8937868104064\"\n        y2=\"114.13297398882949\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"476.1062131895936\"\n        y1=\"115.86702601117051\"\n        x2=\"463.7298418928852\"\n        y2=\"119.84514535654108\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"321.6754054898647\"\n        y1=\"30.50810979729401\"\n        x2=\"322.3245945101353\"\n        y2=\"43.49189020270599\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"396.47487373415294\"\n        y1=\"247.01040764008565\"\n        x2=\"391.52512626584706\"\n        y2=\"234.98959235991435\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"/>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg></div></div>",
+            "qcm": "<div class=\"two-line-question\"><div>\\(\\text{Choisir l'expression en fonction de }x\\text{ qui correspond}\\)</div><div>\\(\\text{au périmètre du polygone }\\mathrm{ACDEFB}.\\)</div><div class=\"dnb-quadrilateral dnb-polynesie-q9\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 540 340\"\n    width=\"540\" style=\"max-width:100%;height:auto\" role=\"img\"\n    aria-label=\"Polygone ACDEFB : AB, AC, BC et DE ont le même double codage ; CD et EF le même codage simple. AB vaut x, BF vaut 3 et EF vaut 4.\">\n    <g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\">\n      <path d=\"M40 85 L202 43 L442 31 L496 199 L292 283 L160 205 Z M160 205 L202 43\"/>\n      \n      <line\n        x1=\"102.47487373415291\"\n        y1=\"138.2824855787278\"\n        x2=\"93.2824855787278\"\n        y2=\"147.47487373415294\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"106.7175144212722\"\n        y1=\"142.52512626584706\"\n        x2=\"97.52512626584709\"\n        y2=\"151.7175144212722\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"116.46475527340837\"\n        y1=\"58.46090663827347\"\n        x2=\"119.72726333759681\"\n        y2=\"71.04486631442889\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"122.27273666240319\"\n        y1=\"56.95513368557111\"\n        x2=\"125.53524472659163\"\n        y2=\"69.53909336172653\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"173.95513368557113\"\n        y1=\"125.27273666240319\"\n        x2=\"186.53909336172654\"\n        y2=\"128.53524472659163\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"175.46090663827346\"\n        y1=\"119.46475527340837\"\n        x2=\"188.04486631442887\"\n        y2=\"122.72726333759681\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"474.2701581071148\"\n        y1=\"110.15485464345892\"\n        x2=\"461.8937868104064\"\n        y2=\"114.13297398882949\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"476.1062131895936\"\n        y1=\"115.86702601117051\"\n        x2=\"463.7298418928852\"\n        y2=\"119.84514535654108\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"321.6754054898647\"\n        y1=\"30.50810979729401\"\n        x2=\"322.3245945101353\"\n        y2=\"43.49189020270599\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <line\n        x1=\"396.47487373415294\"\n        y1=\"247.01040764008565\"\n        x2=\"391.52512626584706\"\n        y2=\"234.98959235991435\"\n        stroke=\"currentColor\"\n        stroke-width=\"2\"\n        stroke-linecap=\"round\"\n      />\n    \n      <path d=\"M28 103 L148 226 M25 111 L28 103 L36 106 M140 223 L148 226 L147 218\n        M169 235 L289 307 M169 243 L169 235 L177 234 M281 308 L289 307 L289 299\n        M322 301 L496 229 M330 305 L322 301 L326 293 M488 225 L496 229 L492 237\" stroke-width=\"1.3\"/>\n    </g>\n    <g fill=\"currentColor\" font-family=\"serif\" font-size=\"22\" text-anchor=\"middle\">\n      <text x=\"28\" y=\"73\">A</text><text x=\"158\" y=\"239\">B</text>\n      <text x=\"201\" y=\"28\">C</text><text x=\"445\" y=\"20\">D</text>\n      <text x=\"517\" y=\"204\">E</text><text x=\"307\" y=\"312\">F</text>\n      <text x=\"63\" y=\"183\" font-style=\"italic\">x</text>\n      <text x=\"219\" y=\"299\">3</text><text x=\"412\" y=\"297\">4</text>\n    </g>\n  </svg></div></div>"
+          },
+          "answers": [
+            "3x+11"
+          ],
+          "possible_answers": [
+            "\\(4x+11\\)",
+            "\\(x^3+11\\)",
+            "\\(x+7\\)",
+            "\\(3x+11\\)"
+          ],
+          "answerRule": {
+            "type": "algebra",
+            "form": "equivalent"
+          },
+          "display_answer": "\\(P=3x+11.\\)<br>\\(P=x+4+x+4+3+x=3x+11.\\)<br>\\(\\text{Le segment }[\\mathrm{BC}]\\text{ est intérieur : il ne compte pas dans le périmètre.}\\)"
+        }
+      ]
+    }
+  }
+]

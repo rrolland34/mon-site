@@ -1,0 +1,469 @@
+{
+  "job": {
+    "id": "operations_fractions_simples",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 12+14=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{2}+\\dfrac{1}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 34−12=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{3}{4}-\\dfrac{1}{2}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 34+14=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{3}{4}+\\dfrac{1}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 12+12=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{2}+\\dfrac{1}{2}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 491,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 607.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 1−12=…",
+          "left": -116.125,
+          "right": 491.125,
+          "width": 607.25,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } 1-\\dfrac{1}{2}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 14+14=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{4}+\\dfrac{1}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 34−14=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{3}{4}-\\dfrac{1}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 501,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 626.34375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 12−14=…",
+          "left": -125.671875,
+          "right": 500.671875,
+          "width": 626.34375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } \\dfrac{1}{2}-\\dfrac{1}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 491,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 607.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 1−14=…",
+          "left": -116.125,
+          "right": 491.125,
+          "width": 607.25,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } 1-\\dfrac{1}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 491,
+      "card": 0,
+      "question": 280.75,
+      "mathWidth": 607.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l’égalité : 1−34=…",
+          "left": -116.125,
+          "right": 491.125,
+          "width": 607.25,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter l’égalité : } 1-\\dfrac{3}{4}=\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 10,
+    "questions": [
+      {
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "3/4",
+        "correctQCMAnswer": "3/4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "1/4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1",
+        "correctQCMAnswer": "1",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "1/2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "1/2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "1/2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "1/4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "3/4",
+        "correctQCMAnswer": "3/4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "1/4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

@@ -8,6 +8,8 @@ import {
   formatAnswer
 } from "../core/answerFormatting.js";
 
+import { formatFractionFigureAnswer } from "./fractionFigurePresentation.js";
+
 function shuffleArray(array) {
   const shuffledArray = [
     ...array
@@ -100,11 +102,11 @@ function createFractionQuantityQuestion({
 
   return {
     question:
-      `\\(\\text{Prendre } ` +
+      `<div class="fraction-quantity-question">\\(\\text{Prendre}\\) \\(` +
       `\\dfrac{${numerator}}{${denominator}}` +
       `\\text{ de } ` +
       `${formatAnswer(quantity, "math")}` +
-      `\\ ${unit.math}\\).`,
+      `\\ ${unit.math}.\\)</div>`,
 
     answers: [
       String(answer)
@@ -126,6 +128,8 @@ function createFractionQuantityQuestion({
         denominator,
         answer
       }),
+
+    qcmRenderAnswer: formatFractionFigureAnswer,
 
     answerRule: {
       type: "simplifiedValue"

@@ -1,0 +1,261 @@
+{
+  "job": {
+    "id": "proportionnalite",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 408,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\dfrac{122,5}{7}\\neq\\dfrac{211,8}{11}",
+        "\\dfrac{122,5}{7}\\neq\\dfrac{11}{211,8}",
+        "\\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{211,8}{11}",
+        "\\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{11}{211,8}"
+      ],
+      "unbracedComma": [
+        "\\dfrac{122,5}{7}\\neq\\dfrac{211,8}{11}",
+        "\\dfrac{122,5}{7}\\neq\\dfrac{11}{211,8}",
+        "\\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{211,8}{11}",
+        "\\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{11}{211,8}"
+      ],
+      "prose": [
+        "Le tableau suivant est-il un tableau de proportionnalité ?\n            \n\n            \n              \n    \n      \n        \n          26711\n        \n\n        \n          35105122,5211,8",
+        "Non, car",
+        "Non, car",
+        "Oui, car",
+        "Oui, car"
+      ]
+    },
+    {
+      "document": 408,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer la valeur manquante dans ce tableau de proportionnalité.\n            \n\n            \n              \n    \n      \n        \n          35912\n        \n\n        \n          28,8?86,4115,2",
+        "0,5",
+        "1,9",
+        "48",
+        "17,3"
+      ]
+    },
+    {
+      "document": 553,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 430 320\" class=\"proportionality-graph\" role=\"img\" aria-label=\"Graphique du prix en fonction du nombre d'entrées\">\n\n      \n      <line x1=\"55\" y1=\"260\" x2=\"55\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"55\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        0\n      </text>\n    \n      <line x1=\"105\" y1=\"260\" x2=\"105\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"105\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        1\n      </text>\n    \n      <line x1=\"155\" y1=\"260\" x2=\"155\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"155\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        2\n      </text>\n    \n      <line x1=\"205\" y1=\"260\" x2=\"205\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"205\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        3\n      </text>\n    \n      <line x1=\"255\" y1=\"260\" x2=\"255\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"255\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        4\n      </text>\n    \n      <line x1=\"305\" y1=\"260\" x2=\"305\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"305\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        5\n      </text>\n    \n      <line x1=\"355\" y1=\"260\" x2=\"355\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"355\" y=\"280\" text-anchor=\"middle\" class=\"proportionality-graph-label\">\n        6\n      </text>\n    \n      \n      <line x1=\"55\" y1=\"260\" x2=\"355\" y2=\"260\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"45\" y=\"265\" text-anchor=\"end\" class=\"proportionality-graph-label\">\n        0\n      </text>\n    \n      <line x1=\"55\" y1=\"210\" x2=\"355\" y2=\"210\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"45\" y=\"215\" text-anchor=\"end\" class=\"proportionality-graph-label\">\n        10\n      </text>\n    \n      <line x1=\"55\" y1=\"160\" x2=\"355\" y2=\"160\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"45\" y=\"165\" text-anchor=\"end\" class=\"proportionality-graph-label\">\n        20\n      </text>\n    \n      <line x1=\"55\" y1=\"110\" x2=\"355\" y2=\"110\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"45\" y=\"115\" text-anchor=\"end\" class=\"proportionality-graph-label\">\n        30\n      </text>\n    \n      <line x1=\"55\" y1=\"60\" x2=\"355\" y2=\"60\" class=\"proportionality-graph-grid\"></line>\n\n      <text x=\"45\" y=\"65\" text-anchor=\"end\" class=\"proportionality-graph-label\">\n        40\n      </text>\n    \n\n      <line x1=\"55\" y1=\"260\" x2=\"370\" y2=\"260\" class=\"proportionality-graph-axis\"></line>\n\n      <line x1=\"55\" y1=\"260\" x2=\"55\" y2=\"45\" class=\"proportionality-graph-axis\"></line>\n\n      <polygon points=\"\n          370,260\n          360,255\n          360,265\n        \" class=\"proportionality-graph-arrow\"></polygon>\n\n      <polygon points=\"\n          55,45\n          50,55\n          60,55\n        \" class=\"proportionality-graph-arrow\"></polygon>\n\n      \n      <line x1=\"55\" y1=\"210\" x2=\"235\" y2=\"60\" class=\"proportionality-graph-line\"></line>\n    \n\n      <text x=\"60\" y=\"30\" class=\"proportionality-graph-title\">\n        Prix en euros\n      </text>\n\n      <text x=\"350\" y=\"308\" text-anchor=\"end\" class=\"proportionality-graph-title\">\n        Nombre d'entrées\n      </text>\n\n    </svg>",
+          "left": 54.140625,
+          "right": 320.84375,
+          "width": 266.703125,
+          "height": 198.46875
+        }
+      ],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "Oui, car la représentation graphique est une droite.",
+          "scroll": 417,
+          "client": 417,
+          "children": [],
+          "left": -22.765625,
+          "right": 397.765625,
+          "width": 420.53125,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Non, car la représentation graphique n'est pas une droite.",
+          "scroll": 467,
+          "client": 467,
+          "children": [],
+          "left": -47.78125,
+          "right": 422.78125,
+          "width": 470.5625,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Non, car la représentation graphique est une droite qui ne passe pas par l'origine du repère.",
+          "scroll": 727,
+          "client": 727,
+          "children": [],
+          "left": -178.046875,
+          "right": 553.046875,
+          "width": 731.09375,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Oui, car la représentation graphique est une droite passant par l'origine du repère.",
+          "scroll": 654,
+          "client": 654,
+          "children": [],
+          "left": -141.59375,
+          "right": 516.59375,
+          "width": 658.1875,
+          "height": 42
+        }
+      ],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Le graphique ci-dessous donne le prix à payer\n          dans un cinéma en fonction du nombre d'entrées.\n          S'agit-il d'une situation de proportionnalité ?",
+        "Oui, car la représentation graphique est une droite.",
+        "Non, car la représentation graphique n'est pas une droite.",
+        "Non, car la représentation graphique est une droite qui ne passe pas par l'origine du repère.",
+        "Oui, car la représentation graphique est une droite passant par l'origine du repère."
+      ]
+    },
+    {
+      "document": 408,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Le tableau suivant est un tableau de proportionnalité.\n              Calculer le coefficient de proportionnalité permettant\n              de passer de la première ligne à la seconde.\n            \n\n            \n              \n    \n      \n        \n          78912\n        \n\n        \n          65,174,483,7111,6",
+        "58,1",
+        "0,1",
+        "10,6",
+        "9,3"
+      ]
+    },
+    {
+      "document": 408,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [],
+      "unbracedComma": [],
+      "prose": [
+        "Le tableau suivant est un tableau de proportionnalité.\n              Calculer le nombre manquant.\n            \n\n            \n              \n    \n      \n        \n          34812\n        \n\n        \n          13,217,6?52,8",
+        "35,2",
+        "4,9",
+        "1,8",
+        "0,5"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "Non"
+        ],
+        "possible_answers": [
+          "Oui, car \\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{211,8}{11}.",
+          "Oui, car \\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{11}{211,8}.",
+          "Non, car \\dfrac{122,5}{7}\\neq\\dfrac{211,8}{11}.",
+          "Non, car \\dfrac{122,5}{7}\\neq\\dfrac{11}{211,8}."
+        ],
+        "time": 120,
+        "qcmAnswersOrder": [
+          "Non, car \\dfrac{122,5}{7}\\neq\\dfrac{211,8}{11}.",
+          "Non, car \\dfrac{122,5}{7}\\neq\\dfrac{11}{211,8}.",
+          "Oui, car \\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{211,8}{11}.",
+          "Oui, car \\dfrac{35}{2}=\\dfrac{105}{6}=\\dfrac{122,5}{7}=\\dfrac{11}{211,8}."
+        ]
+      },
+      {
+        "answers": [
+          48
+        ],
+        "possible_answers": [
+          48,
+          17.3,
+          0.5,
+          1.9
+        ],
+        "time": 120,
+        "qcmAnswersOrder": [
+          0.5,
+          1.9,
+          48,
+          17.3
+        ]
+      },
+      {
+        "answers": [
+          "Non, car la représentation graphique est une droite qui ne passe pas par l'origine du repère."
+        ],
+        "possible_answers": [
+          "Oui, car la représentation graphique est une droite passant par l'origine du repère.",
+          "Oui, car la représentation graphique est une droite.",
+          "Non, car la représentation graphique est une droite qui ne passe pas par l'origine du repère.",
+          "Non, car la représentation graphique n'est pas une droite."
+        ],
+        "time": 120,
+        "qcmAnswersOrder": [
+          "Oui, car la représentation graphique est une droite.",
+          "Non, car la représentation graphique n'est pas une droite.",
+          "Non, car la représentation graphique est une droite qui ne passe pas par l'origine du repère.",
+          "Oui, car la représentation graphique est une droite passant par l'origine du repère."
+        ]
+      },
+      {
+        "answers": [
+          9.3
+        ],
+        "possible_answers": [
+          9.3,
+          0.1,
+          58.1,
+          10.6
+        ],
+        "time": 120,
+        "qcmAnswersOrder": [
+          58.1,
+          0.1,
+          10.6,
+          9.3
+        ]
+      },
+      {
+        "answers": [
+          35.2
+        ],
+        "possible_answers": [
+          35.2,
+          4.9,
+          1.8,
+          0.5
+        ],
+        "time": 120,
+        "qcmAnswersOrder": [
+          35.2,
+          4.9,
+          1.8,
+          0.5
+        ]
+      }
+    ],
+    "history": []
+  }
+}

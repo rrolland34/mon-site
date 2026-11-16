@@ -1,0 +1,217 @@
+{
+  "job": {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 114.5625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "26\\ \\text{dm}",
+        "4\\ \\text{dm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle est la longueur d’un rectangle de périmètre\n          \n        \n\n        \n          et de largeur\n           ?"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 91.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "8\\ \\text{km}",
+        "6\\ \\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quel est le périmètre d’un rectangle de longueur\n          \n        \n\n        \n          et de largeur\n           ?"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 114.5625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "8\\ \\text{km}",
+        "4\\ \\text{hm}",
+        "7\\ \\text{dam}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quel est le périmètre d’un triangle dont les côtés mesurent\n        \n\n        \n          ,\n          \n          et\n           ?"
+      ]
+    },
+    {
+      "document": 587,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 853.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèéôéQuel est le périmètre d’un carré de côté 4 hm ?",
+          "scroll": 854,
+          "client": 854,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 580.53125,
+              "right": 598.875,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -266.9375,
+          "right": 586.953125,
+          "width": 853.890625,
+          "height": 43.21875
+        }
+      ],
+      "math": [
+        "\\text{Quel est le périmètre d’un carré de côté }4\\ \\text{hm}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 738,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 1155.546875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ôéééèQuelle est la longueur du côté d’un carré de périmètre 20 mm ?",
+          "scroll": 1156,
+          "client": 1156,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 733.765625,
+              "right": 752.109375,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -417.765625,
+          "right": 737.78125,
+          "width": 1155.546875,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Quelle est la longueur du côté d’un carré de périmètre }20\\ \\text{mm}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "9 dm"
+        ],
+        "possible_answers": [
+          "9 dm",
+          "60 dm",
+          "13 dm",
+          "22 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "28 km"
+        ],
+        "possible_answers": [
+          "28 km",
+          "48 km",
+          "14 km",
+          "96 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "84.7 hm"
+        ],
+        "possible_answers": [
+          "84,7 hm",
+          "19 hm",
+          "5,5 hm",
+          "154 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "16 hm"
+        ],
+        "possible_answers": [
+          "16 hm",
+          "8 hm",
+          "12 hm",
+          "4 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "5 mm"
+        ],
+        "possible_answers": [
+          "5 mm",
+          "80 mm",
+          "20 mm",
+          "10 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

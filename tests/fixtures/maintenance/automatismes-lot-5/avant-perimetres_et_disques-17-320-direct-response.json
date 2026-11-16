@@ -1,0 +1,272 @@
+{
+  "job": {
+    "id": "perimetres_et_disques",
+    "seed": 17,
+    "width": 320,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 610,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 899.53125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèôéQuel est le périmètre d’un losange de côté 5 hm ?",
+          "scroll": 900,
+          "client": 900,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 602.46875,
+              "right": 620.8125,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -289.765625,
+          "right": 609.765625,
+          "width": 899.53125,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Quel est le périmètre d’un losange de côté }5\\ \\text{hm}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 181.53125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\pi\\simeq\n          3{,}142",
+        "100\\ \\text{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "En prenant\n          ,\n        \n\n        \n          quel est le périmètre d’un disque\n          de diamètre\n           ?"
+      ]
+    },
+    {
+      "document": 716,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 1110.96875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèééôéQuel est le périmètre d’un triangle équilatéral de côté 3 km ?",
+          "scroll": 1111,
+          "client": 1111,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 707.53125,
+              "right": 725.875,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -395.484375,
+          "right": 715.484375,
+          "width": 1110.96875,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Quel est le périmètre d’un triangle équilatéral de côté }3\\ \\text{km}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 822,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 1323.078125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèQuelle est la valeur exacte du périmètre d’un disque de rayon 16,6 dm ?",
+          "scroll": 1323,
+          "client": 1323,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 809.140625,
+              "right": 827.484375,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -501.53125,
+          "right": 821.546875,
+          "width": 1323.078125,
+          "height": 43.40625
+        }
+      ],
+      "math": [
+        "\\text{Quelle est la valeur exacte du périmètre d’un disque de rayon }16{,}6\\ \\text{dm}\\ ?"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 159.828125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\pi\\simeq\n          3{,}14",
+        "5\\ \\text{m}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "En prenant\n          ,\n        \n\n        \n          quel est le périmètre d’un disque\n          de rayon\n           ?"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 170.03125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n          16{,}8\\ \\text{dam}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle est la valeur exacte du périmètre d’un disque\n        \n\n        \n          de diamètre  ?"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "20 hm"
+        ],
+        "possible_answers": [
+          "20 hm",
+          "15 hm",
+          "25 hm",
+          "10 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "314.2 mm"
+        ],
+        "possible_answers": [
+          "314,2 mm",
+          "628,4 mm",
+          "157,1 mm",
+          "31 420 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "9 km"
+        ],
+        "possible_answers": [
+          "9 km",
+          "12 km",
+          "6 km",
+          "3 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "33.2*pi dm"
+        ],
+        "possible_answers": [
+          "\\(33{,}2\\pi\\ \\text{dm}\\)",
+          "\\(16{,}6\\pi\\ \\text{dm}\\)",
+          "\\(275{,}56\\pi\\ \\text{dm}\\)",
+          "\\(551{,}12\\pi\\ \\text{dm}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "31.4 m"
+        ],
+        "possible_answers": [
+          "31,4 m",
+          "15,7 m",
+          "78,5 m",
+          "157 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "16.8*pi dam"
+        ],
+        "possible_answers": [
+          "\\(16{,}8\\pi\\ \\text{dam}\\)",
+          "\\(33{,}6\\pi\\ \\text{dam}\\)",
+          "\\(8{,}4\\pi\\ \\text{dam}\\)",
+          "\\(282{,}24\\pi\\ \\text{dam}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

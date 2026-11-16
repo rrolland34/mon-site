@@ -1,0 +1,1020 @@
+[
+  {
+    "id": "ecritures_decimales",
+    "seed": 17,
+    "title": "Fractions décimales et écritures décimales",
+    "questions": [
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{10}.\\)",
+        "answers": [
+          "0,1"
+        ],
+        "display_answer": "0,1",
+        "possible_answers": [
+          "0,1",
+          "0,01",
+          "0,001",
+          "1,10"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{100}.\\)",
+        "answers": [
+          "0,01"
+        ],
+        "display_answer": "0,01",
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1,100"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{1~000}.\\)",
+        "answers": [
+          "0,001"
+        ],
+        "display_answer": "0,001",
+        "possible_answers": [
+          "0,001",
+          "0,01",
+          "0,1",
+          "1,1000"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à } 0,1.\\)",
+        "answers": [
+          "1/10"
+        ],
+        "display_answer": "\\(\\dfrac{1}{10}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{10}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à } 0,01.\\)",
+        "answers": [
+          "1/100"
+        ],
+        "display_answer": "\\(\\dfrac{1}{100}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{100}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner la fraction décimale égale à } 0,001.\\)",
+        "answers": [
+          "1/1000"
+        ],
+        "display_answer": "\\(\\dfrac{1}{1~000}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{1~000}\\)",
+          "\\(\\dfrac{1}{100}\\)",
+          "\\(\\dfrac{1}{10}\\)",
+          "\\(\\dfrac{1~000}{1}\\)"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimalFraction"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fractions_decimales",
+    "seed": 17,
+    "title": "Fractions décimales",
+    "questions": [
+      {
+        "question": "\\(\\text{Combien valent } \\dfrac{10}{10} \\ ?\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "10",
+          "\\(\\dfrac{1}{10}\\)",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Combien valent } \\dfrac{100}{100} \\ ?\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "100",
+          "\\(\\dfrac{1}{100}\\)",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Combien valent } \\dfrac{1~000}{1~000} \\ ?\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "1000",
+          "\\(\\dfrac{1}{1~000}\\)",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\dfrac{\\ldots}{10}\\)",
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\dfrac{10}{\\ldots}\\)",
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\dfrac{\\ldots}{100}\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\dfrac{100}{\\ldots}\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\dfrac{\\ldots}{1~000}\\)",
+        "answers": [
+          "1000"
+        ],
+        "possible_answers": [
+          "1000",
+          "100",
+          "10",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\dfrac{1~000}{\\ldots}\\)",
+        "answers": [
+          "1000"
+        ],
+        "possible_answers": [
+          "1000",
+          "100",
+          "10",
+          "1"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\dfrac{\\ldots}{10} = \\dfrac{10}{100}\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "10",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\dfrac{1}{\\ldots} = \\dfrac{10}{100}\\)",
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "100",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\dfrac{1}{10} = \\dfrac{\\ldots}{100}\\)",
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "100",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } \\dfrac{1}{10} = \\dfrac{10}{\\ldots}\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1",
+          "1000"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer } 10 \\times \\dfrac{1}{10}\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "10",
+          "0,1",
+          "100"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = 10 \\times \\ldots\\)",
+        "answers": [
+          "1/10"
+        ],
+        "display_answer": "\\(\\dfrac{1}{10}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{10}\\)",
+          "10",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = \\ldots \\times \\dfrac{1}{10}\\)",
+        "answers": [
+          "10"
+        ],
+        "possible_answers": [
+          "10",
+          "1",
+          "0,1",
+          "100"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer } 100 \\times \\dfrac{1}{100}\\)",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "100",
+          "0,01",
+          "10"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter : } 1 = 100 \\times \\ldots\\)",
+        "answers": [
+          "1/100"
+        ],
+        "display_answer": "\\(\\dfrac{1}{100}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{100}\\)",
+          "100",
+          "1",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\\(\\text{Calculer } 10 \\times \\dfrac{1}{100}\\)",
+        "answers": [
+          "0,1"
+        ],
+        "possible_answers": [
+          "0,1",
+          "1",
+          "10",
+          "0,01"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fractions_usuelles_decimales",
+    "seed": 17,
+    "title": "Fractions usuelles et écritures décimales",
+    "questions": [
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{4}.\\)",
+        "answers": [
+          "0,25"
+        ],
+        "possible_answers": [
+          "0,25",
+          "0,5",
+          "0,75",
+          "0,2"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{2}.\\)",
+        "answers": [
+          "0,5"
+        ],
+        "possible_answers": [
+          "0,5",
+          "0,25",
+          "0,75",
+          "1,5"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{3}{4}.\\)",
+        "answers": [
+          "0,75"
+        ],
+        "possible_answers": [
+          "0,75",
+          "0,5",
+          "0,25",
+          "1,5"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{3}{2}.\\)",
+        "answers": [
+          "1,5"
+        ],
+        "possible_answers": [
+          "1,5",
+          "2",
+          "2,5",
+          "0,75"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{4}{2}.\\)",
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "2",
+          "1,5",
+          "2,5",
+          "4"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{5}{2}.\\)",
+        "answers": [
+          "2,5"
+        ],
+        "possible_answers": [
+          "2,5",
+          "2",
+          "1,5",
+          "5"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner une fraction égale à } 0,25.\\)",
+        "answers": [
+          "1/4"
+        ],
+        "display_answer": "\\(\\dfrac{1}{4}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner une fraction égale à } 0,5.\\)",
+        "answers": [
+          "1/2"
+        ],
+        "display_answer": "\\(\\dfrac{1}{2}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner une fraction égale à } 0,75.\\)",
+        "answers": [
+          "3/4"
+        ],
+        "display_answer": "\\(\\dfrac{3}{4}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner une fraction égale à } 1,5.\\)",
+        "answers": [
+          "3/2"
+        ],
+        "display_answer": "\\(\\dfrac{3}{2}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner une fraction égale à } 2.\\)",
+        "answers": [
+          "4/2"
+        ],
+        "display_answer": "\\(\\dfrac{4}{2}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{1}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        }
+      },
+      {
+        "question": "\\(\\text{Donner une fraction égale à } 2,5.\\)",
+        "answers": [
+          "5/2"
+        ],
+        "display_answer": "\\(\\dfrac{5}{2}\\)",
+        "possible_answers": [
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        }
+      }
+    ]
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "seed": 17,
+    "title": "Arrondir un nombre décimal",
+    "questions": [
+      {
+        "question": "Arrondir le nombre 82,23 à l’unité près.",
+        "answers": [
+          "82"
+        ],
+        "display_answer": "82",
+        "possible_answers": [
+          "82",
+          "81",
+          "83",
+          "82.23"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 30,417 3 au dixième près.",
+        "answers": [
+          "30.4"
+        ],
+        "display_answer": "30,4",
+        "possible_answers": [
+          "30.4",
+          "29.4",
+          "31.4",
+          "30.4173"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 33,956 33 au centième près.",
+        "answers": [
+          "33.96"
+        ],
+        "display_answer": "33,96",
+        "possible_answers": [
+          "33.96",
+          "32.96",
+          "34.96",
+          "33.95633"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 22,248 95 à l’unité près.",
+        "answers": [
+          "22"
+        ],
+        "display_answer": "22",
+        "possible_answers": [
+          "22",
+          "21",
+          "23",
+          "22.24895"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 56,28 au dixième près.",
+        "answers": [
+          "56.3"
+        ],
+        "display_answer": "56,3",
+        "possible_answers": [
+          "56.3",
+          "55.3",
+          "57.3",
+          "56.28"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ]
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "seed": 2026,
+    "title": "Arrondir un nombre décimal",
+    "questions": [
+      {
+        "question": "Arrondir le nombre 5,3 à l’unité près.",
+        "answers": [
+          "5"
+        ],
+        "display_answer": "5",
+        "possible_answers": [
+          "5",
+          "4",
+          "6",
+          "5.3"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 66,63 au dixième près.",
+        "answers": [
+          "66.6"
+        ],
+        "display_answer": "66,6",
+        "possible_answers": [
+          "66.6",
+          "65.6",
+          "67.6",
+          "66.63"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 48,918 39 au centième près.",
+        "answers": [
+          "48.92"
+        ],
+        "display_answer": "48,92",
+        "possible_answers": [
+          "48.92",
+          "47.92",
+          "49.92",
+          "48.91839"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 76,827 6 à l’unité près.",
+        "answers": [
+          "77"
+        ],
+        "display_answer": "77",
+        "possible_answers": [
+          "77",
+          "76",
+          "78",
+          "76.8276"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 97,27 au dixième près.",
+        "answers": [
+          "97.3"
+        ],
+        "display_answer": "97,3",
+        "possible_answers": [
+          "97.3",
+          "96.3",
+          "98.3",
+          "97.27"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ]
+  },
+  {
+    "id": "arrondis_nombres_decimaux",
+    "seed": 98765,
+    "title": "Arrondir un nombre décimal",
+    "questions": [
+      {
+        "question": "Arrondir le nombre 63,957 3 à l’unité près.",
+        "answers": [
+          "64"
+        ],
+        "display_answer": "64",
+        "possible_answers": [
+          "64",
+          "63",
+          "65",
+          "63.9573"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 59,33 au dixième près.",
+        "answers": [
+          "59.3"
+        ],
+        "display_answer": "59,3",
+        "possible_answers": [
+          "59.3",
+          "58.3",
+          "60.3",
+          "59.33"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 29,273 932 au centième près.",
+        "answers": [
+          "29.27"
+        ],
+        "display_answer": "29,27",
+        "possible_answers": [
+          "29.27",
+          "28.27",
+          "30.27",
+          "29.273932"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 49,243 32 à l’unité près.",
+        "answers": [
+          "49"
+        ],
+        "display_answer": "49",
+        "possible_answers": [
+          "49",
+          "48",
+          "50",
+          "49.24332"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      },
+      {
+        "question": "Arrondir le nombre 48,744 03 au dixième près.",
+        "answers": [
+          "48.7"
+        ],
+        "display_answer": "48,7",
+        "possible_answers": [
+          "48.7",
+          "47.7",
+          "49.7",
+          "48.74403"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        }
+      }
+    ]
+  },
+  {
+    "id": "operations_fractions_simples",
+    "seed": 17,
+    "title": "Opérations simples sur les fractions",
+    "questions": [
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{1}{2}+\\dfrac{1}{2}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "display_answer": "1",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{1}{4}+\\dfrac{1}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "display_answer": "\\(\\dfrac{1}{2}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } 1-\\dfrac{1}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1"
+        ],
+        "display_answer": "\\(\\dfrac{3}{4}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } 1-\\dfrac{1}{2}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "display_answer": "\\(\\dfrac{1}{2}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } 1-\\dfrac{3}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "display_answer": "\\(\\dfrac{1}{4}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{1}{2}+\\dfrac{1}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "1"
+        ],
+        "display_answer": "\\(\\dfrac{3}{4}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{1}{2}-\\dfrac{1}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "display_answer": "\\(\\dfrac{1}{4}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{3}{4}+\\dfrac{1}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1"
+        ],
+        "possible_answers": [
+          "1",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "display_answer": "1",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{3}{4}-\\dfrac{1}{4}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "1",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "display_answer": "\\(\\dfrac{1}{2}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>\\(\\text{Compléter l’égalité : } \\dfrac{3}{4}-\\dfrac{1}{2}=\\ldots\\)</p>\n\n        \n      </div>\n    ",
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "1"
+        ],
+        "display_answer": "\\(\\dfrac{1}{4}\\)",
+        "answerRule": {
+          "type": "simplifiedValue"
+        }
+      }
+    ]
+  }
+]

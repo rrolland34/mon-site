@@ -1,0 +1,199 @@
+{
+  "job": {
+    "id": "multiplication_puissances_dix",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 385.984375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 141{,}4\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 406.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 217\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 494.484375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 19{,}900~4\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 330.515625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 41\\times 10"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "mathWidth": 483.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Calculer : } 903{,}367\\times 1~000"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "1414"
+        ],
+        "possible_answers": [
+          "1414",
+          "141.4",
+          "14140",
+          "14.14"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "217000"
+        ],
+        "possible_answers": [
+          "217000",
+          "217",
+          "21700",
+          "2170000"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "19900.4"
+        ],
+        "possible_answers": [
+          "19900.4",
+          "19.9004",
+          "1990.04",
+          "199004"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "410"
+        ],
+        "possible_answers": [
+          "410",
+          "41",
+          "4100",
+          "4.1"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "903367"
+        ],
+        "possible_answers": [
+          "903367",
+          "903.367",
+          "90336.7",
+          "9033670"
+        ],
+        "answerRule": {
+          "type": "decimal"
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "1414",
+        "correctQCMAnswer": "1414",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "217000",
+        "correctQCMAnswer": "217000",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "19900.4",
+        "correctQCMAnswer": "19900.4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "410",
+        "correctQCMAnswer": "410",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "903367",
+        "correctQCMAnswer": "903367",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

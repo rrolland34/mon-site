@@ -1,0 +1,8 @@
+# Copies historiques : conserver les lignes vides finales des anciens tests.
+# Les autres contrôles Git restent applicables, notamment space-before-tab.
+tests/fixtures/maintenance/**/temoins-tests/*.mjs whitespace=-blank-at-eof
+
+# Trois sources témoins conservent leurs espaces de fin de ligne d'origine.
+tests/fixtures/maintenance/automatismes-lot-17/metropole.before.js whitespace=-blank-at-eol
+tests/fixtures/maintenance/automatismes-lot-18/metropole.before-wording.js whitespace=-blank-at-eol
+tests/fixtures/maintenance/automatismes-lot-24/main.before.js whitespace=-blank-at-eol

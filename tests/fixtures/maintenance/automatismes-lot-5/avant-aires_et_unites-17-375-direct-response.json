@@ -1,0 +1,1070 @@
+{
+  "job": {
+    "id": "aires_et_unites",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 519,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 662.3125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1m2=…dm2",
+          "scroll": 662,
+          "client": 662,
+          "children": [
+            {
+              "tag": "msup",
+              "visibility": "visible",
+              "position": "static",
+              "left": 442.5625,
+              "right": 522.15625,
+              "width": 79.59375,
+              "height": 41.25
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 502.796875,
+              "right": 520.359375,
+              "width": 17.5625,
+              "height": 21
+            }
+          ],
+          "left": -143.65625,
+          "right": 518.65625,
+          "width": 662.3125,
+          "height": 49.65625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = \\ldots\\,\\mathrm{dm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"150,250 200,200 200,100 250,50 350,50 400,100 400,200 300,200 250,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"100,300 150,250 150,150 200,100 300,100 300,50 400,50 400,250 300,250 250,300\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 533,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 690.140625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1cm2=1100…",
+          "scroll": 690,
+          "client": 690,
+          "children": [],
+          "left": -157.5625,
+          "right": 532.578125,
+          "width": 690.140625,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\dfrac{1}{100}\\,\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 525,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 675.90625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1dm2=100…",
+          "scroll": 676,
+          "client": 676,
+          "children": [],
+          "left": -150.453125,
+          "right": 525.453125,
+          "width": 675.90625,
+          "height": 49.65625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 100\\,\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 611,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 846.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter la phrase suivante : 1cm2 est l'aire",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -235.625,
+          "right": 610.625,
+          "width": 846.25,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éôéd'un carré dont le côté mesure …",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -124.203125,
+          "right": 499.1875,
+          "width": 623.390625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter la phrase suivante : } 1\\,\\mathrm{cm}^2 \\text{ est l'aire}",
+        "\\text{d'un carré dont le côté mesure } \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"100,250 100,100 150,50 250,50 300,100 400,100 400,200 300,200 250,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 613,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 851.109375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter la phrase suivante : 1dm2 est l'aire",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -238.046875,
+          "right": 613.0625,
+          "width": 851.109375,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éôéd'un carré dont le côté mesure …",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -124.1875,
+          "right": 499.203125,
+          "width": 623.390625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter la phrase suivante : } 1\\,\\mathrm{dm}^2 \\text{ est l'aire}",
+        "\\text{d'un carré dont le côté mesure } \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"100,250 150,200 150,100 250,100 300,50 400,50 400,150 350,200 250,200 200,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"50,200 100,150 100,50 200,50 200,0 300,0 300,100 350,100 350,200 250,200 200,250 100,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 532,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 687.96875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1dm2=0,01…",
+          "scroll": 688,
+          "client": 688,
+          "children": [],
+          "left": -156.484375,
+          "right": 531.484375,
+          "width": 687.96875,
+          "height": 49.65625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 0{,}01\\,\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 528,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 681.59375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1cm2=…dm2",
+          "scroll": 682,
+          "client": 682,
+          "children": [
+            {
+              "tag": "msup",
+              "visibility": "visible",
+              "position": "static",
+              "left": 452.078125,
+              "right": 531.671875,
+              "width": 79.59375,
+              "height": 41.25
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 512.3125,
+              "right": 529.875,
+              "width": 17.5625,
+              "height": 21
+            }
+          ],
+          "left": -153.296875,
+          "right": 528.296875,
+          "width": 681.59375,
+          "height": 49.65625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\ldots\\,\\mathrm{dm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"100,250 100,150 150,100 250,100 250,50 400,50 400,200 300,200 300,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"100,200 150,150 150,100 250,100 300,50 350,50 350,150 450,150 450,200 300,200 250,250 150,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 601,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 826.96875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éCompléter la phrase suivante : 1m2 est l'aire",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -225.984375,
+          "right": 600.984375,
+          "width": 826.96875,
+          "height": 58
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éôéd'un carré dont le côté mesure …",
+          "scroll": 0,
+          "client": 0,
+          "children": [],
+          "left": -124.203125,
+          "right": 499.1875,
+          "width": 623.390625,
+          "height": 58
+        }
+      ],
+      "math": [
+        "\\text{Compléter la phrase suivante : } 1\\,\\mathrm{m}^2 \\text{ est l'aire}",
+        "\\text{d'un carré dont le côté mesure } \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 529,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 683.109375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1cm2=0,01…",
+          "scroll": 683,
+          "client": 683,
+          "children": [],
+          "left": -154.046875,
+          "right": 529.0625,
+          "width": 683.109375,
+          "height": 47.125
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = 0{,}01\\,\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"200,250 250,200 250,100 350,100 400,50 450,50 450,200 350,200 300,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"100,200 100,100 200,100 200,50 250,50 250,150 300,150 300,200\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 528,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 681.59375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1dm2=…cm2",
+          "scroll": 682,
+          "client": 682,
+          "children": [
+            {
+              "tag": "msup",
+              "visibility": "visible",
+              "position": "static",
+              "left": 457.015625,
+              "right": 531.671875,
+              "width": 74.65625,
+              "height": 36.890625
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 512.3125,
+              "right": 529.875,
+              "width": 17.5625,
+              "height": 21
+            }
+          ],
+          "left": -153.296875,
+          "right": 528.296875,
+          "width": 681.59375,
+          "height": 49.65625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 513,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 651.765625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1m2=100…",
+          "scroll": 652,
+          "client": 652,
+          "children": [],
+          "left": -138.375,
+          "right": 513.390625,
+          "width": 651.765625,
+          "height": 47.125
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = 100\\,\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [
+        {
+          "markup": "<svg viewBox=\"0 0 450 335\" width=\"100%\" style=\"max-width:450px;\" xmlns=\"http://www.w3.org/2000/svg\">\n\n      \n      <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"100\" y1=\"0\" x2=\"100\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"200\" y1=\"0\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"250\" y1=\"0\" x2=\"250\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"300\" y1=\"0\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"350\" y1=\"0\" x2=\"350\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"400\" y1=\"0\" x2=\"400\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"450\" y1=\"0\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"0\" x2=\"450\" y2=\"0\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"50\" x2=\"450\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"100\" x2=\"450\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"150\" x2=\"450\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"200\" x2=\"450\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"250\" x2=\"450\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n      <line x1=\"0\" y1=\"300\" x2=\"450\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.35\"></line>\n    \n\n      <polygon points=\"50,200 100,150 100,50 200,50 250,100 300,100 300,200 200,200 150,250 100,250\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></polygon>\n\n      <rect x=\"0\" y=\"250\" width=\"50\" height=\"50\" fill=\"gold\" fill-opacity=\"0.5\" stroke=\"currentColor\" stroke-width=\"3\"></rect>\n\n      <text x=\"0\" y=\"328\" font-size=\"20\" fill=\"currentColor\">\n        1 cm\n      </text>\n    </svg>",
+          "left": 47.125,
+          "right": 327.875,
+          "width": 280.75,
+          "height": 209
+        }
+      ],
+      "mathWidth": 70.796875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\mathrm{cm}^2"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Calculer l'aire de la figure en ."
+      ]
+    },
+    {
+      "document": 519,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 662.3125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1dm2=…m2",
+          "scroll": 662,
+          "client": 662,
+          "children": [
+            {
+              "tag": "msup",
+              "visibility": "visible",
+              "position": "static",
+              "left": 466.65625,
+              "right": 522.15625,
+              "width": 55.5,
+              "height": 36.890625
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 502.796875,
+              "right": 520.359375,
+              "width": 17.5625,
+              "height": 21
+            }
+          ],
+          "left": -143.65625,
+          "right": 518.65625,
+          "width": 662.3125,
+          "height": 49.65625
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{m}^2"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 535,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 695,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éééCompléter l'égalité : 1dm2=1100…",
+          "scroll": 695,
+          "client": 695,
+          "children": [],
+          "left": -160,
+          "right": 535,
+          "width": 695,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\dfrac{1}{100}\\,\\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 12,
+    "count": 23,
+    "questions": [
+      {
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "cm²"
+        ],
+        "possible_answers": [
+          "cm²",
+          "m²",
+          "dm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1 cm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "cm"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1 dm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "dm"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "14 cm²"
+        ],
+        "possible_answers": [
+          "14 cm²",
+          "15 cm²",
+          "13 cm²",
+          "14,5 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "15 cm²"
+        ],
+        "possible_answers": [
+          "15 cm²",
+          "16 cm²",
+          "14 cm²",
+          "15,5 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "1 m"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "m"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "11,5 cm²"
+        ],
+        "possible_answers": [
+          "11,5 cm²",
+          "12,5 cm²",
+          "10,5 cm²",
+          "12 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "8 cm²"
+        ],
+        "possible_answers": [
+          "8 cm²",
+          "9 cm²",
+          "7 cm²",
+          "8,5 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

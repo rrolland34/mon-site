@@ -64,7 +64,10 @@ function setup({ mode = "slideshow", answerMode = "direct", enabled = true, scra
   globalThis.window = {};
   const draws = [], classic = [], scores = [];
   let highlighted = false;
-  const fixture = structuredClone(scratch ? scratchSeries : series);
+  const fixture = scratch ? {
+    ...structuredClone({...scratchSeries, questions: []}),
+    questions: scratchSeries.questions.map(({qcmRenderAnswer,...question}) => ({...structuredClone(question),qcmRenderAnswer}))
+  } : structuredClone(series);
   const scratchScenes = [];
   if (!enabled) delete fixture.correctionMode;
   const context = vm.createContext({

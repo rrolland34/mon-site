@@ -56,6 +56,7 @@ for(const presentationMode of ['response','slideshow'])for(const answerMode of [
     assert.equal(feedback.textContent.split(expected).length-1,1);
     assert.ok(feedback.textContent.startsWith(expected));
     assert.equal(feedback.style.color,isCorrect?'green':CORRECTION_RED_CSS);
+    assert.equal((feedback.innerHTML.match(/Réponse :/g)||[]).length,1);
    }else{
     assert.equal(feedback.innerHTML.replace(/<style>[\s\S]*?<\/style>/g,'').replace(/<[^>]*>/g,''),q.sourceData.correct);
    }

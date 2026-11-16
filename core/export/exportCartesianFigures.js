@@ -8,7 +8,9 @@ import {
 
 export function renderExportCartesianFigures({
   archiveWindow,
-  userAnswers
+  userAnswers,
+  includeSolutions = true,
+  labelPropositions = false
 }) {
   userAnswers.forEach(
     (
@@ -79,6 +81,7 @@ export function renderExportCartesianFigures({
        */
 
       if (
+        includeSolutions &&
         correction.answerMode === "point" &&
         correction.correctAnswer
       ) {
@@ -126,7 +129,12 @@ export function renderExportCartesianFigures({
           svg,
 
           points:
-            correction.qcmPoints,
+            (labelPropositions || svg.hasAttribute("data-orthonormal-plane")) ? correction.qcmPoints.map(point => {
+              // Identification spatiale, indépendante de la place de la bonne
+              // réponse dans les données (toujours la première proposition).
+              const ordered = [...correction.qcmPoints].sort((a,b) => a.x-b.x || b.y-a.y);
+              return { ...point, name: `${point.name} (${ordered.indexOf(point)+1})` };
+            }) : correction.qcmPoints,
 
           width:
             correction.figureConfig.width,
@@ -141,7 +149,7 @@ export function renderExportCartesianFigures({
             correction.figureConfig.padding
         });
 
-        highlightCartesianQCMPoints({
+        if (includeSolutions) highlightCartesianQCMPoints({
           svg,
 
           selectedPoint:

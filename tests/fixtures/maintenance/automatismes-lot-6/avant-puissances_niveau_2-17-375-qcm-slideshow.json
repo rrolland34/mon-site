@@ -1,0 +1,1143 @@
+{
+  "job": {
+    "id": "puissances_niveau_2",
+    "seed": 17,
+    "width": 375,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{1}{\n                6^{3}\n              }\n            ",
+        "6^{-4}",
+        "(-6)^{-3}",
+        "6^{-3}",
+        "6^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 446,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 516.25,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "(−3)×(−3)×(−3)×(−3)",
+          "scroll": 516,
+          "client": 516,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 451.578125,
+              "right": 482.609375,
+              "width": 31.03125,
+              "height": 23
+            },
+            {
+              "tag": "mrow",
+              "visibility": "visible",
+              "position": "static",
+              "left": 489.765625,
+              "right": 631.21875,
+              "width": 141.453125,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 489.765625,
+              "right": 522.6875,
+              "width": 32.921875,
+              "height": 39
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 532.234375,
+              "right": 564.6875,
+              "width": 32.453125,
+              "height": 3
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 574.234375,
+              "right": 598.296875,
+              "width": 24.0625,
+              "height": 29
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 598.296875,
+              "right": 631.21875,
+              "width": 32.921875,
+              "height": 39
+            }
+          ],
+          "left": -70.625,
+          "right": 445.625,
+          "width": 516.25,
+          "height": 43.40625
+        }
+      ],
+      "math": [
+        "a^n",
+        "\n              \\left(-3\\right) \\times \\left(-3\\right) \\times \\left(-3\\right) \\times \\left(-3\\right)\n            ",
+        "(-3)^{6}",
+        "(-3)^{3}",
+        "(-3)^{4}",
+        "(-3)^{5}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              8^{10}\n              \\times\n              8^{2}\n            ",
+        "8^{20}",
+        "8^{13}",
+        "8^{12}",
+        "8^{8}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              9^{2}\n              \\times\n              2^{2}\n            ",
+        "18^{3}",
+        "11^{2}",
+        "18^{4}",
+        "18^{2}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                \\left(-4\\right)^{6}\n              }{\n                \\left(-2\\right)^{6}\n              }\n            ",
+        "2^{7}",
+        "2^{6}",
+        "(-4)^{6}",
+        "2^{12}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(\n                \\left(-7\\right)^{3}\n              \\right)^{\n                6\n              }\n            ",
+        "(-7)^{9}",
+        "(-7)^{19}",
+        "(-7)^{18}",
+        "(-7)^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 462,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "(−7)×(−7)×(−7)×(−7)×(−7)×(−7)",
+          "scroll": 420,
+          "client": 374,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -16.34375,
+              "right": 389.53125,
+              "width": 405.875,
+              "height": 25
+            },
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": -16.34375,
+              "right": 389.53125,
+              "width": 405.875,
+              "height": 25
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": -16.34375,
+              "right": 389.53125,
+              "width": 405.875,
+              "height": 24
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 344.28125,
+              "right": 352.84375,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 344.28125,
+              "right": 352.84375,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 352.84375,
+              "right": 369.96875,
+              "width": 17.125,
+              "height": 14.625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 352.84375,
+              "right": 369.96875,
+              "width": 17.125,
+              "height": 14.625
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 369.96875,
+              "right": 380.96875,
+              "width": 11,
+              "height": 15.34375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 369.96875,
+              "right": 380.96875,
+              "width": 11,
+              "height": 15.34375
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 380.96875,
+              "right": 389.53125,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 380.96875,
+              "right": 389.53125,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -16.34375,
+              "right": 438.921875,
+              "width": 455.265625,
+              "height": 22
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -16.34375,
+              "right": 438.921875,
+              "width": 455.265625,
+              "height": 21
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 337.875,
+              "right": 350.0625,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 350.0625,
+              "right": 359.203125,
+              "width": 9.140625,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 362.859375,
+              "right": 378.59375,
+              "width": 15.734375,
+              "height": 12
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 382.25,
+              "right": 391.390625,
+              "width": 9.140625,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 396.265625,
+              "right": 412.71875,
+              "width": 16.453125,
+              "height": 1
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 417.59375,
+              "right": 429.78125,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 429.78125,
+              "right": 438.921875,
+              "width": 9.140625,
+              "height": 21
+            }
+          ],
+          "left": -32.34375,
+          "right": 345.828125,
+          "width": 378.171875,
+          "height": 44.765625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "(−7)×6",
+          "scroll": 99,
+          "client": 99,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -16.34375,
+              "right": 75.5625,
+              "width": 91.90625,
+              "height": 22
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -16.34375,
+              "right": 75.5625,
+              "width": 91.90625,
+              "height": 21
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 63.375,
+              "right": 75.5625,
+              "width": 12.1875,
+              "height": 15
+            }
+          ],
+          "left": -32.34375,
+          "right": 70.5625,
+          "width": 102.90625,
+          "height": 44.765625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "(−7)×(−7)×(−7)×(−7)×(−7)",
+          "scroll": 348,
+          "client": 313,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 102.5625,
+              "right": 436.3125,
+              "width": 333.75,
+              "height": 25
+            },
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": 102.5625,
+              "right": 436.3125,
+              "width": 333.75,
+              "height": 25
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": 102.5625,
+              "right": 436.3125,
+              "width": 333.75,
+              "height": 24
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 399.625,
+              "right": 416.75,
+              "width": 17.125,
+              "height": 14.625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 399.625,
+              "right": 416.75,
+              "width": 17.125,
+              "height": 14.625
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 416.75,
+              "right": 427.75,
+              "width": 11,
+              "height": 15.34375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 416.75,
+              "right": 427.75,
+              "width": 11,
+              "height": 15.34375
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 427.75,
+              "right": 436.3125,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 427.75,
+              "right": 436.3125,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 102.5625,
+              "right": 478.109375,
+              "width": 375.546875,
+              "height": 22
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 102.5625,
+              "right": 478.109375,
+              "width": 375.546875,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 402.046875,
+              "right": 417.78125,
+              "width": 15.734375,
+              "height": 12
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 421.4375,
+              "right": 430.578125,
+              "width": 9.140625,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 435.453125,
+              "right": 451.90625,
+              "width": 16.453125,
+              "height": 1
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 456.78125,
+              "right": 468.96875,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 468.96875,
+              "right": 478.109375,
+              "width": 9.140625,
+              "height": 21
+            }
+          ],
+          "left": 86.5625,
+          "right": 403.21875,
+          "width": 316.65625,
+          "height": 44.765625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "(−7)×(−7)×(−7)×(−7)×(−7)×(−7)×(−7)",
+          "scroll": 492,
+          "client": 436,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -16.34375,
+              "right": 461.65625,
+              "width": 478,
+              "height": 25
+            },
+            {
+              "tag": "MJX-CONTAINER",
+              "visibility": "visible",
+              "position": "relative",
+              "left": -16.34375,
+              "right": 461.65625,
+              "width": 478,
+              "height": 25
+            },
+            {
+              "tag": "MJX-MATH",
+              "visibility": "visible",
+              "position": "static",
+              "left": -16.34375,
+              "right": 461.65625,
+              "width": 478,
+              "height": 24
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 394.40625,
+              "right": 411.53125,
+              "width": 17.125,
+              "height": 10.796875
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 394.40625,
+              "right": 411.53125,
+              "width": 17.125,
+              "height": 10.796875
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 416.40625,
+              "right": 424.96875,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 416.40625,
+              "right": 424.96875,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 424.96875,
+              "right": 442.09375,
+              "width": 17.125,
+              "height": 14.625
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 424.96875,
+              "right": 442.09375,
+              "width": 17.125,
+              "height": 14.625
+            },
+            {
+              "tag": "MJX-MN",
+              "visibility": "visible",
+              "position": "static",
+              "left": 442.09375,
+              "right": 453.09375,
+              "width": 11,
+              "height": 15.34375
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 442.09375,
+              "right": 453.09375,
+              "width": 11,
+              "height": 15.34375
+            },
+            {
+              "tag": "MJX-MO",
+              "visibility": "visible",
+              "position": "static",
+              "left": 453.09375,
+              "right": 461.65625,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-C",
+              "visibility": "visible",
+              "position": "static",
+              "left": 453.09375,
+              "right": 461.65625,
+              "width": 8.5625,
+              "height": 22
+            },
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -16.34375,
+              "right": 518.640625,
+              "width": 534.984375,
+              "height": 22
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -16.34375,
+              "right": 518.640625,
+              "width": 534.984375,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 396.265625,
+              "right": 412.71875,
+              "width": 16.453125,
+              "height": 1
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 417.59375,
+              "right": 429.78125,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 429.78125,
+              "right": 438.921875,
+              "width": 9.140625,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 442.578125,
+              "right": 458.3125,
+              "width": 15.734375,
+              "height": 12
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 461.96875,
+              "right": 471.109375,
+              "width": 9.140625,
+              "height": 21
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 475.984375,
+              "right": 492.4375,
+              "width": 16.453125,
+              "height": 1
+            },
+            {
+              "tag": "mn",
+              "visibility": "visible",
+              "position": "static",
+              "left": 497.3125,
+              "right": 509.5,
+              "width": 12.1875,
+              "height": 15
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 509.5,
+              "right": 518.640625,
+              "width": 9.140625,
+              "height": 21
+            }
+          ],
+          "left": -32.34375,
+          "right": 407.34375,
+          "width": 439.6875,
+          "height": 44.765625
+        }
+      ],
+      "math": [
+        "\n              \\left(-7\\right)^{6}\n            ",
+        "(-7)\\times (-7)\\times (-7)\\times (-7)\\times (-7)\\times (-7)",
+        "(-7)\\times 6",
+        "(-7)\\times (-7)\\times (-7)\\times (-7)\\times (-7)",
+        "(-7)\\times (-7)\\times (-7)\\times (-7)\\times (-7)\\times (-7)\\times (-7)"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer le produit égal à :"
+      ]
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 280.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                7^{6}\n              }{\n                7^{6}\n              }\n            ",
+        "7^{12}",
+        "7^{-1}",
+        "7^{0}",
+        "7^{1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 8,
+    "questions": [
+      {
+        "answers": [
+          "6^-3"
+        ],
+        "possible_answers": [
+          "6^-3",
+          "6^-4",
+          "6^3",
+          "(-6)^-3"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.004629629629629629
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "6^-4",
+          "(-6)^-3",
+          "6^-3",
+          "6^3"
+        ]
+      },
+      {
+        "answers": [
+          "(-3)^4"
+        ],
+        "possible_answers": [
+          "(-3)^6",
+          "(-3)^5",
+          "(-3)^3",
+          "(-3)^4"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 81
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-3)^6",
+          "(-3)^3",
+          "(-3)^4",
+          "(-3)^5"
+        ]
+      },
+      {
+        "answers": [
+          "8^12"
+        ],
+        "possible_answers": [
+          "8^13",
+          "8^20",
+          "8^8",
+          "8^12"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 68719476736
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "8^20",
+          "8^13",
+          "8^12",
+          "8^8"
+        ]
+      },
+      {
+        "answers": [
+          "18^2"
+        ],
+        "possible_answers": [
+          "18^2",
+          "18^4",
+          "18^3",
+          "11^2"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 324
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "18^3",
+          "11^2",
+          "18^4",
+          "18^2"
+        ]
+      },
+      {
+        "answers": [
+          "2^6"
+        ],
+        "possible_answers": [
+          "2^12",
+          "(-4)^6",
+          "2^6",
+          "2^7"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 64
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "2^7",
+          "2^6",
+          "(-4)^6",
+          "2^12"
+        ]
+      },
+      {
+        "answers": [
+          "(-7)^18"
+        ],
+        "possible_answers": [
+          "(-7)^9",
+          "(-7)^18",
+          "(-7)^3",
+          "(-7)^19"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1628413597910449
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-7)^9",
+          "(-7)^19",
+          "(-7)^18",
+          "(-7)^3"
+        ]
+      },
+      {
+        "answers": [
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)"
+        ],
+        "possible_answers": [
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*6",
+          "(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)"
+        ],
+        "answerRule": {
+          "type": "repeatedProduct",
+          "base": -7,
+          "exponent": 6
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*6",
+          "(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)*(-7)"
+        ]
+      },
+      {
+        "answers": [
+          "7^0",
+          "1"
+        ],
+        "possible_answers": [
+          "7^-1",
+          "7^12",
+          "7^0",
+          "7^1"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1,
+          "allowOneForZeroExponent": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "7^12",
+          "7^-1",
+          "7^0",
+          "7^1"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "6^-3",
+        "correctQCMAnswer": "6^-3",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "6^-4",
+          "(-6)^-3",
+          "6^-3",
+          "6^3"
+        ]
+      },
+      {
+        "correctAnswer": "(-3)^4",
+        "correctQCMAnswer": "(-3)^4",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-3)^6",
+          "(-3)^3",
+          "(-3)^4",
+          "(-3)^5"
+        ]
+      },
+      {
+        "correctAnswer": "8^12",
+        "correctQCMAnswer": "8^12",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "8^20",
+          "8^13",
+          "8^12",
+          "8^8"
+        ]
+      },
+      {
+        "correctAnswer": "18^2",
+        "correctQCMAnswer": "18^2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "18^3",
+          "11^2",
+          "18^4",
+          "18^2"
+        ]
+      },
+      {
+        "correctAnswer": "2^6",
+        "correctQCMAnswer": "2^6",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "2^7",
+          "2^6",
+          "(-4)^6",
+          "2^12"
+        ]
+      },
+      {
+        "correctAnswer": "(-7)^18",
+        "correctQCMAnswer": "(-7)^18",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-7)^9",
+          "(-7)^19",
+          "(-7)^18",
+          "(-7)^3"
+        ]
+      },
+      {
+        "correctAnswer": "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+        "correctQCMAnswer": "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*6",
+          "(-7)*(-7)*(-7)*(-7)*(-7)",
+          "(-7)*(-7)*(-7)*(-7)*(-7)*(-7)*(-7)"
+        ]
+      },
+      {
+        "correctAnswer": "7^0",
+        "correctQCMAnswer": "7^0",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "7^12",
+          "7^-1",
+          "7^0",
+          "7^1"
+        ]
+      }
+    ]
+  }
+}

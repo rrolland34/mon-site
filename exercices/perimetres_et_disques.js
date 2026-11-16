@@ -1,3 +1,5 @@
+import { presentMeasureQuestion } from './measurePresentation.js';
+
 // exercices/perimetres_et_disques.js
 
 import {
@@ -1014,5 +1016,5 @@ export default {
     createEquilateralTriangleQuestion(),
 
     createRhombusQuestion()
-  ]
+  ].map(presentMeasureQuestion)
 };

@@ -3,6 +3,7 @@
 import {
   createStandardQuestions
 } from "../core/questionFactory.js";
+import { decimalFractionPrompt, presentDecimalFractionQuestion } from "./decimalFractionPresentation.js";
 
 const questionData = [
   {
@@ -103,8 +104,7 @@ const questions =
 
     questionBuilder:
       ({ expression }) =>
-        `\\(\\text{Compléter l’égalité : } ` +
-        `${expression}=\\ldots\\)`,
+        decimalFractionPrompt("Compléter l’égalité :", String.raw`${expression}=\ldots`),
 
     displayAnswerBuilder:
       answer =>
@@ -121,5 +121,5 @@ export default {
   title:
     "Opérations simples sur les fractions",
 
-  questions
+  questions: questions.map(presentDecimalFractionQuestion)
 };

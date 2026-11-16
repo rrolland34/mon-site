@@ -1,0 +1,508 @@
+{
+  "job": {
+    "id": "decomposition_decimale",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "  25+9100+11 000",
+          "left": 43,
+          "right": 225.0625,
+          "width": 182.0625,
+          "height": 68.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "25+910+1100",
+          "left": 43,
+          "right": 203.078125,
+          "width": 160.078125,
+          "height": 64.46875
+        }
+      ],
+      "math": [
+        "25+\\dfrac{910}{1 000}",
+        "25+\\dfrac{9}{100}+\\dfrac{1}{1 000}",
+        "25+\\dfrac{9}{10}+\\dfrac{1}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner une écriture sous forme de la somme d’un nombre entier et de fractions décimales ayant un numérateur inférieur à 10 de : 25,91.",
+        "35"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 135.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "BUTTON",
+          "text": "  58+310+21 000",
+          "left": 43,
+          "right": 215.671875,
+          "width": 172.671875,
+          "height": 68.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "  58+3100+210 000",
+          "left": 43,
+          "right": 234.453125,
+          "width": 191.453125,
+          "height": 68.265625
+        }
+      ],
+      "math": [
+        "\\dfrac{58 302}{1 000}",
+        "58+\\dfrac{3}{10}+\\dfrac{2}{1 000}",
+        "\\dfrac{58 302}{1 000}",
+        "58+\\dfrac{302}{1 000}",
+        "58+\\dfrac{3}{100}+\\dfrac{2}{10 000}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner une écriture sous forme de la somme d’un nombre entier\n        \n\n        \n          et de fractions décimales ayant un numérateur inférieur à 10\n          de : ."
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 296.234375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "60+710+3100",
+          "left": 11.890625,
+          "right": 308.125,
+          "width": 296.234375,
+          "height": 58
+        }
+      ],
+      "math": [
+        "60+\\dfrac{7}{10}+\\dfrac{3}{100}",
+        "\\dfrac{6 073}{10}",
+        "\\dfrac{6 073}{1 000}",
+        "\\dfrac{730}{100}",
+        "\\dfrac{6 073}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner la fraction décimale égale à"
+      ]
+    },
+    {
+      "document": 639,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 957.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l’écriture décimale la plus simple de 76 0031 000",
+          "left": -318.9375,
+          "right": 638.953125,
+          "width": 957.890625,
+          "height": 91.453125
+        }
+      ],
+      "math": [
+        "\\text{Donner l’écriture décimale la plus simple de }\\dfrac{76~003}{1~000}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "760,03",
+        "76 003",
+        "7,6003",
+        "76,003"
+      ]
+    },
+    {
+      "document": 553,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 785.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééàDonner la fraction décimale égale à 82,004",
+          "left": -232.8125,
+          "right": 552.828125,
+          "width": 785.640625,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Donner la fraction décimale égale à }82,004",
+        "\\dfrac{82 004}{1 000}",
+        "\\dfrac{82 004}{10 000}",
+        "\\dfrac{82 004}{100}",
+        "\\dfrac{1 000}{82 004}"
+      ],
+      "unbracedComma": [
+        "\\text{Donner la fraction décimale égale à }82,004"
+      ],
+      "prose": []
+    },
+    {
+      "document": 649,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 978.40625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l’écriture décimale la plus simple de 44+310",
+          "left": -329.203125,
+          "right": 649.203125,
+          "width": 978.40625,
+          "height": 90.984375
+        }
+      ],
+      "math": [
+        "\\text{Donner l’écriture décimale la plus simple de }44+\\dfrac{3}{10}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "443",
+        "47",
+        "44,3",
+        "44,03"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 113.59375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\dfrac{4 267}{100}",
+        "42+\\dfrac{67}{100}",
+        "\\dfrac{4 267}{100}",
+        "42+\\dfrac{67}{10}",
+        "\\dfrac{67}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner une écriture sous forme de la somme d’un nombre entier\n        \n\n        \n          et d’une fraction décimale inférieure à 1 de :\n          ."
+      ]
+    },
+    {
+      "document": 579,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 657.8125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééàDonner la fraction décimale égale à ",
+          "left": -259.234375,
+          "right": 398.578125,
+          "width": 657.8125,
+          "height": 43.484375
+        },
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "66+37100",
+          "left": 398.578125,
+          "right": 579.25,
+          "width": 180.671875,
+          "height": 91.453125
+        }
+      ],
+      "math": [
+        "\\text{Donner la fraction décimale égale à }",
+        "66+\\dfrac{37}{100}",
+        "\\dfrac{6 637}{10}",
+        "66+\\dfrac{37}{100}",
+        "\\dfrac{6 637}{1 000}",
+        "\\dfrac{6 637}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 718,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 1115.671875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l’écriture décimale la plus simple de 76+710+7100",
+          "left": -397.828125,
+          "right": 717.84375,
+          "width": 1115.671875,
+          "height": 91.453125
+        }
+      ],
+      "math": [
+        "\\text{Donner l’écriture décimale la plus simple de }76+\\dfrac{7}{10}+\\dfrac{7}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "76,77",
+        "767,7",
+        "76 770",
+        "7,677"
+      ]
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "mathWidth": 0,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "65+\\dfrac{52}{10}",
+        "65+\\dfrac{52}{1 000}",
+        "65+\\dfrac{52}{100}",
+        "\\dfrac{52}{100}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner une écriture sous forme de la somme d’un nombre entier et d’une fraction décimale inférieure à 1 de : 65,52."
+      ]
+    }
+  ],
+  "final": {
+    "score": 5,
+    "count": 10,
+    "questions": [
+      {
+        "answers": [
+          "25+9/10+1/100"
+        ],
+        "possible_answers": [
+          "25+9/10+1/100",
+          "25+9/100+1/1000",
+          "25+910/1000",
+          "35"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "25+910/1000",
+          "25+9/100+1/1000",
+          "35",
+          "25+9/10+1/100"
+        ]
+      },
+      {
+        "answers": [
+          "58+3/10+2/1000"
+        ],
+        "possible_answers": [
+          "58+3/10+2/1000",
+          "58302/1000",
+          "58+302/1000",
+          "58+3/100+2/10000"
+        ],
+        "answerRule": {
+          "type": "expandedDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "58+3/10+2/1000",
+          "58302/1000",
+          "58+302/1000",
+          "58+3/100+2/10000"
+        ]
+      },
+      {
+        "answers": [
+          "6073/100"
+        ],
+        "possible_answers": [
+          "6073/100",
+          "6073/10",
+          "6073/1000",
+          "730/100"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "6073/10",
+          "6073/1000",
+          "730/100",
+          "6073/100"
+        ]
+      },
+      {
+        "answers": [
+          "76,003"
+        ],
+        "possible_answers": [
+          "76,003",
+          "76 003",
+          "760,03",
+          "7,6003"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "760,03",
+          "76 003",
+          "7,6003",
+          "76,003"
+        ]
+      },
+      {
+        "answers": [
+          "82004/1000"
+        ],
+        "possible_answers": [
+          "82004/1000",
+          "82004/100",
+          "82004/10000",
+          "1000/82004"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "82004/1000",
+          "82004/10000",
+          "82004/100",
+          "1000/82004"
+        ]
+      },
+      {
+        "answers": [
+          "44,3"
+        ],
+        "possible_answers": [
+          "44,3",
+          "47",
+          "44,03",
+          "443"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "443",
+          "47",
+          "44,3",
+          "44,03"
+        ]
+      },
+      {
+        "answers": [
+          "42+67/100"
+        ],
+        "possible_answers": [
+          "42+67/100",
+          "4267/100",
+          "67/100",
+          "42+67/10"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "42+67/100",
+          "4267/100",
+          "42+67/10",
+          "67/100"
+        ]
+      },
+      {
+        "answers": [
+          "6637/100"
+        ],
+        "possible_answers": [
+          "6637/100",
+          "66+37/100",
+          "6637/1000",
+          "6637/10"
+        ],
+        "answerRule": {
+          "type": "decimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "6637/10",
+          "66+37/100",
+          "6637/1000",
+          "6637/100"
+        ]
+      },
+      {
+        "answers": [
+          "76,77"
+        ],
+        "possible_answers": [
+          "76,77",
+          "76 770",
+          "767,7",
+          "7,677"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "76,77",
+          "767,7",
+          "76 770",
+          "7,677"
+        ]
+      },
+      {
+        "answers": [
+          "65+52/100"
+        ],
+        "possible_answers": [
+          "65+52/100",
+          "52/100",
+          "65+52/10",
+          "65+52/1000"
+        ],
+        "answerRule": {
+          "type": "integerPlusDecimalFraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "65+52/10",
+          "65+52/1000",
+          "65+52/100",
+          "52/100"
+        ]
+      }
+    ],
+    "history": []
+  }
+}

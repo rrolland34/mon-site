@@ -1,0 +1,22 @@
+[
+  {
+    "path": "exercices/generators/powerOfTenMultiplication.js",
+    "sha256": "3befd7e4aba53af95709a54da42585e8cfe21f0d9390cf443aa20dcaf09228bb"
+  },
+  {
+    "path": "exercices/generators/powerOfTenDivision.js",
+    "sha256": "e11de014bb67b40403253bec62059cea29521807f2165ad3d53fd99fad6686cb"
+  },
+  {
+    "path": "exercices/perimetres_et_longueurs.js",
+    "sha256": "6ebbcbdf0128ced346c44979167eff99426c8ddf56693e2bc011dfc8721f4026"
+  },
+  {
+    "path": "exercices/speedTimePresentation.js",
+    "sha256": "75fefc832fcf7c73fb9c9d06f432c4b9750a7961822bb9179e1a884cd98aa369"
+  },
+  {
+    "path": "exercices/reperage_temps_durees.js",
+    "sha256": "3d3ce3844a3248caf61fcd551278cd54c9f7aa920fb2333d539a19699d231606"
+  }
+]

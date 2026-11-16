@@ -1,0 +1,315 @@
+{
+  "job": {
+    "id": "perimetres_et_disques",
+    "seed": 98765,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 616,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 911.5625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèôéQuel est le périmètre d’un losange de côté 7 mm ?",
+          "scroll": 912,
+          "client": 912,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 608.625,
+              "right": 626.96875,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -295.78125,
+          "right": 615.78125,
+          "width": 911.5625,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Quel est le périmètre d’un losange de côté }7\\ \\text{mm}\\ ?",
+        "14\\,\\text{mm}",
+        "21\\,\\text{mm}",
+        "49\\,\\text{mm}",
+        "28\\,\\text{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 159.828125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\pi\\simeq\n          3{,}14",
+        "50\\ \\text{cm}",
+        "157\\,\\text{cm}",
+        "314\\,\\text{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "En prenant\n          ,\n        \n\n        \n          quel est le périmètre d’un disque\n          de rayon\n           ?",
+        "15 700 cm",
+        "7 850 cm"
+      ]
+    },
+    {
+      "document": 727,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 1133.890625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèééôéQuel est le périmètre d’un triangle équilatéral de côté 8 dam ?",
+          "scroll": 1134,
+          "client": 1134,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 718.59375,
+              "right": 736.9375,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -406.9375,
+          "right": 726.953125,
+          "width": 1133.890625,
+          "height": 43.484375
+        }
+      ],
+      "math": [
+        "\\text{Quel est le périmètre d’un triangle équilatéral de côté }8\\ \\text{dam}\\ ?",
+        "157\\,\\text{cm}",
+        "314\\,\\text{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "15 700 cm",
+        "7 850 cm"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 181.53125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\pi\\simeq\n          3{,}142",
+        "10\\ \\text{m}",
+        "157\\,\\text{cm}",
+        "314\\,\\text{cm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "En prenant\n          ,\n        \n\n        \n          quel est le périmètre d’un disque\n          de diamètre\n           ?",
+        "15 700 cm",
+        "7 850 cm"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 147.109375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n          11{,}7\\ \\text{km}",
+        "5{,}85\\pi\\ \\text{km}",
+        "23{,}4\\pi\\ \\text{km}",
+        "11{,}7\\pi\\ \\text{km}",
+        "136{,}89\\pi\\ \\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle est la valeur exacte du périmètre d’un disque\n        \n\n        \n          de diamètre  ?"
+      ]
+    },
+    {
+      "document": 822,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 1323.078125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éèQuelle est la valeur exacte du périmètre d’un disque de rayon 20,6 hm ?",
+          "scroll": 1323,
+          "client": 1323,
+          "children": [
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 809.015625,
+              "right": 827.359375,
+              "width": 18.34375,
+              "height": 29
+            }
+          ],
+          "left": -501.53125,
+          "right": 821.546875,
+          "width": 1323.078125,
+          "height": 43.40625
+        }
+      ],
+      "math": [
+        "\\text{Quelle est la valeur exacte du périmètre d’un disque de rayon }20{,}6\\ \\text{hm}\\ ?",
+        "5{,}85\\pi\\ \\text{km}",
+        "23{,}4\\pi\\ \\text{km}",
+        "11{,}7\\pi\\ \\text{km}",
+        "136{,}89\\pi\\ \\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "28 mm"
+        ],
+        "possible_answers": [
+          "28 mm",
+          "21 mm",
+          "49 mm",
+          "14 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "14 mm",
+          "21 mm",
+          "49 mm",
+          "28 mm"
+        ]
+      },
+      {
+        "answers": [
+          "314 cm"
+        ],
+        "possible_answers": [
+          "314 cm",
+          "157 cm",
+          "7 850 cm",
+          "15 700 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "157 cm",
+          "15 700 cm",
+          "7 850 cm",
+          "314 cm"
+        ]
+      },
+      {
+        "answers": [
+          "24 dam"
+        ],
+        "possible_answers": [
+          "24 dam",
+          "32 dam",
+          "64 dam",
+          "16 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "31.42 m"
+        ],
+        "possible_answers": [
+          "31,42 m",
+          "62,84 m",
+          "15,71 m",
+          "314,2 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "11.7*pi km"
+        ],
+        "possible_answers": [
+          "\\(11{,}7\\pi\\ \\text{km}\\)",
+          "\\(23{,}4\\pi\\ \\text{km}\\)",
+          "\\(5{,}85\\pi\\ \\text{km}\\)",
+          "\\(136{,}89\\pi\\ \\text{km}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(5{,}85\\pi\\ \\text{km}\\)",
+          "\\(23{,}4\\pi\\ \\text{km}\\)",
+          "\\(11{,}7\\pi\\ \\text{km}\\)",
+          "\\(136{,}89\\pi\\ \\text{km}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "41.2*pi hm"
+        ],
+        "possible_answers": [
+          "\\(41{,}2\\pi\\ \\text{hm}\\)",
+          "\\(20{,}6\\pi\\ \\text{hm}\\)",
+          "\\(424{,}36\\pi\\ \\text{hm}\\)",
+          "\\(848{,}72\\pi\\ \\text{hm}\\)"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

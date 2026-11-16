@@ -1,0 +1,2087 @@
+[
+  {
+    "id": "conversions_longueurs",
+    "path": "conversions_longueurs",
+    "seed": 17,
+    "title": "Conversions de longueurs",
+    "questions": [
+      {
+        "question": "\\(243\\ \\text{m}=\\ldots\\ \\text{cm}\\)",
+        "answers": [
+          "24300"
+        ],
+        "display_answer": "\\(24~300\\)",
+        "possible_answers": [
+          "24 300",
+          "2 430",
+          "243 000",
+          "2,43"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(297\\ \\text{dam}=2~970\\ \\ldots\\)",
+        "answers": [
+          "m"
+        ],
+        "display_answer": "\\(\\text{m}\\)",
+        "possible_answers": [
+          "m",
+          "dam",
+          "dm",
+          "hm"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      },
+      {
+        "question": "\\(671{,}22\\ \\text{m}=\\ldots\\ \\text{hm}\\)",
+        "answers": [
+          "6.7122"
+        ],
+        "display_answer": "\\(6{,}712~2\\)",
+        "possible_answers": [
+          "6,712 2",
+          "0,671 22",
+          "67,122",
+          "67 122"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(510{,}38\\ \\text{m}=51{,}038\\ \\ldots\\)",
+        "answers": [
+          "dam"
+        ],
+        "display_answer": "\\(\\text{dam}\\)",
+        "possible_answers": [
+          "dam",
+          "hm",
+          "m",
+          "km"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      },
+      {
+        "question": "\\(888{,}44\\ \\text{hm}=\\ldots\\ \\text{m}\\)",
+        "answers": [
+          "88844"
+        ],
+        "display_answer": "\\(88~844\\)",
+        "possible_answers": [
+          "88 844",
+          "8 884,4",
+          "888 440",
+          "8,884 4"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(460{,}72\\ \\text{hm}=4~607{,}2\\ \\ldots\\)",
+        "answers": [
+          "dam"
+        ],
+        "display_answer": "\\(\\text{dam}\\)",
+        "possible_answers": [
+          "dam",
+          "hm",
+          "m",
+          "km"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      }
+    ],
+    "randomState": 471568607
+  },
+  {
+    "id": "conversions_longueurs",
+    "path": "conversions_longueurs",
+    "seed": 2026,
+    "title": "Conversions de longueurs",
+    "questions": [
+      {
+        "question": "\\(22\\ \\text{km}=\\ldots\\ \\text{hm}\\)",
+        "answers": [
+          "220"
+        ],
+        "display_answer": "\\(220\\)",
+        "possible_answers": [
+          "220",
+          "22",
+          "2 200",
+          "2,2"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(663\\ \\text{dam}=66~300\\ \\ldots\\)",
+        "answers": [
+          "dm"
+        ],
+        "display_answer": "\\(\\text{dm}\\)",
+        "possible_answers": [
+          "dm",
+          "m",
+          "cm",
+          "dam"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      },
+      {
+        "question": "\\(625{,}76\\ \\text{m}=\\ldots\\ \\text{km}\\)",
+        "answers": [
+          "0.62576"
+        ],
+        "display_answer": "\\(0{,}625~76\\)",
+        "possible_answers": [
+          "0,625 76",
+          "0,062 576",
+          "6,257 6",
+          "625 760"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(45{,}17\\ \\text{cm}=4{,}517\\ \\ldots\\)",
+        "answers": [
+          "dm"
+        ],
+        "display_answer": "\\(\\text{dm}\\)",
+        "possible_answers": [
+          "dm",
+          "m",
+          "cm",
+          "dam"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      },
+      {
+        "question": "\\(597{,}82\\ \\text{m}=\\ldots\\ \\text{dm}\\)",
+        "answers": [
+          "5978.2"
+        ],
+        "display_answer": "\\(5~978{,}2\\)",
+        "possible_answers": [
+          "5 978,2",
+          "597,82",
+          "59 782",
+          "59,782"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(316{,}26\\ \\text{dam}=316~260\\ \\ldots\\)",
+        "answers": [
+          "cm"
+        ],
+        "display_answer": "\\(\\text{cm}\\)",
+        "possible_answers": [
+          "cm",
+          "dm",
+          "mm",
+          "m"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      }
+    ],
+    "randomState": 3577405168
+  },
+  {
+    "id": "conversions_longueurs",
+    "path": "conversions_longueurs",
+    "seed": 98765,
+    "title": "Conversions de longueurs",
+    "questions": [
+      {
+        "question": "\\(513\\ \\text{dam}=\\ldots\\ \\text{m}\\)",
+        "answers": [
+          "5130"
+        ],
+        "display_answer": "\\(5~130\\)",
+        "possible_answers": [
+          "5 130",
+          "513",
+          "51 300",
+          "51,3"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(589\\ \\text{m}=5~890\\ \\ldots\\)",
+        "answers": [
+          "dm"
+        ],
+        "display_answer": "\\(\\text{dm}\\)",
+        "possible_answers": [
+          "dm",
+          "m",
+          "cm",
+          "dam"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      },
+      {
+        "question": "\\(716{,}49\\ \\text{mm}=\\ldots\\ \\text{dm}\\)",
+        "answers": [
+          "7.1649"
+        ],
+        "display_answer": "\\(7{,}164~9\\)",
+        "possible_answers": [
+          "7,164 9",
+          "0,716 49",
+          "71,649",
+          "71 649"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(11{,}21\\ \\text{dm}=1{,}121\\ \\ldots\\)",
+        "answers": [
+          "m"
+        ],
+        "display_answer": "\\(\\text{m}\\)",
+        "possible_answers": [
+          "m",
+          "dam",
+          "dm",
+          "hm"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      },
+      {
+        "question": "\\(691{,}41\\ \\text{m}=\\ldots\\ \\text{cm}\\)",
+        "answers": [
+          "69141"
+        ],
+        "display_answer": "\\(69~141\\)",
+        "possible_answers": [
+          "69 141",
+          "6 914,1",
+          "691 410",
+          "6,914 1"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(54{,}54\\ \\text{dam}=545{,}4\\ \\ldots\\)",
+        "answers": [
+          "m"
+        ],
+        "display_answer": "\\(\\text{m}\\)",
+        "possible_answers": [
+          "m",
+          "dam",
+          "dm",
+          "hm"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        }
+      }
+    ],
+    "randomState": 1425117371
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "path": "perimetres_et_longueurs",
+    "seed": 17,
+    "title": "Périmètres et longueurs",
+    "questions": [
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quel est le périmètre d’un rectangle de longueur\n          \\(7\\ \\text{dm}\\)\n        </div>\n\n        <div>\n          et de largeur\n          \\(6\\ \\text{dm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "26 dm"
+        ],
+        "display_answer": "\\(26\\ \\text{dm}\\)",
+        "possible_answers": [
+          "26 dm",
+          "42 dm",
+          "13 dm",
+          "84 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un carré de côté }4\\ \\text{dam}\\ ?\\)",
+        "answers": [
+          "16 dam"
+        ],
+        "display_answer": "\\(16\\ \\text{dam}\\)",
+        "possible_answers": [
+          "16 dam",
+          "8 dam",
+          "12 dam",
+          "4 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la longueur du côté d’un carré de périmètre }24\\ \\text{hm}\\ ?\\)",
+        "answers": [
+          "6 hm"
+        ],
+        "display_answer": "\\(6\\ \\text{hm}\\)",
+        "possible_answers": [
+          "6 hm",
+          "96 hm",
+          "24 hm",
+          "12 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quelle est la longueur d’un rectangle de périmètre\n          \\(28\\ \\text{m}\\)\n        </div>\n\n        <div>\n          et de largeur\n          \\(4\\ \\text{m}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "10 m"
+        ],
+        "display_answer": "\\(10\\ \\text{m}\\)",
+        "possible_answers": [
+          "10 m",
+          "64 m",
+          "14 m",
+          "24 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quel est le périmètre d’un triangle dont les côtés mesurent\n        </div>\n\n        <div>\n          \\(8\\ \\text{hm}\\),\n          \\(8\\ \\text{dam}\\)\n          et\n          \\(8\\ \\text{m}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "88.8 dam"
+        ],
+        "display_answer": "\\(88{,}8\\ \\text{dam}\\)",
+        "possible_answers": [
+          "88,8 dam",
+          "24 dam",
+          "9,6 dam",
+          "168 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ],
+    "randomState": 2944289419
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "path": "perimetres_et_longueurs",
+    "seed": 2026,
+    "title": "Périmètres et longueurs",
+    "questions": [
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quel est le périmètre d’un rectangle de longueur\n          \\(7\\ \\text{mm}\\)\n        </div>\n\n        <div>\n          et de largeur\n          \\(3\\ \\text{mm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "20 mm"
+        ],
+        "display_answer": "\\(20\\ \\text{mm}\\)",
+        "possible_answers": [
+          "20 mm",
+          "21 mm",
+          "10 mm",
+          "42 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un carré de côté }4\\ \\text{m}\\ ?\\)",
+        "answers": [
+          "16 m"
+        ],
+        "display_answer": "\\(16\\ \\text{m}\\)",
+        "possible_answers": [
+          "16 m",
+          "8 m",
+          "12 m",
+          "4 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la longueur du côté d’un carré de périmètre }36\\ \\text{cm}\\ ?\\)",
+        "answers": [
+          "9 cm"
+        ],
+        "display_answer": "\\(9\\ \\text{cm}\\)",
+        "possible_answers": [
+          "9 cm",
+          "144 cm",
+          "36 cm",
+          "18 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quelle est la longueur d’un rectangle de périmètre\n          \\(26\\ \\text{m}\\)\n        </div>\n\n        <div>\n          et de largeur\n          \\(5\\ \\text{m}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "8 m"
+        ],
+        "display_answer": "\\(8\\ \\text{m}\\)",
+        "possible_answers": [
+          "8 m",
+          "62 m",
+          "13 m",
+          "21 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quel est le périmètre d’un triangle dont les côtés mesurent\n        </div>\n\n        <div>\n          \\(3\\ \\text{dm}\\),\n          \\(5\\ \\text{cm}\\)\n          et\n          \\(10\\ \\text{mm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "36 cm"
+        ],
+        "display_answer": "\\(36\\ \\text{cm}\\)",
+        "possible_answers": [
+          "36 cm",
+          "18 cm",
+          "6,3 cm",
+          "135 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ],
+    "randomState": 3985550668
+  },
+  {
+    "id": "perimetres_et_longueurs",
+    "path": "perimetres_et_longueurs",
+    "seed": 98765,
+    "title": "Périmètres et longueurs",
+    "questions": [
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quel est le périmètre d’un rectangle de longueur\n          \\(9\\ \\text{cm}\\)\n        </div>\n\n        <div>\n          et de largeur\n          \\(5\\ \\text{cm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "28 cm"
+        ],
+        "display_answer": "\\(28\\ \\text{cm}\\)",
+        "possible_answers": [
+          "28 cm",
+          "45 cm",
+          "14 cm",
+          "90 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un carré de côté }9\\ \\text{dam}\\ ?\\)",
+        "answers": [
+          "36 dam"
+        ],
+        "display_answer": "\\(36\\ \\text{dam}\\)",
+        "possible_answers": [
+          "36 dam",
+          "81 dam",
+          "18 dam",
+          "27 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la longueur du côté d’un carré de périmètre }24\\ \\text{hm}\\ ?\\)",
+        "answers": [
+          "6 hm"
+        ],
+        "display_answer": "\\(6\\ \\text{hm}\\)",
+        "possible_answers": [
+          "6 hm",
+          "96 hm",
+          "24 hm",
+          "12 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quelle est la longueur d’un rectangle de périmètre\n          \\(30\\ \\text{km}\\)\n        </div>\n\n        <div>\n          et de largeur\n          \\(5\\ \\text{km}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "10 km"
+        ],
+        "display_answer": "\\(10\\ \\text{km}\\)",
+        "possible_answers": [
+          "10 km",
+          "70 km",
+          "15 km",
+          "25 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quel est le périmètre d’un triangle dont les côtés mesurent\n        </div>\n\n        <div>\n          \\(10\\ \\text{km}\\),\n          \\(8\\ \\text{hm}\\)\n          et\n          \\(8\\ \\text{dam}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "108.8 hm"
+        ],
+        "display_answer": "\\(108{,}8\\ \\text{hm}\\)",
+        "possible_answers": [
+          "108,8 hm",
+          "26 hm",
+          "9,8 hm",
+          "188 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ],
+    "randomState": 3124342183
+  },
+  {
+    "id": "perimetres_et_disques",
+    "path": "perimetres_et_disques",
+    "seed": 17,
+    "title": "Périmètres et disques",
+    "questions": [
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          En prenant\n          \\(\\pi\\simeq\n          3{,}14\\),\n        </div>\n\n        <div>\n          quel est le périmètre d’un disque\n          de diamètre\n          \\(10\\ \\text{m}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "31.4 m"
+        ],
+        "display_answer": "\\(31{,}4\\ \\text{m}\\)",
+        "possible_answers": [
+          "31,4 m",
+          "62,8 m",
+          "15,7 m",
+          "314 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          En prenant\n          \\(\\pi\\simeq\n          3{,}142\\),\n        </div>\n\n        <div>\n          quel est le périmètre d’un disque\n          de rayon\n          \\(5\\ \\text{km}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "31.42 km"
+        ],
+        "display_answer": "\\(31{,}42\\ \\text{km}\\)",
+        "possible_answers": [
+          "31,42 km",
+          "15,71 km",
+          "78,55 km",
+          "157,1 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quelle est la valeur exacte du périmètre d’un disque\n        </div>\n\n        <div>\n          de diamètre \\(\n          12{,}7\\ \\text{cm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "12.7*pi cm"
+        ],
+        "display_answer": "\\(12{,}7\\pi\\ \\text{cm}\\)",
+        "possible_answers": [
+          "\\(12{,}7\\pi\\ \\text{cm}\\)",
+          "\\(25{,}4\\pi\\ \\text{cm}\\)",
+          "\\(6{,}35\\pi\\ \\text{cm}\\)",
+          "\\(161{,}29\\pi\\ \\text{cm}\\)"
+        ],
+        "inputTools": [
+          "pi"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la valeur exacte du périmètre d’un disque de rayon }8{,}6\\ \\text{mm}\\ ?\\)",
+        "answers": [
+          "17.2*pi mm"
+        ],
+        "display_answer": "\\(17{,}2\\pi\\ \\text{mm}\\)",
+        "possible_answers": [
+          "\\(17{,}2\\pi\\ \\text{mm}\\)",
+          "\\(8{,}6\\pi\\ \\text{mm}\\)",
+          "\\(73{,}96\\pi\\ \\text{mm}\\)",
+          "\\(147{,}92\\pi\\ \\text{mm}\\)"
+        ],
+        "inputTools": [
+          "pi"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un triangle équilatéral de côté }3\\ \\text{dam}\\ ?\\)",
+        "answers": [
+          "9 dam"
+        ],
+        "display_answer": "\\(9\\ \\text{dam}\\)",
+        "possible_answers": [
+          "9 dam",
+          "12 dam",
+          "6 dam",
+          "3 dam"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un losange de côté }10\\ \\text{dm}\\ ?\\)",
+        "answers": [
+          "40 dm"
+        ],
+        "display_answer": "\\(40\\ \\text{dm}\\)",
+        "possible_answers": [
+          "40 dm",
+          "30 dm",
+          "100 dm",
+          "20 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ],
+    "randomState": 3815231434
+  },
+  {
+    "id": "perimetres_et_disques",
+    "path": "perimetres_et_disques",
+    "seed": 2026,
+    "title": "Périmètres et disques",
+    "questions": [
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          En prenant\n          \\(\\pi\\simeq\n          3{,}14\\),\n        </div>\n\n        <div>\n          quel est le périmètre d’un disque\n          de diamètre\n          \\(1~000\\ \\text{m}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "3140 m"
+        ],
+        "display_answer": "\\(3~140\\ \\text{m}\\)",
+        "possible_answers": [
+          "3 140 m",
+          "6 280 m",
+          "1 570 m",
+          "3 140 000 m"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          En prenant\n          \\(\\pi\\simeq\n          3{,}142\\),\n        </div>\n\n        <div>\n          quel est le périmètre d’un disque\n          de rayon\n          \\(5\\ \\text{dm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "31.42 dm"
+        ],
+        "display_answer": "\\(31{,}42\\ \\text{dm}\\)",
+        "possible_answers": [
+          "31,42 dm",
+          "15,71 dm",
+          "78,55 dm",
+          "157,1 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quelle est la valeur exacte du périmètre d’un disque\n        </div>\n\n        <div>\n          de diamètre \\(\n          20{,}5\\ \\text{hm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "20.5*pi hm"
+        ],
+        "display_answer": "\\(20{,}5\\pi\\ \\text{hm}\\)",
+        "possible_answers": [
+          "\\(20{,}5\\pi\\ \\text{hm}\\)",
+          "\\(41\\pi\\ \\text{hm}\\)",
+          "\\(10{,}25\\pi\\ \\text{hm}\\)",
+          "\\(420{,}25\\pi\\ \\text{hm}\\)"
+        ],
+        "inputTools": [
+          "pi"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la valeur exacte du périmètre d’un disque de rayon }4{,}8\\ \\text{dam}\\ ?\\)",
+        "answers": [
+          "9.6*pi dam"
+        ],
+        "display_answer": "\\(9{,}6\\pi\\ \\text{dam}\\)",
+        "possible_answers": [
+          "\\(9{,}6\\pi\\ \\text{dam}\\)",
+          "\\(4{,}8\\pi\\ \\text{dam}\\)",
+          "\\(23{,}04\\pi\\ \\text{dam}\\)",
+          "\\(46{,}08\\pi\\ \\text{dam}\\)"
+        ],
+        "inputTools": [
+          "pi"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un triangle équilatéral de côté }5\\ \\text{cm}\\ ?\\)",
+        "answers": [
+          "15 cm"
+        ],
+        "display_answer": "\\(15\\ \\text{cm}\\)",
+        "possible_answers": [
+          "15 cm",
+          "20 cm",
+          "25 cm",
+          "10 cm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un losange de côté }7\\ \\text{mm}\\ ?\\)",
+        "answers": [
+          "28 mm"
+        ],
+        "display_answer": "\\(28\\ \\text{mm}\\)",
+        "possible_answers": [
+          "28 mm",
+          "21 mm",
+          "49 mm",
+          "14 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ],
+    "randomState": 2562385159
+  },
+  {
+    "id": "perimetres_et_disques",
+    "path": "perimetres_et_disques",
+    "seed": 98765,
+    "title": "Périmètres et disques",
+    "questions": [
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          En prenant\n          \\(\\pi\\simeq\n          3{,}14\\),\n        </div>\n\n        <div>\n          quel est le périmètre d’un disque\n          de diamètre\n          \\(100\\ \\text{hm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "314 hm"
+        ],
+        "display_answer": "\\(314\\ \\text{hm}\\)",
+        "possible_answers": [
+          "314 hm",
+          "628 hm",
+          "157 hm",
+          "31 400 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          En prenant\n          \\(\\pi\\simeq\n          3{,}142\\),\n        </div>\n\n        <div>\n          quel est le périmètre d’un disque\n          de rayon\n          \\(500\\ \\text{dm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "3142 dm"
+        ],
+        "display_answer": "\\(3~142\\ \\text{dm}\\)",
+        "possible_answers": [
+          "3 142 dm",
+          "1 571 dm",
+          "785 500 dm",
+          "1 571 000 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\n      <div class=\"two-line-question\">\n        <div>\n          Quelle est la valeur exacte du périmètre d’un disque\n        </div>\n\n        <div>\n          de diamètre \\(\n          10{,}5\\ \\text{cm}\\) ?\n        </div>\n      </div>\n    ",
+        "answers": [
+          "10.5*pi cm"
+        ],
+        "display_answer": "\\(10{,}5\\pi\\ \\text{cm}\\)",
+        "possible_answers": [
+          "\\(10{,}5\\pi\\ \\text{cm}\\)",
+          "\\(21\\pi\\ \\text{cm}\\)",
+          "\\(5{,}25\\pi\\ \\text{cm}\\)",
+          "\\(110{,}25\\pi\\ \\text{cm}\\)"
+        ],
+        "inputTools": [
+          "pi"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        }
+      },
+      {
+        "question": "\\(\\text{Quelle est la valeur exacte du périmètre d’un disque de rayon }5{,}6\\ \\text{dam}\\ ?\\)",
+        "answers": [
+          "11.2*pi dam"
+        ],
+        "display_answer": "\\(11{,}2\\pi\\ \\text{dam}\\)",
+        "possible_answers": [
+          "\\(11{,}2\\pi\\ \\text{dam}\\)",
+          "\\(5{,}6\\pi\\ \\text{dam}\\)",
+          "\\(31{,}36\\pi\\ \\text{dam}\\)",
+          "\\(62{,}72\\pi\\ \\text{dam}\\)"
+        ],
+        "inputTools": [
+          "pi"
+        ],
+        "answerRule": {
+          "type": "length",
+          "valueRule": {
+            "type": "piMultiple"
+          }
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un triangle équilatéral de côté }4\\ \\text{km}\\ ?\\)",
+        "answers": [
+          "12 km"
+        ],
+        "display_answer": "\\(12\\ \\text{km}\\)",
+        "possible_answers": [
+          "12 km",
+          "16 km",
+          "8 km",
+          "4 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      },
+      {
+        "question": "\\(\\text{Quel est le périmètre d’un losange de côté }8\\ \\text{mm}\\ ?\\)",
+        "answers": [
+          "32 mm"
+        ],
+        "display_answer": "\\(32\\ \\text{mm}\\)",
+        "possible_answers": [
+          "32 mm",
+          "24 mm",
+          "64 mm",
+          "16 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        }
+      }
+    ],
+    "randomState": 2968871030
+  },
+  {
+    "id": "aires_et_unites",
+    "path": "aires/aires_et_unites",
+    "seed": 17,
+    "title": "Aires et unités",
+    "questions": [
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{m}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 m"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "m"
+        }
+      },
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{dm}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 dm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "dm"
+        }
+      },
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{cm}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 cm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "cm"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = \\ldots\\,\\mathrm{dm}^2\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{cm}^2\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{m}^2\\)",
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\ldots\\,\\mathrm{dm}^2\\)",
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = 100\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 100\\,\\ldots\\)",
+        "answers": [
+          "cm²"
+        ],
+        "possible_answers": [
+          "cm²",
+          "m²",
+          "dm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 0{,}01\\,\\ldots\\)",
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\dfrac{1}{100}\\,\\ldots\\)",
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = 0{,}01\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\dfrac{1}{100}\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,200 100,100 200,100 200,50 250,50 250,150 300,150 300,200\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "8 cm²"
+        ],
+        "possible_answers": [
+          "8 cm²",
+          "9 cm²",
+          "7 cm²",
+          "8,5 cm²"
+        ],
+        "display_answer": "\\(8\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,200 150,150 150,100 250,100 300,50 350,50 350,150 450,150 450,200 300,200 250,250 150,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "15 cm²"
+        ],
+        "possible_answers": [
+          "15 cm²",
+          "16 cm²",
+          "14 cm²",
+          "15,5 cm²"
+        ],
+        "display_answer": "\\(15\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"50,200 100,150 100,50 200,50 200,0 300,0 300,100 350,100 350,200 250,200 200,250 100,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "display_answer": "\\(19{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 100,150 150,100 250,100 250,50 400,50 400,200 300,200 300,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "display_answer": "\\(18{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"50,200 100,150 100,50 200,50 250,100 300,100 300,200 200,200 150,250 100,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "display_answer": "\\(13\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"200,250 250,200 250,100 350,100 400,50 450,50 450,200 350,200 300,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "11,5 cm²"
+        ],
+        "possible_answers": [
+          "11,5 cm²",
+          "12,5 cm²",
+          "10,5 cm²",
+          "12 cm²"
+        ],
+        "display_answer": "\\(11{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,300 150,250 150,150 200,100 300,100 300,50 400,50 400,250 300,250 250,300\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "display_answer": "\\(19{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 100,100 150,50 250,50 300,100 400,100 400,200 300,200 250,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "display_answer": "\\(18{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"150,250 200,200 200,100 250,50 350,50 400,100 400,200 300,200 250,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "display_answer": "\\(13\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 150,200 150,100 250,100 300,50 400,50 400,150 350,200 250,200 200,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "14 cm²"
+        ],
+        "possible_answers": [
+          "14 cm²",
+          "15 cm²",
+          "13 cm²",
+          "14,5 cm²"
+        ],
+        "display_answer": "\\(14\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      }
+    ],
+    "randomState": 17
+  },
+  {
+    "id": "aires_et_unites",
+    "path": "aires/aires_et_unites",
+    "seed": 2026,
+    "title": "Aires et unités",
+    "questions": [
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{m}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 m"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "m"
+        }
+      },
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{dm}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 dm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "dm"
+        }
+      },
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{cm}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 cm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "cm"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = \\ldots\\,\\mathrm{dm}^2\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{cm}^2\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{m}^2\\)",
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\ldots\\,\\mathrm{dm}^2\\)",
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = 100\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 100\\,\\ldots\\)",
+        "answers": [
+          "cm²"
+        ],
+        "possible_answers": [
+          "cm²",
+          "m²",
+          "dm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 0{,}01\\,\\ldots\\)",
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\dfrac{1}{100}\\,\\ldots\\)",
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = 0{,}01\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\dfrac{1}{100}\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,200 100,100 200,100 200,50 250,50 250,150 300,150 300,200\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "8 cm²"
+        ],
+        "possible_answers": [
+          "8 cm²",
+          "9 cm²",
+          "7 cm²",
+          "8,5 cm²"
+        ],
+        "display_answer": "\\(8\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,200 150,150 150,100 250,100 300,50 350,50 350,150 450,150 450,200 300,200 250,250 150,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "15 cm²"
+        ],
+        "possible_answers": [
+          "15 cm²",
+          "16 cm²",
+          "14 cm²",
+          "15,5 cm²"
+        ],
+        "display_answer": "\\(15\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"50,200 100,150 100,50 200,50 200,0 300,0 300,100 350,100 350,200 250,200 200,250 100,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "display_answer": "\\(19{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 100,150 150,100 250,100 250,50 400,50 400,200 300,200 300,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "display_answer": "\\(18{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"50,200 100,150 100,50 200,50 250,100 300,100 300,200 200,200 150,250 100,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "display_answer": "\\(13\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"200,250 250,200 250,100 350,100 400,50 450,50 450,200 350,200 300,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "11,5 cm²"
+        ],
+        "possible_answers": [
+          "11,5 cm²",
+          "12,5 cm²",
+          "10,5 cm²",
+          "12 cm²"
+        ],
+        "display_answer": "\\(11{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,300 150,250 150,150 200,100 300,100 300,50 400,50 400,250 300,250 250,300\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "display_answer": "\\(19{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 100,100 150,50 250,50 300,100 400,100 400,200 300,200 250,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "display_answer": "\\(18{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"150,250 200,200 200,100 250,50 350,50 400,100 400,200 300,200 250,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "display_answer": "\\(13\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 150,200 150,100 250,100 300,50 400,50 400,150 350,200 250,200 200,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "14 cm²"
+        ],
+        "possible_answers": [
+          "14 cm²",
+          "15 cm²",
+          "13 cm²",
+          "14,5 cm²"
+        ],
+        "display_answer": "\\(14\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      }
+    ],
+    "randomState": 2026
+  },
+  {
+    "id": "aires_et_unites",
+    "path": "aires/aires_et_unites",
+    "seed": 98765,
+    "title": "Aires et unités",
+    "questions": [
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{m}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 m"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "m"
+        }
+      },
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{dm}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 dm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "dm"
+        }
+      },
+      {
+        "question": "<div class=\"two-line-question\">\n        <div>\n          \\(\\text{Compléter la phrase suivante : } 1\\,\\mathrm{cm}^2 \\text{ est l'aire}\\)\n        </div>\n\n        <div>\n          \\(\\text{d'un carré dont le côté mesure } \\ldots\\)\n        </div>\n      </div>",
+        "answers": [
+          "1 cm"
+        ],
+        "possible_answers": [
+          "1 m",
+          "1 dm",
+          "1 cm",
+          "1 mm"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "cm"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = \\ldots\\,\\mathrm{dm}^2\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{cm}^2\\)",
+        "answers": [
+          "100"
+        ],
+        "possible_answers": [
+          "100",
+          "10",
+          "1 000",
+          "10 000"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\ldots\\,\\mathrm{m}^2\\)",
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\ldots\\,\\mathrm{dm}^2\\)",
+        "answers": [
+          "0,01"
+        ],
+        "possible_answers": [
+          "0,01",
+          "0,1",
+          "0,001",
+          "1"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{m}^2 = 100\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 100\\,\\ldots\\)",
+        "answers": [
+          "cm²"
+        ],
+        "possible_answers": [
+          "cm²",
+          "m²",
+          "dm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = 0{,}01\\,\\ldots\\)",
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{dm}^2 = \\dfrac{1}{100}\\,\\ldots\\)",
+        "answers": [
+          "m²"
+        ],
+        "possible_answers": [
+          "m²",
+          "dm²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = 0{,}01\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\\(\\text{Compléter l'égalité : } 1\\,\\mathrm{cm}^2 = \\dfrac{1}{100}\\,\\ldots\\)",
+        "answers": [
+          "dm²"
+        ],
+        "possible_answers": [
+          "dm²",
+          "m²",
+          "cm²",
+          "mm²"
+        ],
+        "answerRule": {
+          "type": "areaUnit"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,200 100,100 200,100 200,50 250,50 250,150 300,150 300,200\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "8 cm²"
+        ],
+        "possible_answers": [
+          "8 cm²",
+          "9 cm²",
+          "7 cm²",
+          "8,5 cm²"
+        ],
+        "display_answer": "\\(8\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,200 150,150 150,100 250,100 300,50 350,50 350,150 450,150 450,200 300,200 250,250 150,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "15 cm²"
+        ],
+        "possible_answers": [
+          "15 cm²",
+          "16 cm²",
+          "14 cm²",
+          "15,5 cm²"
+        ],
+        "display_answer": "\\(15\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"50,200 100,150 100,50 200,50 200,0 300,0 300,100 350,100 350,200 250,200 200,250 100,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "display_answer": "\\(19{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 100,150 150,100 250,100 250,50 400,50 400,200 300,200 300,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "display_answer": "\\(18{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"50,200 100,150 100,50 200,50 250,100 300,100 300,200 200,200 150,250 100,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "display_answer": "\\(13\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"200,250 250,200 250,100 350,100 400,50 450,50 450,200 350,200 300,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "11,5 cm²"
+        ],
+        "possible_answers": [
+          "11,5 cm²",
+          "12,5 cm²",
+          "10,5 cm²",
+          "12 cm²"
+        ],
+        "display_answer": "\\(11{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,300 150,250 150,150 200,100 300,100 300,50 400,50 400,250 300,250 250,300\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "19,5 cm²"
+        ],
+        "possible_answers": [
+          "19,5 cm²",
+          "20,5 cm²",
+          "18,5 cm²",
+          "20 cm²"
+        ],
+        "display_answer": "\\(19{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 100,100 150,50 250,50 300,100 400,100 400,200 300,200 250,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "18,5 cm²"
+        ],
+        "possible_answers": [
+          "18,5 cm²",
+          "19,5 cm²",
+          "17,5 cm²",
+          "19 cm²"
+        ],
+        "display_answer": "\\(18{,}5\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"150,250 200,200 200,100 250,50 350,50 400,100 400,200 300,200 250,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "13 cm²"
+        ],
+        "possible_answers": [
+          "13 cm²",
+          "14 cm²",
+          "12 cm²",
+          "13,5 cm²"
+        ],
+        "display_answer": "\\(13\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      },
+      {
+        "question": "\n      <div>\n        <p>Calculer l'aire de la figure en \\(\\mathrm{cm}^2\\).</p>\n\n        \n          <div class=\"question-display question-with-figure\">\n            \n    <svg\n      viewBox=\"0 0 450 335\"\n      width=\"100%\"\n      style=\"max-width:450px;\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n    >\n\n      \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"0\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"50\"\n        y1=\"0\"\n        x2=\"50\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"100\"\n        y1=\"0\"\n        x2=\"100\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"150\"\n        y1=\"0\"\n        x2=\"150\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"200\"\n        y1=\"0\"\n        x2=\"200\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"250\"\n        y1=\"0\"\n        x2=\"250\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"300\"\n        y1=\"0\"\n        x2=\"300\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"350\"\n        y1=\"0\"\n        x2=\"350\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"400\"\n        y1=\"0\"\n        x2=\"400\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"450\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"0\"\n        x2=\"450\"\n        y2=\"0\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"50\"\n        x2=\"450\"\n        y2=\"50\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"100\"\n        x2=\"450\"\n        y2=\"100\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"150\"\n        x2=\"450\"\n        y2=\"150\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"200\"\n        x2=\"450\"\n        y2=\"200\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"250\"\n        x2=\"450\"\n        y2=\"250\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n      <line\n        x1=\"0\"\n        y1=\"300\"\n        x2=\"450\"\n        y2=\"300\"\n        stroke=\"currentColor\"\n        stroke-width=\"1\"\n        opacity=\"0.35\"\n      />\n    \n\n      <polygon\n        points=\"100,250 150,200 150,100 250,100 300,50 400,50 400,150 350,200 250,200 200,250\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n        stroke-linejoin=\"round\"\n      />\n\n      <rect\n        x=\"0\"\n        y=\"250\"\n        width=\"50\"\n        height=\"50\"\n        fill=\"gold\"\n        fill-opacity=\"0.5\"\n        stroke=\"currentColor\"\n        stroke-width=\"3\"\n      />\n\n      <text\n        x=\"0\"\n        y=\"328\"\n        font-size=\"20\"\n        fill=\"currentColor\"\n      >\n        1 cm\n      </text>\n    </svg>\n  \n          </div>\n        \n      </div>\n    ",
+        "answers": [
+          "14 cm²"
+        ],
+        "possible_answers": [
+          "14 cm²",
+          "15 cm²",
+          "13 cm²",
+          "14,5 cm²"
+        ],
+        "display_answer": "\\(14\\,\\mathrm{cm}^2\\)",
+        "answerRule": {
+          "type": "area",
+          "requiredUnit": "cm²"
+        }
+      }
+    ],
+    "randomState": 98765
+  }
+]

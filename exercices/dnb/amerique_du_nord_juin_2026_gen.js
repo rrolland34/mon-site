@@ -1,3 +1,4 @@
+import { presentNorthQuestion } from '../northPresentation.js';
 // exercices/dnb/amerique_du_nord_juin_2026_gen.js
 
 import {
@@ -245,5 +246,5 @@ export default {
       answerRule: { type: "integer" },
       display_answer: String.raw`\(3\), \(9\), \(43\) ou \(129\).<br>En effet, \(387=3\times129=9\times43\).`
     }
-  ]
+  ].map(presentNorthQuestion)
 };

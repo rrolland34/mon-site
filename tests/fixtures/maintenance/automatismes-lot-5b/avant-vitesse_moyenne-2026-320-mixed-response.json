@@ -1,0 +1,226 @@
+{
+  "job": {
+    "id": "vitesse_moyenne",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 194.15625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "565{,}8\\ \\text{km}",
+        "8\\ \\text{h}\\ 12\\ \\text{min}",
+        "\\text{km/h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un automobiliste parcourt\n          \n          en\n          .\n        \n\n        \n          Quelle est sa vitesse moyenne\n          en  ?",
+        "79 km/h",
+        "69 km/h",
+        "59 km/h",
+        "89 km/h"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 172.453125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "57\\ \\text{km/h}",
+        "9\\ \\text{h}\\ 6\\ \\text{min}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un automobiliste roule à la vitesse\n          moyenne de\n        \n\n        \n          \n          pendant\n          .\n        \n\n        \n          Quelle distance, en kilomètres,\n          a-t-il parcourue ?",
+        "79 km/h",
+        "69 km/h",
+        "59 km/h",
+        "89 km/h"
+      ]
+    },
+    {
+      "document": 429,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 538.328125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Convertir 84,6 km/h en m/s.",
+          "scroll": 538,
+          "client": 538,
+          "children": [],
+          "left": -109.15625,
+          "right": 429.171875,
+          "width": 538.328125,
+          "height": 45.40625
+        }
+      ],
+      "math": [
+        "\\text{Convertir }84{,}6\\ \\text{km/h}\\text{ en }\\text{m/s}\\text{.}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "28,2 m/s",
+        "23,5 m/s",
+        "19,9 m/s",
+        "27,1 m/s"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 147.109375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "24{,}8\\ \\text{km}",
+        "48\\ \\text{min}",
+        "\\text{km/h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Sur un vélo, une personne parcourt\n          \n          en\n          .\n        \n\n        \n          Quelle est sa vitesse moyenne\n          en  ?",
+        "28,2 m/s",
+        "23,5 m/s",
+        "19,9 m/s",
+        "27,1 m/s"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 159.1875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "472\\ \\text{km}",
+        "59\\ \\text{km/h}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Un automobiliste parcourt\n          \n          à la vitesse moyenne de\n          .\n        \n\n        \n          Quel temps a-t-il mis ?\n          Donner le résultat en heures\n          et minutes.",
+        "28,2 m/s",
+        "23,5 m/s",
+        "19,9 m/s",
+        "27,1 m/s"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "69 km/h"
+        ],
+        "possible_answers": [
+          "69 km/h",
+          "79 km/h",
+          "59 km/h",
+          "89 km/h"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "km/h"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "79 km/h",
+          "69 km/h",
+          "59 km/h",
+          "89 km/h"
+        ]
+      },
+      {
+        "answers": [
+          "518.7 km"
+        ],
+        "possible_answers": [
+          "518,7 km",
+          "6,26 km",
+          "57 km",
+          "259,35 km"
+        ],
+        "answerRule": {
+          "type": "length",
+          "requiredUnit": "km"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "23.5 m/s"
+        ],
+        "possible_answers": [
+          "23,5 m/s",
+          "27,1 m/s",
+          "19,9 m/s",
+          "28,2 m/s"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "m/s"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "28,2 m/s",
+          "23,5 m/s",
+          "19,9 m/s",
+          "27,1 m/s"
+        ]
+      },
+      {
+        "answers": [
+          "31 km/h"
+        ],
+        "possible_answers": [
+          "31 km/h",
+          "36 km/h",
+          "26 km/h",
+          "41 km/h"
+        ],
+        "answerRule": {
+          "type": "speed",
+          "requiredUnit": "km/h"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "8 h 0 min"
+        ],
+        "possible_answers": [
+          "8 h 0 min",
+          "8 h 6 min",
+          "7 h 54 min",
+          "8 h 12 min"
+        ],
+        "answerRule": {
+          "type": "duration"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

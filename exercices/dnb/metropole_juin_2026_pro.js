@@ -1,3 +1,4 @@
+import { presentMetropoleProQuestion } from "../metropoleProPresentation.js";
 import { createCartesianPlaneSVG } from '../figures/cartesianPlaneFigure.js';
 
 const cone = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 260" width="170" role="img" aria-label="Solide à base circulaire et sommet unique" style="max-width:100%;height:auto">
@@ -142,5 +143,5 @@ export default {
       display_answer: finalBicycleCorrection,
       progressiveCorrection: { kind: 'steps', steps: bicycleSteps }
     }
-  ].map(question => ({ ...question, qcmAnswersOrder: [...question.possible_answers] }))
+  ].map(question => ({ ...question, qcmAnswersOrder: [...question.possible_answers] })).map(presentMetropoleProQuestion)
 };

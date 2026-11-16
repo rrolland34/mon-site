@@ -1,3 +1,5 @@
+import { presentMeasureQuestion } from '../measurePresentation.js';
+
 // exercices/aires/aires_et_unites.js
 
 import {
@@ -487,5 +489,5 @@ export default {
   title:
     "Aires et unités",
 
-  questions
+  questions: questions.map(presentMeasureQuestion)
 };

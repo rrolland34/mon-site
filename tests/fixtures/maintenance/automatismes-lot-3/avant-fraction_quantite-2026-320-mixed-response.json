@@ -1,0 +1,265 @@
+{
+  "job": {
+    "id": "fraction_quantite",
+    "seed": 2026,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 406.5625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "œPrendre 32 de 36 œufs",
+          "scroll": 407,
+          "client": 407,
+          "children": [],
+          "left": -47.4375,
+          "right": 359.125,
+          "width": 406.5625,
+          "height": 90.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{3}{2}\\text{ de } 36\\ \\text{œufs}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "18",
+        "54",
+        "108",
+        "36"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 340.640625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "€Prendre 43 de 24 €",
+          "scroll": 341,
+          "client": 341,
+          "children": [],
+          "left": -14.484375,
+          "right": 326.15625,
+          "width": 340.640625,
+          "height": 91.5
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{4}{3}\\text{ de } 24\\ \\text{€}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "18",
+        "54",
+        "108",
+        "36"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 366.0625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 13 de 27 kg",
+          "scroll": 366,
+          "client": 366,
+          "children": [],
+          "left": -27.1875,
+          "right": 338.875,
+          "width": 366.0625,
+          "height": 91.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{1}{3}\\text{ de } 27\\ \\text{kg}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "0",
+        "9",
+        "18",
+        "27"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 380.53125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 34 de 44 km",
+          "scroll": 381,
+          "client": 381,
+          "children": [],
+          "left": -89.421875,
+          "right": 291.109375,
+          "width": 380.53125,
+          "height": 90.03125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{3}{4}\\text{ de } 44\\ \\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "0",
+        "9",
+        "18",
+        "27"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 372.953125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "Prendre 14 de 60 m2",
+          "scroll": 373,
+          "client": 373,
+          "children": [],
+          "left": -85.640625,
+          "right": 287.3125,
+          "width": 372.953125,
+          "height": 90.078125
+        }
+      ],
+      "math": [
+        "\\text{Prendre } \\dfrac{1}{4}\\text{ de } 60\\ \\text{m}^{2}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        ".",
+        "0",
+        "9",
+        "18",
+        "27"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "54"
+        ],
+        "possible_answers": [
+          "54",
+          "18",
+          "108",
+          "36"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "18",
+          "54",
+          "108",
+          "36"
+        ]
+      },
+      {
+        "answers": [
+          "32"
+        ],
+        "possible_answers": [
+          "32",
+          "8",
+          "96",
+          "24"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "9"
+        ],
+        "possible_answers": [
+          "9",
+          "27",
+          "18",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0",
+          "9",
+          "18",
+          "27"
+        ]
+      },
+      {
+        "answers": [
+          "33"
+        ],
+        "possible_answers": [
+          "33",
+          "11",
+          "132",
+          "44"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "15"
+        ],
+        "possible_answers": [
+          "15",
+          "60",
+          "30",
+          "0"
+        ],
+        "answerRule": {
+          "type": "simplifiedValue"
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

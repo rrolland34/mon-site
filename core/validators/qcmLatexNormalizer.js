@@ -115,6 +115,16 @@ export function normalizeQCMLatex(
         denominator
       ) => {
 
+        // Un espace de milliers ne transforme pas un nombre en expression.
+        // Ne retirer que les groupements numériques valides, afin de garder
+        // les parenthèses nécessaires autour de « a+b » ou « 2 x ».
+        const ungroupInteger = term =>
+          /^[+-]?\d{1,3}(?:[ \u00a0\u202f]\d{3})+(?:[.,]\d+)?$/.test(term)
+            ? term.replace(/[ \u00a0\u202f]/g, "")
+            : term;
+        numerator = ungroupInteger(numerator);
+        denominator = ungroupInteger(denominator);
+
         const simpleTermPattern =
           /^(?:[+-]?\d+(?:[.,]\d+)?|[A-Za-z]+)$/;
 

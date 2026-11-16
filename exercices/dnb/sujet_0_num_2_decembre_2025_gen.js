@@ -1,3 +1,5 @@
+import { validateZeroTwoEquality } from '../zeroTwoEquality.js';
+import { presentDnbZeroQuestion } from '../dnbZeroPresentation.js';
 // exercices/dnb/sujet_0_num_2_decembre_2025_gen.js
 
 import {
@@ -336,7 +338,7 @@ const question8 = {
    * Une réponse de référence est nécessaire
    * pour le fonctionnement général du correcteur.
    *
-   * thalesRelation acceptera cependant
+   * La validation locale acceptera cependant
    * toutes les autres égalités équivalentes
    * autorisées par la configuration.
    */
@@ -348,28 +350,14 @@ const question8 = {
     "3/AB=4/6",
     "3/AB=6/4",
     "AB/3=4/6",
-    "3/4=AB/6"
+    "3/4=6/AB"
   ],
 
-  answerRule: {
-    type: "thalesRelation",
-
-    correspondences: {
-      BD: "AB",
-      BE: "BC",
-      DE: "AC"
-    },
-
-    values: {
-      BD: 3,
-      BE: 4.5,
-      DE: 4,
-      AC: 6
-    }
-  },
+  answerRule: { type: 'custom', validate: validateZeroTwoEquality },
+  qcmAnswerRule: { type: 'symbolicExact' },
 
   display_answer:
-    "\\(\\dfrac{3}{\\text{AB}}=\\dfrac{4}{6}\\)"
+    "\\(\\dfrac{3}{\\text{AB}}=\\dfrac{4}{6}\\) ou \\(\\dfrac{3}{4}=\\dfrac{\\text{AB}}{6}\\)"
 };
 
 
@@ -613,5 +601,5 @@ export default {
 
     question9
 
-  ]
+  ].map(presentDnbZeroQuestion)
 };

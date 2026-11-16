@@ -1,0 +1,1163 @@
+{
+  "job": {
+    "id": "fractions_usuelles_decimales",
+    "seed": 17,
+    "width": 320,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 468,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 615.5,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner une fraction égale à 0,25.",
+          "left": -147.75,
+          "right": 467.75,
+          "width": 615.5,
+          "height": 43.484375
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "32",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Donner une fraction égale à } 0,25.",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner une fraction égale à } 0,25."
+      ],
+      "prose": []
+    },
+    {
+      "document": 457,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 593.796875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner une fraction égale à 0,5.",
+          "left": -136.890625,
+          "right": 456.90625,
+          "width": 593.796875,
+          "height": 43.484375
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "32",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Donner une fraction égale à } 0,5.",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner une fraction égale à } 0,5."
+      ],
+      "prose": []
+    },
+    {
+      "document": 596,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 872.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 42.",
+          "left": -276.140625,
+          "right": 596.15625,
+          "width": 872.296875,
+          "height": 90.546875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "4",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{4}{2}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "4",
+        "2,5",
+        "2",
+        "1,5"
+      ]
+    },
+    {
+      "document": 596,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 872.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 14.",
+          "left": -276.140625,
+          "right": 596.15625,
+          "width": 872.296875,
+          "height": 90.078125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,25",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,2",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,75",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{4}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,25",
+        "0,5",
+        "0,2",
+        "0,75"
+      ]
+    },
+    {
+      "document": 457,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 593.796875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner une fraction égale à 1,5.",
+          "left": -136.890625,
+          "right": 456.90625,
+          "width": 593.796875,
+          "height": 43.484375
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "32",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "52",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "42",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.265625
+        }
+      ],
+      "math": [
+        "\\text{Donner une fraction égale à } 1,5.",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{5}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>5</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{4}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>4</mn><mn>2</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner une fraction égale à } 1,5."
+      ],
+      "prose": []
+    },
+    {
+      "document": 596,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 872.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 12.",
+          "left": -276.140625,
+          "right": 596.15625,
+          "width": 872.296875,
+          "height": 90.078125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,5",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,75",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,25",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{2}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,5",
+        "0,75",
+        "0,25",
+        "1,5"
+      ]
+    },
+    {
+      "document": 457,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 593.796875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner une fraction égale à 2,5.",
+          "left": -136.890625,
+          "right": 456.90625,
+          "width": 593.796875,
+          "height": 43.484375
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "42",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "52",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "32",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Donner une fraction égale à } 2,5.",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{4}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>4</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{5}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>5</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner une fraction égale à } 2,5."
+      ],
+      "prose": []
+    },
+    {
+      "document": 436,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 552.78125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner une fraction égale à 2.",
+          "left": -116.390625,
+          "right": 436.390625,
+          "width": 552.78125,
+          "height": 43.484375
+        },
+        {
+          "tag": "BUTTON",
+          "text": "42",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "52",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.265625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "32",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        }
+      ],
+      "math": [
+        "\\text{Donner une fraction égale à } 2.",
+        "\\dfrac{4}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>4</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{5}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>5</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 596,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 872.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 32.",
+          "left": -276.140625,
+          "right": 596.15625,
+          "width": 872.296875,
+          "height": 90.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2,5",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,75",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{3}{2}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "2,5",
+        "1,5",
+        "2",
+        "0,75"
+      ]
+    },
+    {
+      "document": 468,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 615.5,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "éàDonner une fraction égale à 0,75.",
+          "left": -147.75,
+          "right": 467.75,
+          "width": 615.5,
+          "height": 43.484375
+        },
+        {
+          "tag": "BUTTON",
+          "text": "12",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "14",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.0625
+        },
+        {
+          "tag": "BUTTON",
+          "text": "34",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 64.046875
+        },
+        {
+          "tag": "BUTTON",
+          "text": "32",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 64.046875
+        }
+      ],
+      "math": [
+        "\\text{Donner une fraction égale à } 0,75.",
+        "\\dfrac{1}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></math>",
+        "\\dfrac{1}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{4}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle></math>",
+        "\\dfrac{3}{2}",
+        "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>3</mn><mn>2</mn></mfrac></mstyle></math>"
+      ],
+      "unbracedComma": [
+        "\\text{Donner une fraction égale à } 0,75."
+      ],
+      "prose": []
+    },
+    {
+      "document": 596,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 872.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 34.",
+          "left": -276.140625,
+          "right": 596.15625,
+          "width": 872.296875,
+          "height": 90.03125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,75",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,25",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "0,5",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{3}{4}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "0,75",
+        "0,25",
+        "0,5",
+        "1,5"
+      ]
+    },
+    {
+      "document": 596,
+      "card": 0,
+      "question": 234,
+      "mathWidth": 872.296875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "ééDonner l'écriture décimale la plus simple de 52.",
+          "left": -276.140625,
+          "right": 596.15625,
+          "width": 872.296875,
+          "height": 90.078125
+        },
+        {
+          "tag": "BUTTON",
+          "text": "5",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "1,5",
+          "left": 43,
+          "right": 143,
+          "width": 100,
+          "height": 42
+        },
+        {
+          "tag": "BUTTON",
+          "text": "2,5",
+          "left": 159,
+          "right": 259,
+          "width": 100,
+          "height": 42
+        }
+      ],
+      "math": [
+        "\\text{Donner l'écriture décimale la plus simple de } \\dfrac{5}{2}."
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "5",
+        "2",
+        "1,5",
+        "2,5"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 12,
+    "questions": [
+      {
+        "answers": [
+          "1/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "2"
+        ],
+        "possible_answers": [
+          "2",
+          "1,5",
+          "2,5",
+          "4"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "4",
+          "2,5",
+          "2",
+          "1,5"
+        ]
+      },
+      {
+        "answers": [
+          "0,25"
+        ],
+        "possible_answers": [
+          "0,25",
+          "0,5",
+          "0,75",
+          "0,2"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,25",
+          "0,5",
+          "0,2",
+          "0,75"
+        ]
+      },
+      {
+        "answers": [
+          "3/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{4}{2}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "0,5"
+        ],
+        "possible_answers": [
+          "0,5",
+          "0,25",
+          "0,75",
+          "1,5"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,5",
+          "0,75",
+          "0,25",
+          "1,5"
+        ]
+      },
+      {
+        "answers": [
+          "5/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "4/2"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{1}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "1,5"
+        ],
+        "possible_answers": [
+          "1,5",
+          "2",
+          "2,5",
+          "0,75"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "2,5",
+          "1,5",
+          "2",
+          "0,75"
+        ]
+      },
+      {
+        "answers": [
+          "3/4"
+        ],
+        "possible_answers": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ],
+        "answerRule": {
+          "type": "fraction"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ]
+      },
+      {
+        "answers": [
+          "0,75"
+        ],
+        "possible_answers": [
+          "0,75",
+          "0,5",
+          "0,25",
+          "1,5"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "0,75",
+          "0,25",
+          "0,5",
+          "1,5"
+        ]
+      },
+      {
+        "answers": [
+          "2,5"
+        ],
+        "possible_answers": [
+          "2,5",
+          "2",
+          "1,5",
+          "5"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "5",
+          "2",
+          "1,5",
+          "2,5"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "1/4",
+        "correctQCMAnswer": "\\(\\dfrac{1}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1/2",
+        "correctQCMAnswer": "\\(\\dfrac{1}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{4}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "2",
+        "correctQCMAnswer": "2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "4",
+          "2,5",
+          "2",
+          "1,5"
+        ]
+      },
+      {
+        "correctAnswer": "0,25",
+        "correctQCMAnswer": "0,25",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,25",
+          "0,5",
+          "0,2",
+          "0,75"
+        ]
+      },
+      {
+        "correctAnswer": "3/2",
+        "correctQCMAnswer": "\\(\\dfrac{3}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{4}{2}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "0,5",
+        "correctQCMAnswer": "0,5",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,5",
+          "0,75",
+          "0,25",
+          "1,5"
+        ]
+      },
+      {
+        "correctAnswer": "5/2",
+        "correctQCMAnswer": "\\(\\dfrac{5}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "4/2",
+        "correctQCMAnswer": "\\(\\dfrac{4}{2}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{4}{2}\\)",
+          "\\(\\dfrac{5}{2}\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "1,5",
+        "correctQCMAnswer": "1,5",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "2,5",
+          "1,5",
+          "2",
+          "0,75"
+        ]
+      },
+      {
+        "correctAnswer": "3/4",
+        "correctQCMAnswer": "\\(\\dfrac{3}{4}\\)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(\\dfrac{1}{4}\\)",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\dfrac{3}{2}\\)"
+        ]
+      },
+      {
+        "correctAnswer": "0,75",
+        "correctQCMAnswer": "0,75",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "0,75",
+          "0,25",
+          "0,5",
+          "1,5"
+        ]
+      },
+      {
+        "correctAnswer": "2,5",
+        "correctQCMAnswer": "2,5",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "5",
+          "2",
+          "1,5",
+          "2,5"
+        ]
+      }
+    ]
+  }
+}

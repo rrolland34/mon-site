@@ -1,0 +1,292 @@
+{
+  "job": {
+    "id": "perimetres_et_longueurs",
+    "seed": 17,
+    "width": 1440,
+    "mode": "qcm",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 114.5625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "26\\ \\text{dm}",
+        "4\\ \\text{dm}",
+        "22\\,\\text{dm}",
+        "9\\,\\text{dm}",
+        "13\\,\\text{dm}",
+        "60\\,\\text{dm}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quelle est la longueur d’un rectangle de périmètre\n          \n        \n\n        \n          et de largeur\n           ?"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 91.640625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "8\\ \\text{km}",
+        "6\\ \\text{km}",
+        "48\\,\\text{km}",
+        "96\\,\\text{km}",
+        "28\\,\\text{km}",
+        "14\\,\\text{km}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Quel est le périmètre d’un rectangle de longueur\n          \n        \n\n        \n          et de largeur\n           ?"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 114.5625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "8\\ \\text{km}",
+        "4\\ \\text{hm}",
+        "7\\ \\text{dam}",
+        "84,7\\,\\text{hm}",
+        "5,5\\,\\text{hm}",
+        "154\\,\\text{hm}",
+        "19\\,\\text{hm}"
+      ],
+      "unbracedComma": [
+        "84,7\\,\\text{hm}",
+        "5,5\\,\\text{hm}"
+      ],
+      "prose": [
+        "Quel est le périmètre d’un triangle dont les côtés mesurent\n        \n\n        \n          ,\n          \n          et\n           ?"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 853.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quel est le périmètre d’un carré de côté }4\\ \\text{hm}\\ ?",
+        "8\\,\\text{hm}",
+        "16\\,\\text{hm}",
+        "4\\,\\text{hm}",
+        "12\\,\\text{hm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 1155.546875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Quelle est la longueur du côté d’un carré de périmètre }20\\ \\text{mm}\\ ?",
+        "20\\,\\text{mm}",
+        "10\\,\\text{mm}",
+        "80\\,\\text{mm}",
+        "5\\,\\text{mm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "9 dm"
+        ],
+        "possible_answers": [
+          "9 dm",
+          "60 dm",
+          "13 dm",
+          "22 dm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "22 dm",
+          "9 dm",
+          "13 dm",
+          "60 dm"
+        ]
+      },
+      {
+        "answers": [
+          "28 km"
+        ],
+        "possible_answers": [
+          "28 km",
+          "48 km",
+          "14 km",
+          "96 km"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "48 km",
+          "96 km",
+          "28 km",
+          "14 km"
+        ]
+      },
+      {
+        "answers": [
+          "84.7 hm"
+        ],
+        "possible_answers": [
+          "84,7 hm",
+          "19 hm",
+          "5,5 hm",
+          "154 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "84,7 hm",
+          "5,5 hm",
+          "154 hm",
+          "19 hm"
+        ]
+      },
+      {
+        "answers": [
+          "16 hm"
+        ],
+        "possible_answers": [
+          "16 hm",
+          "8 hm",
+          "12 hm",
+          "4 hm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "8 hm",
+          "16 hm",
+          "4 hm",
+          "12 hm"
+        ]
+      },
+      {
+        "answers": [
+          "5 mm"
+        ],
+        "possible_answers": [
+          "5 mm",
+          "80 mm",
+          "20 mm",
+          "10 mm"
+        ],
+        "answerRule": {
+          "type": "length"
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "20 mm",
+          "10 mm",
+          "80 mm",
+          "5 mm"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "9 dm",
+        "correctQCMAnswer": "9 dm",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "22 dm",
+          "9 dm",
+          "13 dm",
+          "60 dm"
+        ]
+      },
+      {
+        "correctAnswer": "28 km",
+        "correctQCMAnswer": "28 km",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "48 km",
+          "96 km",
+          "28 km",
+          "14 km"
+        ]
+      },
+      {
+        "correctAnswer": "84.7 hm",
+        "correctQCMAnswer": "84,7 hm",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "84,7 hm",
+          "5,5 hm",
+          "154 hm",
+          "19 hm"
+        ]
+      },
+      {
+        "correctAnswer": "16 hm",
+        "correctQCMAnswer": "16 hm",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "8 hm",
+          "16 hm",
+          "4 hm",
+          "12 hm"
+        ]
+      },
+      {
+        "correctAnswer": "5 mm",
+        "correctQCMAnswer": "5 mm",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "20 mm",
+          "10 mm",
+          "80 mm",
+          "5 mm"
+        ]
+      }
+    ]
+  }
+}

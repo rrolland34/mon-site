@@ -1,3 +1,4 @@
+import { presentDnbZeroQuestion } from '../dnbZeroPresentation.js';
 // exercices/dnb/sujet_0_num_1_decembre_2025_gen.js
 
 import {
@@ -641,5 +642,5 @@ export default {
     },
 
     question9
-  ]
+  ].map(presentDnbZeroQuestion)
 };

@@ -1,6 +1,6 @@
 // exercices/fractions_usuelles_decimales.js
 
-import { formatAnswer } from "../core/answerFormatting.js";
+import { decimalFractionPrompt, presentDecimalFractionQuestion } from "./decimalFractionPresentation.js";
 
 export default {
   title:
@@ -9,7 +9,7 @@ export default {
   questions: [
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{4}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{1}{4}.`),
 
       answers: [
         "0,25"
@@ -29,7 +29,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{1}{2}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{1}{2}.`),
 
       answers: [
         "0,5"
@@ -49,7 +49,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{3}{4}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{3}{4}.`),
 
       answers: [
         "0,75"
@@ -69,7 +69,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{3}{2}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{3}{2}.`),
 
       answers: [
         "1,5"
@@ -89,7 +89,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{4}{2}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{4}{2}.`),
 
       answers: [
         "2"
@@ -109,7 +109,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner l'écriture décimale la plus simple de } \\dfrac{5}{2}.\\)",
+        decimalFractionPrompt("Donner l'écriture décimale la plus simple de", String.raw`\dfrac{5}{2}.`),
 
       answers: [
         "2,5"
@@ -129,7 +129,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner une fraction égale à } 0,25.\\)",
+        decimalFractionPrompt("Donner une fraction égale à", String.raw`0{,}25.`),
 
       answers: [
         "1/4"
@@ -152,7 +152,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner une fraction égale à } 0,5.\\)",
+        decimalFractionPrompt("Donner une fraction égale à", String.raw`0{,}5.`),
 
       answers: [
         "1/2"
@@ -175,7 +175,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner une fraction égale à } 0,75.\\)",
+        decimalFractionPrompt("Donner une fraction égale à", String.raw`0{,}75.`),
 
       answers: [
         "3/4"
@@ -198,7 +198,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner une fraction égale à } 1,5.\\)",
+        decimalFractionPrompt("Donner une fraction égale à", String.raw`1{,}5.`),
 
       answers: [
         "3/2"
@@ -221,7 +221,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner une fraction égale à } 2.\\)",
+        decimalFractionPrompt("Donner une fraction égale à", String.raw`2.`),
 
       answers: [
         "4/2"
@@ -244,7 +244,7 @@ export default {
 
     {
       question:
-        "\\(\\text{Donner une fraction égale à } 2,5.\\)",
+        decimalFractionPrompt("Donner une fraction égale à", String.raw`2{,}5.`),
 
       answers: [
         "5/2"
@@ -264,5 +264,5 @@ export default {
         type: "fraction"
       }
     }
-  ]
+  ].map(presentDecimalFractionQuestion)
 };

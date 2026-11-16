@@ -1,0 +1,484 @@
+{
+  "job": {
+    "id": "conversions_longueurs",
+    "seed": 17,
+    "width": 375,
+    "mode": "direct",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 440,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 459.6875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "801,68 hm=801 680 …",
+          "scroll": 482,
+          "client": 460,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -42.34375,
+              "right": 440.03125,
+              "width": 482.375,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -42.34375,
+              "right": 440.03125,
+              "width": 482.375,
+              "height": 36
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 395.421875,
+              "right": 428.09375,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -42.34375,
+          "right": 417.34375,
+          "width": 459.6875,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "801{,}68\\ \\text{hm}=801~680\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 343.953125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "518 km=… dam",
+          "scroll": 345,
+          "client": 344,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 15.53125,
+              "right": 360.078125,
+              "width": 344.546875,
+              "height": 31
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 15.53125,
+              "right": 360.078125,
+              "width": 344.546875,
+              "height": 30
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 278.640625,
+              "right": 360.078125,
+              "width": 81.4375,
+              "height": 30
+            }
+          ],
+          "left": 15.53125,
+          "right": 359.484375,
+          "width": 343.953125,
+          "height": 35.6875
+        }
+      ],
+      "math": [
+        "518\\ \\text{km}=\\ldots\\ \\text{dam}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 385,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 376.5,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "945,52 dam=… m",
+          "scroll": 386,
+          "client": 377,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -0.75,
+              "right": 385.203125,
+              "width": 385.953125,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -0.75,
+              "right": 385.203125,
+              "width": 385.953125,
+              "height": 36
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 349.0625,
+              "right": 385.203125,
+              "width": 36.140625,
+              "height": 20
+            }
+          ],
+          "left": -0.75,
+          "right": 375.75,
+          "width": 376.5,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "945{,}52\\ \\text{dam}=\\ldots\\ \\text{m}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 430,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 450.046875,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "438,95 dm=4,389 5 …",
+          "scroll": 467,
+          "client": 450,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -37.515625,
+              "right": 429.84375,
+              "width": 467.359375,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -37.515625,
+              "right": 429.84375,
+              "width": 467.359375,
+              "height": 36
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 385.234375,
+              "right": 417.90625,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -37.515625,
+          "right": 412.53125,
+          "width": 450.046875,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "438{,}95\\ \\text{dm}=4{,}389~5\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 392,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 380.078125,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "263 m=263 000 …",
+          "scroll": 394,
+          "client": 380,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": -2.53125,
+              "right": 391.6875,
+              "width": 394.21875,
+              "height": 30
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": -2.53125,
+              "right": 391.6875,
+              "width": 394.21875,
+              "height": 29
+            },
+            {
+              "tag": "mo",
+              "visibility": "visible",
+              "position": "static",
+              "left": 347.078125,
+              "right": 379.75,
+              "width": 32.671875,
+              "height": 5
+            }
+          ],
+          "left": -2.53125,
+          "right": 377.546875,
+          "width": 380.078125,
+          "height": 34.46875
+        }
+      ],
+      "math": [
+        "263\\ \\text{m}=263~000\\ \\ldots"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 375,
+      "card": 318.25,
+      "question": 280.75,
+      "figures": [],
+      "mathWidth": 352.375,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "246,5 cm=… dm",
+          "scroll": 360,
+          "client": 352,
+          "children": [
+            {
+              "tag": "MJX-ASSISTIVE-MML",
+              "visibility": "visible",
+              "position": "absolute",
+              "left": 11.3125,
+              "right": 371.171875,
+              "width": 359.859375,
+              "height": 37
+            },
+            {
+              "tag": "math",
+              "visibility": "visible",
+              "position": "static",
+              "left": 11.3125,
+              "right": 371.171875,
+              "width": 359.859375,
+              "height": 36
+            },
+            {
+              "tag": "mtext",
+              "visibility": "visible",
+              "position": "static",
+              "left": 310.9375,
+              "right": 371.171875,
+              "width": 60.234375,
+              "height": 30
+            }
+          ],
+          "left": 11.3125,
+          "right": 363.6875,
+          "width": 352.375,
+          "height": 40.5625
+        }
+      ],
+      "math": [
+        "246{,}5\\ \\text{cm}=\\ldots\\ \\text{dm}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 6,
+    "questions": [
+      {
+        "answers": [
+          "dm"
+        ],
+        "possible_answers": [
+          "dm",
+          "m",
+          "cm",
+          "dam"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "51800"
+        ],
+        "possible_answers": [
+          "51 800",
+          "5 180",
+          "518 000",
+          "5,18"
+        ],
+        "answerRule": {
+          "type": "integer",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "9455.2"
+        ],
+        "possible_answers": [
+          "9 455,2",
+          "945,52",
+          "94 552",
+          "94,552"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "dam"
+        ],
+        "possible_answers": [
+          "dam",
+          "hm",
+          "m",
+          "km"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "mm"
+        ],
+        "possible_answers": [
+          "mm",
+          "cm",
+          "dm",
+          "m"
+        ],
+        "answerRule": {
+          "type": "lengthUnit"
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "24.65"
+        ],
+        "possible_answers": [
+          "24,65",
+          "2,465",
+          "246,5",
+          "2 465"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "numberOnly": true
+        },
+        "time": 120
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "dm",
+        "correctQCMAnswer": "dm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "51800",
+        "correctQCMAnswer": "51800",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "9455.2",
+        "correctQCMAnswer": "9455.2",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "dam",
+        "correctQCMAnswer": "dam",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "mm",
+        "correctQCMAnswer": "mm",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "24.65",
+        "correctQCMAnswer": "24.65",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      }
+    ]
+  }
+}

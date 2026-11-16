@@ -1,0 +1,83 @@
+{
+  "seed": 20261116,
+  "size": 10000,
+  "calls": 190000,
+  "families": {
+    "tenth-ordinary": 4124,
+    "hundredth-other": 4819,
+    "hundredth-integer-end": 51,
+    "tenth-integer-end": 523,
+    "tenth-integer-start": 483
+  },
+  "tenths": {
+    "tenth-ordinary": 4124,
+    "tenth-integer-end": 523,
+    "tenth-integer-start": 483
+  },
+  "hundredths": {
+    "ordinary": 3902,
+    "tenth-end": 418,
+    "tenth-start": 456,
+    "integer-end": 51,
+    "integer-start": 43
+  },
+  "examples": {
+    "tenth-ordinary": {
+      "draw": 1,
+      "lower": "83,8",
+      "upper": "83,9",
+      "precision": 1,
+      "answer": "83,85"
+    },
+    "ordinary": {
+      "draw": 2,
+      "lower": "7,66",
+      "upper": "7,67",
+      "precision": 2,
+      "answer": "7,665"
+    },
+    "tenth-end": {
+      "draw": 5,
+      "lower": "0,29",
+      "upper": "0,30",
+      "precision": 2,
+      "answer": "0,295"
+    },
+    "tenth-start": {
+      "draw": 16,
+      "lower": "9,60",
+      "upper": "9,61",
+      "precision": 2,
+      "answer": "9,605"
+    },
+    "integer-end": {
+      "draw": 17,
+      "lower": "2,99",
+      "upper": "3,00",
+      "precision": 2,
+      "answer": "2,995"
+    },
+    "integer-start": {
+      "draw": 56,
+      "lower": "7,00",
+      "upper": "7,01",
+      "precision": 2,
+      "answer": "7,005"
+    },
+    "tenth-integer-end": {
+      "draw": 59,
+      "lower": "9,9",
+      "upper": "10,0",
+      "precision": 1,
+      "answer": "9,95"
+    },
+    "tenth-integer-start": {
+      "draw": 61,
+      "lower": "69,0",
+      "upper": "69,1",
+      "precision": 1,
+      "answer": "69,05"
+    }
+  },
+  "untouchedSHA256": "0741023c25b58195dc5ab413adde1e95883b606e883b6cb7be8e8357dac12a7f"
+}

@@ -1,0 +1,178 @@
+{
+  "job": {
+    "id": "ecriture_scientifique",
+    "seed": 17,
+    "width": 1440,
+    "mode": "direct",
+    "presentation": "response"
+  },
+  "samples": [
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 787.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              2{,}11\\times 10^{-4}\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire le nombre suivant\n            sous forme décimale :"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 835.390625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              263\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 787.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              -4{,}99\\times 10^{2}\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire le nombre suivant\n            sous forme décimale :"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 835.390625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              0{,}008~01\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Donner l'écriture scientifique\n            du nombre suivant :"
+      ]
+    },
+    {
+      "document": 1440,
+      "card": 1330,
+      "question": 1240,
+      "figures": [],
+      "mathWidth": 787.46875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              8{,}37\\times 10^{5}\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire le nombre suivant\n            sous forme décimale :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 3,
+    "count": 5,
+    "questions": [
+      {
+        "answers": [
+          "0.000211"
+        ],
+        "possible_answers": [
+          "0.0000211",
+          "2.11",
+          "0.000211",
+          "0.00211"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 0.000211
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "2.63*10^2"
+        ],
+        "possible_answers": [
+          "2.63*10^2",
+          "2.63*10^3",
+          "-2.63*10^2",
+          "0.263*10^3"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 263
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "-499"
+        ],
+        "possible_answers": [
+          "-4.99",
+          "-49.9",
+          "-499",
+          "-4990"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": -499
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "8.01*10^-3"
+        ],
+        "possible_answers": [
+          "8.01*10^-3",
+          "8.01*10^-2",
+          "8.01*10^-4",
+          "80.1*10^-4"
+        ],
+        "answerRule": {
+          "type": "scientificNotation",
+          "expectedValue": 0.00801
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "837000"
+        ],
+        "possible_answers": [
+          "8370000",
+          "837000",
+          "8.37",
+          "83700"
+        ],
+        "answerRule": {
+          "type": "canonicalDecimal",
+          "expectedValue": 837000
+        },
+        "time": 120
+      }
+    ],
+    "history": []
+  }
+}

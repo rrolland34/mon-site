@@ -1,0 +1,1197 @@
+{
+  "job": {
+    "id": "reperage_repere_orthonorme",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 74.71875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Placer}",
+        "\\text{le}",
+        "\\text{point}",
+        "\\mathrm{A}(4\\,;\\,3)",
+        "\\text{dans}",
+        "\\text{le}",
+        "\\text{repère.}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    <g class=\"selected-cartesian-point\" data-x=\"-3\" data-y=\"-1\" stroke=\"currentColor\" stroke-width=\"3\" style=\"cursor: pointer;\"><line x1=\"147\" y1=\"219\" x2=\"157\" y2=\"229\"></line><line x1=\"147\" y1=\"229\" x2=\"157\" y2=\"219\"></line><text x=\"162\" y=\"214\" font-size=\"14\" fill=\"currentColor\" stroke=\"none\">B</text></g></svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 118.28125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner}",
+        "\\text{les}",
+        "\\text{coordonnées}",
+        "\\text{du}",
+        "\\text{point}",
+        "\\mathrm{B}",
+        "\\text{.}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 91.6875,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Placer}",
+        "\\text{le}",
+        "\\text{point}",
+        "\\mathrm{C}(2\\,;\\,-4)",
+        "\\text{dans}",
+        "\\text{le}",
+        "\\text{repère.}"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    <g class=\"selected-cartesian-point\" data-x=\"0\" data-y=\"1\" stroke=\"currentColor\" stroke-width=\"3\" style=\"cursor: pointer;\"><line x1=\"307.5\" y1=\"151\" x2=\"317.5\" y2=\"161\"></line><line x1=\"307.5\" y1=\"161\" x2=\"317.5\" y2=\"151\"></line><text x=\"322.5\" y=\"146\" font-size=\"14\" fill=\"currentColor\" stroke=\"none\">D</text></g></svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 125.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Parmi}",
+        "\\text{les}",
+        "\\text{quatre}",
+        "\\text{propositions,}",
+        "\\text{déterminer}",
+        "\\text{les}",
+        "\\text{coordonnées}",
+        "\\text{du}",
+        "\\text{point}",
+        "\\mathrm{D}",
+        "\\text{.}",
+        "\\mathrm{D}(1\\,;\\,0)",
+        "\\mathrm{D}(0\\,;\\,-1)",
+        "\\mathrm{D}(-1\\,;\\,0)",
+        "\\mathrm{D}(0\\,;\\,1)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 90.75,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Placer}",
+        "\\text{le}",
+        "\\text{point}",
+        "\\mathrm{E}(-2\\,;\\,0)",
+        "\\text{dans}",
+        "\\text{le}",
+        "\\text{repère.}",
+        "\\mathrm{D}(1\\,;\\,0)",
+        "\\mathrm{D}(0\\,;\\,-1)",
+        "\\mathrm{D}(-1\\,;\\,0)",
+        "\\mathrm{D}(0\\,;\\,1)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    <g class=\"selected-cartesian-point\" data-x=\"0\" data-y=\"-4\" stroke=\"currentColor\" stroke-width=\"3\" style=\"cursor: pointer;\"><line x1=\"307.5\" y1=\"321\" x2=\"317.5\" y2=\"331\"></line><line x1=\"307.5\" y1=\"331\" x2=\"317.5\" y2=\"321\"></line><text x=\"322.5\" y=\"316\" font-size=\"14\" fill=\"currentColor\" stroke=\"none\">F</text></g></svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 125.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Parmi}",
+        "\\text{les}",
+        "\\text{quatre}",
+        "\\text{propositions,}",
+        "\\text{déterminer}",
+        "\\text{les}",
+        "\\text{coordonnées}",
+        "\\text{du}",
+        "\\text{point}",
+        "\\mathrm{F}",
+        "\\text{.}",
+        "\\mathrm{F}(0\\,;\\,-4)",
+        "\\mathrm{F}(0\\,;\\,4)",
+        "\\mathrm{F}(-4\\,;\\,0)",
+        "\\mathrm{F}(4\\,;\\,0)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 93.109375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Placer}",
+        "\\text{le}",
+        "\\text{point}",
+        "\\mathrm{G}(-1\\,;\\,4)",
+        "\\text{dans}",
+        "\\text{le}",
+        "\\text{repère.}",
+        "\\mathrm{F}(0\\,;\\,-4)",
+        "\\mathrm{F}(0\\,;\\,4)",
+        "\\mathrm{F}(-4\\,;\\,0)",
+        "\\mathrm{F}(4\\,;\\,0)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    <g class=\"selected-cartesian-point\" data-x=\"-4\" data-y=\"-2\" stroke=\"currentColor\" stroke-width=\"3\" style=\"cursor: pointer;\"><line x1=\"93.5\" y1=\"253\" x2=\"103.5\" y2=\"263\"></line><line x1=\"93.5\" y1=\"263\" x2=\"103.5\" y2=\"253\"></line><text x=\"108.5\" y=\"248\" font-size=\"14\" fill=\"currentColor\" stroke=\"none\">H</text></g></svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 118.28125,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Donner}",
+        "\\text{les}",
+        "\\text{coordonnées}",
+        "\\text{du}",
+        "\\text{point}",
+        "\\mathrm{H}",
+        "\\text{.}",
+        "\\mathrm{F}(0\\,;\\,-4)",
+        "\\mathrm{F}(0\\,;\\,4)",
+        "\\mathrm{F}(-4\\,;\\,0)",
+        "\\mathrm{F}(4\\,;\\,0)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    </svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 101.109375,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Placer}",
+        "\\text{le}",
+        "\\text{point}",
+        "\\mathrm{I}(-2\\,;\\,-1)",
+        "\\text{dans}",
+        "\\text{le}",
+        "\\text{repère.}",
+        "\\mathrm{F}(0\\,;\\,-4)",
+        "\\mathrm{F}(0\\,;\\,4)",
+        "\\mathrm{F}(-4\\,;\\,0)",
+        "\\mathrm{F}(4\\,;\\,0)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    },
+    {
+      "document": 320,
+      "card": 266,
+      "question": 234,
+      "figures": [
+        {
+          "markup": "<svg class=\"cartesian-plane\" viewBox=\"0 0 600 400\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Repère cartésien\">\n      <!-- Quadrillage secondaire -->\n      <g>\n        \n      </g>\n\n      <!-- Quadrillage principal -->\n      <g>\n        \n        <line x1=\"45\" y1=\"20\" x2=\"45\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"98.5\" y1=\"20\" x2=\"98.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"152\" y1=\"20\" x2=\"152\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"205.5\" y1=\"20\" x2=\"205.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"259\" y1=\"20\" x2=\"259\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"366\" y1=\"20\" x2=\"366\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"419.5\" y1=\"20\" x2=\"419.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"473\" y1=\"20\" x2=\"473\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"526.5\" y1=\"20\" x2=\"526.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"580\" y1=\"20\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"360\" x2=\"580\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"326\" x2=\"580\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"292\" x2=\"580\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"258\" x2=\"580\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"224\" x2=\"580\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"156\" x2=\"580\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"122\" x2=\"580\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"88\" x2=\"580\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"54\" x2=\"580\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n        <line x1=\"45\" y1=\"20\" x2=\"580\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.7\" opacity=\"0.45\"></line>\n      \n      </g>\n\n      <!-- Axes -->\n      <g>\n        \n      <line x1=\"45\" y1=\"190\" x2=\"580\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"45\" y1=\"186\" x2=\"45\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"45\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -5\n        </text>\n      \n        <line x1=\"98.5\" y1=\"186\" x2=\"98.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"98.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -4\n        </text>\n      \n        <line x1=\"152\" y1=\"186\" x2=\"152\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"152\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -3\n        </text>\n      \n        <line x1=\"205.5\" y1=\"186\" x2=\"205.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"205.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -2\n        </text>\n      \n        <line x1=\"259\" y1=\"186\" x2=\"259\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"259\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          -1\n        </text>\n      \n        <line x1=\"312.5\" y1=\"186\" x2=\"312.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"312.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          0\n        </text>\n      \n        <line x1=\"366\" y1=\"186\" x2=\"366\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"366\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          1\n        </text>\n      \n        <line x1=\"419.5\" y1=\"186\" x2=\"419.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"419.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          2\n        </text>\n      \n        <line x1=\"473\" y1=\"186\" x2=\"473\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"473\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          3\n        </text>\n      \n        <line x1=\"526.5\" y1=\"186\" x2=\"526.5\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"526.5\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          4\n        </text>\n      \n        <line x1=\"580\" y1=\"186\" x2=\"580\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <text x=\"580\" y=\"208\" text-anchor=\"middle\" font-size=\"12\" fill=\"currentColor\">\n          5\n        </text>\n      \n        \n      <line x1=\"312.5\" y1=\"20\" x2=\"312.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\"></line>\n    \n        <line x1=\"308.5\" y1=\"360\" x2=\"316.5\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"364\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -5\n          </text>\n        \n        <line x1=\"308.5\" y1=\"326\" x2=\"316.5\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"330\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"292\" x2=\"316.5\" y2=\"292\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"296\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"258\" x2=\"316.5\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"262\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"224\" x2=\"316.5\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"228\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            -1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"190\" x2=\"316.5\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n        <line x1=\"308.5\" y1=\"156\" x2=\"316.5\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"160\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            1\n          </text>\n        \n        <line x1=\"308.5\" y1=\"122\" x2=\"316.5\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"126\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            2\n          </text>\n        \n        <line x1=\"308.5\" y1=\"88\" x2=\"316.5\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"92\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            3\n          </text>\n        \n        <line x1=\"308.5\" y1=\"54\" x2=\"316.5\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"58\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            4\n          </text>\n        \n        <line x1=\"308.5\" y1=\"20\" x2=\"316.5\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1\"></line>\n      \n          <text x=\"303.5\" y=\"24\" text-anchor=\"end\" font-size=\"12\" fill=\"currentColor\">\n            5\n          </text>\n        \n      </g>\n\n      <!-- Polylignes -->\n      <g>\n        \n      </g>\n\n      <!-- Points -->\n      <g>\n        \n      </g>\n\n      <!-- Textes -->\n      <g>\n        \n      </g>\n    <g class=\"selected-cartesian-point\" data-x=\"4\" data-y=\"0\" stroke=\"currentColor\" stroke-width=\"3\" style=\"cursor: pointer;\"><line x1=\"521.5\" y1=\"185\" x2=\"531.5\" y2=\"195\"></line><line x1=\"521.5\" y1=\"195\" x2=\"531.5\" y2=\"185\"></line><text x=\"536.5\" y=\"180\" font-size=\"14\" fill=\"currentColor\" stroke=\"none\">J</text></g></svg>",
+          "left": 43,
+          "right": 277,
+          "width": 234,
+          "height": 156
+        }
+      ],
+      "mathWidth": 125.890625,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\\text{Parmi}",
+        "\\text{les}",
+        "\\text{quatre}",
+        "\\text{propositions,}",
+        "\\text{déterminer}",
+        "\\text{les}",
+        "\\text{coordonnées}",
+        "\\text{du}",
+        "\\text{point}",
+        "\\mathrm{J}",
+        "\\text{.}",
+        "\\mathrm{J}(-4\\,;\\,0)",
+        "\\mathrm{J}(0\\,;\\,4)",
+        "\\mathrm{J}(0\\,;\\,-4)",
+        "\\mathrm{J}(4\\,;\\,0)"
+      ],
+      "unbracedComma": [],
+      "prose": []
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 10,
+    "questions": [
+      {
+        "answerPoint": {
+          "x": 4,
+          "y": 3,
+          "name": "A"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "qcmPoints": [
+          {
+            "x": 4,
+            "y": 3,
+            "name": "A"
+          },
+          {
+            "x": -4,
+            "y": 3,
+            "name": "A"
+          },
+          {
+            "x": 4,
+            "y": -3,
+            "name": "A"
+          },
+          {
+            "x": 3,
+            "y": 4,
+            "name": "A"
+          }
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "B(-3;-1)"
+        ],
+        "possible_answers": [
+          "B(-3;-1)",
+          "B(3;-1)",
+          "B(-3;1)",
+          "B(-1;-3)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "givenPoint": {
+          "x": -3,
+          "y": -1,
+          "name": "B"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "time": 120
+      },
+      {
+        "answerPoint": {
+          "x": 2,
+          "y": -4,
+          "name": "C"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "qcmPoints": [
+          {
+            "x": 2,
+            "y": -4,
+            "name": "C"
+          },
+          {
+            "x": -2,
+            "y": -4,
+            "name": "C"
+          },
+          {
+            "x": 2,
+            "y": 4,
+            "name": "C"
+          },
+          {
+            "x": -4,
+            "y": 2,
+            "name": "C"
+          }
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "D(0;1)"
+        ],
+        "possible_answers": [
+          "D(0;1)",
+          "D(0;-1)",
+          "D(1;0)",
+          "D(-1;0)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "givenPoint": {
+          "x": 0,
+          "y": 1,
+          "name": "D"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "D(1;0)",
+          "D(0;-1)",
+          "D(-1;0)",
+          "D(0;1)"
+        ]
+      },
+      {
+        "answerPoint": {
+          "x": -2,
+          "y": 0,
+          "name": "E"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "qcmPoints": [
+          {
+            "x": -2,
+            "y": 0,
+            "name": "E"
+          },
+          {
+            "x": 2,
+            "y": 0,
+            "name": "E"
+          },
+          {
+            "x": 0,
+            "y": -2,
+            "name": "E"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "name": "E"
+          }
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "F(0;-4)"
+        ],
+        "possible_answers": [
+          "F(0;-4)",
+          "F(0;4)",
+          "F(-4;0)",
+          "F(4;0)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "givenPoint": {
+          "x": 0,
+          "y": -4,
+          "name": "F"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "F(0;-4)",
+          "F(0;4)",
+          "F(-4;0)",
+          "F(4;0)"
+        ]
+      },
+      {
+        "answerPoint": {
+          "x": -1,
+          "y": 4,
+          "name": "G"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "qcmPoints": [
+          {
+            "x": -1,
+            "y": 4,
+            "name": "G"
+          },
+          {
+            "x": 1,
+            "y": 4,
+            "name": "G"
+          },
+          {
+            "x": -1,
+            "y": -4,
+            "name": "G"
+          },
+          {
+            "x": 4,
+            "y": -1,
+            "name": "G"
+          }
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "H(-4;-2)"
+        ],
+        "possible_answers": [
+          "H(-4;-2)",
+          "H(4;-2)",
+          "H(-4;2)",
+          "H(-2;-4)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "givenPoint": {
+          "x": -4,
+          "y": -2,
+          "name": "H"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "time": 120
+      },
+      {
+        "answerPoint": {
+          "x": -2,
+          "y": -1,
+          "name": "I"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "qcmPoints": [
+          {
+            "x": -2,
+            "y": -1,
+            "name": "I"
+          },
+          {
+            "x": 2,
+            "y": -1,
+            "name": "I"
+          },
+          {
+            "x": -2,
+            "y": 1,
+            "name": "I"
+          },
+          {
+            "x": -1,
+            "y": -2,
+            "name": "I"
+          }
+        ],
+        "time": 120
+      },
+      {
+        "answers": [
+          "J(4;0)"
+        ],
+        "possible_answers": [
+          "J(4;0)",
+          "J(-4;0)",
+          "J(0;4)",
+          "J(0;-4)"
+        ],
+        "answerRule": {
+          "type": "coordinates",
+          "valueRule": {
+            "type": "integer"
+          }
+        },
+        "givenPoint": {
+          "x": 4,
+          "y": 0,
+          "name": "J"
+        },
+        "figureConfig": {
+          "width": 600,
+          "height": 400,
+          "padding": {
+            "left": 45,
+            "right": 20,
+            "top": 20,
+            "bottom": 40
+          },
+          "range": {
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 5
+          },
+          "axes": {
+            "x": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            },
+            "y": {
+              "show": true,
+              "step": 1,
+              "strokeWidth": 2
+            }
+          },
+          "grid": {
+            "main": {
+              "show": true,
+              "xStep": 1,
+              "yStep": 1,
+              "strokeWidth": 0.7,
+              "opacity": 0.45
+            },
+            "sub": {
+              "show": false,
+              "xStep": 0.2,
+              "yStep": 0.2,
+              "strokeWidth": 0.4,
+              "opacity": 0.25
+            }
+          }
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "J(-4;0)",
+          "J(0;4)",
+          "J(0;-4)",
+          "J(4;0)"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": {
+          "x": 4,
+          "y": 3,
+          "name": "A"
+        },
+        "correctQCMAnswer": {
+          "x": 4,
+          "y": 3,
+          "name": "A"
+        },
+        "isCorrect": false,
+        "answerMode": "point",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "B(-3;-1)",
+        "correctQCMAnswer": "B(-3;-1)",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": {
+          "x": 2,
+          "y": -4,
+          "name": "C"
+        },
+        "correctQCMAnswer": {
+          "x": 2,
+          "y": -4,
+          "name": "C"
+        },
+        "isCorrect": false,
+        "answerMode": "point",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "D(0;1)",
+        "correctQCMAnswer": "D(0;1)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "D(1;0)",
+          "D(0;-1)",
+          "D(-1;0)",
+          "D(0;1)"
+        ]
+      },
+      {
+        "correctAnswer": {
+          "x": -2,
+          "y": 0,
+          "name": "E"
+        },
+        "correctQCMAnswer": {
+          "x": -2,
+          "y": 0,
+          "name": "E"
+        },
+        "isCorrect": false,
+        "answerMode": "point",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "F(0;-4)",
+        "correctQCMAnswer": "F(0;-4)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "F(0;-4)",
+          "F(0;4)",
+          "F(-4;0)",
+          "F(4;0)"
+        ]
+      },
+      {
+        "correctAnswer": {
+          "x": -1,
+          "y": 4,
+          "name": "G"
+        },
+        "correctQCMAnswer": {
+          "x": -1,
+          "y": 4,
+          "name": "G"
+        },
+        "isCorrect": false,
+        "answerMode": "point",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "H(-4;-2)",
+        "correctQCMAnswer": "H(-4;-2)",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": {
+          "x": -2,
+          "y": -1,
+          "name": "I"
+        },
+        "correctQCMAnswer": {
+          "x": -2,
+          "y": -1,
+          "name": "I"
+        },
+        "isCorrect": false,
+        "answerMode": "point",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "J(4;0)",
+        "correctQCMAnswer": "J(4;0)",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "J(-4;0)",
+          "J(0;4)",
+          "J(0;-4)",
+          "J(4;0)"
+        ]
+      }
+    ]
+  }
+}

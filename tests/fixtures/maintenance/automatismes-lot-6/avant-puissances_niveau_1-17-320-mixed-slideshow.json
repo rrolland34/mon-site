@@ -1,0 +1,432 @@
+{
+  "job": {
+    "id": "puissances_niveau_1",
+    "seed": 17,
+    "width": 320,
+    "mode": "mixed",
+    "presentation": "slideshow"
+  },
+  "samples": [
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{1}{\n                7^{7}\n              }\n            "
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\left(\n                8^{3}\n              \\right)^{\n                5\n              }\n            ",
+        "8^{8}",
+        "8^{15}",
+        "8^{16}",
+        "8^{2}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                4^{8}\n              }{\n                4^{7}\n              }\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              4^{2}\n              \\times\n              4^{8}\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "\n              3^{4}\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire la puissance suivante\n            sous la forme d'un produit :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              \\dfrac{\n                36^{4}\n              }{\n                4^{4}\n              }\n            ",
+        "4^{56}",
+        "4^{1}",
+        "4^{15}",
+        "4^{-1}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Écrire l'expression suivante\n            sous la forme  :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 320.765625,
+      "errors": 0,
+      "over": [
+        {
+          "tag": "MJX-CONTAINER",
+          "text": "4×4×4×4×4",
+          "scroll": 321,
+          "client": 321,
+          "children": [],
+          "left": -0.375,
+          "right": 320.390625,
+          "width": 320.765625,
+          "height": 29.390625
+        }
+      ],
+      "math": [
+        "a^n",
+        "\n              4 \\times 4 \\times 4 \\times 4 \\times 4\n            ",
+        "5^{5}",
+        "4^{6}",
+        "4^{4}",
+        "4^{5}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    },
+    {
+      "document": 407,
+      "card": 266,
+      "question": 234,
+      "figures": [],
+      "mathWidth": 234,
+      "errors": 0,
+      "over": [],
+      "math": [
+        "a^n",
+        "\n              9^{2}\n              \\times\n              4^{2}\n            ",
+        "13^{2}",
+        "36^{4}",
+        "36^{2}",
+        "36^{3}"
+      ],
+      "unbracedComma": [],
+      "prose": [
+        "Parmi les quatre propositions,\n            déterminer l'écriture sous la forme\n             de :"
+      ]
+    }
+  ],
+  "final": {
+    "score": 0,
+    "count": 8,
+    "questions": [
+      {
+        "answers": [
+          "7^-7"
+        ],
+        "possible_answers": [
+          "7^-8",
+          "7^-7",
+          "-7^7",
+          "7^7"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 0.0000012142656789020123
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "8^15"
+        ],
+        "possible_answers": [
+          "8^16",
+          "8^8",
+          "8^2",
+          "8^15"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 35184372088832
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "8^8",
+          "8^15",
+          "8^16",
+          "8^2"
+        ]
+      },
+      {
+        "answers": [
+          "4^1"
+        ],
+        "possible_answers": [
+          "4^15",
+          "4^-1",
+          "4^1",
+          "4^56"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 4,
+          "allowOneForZeroExponent": true
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "4^56",
+          "4^1",
+          "4^15",
+          "4^-1"
+        ]
+      },
+      {
+        "answers": [
+          "4^10"
+        ],
+        "possible_answers": [
+          "4^6",
+          "4^10",
+          "4^11",
+          "4^16"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1048576
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "3*3*3*3"
+        ],
+        "possible_answers": [
+          "3*3*3",
+          "3*4",
+          "3*3*3*3*3",
+          "3*3*3*3"
+        ],
+        "answerRule": {
+          "type": "repeatedProduct",
+          "base": 3,
+          "exponent": 4
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "9^4"
+        ],
+        "possible_answers": [
+          "4^4",
+          "9^4",
+          "36^4",
+          "9^8"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 6561
+        },
+        "time": 120
+      },
+      {
+        "answers": [
+          "4^5"
+        ],
+        "possible_answers": [
+          "5^5",
+          "4^6",
+          "4^5",
+          "4^4"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1024
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "5^5",
+          "4^6",
+          "4^4",
+          "4^5"
+        ]
+      },
+      {
+        "answers": [
+          "36^2"
+        ],
+        "possible_answers": [
+          "36^4",
+          "36^2",
+          "36^3",
+          "13^2"
+        ],
+        "answerRule": {
+          "type": "power",
+          "expectedValue": 1296
+        },
+        "time": 120,
+        "qcmAnswersOrder": [
+          "13^2",
+          "36^4",
+          "36^2",
+          "36^3"
+        ]
+      }
+    ],
+    "history": [
+      {
+        "correctAnswer": "7^-7",
+        "correctQCMAnswer": "7^-7",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "8^15",
+        "correctQCMAnswer": "8^15",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "8^8",
+          "8^15",
+          "8^16",
+          "8^2"
+        ]
+      },
+      {
+        "correctAnswer": "4^1",
+        "correctQCMAnswer": "4^1",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "4^56",
+          "4^1",
+          "4^15",
+          "4^-1"
+        ]
+      },
+      {
+        "correctAnswer": "4^10",
+        "correctQCMAnswer": "4^10",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "3*3*3*3",
+        "correctQCMAnswer": "3*3*3*3",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "9^4",
+        "correctQCMAnswer": "9^4",
+        "isCorrect": false,
+        "answerMode": "direct",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": null
+      },
+      {
+        "correctAnswer": "4^5",
+        "correctQCMAnswer": "4^5",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "5^5",
+          "4^6",
+          "4^4",
+          "4^5"
+        ]
+      },
+      {
+        "correctAnswer": "36^2",
+        "correctQCMAnswer": "36^2",
+        "isCorrect": false,
+        "answerMode": "qcm",
+        "userAnswer": "Pas de réponse",
+        "qcmAnswersOrder": [
+          "13^2",
+          "36^4",
+          "36^2",
+          "36^3"
+        ]
+      }
+    ]
+  }
+}
