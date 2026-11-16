@@ -66,6 +66,21 @@ Pour les formules de tableur, éviter les écritures dont les priorités opérat
 
 Les propositions QCM peuvent être mélangées, mais leur ordre doit rester stable pendant une même question.
 
+### 4.1. Isolation des modules d'exercices
+
+**Un exercice = un module indépendant.**
+
+- L'import d'un module d'exercice ne doit jamais déclencher la génération de questions aléatoires.
+- Aucun appel à `Math.random()` ni à une fonction consommant des tirages aléatoires ne doit être exécuté lors de l'import, y compris dans les initialisations du module.
+- Générer les questions de manière différée, lorsque le moteur en a effectivement besoin pour la série sélectionnée, ou lors d'une régénération explicite.
+- La simple importation, l'enregistrement dans le catalogue et la lecture des métadonnées d'un exercice ne doivent pas modifier l'état aléatoire global.
+- L'ajout d'une série ne doit pas perturber les résultats reproductibles des autres séries.
+- Lors de l'ajout d'un module, prévoir un test vérifiant l'absence de consommation aléatoire à l'import et, si nécessaire, un test d'isolation par rapport aux autres séries.
+
+L'utilisation de `Math.random()` dans les fonctions de génération reste autorisée : c'est son exécution prématurée lors de l'import qui est interdite.
+
+**Charger un exercice ne doit jamais modifier le comportement d'un autre exercice.**
+
 ## 5. Modes de fonctionnement
 
 Le site utilise notamment :
