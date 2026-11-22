@@ -39,8 +39,11 @@ test('renderer : html et contenu latéral, cibles isolées, nettoyage avant remp
   const ready=[];
   const draw=id=>renderStepCorrection({container:root,scene:{id,html:id,sideContent:{html:'side',color:'red'}},onReady:()=>ready.push(id)});
   const old=draw('old');assert.equal(calls[0][0].children[0].innerHTML,'side');assert.equal(calls[0][1].innerHTML,'old');
-  const current=draw('current');assert.deepEqual(cleared[0],calls[0]);assert.notEqual(calls[0][0],calls[1][0]);
-  pending[1].resolve();await current;pending[0].resolve();await old;
+  const skipped=draw('skipped'),current=draw('current');
+  assert.deepEqual(cleared[0],calls[0]);assert.equal(calls.length,1);assert.equal(await skipped,false);
+  pending[0].resolve();assert.equal(await old,false);
+  assert.deepEqual(cleared[1],calls[0]);assert.notEqual(calls[0][0],calls[1][0]);
+  pending[1].resolve();assert.equal(await current,true);
   assert.deepEqual(ready,['current']);assert.equal(cleared.length,2);
   clearMath(root);
 });
@@ -59,6 +62,40 @@ test('exercise_player : flèche après composition unique, aller-retour et corre
   const run=s=>vm.runInContext(s,context);
   run('startStepCorrection()');assert.deepEqual(events,['math']);run('advanceStepCorrection()');pending[0].resolve();await new Promise(setImmediate);assert.equal(events.includes('arrow'),false);
   pending[1].resolve();await new Promise(setImmediate);run('previousStepCorrection()');pending[2].resolve();await new Promise(setImmediate);assert.equal(events.at(-1),'arrow');assert.equal(pending.length,3);
-  run('advanceStepCorrection();previousStepCorrection();showCompleteStepCorrection()');pending[3].resolve();pending[4].resolve();pending[5].resolve();await new Promise(setImmediate);assert.equal(events.filter(e=>e==='arrow').length,1);
+  run('advanceStepCorrection();previousStepCorrection();showCompleteStepCorrection()');pending[3].resolve();await new Promise(setImmediate);assert.equal(pending.length,5);pending[4].resolve();await new Promise(setImmediate);assert.equal(events.filter(e=>e==='arrow').length,1);
+});
+
+test('deux cibles : un rejet libère le document après le nettoyage', async () => {
+  const events = [], failure = deferred();
+  const first = setup({
+    typesetPromise([target]) {
+      events.push(target);
+      return target === first ? failure.promise : Promise.resolve();
+    },
+    typesetClear() { events.push('clear'); }
+  });
+  const second = {};
+  const old = renderMath(first);
+  clearMath(first);
+  const current = renderMath(second);
+  assert.deepEqual(events, [first, 'clear']);
+  failure.resolve(Promise.reject(new Error('rejet de test')));
+  assert.equal(await current, true);
+  assert.equal(await old, false);
+  assert.deepEqual(events, [first, 'clear', 'clear', second]);
+});
+
+test('expiration : attente bornée, aucun accès concurrent, reprise après résolution réelle', async () => {
+  const pending = deferred(), calls = [];
+  const first = setup({ typesetPromise([target]) { calls.push(target); return pending.promise; } });
+  const options = {timeoutMs: 15};
+  const active = renderMath(first, options), waiting = renderMath({}, options);
+  assert.deepEqual(await Promise.all([active, waiting]), [false, false]);
+  assert.deepEqual(calls, [first]);
+  pending.resolve();
+  await new Promise(setImmediate);
+  const next = {};
+  assert.equal(await renderMath(next, options), true);
+  assert.deepEqual(calls, [first, next]);
 });
 

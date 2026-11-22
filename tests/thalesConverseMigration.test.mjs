@@ -142,7 +142,11 @@ test("clavier : première scène, aller/retour, bornes, dernière scène et corr
   assert.equal(app.container.children.at(-1).innerHTML, `<div>${before[14].html}</div>`);
   press("ArrowUp"); assert.equal(controller.getCurrentStepIndex(), 13);
   assert.equal(app.container.children.at(-1).innerHTML, correctionHtml(before[13].html));
-  app.pending.forEach(job => job.resolve()); await Promise.all(draws);
+  app.pending[0].resolve();
+  await draws[0];
+  assert.equal(app.pending.length, 2);
+  app.pending[1].resolve();
+  assert.equal((await Promise.all(draws)).at(-1), true);
   assert.deepEqual(app.completed, ["thalesConverseStatement"]);
 });
 
@@ -151,14 +155,16 @@ test("navigation rapide et fermeture : les anciennes compositions n'agissent pas
   const app = renderingFixture();
   const old = app.render(scenes[5]), next = app.render(scenes[8]), back = app.render(scenes[5]);
   const currentTargets = [...app.container.children];
-  app.pending[2].resolve(); await back;
-  app.pending[1].resolve(); app.pending[0].resolve(); await Promise.all([old, next]);
+  assert.equal(await next, false);
+  assert.equal(app.pending.length, 1);
+  app.pending[0].resolve(); await old;
+  app.pending[1].resolve(); assert.equal(await back, true);
   assert.deepEqual(app.completed, ["firstRatio"]);
   assert.deepEqual(app.container.children, currentTargets);
   assert.equal(app.container.children[1].innerHTML, scenes[5].html);
   const closed = app.render(scenes[14]);
   app.container.innerHTML = "Nouvel exercice";
-  app.pending[3].resolve(); await closed;
+  app.pending[2].resolve(); await closed;
   assert.deepEqual(app.completed, ["firstRatio"]);
   assert.equal(app.container.innerHTML, "Nouvel exercice");
 });

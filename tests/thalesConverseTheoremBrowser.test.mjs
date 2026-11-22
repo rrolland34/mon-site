@@ -1,9 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import http from "node:http";
 import { readFile } from "node:fs/promises";
 import { createRequire } from "node:module";
-import { resolve, dirname, extname } from "node:path";
+import { resolve, dirname, extname, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 const require=createRequire(import.meta.url);
 let playwright;try{playwright=require(process.env.PLAYWRIGHT_MODULE||"playwright");}catch{}
@@ -21,28 +20,31 @@ function measureFigureFromStatement(page, selector) {
 for(const engine of ["chromium","firefox"])test(`Thalès combiné : ${engine}, 1440/768/375/320 px et impression`,{
   skip:!playwright&&"Playwright indisponible (PLAYWRIGHT_MODULE).",timeout:240000
 },async t=>{
-  const server=http.createServer(async(req,res)=>{
-    try{
-      const path=resolve(root,decodeURIComponent(new URL(req.url,"http://localhost").pathname).slice(1));
-      if(!path.startsWith(root+"/")&&!path.startsWith(root+"\\"))throw new Error("Hors du dépôt");
-      res.setHeader("Content-Type",({".html":"text/html",".js":"text/javascript",".css":"text/css",".woff":"font/woff"})[extname(path)]||"application/octet-stream");
-      res.end(await readFile(path));
-    }catch{res.writeHead(404).end();}
-  });
-  await new Promise(r=>server.listen(0,"127.0.0.1",r));
   let browser;
   try{
     browser=await playwright[engine].launch({headless:true,...(process.env[`${engine.toUpperCase()}_TEST_EXECUTABLE`]?{executablePath:process.env[`${engine.toUpperCase()}_TEST_EXECUTABLE`]}:{})});
-    const base=`http://127.0.0.1:${server.address().port}/`;
+    const base="http://thales-combine.test/";
     for(const type of ["series-1","series-2","series-3"])for(const width of [1440,768,375,320])await t.test(`${type} / ${width}`,async()=>{
       const page=await browser.newPage({viewport:{width,height:1000}}),errors=[];
       page.setDefaultTimeout(10000);
       page.on("pageerror",e=>errors.push(e.message));
+      const seed = {"series-1":17,"series-2":2026,"series-3":98765}[type];
+      await page.addInitScript(seed => {
+        Math.random = () => ((seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0) / 2 ** 32);
+      }, seed);
       try {
       // Forcer seulement la famille dans la page du test ; code du dépôt inchangé.
-      await page.route("**/exercise_player.html*",async route=>{
-        const source=await readFile(resolve(root,"exercise_player.html"),"utf8");
-        await route.fulfill({body:source.replace("return generateThalesConverseTheoremExercise();",`return window.__thalesTestExercise = generateThalesConverseTheoremExercise({type: '${type}'});`).replace("https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js", base+"assets/vendor/mathjax-3.2.2/es5/tex-mml-chtml.js"),contentType:"text/html"});
+      await page.context().route("**/*",async route=>{
+        const url=new URL(route.request().url());
+        const file=resolve(root,decodeURIComponent(url.pathname).slice(1));
+        if(url.origin!==new URL(base).origin || !file.startsWith(root+sep)) return route.abort();
+        let body;
+        try { body=await readFile(file); }
+        catch (error) { if(error.code!=="ENOENT") throw error; return route.fulfill({status:404}); }
+        if(url.pathname==="/exercise_player.html") body=body.toString()
+          .replace("return generateThalesConverseTheoremExercise();",`return window.__thalesTestExercise = generateThalesConverseTheoremExercise({type: '${type}'});`)
+          .replace("https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js", base+"assets/vendor/mathjax-3.2.2/es5/tex-mml-chtml.js");
+        await route.fulfill({body,contentType:({".html":"text/html",".js":"text/javascript",".css":"text/css",".woff":"font/woff"})[extname(file)]});
       });
       // Rendre la vérification indépendante du CDN historique du lecteur.
       await page.goto(base+"exercise_player.html?exercise=thales-converse-theorem");
@@ -77,6 +79,25 @@ for(const engine of ["chromium","firefox"])test(`Thalès combiné : ${engine}, 1
       await page.locator("#submit-answer").click();
       assert.match(await page.locator("#proof-feedback").innerText(),/non répondue/);
       assert.match(await page.locator("#feedback").innerText(), /non saisie/);
+      const checkExpectedLength = async () => {
+        const expected = page.locator(".answer-feedback-expected");
+        await expected.locator("mjx-container").waitFor({timeout:3000});
+        const result = await expected.evaluate(async el => {
+          await document.fonts.ready;
+          const exercise = window.__thalesTestExercise;
+          const value = exercise.lengths[exercise.unknownSegment];
+          const [item] = MathJax.startup.document.getMathItemsWithin([el]);
+          const {left,right} = el.querySelector("mjx-math").getBoundingClientRect();
+          const bounds = el.getBoundingClientRect();
+          return {tex:item?.math, value, unit:exercise.unit,
+            fits:left >= bounds.left-1 && right <= bounds.right+1 && document.documentElement.scrollWidth <= innerWidth+2,
+            errors:el.querySelectorAll("mjx-merror,[data-mjx-error]").length};
+        });
+        assert.equal(result.tex, String(result.value).replace(".", "{,}") + String.raw`~\mathrm{${result.unit}}`);
+        assert.equal(result.errors, 0);
+        assert.ok(result.fits);
+      };
+      await checkExpectedLength();
       assert.equal(await page.locator(".step-correction-content, .step-correction-layout").count(),0);
       assert.equal(await page.locator("#exercise-content .thales-figure").count(),1);
       await page.locator("#export-exercise").click();
@@ -91,6 +112,11 @@ for(const engine of ["chromium","firefox"])test(`Thalès combiné : ${engine}, 1
       if(engine==="chromium"){const pdf=await popup.pdf({preferCSSPageSize:true});assert.ok(pdf.length>1000);}
       else {await popup.emulateMedia({media:"print"});assert.equal(await popup.locator(".evaluation-answer").isVisible(),true);}
       await popup.close();
+      await page.locator("#restart").click();
+      await page.locator("#user-answer").fill("0 m");
+      await page.locator("#submit-answer").click();
+      assert.match(await page.locator("#feedback").innerText(), /incorrecte/);
+      await checkExpectedLength();
       await page.goto(base+"exercise_player.html?exercise=thales-converse-theorem");
       await page.locator("#start").click();
       await page.evaluate(()=>window.MathJax.startup.promise);
@@ -226,8 +252,15 @@ for(const engine of ["chromium","firefox"])test(`Thalès combiné : ${engine}, 1
         await page.keyboard.press("ArrowUp");
         assert.equal(await readComposedProof(), previousProof);
       }
+      for (const key of ["ArrowUp","ArrowUp","Enter","ArrowUp","Enter","Shift+Enter"]) {
+        await page.keyboard.press(key);
+      }
+      assert.equal(await readComposedProof(), lastProof);
+      assert.equal(await page.locator(".answer-feedback-expected").count(),0);
+      assert.equal(await correction.locator("mjx-merror,[data-mjx-error]").count(),0);
+      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2));
       assert.deepEqual(errors,[]);
       } catch(error) { console.error(String(error), errors, await page.locator(".thales-math-statement mjx-container").count()); throw error; } finally { await page.close(); }
     });
-  }finally{await browser?.close();server.closeAllConnections();await new Promise(r=>server.close(r));}
+  }finally{await browser?.close();}
 });

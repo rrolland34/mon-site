@@ -1,3 +1,4 @@
+import {g23ExpectedHash} from './helpers/g23Reference.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import{readFile,writeFile}from'node:fs/promises';import{createHash}from'node:crypto';
 import{getQuestionAnswerMode,createEvaluationStatement,createEvaluationWithCorrection}from'../core/export/exportEvaluationContent.js';
 const fixtures=JSON.parse(await readFile(new URL('./fixtures/coordinatesCorrection.before.json',import.meta.url),'utf8'));
@@ -32,6 +33,6 @@ test('Modes Évaluation : opt-in local, direct/Point, QCM et répartition Mixte'
 test('Empreintes de toutes les autres séries et corrections progressives inchangées',async()=>{
  const dir=new URL('./fixtures/maintenance/correction-reperage-orthonorme/',import.meta.url);const hashes=JSON.parse(await readFile(new URL('hachages-avant.json',dir),'utf8'));
  const authorized=['core/export/exportExercise.js','core/export/exportEvaluationContent.js','core/export/exportCartesianFigures.js'];const changed=[];
- for(const[file,hash]of Object.entries(hashes)){const actual=createHash('sha256').update(await readFile(new URL('../'+file,import.meta.url))).digest('hex');if(actual!==hash)changed.push(file);}
+ for(const[file,hash]of Object.entries(hashes)){const actual=createHash('sha256').update(await readFile(new URL('../'+file,import.meta.url))).digest('hex');if(actual!==g23ExpectedHash(file,hash))changed.push(file);}
  assert.deepEqual(changed.sort(),authorized.sort());await writeFile(new URL('../output/correction-reperage-orthonorme/verification-perimetre.json',import.meta.url),JSON.stringify({checked:Object.keys(hashes).length,changed,otherFilesUnchanged:true},null,2));
 });

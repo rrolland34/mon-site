@@ -1,3 +1,4 @@
+import {g23ExpectedHash} from './helpers/g23Reference.mjs';
 import {historicalTestSource} from './helpers/historicalWhitespace.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -73,7 +74,7 @@ test('Antilles-Guyane : seul le raccordement du présentateur change dans la sou
 });
 test('Antilles-Guyane : empreintes des autres banques, validateurs locaux, figures, lecteur et exports',async()=>{
  const hashes=JSON.parse(await readFile(new URL('./fixtures/maintenance/automatismes-lot-16/hachages-avant.json',import.meta.url),'utf8'));
- for(const[file,hash]of Object.entries(hashes).filter(([file])=>!['exercices/scratch/reconnaitre_figures.js','main.js'].includes(file)).filter(([file])=>file!=='exercices/dnb/metropole_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/antilles_guyane_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/polynesie_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/sujet_0_num_2_decembre_2025_pro.js').filter(([file])=>file!=='exercices/dnb/sujet_0_num_1_decembre_2025_pro.js').filter(([file])=>file!=='exercices/dnb/polynesie_septembre_2026_gen.js').filter(([file])=>file!=='exercices/dnb/metropole_juin_2026_gen.js'))assert.equal(createHash('sha256').update(await readFile(new URL('../'+file,import.meta.url))).digest('hex'),hash,file);
+ for(const[file,hash]of Object.entries(hashes).filter(([file])=>!['exercices/scratch/reconnaitre_figures.js','main.js'].includes(file)).filter(([file])=>file!=='exercices/dnb/metropole_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/antilles_guyane_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/polynesie_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/sujet_0_num_2_decembre_2025_pro.js').filter(([file])=>file!=='exercices/dnb/sujet_0_num_1_decembre_2025_pro.js').filter(([file])=>file!=='exercices/dnb/polynesie_septembre_2026_gen.js').filter(([file])=>file!=='exercices/dnb/metropole_juin_2026_gen.js'))assert.equal(createHash('sha256').update(await readFile(new URL('../'+file,import.meta.url))).digest('hex'),g23ExpectedHash(file,hash),file);
  const names=['polynesiePresentation.test.mjs','centresPresentation.test.mjs','asiaPresentation.test.mjs','northPresentation.test.mjs','dnbReference1Presentation.test.mjs','dnbReference2Presentation.test.mjs','dnbZeroPresentation.test.mjs','statistiquesPresentation.test.mjs','zeroTwoEquality.test.mjs'];
  for(const name of names){
   const actual=historicalTestSource(await readFile(new URL('./'+name,import.meta.url),'utf8'),name);

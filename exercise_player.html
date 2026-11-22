@@ -1220,8 +1220,11 @@
         };
       }
 
-      if (exerciseConfig.family === "trigonometry" || exerciseConfig.family === "thales" || mathjaxPythagoras) clearMath(exerciseContent);
-      if (exerciseConfig.type === "converse-theorem") clearMath(exerciseContent.querySelector(".exercise-statement"));
+      clearMath(exerciseContent);
+      if (exerciseConfig.type === "converse-theorem") {
+        clearMath(exerciseContent.querySelector(".exercise-statement"));
+        clearMath(exerciseContent.querySelector("#feedback"));
+      }
       exerciseContent.innerHTML = `
         <div class="exercise-statement">
           ${exerciseConfig.type === "converse-theorem" ? createThalesConverseTheoremSlideshowStatement(generatedExercise)
@@ -1252,17 +1255,6 @@
             exerciseConfig.type === "converse-theorem" ? createThalesConverseTheoremSlideshowFigure(generatedExercise) : generatedExercise.figureOptions
           );
 
-        if (
-          exerciseConfig.family !== "thales" &&
-          exerciseConfig.type !== "converse-theorem" &&
-          window.MathJax &&
-          typeof MathJax.typesetPromise ===
-            "function"
-        ) {
-          MathJax.typesetPromise([
-            exerciseContent
-          ]);
-        }
       } else {
         figureContainer.innerHTML =
           createRightTriangleSVG({
@@ -1769,7 +1761,7 @@
                   ? exerciseConfig.type === "length"
                     ? String.raw`\(${formatAnswer(generatedExercise.roundedAnswer, "math")}~\mathrm{${generatedExercise.unit}}\)`
                     : String.raw`\(${generatedExercise.roundedAnswer}^\circ\)`
-                  : exerciseConfig.family === "thales"
+                  : exerciseConfig.family === "thales" || exerciseConfig.type === "converse-theorem"
                     ? String.raw`\(${formatAnswer(generatedExercise.lengths[generatedExercise.unknownSegment], "math")}~\mathrm{${generatedExercise.unit}}\)`
                     : undefined,
 
@@ -1787,7 +1779,7 @@
                   ? true
                   : evaluation.result.showCorrectAnswer ?? true
             });
-            if (["pythagoras", "trigonometry", "thales"].includes(exerciseConfig.family)) {
+            if (["pythagoras", "trigonometry", "thales"].includes(exerciseConfig.family) || exerciseConfig.type === "converse-theorem") {
               renderMath(document.getElementById("feedback"));
             }
           }
@@ -1852,14 +1844,13 @@
           );
         }
 
-        if (!mathjaxPythagoras && !["trigonometry", "thales"].includes(exerciseConfig.family) && window.MathJax) {
-          MathJax.typesetPromise([
-            proofContainer,
-            ...(exerciseConfig.type === "converse-theorem" ? [answerContainer] : [])
-          ]);
+        if (exerciseConfig.type === "converse-theorem") {
+          renderMath(proofContainer, { targets: [proofContainer, answerContainer] });
         }
       }
-      if (mathjaxPythagoras || ["trigonometry", "thales"].includes(exerciseConfig.family)) renderMath(exerciseContent);
+      if (exerciseConfig.type !== "converse-theorem") {
+        renderMath(exerciseContent, { targets: Array.from(exerciseContent.children) });
+      }
     }
 
     const params =

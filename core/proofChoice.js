@@ -1,4 +1,5 @@
 // core/proofChoice.js
+import { clearMath, renderMath } from "./mathRendering.js";
 
 export function createProofChoiceMenu(
   step, formatChoice = choice => choice
@@ -64,8 +65,11 @@ export function createProofChoiceMenu(
       optionButton.addEventListener(
         "click",
         function() {
-          choiceButton.innerHTML =
-            formatChoice(choice);
+          clearMath(choiceButton);
+          const label = document.createElement("span");
+          label.innerHTML = formatChoice(choice);
+          choiceButton.innerHTML = "";
+          choiceButton.appendChild(label);
 
           proofChoice.dataset.selectedChoice =
             choice;
@@ -73,11 +77,7 @@ export function createProofChoiceMenu(
           optionsContainer.style.display =
             "none";
 
-          if (window.MathJax) {
-            MathJax.typesetPromise([
-              choiceButton
-            ]);
-          }
+          renderMath(choiceButton, { targets: [label] });
         }
       );
 

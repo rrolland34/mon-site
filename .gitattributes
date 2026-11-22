@@ -6,3 +6,7 @@ tests/fixtures/maintenance/**/temoins-tests/*.mjs whitespace=-blank-at-eof
 tests/fixtures/maintenance/automatismes-lot-17/metropole.before.js whitespace=-blank-at-eol
 tests/fixtures/maintenance/automatismes-lot-18/metropole.before-wording.js whitespace=-blank-at-eol
 tests/fixtures/maintenance/automatismes-lot-24/main.before.js whitespace=-blank-at-eol
+
+# Les contrôles G4 vérifient les octets de ces deux sources après checkout.
+core/mathRendering.js text eol=lf
+core/proofChoice.js text eol=crlf

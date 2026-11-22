@@ -1,3 +1,4 @@
+import {sourceBeforeG4} from './helpers/g23Reference.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
@@ -19,7 +20,7 @@ for(const [name,hash]of Object.entries(originalTests)){
   test(`${name} : source historique exacte reconstruite`,async()=>{
     const actual=await source(name),restored=historicalTestSource(actual,name);
     assert.equal(sha(restored),hash);
-    if(name==='zeroTwoEquality.test.mjs')assert.equal(restored,actual+'\n');
+    if(name==='zeroTwoEquality.test.mjs')assert.equal(restored,sourceBeforeG4(actual,name)+'\n');
   });
   for(const [kind,mutate]of [
     ['code non autorisé',text=>'void 0;\n'+text],
@@ -92,3 +93,30 @@ test('aucune normalisation ni exemption pour un autre fichier ou une autre empre
   assert.equal(reviewedExpectedHash('exercices/autre.js',originalPresenter),originalPresenter);
   assert.equal(reviewedExpectedHash(presenter,'autre-empreinte'),'autre-empreinte');
 });
+
+for (const file of ['core/mathRendering.js', 'core/proofChoice.js']) {
+  test(`G4 : empreinte stricte après checkout de ${file}`, async () => {
+    const manifest = new URL('./fixtures/maintenance/correction-reperage-orthonorme/hachages-avant.json', import.meta.url);
+    const historical = JSON.parse(await readFile(manifest, 'utf8'))[file];
+    assert.match(historical, /^[0-9a-f]{64}$/);
+    const expected = reviewedExpectedHash(file, historical);
+    const bytes = await readFile(new URL('../' + file, import.meta.url));
+    assert.notEqual(expected, historical);
+    assert.equal(sha(bytes), expected);
+    assert.equal(reviewedExpectedHash('autre.js', historical), historical);
+    assert.equal(reviewedExpectedHash(file, expected), expected);
+    const otherHistorical = '0'.repeat(64);
+    assert.equal(reviewedExpectedHash(file, otherHistorical), otherHistorical);
+
+    for (const extra of [' ', '\n', '\r', 'void 0;']) {
+      assert.notEqual(sha(Buffer.concat([bytes, Buffer.from(extra)])), expected);
+    }
+    assert.notEqual(sha(bytes.subarray(0, -1)), expected);
+    const newline = bytes.indexOf(10);
+    assert.ok(newline > 0);
+    const alternate = bytes[newline - 1] === 13
+      ? Buffer.concat([bytes.subarray(0, newline - 1), bytes.subarray(newline)])
+      : Buffer.concat([bytes.subarray(0, newline), Buffer.from('\r'), bytes.subarray(newline)]);
+    assert.notEqual(sha(alternate), expected);
+  });
+}

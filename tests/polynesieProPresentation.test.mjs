@@ -1,3 +1,4 @@
+import {g23ExpectedHash} from './helpers/g23Reference.mjs';
 import {stripLot22TestChanges} from './helpers/lot22TestSources.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -63,7 +64,7 @@ test('Polynésie juin professionnelle : source inchangée hors présentateur',as
 });
 test('Polynésie juin professionnelle : empreintes des autres banques et quatre correctifs locaux',async()=>{
  const hashes=JSON.parse(await readFile(new URL('./fixtures/maintenance/automatismes-lot-21/hachages-avant.json',import.meta.url),'utf8'));
- for(const[file,hash]of Object.entries(hashes).filter(([file])=>!['exercices/scratch/reconnaitre_figures.js','main.js'].includes(file)).filter(([file])=>file!=='exercices/dnb/metropole_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/antilles_guyane_juin_2026_pro.js'))assert.equal(createHash('sha256').update(await readFile(new URL('../'+file,import.meta.url))).digest('hex'),hash,file);
+ for(const[file,hash]of Object.entries(hashes).filter(([file])=>!['exercices/scratch/reconnaitre_figures.js','main.js'].includes(file)).filter(([file])=>file!=='exercices/dnb/metropole_juin_2026_pro.js').filter(([file])=>file!=='exercices/dnb/antilles_guyane_juin_2026_pro.js'))assert.equal(createHash('sha256').update(await readFile(new URL('../'+file,import.meta.url))).digest('hex'),g23ExpectedHash(file,hash),file);
 });
 
 test('Tests historiques : seule la nouvelle exemption de banque est autorisée',async()=>{

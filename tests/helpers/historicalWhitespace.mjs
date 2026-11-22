@@ -1,3 +1,4 @@
+import {g23ExpectedHash, sourceBeforeG4} from './g23Reference.mjs';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 
@@ -10,7 +11,7 @@ const cleanedPresenter='32e9359dc58ef6f7d600431234e8914cf8b4083d1f9431cad42883dc
 // attendre strictement la version nettoyée (un espace retiré de la ligne 32).
 export function reviewedExpectedHash(file,historicalHash){
   return file===presenter && historicalHash===originalPresenter
-    ? cleanedPresenter : historicalHash;
+    ? cleanedPresenter : g23ExpectedHash(file,historicalHash);
 }
 
 // Ces raccordements de tests sont eux-mêmes contrôlés : les inverser exactement
@@ -64,7 +65,7 @@ const originalZero='b2bd04b47a61bfa4b29cd9c829cfac6841e3ca2f0b4292a17fc72d451a6e
 const originalMetropole='bfdeca6be7c8021bb77675042c3ae83f1a480e4a148e652a95f25d4f73924e4b';
 
 export function historicalTestSource(source,name){
-  let restored=source;
+  let restored=sourceBeforeG4(source,name);
   const integration=integrations.find(entry=>entry.name===name);
   if(integration){
     for(const patch of integration.restore){

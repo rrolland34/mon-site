@@ -1,3 +1,4 @@
+import {sourceBeforeG4, expectedProgressiveTest} from './helpers/g23Reference.mjs';
 import {reviewedExpectedHash} from './helpers/historicalWhitespace.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -91,6 +92,7 @@ test('Scratch figures : 256 fichiers protégés, sept correctifs, fixture techni
   // La préparation de publication sépare les entrées versionnées des sorties
   // locales. Comparer les assertions en neutralisant ces deux chemins seuls.
   let actual=await readFile(new URL('./'+name,import.meta.url),'utf8');
+  actual=sourceBeforeG4(actual,name);
   if(name==='coordinatesPresentation.test.mjs')actual=actual.replace("const output=new URL('../output/correction-reperage-orthonorme/',import.meta.url)","const output=new URL('./fixtures/maintenance/correction-reperage-orthonorme/',import.meta.url)");
   else actual=actual.replace("new URL('../output/correction-reperage-orthonorme/verification-perimetre.json',import.meta.url)","new URL('verification-perimetre.json',dir)");
   assert.equal(actual,await readFile(new URL('./fixtures/maintenance/automatismes-lot-20/temoins-tests/'+name,import.meta.url),'utf8'),name);
@@ -106,7 +108,9 @@ test('Scratch figures : adaptations historiques limitées et témoins inchangés
   } : structuredClone(series);`,'const fixture = structuredClone(scratch ? scratchSeries : series);');
   else if(name==='scratchSeries.test.mjs')actual=actual.replace("import {presentScratchFigureQuestion} from '../exercices/scratchFiguresPresentation.js';\n",'').replace('assert.equal(q.question,presentScratchFigureQuestion({...q,question:scratchStatement(q.progressiveCorrection.program)}).question)','assert.equal(q.question,scratchStatement(q.progressiveCorrection.program))');
   else actual=stripLot24TestChanges(actual,name);
-  assert.equal(actual.replace(/\r\n/g,'\n'),(await readFile(new URL('temoins-tests/'+name,out),'utf8')).replace(/\r\n/g,'\n'),name);
+  const witness=(await readFile(new URL('temoins-tests/'+name,out),'utf8')).replace(/\r\n/g,'\n');
+  const expected=name==='progressiveCorrections.test.mjs' ? expectedProgressiveTest(witness) : witness;
+  assert.equal(actual.replace(/\r\n/g,'\n'),expected,name);
  }
  const helper=await readFile(new URL('./helpers/lot23TestSources.mjs',import.meta.url),'utf8');
  assert.equal(helper.replace("import {stripLot24TestChanges} from './lot24TestSources.mjs';\n",'').replace(' source=stripLot24TestChanges(source,name);\n',''),await readFile(new URL('temoins-helpers/lot23TestSources.before.mjs',out),'utf8'));

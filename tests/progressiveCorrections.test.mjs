@@ -286,7 +286,7 @@ test("exports inchangés avec ou sans métadonnées progressives, direct et QCM"
   }
 });
 
-test("réutilisation du rendu statique : cible MathJax et nettoyage",()=>{
+test("réutilisation du rendu statique : cible MathJax et nettoyage",async()=>{
   const {doc}=fakeDocument(); globalThis.document=doc;
   const targets=[];const cleared=[];
   globalThis.MathJax={typesetPromise(nodes){targets.push(nodes);return Promise.resolve();},typesetClear(nodes){cleared.push(nodes);}};
@@ -294,6 +294,7 @@ test("réutilisation du rendu statique : cible MathJax et nettoyage",()=>{
   const container=doc.createElement("div");
   const player=createProgressiveCorrectionPlayer({container,steps:series.questions[0].progressiveCorrection.steps});
   player.start();const old=container.children[0];player.next();
+  await new Promise(setImmediate);
   assert.equal(targets.length,2);assert.notEqual(targets[0][0],targets[1][0]);assert.equal(old.parent,null);
   player.dispose();assert.equal(container.children.length,0);assert.equal(player.next(),false);assert.equal(player.previous(),false);
   assert.equal(cleared.length,2);
