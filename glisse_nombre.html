@@ -17,9 +17,11 @@
     rel="stylesheet"
     href="style.css"
   >
+  <script>window.MathJax = {startup: {typeset: false}};</script>
+  <script id="MathJax-script" async src="./assets/vendor/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body class="tool-page">
 
   <nav class="navbar">
     <ul class="nav-list">
@@ -176,12 +178,18 @@
 
     <div
       id="operation-display"
+      tabindex="0"
+      role="region"
+      aria-label="Calcul du glissement"
       class="operation-display"
     ></div>
 
 
     <div
       id="place-value-container"
+      tabindex="0"
+      role="region"
+      aria-label="Tableau de numération"
     ></div>
 
 
@@ -210,6 +218,7 @@
     import {
       formatAnswer
     } from "./core/answerFormatting.js";
+    import {decimalTex, replaceToolMath} from "./outils/toolMath.js";
 
 
     const valueInput =
@@ -253,7 +262,12 @@
       );
 
 
+    let calculation;
+    let revealResult;
+
     function generateTable() {
+      clearTimeout(revealResult);
+      calculation = null;
       const value =
         valueInput.value.trim();
 
@@ -272,11 +286,7 @@
        */
 
       if (value === "") {
-        operationDisplay.textContent =
-          "";
-
-        operationDisplay.dataset.result =
-          "";
+        replaceToolMath(operationDisplay, "");
 
         placeValueContainer.innerHTML =
           createPlaceValueTable({
@@ -310,11 +320,7 @@
           numericValue
         )
       ) {
-        operationDisplay.textContent =
-          "Nombre invalide.";
-
-        operationDisplay.dataset.result =
-          "";
+        replaceToolMath(operationDisplay, "Nombre invalide.");
 
         slideButton.disabled =
           true;
@@ -325,8 +331,8 @@
 
       const operationSymbol =
         operation === "multiply"
-          ? "×"
-          : "÷";
+          ? String.raw`\times`
+          : String.raw`\div`;
 
       const result =
         operation === "multiply"
@@ -349,13 +355,11 @@
         );
 
 
-      operationDisplay.textContent =
-        `${formattedValue} ` +
-        `${operationSymbol} ` +
-        `${formattedFactor}`;
-
-      operationDisplay.dataset.result =
-        formattedResult;
+      calculation = {
+        expression: `${decimalTex(formattedValue)} ${operationSymbol} ${decimalTex(formattedFactor)}`,
+        result: decimalTex(formattedResult)
+      };
+      replaceToolMath(operationDisplay, String.raw`\(${calculation.expression}\)`);
 
 
       placeValueContainer.innerHTML =
@@ -399,19 +403,10 @@
         slideButton.disabled =
           true;
 
-        setTimeout(
+        revealResult = setTimeout(
           () => {
-            const result =
-              operationDisplay
-                .dataset
-                .result;
-
-            if (!result) {
-              return;
-            }
-
-            operationDisplay.textContent +=
-              ` = ${result}`;
+            if (!calculation) return;
+            replaceToolMath(operationDisplay, String.raw`\(${calculation.expression} = ${calculation.result}\)`);
           },
           1400
         );

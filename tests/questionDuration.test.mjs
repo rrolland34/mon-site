@@ -2,6 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import vm from "node:vm";
+import { renderFlashMath } from "../core/flashMath.js";
+import { clearMath } from "../core/mathRendering.js";
 
 // Moteurs réels de session, de progression et de chronomètre ; seuls le DOM,
 // le rendu et les intervalles sont simulés pour avancer sans attendre.
@@ -36,13 +38,13 @@ function setup({ mode = "slideshow", shuffle = false, generated = false, beforeR
   function element(id) {
     if (!elements.has(id)) elements.set(id, {
       style: {}, classList: { add() {}, remove() {}, contains() { return false; } },
-      handlers: {},
+      handlers: {}, textContent: "",
       addEventListener(name, fn) { this.handlers[name] = fn; }, focus() {}
     });
     return elements.get(id);
   }
   const context = vm.createContext({
-    URLSearchParams, console,
+    URLSearchParams, console, renderFlashMath, clearMath,
     window: { location: { search: "?table=duration_test" }, addEventListener() {} },
     document: {
       getElementById: element, querySelector: element,

@@ -1,4 +1,5 @@
 import { validateProgram } from './scratchProgram.js';
+import { renderMath, clearMath } from '../mathRendering.js';
 import { createScratchCorrectionScene } from './scratchCorrectionScene.js';
 
 export function getScratchCorrection({ correctionMode, presentationMode, correction }) {
@@ -39,9 +40,7 @@ export function createScratchProgressiveAdapter({ container, descriptor, questio
   function reveal(value) {
     if (disposed) return;
     conclusion.hidden = !value;
-    if (value && !revealed && typeof globalThis.MathJax?.typesetPromise === 'function') {
-      globalThis.MathJax.typesetPromise([conclusion]).catch(error => console.error('Erreur MathJax dans la conclusion Scratch :', error));
-    }
+    if (value && !revealed) renderMath(conclusion);
     nextButton.disabled = value;
     if (revealed !== value) { revealed = value; onConclusion(value); }
   }
@@ -127,8 +126,10 @@ export function createScratchProgressiveAdapter({ container, descriptor, questio
     showAll,
     dispose() {
       if (disposed) return;
-      disposed = true; scene?.dispose(); scene = null; root.remove();
-      globalThis.MathJax?.typesetClear?.([conclusion]);
+      disposed = true; scene?.dispose(); scene = null;
+      clearMath(conclusion);
+      conclusion.replaceChildren();
+      root.remove();
       if (questionElement) questionElement.style.display = previousDisplay;
     }
   };

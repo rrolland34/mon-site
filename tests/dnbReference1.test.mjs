@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createCorrectionTestContainer } from './helpers/correctionTestDom.mjs';
 import { readFileSync } from 'node:fs';
 import series, { translationPoints, translationSegments, translationFigure, thalesConfig } from '../exercices/dnb/sujet_de_reference_num_1_septembre_2026_gen.js';
 import { loadExercise, getDnbSources } from '../core/exerciseLoader.js';
@@ -169,14 +170,15 @@ test('Q7 : quatre scènes autonomes et lecteur commun avant/arrière', () => {
   assert.match(steps[3].html, /data-translation-scene="4"/);
   assert.match(steps[3].html, /triangle.*EFM/);
   const seen = [];
-  const doc = { createElement: () => ({ className: '', setAttribute() {}, append() {}, remove() {} }) };
-  const player = createProgressiveCorrectionPlayer({ container: { ownerDocument: doc, replaceChildren() {} }, steps, render: ({ scene }) => seen.push(scene.html) });
+  const container = createCorrectionTestContainer();
+  const player = createProgressiveCorrectionPlayer({ container, steps, render: ({ scene }) => seen.push(scene.html) });
   player.start();
   for (let i = 1; i < 4; i++) assert.equal(player.next(), true);
   assert.equal(player.next(), false);
   assert.equal(player.previous(), true);
   assert.equal(seen.at(-1), steps[2].html);
   player.dispose();
+  assert.equal(container.children.length, 0);
   assert.match(q.display_answer, /data-translation-scene="4"/);
 });
 test('Q8 : composant Thalès, noms et longueurs de la configuration du PDF', () => {

@@ -34,6 +34,7 @@ import { displayAnswerFeedback } from '../core/answerFeedback.js';
 import { updateAnswerUI } from '../core/answerUI.js';
 import { storeAnswerForCorrections } from '../core/answerHistory.js';
 import { checkAnswerSmart } from '../core/correcteur.js';
+import { renderFlashMath } from '../core/flashMath.js';
 const mainSource = await readFile(new URL('../main.js', import.meta.url),'utf8');
 
 test('zones pédagogiques : demi-intervalles fermés, 0 et 30 minutes et passages circulaires',()=>{
@@ -56,9 +57,12 @@ test('Valider réel : réponse graphique, feedback, historique et score',()=>{
     const qcm=outcome.endsWith('-qcm'), expectedCorrect=outcome==='correct'||outcome==='correct-qcm';
     const q=generateQuestions(()=>0)[1], elements=new Map(), listeners={},lines=[];
     const make=()=>({style:{},dataset:{},classList:{add(){},remove(){}},attrs:{},handlers:{},children:[],value:'',textContent:'',
-      setAttribute(k,v){this.attrs[k]=v;},addEventListener(k,v){this.handlers[k]=v;},appendChild(node){this.children.push(node);}});
+      nodeType:1, parentNode:null,
+      get childNodes(){return this.children;},
+      setAttribute(k,v){this.attrs[k]=v;},addEventListener(k,v){this.handlers[k]=v;},
+      appendChild(node){node.parentNode=this;this.children.push(node);}});
     const element=id=>{if(!elements.has(id))elements.set(id,make());return elements.get(id);};
-    const doc={getElementById:element,querySelector:element,createElement:make,createElementNS:make,querySelectorAll:()=>element('qcm-buttons').children,
+    const doc={readyState:'complete',getElementById:element,querySelector:element,createElement:make,createElementNS:make,querySelectorAll:()=>element('qcm-buttons').children,
       addEventListener(k,v){listeners[k]=v;},removeEventListener(k){delete listeners[k];}};
     const svg={ownerDocument:doc,appendChild(line){lines.push(line);},querySelectorAll(selector){return lines.filter(line=>selector.includes(`"${line.attrs['data-control']}"`));},createSVGPoint(){return {matrixTransform(){return {x:this.x,y:this.y};}};},getScreenCTM(){return {inverse(){return {};}};}};
     element('question').querySelector=()=>svg;
@@ -85,7 +89,7 @@ test('Valider réel : réponse graphique, feedback, historique et score',()=>{
       setResponseLocked(value){ctx.responseLocked=value;},stopTimer(){},disposeQuestionInteraction:dispose,
       tableauSelectionne:[q],currentQuestionIndex:0,currentQuestionAnswerMode:qcm?'qcm':'direct',selectedQCMAnswer:selected,selectedCartesianPoint:null,
       presentationMode:'response',userAnswers:history,score:0,answeredCount:0,selectedQuestionCount:5,showCorrectAnswer:true,
-      evaluateCurrentAnswer,storeAnswerForCorrections,displayAnswerFeedback,updateAnswerUI,checkAnswerSmart,
+      evaluateCurrentAnswer,storeAnswerForCorrections,displayAnswerFeedback,updateAnswerUI,checkAnswerSmart,renderFlashMath,
       getDisplayAnswer:question=>question.display_answer,getCorrectQCMAnswer,
       handleSessionCompletion:()=>false,startCorrectionsMode(){},displayFinalScore(){},prepareFinalScreen(){},hideTimer(){}});
     vm.runInContext(mainSource.slice(mainSource.indexOf('function checkAnswer()'),mainSource.indexOf('function nextQuestion()')),ctx);

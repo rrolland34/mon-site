@@ -1,3 +1,4 @@
+import {clearMath} from "./mathRendering.js";
 // core/questionDisplay.js
 
 export function getQuestionText(
@@ -25,13 +26,17 @@ export function displayQuestionContent({
   selectedQuestionCount,
   answerMode
 }) {
-  document.getElementById("question").innerHTML =
+  const statement = document.getElementById("question");
+  clearMath(statement);
+  statement.innerHTML =
     getQuestionText(
       question,
       answerMode
     );
 
-  document.getElementById("feedback").textContent = "";
+  const feedback = document.getElementById("feedback");
+  clearMath(feedback);
+  feedback.textContent = "";
 
   // Mettre à jour le numéro de question
   const counterEl =

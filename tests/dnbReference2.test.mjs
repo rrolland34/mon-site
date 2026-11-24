@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createCorrectionTestContainer } from './helpers/correctionTestDom.mjs';
 import { readFileSync } from 'node:fs';
 import series, { validateFiveDigitMultiple, pentagonPoints, rosettePoints, rotationCorrespondences, rotateAroundB, rosetteFigure, scratchProgram, scratchSource, motifFigure } from '../exercices/dnb/sujet_de_reference_num_2_septembre_2026_gen.js';
 import { loadExercise, getDnbSources } from '../core/exerciseLoader.js';
@@ -167,10 +168,24 @@ test('Q8 : scènes progressives autonomes et retours', () => {
   }
   assert.match(steps[1].html,/BCFGH/);assert.match(steps[2].html,/ABHIJ/);
   assert.match(steps[3].html,/BCFGH/);assert.match(steps[3].html,/ABHIJ/);
-  const seen=[],doc={createElement:()=>({setAttribute(){},append(){},remove(){}})};
-  const player=createProgressiveCorrectionPlayer({container:{ownerDocument:doc,replaceChildren(){}},steps,render:({scene})=>seen.push(scene.html)});
-  player.start(); for(let i=1;i<4;i++) assert.equal(player.next(),true);
+  const seen = [], container = createCorrectionTestContainer();
+  const player = createProgressiveCorrectionPlayer({
+    container, steps,
+    render({container: content, scene}) {
+      seen.push(scene.html);
+      const target = content.ownerDocument.createElement('div');
+      target.innerHTML = scene.html;
+      content.append(target);
+    }
+  });
+  player.start();
+  const firstTarget = container.children[0].children[1].children[0];
+  assert.equal(firstTarget.innerHTML, steps[0].html);
+  for(let i=1;i<4;i++) assert.equal(player.next(),true);
+  assert.equal(firstTarget.isConnected, false);
+  assert.equal(firstTarget.innerHTML, '');
   assert.equal(player.next(),false); assert.equal(player.previous(),true); assert.equal(seen.at(-1),steps[2].html); player.dispose();
+  assert.equal(container.children.length, 0);
 });
 test('Q9 : transcription, six motifs et correspondance exacte avec le programme', () => {
   assert.match(scratchSource,/aller à x: \(-200\) y: \(0\)\neffacer tout\nstylo en position d'écriture\nrépéter \(6\) fois/);
@@ -208,11 +223,11 @@ test('MathJax dès la source et typographie habituelle sans réduction', () => {
     assert.doesNotMatch(q.question,/Mobiliser|Automatiser|Interpréter une suite|cycle 4/);
   }
 });
-test('Q9 : la conclusion animée est composée en MathJax à sa révélation', () => {
+test('Q9 : la conclusion animée est composée en MathJax à sa révélation', async () => {
   const targets=[],cleared=[];
-  const doc={createElement:()=>({style:{},children:[],append(...nodes){this.children.push(...nodes);},setAttribute(){},addEventListener(){},remove(){}})};
-  const container={ownerDocument:doc,replaceChildren(){}};
-  globalThis.MathJax={typesetPromise(nodes){targets.push(nodes);return Promise.resolve();},typesetClear(nodes){cleared.push(nodes);}};
+  const container = createCorrectionTestContainer();
+  const composition = Promise.resolve();
+  globalThis.MathJax={typesetPromise(nodes){targets.push(nodes);return composition;},typesetClear(nodes){cleared.push(nodes);}};
   const player=createScratchProgressiveAdapter({container,descriptor:series.questions[8].progressiveCorrection,createScene:()=>({
     execution:{trace:[]},setAxes(){},getState:()=>({ended:true,index:0,progress:0,running:false}),seek(){},dispose(){}
   })});
@@ -221,7 +236,11 @@ test('Q9 : la conclusion animée est composée en MathJax à sa révélation', (
     assert.equal(player.next(),true); assert.equal(targets.length,1);
     assert.equal(targets[0][0].innerHTML,series.questions[8].progressiveCorrection.conclusion);
     assert.equal(targets[0][0].hidden,false);
+    // La file doit avoir terminé cette composition avant le scénario de fermeture.
+    await composition;
     player.dispose(); assert.deepEqual(cleared,targets);
+    assert.equal(targets[0][0].isConnected, false);
+    assert.equal(targets[0][0].innerHTML, '');
   } finally { delete globalThis.MathJax; }
 });
 for(const answerMode of ['direct','qcm']) test(`session, historique et six exports : ${answerMode}`,()=>{

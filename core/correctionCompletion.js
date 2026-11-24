@@ -1,3 +1,4 @@
+import {clearMath} from "./mathRendering.js";
 // core/correctionCompletion.js
 
 export function completeCorrectionSession({
@@ -25,10 +26,12 @@ export function completeCorrectionSession({
     document.getElementById("next");
 
   if (questionElement) {
+    clearMath(questionElement);
     questionElement.innerHTML = "";
   }
 
   if (feedbackElement) {
+    clearMath(feedbackElement);
     feedbackElement.textContent = "";
   }
 

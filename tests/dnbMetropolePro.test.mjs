@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createCorrectionTestContainer } from './helpers/correctionTestDom.mjs';
 import { readFileSync } from 'node:fs';
 import series, { bicycleScenes } from '../exercices/dnb/metropole_juin_2026_pro.js';
 import { loadExercise, getDnbSources } from '../core/exerciseLoader.js';
@@ -122,8 +123,8 @@ test('Q9 : sept scènes, orientations, parcours et conclusion autonome', () => {
   assert.equal(getProgressiveCorrectionSteps({ correctionMode: 'progressive', presentationMode: 'response', correction: series.questions[8] }), null);
   // Le lecteur commun atteint chaque scène et permet un retour en arrière.
   const seen = [];
-  const doc = { createElement: () => ({ className: '', setAttribute() {}, append() {}, remove() {} }) };
-  const player = createProgressiveCorrectionPlayer({ container: { ownerDocument: doc, replaceChildren() {} }, steps, render: ({ scene }) => seen.push(scene.html) });
+  const container = createCorrectionTestContainer();
+  const player = createProgressiveCorrectionPlayer({ container, steps, render: ({ scene }) => seen.push(scene.html) });
   player.start();
   for (let i = 1; i < 7; i++) assert.equal(player.next(), true);
   assert.deepEqual(seen, steps.map(s => s.html));
@@ -131,6 +132,7 @@ test('Q9 : sept scènes, orientations, parcours et conclusion autonome', () => {
   assert.equal(player.previous(), true);
   assert.equal(seen.at(-1), steps[5].html);
   player.dispose();
+  assert.equal(container.children.length, 0);
 });
 for (const answerMode of ['direct', 'qcm']) test(`session, historique, diaporama et exports : ${answerMode}`, () => {
   const before = JSON.stringify(series);

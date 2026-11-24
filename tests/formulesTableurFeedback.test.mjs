@@ -35,7 +35,7 @@ for(const presentationMode of ['response','slideshow'])for(const answerMode of [
    const context=vm.createContext({document:doc,window:{},tableauSelectionne:[q],currentQuestionIndex:0,currentQuestionAnswerMode:answerMode,selectedQCMAnswer:userAnswer,
     presentationMode,score:0,answeredCount:0,selectedQuestionCount:2,showCorrectAnswer:true,currentCorrectionIndex:0,exercice:series,userAnswers:[],progressiveCorrectionPlayer:null,
     checkAnswerSmart,getDisplayAnswer,getCorrectQCMAnswer:()=>q.qcmAnswer,
-    displayAnswerFeedback,
+    displayAnswerFeedback, renderFlashMath() {},
     handleSessionCompletion:()=>false,stopTimer(){},startCorrectionsMode(){},displayFinalScore(){},prepareFinalScreen(){},hideTimer(){},
     disposeProgressiveCorrection(){},getProgressiveCorrectionSteps,
     renderCorrectionAnswer,showFinalScore(){}

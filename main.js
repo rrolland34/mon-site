@@ -1,8 +1,9 @@
+import {renderFlashMath} from "./core/flashMath.js";
 import { initializeDnbGenerator } from "./core/dnbGeneratorUI.js";
 import { createScratchProgressiveAdapter, getScratchCorrection } from "./core/scratch/scratchProgressiveAdapter.js";
 import { createScratchReasoningAdapter } from './core/scratch/scratchReasoningAdapter.js';
 import { createSpreadsheetCorrectionAdapter } from './core/spreadsheetCorrectionAdapter.js';
-import { displayQCMOptions, highlightCorrectQCMButton } from "./core/qcm.js";
+import { highlightCorrectQCMButton } from "./core/qcm.js";
 import {
   createProgressiveCorrectionPlayer,
   getProgressiveCorrectionSteps
@@ -36,7 +37,8 @@ import {
 
 import {
   displayCorrectionQuestion as renderCorrectionQuestion,
-  displayCorrectionAnswer as renderCorrectionAnswer
+  displayCorrectionAnswer as renderCorrectionAnswer,
+  setCorrectionChoiceHighlight
 } from "./core/corrections.js";
 
 import {
@@ -409,12 +411,12 @@ function displayQuestion() {
     disposeQuestionInteraction = q.initializeResponse?.({ document });
   }
 
+  // Some banks add mathematical labels to the statement or between the inputs.
+  renderFlashMath(document.getElementById("question"));
+  renderFlashMath(document.getElementById("multi-answer-container"));
+
   // Utiliser la durée attribuée à cette question par la session.
   resetTimer(q.time, handleTimeUp);
-
-  if (window.MathJax) {
-    MathJax.typeset();
-  }
 
   if (window.scratchblocks) {
     scratchblocks.renderMatching(
@@ -837,9 +839,7 @@ function processAnswer(
     }
   }
 
-  if (window.MathJax) {
-    MathJax.typeset();
-  }
+  renderFlashMath(document.getElementById("feedback"));
 
   if (isCorrect) {
     score++;
@@ -1030,8 +1030,7 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
       questionElement: document.getElementById('question'),
       onConclusion(visible) {
         if (correction.answerMode !== 'qcm') return;
-        displayQCMOptions({possible_answers:correction.qcmAnswersOrder,qcmAnswersOrder:correction.qcmAnswersOrder,qcmClass:correction.qcmClass,qcmRenderAnswer:correction.qcmRenderAnswer},true);
-        if (visible) highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer);
+        highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer, visible);
       }
     });
     progressiveCorrectionPlayer.start({atEnd});
@@ -1042,8 +1041,7 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
       questionElement: document.getElementById("question"),
       onConclusion(visible) {
         if (correction.answerMode !== "qcm") return;
-        displayQCMOptions({ possible_answers: correction.qcmAnswersOrder, qcmAnswersOrder: correction.qcmAnswersOrder, qcmClass: correction.qcmClass, qcmRenderAnswer: correction.qcmRenderAnswer }, true);
-        if (visible) highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer);
+        highlightCorrectQCMButton(correction.correctQCMAnswer ?? correction.correctAnswer, visible);
       }
     });
     progressiveCorrectionPlayer.start({ atEnd });
@@ -1068,15 +1066,15 @@ function displayCorrectionAnswer({ atEnd = false } = {}) {
         });
       },
       beforeRender({ isLastStep }) {
-        // Reconstruire le QCM retire le vert lors d'un retour en arrière.
-        // La bonne proposition n'est révélée qu'à la conclusion.
-        if (correction.answerMode === "qcm") {
-          renderCorrectionQuestion({
-            correction,
-            index: currentCorrectionIndex,
-            total: userAnswers.length
+        if (correction.answerMode !== "qcm") return;
+        if (Array.isArray(correction.qcmPoints)) {
+          highlightCartesianQCMPoints({
+            svg: document.querySelector(".cartesian-plane"),
+            selectedPoint: null,
+            correctPoint: isLastStep ? correction.correctAnswer : null
           });
-          if (isLastStep) renderCorrectionAnswer(correction);
+        } else {
+          setCorrectionChoiceHighlight(correction, isLastStep);
         }
       }
     });

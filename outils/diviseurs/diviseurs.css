@@ -192,3 +192,18 @@
   font-size: 1rem;
   font-weight: 600;
 }
+
+@media (max-width: 850px) {
+  .divisor-list {
+    flex-direction: column;
+  }
+
+  .divisor-group {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .divisor-gap {
+    display: none;
+  }
+}

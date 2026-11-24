@@ -1,4 +1,5 @@
 import { createStepCorrection } from "./stepCorrection.js";
+import { clearMath } from "./mathRendering.js";
 import { renderStepCorrection, createCompleteCorrectionScene } from "./stepCorrectionRenderer.js";
 
 // Données éditoriales de confiance, comme question et display_answer.
@@ -35,13 +36,19 @@ export function createProgressiveCorrectionPlayer({
 }) {
   const progression = createStepCorrection({ stepCount: steps.length });
   let slot = null;
+  let content = null;
   let disposed = false;
 
   function clearView() {
     if (slot) {
-      globalThis.MathJax?.typesetClear?.([slot]);
+      clearMath(content);
+      // A custom renderer can register its own MathItems outside our queue.
+      if (render !== renderStepCorrection) globalThis.MathJax?.typesetClear?.([slot]);
+      // A typeset already in flight may still scan these retired targets.
+      for (const target of content.children) target.replaceChildren();
       slot.remove();
       slot = null;
+      content = null;
     }
   }
 
@@ -56,7 +63,7 @@ export function createProgressiveCorrectionPlayer({
     const label = container.ownerDocument.createElement("p");
     label.className = "progressive-correction-counter";
     label.textContent = complete ? "Correction complète" : `Étape ${progression.getCurrentStepIndex() + 1}/${steps.length}`;
-    const content = container.ownerDocument.createElement("div");
+    content = container.ownerDocument.createElement("div");
     slot.append(label, content);
     container.replaceChildren(slot);
     render({ container: content, scene: complete

@@ -1,3 +1,4 @@
+import {clearMath} from "./mathRendering.js";
 // core/questionControls.js
 
 import { displayQCMOptions }
@@ -47,6 +48,7 @@ export function configureQuestionControls({
       "multi-answer-container"
     );
 
+  clearMath(multiAnswerContainer);
   multiAnswerContainer.classList.remove(
     "proportionality-answer-fields"
   );
@@ -61,6 +63,12 @@ export function configureQuestionControls({
 
   const qcmOptions =
     document.getElementById("qcm-options");
+
+  if (answerMode !== "qcm" || Array.isArray(question.qcmPoints)) {
+    const previousChoices = document.getElementById("qcm-buttons");
+    clearMath(previousChoices);
+    previousChoices.innerHTML = "";
+  }
 
   if (
     Array.isArray(

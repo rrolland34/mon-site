@@ -521,6 +521,7 @@ export function highlightCartesianQCMPoints({
         y === selectedPoint.y;
 
       const isCorrect =
+        correctPoint != null &&
         x === correctPoint.x &&
         y === correctPoint.y;
 

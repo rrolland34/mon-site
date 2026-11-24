@@ -1,3 +1,5 @@
+import {mathNumbers, replaceToolMath} from '../toolMath.js';
+
 const numberInput =
   document.getElementById(
     "number-input"
@@ -248,7 +250,7 @@ function createDivisorListHTML(
             `<span class="divisor-value` +
             `${isCommon ? " common-divisor" : ""}` +
             `">` +
-            `${divisor}` +
+            `${mathNumbers(divisor)}` +
             `</span>`
           );
         }
@@ -256,7 +258,7 @@ function createDivisorListHTML(
       .join(" ; ");
 
   return (
-    `Diviseurs de ${number} : ` +
+    `Diviseurs de ${mathNumbers(number)} : ` +
     divisorsHTML
   );
 }
@@ -305,10 +307,11 @@ function buildDemonstration(
       squareRoot
     );
 
+  const isIntegerRoot = Number.isInteger(squareRoot);
+  // Une racine calculée peut être arrondie à un entier pour un grand non-carré.
+  const isExactRoot = isIntegerRoot && BigInt(squareRoot) ** 2n === BigInt(number);
   const displayedSquareRoot =
-    Number.isInteger(
-      squareRoot
-    )
+    isIntegerRoot
       ? `${squareRoot}`
       : squareRoot
           .toFixed(8)
@@ -317,6 +320,8 @@ function buildDemonstration(
             ","
           );
 
+
+  const squareRootDisplay = `√${number} ${isExactRoot ? "=" : "≈"} ${displayedSquareRoot}`;
 
   const steps =
     [
@@ -345,7 +350,7 @@ function buildDemonstration(
           "",
 
         calculator:
-          `√${number} = ${displayedSquareRoot}`,
+          squareRootDisplay,
 
         message:
           "",
@@ -362,7 +367,7 @@ function buildDemonstration(
           "",
 
         calculator:
-          `√${number} = ${displayedSquareRoot}`,
+          squareRootDisplay,
 
         message:
           "",
@@ -628,8 +633,7 @@ function renderStep() {
     return;
   }
 
-  comparisonResult.innerHTML =
-    "";
+  replaceToolMath(comparisonResult, "");
 
 
   const step =
@@ -642,29 +646,24 @@ function renderStep() {
     step.finalDivisors
   ) {
 
-    leftDivisors.innerHTML =
-      createDivisorListHTML(
+    replaceToolMath(leftDivisors, createDivisorListHTML(
         step.finalNumber,
         step.finalDivisors
-      );
+      ));
 
   } else {
 
-    leftDivisors.textContent =
-      step.left;
+    replaceToolMath(leftDivisors, mathNumbers(step.left));
   }
 
-  rightDivisors.textContent =
-    step.right;
+  replaceToolMath(rightDivisors, mathNumbers(step.right));
 
   calculatorScreen.textContent =
     step.calculator;
 
-  divisorMessage.textContent =
-    step.message;
+  replaceToolMath(divisorMessage, mathNumbers(step.message));
 
-  searchBound.textContent =
-    step.bound;
+  replaceToolMath(searchBound, mathNumbers(step.bound));
 
 
   divisorGap.style.display =
@@ -801,11 +800,10 @@ function nextStep() {
         currentNumber
       );
 
-    firstFinalList.innerHTML =
-      createDivisorListHTML(
+    replaceToolMath(firstFinalList, createDivisorListHTML(
         currentNumber,
         firstDivisors
-      );
+      ));
 
     firstFinalList.style.display =
       "block";
@@ -878,11 +876,10 @@ function previousStep() {
           firstNumber
         );
 
-      firstFinalList.innerHTML =
-        createDivisorListHTML(
+      replaceToolMath(firstFinalList, createDivisorListHTML(
           firstNumber,
           firstDivisors
-        );
+        ));
 
       renderStep();
 
@@ -939,14 +936,12 @@ function previousStep() {
     comparisonStep =
       0;
 
-    firstFinalList.innerHTML =
-      "";
+    replaceToolMath(firstFinalList, "");
 
     firstFinalList.style.display =
       "none";
 
-    comparisonResult.innerHTML =
-      "";
+    replaceToolMath(comparisonResult, "");
 
     renderStep();
 
@@ -972,20 +967,16 @@ function restartDemonstration() {
   demonstrationSteps =
     [];
 
-  leftDivisors.textContent =
-    "";
+  replaceToolMath(leftDivisors, "");
 
-  rightDivisors.textContent =
-    "";
+  replaceToolMath(rightDivisors, "");
 
   calculatorScreen.textContent =
     "";
 
-  divisorMessage.textContent =
-    "";
+  replaceToolMath(divisorMessage, "");
 
-  searchBound.textContent =
-    "";
+  replaceToolMath(searchBound, "");
 
   divisorGap.style.display =
     "none";
@@ -996,8 +987,7 @@ function restartDemonstration() {
   secondNumberInput.value =
     "";
 
-  firstFinalList.textContent =
-    "";
+  replaceToolMath(firstFinalList, "");
 
   firstFinalList.style.display =
     "none";
@@ -1008,8 +998,7 @@ function restartDemonstration() {
   comparisonStep =
     0;
 
-  comparisonResult.innerHTML =
-    "";
+  replaceToolMath(comparisonResult, "");
 
   inputMessage.textContent =
     "";
@@ -1043,26 +1032,23 @@ function renderComparisonStep() {
       : [];
 
 
-  firstFinalList.innerHTML =
-    createDivisorListHTML(
+  replaceToolMath(firstFinalList, createDivisorListHTML(
       firstNumber,
       firstDivisors,
       highlightedDivisors
-    );
+    ));
 
   firstFinalList.style.display =
     "block";
 
 
-  leftDivisors.innerHTML =
-    createDivisorListHTML(
+  replaceToolMath(leftDivisors, createDivisorListHTML(
       currentSecondNumber,
       secondDivisors,
       highlightedDivisors
-    );
+    ));
 
-  rightDivisors.textContent =
-    "";
+  replaceToolMath(rightDivisors, "");
 
   divisorGap.style.display =
     "none";
@@ -1071,32 +1057,18 @@ function renderComparisonStep() {
   calculatorScreen.textContent =
     "";
 
-  searchBound.textContent =
-    "";
+  replaceToolMath(searchBound, "");
 
-  divisorMessage.textContent =
-    "";
+  replaceToolMath(divisorMessage, "");
 
-  comparisonResult.innerHTML =
-    "";
+  let comparisonHTML = "";
 
 
   if (
     comparisonStep >= 2
   ) {
 
-    const commonLine =
-      document.createElement(
-        "div"
-      );
-
-    commonLine.textContent =
-      "Diviseurs communs : " +
-      commonDivisors.join(" ; ");
-
-    comparisonResult.appendChild(
-      commonLine
-    );
+    comparisonHTML += `<div>Diviseurs communs : ${mathNumbers(commonDivisors.join(" ; "))}</div>`;
   }
 
 
@@ -1109,20 +1081,13 @@ function renderComparisonStep() {
         commonDivisors.length - 1
       ];
 
-    const greatestLine =
-      document.createElement(
-        "div"
-      );
-
-    greatestLine.textContent =
-      `Le plus grand diviseur commun de ` +
-      `${firstNumber} et ${currentSecondNumber} ` +
-      `est ${greatestCommonDivisor}.`;
-
-    comparisonResult.appendChild(
-      greatestLine
-    );
+    comparisonHTML +=
+      `<div>Le plus grand diviseur commun de ` +
+      `${mathNumbers(firstNumber)} et ${mathNumbers(currentSecondNumber)} ` +
+      `est ${mathNumbers(greatestCommonDivisor)}.</div>`;
   }
+
+  replaceToolMath(comparisonResult, comparisonHTML);
 }
 
 

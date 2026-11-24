@@ -1,9 +1,11 @@
+import {clearMath} from "./mathRendering.js";
+import {renderFlashMath} from "./flashMath.js";
 // core/corrections.js
 
 import { formatAnswer } from "./answerFormatting.js";
 import { correctionHtml, CORRECTION_RED_CSS } from './correctionColors.js';
 
-import { displayQCMOptions } from "./qcm.js";
+import { displayQCMOptions, setQCMButtonHighlight } from "./qcm.js";
 
 import {
   displayCartesianPoint,
@@ -62,6 +64,7 @@ export function displayCorrectionQuestion({
     document.getElementById("question-counter");
 
   if (questionElement) {
+    clearMath(questionElement);
 
     const correctionQuestion =
       correction.question;
@@ -108,6 +111,7 @@ export function displayCorrectionQuestion({
   }
 
   if (feedbackElement) {
+    clearMath(feedbackElement);
     feedbackElement.textContent = "";
   }
 
@@ -116,6 +120,7 @@ export function displayCorrectionQuestion({
   }
 
   if (qcmButtonsContainer) {
+    clearMath(qcmButtonsContainer);
     qcmButtonsContainer.innerHTML = "";
   }
 
@@ -222,7 +227,7 @@ export function displayCorrectionQuestion({
       `Correction ${index + 1}/${total}`;
   }
 
-  typesetMath();
+  renderFlashMath(questionElement);
 }
 
 /**
@@ -244,6 +249,7 @@ export function displayCorrectionAnswer(correction, { answerOnly = false } = {})
       );
 
     if (feedbackElement) {
+      clearMath(feedbackElement);
       feedbackElement.textContent = "";
     }
 
@@ -283,7 +289,6 @@ export function displayCorrectionAnswer(correction, { answerOnly = false } = {})
       });
     }
 
-    typesetMath();
     return;
   }
 
@@ -299,6 +304,7 @@ export function displayCorrectionAnswer(correction, { answerOnly = false } = {})
       );
 
     if (feedbackElement) {
+      clearMath(feedbackElement);
       feedbackElement.textContent = "";
     }
 
@@ -322,7 +328,6 @@ export function displayCorrectionAnswer(correction, { answerOnly = false } = {})
       });
     }
 
-    typesetMath();
     return;
   }
 
@@ -331,46 +336,17 @@ export function displayCorrectionAnswer(correction, { answerOnly = false } = {})
 
   if (correction.answerMode === "qcm") {
     if (feedbackElement) {
+      clearMath(feedbackElement);
       if (answerOnly) {
         feedbackElement.innerHTML = correctionHtml(correction.displayAnswer ?? correction.correctAnswer);
+        renderFlashMath(feedbackElement);
       } else {
         feedbackElement.textContent = "";
       }
     }
 
-    const buttons =
-      document.querySelectorAll(
-        "#qcm-buttons button"
-      );
+    setCorrectionChoiceHighlight(correction, true);
 
-    const correctQCMAnswer =
-      correction.correctQCMAnswer ??
-      correction.correctAnswer;
-
-    const correctAnswerIndex =
-      correction.qcmAnswersOrder.findIndex(
-        (answer) =>
-          String(answer) ===
-          String(correctQCMAnswer)
-      );
-
-    const correctButton =
-      buttons[correctAnswerIndex];
-
-    if (correctButton) {
-      correctButton.style.background =
-        "#4CAF50";
-
-      correctButton.style.color =
-        "white";
-
-      correctButton.style.borderColor =
-        "#45a049";
-
-      correctButton.style.opacity = "1";
-    }
-
-    typesetMath();
     return;
   }
 
@@ -461,35 +437,22 @@ export function displayCorrectionAnswer(correction, { answerOnly = false } = {})
       );
   }
 
+  clearMath(feedbackElement);
   feedbackElement.innerHTML =
     (answerOnly ? "" : "Solution : ") + correctionHtml(displayedAnswer);
 
   feedbackElement.style.color =
     CORRECTION_RED_CSS;
 
-  typesetMath();
+  renderFlashMath(feedbackElement);
 }
 
-/**
- * Demande à MathJax d'actualiser les formules.
- */
-function typesetMath() {
-  if (!window.MathJax) {
-    return;
-  }
-
-  if (typeof MathJax.typesetPromise === "function") {
-    MathJax.typesetPromise().catch((error) => {
-      console.error(
-        "Erreur pendant le rendu MathJax :",
-        error
-      );
-    });
-
-    return;
-  }
-
-  if (typeof MathJax.typeset === "function") {
-    MathJax.typeset();
-  }
+// Only the recorded correct option changes when a correction is revealed or hidden.
+export function setCorrectionChoiceHighlight(correction, visible) {
+  const correct = correction.correctQCMAnswer ?? correction.correctAnswer;
+  const index = correction.qcmAnswersOrder.findIndex(answer => String(answer) === String(correct));
+  const button = document.querySelectorAll("#qcm-buttons button")[index];
+  if (!button) return;
+  setQCMButtonHighlight(button, visible);
+  button.style.opacity = visible ? "1" : "0.6";
 }

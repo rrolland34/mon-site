@@ -59,6 +59,12 @@
 }
 
 
+.factorization-result,
+.comparison-result {
+  /* Autoriser un retour à la ligne dans le texte en attente de composition. */
+  overflow-wrap: anywhere;
+}
+
 .factorization-result {
   min-height: 40px;
   margin: 20px auto;
@@ -204,4 +210,10 @@
     font-size: 1.3rem;
   }
 
+}
+
+@media (max-width: 600px) {
+  .factorizations-zone {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

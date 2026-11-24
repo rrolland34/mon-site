@@ -76,8 +76,9 @@ function setup({ mode = "slideshow", answerMode = "direct", enabled = true, scra
     loadExercise: () => fixture,
     getProgressiveCorrectionSteps,
     getScratchCorrection,
-    displayQCMOptions() { highlighted = false; },
-    highlightCorrectQCMButton() { highlighted = true; },
+    highlightCorrectQCMButton(answer, visible = true) { highlighted = visible; },
+    setCorrectionChoiceHighlight(correction, visible) { highlighted = visible; },
+    renderFlashMath() {},
     createScratchProgressiveAdapter: options => createScratchProgressiveAdapter({ ...options, createScene({program,onState}) {
       const execution=executeProgram(program), callbacks=new Map(); let id=0, time=0;
       const playback=createAnimationPlayback({durations:execution.trace.map(()=>100),
@@ -297,7 +298,8 @@ test("réutilisation du rendu statique : cible MathJax et nettoyage",async()=>{
   await new Promise(setImmediate);
   assert.equal(targets.length,2);assert.notEqual(targets[0][0],targets[1][0]);assert.equal(old.parent,null);
   player.dispose();assert.equal(container.children.length,0);assert.equal(player.next(),false);assert.equal(player.previous(),false);
-  assert.equal(cleared.length,2);
+  // The first render was in flight: clear it on retirement and again on completion.
+  assert.deepEqual(cleared,[targets[0],targets[0],targets[1]]);
   delete globalThis.MathJax;
 });
 

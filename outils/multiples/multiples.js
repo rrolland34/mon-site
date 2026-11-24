@@ -1,3 +1,5 @@
+import {mathNumbers, replaceToolMath} from '../toolMath.js';
+
 const oneNumberButton =
   document.getElementById(
     "one-number-button"
@@ -173,11 +175,6 @@ function renderStep() {
       : secondNumber;
 
 
-  const multiplesText =
-    step.multiples.join(
-      " ; "
-    );
-
   const isSecondListComplete =
     numberMode === 2 &&
     currentNumberPosition === 2 &&
@@ -195,14 +192,16 @@ function renderStep() {
         )
       : [];
 
+  let html;
+
   if (
     numberMode === 2 &&
     currentNumberPosition === 2
   ) {
 
-    multiplesResult.innerHTML =
+    html =
       `<div>` +
-        `Multiples de ${firstNumber} :` +
+        `Multiples de ${mathNumbers(firstNumber)} :` +
       `</div>` +
 
       `<div>` +
@@ -215,7 +214,7 @@ function renderStep() {
       `<br>` +
 
       `<div>` +
-        `Multiples de ${secondNumber} :` +
+        `Multiples de ${mathNumbers(secondNumber)} :` +
       `</div>` +
 
       `<div>` +
@@ -246,11 +245,11 @@ function renderStep() {
             " ; "
           );
 
-      multiplesResult.innerHTML +=
+      html +=
         `<br>` +
         `<div>` +
           `Multiples communs : ` +
-          `${commonMultiplesText} ; ...` +
+          `${mathNumbers(commonMultiplesText)} ; ...` +
         `</div>`;
     }
 
@@ -264,11 +263,11 @@ function renderStep() {
         secondNumber
       );
 
-    multiplesResult.innerHTML +=
+    html +=
       `<div>` +
         `Les multiples communs à ` +
-        `${firstNumber} et ${secondNumber} ` +
-        `sont les multiples de ${lcm}.` +
+        `${mathNumbers(firstNumber)} et ${mathNumbers(secondNumber)} ` +
+        `sont les multiples de ${mathNumbers(lcm)}.` +
       `</div>`;
   }
 
@@ -282,28 +281,30 @@ function renderStep() {
         secondNumber
       );
 
-    multiplesResult.innerHTML +=
+    html +=
       `<br>` +
 
       `<div>` +
         `Le plus petit multiple commun à ` +
-        `${firstNumber} et ${secondNumber} ` +
-        `est ${lcm}.` +
+        `${mathNumbers(firstNumber)} et ${mathNumbers(secondNumber)} ` +
+        `est ${mathNumbers(lcm)}.` +
       `</div>`;
   }
 
   } else {
 
-    multiplesResult.innerHTML =
+    html =
       `<div>` +
-        `Multiples de ${displayedNumber} :` +
+        `Multiples de ${mathNumbers(displayedNumber)} :` +
       `</div>` +
 
       `<div>` +
-        multiplesText +
+        formatMultiplesList(step.multiples) +
       `</div>`;
   }
 
+
+  replaceToolMath(multiplesResult, html);
 
   calculatorScreen.textContent =
     step.calculator;
@@ -800,8 +801,7 @@ function restart() {
   secondNumber =
     null;
 
-  multiplesResult.textContent =
-    "";
+  replaceToolMath(multiplesResult, "");
 
   calculatorScreen.textContent =
     "";
@@ -895,12 +895,12 @@ function formatMultiplesList(
 
           return (
             `<span class="common-multiple">` +
-              `${multiple}` +
+              `${mathNumbers(multiple)}` +
             `</span>`
           );
         }
 
-        return multiple;
+        return mathNumbers(multiple);
       }
     )
     .join(

@@ -82,6 +82,7 @@ export function initializeAngleSelect({document}) {
     const button=event.target.closest('button[data-value]');if(!button||!menu.contains(button))return;
     input.value=button.dataset.value;
     // Réutiliser le rendu déjà composé, sans afficher un instant du LaTeX brut.
+    globalThis.MathJax?.typesetClear?.([summary]);
     summary.innerHTML=button.innerHTML;menu.open=false;summary.focus();
   };
   const keydown=event=>{
@@ -90,7 +91,10 @@ export function initializeAngleSelect({document}) {
   };
   menu.addEventListener('click',choose);menu.addEventListener('keydown',keydown);
   document.getElementById('question').querySelector('.remediation-number').appendChild(menu);
-  return ()=>{menu.removeEventListener('click',choose);menu.removeEventListener('keydown',keydown);menu.remove();input.style.display=previousDisplay;};
+  return ()=>{
+    globalThis.MathJax?.typesetClear?.([menu]);
+    menu.removeEventListener('click',choose);menu.removeEventListener('keydown',keydown);menu.remove();input.style.display=previousDisplay;
+  };
 }
 export function angleQuestion(index) {
   const result=[0,0,1,2,0,0,1,2,0,0][index],ids=['=','>','<','?'];

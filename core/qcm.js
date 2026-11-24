@@ -1,3 +1,5 @@
+import {clearMath} from "./mathRendering.js";
+import {renderFlashMath} from "./flashMath.js";
 // core/qcm.js
 
 import {
@@ -372,6 +374,7 @@ export function displayQCMOptions(
     qcmOptionsElement.style.display = "block";
   }
 
+  clearMath(qcmButtonsContainer);
   qcmButtonsContainer.innerHTML = "";
 
   if (
@@ -427,11 +430,7 @@ export function displayQCMOptions(
     qcmButtonsContainer.appendChild(btn);
   });
 
-  if (window.MathJax?.typesetPromise) {
-    window.MathJax.typesetPromise([
-      qcmButtonsContainer
-    ]);
-  }
+  renderFlashMath(qcmButtonsContainer);
 }
 
 function selectQCMButton(selectedButton) {
@@ -450,7 +449,7 @@ function selectQCMButton(selectedButton) {
 }
 
 export function highlightCorrectQCMButton(
-  correctAnswer
+  correctAnswer, visible = true
 ) {
   const buttons =
     document.querySelectorAll(
@@ -470,16 +469,15 @@ export function highlightCorrectQCMButton(
       normalizedButtonAnswer ===
       normalizedCorrectAnswer
     ) {
-      btn.style.background =
-        "#4CAF50";
-
-      btn.style.color =
-        "white";
-
-      btn.style.borderColor =
-        "#45a049";
+      setQCMButtonHighlight(btn, visible);
     }
   });
+}
+
+export function setQCMButtonHighlight(button, visible) {
+  button.style.background = visible ? "#4CAF50" : "#ffffff";
+  button.style.color = visible ? "white" : "#333";
+  button.style.borderColor = visible ? "#45a049" : "#333";
 }
 
 export function highlightIncorrectQCMButton(userAnswer) {

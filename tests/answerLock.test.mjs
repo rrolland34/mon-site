@@ -87,7 +87,7 @@ function setup({ answerMode = "direct", questions, mode = "response" } = {}) {
     handleSessionCompletion, handleSlideshowCompletion, advanceQuestionProgress,
     getDisplayAnswer: q => q.answers[0], getCorrectQCMAnswer: ({ question }) => question.answers[0],
     displayAnswerFeedback: result => feedback.push(result),
-    displayQuestionContent() {}, updateMathKeyboard() {},
+    displayQuestionContent() {}, updateMathKeyboard() {}, renderFlashMath() {},
     displayFinalScore() {}, prepareStandardFinalScreen() {},
     hideTimer() {}, hideCorrectionOverlay() {}, showCorrectionOverlay() {},
     setInterval(fn) { intervals.set(++intervalId, fn); return intervalId; }, clearInterval: id => intervals.delete(id)

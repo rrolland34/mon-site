@@ -1,6 +1,7 @@
 import {
   formatAnswer
 } from "../../core/answerFormatting.js";
+import {replaceToolMath} from "../toolMath.js";
 
 
 const oneNumberButton =
@@ -529,19 +530,7 @@ function renderStep() {
   calculatorScreen.textContent =
     step.calculator;
 
-  factorizationResult.innerHTML =
-    step.result || "";
-
-  if (
-    window.MathJax &&
-    window.MathJax.typesetPromise &&
-    factorizationResult.innerHTML !== ""
-  ) {
-
-    MathJax.typesetPromise([
-      factorizationResult
-    ]);
-  }
+  replaceToolMath(factorizationResult, step.result || "");
 }
 
 
@@ -593,62 +582,30 @@ function saveFirstFactorization() {
   firstFactorizationTable.innerHTML =
     factorizationTable.innerHTML;
 
-  firstFactorizationResult.innerHTML =
-    factorizationResult.innerHTML;
+  replaceToolMath(firstFactorizationResult, factorizationSteps[currentStep].result);
 
   firstFactorization.style.display =
     "grid";
 }
 
 
+function showFactorizations(firstText, secondText) {
+  replaceToolMath(firstFactorizationResult, `\\(${firstNumber}=${firstText}\\)`);
+  replaceToolMath(factorizationResult, `\\(${currentSecondNumber}=${secondText}\\)`);
+}
+
+
 function renderComparisonStep() {
 
-  comparisonResult.innerHTML =
-    "";
+  let comparisonHTML = "";
 
 
-  if (
-    comparisonStep === 0
-  ) {
-
-    resetFactorizationColors();
-
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult
-        ]
-      );
-    }
-
-    return;
-  }
-
-
-  if (
-    comparisonStep === 6
-  ) {
-
-    resetFactorizationColors();
-
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult
-        ]
-      );
-    }
-
+  if (comparisonStep === 0 || comparisonStep === 6) {
+    showFactorizations(
+      createPrimeFactorization(firstNumber),
+      createPrimeFactorization(currentSecondNumber)
+    );
+    replaceToolMath(comparisonResult, "");
     return;
   }
 
@@ -671,25 +628,9 @@ function renderComparisonStep() {
         )
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
 
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
-
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult
-        ]
-      );
-    }
-
+    replaceToolMath(comparisonResult, comparisonHTML);
     return;
   }
 
@@ -712,11 +653,7 @@ function renderComparisonStep() {
         )
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
-
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
 
     const allPrimeFactors =
       getAllPrimeFactors(
@@ -734,26 +671,13 @@ function renderComparisonStep() {
           " ; "
         );
 
-    comparisonResult.innerHTML =
+    comparisonHTML =
       `<div>` +
         `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
         factorsText +
       `</div>`;
 
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult,
-          comparisonResult
-        ]
-      );
-    }
-
+    replaceToolMath(comparisonResult, comparisonHTML);
     return;
   }
 
@@ -774,11 +698,7 @@ function renderComparisonStep() {
         firstNumber
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
-
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
 
     const allPrimeFactors =
       getAllPrimeFactors(
@@ -796,26 +716,13 @@ function renderComparisonStep() {
           " ; "
         );
 
-    comparisonResult.innerHTML =
+    comparisonHTML =
       `<div>` +
         `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
         factorsText +
       `</div>`;
 
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult,
-          comparisonResult
-        ]
-      );
-    }
-
+    replaceToolMath(comparisonResult, comparisonHTML);
     return;
   }
 
@@ -836,11 +743,7 @@ function renderComparisonStep() {
         firstNumber
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
-
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
 
     const allPrimeFactors =
       getAllPrimeFactors(
@@ -864,7 +767,7 @@ function renderComparisonStep() {
         currentSecondNumber
       );
 
-    comparisonResult.innerHTML =
+    comparisonHTML =
       `<div>` +
         `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
         factorsText +
@@ -877,20 +780,7 @@ function renderComparisonStep() {
         `\\(${lcmFactorization}\\)` +
       `</div>`;
 
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult,
-          comparisonResult
-        ]
-      );
-    }
-
+    replaceToolMath(comparisonResult, comparisonHTML);
     return;
   }
 
@@ -911,11 +801,7 @@ function renderComparisonStep() {
         firstNumber
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
-
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
 
     const allPrimeFactors =
       getAllPrimeFactors(
@@ -945,7 +831,7 @@ function renderComparisonStep() {
         currentSecondNumber
       );
 
-    comparisonResult.innerHTML =
+    comparisonHTML =
       `<div>` +
         `Facteurs premiers présents dans au moins une des deux décompositions :<br>` +
         factorsText +
@@ -964,20 +850,7 @@ function renderComparisonStep() {
         `\\(${lcmFactorization}=${formatAnswer(lcm, "math")}\\).` +
       `</div>`;
 
-    if (
-      window.MathJax &&
-      window.MathJax.typesetPromise
-    ) {
-
-      MathJax.typesetPromise(
-        [
-          firstFactorizationResult,
-          factorizationResult,
-          comparisonResult
-        ]
-      );
-    }
-
+    replaceToolMath(comparisonResult, comparisonHTML);
     return;
   }
 
@@ -990,7 +863,7 @@ function renderComparisonStep() {
 
 
   if (
-    comparisonStep >= 1
+    comparisonStep < 3
   ) {
 
     const firstFactorizationText =
@@ -1009,11 +882,7 @@ function renderComparisonStep() {
         commonFactors
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
-
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
   }
 
 
@@ -1025,7 +894,7 @@ function renderComparisonStep() {
       commonFactors.length === 0
     ) {
 
-      comparisonResult.innerHTML +=
+      comparisonHTML +=
         `<div>` +
           `Les deux nombres n'ont aucun facteur premier commun.` +
         `</div>`;
@@ -1042,7 +911,7 @@ function renderComparisonStep() {
             " ; "
           );
 
-      comparisonResult.innerHTML +=
+      comparisonHTML +=
         `<div>` +
           `Facteurs premiers communs : ` +
           factorsText +
@@ -1067,11 +936,7 @@ function renderComparisonStep() {
         firstNumber
       );
 
-    firstFactorizationResult.innerHTML =
-      `\\(${firstNumber}=${firstFactorizationText}\\)`;
-
-    factorizationResult.innerHTML =
-      `\\(${currentSecondNumber}=${secondFactorizationText}\\)`;
+    showFactorizations(firstFactorizationText, secondFactorizationText);
   }
 
 
@@ -1085,7 +950,7 @@ function renderComparisonStep() {
         currentSecondNumber
       );
 
-    comparisonResult.innerHTML +=
+    comparisonHTML +=
       `<div>` +
         `Pour le plus grand diviseur commun, ` +
         `on garde les facteurs premiers communs ` +
@@ -1111,7 +976,7 @@ function renderComparisonStep() {
         currentSecondNumber
       );
 
-    comparisonResult.innerHTML +=
+    comparisonHTML +=
       `<div>` +
         `Le plus grand diviseur commun de ` +
         `${firstNumber} et ${currentSecondNumber} est ` +
@@ -1120,19 +985,7 @@ function renderComparisonStep() {
   }
 
 
-  if (
-    window.MathJax &&
-    window.MathJax.typesetPromise
-  ) {
-
-    MathJax.typesetPromise(
-      [
-        firstFactorizationResult,
-        factorizationResult,
-        comparisonResult
-      ]
-    );
-  }
+  replaceToolMath(comparisonResult, comparisonHTML);
 }
 
 
@@ -1399,8 +1252,7 @@ function previousStep() {
     firstFactorizationTable.innerHTML =
       "";
 
-    firstFactorizationResult.innerHTML =
-      "";
+    replaceToolMath(firstFactorizationResult, "");
 
     renderStep();
   }
@@ -1430,8 +1282,7 @@ function restart() {
   factorizationTable.innerHTML =
     "";
 
-  factorizationResult.innerHTML =
-    "";
+  replaceToolMath(factorizationResult, "");
 
   calculatorScreen.textContent =
     "";
@@ -1448,8 +1299,7 @@ function restart() {
   firstFactorizationTable.innerHTML =
     "";
 
-  firstFactorizationResult.innerHTML =
-    "";
+  replaceToolMath(firstFactorizationResult, "");
 
   currentSecondNumber =
     null;
@@ -1457,17 +1307,13 @@ function restart() {
   comparisonStep =
     0;
 
-  comparisonResult.innerHTML =
-    "";
+  replaceToolMath(comparisonResult, "");
 
   firstFactorizationTable.style.minHeight =
     "";
 
   factorizationTable.style.minHeight =
     "";
-
-  reservedRowCount =
-    null;
 
   numberInput.focus();
 }
@@ -1949,34 +1795,6 @@ function getGcdFromPrimeFactors(
   );
 
   return gcd;
-}
-
-
-function resetFactorizationColors() {
-
-  firstFactorizationResult.innerHTML =
-    createFactorizationResult(
-      firstNumber,
-      buildFactorizationSteps(
-        firstNumber
-      )[
-        buildFactorizationSteps(
-          firstNumber
-        ).length - 1
-      ].rows
-    );
-
-  factorizationResult.innerHTML =
-    createFactorizationResult(
-      currentSecondNumber,
-      buildFactorizationSteps(
-        currentSecondNumber
-      )[
-        buildFactorizationSteps(
-          currentSecondNumber
-        ).length - 1
-      ].rows
-    );
 }
 
 
