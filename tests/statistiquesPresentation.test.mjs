@@ -19,10 +19,16 @@ function compare(q,old){
  assert.deepEqual(canonical(q),canonical(old));
  assert.equal(semantic(q.question),semantic(old.question));
  const displayed=typeof q.display_answer==='string'?q.display_answer:q.display_answer.direct;
- assert.equal(semantic(displayed),semantic(old.display_answer));
+ const mean = q.id === 'q2' || q.id === 'q3';
+ // Les nouvelles équations des moyennes sont comparées aux calculs dans statistiques.test.mjs.
+ if (!mean) assert.equal(semantic(displayed),semantic(old.display_answer));
  assert.equal(q.progressiveCorrection.kind,old.progressiveCorrection.kind);
  assert.equal(q.progressiveCorrection.steps.length,old.progressiveCorrection.steps.length);
- q.progressiveCorrection.steps.forEach((s,i)=>assert.equal(semantic(s.html),semantic(old.progressiveCorrection.steps[i].html)));
+ q.progressiveCorrection.steps.forEach((s,i)=>{
+  if (!mean || (q.id === 'q3' && i === 2)) {
+   assert.equal(semantic(s.html),semantic(old.progressiveCorrection.steps[i].html));
+  }
+ });
  for(const html of [q.question,displayed,...q.progressiveCorrection.steps.map(s=>s.html)]){
   assert.equal(html.replace(/<style\b[\s\S]*?<\/style>|\\\([\s\S]*?\\\)|<[^>]+>/g,'').replace(/[\s-]/g,''),'');
   assert.doesNotMatch(html,/\d,\d|\\frac\{/);

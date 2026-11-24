@@ -6,14 +6,16 @@ import { parseAnswer } from '../core/answerParser.js';
 const math = text => `\\(${text}\\)`;
 const number = value => formatAnswer(value, 'math');
 const sum = values => values.reduce((a,b)=>a+b,0);
-// Garder le calcul entier dans un seul groupe MathJax.
-const meanFraction = (numerator, denominator) => {
-  const terms = numerator.split('+');
-  const limit = numerator.includes(String.raw`\times`) ? 2 : 4;
-  const top = terms.length > limit
-    ? String.raw`\begin{aligned}&${terms.slice(0,limit).join('+')}\\&{}+${terms.slice(limit).join('+')}\end{aligned}`
-    : numerator;
-  return math(String.raw`\text{Moyenne}=\dfrac{${top}}{${denominator}}`);
+const meanFraction = (numerator, denominator, result) => {
+  const quotient = result === undefined ? '' : '=' + number(result);
+  return meanStyles + `<div class="statistics-mean">${math(String.raw`\text{Moyenne}=\dfrac{${numerator}}{${denominator}}${quotient}`)}</div>`;
+};
+// Autoriser le repli entre deux groupes de termes dans le même numérateur.
+const meanSum = (terms, splitAfter) => {
+  if (terms.length <= splitAfter) return terms.join('+');
+  const first = terms.slice(0, splitAfter).join('+');
+  const second = terms.slice(splitAfter).join('+');
+  return String.raw`\class{statistics-mean-sum}{\class{statistics-mean-terms}{${first}}\class{statistics-mean-terms}{{}+${second}}}`;
 };
 // Une fraction réduite a une écriture décimale finie si son dénominateur
 // ne contient que des facteurs 2 et 5. Aucun arrondi des distracteurs.
@@ -40,6 +42,18 @@ const presentationStyles = `<style>
   .flash-reader:has(.statistics-content) #mixed-qcm-control {
     flex-basis:100%; justify-content:center; margin-left:0 !important;
   }
+}
+</style>`;
+const meanStyles = `<style>
+.statistics-mean { container-type:inline-size; }
+.statistics-mean mjx-mrow.statistics-mean-sum {
+  display:flex; flex-wrap:wrap; justify-content:center; row-gap:.15em;
+  /* Réserver la largeur de « Moyenne = » à gauche de la fraction. */
+  max-width:calc(100cqi - 6em);
+}
+.statistics-mean .statistics-mean-terms { flex:none; }
+.statistics-mean mjx-assistive-mml {
+  width:1px !important; height:1px !important; overflow:hidden !important;
 }
 </style>`;
 const correctionStyles = `<style>
@@ -101,22 +115,23 @@ export function generateQuestions(random = Math.random) {
     display_answer:{direct:wrap(steps.map(redCorrection).join('')),qcm:wrap(steps.map(redCorrection).join(''))},
     progressiveCorrection:{kind:'steps',steps:steps.map(html=>({html:wrap(redCorrection(html))}))},statisticsData:data
   });
-  const table=`<table style="border-collapse:collapse;width:100%;max-width:560px;table-layout:fixed;margin:16px auto">${[['Note',...weightedNotes],['Effectif',...counts]].map(row=>`<tr>${row.map((v,i)=>`<${i?'td':'th'} style="border:1px solid currentColor;padding:8px 2px;text-align:center;font-weight:normal">${i?math(number(v)):v}</${i?'td':'th'}>`).join('')}</tr>`).join('')}</table>`;
+  // La colonne des libellés est dimensionnée pour « Effectif », le plus long.
+  const table=`<table style="border-collapse:collapse;width:100%;max-width:560px;table-layout:fixed;margin:16px auto"><colgroup><col style="width:calc(4em + 5px)"></colgroup>${[['Note',...weightedNotes],['Effectif',...counts]].map(row=>`<tr>${row.map((v,i)=>`<${i?'td':'th'} style="border:1px solid currentColor;padding:8px 2px;text-align:center;font-weight:normal">${i?math(number(v)):v}</${i?'td':'th'}>`).join('')}</tr>`).join('')}</table>`;
   const middle=Math.floor(medianNotes.length/2);
   return [
     question('q1',`<p>Calculer la fréquence des notes inférieures ou égales à ${math(threshold)} de cette série.</p><p>Exprimer le résultat en pourcentage et arrondir à l’unité.</p>`+listHtml(frequencyNotes),{notes:frequencyNotes,threshold},frequency,[
       `Nombre de notes concernées : ${math(count)}`,`Effectif total : ${math(frequencyNotes.length)}`,math(`\\dfrac{${count}}{${frequencyNotes.length}}\\times100`),`Fréquence arrondie : ${math(`${frequency}~\\%`)}`
     ],[roundPercentage(frequencyNotes.length-count,frequencyNotes.length),roundPercentage(Math.min(count+1,frequencyNotes.length),frequencyNotes.length),roundPercentage(Math.max(0,count-1),frequencyNotes.length),roundPercentage(count,frequencyNotes.length+1),...Array.from({length:frequencyNotes.length+1},(_,n)=>roundPercentage(n,frequencyNotes.length))],true),
     question('q2',`<p>Calculer la moyenne de cette série.</p>`+listHtml(meanNotes),{notes:meanNotes},mean,[
-      'On additionne toutes les notes, puis on divise par le nombre de notes.',
-      meanFraction(meanNotes.join('+'),meanNotes.length),
-      math(`\\text{Moyenne}=${number(mean)}`)
+      meanFraction(String.raw`\text{Somme des valeurs}`, String.raw`\text{Nombre de valeurs}`),
+      meanFraction(meanSum(meanNotes, 4), meanNotes.length),
+      meanFraction(total, meanNotes.length, mean)
     ],[total,finiteQuotient(total,meanNotes.length-1),finiteQuotient(total-meanNotes[0],meanNotes.length),finiteQuotient(total+meanNotes.at(-1),meanNotes.length)]),
     question('q3',`<p>Calculer la moyenne de cette série.</p>`+table,{notes:weightedNotes,counts},weightedMean,[
-      "On multiplie chaque note par son effectif, on additionne les résultats, puis on divise par l'effectif total.",
-      meanFraction(weightedNotes.map((n,i)=>`${n}\\times${counts[i]}`).join('+'),counts.join('+')),
-      meanFraction(products.join('+'),population),
-      math(`\\text{Moyenne}=${number(weightedMean)}`)
+      meanFraction(String.raw`\text{Somme des produits}`, String.raw`\text{Effectif total}`),
+      meanFraction(meanSum(weightedNotes.map((n, i) => String.raw`${n}\times${counts[i]}`), 2), counts.join('+')),
+      meanFraction(products.join('+'), population),
+      meanFraction(weightedTotal, population, weightedMean)
     ],[finiteQuotient(sum(weightedNotes),4),finiteQuotient(weightedTotal+counts[0],population),finiteQuotient(weightedTotal,population-1),finiteQuotient(weightedTotal-weightedNotes[0]*(counts[0]-1),population)]),
     question('q4',`<p>Calculer la médiane de cette série.</p>`+listHtml(medianNotes),{notes:medianNotes},med,[
       `Effectif total : ${math(medianNotes.length)}`,(medianNotes.length%2 ? `Valeur de rang ${math(middle+1)} : ${math(medianNotes[middle])}` : `Valeurs de rangs ${math(middle)} et ${math(middle+1)} : ${math(medianNotes[middle-1])} et ${math(medianNotes[middle])}`),

@@ -96,6 +96,7 @@ async function measure(page) {
       figures: [...document.querySelectorAll('#question svg')].map(node => ({ markup: node.outerHTML, ...box(node) })),
       mathWidth: Math.max(0, ...visible.filter(node => node.matches("mjx-container")).map(node => box(node).width)),
       errors: document.querySelectorAll("mjx-merror,[data-mjx-error]").length, over, math,
+      nested: document.querySelectorAll("mjx-container mjx-container").length,
       unbracedComma: math.filter(tex => /\d,\d/.test(tex)),
       prose: [...document.querySelectorAll("#question,#qcm-buttons button,.step-correction-content")].map(node => {
         const clone = node.cloneNode(true);
@@ -109,10 +110,51 @@ async function measure(page) {
 function checkMath(metrics, width) {
   assert.equal(metrics.errors, 0);
   if (before) return;
-  assert.equal(metrics.document, width);
+  assert.equal(metrics.nested, 0);
+  assert.equal(metrics.document, width, JSON.stringify(metrics.over));
   assert.deepEqual(metrics.over, []);
   assert.deepEqual(metrics.prose, []);
   assert.deepEqual(metrics.unbracedComma, []);
+}
+
+async function checkMeanTable(page) {
+  const layout = await page.locator('#question .statistics-content table').evaluate(table => {
+    const labels = [...table.querySelectorAll('th')].map(cell => {
+      const math = cell.querySelector('mjx-container').getBoundingClientRect();
+      const box = cell.getBoundingClientRect();
+      return { left: math.left - box.left, right: box.right - math.right };
+    });
+    const widths = [...table.rows[0].cells].slice(1).map(cell => cell.getBoundingClientRect().width);
+    return { labels, difference: Math.max(...widths) - Math.min(...widths) };
+  });
+  for (const { left, right } of layout.labels) {
+    assert.ok(left >= 2 && right >= 2, JSON.stringify(layout));
+    assert.ok(Math.abs(left - right) < 1, 'Libellé centré');
+  }
+  assert.ok(layout.difference < 1, 'Colonnes numériques de même largeur : ' + JSON.stringify(layout));
+}
+
+async function checkMeanStep(page, { width, seed, id, step }) {
+  const layout = await page.locator('.step-correction-content').evaluate(node => {
+    const blocks = [...node.querySelectorAll('mjx-container')];
+    const sum = node.querySelector('mjx-mrow.statistics-mean-sum');
+    const tops = sum ? [...sum.children].map(child => child.getBoundingClientRect().top) : [];
+    return {
+      blocks: blocks.length,
+      assistive: node.querySelectorAll('mjx-assistive-mml > math').length,
+      color: getComputedStyle(blocks[0] ?? node).color,
+      groups: tops.length,
+      wraps: tops.length > 1 && Math.max(...tops) - Math.min(...tops) > 1
+    };
+  });
+  assert.equal(layout.blocks, 1, 'Un seul bloc MathJax par étape de moyenne');
+  assert.equal(layout.assistive, 1);
+  assert.equal(layout.color, 'rgb(255, 138, 128)');
+  if (step === 1) assert.equal(layout.groups, 2, 'Deux groupes de termes pouvant se replier');
+  if (width >= 768) assert.equal(layout.wraps, false, 'Numérateur sur une ligne');
+  if (width === 320 && seed === 17 && id === 'q3' && step === 1) {
+    assert.equal(layout.wraps, true, 'Les produits pondérés se replient sur mobile');
+  }
 }
 
 async function capture(page, name) {
@@ -140,17 +182,15 @@ async function start(page, id, seed, width, mode, presentation) {
   await composed(page);
 }
 
-test("Statistiques : vrai lecteur, saisie, QCM et corrections aux trois largeurs", {
+test("Statistiques : vrai lecteur, saisie, QCM et corrections aux quatre largeurs", {
   skip: !chromium && "PLAYWRIGHT_MODULE requis", timeout: 900000, concurrency: 3
 }, async t => {
   await mkdir(resolve(output, "captures"), { recursive: true });
   const browser = await chromium.launch({ headless: true,
     ...(process.env.CHROMIUM_TEST_EXECUTABLE ? { executablePath: process.env.CHROMIUM_TEST_EXECUTABLE } : {}) });
   t.after(() => browser.close());
-  const jobs = ids.flatMap(id => [1440, 375, 320].flatMap(width => ["direct", "qcm"].flatMap(mode =>
+  const jobs = ids.flatMap(id => [1440, 768, 375, 320].flatMap(width => ["direct", "qcm", "mixed"].flatMap(mode =>
     ["response", "slideshow"].map(presentation => ({ id, seed: 17, width, mode, presentation })))));
-  jobs.push(...ids.flatMap(id => ["response", "slideshow"].map(presentation =>
-    ({ id, seed: 17, width: 320, mode: "mixed", presentation }))));
   jobs.push(...[2026, 98765].flatMap(seed => ids.flatMap(id => ["response", "slideshow"].map(presentation =>
     ({ id, seed, width: 320, mode: "mixed", presentation })))));
   const results = [];
@@ -182,6 +222,7 @@ test("Statistiques : vrai lecteur, saisie, QCM et corrections aux trois largeurs
         samples.push(metrics);
         if (!before && metrics.over.length) await capture(page, 'debordement-' + id + '-' + width);
         checkMath(metrics, width);
+        if (!before && state.question.id === 'q3') await checkMeanTable(page);
         if (presentation === "response" && index === 0) {
           await capture(page, id + "-" + width + (mode === "direct" ? "" : "-" + mode));
         }
@@ -227,12 +268,18 @@ test("Statistiques : vrai lecteur, saisie, QCM et corrections aux trois largeurs
         for (let index = 0; index < initial.selectedQuestionCount; index++) {
           assert.equal(await page.evaluate(() => statistics.state().currentCorrectionIndex), index);
           checkMath(await measure(page), width);
+          if (!before && initial.questions[index].id === 'q3') await checkMeanTable(page);
           const correction = await page.evaluate(() => statistics.state().history[statistics.state().currentCorrectionIndex]);
           const count = correction.progressiveCorrection.steps.length;
           for (let step=0;step<count;step++) {
             await page.keyboard.press(step%2 ? "ArrowDown" : "Enter");
             await page.locator('.progressive-correction-counter').filter({hasText:`Étape ${step+1}/${count}`}).waitFor();
             checkMath(await measure(page),width);
+            const id = initial.questions[index].id;
+            if (!before && ['q2', 'q3'].includes(id)) {
+              await checkMeanStep(page, { width, seed, id, step });
+              if (step === 1 && mode === 'direct') await capture(page, `moyenne-${id}-${width}`);
+            }
             const revealed = await page.locator('.step-correction-content').evaluate(node => [...MathJax.startup.document.getMathItemsWithin([node])].map(item=>item.math));
             const expected = [...correction.progressiveCorrection.steps[step].html.matchAll(/\\\([\s\S]*?\\\)/g)].map(m=>m[0].slice(2,-2));
             assert.deepEqual(revealed,expected,'Contenu exact de la nouvelle étape composé automatiquement');

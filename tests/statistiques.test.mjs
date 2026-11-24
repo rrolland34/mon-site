@@ -9,8 +9,14 @@ import {evaluateCurrentAnswer,getCorrectQCMAnswer} from '../core/answerEvaluatio
 import {startExerciseSession} from '../core/session.js';
 import {createEvaluationStatement,createEvaluationWithCorrection} from '../core/export/exportEvaluationContent.js';
 
-const unalign=html=>html.replace(/\\begin\{aligned\}&|\\end\{aligned\}|\\\\&\{\}/g,'');
-const plain=html=>html.replace(/<style\b[\s\S]*?<\/style>/g,'').replace(/<[^>]+>/g,'').replace(/\\[()]/g,'').replace(/\\text\{([^{}]*)\}/g,'$1');
+function meanEquation(step) {
+  const blocks = [...step.html.matchAll(/\\\(([\s\S]*?)\\\)/g)];
+  assert.equal(blocks.length, 1, 'Une expression complète par étape');
+  return blocks[0][1].replace(
+    /\\class\{statistics-mean-sum\}\{\\class\{statistics-mean-terms\}\{([^{}]*)\}\\class\{statistics-mean-terms\}\{\{\}\+([^{}]*)\}\}/g,
+    '$1+$2'
+  );
+}
 
 test('statistiques : arrondi scolaire et médianes exactes',()=>{
   assert.equal(roundPercentage(5,8),63);assert.equal(roundPercentage(3,8),38);
@@ -83,15 +89,20 @@ test('statistiques : 1000 tirages, distributions conservées, calculs et contrat
       }
     }
     const tex=value=>formatAnswer(value,'math');
-    const q2=qs[1].progressiveCorrection.steps,q3=qs[2].progressiveCorrection.steps;
-    for(const step of [q2[1],q3[1],q3[2]]) {assert.ok(step.html.includes('\\text{Moyenne}='));assert.ok(step.html.includes('\\dfrac'));assert.ok(!step.html.includes('<wbr>'));}
-    assert.ok(plain(q2[0].html).includes('On additionne toutes les notes, puis on divise par le nombre de notes.'));
-    assert.ok(unalign(q2[1].html).includes(`\\dfrac{${notes[1].join('+')}}{${notes[1].length}}`));
-    assert.ok(q2[2].html.includes(`\\text{Moyenne}=${tex(sum(notes[1])/notes[1].length)}`));
-    assert.ok(plain(q3[0].html).includes("On multiplie chaque note par son effectif, on additionne les résultats, puis on divise par l'effectif total."));
-    assert.ok(unalign(q3[1].html).includes(`\\dfrac{${notes[2].map((n,j)=>`${n}\\times${counts[j]}`).join('+')}}{${counts.join('+')}}`));
-    assert.ok(q3[2].html.includes(`\\dfrac{${notes[2].map((n,j)=>n*counts[j]).join('+')}}{${total}}`));
-    assert.ok(q3[3].html.includes(`\\text{Moyenne}=${tex(Number(expected[2]))}`));
+    const q2 = qs[1].progressiveCorrection.steps;
+    const q3 = qs[2].progressiveCorrection.steps;
+    const products = notes[2].map((note, i) => note * counts[i]);
+    assert.deepEqual(q2.map(meanEquation), [
+      String.raw`\text{Moyenne}=\dfrac{\text{Somme des valeurs}}{\text{Nombre de valeurs}}`,
+      String.raw`\text{Moyenne}=\dfrac{${notes[1].join('+')}}{${notes[1].length}}`,
+      String.raw`\text{Moyenne}=\dfrac{${sum(notes[1])}}{${notes[1].length}}=${tex(Number(expected[1]))}`
+    ]);
+    assert.deepEqual(q3.map(meanEquation), [
+      String.raw`\text{Moyenne}=\dfrac{\text{Somme des produits}}{\text{Effectif total}}`,
+      String.raw`\text{Moyenne}=\dfrac{${notes[2].map((note, i) => String.raw`${note}\times${counts[i]}`).join('+')}}{${counts.join('+')}}`,
+      String.raw`\text{Moyenne}=\dfrac{${products.join('+')}}{${total}}`,
+      String.raw`\text{Moyenne}=\dfrac{${sum(products)}}{${total}}=${tex(Number(expected[2]))}`
+    ]);
   }
   // Empreinte des 1000 tirages avant correction de l’arrondi : q2 à q5 uniquement.
   // Les énoncés/étapes sont comparés sémantiquement dans statistiquesPresentation.
