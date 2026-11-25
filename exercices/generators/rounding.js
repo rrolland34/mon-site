@@ -55,8 +55,11 @@ export function createRoundingQuestion(decimalPlaces) {
   const factor =
     10 ** decimalPlaces;
 
-  const roundedNumber =
-    Math.round(number * factor) / factor;
+  // Décider de la retenue sur les entiers avant de remettre la virgule.
+  const remainder = numerator % targetDivisor;
+  const roundedUnits = (numerator - remainder) / targetDivisor
+    + (2 * remainder >= targetDivisor ? 1 : 0);
+  const roundedNumber = roundedUnits / factor;
 
   const roundingLabels = [
     "à l’unité près",
