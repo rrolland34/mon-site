@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdir, readFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 import { extname, resolve, sep } from 'node:path';
 
@@ -68,7 +68,7 @@ test('Formules de tableur dans le lecteur et à l’impression', {
     executablePath: process.env.CHROMIUM_TEST_EXECUTABLE || undefined
   });
   try {
-    for (const [width, height] of [[1920, 1080], [1280, 720], [375, 812], [320, 640]]) {
+    for (const [width, height] of [[1920, 1080], [1440, 900], [1280, 720], [375, 812], [320, 640]]) {
       await t.test(`${width} px, Réponse et Diaporama en direct et QCM`, async () => {
         const context = await browser.newContext({ viewport: { width, height } });
         try {
@@ -176,5 +176,105 @@ test('Formules de tableur dans le lecteur et à l’impression', {
     });
   } finally {
     await browser.close();
+  }
+});
+
+const printCases = [
+  { seed: 17, models: [10, 8, 4, 2, 6], mixedQcm: [0, 1, 2, 3] },
+  { seed: 38, models: [4, 8, 7, 5, 10], mixedQcm: [0, 2, 4] },
+  { seed: 52, models: [3, 4, 6, 8, 10], mixedQcm: [4] },
+  { seed: 123456789, models: [1, 3, 4, 6, 8], mixedQcm: [1, 4] },
+  { seed: 2026, models: [2, 5, 7, 9, 10], mixedQcm: [1, 3] },
+  { seed: 98765, models: [8, 6, 4, 3, 1], mixedQcm: [0, 1, 3] },
+  { seed: 421, models: [10, 9, 7, 6, 4], mixedQcm: [0, 1, 2, 4] },
+  { seed: 1, models: [5, 7, 2, 10, 1], mixedQcm: [2] }
+];
+
+test('Formules de tableur : cinq questions en deux pages A4', {
+  skip: !chromium && 'Playwright requis (PLAYWRIGHT_MODULE)', timeout: 240_000
+}, async t => {
+  const pdfOutput = process.env.TABLEUR_PDF_OUTPUT;
+  const baseline = process.env.TABLEUR_PDF_BASELINE === '1';
+  const scales = process.env.TABLEUR_PDF_SCALES?.split(',').map(Number) ?? [null];
+  if (pdfOutput) await mkdir(pdfOutput, { recursive: true });
+  const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROMIUM_TEST_EXECUTABLE });
+  const report = [];
+  try {
+    const context = await browser.newContext({ viewport: { width: 658, height: 986 } });
+    await serveLocalFiles(context);
+    const page = await context.newPage();
+    await page.goto(base + 'index.html');
+    for (const scenario of printCases) await t.test(`graine ${scenario.seed}`, async () => {
+      for (const answerMode of ['direct', 'qcm', 'mixed']) for (const includeCorrection of [false, true]) {
+        const name = `${scenario.seed}-${answerMode}-${includeCorrection ? 'corrige' : 'sujet'}`;
+        const opened = page.waitForEvent('popup');
+        const expected = await page.evaluate(async ({ scenario, answerMode, includeCorrection }) => {
+          const { default: exercice } = await import('./exercices/formules_tableur.js');
+          const { exportExercise } = await import('./core/export/exportExercise.js');
+          let seed = scenario.seed;
+          const generated = exercice.generateQuestions(() => {
+            seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+            return seed / 2 ** 32;
+          });
+          const questions = scenario.models.map(model => generated[model - 1]);
+          const questionAnswerModes = questions.map((_, i) => answerMode === 'mixed'
+            ? (scenario.mixedQcm.includes(i) ? 'qcm' : 'direct') : answerMode);
+          exportExercise({ exercice, questions, exportType: 'evaluation', answerMode, questionAnswerModes, includeCorrection });
+          return questions.map(({ sourceData, qcmOptions }, i) => {
+            const { model, orientation, values, results, correct } = sourceData;
+            const vertical = orientation === 'vertical';
+            return {
+              model, orientation,
+              rows: vertical ? [['', 'A', 'B'], ['1', 'x', 'A'], ...values.map((value, j) => [String(j + 2), String(value), String(results[j])])]
+                : [['', 'A', 'B', 'C', 'D'], ['1', 'x', ...values.map(String)], ['2', 'A', ...results.map(String)]],
+              options: questionAnswerModes[i] === 'qcm' ? qcmOptions.map(option => option.formula) : [],
+              correction: includeCorrection ? correct : null,
+              response: !includeCorrection && questionAnswerModes[i] === 'direct'
+            };
+          });
+        }, { scenario, answerMode, includeCorrection });
+        const popup = await opened;
+        try {
+          await popup.waitForFunction(() => document.documentElement.hasAttribute('data-export-ready'));
+          await popup.emulateMedia({ media: 'print' });
+          assert.equal(await popup.locator('mjx-merror, [data-mjx-error]').count(), 0);
+          assert.equal(await popup.locator('.evaluation-student-identity').count(), includeCorrection ? 0 : 1);
+          const content = await popup.locator('.evaluation-question').evaluateAll(sections => sections.map(section => {
+            const table = section.querySelector('.spreadsheet-figure table');
+            return {
+              title: section.querySelector('h2').textContent.trim(),
+              math: section.querySelectorAll('.sheet-exercise mjx-container').length,
+              rows: [...table.rows].map(row => [...row.cells].map(cell => cell.textContent.trim().replace('−', '-'))),
+              selected: table.querySelector('.sheet-selected').getAttribute('aria-label'),
+              options: [...section.querySelectorAll('.archive-qcm code')].map(code => code.textContent),
+              correction: section.querySelector('.evaluation-answer code')?.textContent ?? null,
+              response: section.querySelectorAll('.evaluation-response-row').length
+            };
+          }));
+          assert.equal(content.length, 5);
+          for (const [i, question] of content.entries()) {
+            assert.equal(question.title, `Question ${i + 1}`);
+            assert.ok(question.math > 30, `${name} : énoncé MathJax incomplet`);
+            assert.deepEqual(question.rows, expected[i].rows, name);
+            assert.match(question.selected, /^B2,/);
+            assert.deepEqual(question.options, expected[i].options, name);
+            assert.equal(question.correction, expected[i].correction, name);
+            assert.equal(question.response, Number(expected[i].response), name);
+          }
+          for (const scale of scales) {
+            if (scale !== null) await popup.evaluate(value => document.documentElement.style.setProperty('--tableur-print-scale', value), scale);
+            const pdf = await popup.pdf({ preferCSSPageSize: true, printBackground: true });
+            const pages = (pdf.toString('latin1').match(/\/Type\s*\/Page\b/g) || []).length;
+            const file = scale === null ? name : `${scale * 100}-${name}`;
+            if (pdfOutput) await writeFile(resolve(pdfOutput, `${file}.pdf`), pdf);
+            report.push({ file, name, seed: scenario.seed, pages, answerMode, includeCorrection, questions: expected });
+            if (!baseline && scale === null) assert.ok(pages > 0 && pages <= 2, `${name} : ${pages} pages`);
+          }
+        } finally { await popup.close(); }
+      }
+    });
+  } finally {
+    await browser.close();
+    if (pdfOutput) await writeFile(resolve(pdfOutput, 'bilan.json'), JSON.stringify(report, null, 2));
   }
 });

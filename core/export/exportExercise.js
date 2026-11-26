@@ -96,7 +96,7 @@ export function exportExercise({
 
     exportDocument({
       title: exercice.title,
-      content,
+      content: `${content}${exercice.evaluationPrintStyles ? `<style>${exercice.evaluationPrintStyles}</style>` : ""}`,
       studentHeader: !includeCorrection,
       isEvaluation: true,
       ...(questions.some(question => question.exportCartesianFigure) ? {

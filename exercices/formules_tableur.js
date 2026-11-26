@@ -2,6 +2,7 @@ import { createSpreadsheetFigure } from './figures/spreadsheetFigure.js';
 import { formulaPolynomial, translateFormula, validateSpreadsheetFormula } from './spreadsheetFormula.js';
 import { createQuestion } from '../core/questionFactory.js';
 import { sheetCode as code, sheetPresentation as present, sheetWrap as wrap, sheetStyles as styles } from './spreadsheetPresentation.js';
+import { formulesTableurPrintStyles } from './formulesTableurPrintStyles.js';
 
 const signed = n => n < 0 ? `-${-n}` : `+${n}`;
 const shuffle = (items,random) => {const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
@@ -64,4 +65,7 @@ export function createSpreadsheetQuestion(model, random=Math.random, orientation
 }
 
 export const generateQuestions = (random=Math.random) => Array.from({length:10},(_,i)=>createSpreadsheetQuestion(i+1,random));
-export default {title:'Formules de tableur',correctionMode:'answer-only',generateQuestions,questions:generateQuestions()};
+export default {
+  title:'Formules de tableur',correctionMode:'answer-only',generateQuestions,questions:generateQuestions(),
+  evaluationPrintStyles: formulesTableurPrintStyles
+};
